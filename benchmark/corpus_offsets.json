@@ -1,0 +1,1274 @@
+{
+  "leak-museum": {
+    "bench_sha256": "8938b8d88dd5d9c71eba942a997a301ce7ce4f63c50530d46be3c87e597618cd",
+    "files": {
+      "README.md": {
+        "sha256": "147153976412c708abf112c28452cdbd11b39cd8e21064dea33751410db9d4f6",
+        "spans": [
+          [
+            9470,
+            9477
+          ]
+        ]
+      },
+      "exhibits/01-dotenv/.env": {
+        "sha256": "2656b574dc570952825bb0f8f68e359124910c6f1d30dd8e8af69f67be5d7008",
+        "spans": [
+          [
+            92,
+            99
+          ],
+          [
+            133,
+            144
+          ],
+          [
+            160,
+            168
+          ],
+          [
+            188,
+            196
+          ],
+          [
+            235,
+            273
+          ],
+          [
+            291,
+            366
+          ],
+          [
+            382,
+            390
+          ]
+        ]
+      },
+      "exhibits/01-dotenv/.env.production": {
+        "sha256": "700bb15ac096b513a53cc09dd64c0f5863d3cacd4213f1b651f1e543da46217f",
+        "spans": [
+          [
+            99,
+            109
+          ],
+          [
+            151,
+            183
+          ],
+          [
+            199,
+            254
+          ]
+        ]
+      },
+      "exhibits/02-cloud-credentials/.aws/credentials": {
+        "sha256": "632276c7a04cd6d210015dfb416c886c2cb9434181e5b31e2cc1fe4461495c15",
+        "spans": [
+          [
+            122,
+            142
+          ],
+          [
+            167,
+            207
+          ]
+        ]
+      },
+      "exhibits/02-cloud-credentials/gcp-service-account.json": {
+        "sha256": "04e3a479d7460fcd7dafd6fca2118e5191eed2074913cc997ed4244a2181ee1b",
+        "spans": [
+          [
+            269,
+            377
+          ]
+        ]
+      },
+      "exhibits/03-hardcoded-in-source/config.js": {
+        "sha256": "7ad938c026a74871f851c3f32db51de3b1fed53364d52e5692f28b94b8f718fb",
+        "spans": [
+          [
+            105,
+            143
+          ],
+          [
+            162,
+            202
+          ],
+          [
+            223,
+            269
+          ],
+          [
+            293,
+            334
+          ],
+          [
+            392,
+            399
+          ]
+        ]
+      },
+      "exhibits/03-hardcoded-in-source/settings.py": {
+        "sha256": "a268a90f4ae749241bee3ac044b4267d5f928667d7742c1cd289aeaa10c32534",
+        "spans": [
+          [
+            96,
+            150
+          ],
+          [
+            348,
+            358
+          ],
+          [
+            429,
+            462
+          ]
+        ]
+      },
+      "exhibits/04-ssh-keys/id_ed25519": {
+        "sha256": "982396ab65b4903b4572171aa899f6ed28d16afd02f0b5ac88ff8a54e6583742",
+        "spans": [
+          [
+            0,
+            134
+          ]
+        ]
+      },
+      "exhibits/05-tls-private-key/server.key": {
+        "sha256": "c318ba01bd1857ddaf317b9ddbbe7c69d9d15de30076bbe538dec33190b6ce12",
+        "spans": [
+          [
+            0,
+            118
+          ]
+        ]
+      },
+      "exhibits/06-database/.pgpass": {
+        "sha256": "67bdbf41ca11c9ca1fa9cc4f5f3c846e149cbd5d7d6d1b677b2349b5a9168f53",
+        "spans": [
+          [
+            99,
+            109
+          ]
+        ]
+      },
+      "exhibits/06-database/dump.sql": {
+        "sha256": "c0d9783936ebe39fe023667643b59166ed67ca8035358d1ef88a6f0c14fec0f8",
+        "spans": [
+          [
+            181,
+            188
+          ],
+          [
+            241,
+            252
+          ],
+          [
+            333,
+            343
+          ]
+        ]
+      },
+      "exhibits/07-plaintext-passwords/passwords.txt": {
+        "sha256": "c732958911cc54ae2d95a10f4225128c6f820b6ade72dbb67f07fc78a280b67a",
+        "spans": [
+          [
+            103,
+            111
+          ],
+          [
+            149,
+            160
+          ],
+          [
+            202,
+            210
+          ],
+          [
+            260,
+            271
+          ]
+        ]
+      },
+      "exhibits/07-plaintext-passwords/wifi.txt": {
+        "sha256": "52bc6d1e9c804b10f87155a6f34bbc7bf0cd8e0438557d62f2f31fb9e9f7fe29",
+        "spans": [
+          [
+            85,
+            96
+          ]
+        ]
+      },
+      "exhibits/08-kubernetes/README.md": {
+        "sha256": "a890b5855c770aed8d513bc90a1ff352565b2bffc74aa632f6aa3fac8ec24847",
+        "spans": [
+          [
+            250,
+            257
+          ]
+        ]
+      },
+      "exhibits/08-kubernetes/secret.yaml": {
+        "sha256": "b1a949ab57f892ded1758dd3516098203b9434a15bf790f4873ec647301ee6f9",
+        "spans": [
+          [
+            248,
+            260
+          ],
+          [
+            276,
+            288
+          ],
+          [
+            329,
+            345
+          ],
+          [
+            360,
+            376
+          ]
+        ]
+      },
+      "exhibits/09-package-registry-tokens/.git-credentials": {
+        "sha256": "c307f86b7d0eeae1875b06aae70887155d2aa242e0aa0da43536e8849c2cd273",
+        "spans": [
+          [
+            15,
+            55
+          ]
+        ]
+      },
+      "exhibits/09-package-registry-tokens/.netrc": {
+        "sha256": "a33b5d3ca6d7f040a0317de27f7cc11d8ffc2c1c08f6fed66820e42611d528d1",
+        "spans": [
+          [
+            50,
+            60
+          ]
+        ]
+      },
+      "exhibits/09-package-registry-tokens/.npmrc": {
+        "sha256": "7f19f769eef0d02d5a30d3f858637a3b52d79ad53f17345f56b5e1bbbb40ddb7",
+        "spans": [
+          [
+            33,
+            75
+          ]
+        ]
+      },
+      "exhibits/09-package-registry-tokens/.pypirc": {
+        "sha256": "e51043447372ecf66419b36b8473355c54a16db73bbe9ce461e14680d1ec7d9f",
+        "spans": [
+          [
+            39,
+            90
+          ]
+        ]
+      },
+      "exhibits/09-package-registry-tokens/docker-config.json": {
+        "sha256": "ca9a76cccaebc39b6090048b797ddd82ce8d0e4eddc164cc74cc793f01de228f",
+        "spans": [
+          [
+            145,
+            169
+          ]
+        ]
+      },
+      "exhibits/10-terraform-state/secrets.auto.tfvars": {
+        "sha256": "4d0c43de85f003209361df39e04b0e4730bca524562f8852a3f564ad71d40810",
+        "spans": [
+          [
+            102,
+            112
+          ],
+          [
+            138,
+            180
+          ]
+        ]
+      },
+      "exhibits/10-terraform-state/terraform.tfstate": {
+        "sha256": "1d9230dcf072a5a57aa11f316b709687140501e322f7a8f9e3937e53a5ad88c4",
+        "spans": [
+          [
+            313,
+            339
+          ]
+        ]
+      },
+      "exhibits/11-ci-cd/deploy.yml.sample": {
+        "sha256": "ea8cb08625eea95417013b22f245ea98dbf4bd3b744868ce1b78409f08484c1c",
+        "spans": [
+          [
+            178,
+            198
+          ],
+          [
+            228,
+            268
+          ],
+          [
+            320,
+            360
+          ]
+        ]
+      },
+      "exhibits/12-dangerous-leftovers/.bash_history": {
+        "sha256": "384c5e899c3d153a8a20f0f58324fb060a634f902fff8710de7a463a3dc3b0a2",
+        "spans": [
+          [
+            23,
+            61
+          ],
+          [
+            93,
+            133
+          ],
+          [
+            178,
+            188
+          ]
+        ]
+      },
+      "exhibits/12-dangerous-leftovers/config.php.bak": {
+        "sha256": "1aea6dd6f9f4af8cfce69eb45d9ee43a6b36be2d2a9b0a20f2125c187d846b2f",
+        "spans": [
+          [
+            123,
+            133
+          ],
+          [
+            148,
+            186
+          ]
+        ]
+      },
+      "exhibits/13-dockerfile/Dockerfile": {
+        "sha256": "35e9f2828badc01f8c72ab75b4d8ba0a59b1c37864fcfeb2aa655c8704acde6e",
+        "spans": [
+          [
+            181,
+            223
+          ],
+          [
+            246,
+            284
+          ],
+          [
+            318,
+            328
+          ]
+        ]
+      },
+      "exhibits/15-frontend-bundle/dist/app.min.js": {
+        "sha256": "92605bfa21c4a059fb1b4bfb5cf284f7b226ec266eaa4cfb5df3845968c9b83b",
+        "spans": [
+          [
+            151,
+            189
+          ],
+          [
+            204,
+            231
+          ]
+        ]
+      },
+      "exhibits/16-mobile-app-secrets/android/app/google-services.json": {
+        "sha256": "20a9df5e4550d8e610edd196bee43467986a42efd8d6a1806648c9d261932753",
+        "spans": [
+          [
+            254,
+            287
+          ]
+        ]
+      },
+      "exhibits/16-mobile-app-secrets/android/app/keystore.properties": {
+        "sha256": "f3dfd86ed31a241570f4b31adca4cbf67066fa237444e27c8a78f351610526e5",
+        "spans": [
+          [
+            121,
+            131
+          ],
+          [
+            161,
+            171
+          ]
+        ]
+      },
+      "exhibits/16-mobile-app-secrets/ios/GoogleService-Info.plist": {
+        "sha256": "23f954552324b1ae0a429b541b2f524d6a7d6be38cb8363d5c42d3dc078a9723",
+        "spans": [
+          [
+            170,
+            203
+          ]
+        ]
+      },
+      "exhibits/17-jwt-weak-secret/sample-token.txt": {
+        "sha256": "fa16a3315a25e382561535597f92699d1f665f58bd7f63a36d4cf9d7bca9fdb3",
+        "spans": [
+          [
+            116,
+            255
+          ]
+        ]
+      },
+      "exhibits/18-git-internals/dot-git-config.sample": {
+        "sha256": "4c99b345cd96f90580e6d67c9ad95ae9f0527ed2a2c3d70ef49ed240736c4275",
+        "spans": [
+          [
+            206,
+            246
+          ]
+        ]
+      },
+      "exhibits/18-git-internals/hooks/pre-push.sample": {
+        "sha256": "d6faad76c13b20fef28d960881f5de0f7840e1b5fece4b1409134acf47a16a98",
+        "spans": [
+          [
+            161,
+            192
+          ]
+        ]
+      },
+      "exhibits/19-editor-ide-settings/dataSources.local.xml": {
+        "sha256": "23e88d6f8149d5421d11ba0955119695a420da4917e42252c818404c6e2a072d",
+        "spans": [
+          [
+            255,
+            265
+          ]
+        ]
+      },
+      "exhibits/20-dotnet-appsettings/appsettings.Development.json": {
+        "sha256": "773375eadae32e4ceb9640d8d379e26cd48a5ba6c46ec17e55fb10eca81620c0",
+        "spans": [
+          [
+            208,
+            215
+          ]
+        ]
+      },
+      "exhibits/20-dotnet-appsettings/appsettings.json": {
+        "sha256": "c5b0ebe6a4cdffd99e05963db71359e94bbdae72d56470d50678badf93cfef7f",
+        "spans": [
+          [
+            242,
+            252
+          ],
+          [
+            295,
+            331
+          ],
+          [
+            367,
+            410
+          ]
+        ]
+      },
+      "exhibits/21-rails-secrets/config/credentials.yml.enc": {
+        "sha256": "78852f8301c9decce252b18a06fd30b69003f9cea701236b2cdcb7d0f266be02",
+        "spans": [
+          [
+            95,
+            177
+          ]
+        ]
+      },
+      "exhibits/21-rails-secrets/config/master.key": {
+        "sha256": "6060e5c24c288e0dc749ece1312b9f8cbf41d106dd571bac20daecaa30563281",
+        "spans": [
+          [
+            96,
+            133
+          ]
+        ]
+      },
+      "exhibits/21-rails-secrets/config/secrets.yml": {
+        "sha256": "5fada01141a0cda2987b618a061cd9ba6071c8be75ebe6e10e5f7175e3f6690b",
+        "spans": [
+          [
+            119,
+            186
+          ],
+          [
+            208,
+            218
+          ]
+        ]
+      },
+      "exhibits/22-wordpress-wp-config/wp-config.php": {
+        "sha256": "ca1ac8bc7074cc23275876c6ccdc749bc81c4fca8feacf3643d20f1ac4df125d",
+        "spans": [
+          [
+            183,
+            193
+          ],
+          [
+            348,
+            376
+          ],
+          [
+            407,
+            435
+          ],
+          [
+            466,
+            494
+          ],
+          [
+            525,
+            553
+          ],
+          [
+            584,
+            614
+          ]
+        ]
+      },
+      "exhibits/23-ansible-vault/.vault_pass": {
+        "sha256": "57db1253b68b6802b59a969f750fa32b60cb5cc8a3cb19b87dac28f541dc4e2a",
+        "spans": [
+          [
+            0,
+            11
+          ]
+        ]
+      },
+      "exhibits/23-ansible-vault/group_vars/all/vault.yml": {
+        "sha256": "202623c85770762edc2f4c56f79f3c8befe07cbf119d1bd045d15fb9fc616b8c",
+        "spans": [
+          [
+            26,
+            177
+          ]
+        ]
+      },
+      "exhibits/24-cloud-cli-cache/dot-config/gcloud/application_default_credentials.json": {
+        "sha256": "1f70d70cc33305823bcc24e3729c1f99d42ab27de288c18b60ea50af24c81e17",
+        "spans": [
+          [
+            181,
+            223
+          ]
+        ]
+      },
+      "exhibits/24-cloud-cli-cache/dot-config/gh/hosts.yml": {
+        "sha256": "a266bdfd8824e68ce24b5c1dfb1b79d36ff7d05a7b19728d3cc338b895498276",
+        "spans": [
+          [
+            119,
+            159
+          ]
+        ]
+      },
+      "exhibits/25-encoded-not-encrypted/config.yml": {
+        "sha256": "3a7b92e3ddf41dac9be34c8d55a423efa24c23bebd6e24485b1aa30b7df41c3f",
+        "spans": [
+          [
+            132,
+            148
+          ],
+          [
+            165,
+            181
+          ],
+          [
+            222,
+            234
+          ]
+        ]
+      },
+      "exhibits/25-encoded-not-encrypted/credentials.b64": {
+        "sha256": "9d6e5545fb1b0bb7a9b1a78c932429e29c7e2a24edb71d919f324e87a3afb79a",
+        "spans": [
+          [
+            73,
+            105
+          ]
+        ]
+      },
+      "exhibits/26-api-debug-artifacts/MyAPI.postman_environment.json": {
+        "sha256": "92f8c4a9907ffff74227126b126ee96aa1dffe8f245e4b191b6151d3301d090e",
+        "spans": [
+          [
+            156,
+            190
+          ]
+        ]
+      },
+      "exhibits/26-api-debug-artifacts/requests.http": {
+        "sha256": "a8e122e0931c9e489dad77ea229fb7ce2874d3dbd062de084f3b8efde0496f50",
+        "spans": [
+          [
+            131,
+            161
+          ]
+        ]
+      },
+      "exhibits/26-api-debug-artifacts/session.har": {
+        "sha256": "f23e41c0c19793c090387b7f691b457eae5418420193313e1247627357febaec",
+        "spans": [
+          [
+            257,
+            295
+          ],
+          [
+            344,
+            377
+          ]
+        ]
+      },
+      "exhibits/27-ai-tool-configs/.cursor/mcp.json": {
+        "sha256": "7c220d701ab8a1d023a8eac75aa42117ae9914ea0fc3d15e7262ee1a2a2d4252",
+        "spans": [
+          [
+            251,
+            306
+          ],
+          [
+            463,
+            524
+          ]
+        ]
+      },
+      "exhibits/27-ai-tool-configs/.mcp.json": {
+        "sha256": "ad852fc40a6732693c3f65a6b22e3c7c33170561be57114398ec1b842c0b9fd7",
+        "spans": [
+          [
+            315,
+            355
+          ],
+          [
+            526,
+            564
+          ],
+          [
+            730,
+            737
+          ]
+        ]
+      },
+      "exhibits/27-ai-tool-configs/claude_desktop_config.json": {
+        "sha256": "d1bff3ac825e481580f118c1aa0454303e6b5146420f34db810299ce889c638d",
+        "spans": [
+          [
+            314,
+            360
+          ],
+          [
+            519,
+            565
+          ],
+          [
+            747,
+            808
+          ]
+        ]
+      }
+    },
+    "revision": "6b1483a00cfa7bb47551b7304c1e2d4bc9a3a919"
+  },
+  "leaky-repo": {
+    "bench_sha256": "74306c052ae23195b34cfa948eee8abbe2bf6df7cb4e13c9c7588f8714fce729",
+    "files": {
+      ".bash_profile": {
+        "sha256": "2243104bd92109e90555451c721432d38e90e4f43714c217c00546a6fbff00a2",
+        "spans": [
+          [
+            251,
+            277
+          ],
+          [
+            355,
+            393
+          ],
+          [
+            906,
+            916
+          ],
+          [
+            941,
+            956
+          ],
+          [
+            992,
+            1032
+          ],
+          [
+            1058,
+            1134
+          ],
+          [
+            1154,
+            1165
+          ]
+        ]
+      },
+      ".bashrc": {
+        "sha256": "409948945726e915eb22f52d8e7e9905c9c7ed673bdb98f20878d196f2e0b051",
+        "spans": [
+          [
+            3457,
+            3467
+          ],
+          [
+            3495,
+            3532
+          ],
+          [
+            3768,
+            3808
+          ]
+        ]
+      },
+      ".docker/.dockercfg": {
+        "sha256": "540af3087e15ff0e7dc59c53d1f04ecbf489019a9f710ba9a3911f8f7ec088ad",
+        "spans": [
+          [
+            86,
+            196
+          ],
+          [
+            284,
+            394
+          ]
+        ]
+      },
+      ".docker/config.json": {
+        "sha256": "0c3d59de8b5615fd6340222aac159bb0cd26f164c74ec503d9296825a3fe1ed9",
+        "spans": [
+          [
+            122,
+            232
+          ],
+          [
+            346,
+            456
+          ]
+        ]
+      },
+      ".esmtprc": {
+        "sha256": "d6ca31c35a2f54ea0fa8b3793475a0819cb866bab6fd82e3bc0862d6b1706af8",
+        "spans": [
+          [
+            95,
+            105
+          ]
+        ]
+      },
+      ".ftpconfig": {
+        "sha256": "1d2c152100c78a8cfb075050414471ee9f1d6a92880b9ac1f296064238d61b52",
+        "spans": [
+          [
+            102,
+            110
+          ],
+          [
+            242,
+            251
+          ]
+        ]
+      },
+      ".git-credentials": {
+        "sha256": "150374806a5df6d54eca362ee1cd310930d71a8d7d3f92163ecadcb7f02f26a3",
+        "spans": [
+          [
+            25,
+            39
+          ]
+        ]
+      },
+      ".idea/WebServers.xml": {
+        "sha256": "9629066fce107986cba2af596909228daf4af6593bc38a9ae7b426b4db45d396",
+        "spans": [
+          [
+            280,
+            364
+          ]
+        ]
+      },
+      ".mozilla/firefox/logins.json": {
+        "sha256": "00a568b06be3d8c18936753fcbed72d0927121f7d77ae080e84fe406f5f41b73",
+        "spans": [
+          [
+            307,
+            387
+          ],
+          [
+            424,
+            504
+          ],
+          [
+            1040,
+            1112
+          ],
+          [
+            1149,
+            1229
+          ],
+          [
+            1765,
+            1845
+          ],
+          [
+            1882,
+            1994
+          ],
+          [
+            2530,
+            2602
+          ],
+          [
+            2639,
+            2763
+          ]
+        ]
+      },
+      ".netrc": {
+        "sha256": "dd6591ce894528433810e3a11822e1883eca04d5da3a09e228443bd1e44e3d3f",
+        "spans": [
+          [
+            56,
+            63
+          ],
+          [
+            120,
+            127
+          ]
+        ]
+      },
+      ".npmrc": {
+        "sha256": "b9e7c3187ad8912c83d4f1e99fee502bfa90f451be1d27688df985dd8e5890e9",
+        "spans": [
+          [
+            128,
+            144
+          ],
+          [
+            185,
+            221
+          ]
+        ]
+      },
+      ".remote-sync.json": {
+        "sha256": "d80c93feb7468a0e5d1dcd7c56c1ebb9e58f71e90bcc31af63fd0c61827e8662",
+        "spans": [
+          [
+            342,
+            350
+          ]
+        ]
+      },
+      ".ssh/id_rsa": {
+        "sha256": "5f536d4a342e66a2eb24097399b0774acbd35822e6cc8d2bb2218e8c780c748e",
+        "spans": [
+          [
+            0,
+            1674
+          ]
+        ]
+      },
+      ".vscode/sftp.json": {
+        "sha256": "e1fd6865012f72f01f741fa97ddc94be394ccfd87e3b991cc18aa380acfd419a",
+        "spans": [
+          [
+            124,
+            136
+          ]
+        ]
+      },
+      "cloud/.credentials": {
+        "sha256": "a58f13af6ec30fc11908157ac5c3785b938cb2e0cdadac080dab47b6e506b49d",
+        "spans": [
+          [
+            53,
+            79
+          ],
+          [
+            139,
+            177
+          ],
+          [
+            215,
+            241
+          ],
+          [
+            301,
+            339
+          ]
+        ]
+      },
+      "cloud/.s3cfg": {
+        "sha256": "bbbd1ff81b751b6731bbcf959d91282a780535ee3ff2571c7d7fa0e0095f7c04",
+        "spans": [
+          [
+            13,
+            39
+          ],
+          [
+            65,
+            103
+          ]
+        ]
+      },
+      "cloud/.tugboat": {
+        "sha256": "ee55ab7ef336d1e4fa21be7537b88a9deb7ff607abe572f9fbc28263a44feab8",
+        "spans": [
+          [
+            34,
+            66
+          ],
+          [
+            92,
+            124
+          ]
+        ]
+      },
+      "cloud/heroku.json": {
+        "sha256": "41d98114b811034454e00880240e36e052664ff40416548460f0e15aac4f80cb",
+        "spans": [
+          [
+            87,
+            119
+          ]
+        ]
+      },
+      "config": {
+        "sha256": "add13740020aec8c3a2238d695b67596cb50388e06fe3ad29af6fc1170378a8a",
+        "spans": [
+          [
+            144,
+            152
+          ]
+        ]
+      },
+      "db/.pgpass": {
+        "sha256": "d6584ca8519107a83c2865714f2f792cdf164a896b121a7c7ff52415e0c32eb4",
+        "spans": [
+          [
+            66,
+            79
+          ]
+        ]
+      },
+      "db/dbeaver-data-sources.xml": {
+        "sha256": "522c8e2bc0322afd5873a6a3843cc398b74808a188982f5af76640f79dea2efd",
+        "spans": [
+          [
+            349,
+            360
+          ]
+        ]
+      },
+      "db/dump.sql": {
+        "sha256": "8c91bfb826a1681b8acd1cacc73a9b7e486573003b2cad4d9a6f0dc23eb9e3ce",
+        "spans": [
+          [
+            1190,
+            1250
+          ],
+          [
+            1272,
+            1332
+          ],
+          [
+            1356,
+            1416
+          ],
+          [
+            1438,
+            1498
+          ],
+          [
+            1520,
+            1580
+          ],
+          [
+            1603,
+            1663
+          ],
+          [
+            1686,
+            1746
+          ],
+          [
+            1770,
+            1830
+          ],
+          [
+            1854,
+            1914
+          ],
+          [
+            1939,
+            1999
+          ]
+        ]
+      },
+      "db/mongoid.yml": {
+        "sha256": "9ff9ed5b97b6c79ad86be92c62e29841b6dc4b311ac2bd625611a5bcff7025e3",
+        "spans": [
+          [
+            70,
+            78
+          ]
+        ]
+      },
+      "db/robomongo.json": {
+        "sha256": "4a30afe4d41087f181fe1f038363598613c435ad08b9fa5da520c45b16566df9",
+        "spans": [
+          [
+            327,
+            336
+          ],
+          [
+            535,
+            545
+          ],
+          [
+            682,
+            698
+          ]
+        ]
+      },
+      "deployment-config.json": {
+        "sha256": "99870cf5c4df36d8f397b874f720a0b46c63764406cde29e7d05501e5773dae9",
+        "spans": [
+          [
+            90,
+            98
+          ]
+        ]
+      },
+      "etc/shadow": {
+        "sha256": "cc5cdbe5089e0fd1a302151479e90f644a871ecfb655d5fedc6c8ac8f608b19b",
+        "spans": [
+          [
+            507,
+            613
+          ]
+        ]
+      },
+      "filezilla/filezilla.xml": {
+        "sha256": "a4a6d1405bba7b313019699f3e822000a8d1c3dce69019de6c48dce8827b0083",
+        "spans": [
+          [
+            341,
+            354
+          ]
+        ]
+      },
+      "filezilla/recentservers.xml": {
+        "sha256": "282c1bb2dc36ced689c3c0a172e9a6c0246f4a6a36c7abf24c7d99cf8324b686",
+        "spans": [
+          [
+            318,
+            386
+          ],
+          [
+            853,
+            921
+          ]
+        ]
+      },
+      "high-entropy-misc.txt": {
+        "sha256": "b3f9f0b10ffc25b7d619b3ec11b156b8500114672c704f819ac2e19f871fa25a",
+        "spans": [
+          [
+            5,
+            69
+          ],
+          [
+            75,
+            163
+          ]
+        ]
+      },
+      "hub": {
+        "sha256": "29f36567347b569b8fd49bfb4f0f9be732279678ec7ebb5f810520a1cedda933",
+        "spans": [
+          [
+            48,
+            88
+          ]
+        ]
+      },
+      "misc-keys/cert-key.pem": {
+        "sha256": "7657ab6dd4ffe401024ed8284e39ebfa9dce5eb57542db7afdc781187349ae9b",
+        "spans": [
+          [
+            0,
+            1703
+          ]
+        ]
+      },
+      "misc-keys/putty-example.ppk": {
+        "sha256": "cd97a4515d41144ae183b0d061624d71352e6e642ae59d51a73f00da1ad8fafd",
+        "spans": [
+          [
+            479,
+            1372
+          ],
+          [
+            1386,
+            1426
+          ]
+        ]
+      },
+      "proftpdpasswd": {
+        "sha256": "68783d81d2eea00bb7d81a14ac832e13440dbcbb9021606191b99cfdaaf94ba3",
+        "spans": [
+          [
+            5,
+            111
+          ]
+        ]
+      },
+      "sftp-config.json": {
+        "sha256": "6efb4782728ff4f061c17a986ff3f41abf347f39a2562c76165fada338efea54",
+        "spans": [
+          [
+            336,
+            344
+          ]
+        ]
+      },
+      "ventrilo_srv.ini": {
+        "sha256": "ae909885f72b24ce3146b56b2ae28130ce6510a647df3941a76f140f73445373",
+        "spans": [
+          [
+            72,
+            88
+          ],
+          [
+            98,
+            113
+          ]
+        ]
+      },
+      "web/django/settings.py": {
+        "sha256": "4a4faf1134cf5c62f1db80c81098932e718249ec200af3c29929eecad231d78d",
+        "spans": [
+          [
+            693,
+            743
+          ]
+        ]
+      },
+      "web/js/salesforce.js": {
+        "sha256": "614b32aff3cd049b0d0cbdd952c577959168f696557a2f5536a0bc9689207d4c",
+        "spans": [
+          [
+            221,
+            239
+          ]
+        ]
+      },
+      "web/ruby/config/master.key": {
+        "sha256": "ad2e944933c0866649626d6206fe899ca00d16f42e49f5d2270ba7257d1e9e72",
+        "spans": [
+          [
+            0,
+            32
+          ]
+        ]
+      },
+      "web/ruby/secrets.yml": {
+        "sha256": "2639ee5787f3c8592ff42a79b46556b629ca8e03ea4b4a88c9d273d6eed7e921",
+        "spans": [
+          [
+            522,
+            650
+          ],
+          [
+            677,
+            805
+          ],
+          [
+            934,
+            1062
+          ]
+        ]
+      },
+      "web/var/www/.env": {
+        "sha256": "0afb8a5d6375eeb2f382118f12c2abd904e0b60a906f3a0c8baa0122c1d381ce",
+        "spans": [
+          [
+            105,
+            156
+          ],
+          [
+            272,
+            280
+          ],
+          [
+            395,
+            406
+          ],
+          [
+            560,
+            573
+          ]
+        ]
+      },
+      "web/var/www/public_html/.htpasswd": {
+        "sha256": "9e1eb645ad063a75d52fb29d8fe402750cd227adda5dea38129fc13350d21b61",
+        "spans": [
+          [
+            6,
+            43
+          ]
+        ]
+      },
+      "web/var/www/public_html/config.php": {
+        "sha256": "867374b3126a716b8314659b9d9d9d6f9ef1fc8e07f7f2ada7ca86679fe8e137",
+        "spans": [
+          [
+            198,
+            205
+          ]
+        ]
+      },
+      "web/var/www/public_html/wp-config.php": {
+        "sha256": "8fae3ad63fc0df75ac24c11dc6a7162628343b50c52a1ac01f8be07f2195687d",
+        "spans": [
+          [
+            928,
+            992
+          ],
+          [
+            1031,
+            1095
+          ],
+          [
+            1134,
+            1198
+          ],
+          [
+            1237,
+            1301
+          ],
+          [
+            1340,
+            1404
+          ],
+          [
+            1443,
+            1507
+          ],
+          [
+            1546,
+            1610
+          ],
+          [
+            1649,
+            1713
+          ]
+        ]
+      }
+    },
+    "revision": "2e951359cac53addbee56437da3ffb546e3dfe24"
+  }
+}
+

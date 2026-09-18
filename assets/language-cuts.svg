@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="950.4pt" height="489.6pt" viewBox="0 0 950.4 489.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>Missed spans by language and task</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Missed spans by language and task</dc:title>
+    <dc:description>Russian PII, synthetic Russian secrets, English PII, English secrets, and multilingual PII. No multilingual-secrets cut exists.</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 489.6 
+L 950.4 489.6 
+L 950.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 294.624 401.472 
+L 921.888 401.472 
+L 921.888 127.296 
+L 294.624 127.296 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#pa6c4a7758c)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAA2gAAAF9CAYAAABxkks8AAAJOElEQVR4nO3ZIW5UURiGYdpeCJV4UCyIHbAIRJeAQZBAgsKxA0owIEBjqsDUIrClCIaZOwhWcG9Izjvp86zgE0ecN//R96ur/S04MKe3p9ETYLHNdjd6AqxyZzoZPQEW+3H9a/QEWOV49AAAAAD+EWgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIqbdPI/eAHAj7Pb70RNgFX8FDtFm691ymFzQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAERMf+Z59AYAAPivTo6PRk+AVVzQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgIjp5+/N6A2w2L3Tu6MnwGLbeR49AeDGuPbH5UC5oAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACIEGgAAAARAg0AACBCoAEAAEQINAAAgAiBBgAAECHQAAAAIgQaAABAhEADAACImN5+vRy9ARZ7/fTN6Amw2IuXT0ZPgFVenX8ePQEWe/Dw/ugJsIoLGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAxffj4ZfQGWOzi3fPRE2Cxs/efRk+AVZ49fjR6Aix2/u1y9ARYxQUNAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQIRAAwAAiBBoAAAAEQINAAAgQqABAABECDQAAIAIgQYAABAh0AAAACIEGgAAQMRfiy42euzo4u4AAAAASUVORK5CYII=" id="image00b1256213" transform="scale(1 -1) translate(0 -274.32)" x="294.624" y="-127.152" width="627.84" height="274.32"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(337.593369 103.69075)">RU / PII</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(324.944228 116.008344)">18 datasets</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(444.652106 103.69075)">RU / SECRETS</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(456.761559 116.008344)">1 dataset</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(588.755922 103.69075)">EN / PII</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(579.349203 116.008344)">8 datasets</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(695.814659 103.69075)">EN / SECRETS</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(704.802003 116.008344)">9 datasets</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(831.190662 103.69075)">MULTI / PII</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(830.254803 116.008344)">5 datasets</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6"/>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="285.624" y="154.323141" transform="rotate(-0 285.624 154.323141)">PPLX</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7"/>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="285.624" y="200.019141" transform="rotate(-0 285.624 200.019141)">Fastino GLiNER2</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8"/>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="285.624" y="245.715141" transform="rotate(-0 285.624 245.715141)">PPLX + Fastino</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_9"/>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="285.624" y="291.411141" transform="rotate(-0 285.624 291.411141)">PPLX + Fastino + mmBERT</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_10"/>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="285.624" y="337.107141" transform="rotate(-0 285.624 337.107141)">PPLX + Fastino + BardsAI</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_11"/>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="285.624" y="382.803141" transform="rotate(-0 285.624 382.803141)">PPLX + Fastino + mmBERT + BardsAI</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 294.624 401.472 
+L 921.888 401.472 
+" style="fill: none; stroke: #dce4ed; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="357.3504" y="153.731187" transform="rotate(-0 357.3504 153.731187)">25.82%</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="482.8032" y="153.731187" transform="rotate(-0 482.8032 153.731187)">0.00%</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="608.256" y="153.731187" transform="rotate(-0 608.256 153.731187)">16.57%</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="733.7088" y="153.731187" transform="rotate(-0 733.7088 153.731187)">3.47%</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="859.1616" y="153.731187" transform="rotate(-0 859.1616 153.731187)">12.74%</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="357.3504" y="199.427188" transform="rotate(-0 357.3504 199.427188)">12.91%</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="482.8032" y="199.427188" transform="rotate(-0 482.8032 199.427188)">35.11%</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="608.256" y="199.427188" transform="rotate(-0 608.256 199.427188)">7.43%</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="733.7088" y="199.427188" transform="rotate(-0 733.7088 199.427188)">23.12%</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="859.1616" y="199.427188" transform="rotate(-0 859.1616 199.427188)">16.70%</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="357.3504" y="245.123187" transform="rotate(-0 357.3504 245.123187)">3.56%</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="482.8032" y="245.123187" transform="rotate(-0 482.8032 245.123187)">0.00%</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="608.256" y="245.123187" transform="rotate(-0 608.256 245.123187)">1.57%</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="733.7088" y="245.123187" transform="rotate(-0 733.7088 245.123187)">1.04%</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="859.1616" y="245.123187" transform="rotate(-0 859.1616 245.123187)">4.61%</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="357.3504" y="290.819187" transform="rotate(-0 357.3504 290.819187)">1.97%</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="482.8032" y="290.819187" transform="rotate(-0 482.8032 290.819187)">0.00%</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="608.256" y="290.819187" transform="rotate(-0 608.256 290.819187)">1.03%</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="733.7088" y="290.819187" transform="rotate(-0 733.7088 290.819187)">0.39%</text>
+   </g>
+   <g id="text_31">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="859.1616" y="290.819187" transform="rotate(-0 859.1616 290.819187)">3.19%</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="357.3504" y="336.515187" transform="rotate(-0 357.3504 336.515187)">1.48%</text>
+   </g>
+   <g id="text_33">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="482.8032" y="336.515187" transform="rotate(-0 482.8032 336.515187)">0.00%</text>
+   </g>
+   <g id="text_34">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="608.256" y="336.515187" transform="rotate(-0 608.256 336.515187)">1.12%</text>
+   </g>
+   <g id="text_35">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="733.7088" y="336.515187" transform="rotate(-0 733.7088 336.515187)">0.37%</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="859.1616" y="336.515187" transform="rotate(-0 859.1616 336.515187)">3.47%</text>
+   </g>
+   <g id="text_37">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="357.3504" y="382.211187" transform="rotate(-0 357.3504 382.211187)">1.11%</text>
+   </g>
+   <g id="text_38">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="482.8032" y="382.211187" transform="rotate(-0 482.8032 382.211187)">0.00%</text>
+   </g>
+   <g id="text_39">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="608.256" y="382.211187" transform="rotate(-0 608.256 382.211187)">0.83%</text>
+   </g>
+   <g id="text_40">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="733.7088" y="382.211187" transform="rotate(-0 733.7088 382.211187)">0.11%</text>
+   </g>
+   <g id="text_41">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152b43" x="859.1616" y="382.211187" transform="rotate(-0 859.1616 382.211187)">2.73%</text>
+   </g>
+  </g>
+  <g id="text_42">
+   <text style="font-weight: 700; font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="33.264" y="36.300563" transform="rotate(-0 33.264 36.300563)">Language and task change the answer</text>
+  </g>
+  <g id="text_43">
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #50647a" x="33.264" y="59.814406" transform="rotate(-0 33.264 59.814406)">Untouched spans (%) | lower is better | each column uses the same datasets for every row</text>
+  </g>
+  <g id="text_44">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(33.264 450.72225)">RU / secrets is one synthetic dataset. MULTI pools languages and may include English; it is not a per-language guarantee.</text>
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(33.264 460.800281)">Zero observed misses is not a guarantee. There is no MULTI / secrets dataset in this snapshot.</text>
+  </g>
+  <g id="text_45">
+   <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #50647a" x="917.136" y="479.808" transform="rotate(-0 917.136 479.808)">PII &amp; Secrets Benchmark | snapshot 2026-09-09</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa6c4a7758c">
+   <rect x="294.624" y="127.296" width="627.264" height="274.176"/>
+  </clipPath>
+ </defs>
+</svg>

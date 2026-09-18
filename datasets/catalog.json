@@ -1,0 +1,1389 @@
+[
+  {
+    "id": "alexen2",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 911,
+    "gold_spans": 1261,
+    "original_annotations": 1261,
+    "characters": 37262,
+    "negative_rows": 40,
+    "source": "https://huggingface.co/datasets/alexen2/pii-ner-ru-benchmark",
+    "license": "not specified",
+    "source_mode": "link",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "6327093544bff3010b4d15757c775081db2fd116a075c59cc8d106fb13480ee6",
+    "raw": {
+      "paths": [
+        "alexen2-pii-ner-ru-benchmark-test.parquet"
+      ],
+      "files": 1,
+      "bytes": 28509,
+      "sha256": "bcb7426ccd4f2893f3ac8eae5ddc050df89ed3bd391db933ed80499dec2288a5",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "CONTACT",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "alrosait",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 1500,
+    "gold_spans": 1862,
+    "original_annotations": 1862,
+    "characters": 274584,
+    "negative_rows": 340,
+    "source": "https://huggingface.co/datasets/alrosait/pii-synthetic-ru",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "9933acce56bcb3e2e620dc8eac3c92f53759109f96004a9a775687416478a47e",
+    "raw": {
+      "paths": [
+        "alrosait-pii-synthetic-ru.jsonl"
+      ],
+      "files": 1,
+      "bytes": 3197925,
+      "sha256": "d4028d3a97e1b0a5e22ad1c612792da1eec3708a8996859d49d5aad5eb040f4e",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "ameau01",
+    "lang": "en",
+    "kind": "pii",
+    "rows": 1452,
+    "gold_spans": 2242,
+    "original_annotations": 2242,
+    "characters": 376930,
+    "negative_rows": 702,
+    "source": "https://huggingface.co/datasets/ameau01/synthetic-it-support-tickets",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "8886698794f8444191abbbeaf8501d6860c9ca0b059aa87c3cd784d48d5fb167",
+    "raw": {
+      "paths": [
+        "it-support-tickets/train.parquet",
+        "it-support-tickets/pii.json",
+        "it-support-tickets/retention.json"
+      ],
+      "files": 3,
+      "bytes": 8777151,
+      "sha256": "8b43c6c381439005a3e044c6bbe7f4dbbb6b909827614d734702db8b3b2b364f",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "ACCOUNT",
+      "ADDRESS",
+      "CONTACT",
+      "NET",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "arthur-passwords",
+    "lang": "en",
+    "kind": "secrets",
+    "rows": 516,
+    "gold_spans": 280,
+    "original_annotations": 280,
+    "characters": 96393,
+    "negative_rows": 236,
+    "source": "https://huggingface.co/datasets/Arthur-AI/arthur_sensitive_data_password",
+    "license": "apache-2.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "7874a6d4917bae6eedf148847e59d3c660e63ca523401d59f228874cc238bf21",
+    "raw": {
+      "paths": [
+        "arthur-passwords/sensitive_data_password.csv"
+      ],
+      "files": 1,
+      "bytes": 205584,
+      "sha256": "c7e95b0755371845344497547fa1f53f3e35260ed1f5d24b865b522a61fd31c6",
+      "revision": "hf 930beccf2fb559827b33d5bcbb27aa62fd24d9d8"
+    },
+    "languages": {},
+    "groups": [
+      "SECRET"
+    ]
+  },
+  {
+    "id": "corrupt-hivetrace",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 1810,
+    "gold_spans": 1667,
+    "original_annotations": 1667,
+    "characters": 164420,
+    "negative_rows": 378,
+    "source": "https://huggingface.co/datasets/hivetrace/pii-bench",
+    "license": "apache-2.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": true,
+    "bench_sha256": "abf1968c07a3b45f41d4daf3ba478469f28dc3eed22f73a79d8d2063dfe94b02",
+    "raw": {
+      "paths": [
+        "hivetrace/domain-00000-of-00001.parquet",
+        "hivetrace/entity-00000-of-00001.parquet"
+      ],
+      "files": 2,
+      "bytes": 178474,
+      "sha256": "c9c6c89f114ecd175ec0ff4fb68f33b14dd89ae89ef230c19274db17f66ab452",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "CONTACT",
+      "ID",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "corrupt-redmadrobot",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 2841,
+    "gold_spans": 5531,
+    "original_annotations": 5614,
+    "characters": 598076,
+    "negative_rows": 371,
+    "source": "https://huggingface.co/datasets/redmadrobot-rnd/pii_benchmark",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": true,
+    "bench_sha256": "fb819ee2130ebdd7ddd77cfeb28d7f1d6c4ab9055d330ddc1ecdebfb1251c5fe",
+    "raw": {
+      "paths": [
+        "redmadrobot-test.csv"
+      ],
+      "files": 1,
+      "bytes": 3225069,
+      "sha256": "6357738bd5467a1afc2434fd640326c99fcf324199ef8e6ce4fae28b1ace6d52",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "CONTACT",
+      "ID",
+      "NET",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "corrupt-secrets-issues",
+    "lang": "en",
+    "kind": "secrets",
+    "rows": 500,
+    "gold_spans": 288,
+    "original_annotations": 288,
+    "characters": 1191638,
+    "negative_rows": 250,
+    "source": "https://zenodo.org/records/19622962",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": true,
+    "bench_sha256": "55e31bb746e07132b67074c1d3c2f6b87c1e92ea2163ebf1f66a3c90338b9d9b",
+    "raw": {
+      "paths": [
+        "issue-reports/test.csv",
+        "issue-reports/test_wild.csv"
+      ],
+      "files": 2,
+      "bytes": 40649503,
+      "sha256": "e6dc4664c8bf4e1dafa8b0ed9af94c4d8e73668e04cf3843fe288cace93605f8",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "SECRET"
+    ]
+  },
+  {
+    "id": "creddata",
+    "lang": "en",
+    "kind": "secrets",
+    "rows": 1477,
+    "gold_spans": 776,
+    "original_annotations": 777,
+    "characters": 268803,
+    "negative_rows": 727,
+    "source": "https://github.com/Samsung/CredData",
+    "license": "apache-2.0 (meta); file texts under their repositories' licenses",
+    "source_mode": "link",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "9f76e85fadeb3b3b9debaddf23129d958aa078fb42bad8d4e6fdd3d511f8c143",
+    "raw": {
+      "paths": [
+        "creddata/meta",
+        "creddata/data"
+      ],
+      "files": 11902,
+      "bytes": 1025732051,
+      "sha256": "ff21ed1e8b618d938a2dc34ddb58dd3be9f3f97798e8b7adac3d271ee66cffc7",
+      "revision": "git 859b44d175ee5b88e643642f7744503b1dd0f273"
+    },
+    "languages": {},
+    "groups": [
+      "SECRET"
+    ]
+  },
+  {
+    "id": "dialogpii-en",
+    "lang": "en",
+    "kind": "pii",
+    "rows": 147,
+    "gold_spans": 3087,
+    "original_annotations": 3089,
+    "characters": 569190,
+    "negative_rows": 1,
+    "source": "https://zenodo.org/records/20863452",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "08ee021a437cbdb6e2556de2dad686e5249eb9e670c9332d66199d3bde484aba",
+    "raw": {
+      "paths": [
+        "dialogpii/DialogPII.zip"
+      ],
+      "files": 1,
+      "bytes": 7105161,
+      "sha256": "8f4474381e7f8580a524ab7cd4908c152d3040ec891ed63b3ff9968ff3307163",
+      "revision": "zenodo.20863452"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "CONTACT",
+      "ID",
+      "NET",
+      "ORG",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "dialogpii-multi",
+    "lang": "multi",
+    "kind": "pii",
+    "rows": 500,
+    "gold_spans": 10345,
+    "original_annotations": 10372,
+    "characters": 1964464,
+    "negative_rows": 0,
+    "source": "https://zenodo.org/records/20863452",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "e6d0fe27b8b70046ded9edb3ff3492aaefff80fca71cf8af57f3f8f8dce5f2c6",
+    "raw": {
+      "paths": [
+        "dialogpii/DialogPII.zip"
+      ],
+      "files": 1,
+      "bytes": 7105161,
+      "sha256": "8f4474381e7f8580a524ab7cd4908c152d3040ec891ed63b3ff9968ff3307163",
+      "revision": "zenodo.20863452"
+    },
+    "languages": {
+      "AR": 50,
+      "DE": 50,
+      "FI": 50,
+      "FR": 50,
+      "HI": 50,
+      "IT": 50,
+      "PL": 50,
+      "PT": 50,
+      "SP": 50,
+      "TR": 50
+    },
+    "groups": [
+      "ADDRESS",
+      "CONTACT",
+      "ID",
+      "NET",
+      "ORG",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "factrueval",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 254,
+    "gold_spans": 7966,
+    "original_annotations": 8109,
+    "characters": 546618,
+    "negative_rows": 0,
+    "source": "https://github.com/dialogue-evaluation/factRuEval-2016",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "486ff0d216aeb6730848174fdfd40fa9deda837cd3054e00192755ec75eea018",
+    "raw": {
+      "paths": [
+        "factrueval-2016/devset",
+        "factrueval-2016/testset"
+      ],
+      "files": 1525,
+      "bytes": 4915456,
+      "sha256": "6594b4341b1918f62a1552a5605d6ed088f63f935649a0c8f8c53c3c750f0edd",
+      "revision": "git dfe96237fce79fde13b2021d1938587e4ea3042e"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "ORG",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "gretel-multi",
+    "lang": "multi",
+    "kind": "pii",
+    "rows": 697,
+    "gold_spans": 4484,
+    "original_annotations": 4544,
+    "characters": 916566,
+    "negative_rows": 18,
+    "source": "https://huggingface.co/datasets/gretelai/synthetic_pii_finance_multilingual",
+    "license": "apache-2.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "cd9842f26cc77190d19c4c9955fc7bb8541621be49d1baddcee01e76e57c1f5c",
+    "raw": {
+      "paths": [
+        "gretel-finance-test.parquet"
+      ],
+      "files": 1,
+      "bytes": 5422540,
+      "sha256": "ecd69704657a457eff12023c99a2864e7210249fb5b2aa437e487b1f0c35109f",
+      "revision": "-"
+    },
+    "languages": {
+      "en": 370,
+      "de": 63,
+      "sv": 60,
+      "es": 59,
+      "nl": 55,
+      "it": 46,
+      "fr": 44
+    },
+    "groups": [
+      "ACCOUNT",
+      "ADDRESS",
+      "CONTACT",
+      "DATE",
+      "ID",
+      "NET",
+      "ORG",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "hivetrace",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 1810,
+    "gold_spans": 1667,
+    "original_annotations": 1667,
+    "characters": 158283,
+    "negative_rows": 378,
+    "source": "https://huggingface.co/datasets/hivetrace/pii-bench",
+    "license": "apache-2.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "5f320646fd24ffedf90a1d76b1fac1db726cc2344cf55852bcd19122550620c6",
+    "raw": {
+      "paths": [
+        "hivetrace/domain-00000-of-00001.parquet",
+        "hivetrace/entity-00000-of-00001.parquet"
+      ],
+      "files": 2,
+      "bytes": 178474,
+      "sha256": "c9c6c89f114ecd175ec0ff4fb68f33b14dd89ae89ef230c19274db17f66ab452",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "CONTACT",
+      "ID",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "jayguard",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 850,
+    "gold_spans": 1195,
+    "original_annotations": 1853,
+    "characters": 427476,
+    "negative_rows": 170,
+    "source": "https://huggingface.co/datasets/just-ai/jayguard-ner-benchmark",
+    "license": "mit (yaml) / apache-2.0 (card text)",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "a3bb65baeb47493b584aa839ad4971bf52c7ab037db13f2fe01123475722fb51",
+    "raw": {
+      "paths": [
+        "jayguard/train.parquet"
+      ],
+      "files": 1,
+      "bytes": 325452,
+      "sha256": "799117ed65592eb1ef1b2ad185e4d717025c7398888e7d06e4818aa3f70e9817",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "kiji-en",
+    "lang": "en",
+    "kind": "pii",
+    "rows": 1000,
+    "gold_spans": 7623,
+    "original_annotations": 7681,
+    "characters": 385103,
+    "negative_rows": 0,
+    "source": "https://huggingface.co/datasets/DataikuNLP/kiji-pii-training-data",
+    "license": "apache-2.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "f6bbae4ca5327b7fc57a7db1a0f848432900cda68856cc92d5e95aa3be985bf9",
+    "raw": {
+      "paths": [
+        "kiji/data/test-00000-of-00001.parquet"
+      ],
+      "files": 1,
+      "bytes": 2013107,
+      "sha256": "25248ef7cbb7318fe63b99d46c63cc25e356afcbd8c9d3c189c89a56c03eb09a",
+      "revision": "hf 0275550f0b1f1b8f2dc9356fd31ac1c788b8228b"
+    },
+    "languages": {},
+    "groups": [
+      "ACCOUNT",
+      "ADDRESS",
+      "CONTACT",
+      "DATE",
+      "ID",
+      "NET",
+      "ORG",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "kiji-multi",
+    "lang": "multi",
+    "kind": "pii",
+    "rows": 1000,
+    "gold_spans": 7565,
+    "original_annotations": 7677,
+    "characters": 447991,
+    "negative_rows": 0,
+    "source": "https://huggingface.co/datasets/DataikuNLP/kiji-pii-training-data",
+    "license": "apache-2.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "2223b43dc4894e36e7a0f2a40e892596067644c5bfd7294f23deb32ce179a1f9",
+    "raw": {
+      "paths": [
+        "kiji/data/test-00000-of-00001.parquet"
+      ],
+      "files": 1,
+      "bytes": 2013107,
+      "sha256": "25248ef7cbb7318fe63b99d46c63cc25e356afcbd8c9d3c189c89a56c03eb09a",
+      "revision": "hf 0275550f0b1f1b8f2dc9356fd31ac1c788b8228b"
+    },
+    "languages": {
+      "Danish": 189,
+      "Dutch": 199,
+      "French": 200,
+      "German": 204,
+      "Spanish": 208
+    },
+    "groups": [
+      "ACCOUNT",
+      "ADDRESS",
+      "CONTACT",
+      "DATE",
+      "ID",
+      "NET",
+      "ORG",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "leak-museum",
+    "lang": "en",
+    "kind": "secrets",
+    "rows": 97,
+    "gold_spans": 101,
+    "original_annotations": 101,
+    "characters": 75730,
+    "negative_rows": 45,
+    "source": "https://github.com/printemps-tokyo/leak-museum",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "8938b8d88dd5d9c71eba942a997a301ce7ce4f63c50530d46be3c87e597618cd",
+    "raw": {
+      "paths": [
+        "leak-museum"
+      ],
+      "files": 97,
+      "bytes": 76018,
+      "sha256": "c8482616c957c70bde33181ad23c286371c3550b6ae7ea8d26a144e25c76df5c",
+      "revision": "git 6b1483a00cfa7bb47551b7304c1e2d4bc9a3a919"
+    },
+    "languages": {},
+    "groups": [
+      "SECRET"
+    ]
+  },
+  {
+    "id": "leaky-repo",
+    "lang": "en",
+    "kind": "secrets",
+    "rows": 59,
+    "gold_spans": 95,
+    "original_annotations": 95,
+    "characters": 62972,
+    "negative_rows": 16,
+    "source": "https://github.com/Plazmaz/leaky-repo",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "74306c052ae23195b34cfa948eee8abbe2bf6df7cb4e13c9c7588f8714fce729",
+    "raw": {
+      "paths": [
+        "leaky-repo"
+      ],
+      "files": 61,
+      "bytes": 587263,
+      "sha256": "dc7eecdf83bb3b823d8628b12ae8ed9cb906ae8770bf202a0e1f48989068030f",
+      "revision": "git 2e951359cac53addbee56437da3ffb546e3dfe24"
+    },
+    "languages": {},
+    "groups": [
+      "SECRET"
+    ]
+  },
+  {
+    "id": "multiconer-ru",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 1500,
+    "gold_spans": 1208,
+    "original_annotations": 1216,
+    "characters": 87200,
+    "negative_rows": 420,
+    "source": "https://huggingface.co/datasets/tomaarsen/MultiCoNER",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "8753773d33eb8914e66f3b4c9f839939e2a97931382dff08fd63470577ca8d4a",
+    "raw": {
+      "paths": [
+        "multiconer-v1/RU-Russian/ru_test.conll"
+      ],
+      "files": 1,
+      "bytes": 49418863,
+      "sha256": "60e9bab5c186723772368b23fa7e7d5baefcfe9a6b93d1cfc794d025ad8020e3",
+      "revision": "hf 04fafbabb7a36defcfd400ed2fe5504c10fdf4ab"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "ORG",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "nemotron-pii",
+    "lang": "en",
+    "kind": "pii",
+    "rows": 1491,
+    "gold_spans": 9391,
+    "original_annotations": 9393,
+    "characters": 1459456,
+    "negative_rows": 5,
+    "source": "https://huggingface.co/datasets/nvidia/Nemotron-PII",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "cb0d0271e59249dd530bef9e681626fb1ee90cce326247d5b7bbc42b371e01dc",
+    "raw": {
+      "paths": [
+        "nemotron-pii/data/test-00000-of-00001.parquet"
+      ],
+      "files": 1,
+      "bytes": 150968398,
+      "sha256": "e7754e14ed73c207c338c4f61602a066292f4ffdaf32dfdcc35c0250ccb21f4b",
+      "revision": "hf b70ffaf5ff39e079776134c5bf4381f00a9fd1ed"
+    },
+    "languages": {},
+    "groups": [
+      "ACCOUNT",
+      "ADDRESS",
+      "CONTACT",
+      "DATE",
+      "ID",
+      "NET",
+      "ORG",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "nerel",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 933,
+    "gold_spans": 24369,
+    "original_annotations": 25702,
+    "characters": 1510956,
+    "negative_rows": 0,
+    "source": "https://huggingface.co/datasets/iluvvatar/NEREL",
+    "license": "not specified",
+    "source_mode": "link",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "5cf20208ee694adafe8dc1766052958be944ad09b39ea95ca8effd04d93f86cf",
+    "raw": {
+      "paths": [
+        "nerel/train.jsonl",
+        "nerel/dev.jsonl",
+        "nerel/test.jsonl"
+      ],
+      "files": 3,
+      "bytes": 9459188,
+      "sha256": "95fbdae7b385e0a653f4316fc1a3e7e38fb9ca4244048b73fd2c3b2693774e5b",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "ORG",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "nym-en",
+    "lang": "en",
+    "kind": "pii",
+    "rows": 734,
+    "gold_spans": 3584,
+    "original_annotations": 3590,
+    "characters": 215898,
+    "negative_rows": 149,
+    "source": "https://huggingface.co/datasets/Wismut/nym-pii-multilingual-data",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "08361ff1a0d4380a89f37045b041d3e604ebc61d7ebb287ae0cf17b595d48c66",
+    "raw": {
+      "paths": [
+        "nym-pii-test.jsonl",
+        "nym-pii-validation.jsonl"
+      ],
+      "files": 2,
+      "bytes": 46635286,
+      "sha256": "48a4f2c0cd3a3cd664138323746079eb2f9e80efbc14f4f0287c86c17b562309",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "ACCOUNT",
+      "ADDRESS",
+      "CONTACT",
+      "DATE",
+      "ID",
+      "NET",
+      "ORG",
+      "OTHER",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "nym-multi",
+    "lang": "multi",
+    "kind": "pii",
+    "rows": 1500,
+    "gold_spans": 8169,
+    "original_annotations": 8209,
+    "characters": 391219,
+    "negative_rows": 7,
+    "source": "https://huggingface.co/datasets/Wismut/nym-pii-multilingual-data",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "667ecddc72c43b3dc9333542652fcedfeb2eed93fb9087beadb1113a079dd50c",
+    "raw": {
+      "paths": [
+        "nym-pii-test.jsonl",
+        "nym-pii-validation.jsonl"
+      ],
+      "files": 2,
+      "bytes": 46635286,
+      "sha256": "48a4f2c0cd3a3cd664138323746079eb2f9e80efbc14f4f0287c86c17b562309",
+      "revision": "-"
+    },
+    "languages": {
+      "pt": 124,
+      "es": 106,
+      "ar": 94,
+      "zh": 93,
+      "it": 89,
+      "da": 89,
+      "fr": 83,
+      "ja": 82,
+      "ko": 75,
+      "ro": 73,
+      "de": 68,
+      "?": 60,
+      "el": 58,
+      "pl": 57,
+      "uk": 57,
+      "nl": 56,
+      "fi": 51,
+      "cs": 50,
+      "tr": 49,
+      "hi": 43,
+      "sv": 41,
+      "hu": 2
+    },
+    "groups": [
+      "ACCOUNT",
+      "ADDRESS",
+      "CONTACT",
+      "DATE",
+      "ID",
+      "NET",
+      "ORG",
+      "OTHER",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "nym-ru",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 1500,
+    "gold_spans": 9497,
+    "original_annotations": 9499,
+    "characters": 601331,
+    "negative_rows": 0,
+    "source": "https://huggingface.co/datasets/Wismut/nym-pii-multilingual-data",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "387cdcf699dd13dc607ec2e4ad0a26a11cb1f59d68a164e523b33a709d7aa7e5",
+    "raw": {
+      "paths": [
+        "nym-pii-test.jsonl",
+        "nym-pii-validation.jsonl"
+      ],
+      "files": 2,
+      "bytes": 46635286,
+      "sha256": "48a4f2c0cd3a3cd664138323746079eb2f9e80efbc14f4f0287c86c17b562309",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "ACCOUNT",
+      "ADDRESS",
+      "CONTACT",
+      "DATE",
+      "ID",
+      "NET",
+      "ORG",
+      "OTHER",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "privy",
+    "lang": "en",
+    "kind": "pii",
+    "rows": 1500,
+    "gold_spans": 1899,
+    "original_annotations": 1908,
+    "characters": 467860,
+    "negative_rows": 530,
+    "source": "https://huggingface.co/datasets/beki/privy",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "1d260f2afd12a906091c86aebef5dbaf4bca336e4d66cfb330b7cc3eb2b35035",
+    "raw": {
+      "paths": [
+        "privy/privy-dataset.zip"
+      ],
+      "files": 1,
+      "bytes": 307518080,
+      "sha256": "a5786ae8e9ce506e43c3b4be9efdd51f62ebc179c81593b64ca3d1483d666f44",
+      "revision": "hf dc137a6a976f6b5bb8768e9bb51ec58df930ccd1"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "CONTACT",
+      "ID",
+      "NET",
+      "ORG",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "redact-multi",
+    "lang": "multi",
+    "kind": "pii",
+    "rows": 1000,
+    "gold_spans": 22864,
+    "original_annotations": 23027,
+    "characters": 1962299,
+    "negative_rows": 0,
+    "source": "https://huggingface.co/datasets/guneeshv/REDACT-PII-Benchmark",
+    "license": "other (gated, terms accepted)",
+    "source_mode": "link",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "8f2029fadbbc299edd3df78588c11b297059eb8cf854464faa8a476f977d129e",
+    "raw": {
+      "paths": [
+        "redact/pii_benchmark_full.json"
+      ],
+      "files": 1,
+      "bytes": 213278031,
+      "sha256": "9f25df80d89e0a1bc937f066ea75b37948fd42a3098de34b6ee2079f6ecf9348",
+      "revision": "hf 1d7fef611cbaad42ba19666e7d7238ed45b264dd"
+    },
+    "languages": {
+      "NO": 60,
+      "ES": 58,
+      "HU": 49,
+      "TH": 48,
+      "FR": 47,
+      "NL": 45,
+      "HE": 45,
+      "EN": 45,
+      "DA": 44,
+      "HI": 44,
+      "IT": 43,
+      "SV": 43,
+      "ZH_TW": 42,
+      "TR": 40,
+      "FR_CA": 39,
+      "JA": 38,
+      "AR": 37,
+      "KO": 36,
+      "FI": 35,
+      "PT_BR": 34,
+      "ZH_CN": 34,
+      "DE": 34,
+      "CS": 30,
+      "PT_EU": 30
+    },
+    "groups": [
+      "ACCOUNT",
+      "ADDRESS",
+      "CONTACT",
+      "DATE",
+      "ID",
+      "NET",
+      "ORG",
+      "OTHER",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "redact-ru",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 500,
+    "gold_spans": 9230,
+    "original_annotations": 9284,
+    "characters": 860595,
+    "negative_rows": 1,
+    "source": "https://huggingface.co/datasets/guneeshv/REDACT-PII-Benchmark",
+    "license": "other (gated, terms accepted)",
+    "source_mode": "link",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "5da378db18a5a170f5b948bed34a9d8cb63ea8c813524590b0227b210f0288e8",
+    "raw": {
+      "paths": [
+        "redact/pii_benchmark_full.json"
+      ],
+      "files": 1,
+      "bytes": 213278031,
+      "sha256": "9f25df80d89e0a1bc937f066ea75b37948fd42a3098de34b6ee2079f6ecf9348",
+      "revision": "hf 1d7fef611cbaad42ba19666e7d7238ed45b264dd"
+    },
+    "languages": {},
+    "groups": [
+      "ACCOUNT",
+      "ADDRESS",
+      "CONTACT",
+      "DATE",
+      "ID",
+      "NET",
+      "ORG",
+      "OTHER",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "redmadrobot",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 2841,
+    "gold_spans": 5516,
+    "original_annotations": 5614,
+    "characters": 576873,
+    "negative_rows": 371,
+    "source": "https://huggingface.co/datasets/redmadrobot-rnd/pii_benchmark",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "e44d06b1eebed4e4e62264a64ef086f65bde67620b2386bbc39a63aaeea64976",
+    "raw": {
+      "paths": [
+        "redmadrobot-test.csv"
+      ],
+      "files": 1,
+      "bytes": 3225069,
+      "sha256": "6357738bd5467a1afc2434fd640326c99fcf324199ef8e6ce4fae28b1ace6d52",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "CONTACT",
+      "ID",
+      "NET",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "rubai-ru",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 1500,
+    "gold_spans": 3458,
+    "original_annotations": 3458,
+    "characters": 362298,
+    "negative_rows": 0,
+    "source": "https://huggingface.co/datasets/islomov/rubai-NER-150K-Personal",
+    "license": "apache-2.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "53cc1d721ccf5ff6e7536e24ce36c10a8e8785f3d67895278762fe7eb48d8f5a",
+    "raw": {
+      "paths": [
+        "rubai/data.jsonl"
+      ],
+      "files": 1,
+      "bytes": 132949759,
+      "sha256": "f416eef1e635706ebba7ca42211364577224146ee4bfbc4e6476bd0bc139ef16",
+      "revision": "hf 05f279e6dd8ee50e43f2a4e55bdac05d847983de"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "CONTACT",
+      "ID",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "russian-pii-66k",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 1500,
+    "gold_spans": 4805,
+    "original_annotations": 4805,
+    "characters": 195840,
+    "negative_rows": 0,
+    "source": "https://huggingface.co/datasets/wolframko/russian-pii-66k",
+    "license": "not specified",
+    "source_mode": "link",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "236215a5d62efb77ae14042233600252aefc1628c563a8be12f6699e67bcffa4",
+    "raw": {
+      "paths": [
+        "train-00000-of-00001.parquet"
+      ],
+      "files": 1,
+      "bytes": 10684761,
+      "sha256": "88f5917964c583d338a9bc4df7f8e073e477cec99bd7be9907cf4836bfce7454",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "ACCOUNT",
+      "ADDRESS",
+      "CONTACT",
+      "DATE",
+      "ID",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "scanpatch",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 1500,
+    "gold_spans": 8708,
+    "original_annotations": 8816,
+    "characters": 521056,
+    "negative_rows": 171,
+    "source": "https://huggingface.co/datasets/scanpatch/pii-ner-corpus-synthetic-controlled",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "f5386c954e2d13f089ee480dc8c0eec22daa55ae2744716a07a6eae30d48ebd9",
+    "raw": {
+      "paths": [
+        "scanpatch/train.parquet",
+        "scanpatch/test.parquet"
+      ],
+      "files": 2,
+      "bytes": 2555012,
+      "sha256": "a978675ec32faf0f16c7ad7c53278cd2efd9d38aaed2493dafad0968352c333e",
+      "revision": "-"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "CONTACT",
+      "ID",
+      "NET",
+      "ORG",
+      "OTHER",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "secrets-issues",
+    "lang": "en",
+    "kind": "secrets",
+    "rows": 500,
+    "gold_spans": 288,
+    "original_annotations": 288,
+    "characters": 1168779,
+    "negative_rows": 250,
+    "source": "https://zenodo.org/records/19622962",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "686e316bfdf848efa6514951f3f128d673b768cb22e703c532a405bb98f6e44d",
+    "raw": {
+      "paths": [
+        "issue-reports/test.csv",
+        "issue-reports/test_wild.csv"
+      ],
+      "files": 2,
+      "bytes": 40649503,
+      "sha256": "e6dc4664c8bf4e1dafa8b0ed9af94c4d8e73668e04cf3843fe288cace93605f8",
+      "revision": "zenodo.19622962"
+    },
+    "languages": {},
+    "groups": [
+      "SECRET"
+    ]
+  },
+  {
+    "id": "secrets-rules",
+    "lang": "en",
+    "kind": "secrets",
+    "rows": 1496,
+    "gold_spans": 746,
+    "original_annotations": 746,
+    "characters": 113154,
+    "negative_rows": 750,
+    "source": "https://github.com/gitleaks/gitleaks + https://github.com/betterleaks/betterleaks (rule test cases)",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "c8674a586411283af9fc60cca421ef5fe18068f1cb68c656ff9868d7309cf098",
+    "raw": {
+      "paths": [
+        "secret-rules/gitleaks_tpfp.jsonl",
+        "secret-rules/betterleaks_tpfp.jsonl"
+      ],
+      "files": 2,
+      "bytes": 10867127,
+      "sha256": "a3bb3c35417e323db4525d60254a6d779d9b16d0cd6c20a4b3d20acc71a4a782",
+      "revision": "gitleaks b58d3f10, betterleaks 95237cf8"
+    },
+    "languages": {},
+    "groups": [
+      "SECRET"
+    ]
+  },
+  {
+    "id": "synth-env-configs",
+    "lang": "en",
+    "kind": "secrets",
+    "rows": 400,
+    "gold_spans": 392,
+    "original_annotations": 392,
+    "characters": 201057,
+    "negative_rows": 200,
+    "source": "generated by SCRIPTS/synth.py, seed 0",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": true,
+    "corrupted": false,
+    "bench_sha256": "70f9e6424afa28f5f2469cd230be9ec81bb4b2014e0f093c78892d3513c431d9",
+    "raw": null,
+    "languages": {},
+    "groups": [
+      "SECRET"
+    ]
+  },
+  {
+    "id": "synth-jira-comments",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 300,
+    "gold_spans": 2705,
+    "original_annotations": 2705,
+    "characters": 201437,
+    "negative_rows": 0,
+    "source": "generated by SCRIPTS/synth.py, seed 0",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": true,
+    "corrupted": false,
+    "bench_sha256": "8e111bf354e8f9b17aa0399653c24506836cc6f35b29eae7887ee18ca076389a",
+    "raw": null,
+    "languages": {},
+    "groups": [
+      "ACCOUNT",
+      "CONTACT",
+      "NET",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "synth-ru-tickets",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 400,
+    "gold_spans": 32099,
+    "original_annotations": 32099,
+    "characters": 1714199,
+    "negative_rows": 0,
+    "source": "generated by SCRIPTS/synth.py, seed 0",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": true,
+    "corrupted": false,
+    "bench_sha256": "6645bf6341bf283cbce2302b021c6f9a3eb8caab4df2f30a089e547f4017f8f4",
+    "raw": null,
+    "languages": {},
+    "groups": [
+      "ACCOUNT",
+      "ADDRESS",
+      "CONTACT",
+      "NET",
+      "ORG",
+      "PERSON",
+      "SECRET"
+    ]
+  },
+  {
+    "id": "synth-secrets-en",
+    "lang": "en",
+    "kind": "secrets",
+    "rows": 600,
+    "gold_spans": 581,
+    "original_annotations": 581,
+    "characters": 273798,
+    "negative_rows": 300,
+    "source": "generated by SCRIPTS/synth.py, seed 0",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": true,
+    "corrupted": false,
+    "bench_sha256": "6237765ef7133cceed2a400420abd0b548f72057ba234813d5cc8aab409db37e",
+    "raw": null,
+    "languages": {},
+    "groups": [
+      "SECRET"
+    ]
+  },
+  {
+    "id": "synth-secrets-ru",
+    "lang": "ru",
+    "kind": "secrets",
+    "rows": 600,
+    "gold_spans": 581,
+    "original_annotations": 581,
+    "characters": 274241,
+    "negative_rows": 300,
+    "source": "generated by SCRIPTS/synth.py, seed 0",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": true,
+    "corrupted": false,
+    "bench_sha256": "50a41a2e369a113cccc1ff85653cd0e043807361d60acb47d21047f79c28e74b",
+    "raw": null,
+    "languages": {},
+    "groups": [
+      "SECRET"
+    ]
+  },
+  {
+    "id": "synth-wiki-tables",
+    "lang": "ru",
+    "kind": "pii",
+    "rows": 300,
+    "gold_spans": 13094,
+    "original_annotations": 13094,
+    "characters": 402095,
+    "negative_rows": 0,
+    "source": "generated by SCRIPTS/synth.py, seed 0",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": true,
+    "corrupted": false,
+    "bench_sha256": "0a1459c9aea9c8fbf72e129dbb06f36ceb23a4363b2f37073240e4a50c3ddf9e",
+    "raw": null,
+    "languages": {},
+    "groups": [
+      "ACCOUNT",
+      "CONTACT",
+      "NET",
+      "ORG",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "tab-echr",
+    "lang": "en",
+    "kind": "pii",
+    "rows": 127,
+    "gold_spans": 3830,
+    "original_annotations": 3834,
+    "characters": 647638,
+    "negative_rows": 0,
+    "source": "https://huggingface.co/datasets/ildpil/text-anonymization-benchmark",
+    "license": "mit",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "28fb0b2d32aae2bcf82a9cd339529fedd4a6b0d380bdaeb9129ca497c6d075bb",
+    "raw": {
+      "paths": [
+        "tab-echr/echr_test.zip"
+      ],
+      "files": 1,
+      "bytes": 1208410,
+      "sha256": "53ff256f6aca81a3bb3b3297b2ad8bb1a42d6e3efedcc767ef076b928793d9d7",
+      "revision": "hf 1f22ce098996054689b5b331fb20b3a74a78e1c5"
+    },
+    "languages": {},
+    "groups": [
+      "ADDRESS",
+      "ID",
+      "ORG",
+      "PERSON"
+    ]
+  },
+  {
+    "id": "tonicai",
+    "lang": "en",
+    "kind": "pii",
+    "rows": 1500,
+    "gold_spans": 2417,
+    "original_annotations": 2426,
+    "characters": 259595,
+    "negative_rows": 440,
+    "source": "https://huggingface.co/datasets/TonicAI/Privacy-Bench",
+    "license": "cc-by-4.0",
+    "source_mode": "files",
+    "synthetic": false,
+    "corrupted": false,
+    "bench_sha256": "11db4676fe1b48fd00da2d6c89f2c7b74be4c526219abbce635234bc38692056",
+    "raw": {
+      "paths": [
+        "tonicai-privacy-bench/ground_truth",
+        "tonicai-privacy-bench/tasks"
+      ],
+      "files": 63,
+      "bytes": 23466479,
+      "sha256": "dccd5c928de40a72af8a775bf46f44cb9a9ac2cb2b75ef5443918f70fac702b1",
+      "revision": "hf 5267775f27ab174fe93f64e20b2e14e5db17937b"
+    },
+    "languages": {},
+    "groups": [
+      "ACCOUNT",
+      "CONTACT",
+      "ORG",
+      "PERSON"
+    ]
+  }
+]

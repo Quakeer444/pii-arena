@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this benchmark version when using its measurements."
+type: software
+title: "PII & Secrets Detection Benchmark: Russian, English and Multilingual"
+authors:
+  - name: Quakeer444
+version: 1.0.2
+date-released: 2026-09-18
+license: MIT
+abstract: "A frozen comparison of PII and secret detectors across 41 datasets, including coverage, masking quality and CPU/GPU throughput."
+notes: "Measurements come from the frozen 2026-09-09 experiment. Code version and result revision are recorded separately in results/snapshot.json (`experiment_date`, `code_version`, `result_revision`)."
+keywords:
+  - pii
+  - secret-detection
+  - benchmark
+  - russian
+  - multilingual

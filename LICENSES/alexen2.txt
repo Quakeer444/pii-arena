@@ -1,0 +1,11 @@
+Source: https://huggingface.co/datasets/alexen2/pii-ner-ru-benchmark
+Recorded terms: Not specified
+Authors / rights holders: alexen2; no author name stated in the archived card
+Source audit date: 2026-09-05
+Publication: source references and aggregate results; no corpus text
+Evidence: No source license was found.
+Benchmark changes: row selection and conversion to character offsets; mechanical corruption where explicitly marked. Scoring also normalizes span boundaries.
+
+------------------------------------------------------------------------
+
+No license text was available in the recorded source audit. No corpus files are redistributed. Consult the source owner for reuse permissions.

@@ -1,0 +1,616 @@
+composition,members,votes,dataset,lang,kind,status,missed,gold_spans
+gitleaks,gitleaks,1,alexen2,ru,pii,missing,,1261
+gitleaks,gitleaks,1,alrosait,ru,pii,ok,1862,1862
+gitleaks,gitleaks,1,ameau01,en,pii,missing,,2242
+gitleaks,gitleaks,1,arthur-passwords,en,secrets,missing,,280
+gitleaks,gitleaks,1,corrupt-hivetrace,ru,pii,missing,,1667
+gitleaks,gitleaks,1,corrupt-redmadrobot,ru,pii,missing,,5531
+gitleaks,gitleaks,1,corrupt-secrets-issues,en,secrets,missing,,288
+gitleaks,gitleaks,1,creddata,en,secrets,missing,,776
+gitleaks,gitleaks,1,dialogpii-en,en,pii,missing,,3087
+gitleaks,gitleaks,1,dialogpii-multi,multi,pii,missing,,10345
+gitleaks,gitleaks,1,factrueval,ru,pii,missing,,7966
+gitleaks,gitleaks,1,gretel-multi,multi,pii,missing,,4484
+gitleaks,gitleaks,1,hivetrace,ru,pii,ok,1650,1667
+gitleaks,gitleaks,1,jayguard,ru,pii,ok,1195,1195
+gitleaks,gitleaks,1,kiji-en,en,pii,missing,,7623
+gitleaks,gitleaks,1,kiji-multi,multi,pii,missing,,7565
+gitleaks,gitleaks,1,leak-museum,en,secrets,missing,,101
+gitleaks,gitleaks,1,leaky-repo,en,secrets,ok,73,95
+gitleaks,gitleaks,1,multiconer-ru,ru,pii,missing,,1208
+gitleaks,gitleaks,1,nemotron-pii,en,pii,missing,,9391
+gitleaks,gitleaks,1,nerel,ru,pii,missing,,24369
+gitleaks,gitleaks,1,nym-en,en,pii,missing,,3584
+gitleaks,gitleaks,1,nym-multi,multi,pii,missing,,8169
+gitleaks,gitleaks,1,nym-ru,ru,pii,ok,9497,9497
+gitleaks,gitleaks,1,privy,en,pii,missing,,1899
+gitleaks,gitleaks,1,redact-multi,multi,pii,missing,,22864
+gitleaks,gitleaks,1,redact-ru,ru,pii,missing,,9230
+gitleaks,gitleaks,1,redmadrobot,ru,pii,ok,5516,5516
+gitleaks,gitleaks,1,rubai-ru,ru,pii,missing,,3458
+gitleaks,gitleaks,1,russian-pii-66k,ru,pii,ok,4805,4805
+gitleaks,gitleaks,1,scanpatch,ru,pii,ok,8708,8708
+gitleaks,gitleaks,1,secrets-issues,en,secrets,ok,130,288
+gitleaks,gitleaks,1,secrets-rules,en,secrets,train,,746
+gitleaks,gitleaks,1,synth-env-configs,en,secrets,missing,,392
+gitleaks,gitleaks,1,synth-jira-comments,ru,pii,missing,,2705
+gitleaks,gitleaks,1,synth-ru-tickets,ru,pii,missing,,32099
+gitleaks,gitleaks,1,synth-secrets-en,en,secrets,missing,,581
+gitleaks,gitleaks,1,synth-secrets-ru,ru,secrets,missing,,581
+gitleaks,gitleaks,1,synth-wiki-tables,ru,pii,missing,,13094
+gitleaks,gitleaks,1,tab-echr,en,pii,missing,,3830
+gitleaks,gitleaks,1,tonicai,en,pii,missing,,2417
+pplx,pplx,1,alexen2,ru,pii,ok,66,1261
+pplx,pplx,1,alrosait,ru,pii,ok,10,1862
+pplx,pplx,1,ameau01,en,pii,ok,393,2242
+pplx,pplx,1,arthur-passwords,en,secrets,ok,0,280
+pplx,pplx,1,corrupt-hivetrace,ru,pii,ok,58,1667
+pplx,pplx,1,corrupt-redmadrobot,ru,pii,ok,748,5531
+pplx,pplx,1,corrupt-secrets-issues,en,secrets,ok,12,288
+pplx,pplx,1,creddata,en,secrets,ok,45,776
+pplx,pplx,1,dialogpii-en,en,pii,ok,744,3087
+pplx,pplx,1,dialogpii-multi,multi,pii,ok,3017,10345
+pplx,pplx,1,factrueval,ru,pii,ok,6964,7966
+pplx,pplx,1,gretel-multi,multi,pii,ok,818,4484
+pplx,pplx,1,hivetrace,ru,pii,ok,45,1667
+pplx,pplx,1,jayguard,ru,pii,ok,197,1195
+pplx,pplx,1,kiji-en,en,pii,ok,310,7623
+pplx,pplx,1,kiji-multi,multi,pii,ok,318,7565
+pplx,pplx,1,leak-museum,en,secrets,ok,17,101
+pplx,pplx,1,leaky-repo,en,secrets,ok,7,95
+pplx,pplx,1,multiconer-ru,ru,pii,ok,975,1208
+pplx,pplx,1,nemotron-pii,en,pii,ok,1149,9391
+pplx,pplx,1,nerel,ru,pii,ok,21282,24369
+pplx,pplx,1,nym-en,en,pii,ok,138,3584
+pplx,pplx,1,nym-multi,multi,pii,ok,227,8169
+pplx,pplx,1,nym-ru,ru,pii,ok,374,9497
+pplx,pplx,1,privy,en,pii,ok,96,1899
+pplx,pplx,1,redact-multi,multi,pii,ok,2427,22864
+pplx,pplx,1,redact-ru,ru,pii,ok,881,9230
+pplx,pplx,1,redmadrobot,ru,pii,ok,775,5516
+pplx,pplx,1,rubai-ru,ru,pii,ok,16,3458
+pplx,pplx,1,russian-pii-66k,ru,pii,ok,11,4805
+pplx,pplx,1,scanpatch,ru,pii,ok,1084,8708
+pplx,pplx,1,secrets-issues,en,secrets,ok,12,288
+pplx,pplx,1,secrets-rules,en,secrets,ok,29,746
+pplx,pplx,1,synth-env-configs,en,secrets,ok,0,392
+pplx,pplx,1,synth-jira-comments,ru,pii,ok,2,2705
+pplx,pplx,1,synth-ru-tickets,ru,pii,ok,849,32099
+pplx,pplx,1,synth-secrets-en,en,secrets,ok,1,581
+pplx,pplx,1,synth-secrets-ru,ru,secrets,ok,0,581
+pplx,pplx,1,synth-wiki-tables,ru,pii,ok,734,13094
+pplx,pplx,1,tab-echr,en,pii,ok,2314,3830
+pplx,pplx,1,tonicai,en,pii,ok,502,2417
+gitleaks+pplx,gitleaks + pplx,1,alexen2,ru,pii,missing,,1261
+gitleaks+pplx,gitleaks + pplx,1,alrosait,ru,pii,ok,10,1862
+gitleaks+pplx,gitleaks + pplx,1,ameau01,en,pii,missing,,2242
+gitleaks+pplx,gitleaks + pplx,1,arthur-passwords,en,secrets,missing,,280
+gitleaks+pplx,gitleaks + pplx,1,corrupt-hivetrace,ru,pii,missing,,1667
+gitleaks+pplx,gitleaks + pplx,1,corrupt-redmadrobot,ru,pii,missing,,5531
+gitleaks+pplx,gitleaks + pplx,1,corrupt-secrets-issues,en,secrets,missing,,288
+gitleaks+pplx,gitleaks + pplx,1,creddata,en,secrets,missing,,776
+gitleaks+pplx,gitleaks + pplx,1,dialogpii-en,en,pii,missing,,3087
+gitleaks+pplx,gitleaks + pplx,1,dialogpii-multi,multi,pii,missing,,10345
+gitleaks+pplx,gitleaks + pplx,1,factrueval,ru,pii,missing,,7966
+gitleaks+pplx,gitleaks + pplx,1,gretel-multi,multi,pii,missing,,4484
+gitleaks+pplx,gitleaks + pplx,1,hivetrace,ru,pii,ok,45,1667
+gitleaks+pplx,gitleaks + pplx,1,jayguard,ru,pii,ok,197,1195
+gitleaks+pplx,gitleaks + pplx,1,kiji-en,en,pii,missing,,7623
+gitleaks+pplx,gitleaks + pplx,1,kiji-multi,multi,pii,missing,,7565
+gitleaks+pplx,gitleaks + pplx,1,leak-museum,en,secrets,missing,,101
+gitleaks+pplx,gitleaks + pplx,1,leaky-repo,en,secrets,ok,7,95
+gitleaks+pplx,gitleaks + pplx,1,multiconer-ru,ru,pii,missing,,1208
+gitleaks+pplx,gitleaks + pplx,1,nemotron-pii,en,pii,missing,,9391
+gitleaks+pplx,gitleaks + pplx,1,nerel,ru,pii,missing,,24369
+gitleaks+pplx,gitleaks + pplx,1,nym-en,en,pii,missing,,3584
+gitleaks+pplx,gitleaks + pplx,1,nym-multi,multi,pii,missing,,8169
+gitleaks+pplx,gitleaks + pplx,1,nym-ru,ru,pii,ok,374,9497
+gitleaks+pplx,gitleaks + pplx,1,privy,en,pii,missing,,1899
+gitleaks+pplx,gitleaks + pplx,1,redact-multi,multi,pii,missing,,22864
+gitleaks+pplx,gitleaks + pplx,1,redact-ru,ru,pii,missing,,9230
+gitleaks+pplx,gitleaks + pplx,1,redmadrobot,ru,pii,ok,775,5516
+gitleaks+pplx,gitleaks + pplx,1,rubai-ru,ru,pii,missing,,3458
+gitleaks+pplx,gitleaks + pplx,1,russian-pii-66k,ru,pii,ok,11,4805
+gitleaks+pplx,gitleaks + pplx,1,scanpatch,ru,pii,ok,1084,8708
+gitleaks+pplx,gitleaks + pplx,1,secrets-issues,en,secrets,ok,7,288
+gitleaks+pplx,gitleaks + pplx,1,secrets-rules,en,secrets,train,,746
+gitleaks+pplx,gitleaks + pplx,1,synth-env-configs,en,secrets,missing,,392
+gitleaks+pplx,gitleaks + pplx,1,synth-jira-comments,ru,pii,missing,,2705
+gitleaks+pplx,gitleaks + pplx,1,synth-ru-tickets,ru,pii,missing,,32099
+gitleaks+pplx,gitleaks + pplx,1,synth-secrets-en,en,secrets,missing,,581
+gitleaks+pplx,gitleaks + pplx,1,synth-secrets-ru,ru,secrets,missing,,581
+gitleaks+pplx,gitleaks + pplx,1,synth-wiki-tables,ru,pii,missing,,13094
+gitleaks+pplx,gitleaks + pplx,1,tab-echr,en,pii,missing,,3830
+gitleaks+pplx,gitleaks + pplx,1,tonicai,en,pii,missing,,2417
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,alexen2,ru,pii,missing,,1261
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,alrosait,ru,pii,ok,2,1862
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,ameau01,en,pii,missing,,2242
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,arthur-passwords,en,secrets,missing,,280
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,corrupt-hivetrace,ru,pii,missing,,1667
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,corrupt-redmadrobot,ru,pii,missing,,5531
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,corrupt-secrets-issues,en,secrets,missing,,288
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,creddata,en,secrets,missing,,776
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,dialogpii-en,en,pii,missing,,3087
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,dialogpii-multi,multi,pii,missing,,10345
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,factrueval,ru,pii,missing,,7966
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,gretel-multi,multi,pii,missing,,4484
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,hivetrace,ru,pii,ok,12,1667
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,jayguard,ru,pii,ok,113,1195
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,kiji-en,en,pii,missing,,7623
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,kiji-multi,multi,pii,missing,,7565
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,leak-museum,en,secrets,missing,,101
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,leaky-repo,en,secrets,ok,2,95
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,multiconer-ru,ru,pii,missing,,1208
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,nemotron-pii,en,pii,train,,9391
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,nerel,ru,pii,missing,,24369
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,nym-en,en,pii,missing,,3584
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,nym-multi,multi,pii,missing,,8169
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,nym-ru,ru,pii,ok,53,9497
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,privy,en,pii,missing,,1899
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,redact-multi,multi,pii,missing,,22864
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,redact-ru,ru,pii,missing,,9230
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,redmadrobot,ru,pii,ok,134,5516
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,rubai-ru,ru,pii,missing,,3458
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,russian-pii-66k,ru,pii,ok,0,4805
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,scanpatch,ru,pii,ok,401,8708
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,secrets-issues,en,secrets,ok,5,288
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,secrets-rules,en,secrets,train,,746
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,synth-env-configs,en,secrets,missing,,392
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,synth-jira-comments,ru,pii,missing,,2705
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,synth-ru-tickets,ru,pii,missing,,32099
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,synth-secrets-en,en,secrets,missing,,581
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,synth-secrets-ru,ru,secrets,missing,,581
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,synth-wiki-tables,ru,pii,missing,,13094
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,tab-echr,en,pii,missing,,3830
+gitleaks+pplx+nvidia,gitleaks + pplx + gliner-nvidia,1,tonicai,en,pii,missing,,2417
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,alexen2,ru,pii,missing,,1261
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,alrosait,ru,pii,ok,1,1862
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,ameau01,en,pii,missing,,2242
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,arthur-passwords,en,secrets,missing,,280
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,corrupt-hivetrace,ru,pii,missing,,1667
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,corrupt-redmadrobot,ru,pii,missing,,5531
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,corrupt-secrets-issues,en,secrets,missing,,288
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,creddata,en,secrets,missing,,776
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,dialogpii-en,en,pii,missing,,3087
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,dialogpii-multi,multi,pii,missing,,10345
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,factrueval,ru,pii,missing,,7966
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,gretel-multi,multi,pii,missing,,4484
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,hivetrace,ru,pii,ok,12,1667
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,jayguard,ru,pii,ok,91,1195
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,kiji-en,en,pii,missing,,7623
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,kiji-multi,multi,pii,missing,,7565
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,leak-museum,en,secrets,missing,,101
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,leaky-repo,en,secrets,ok,1,95
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,multiconer-ru,ru,pii,missing,,1208
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,nemotron-pii,en,pii,train,,9391
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,nerel,ru,pii,missing,,24369
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,nym-en,en,pii,missing,,3584
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,nym-multi,multi,pii,missing,,8169
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,nym-ru,ru,pii,ok,16,9497
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,privy,en,pii,missing,,1899
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,redact-multi,multi,pii,missing,,22864
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,redact-ru,ru,pii,missing,,9230
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,redmadrobot,ru,pii,ok,54,5516
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,rubai-ru,ru,pii,missing,,3458
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,russian-pii-66k,ru,pii,ok,0,4805
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,scanpatch,ru,pii,ok,199,8708
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,secrets-issues,en,secrets,ok,3,288
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,secrets-rules,en,secrets,train,,746
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,synth-env-configs,en,secrets,missing,,392
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,synth-jira-comments,ru,pii,missing,,2705
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,synth-ru-tickets,ru,pii,missing,,32099
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,synth-secrets-en,en,secrets,missing,,581
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,synth-secrets-ru,ru,secrets,missing,,581
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,synth-wiki-tables,ru,pii,missing,,13094
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,tab-echr,en,pii,missing,,3830
+gitleaks+pplx+nvidia+legal,gitleaks + pplx + gliner-nvidia + ru-legal-ner,1,tonicai,en,pii,missing,,2417
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,alexen2,ru,pii,missing,,1261
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,alrosait,ru,pii,ok,1,1862
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,ameau01,en,pii,missing,,2242
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,arthur-passwords,en,secrets,missing,,280
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,corrupt-hivetrace,ru,pii,missing,,1667
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,corrupt-redmadrobot,ru,pii,missing,,5531
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,corrupt-secrets-issues,en,secrets,missing,,288
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,creddata,en,secrets,missing,,776
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,dialogpii-en,en,pii,missing,,3087
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,dialogpii-multi,multi,pii,missing,,10345
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,factrueval,ru,pii,missing,,7966
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,gretel-multi,multi,pii,missing,,4484
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,hivetrace,ru,pii,ok,6,1667
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,jayguard,ru,pii,ok,108,1195
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,kiji-en,en,pii,missing,,7623
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,kiji-multi,multi,pii,missing,,7565
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,leak-museum,en,secrets,missing,,101
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,leaky-repo,en,secrets,ok,1,95
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,multiconer-ru,ru,pii,missing,,1208
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,nemotron-pii,en,pii,train,,9391
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,nerel,ru,pii,missing,,24369
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,nym-en,en,pii,missing,,3584
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,nym-multi,multi,pii,missing,,8169
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,nym-ru,ru,pii,ok,22,9497
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,privy,en,pii,missing,,1899
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,redact-multi,multi,pii,missing,,22864
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,redact-ru,ru,pii,missing,,9230
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,redmadrobot,ru,pii,ok,115,5516
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,rubai-ru,ru,pii,missing,,3458
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,russian-pii-66k,ru,pii,ok,0,4805
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,scanpatch,ru,pii,ok,340,8708
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,secrets-issues,en,secrets,ok,3,288
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,secrets-rules,en,secrets,train,,746
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,synth-env-configs,en,secrets,missing,,392
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,synth-jira-comments,ru,pii,missing,,2705
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,synth-ru-tickets,ru,pii,missing,,32099
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,synth-secrets-en,en,secrets,missing,,581
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,synth-secrets-ru,ru,secrets,missing,,581
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,synth-wiki-tables,ru,pii,missing,,13094
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,tab-echr,en,pii,missing,,3830
+gitleaks+pplx+opf2+nvidia,gitleaks + pplx + opf-ru-v2 + gliner-nvidia,1,tonicai,en,pii,missing,,2417
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,alexen2,ru,pii,missing,,1261
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,alrosait,ru,pii,ok,0,1862
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,ameau01,en,pii,missing,,2242
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,arthur-passwords,en,secrets,missing,,280
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,corrupt-hivetrace,ru,pii,missing,,1667
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,corrupt-redmadrobot,ru,pii,missing,,5531
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,corrupt-secrets-issues,en,secrets,missing,,288
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,creddata,en,secrets,missing,,776
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,dialogpii-en,en,pii,missing,,3087
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,dialogpii-multi,multi,pii,missing,,10345
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,factrueval,ru,pii,missing,,7966
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,gretel-multi,multi,pii,missing,,4484
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,hivetrace,ru,pii,ok,6,1667
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,jayguard,ru,pii,ok,89,1195
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,kiji-en,en,pii,missing,,7623
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,kiji-multi,multi,pii,missing,,7565
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,leak-museum,en,secrets,missing,,101
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,leaky-repo,en,secrets,ok,1,95
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,multiconer-ru,ru,pii,missing,,1208
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,nemotron-pii,en,pii,train,,9391
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,nerel,ru,pii,missing,,24369
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,nym-en,en,pii,missing,,3584
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,nym-multi,multi,pii,missing,,8169
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,nym-ru,ru,pii,ok,15,9497
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,privy,en,pii,missing,,1899
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,redact-multi,multi,pii,missing,,22864
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,redact-ru,ru,pii,missing,,9230
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,redmadrobot,ru,pii,ok,48,5516
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,rubai-ru,ru,pii,missing,,3458
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,russian-pii-66k,ru,pii,ok,0,4805
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,scanpatch,ru,pii,ok,177,8708
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,secrets-issues,en,secrets,ok,3,288
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,secrets-rules,en,secrets,train,,746
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,synth-env-configs,en,secrets,missing,,392
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,synth-jira-comments,ru,pii,missing,,2705
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,synth-ru-tickets,ru,pii,missing,,32099
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,synth-secrets-en,en,secrets,missing,,581
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,synth-secrets-ru,ru,secrets,missing,,581
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,synth-wiki-tables,ru,pii,missing,,13094
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,tab-echr,en,pii,missing,,3830
+gitleaks+pplx+opf2+nvidia+legal,gitleaks + pplx + opf-ru-v2 + gliner-nvidia + ru-legal-ner,1,tonicai,en,pii,missing,,2417
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,alexen2,ru,pii,missing,,1261
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,alrosait,ru,pii,ok,3,1862
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,ameau01,en,pii,missing,,2242
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,arthur-passwords,en,secrets,missing,,280
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,corrupt-hivetrace,ru,pii,missing,,1667
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,corrupt-redmadrobot,ru,pii,missing,,5531
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,corrupt-secrets-issues,en,secrets,missing,,288
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,creddata,en,secrets,missing,,776
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,dialogpii-en,en,pii,missing,,3087
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,dialogpii-multi,multi,pii,missing,,10345
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,factrueval,ru,pii,missing,,7966
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,gretel-multi,multi,pii,missing,,4484
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,hivetrace,ru,pii,ok,19,1667
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,jayguard,ru,pii,ok,108,1195
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,kiji-en,en,pii,missing,,7623
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,kiji-multi,multi,pii,missing,,7565
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,leak-museum,en,secrets,missing,,101
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,leaky-repo,en,secrets,ok,3,95
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,multiconer-ru,ru,pii,missing,,1208
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,nemotron-pii,en,pii,missing,,9391
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,nerel,ru,pii,missing,,24369
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,nym-en,en,pii,missing,,3584
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,nym-multi,multi,pii,missing,,8169
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,nym-ru,ru,pii,ok,44,9497
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,privy,en,pii,missing,,1899
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,redact-multi,multi,pii,missing,,22864
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,redact-ru,ru,pii,missing,,9230
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,redmadrobot,ru,pii,ok,293,5516
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,rubai-ru,ru,pii,missing,,3458
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,russian-pii-66k,ru,pii,ok,1,4805
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,scanpatch,ru,pii,ok,443,8708
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,secrets-issues,en,secrets,ok,3,288
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,secrets-rules,en,secrets,train,,746
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,synth-env-configs,en,secrets,missing,,392
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,synth-jira-comments,ru,pii,missing,,2705
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,synth-ru-tickets,ru,pii,missing,,32099
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,synth-secrets-en,en,secrets,missing,,581
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,synth-secrets-ru,ru,secrets,missing,,581
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,synth-wiki-tables,ru,pii,missing,,13094
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,tab-echr,en,pii,missing,,3830
+gitleaks+pplx+legal+vladlinv,gitleaks + pplx + ru-legal-ner + gliner2-vladlinv,1,tonicai,en,pii,missing,,2417
+fastino,gliner2-fastino,1,alexen2,ru,pii,ok,3,1261
+fastino,gliner2-fastino,1,alrosait,ru,pii,ok,228,1862
+fastino,gliner2-fastino,1,ameau01,en,pii,ok,160,2242
+fastino,gliner2-fastino,1,arthur-passwords,en,secrets,ok,49,280
+fastino,gliner2-fastino,1,corrupt-hivetrace,ru,pii,ok,505,1667
+fastino,gliner2-fastino,1,corrupt-redmadrobot,ru,pii,ok,1692,5531
+fastino,gliner2-fastino,1,corrupt-secrets-issues,en,secrets,ok,102,288
+fastino,gliner2-fastino,1,creddata,en,secrets,ok,111,776
+fastino,gliner2-fastino,1,dialogpii-en,en,pii,ok,313,3087
+fastino,gliner2-fastino,1,dialogpii-multi,multi,pii,ok,2286,10345
+fastino,gliner2-fastino,1,factrueval,ru,pii,ok,1362,7966
+fastino,gliner2-fastino,1,gretel-multi,multi,pii,ok,777,4484
+fastino,gliner2-fastino,1,hivetrace,ru,pii,ok,451,1667
+fastino,gliner2-fastino,1,jayguard,ru,pii,ok,126,1195
+fastino,gliner2-fastino,1,kiji-en,en,pii,ok,245,7623
+fastino,gliner2-fastino,1,kiji-multi,multi,pii,ok,319,7565
+fastino,gliner2-fastino,1,leak-museum,en,secrets,ok,20,101
+fastino,gliner2-fastino,1,leaky-repo,en,secrets,ok,17,95
+fastino,gliner2-fastino,1,multiconer-ru,ru,pii,ok,95,1208
+fastino,gliner2-fastino,1,nemotron-pii,en,pii,ok,703,9391
+fastino,gliner2-fastino,1,nerel,ru,pii,ok,2554,24369
+fastino,gliner2-fastino,1,nym-en,en,pii,ok,560,3584
+fastino,gliner2-fastino,1,nym-multi,multi,pii,ok,2007,8169
+fastino,gliner2-fastino,1,nym-ru,ru,pii,ok,1790,9497
+fastino,gliner2-fastino,1,privy,en,pii,ok,381,1899
+fastino,gliner2-fastino,1,redact-multi,multi,pii,ok,3535,22864
+fastino,gliner2-fastino,1,redact-ru,ru,pii,ok,1325,9230
+fastino,gliner2-fastino,1,redmadrobot,ru,pii,ok,1230,5516
+fastino,gliner2-fastino,1,rubai-ru,ru,pii,ok,1059,3458
+fastino,gliner2-fastino,1,russian-pii-66k,ru,pii,ok,243,4805
+fastino,gliner2-fastino,1,scanpatch,ru,pii,ok,1638,8708
+fastino,gliner2-fastino,1,secrets-issues,en,secrets,ok,100,288
+fastino,gliner2-fastino,1,secrets-rules,en,secrets,ok,34,746
+fastino,gliner2-fastino,1,synth-env-configs,en,secrets,ok,181,392
+fastino,gliner2-fastino,1,synth-jira-comments,ru,pii,ok,371,2705
+fastino,gliner2-fastino,1,synth-ru-tickets,ru,pii,ok,1312,32099
+fastino,gliner2-fastino,1,synth-secrets-en,en,secrets,ok,206,581
+fastino,gliner2-fastino,1,synth-secrets-ru,ru,secrets,ok,204,581
+fastino,gliner2-fastino,1,synth-wiki-tables,ru,pii,ok,1549,13094
+fastino,gliner2-fastino,1,tab-echr,en,pii,ok,60,3830
+fastino,gliner2-fastino,1,tonicai,en,pii,ok,108,2417
+pplx+fastino,pplx + gliner2-fastino,1,alexen2,ru,pii,ok,1,1261
+pplx+fastino,pplx + gliner2-fastino,1,alrosait,ru,pii,ok,2,1862
+pplx+fastino,pplx + gliner2-fastino,1,ameau01,en,pii,ok,74,2242
+pplx+fastino,pplx + gliner2-fastino,1,arthur-passwords,en,secrets,ok,0,280
+pplx+fastino,pplx + gliner2-fastino,1,corrupt-hivetrace,ru,pii,ok,22,1667
+pplx+fastino,pplx + gliner2-fastino,1,corrupt-redmadrobot,ru,pii,ok,238,5531
+pplx+fastino,pplx + gliner2-fastino,1,corrupt-secrets-issues,en,secrets,ok,8,288
+pplx+fastino,pplx + gliner2-fastino,1,creddata,en,secrets,ok,13,776
+pplx+fastino,pplx + gliner2-fastino,1,dialogpii-en,en,pii,ok,180,3087
+pplx+fastino,pplx + gliner2-fastino,1,dialogpii-multi,multi,pii,ok,1180,10345
+pplx+fastino,pplx + gliner2-fastino,1,factrueval,ru,pii,ok,1131,7966
+pplx+fastino,pplx + gliner2-fastino,1,gretel-multi,multi,pii,ok,488,4484
+pplx+fastino,pplx + gliner2-fastino,1,hivetrace,ru,pii,ok,11,1667
+pplx+fastino,pplx + gliner2-fastino,1,jayguard,ru,pii,ok,91,1195
+pplx+fastino,pplx + gliner2-fastino,1,kiji-en,en,pii,ok,29,7623
+pplx+fastino,pplx + gliner2-fastino,1,kiji-multi,multi,pii,ok,32,7565
+pplx+fastino,pplx + gliner2-fastino,1,leak-museum,en,secrets,ok,2,101
+pplx+fastino,pplx + gliner2-fastino,1,leaky-repo,en,secrets,ok,1,95
+pplx+fastino,pplx + gliner2-fastino,1,multiconer-ru,ru,pii,ok,87,1208
+pplx+fastino,pplx + gliner2-fastino,1,nemotron-pii,en,pii,ok,87,9391
+pplx+fastino,pplx + gliner2-fastino,1,nerel,ru,pii,ok,2352,24369
+pplx+fastino,pplx + gliner2-fastino,1,nym-en,en,pii,ok,27,3584
+pplx+fastino,pplx + gliner2-fastino,1,nym-multi,multi,pii,ok,76,8169
+pplx+fastino,pplx + gliner2-fastino,1,nym-ru,ru,pii,ok,24,9497
+pplx+fastino,pplx + gliner2-fastino,1,privy,en,pii,ok,18,1899
+pplx+fastino,pplx + gliner2-fastino,1,redact-multi,multi,pii,ok,685,22864
+pplx+fastino,pplx + gliner2-fastino,1,redact-ru,ru,pii,ok,240,9230
+pplx+fastino,pplx + gliner2-fastino,1,redmadrobot,ru,pii,ok,153,5516
+pplx+fastino,pplx + gliner2-fastino,1,rubai-ru,ru,pii,ok,12,3458
+pplx+fastino,pplx + gliner2-fastino,1,russian-pii-66k,ru,pii,ok,2,4805
+pplx+fastino,pplx + gliner2-fastino,1,scanpatch,ru,pii,ok,354,8708
+pplx+fastino,pplx + gliner2-fastino,1,secrets-issues,en,secrets,ok,7,288
+pplx+fastino,pplx + gliner2-fastino,1,secrets-rules,en,secrets,ok,5,746
+pplx+fastino,pplx + gliner2-fastino,1,synth-env-configs,en,secrets,ok,0,392
+pplx+fastino,pplx + gliner2-fastino,1,synth-jira-comments,ru,pii,ok,2,2705
+pplx+fastino,pplx + gliner2-fastino,1,synth-ru-tickets,ru,pii,ok,31,32099
+pplx+fastino,pplx + gliner2-fastino,1,synth-secrets-en,en,secrets,ok,1,581
+pplx+fastino,pplx + gliner2-fastino,1,synth-secrets-ru,ru,secrets,ok,0,581
+pplx+fastino,pplx + gliner2-fastino,1,synth-wiki-tables,ru,pii,ok,87,13094
+pplx+fastino,pplx + gliner2-fastino,1,tab-echr,en,pii,ok,53,3830
+pplx+fastino,pplx + gliner2-fastino,1,tonicai,en,pii,ok,66,2417
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,alexen2,ru,pii,ok,1,1261
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,alrosait,ru,pii,ok,1,1862
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,ameau01,en,pii,ok,25,2242
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,arthur-passwords,en,secrets,ok,0,280
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,corrupt-hivetrace,ru,pii,ok,8,1667
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,corrupt-redmadrobot,ru,pii,ok,116,5531
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,corrupt-secrets-issues,en,secrets,ok,4,288
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,creddata,en,secrets,ok,1,776
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,dialogpii-en,en,pii,ok,163,3087
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,dialogpii-multi,multi,pii,ok,845,10345
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,factrueval,ru,pii,ok,459,7966
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,gretel-multi,multi,pii,ok,465,4484
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,hivetrace,ru,pii,ok,5,1667
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,jayguard,ru,pii,ok,85,1195
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,kiji-en,en,pii,ok,9,7623
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,kiji-multi,multi,pii,ok,25,7565
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,leak-museum,en,secrets,ok,2,101
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,leaky-repo,en,secrets,ok,1,95
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,multiconer-ru,ru,pii,ok,70,1208
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,nemotron-pii,en,pii,ok,23,9391
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,nerel,ru,pii,ok,1533,24369
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,nym-en,en,pii,ok,15,3584
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,nym-multi,multi,pii,ok,26,8169
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,nym-ru,ru,pii,ok,10,9497
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,privy,en,pii,ok,10,1899
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,redact-multi,multi,pii,ok,341,22864
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,redact-ru,ru,pii,ok,150,9230
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,redmadrobot,ru,pii,ok,61,5516
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,rubai-ru,ru,pii,ok,9,3458
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,russian-pii-66k,ru,pii,ok,0,4805
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,scanpatch,ru,pii,ok,125,8708
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,secrets-issues,en,secrets,ok,6,288
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,secrets-rules,en,secrets,ok,0,746
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,synth-env-configs,en,secrets,ok,0,392
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,synth-jira-comments,ru,pii,ok,0,2705
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,synth-ru-tickets,ru,pii,ok,10,32099
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,synth-secrets-en,en,secrets,ok,0,581
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,synth-secrets-ru,ru,secrets,ok,0,581
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,synth-wiki-tables,ru,pii,ok,37,13094
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,tab-echr,en,pii,ok,43,3830
+pplx+fastino+mmbert,pplx + gliner2-fastino + mmbert32k,1,tonicai,en,pii,ok,62,2417
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,alexen2,ru,pii,ok,1,1261
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,alrosait,ru,pii,ok,1,1862
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,ameau01,en,pii,ok,38,2242
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,arthur-passwords,en,secrets,ok,0,280
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,corrupt-hivetrace,ru,pii,ok,17,1667
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,corrupt-redmadrobot,ru,pii,ok,169,5531
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,corrupt-secrets-issues,en,secrets,ok,1,288
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,creddata,en,secrets,ok,6,776
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,dialogpii-en,en,pii,ok,148,3087
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,dialogpii-multi,multi,pii,ok,895,10345
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,factrueval,ru,pii,ok,121,7966
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,gretel-multi,multi,pii,ok,451,4484
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,hivetrace,ru,pii,ok,6,1667
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,jayguard,ru,pii,ok,86,1195
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,kiji-en,en,pii,ok,11,7623
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,kiji-multi,multi,pii,ok,23,7565
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,leak-museum,en,secrets,ok,2,101
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,leaky-repo,en,secrets,ok,1,95
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,multiconer-ru,ru,pii,ok,82,1208
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,nemotron-pii,en,pii,ok,46,9391
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,nerel,ru,pii,ok,909,24369
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,nym-en,en,pii,ok,12,3584
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,nym-multi,multi,pii,ok,39,8169
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,nym-ru,ru,pii,ok,5,9497
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,privy,en,pii,ok,17,1899
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,redact-multi,multi,pii,ok,444,22864
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,redact-ru,ru,pii,ok,179,9230
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,redmadrobot,ru,pii,ok,82,5516
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,rubai-ru,ru,pii,ok,8,3458
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,russian-pii-66k,ru,pii,ok,0,4805
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,scanpatch,ru,pii,ok,261,8708
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,secrets-issues,en,secrets,ok,1,288
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,secrets-rules,en,secrets,ok,2,746
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,synth-env-configs,en,secrets,ok,0,392
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,synth-jira-comments,ru,pii,ok,2,2705
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,synth-ru-tickets,ru,pii,ok,6,32099
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,synth-secrets-en,en,secrets,ok,0,581
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,synth-secrets-ru,ru,secrets,ok,0,581
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,synth-wiki-tables,ru,pii,ok,77,13094
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,tab-echr,en,pii,ok,47,3830
+pplx+fastino+bardsai,pplx + gliner2-fastino + bardsai-eu,1,tonicai,en,pii,ok,62,2417
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,alexen2,ru,pii,ok,1,1261
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,alrosait,ru,pii,ok,1,1862
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,ameau01,en,pii,ok,9,2242
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,arthur-passwords,en,secrets,ok,0,280
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,corrupt-hivetrace,ru,pii,ok,8,1667
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,corrupt-redmadrobot,ru,pii,ok,89,5531
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,corrupt-secrets-issues,en,secrets,ok,0,288
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,creddata,en,secrets,ok,1,776
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,dialogpii-en,en,pii,ok,139,3087
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,dialogpii-multi,multi,pii,ok,687,10345
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,factrueval,ru,pii,ok,108,7966
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,gretel-multi,multi,pii,ok,440,4484
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,hivetrace,ru,pii,ok,5,1667
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,jayguard,ru,pii,ok,84,1195
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,kiji-en,en,pii,ok,7,7623
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,kiji-multi,multi,pii,ok,22,7565
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,leak-museum,en,secrets,ok,2,101
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,leaky-repo,en,secrets,ok,1,95
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,multiconer-ru,ru,pii,ok,68,1208
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,nemotron-pii,en,pii,ok,14,9391
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,nerel,ru,pii,ok,843,24369
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,nym-en,en,pii,ok,8,3584
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,nym-multi,multi,pii,ok,21,8169
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,nym-ru,ru,pii,ok,2,9497
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,privy,en,pii,ok,10,1899
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,redact-multi,multi,pii,ok,289,22864
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,redact-ru,ru,pii,ok,127,9230
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,redmadrobot,ru,pii,ok,44,5516
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,rubai-ru,ru,pii,ok,8,3458
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,russian-pii-66k,ru,pii,ok,0,4805
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,scanpatch,ru,pii,ok,82,8708
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,secrets-issues,en,secrets,ok,0,288
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,secrets-rules,en,secrets,ok,0,746
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,synth-env-configs,en,secrets,ok,0,392
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,synth-jira-comments,ru,pii,ok,0,2705
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,synth-ru-tickets,ru,pii,ok,3,32099
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,synth-secrets-en,en,secrets,ok,0,581
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,synth-secrets-ru,ru,secrets,ok,0,581
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,synth-wiki-tables,ru,pii,ok,35,13094
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,tab-echr,en,pii,ok,37,3830
+pplx+fastino+bardsai+mmbert,pplx + gliner2-fastino + bardsai-eu + mmbert32k,1,tonicai,en,pii,ok,59,2417
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,alexen2,ru,pii,ok,28,1261
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,alrosait,ru,pii,ok,17,1862
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,ameau01,en,pii,ok,563,2242
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,arthur-passwords,en,secrets,ok,0,280
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,corrupt-hivetrace,ru,pii,ok,106,1667
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,corrupt-redmadrobot,ru,pii,ok,1368,5531
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,corrupt-secrets-issues,en,secrets,ok,17,288
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,creddata,en,secrets,ok,28,776
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,dialogpii-en,en,pii,ok,846,3087
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,dialogpii-multi,multi,pii,ok,4036,10345
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,factrueval,ru,pii,ok,5879,7966
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,gretel-multi,multi,pii,ok,871,4484
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,hivetrace,ru,pii,ok,41,1667
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,jayguard,ru,pii,ok,264,1195
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,kiji-en,en,pii,ok,363,7623
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,kiji-multi,multi,pii,ok,437,7565
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,leak-museum,en,secrets,ok,24,101
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,leaky-repo,en,secrets,ok,10,95
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,multiconer-ru,ru,pii,ok,1023,1208
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,nemotron-pii,en,pii,train,,9391
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,nerel,ru,pii,ok,19408,24369
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,nym-en,en,pii,ok,315,3584
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,nym-multi,multi,pii,ok,962,8169
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,nym-ru,ru,pii,ok,727,9497
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,privy,en,pii,ok,242,1899
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,redact-multi,multi,pii,ok,3854,22864
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,redact-ru,ru,pii,ok,1186,9230
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,redmadrobot,ru,pii,ok,1050,5516
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,rubai-ru,ru,pii,ok,39,3458
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,russian-pii-66k,ru,pii,ok,16,4805
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,scanpatch,ru,pii,ok,1716,8708
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,secrets-issues,en,secrets,ok,12,288
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,secrets-rules,en,secrets,ok,22,746
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,synth-env-configs,en,secrets,ok,8,392
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,synth-jira-comments,ru,pii,ok,157,2705
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,synth-ru-tickets,ru,pii,ok,8620,32099
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,synth-secrets-en,en,secrets,ok,14,581
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,synth-secrets-ru,ru,secrets,ok,11,581
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,synth-wiki-tables,ru,pii,ok,2019,13094
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,tab-echr,en,pii,ok,2446,3830
+"vote2(pplx,opf2,nvidia)",pplx + opf-ru-v2 + gliner-nvidia,2,tonicai,en,pii,ok,507,2417
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,alexen2,ru,pii,missing,,1261
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,alrosait,ru,pii,ok,17,1862
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,ameau01,en,pii,missing,,2242
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,arthur-passwords,en,secrets,missing,,280
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,corrupt-hivetrace,ru,pii,missing,,1667
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,corrupt-redmadrobot,ru,pii,missing,,5531
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,corrupt-secrets-issues,en,secrets,missing,,288
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,creddata,en,secrets,missing,,776
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,dialogpii-en,en,pii,missing,,3087
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,dialogpii-multi,multi,pii,missing,,10345
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,factrueval,ru,pii,missing,,7966
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,gretel-multi,multi,pii,missing,,4484
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,hivetrace,ru,pii,ok,41,1667
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,jayguard,ru,pii,ok,264,1195
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,kiji-en,en,pii,missing,,7623
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,kiji-multi,multi,pii,missing,,7565
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,leak-museum,en,secrets,missing,,101
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,leaky-repo,en,secrets,ok,10,95
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,multiconer-ru,ru,pii,missing,,1208
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,nemotron-pii,en,pii,train,,9391
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,nerel,ru,pii,missing,,24369
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,nym-en,en,pii,missing,,3584
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,nym-multi,multi,pii,missing,,8169
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,nym-ru,ru,pii,ok,727,9497
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,privy,en,pii,missing,,1899
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,redact-multi,multi,pii,missing,,22864
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,redact-ru,ru,pii,missing,,9230
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,redmadrobot,ru,pii,ok,1050,5516
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,rubai-ru,ru,pii,missing,,3458
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,russian-pii-66k,ru,pii,ok,16,4805
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,scanpatch,ru,pii,ok,1716,8708
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,secrets-issues,en,secrets,ok,7,288
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,secrets-rules,en,secrets,train,,746
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,synth-env-configs,en,secrets,missing,,392
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,synth-jira-comments,ru,pii,missing,,2705
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,synth-ru-tickets,ru,pii,missing,,32099
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,synth-secrets-en,en,secrets,missing,,581
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,synth-secrets-ru,ru,secrets,missing,,581
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,synth-wiki-tables,ru,pii,missing,,13094
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,tab-echr,en,pii,missing,,3830
+"vote2(gitleaks,pplx,opf2,nvidia)",gitleaks + pplx + opf-ru-v2 + gliner-nvidia,2,tonicai,en,pii,missing,,2417

@@ -1,0 +1,93 @@
+# secrets-issues: category results
+
+Exact counts from the frozen predictions at threshold 0.5. `train` marks a known training-source overlap and is excluded from pooled charts. All configurations are listed for inspection, not ranked across different supported scopes. `model:` is a single detector configuration; `composition:` is a fixed union or vote.
+
+[Dataset outcomes](../by-dataset.md) · [Historical metrics and uncertainty](../datasets/secrets-issues.md) · [Metric contract](../../docs/metrics.md)
+
+| Configuration | Status | Category | Hidden / gold | Hidden % | Detected % | Raw hiding % |
+|---|---|---|---:|---:|---:|---:|
+| composition:fastino | eligible | Passwords, keys & tokens | 123/288 | 42.71% | 65.28% | 41.67% |
+| composition:pplx | eligible | Passwords, keys & tokens | 216/288 | 75.00% | 95.83% | 73.26% |
+| composition:pplx+fastino | eligible | Passwords, keys & tokens | 223/288 | 77.43% | 97.57% | 75.69% |
+| composition:pplx+fastino+bardsai | eligible | Passwords, keys & tokens | 229/288 | 79.51% | 99.65% | 78.82% |
+| composition:pplx+fastino+bardsai+mmbert | eligible | Passwords, keys & tokens | 229/288 | 79.51% | 100.00% | 78.82% |
+| composition:pplx+fastino+mmbert | eligible | Passwords, keys & tokens | 223/288 | 77.43% | 97.92% | 76.04% |
+| composition:vote2(pplx,opf2,nvidia) | eligible | Passwords, keys & tokens | 206/288 | 71.53% | 95.83% | 67.71% |
+| model:apararti | eligible | Passwords, keys & tokens | 215/288 | 74.65% | 97.92% | 66.32% |
+| model:bardsai-eu | eligible | Passwords, keys & tokens | 209/288 | 72.57% | 95.49% | 60.42% |
+| model:betterleaks | eligible | Passwords, keys & tokens | 129/288 | 44.79% | 57.29% | 44.79% |
+| model:credsweeper | eligible | Passwords, keys & tokens | 161/288 | 55.90% | 73.61% | 55.90% |
+| model:credsweeper-noml | eligible | Passwords, keys & tokens | 173/288 | 60.07% | 81.94% | 60.07% |
+| model:davlan-mbert | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 1.04% | 0.00% |
+| model:davlan-mbert+cpu-int8 | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 1.39% | 0.00% |
+| model:davlan-xlmr | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 0.35% | 0.00% |
+| model:davlan-xlmr+cpu-int8 | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 0.35% | 0.00% |
+| model:deepsecrets | eligible | Passwords, keys & tokens | 100/288 | 34.72% | 44.44% | 34.72% |
+| model:detect-secrets | eligible | Passwords, keys & tokens | 70/288 | 24.31% | 26.04% | 24.31% |
+| model:fef2-secret-ru | eligible | Passwords, keys & tokens | 95/288 | 32.99% | 51.39% | 29.86% |
+| model:fef2-secret-ru+cpu-int8 | eligible | Passwords, keys & tokens | 89/288 | 30.90% | 49.65% | 24.31% |
+| model:gitleaks | eligible | Passwords, keys & tokens | 131/288 | 45.49% | 54.86% | 45.49% |
+| model:gliner-multi-v21 | eligible | Passwords, keys & tokens | 34/288 | 11.81% | 29.51% | 11.46% |
+| model:gliner-multi-v21+cpu-int8 | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia | eligible | Passwords, keys & tokens | 117/288 | 40.62% | 57.99% | 39.93% |
+| model:gliner-nvidia+cpu-int8 | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia+ov100 | eligible | Passwords, keys & tokens | 132/288 | 45.83% | 64.93% | 43.06% |
+| model:gliner-nvidia+sent300 | eligible | Passwords, keys & tokens | 122/288 | 42.36% | 60.42% | 41.32% |
+| model:gliner-pii-base | eligible | Passwords, keys & tokens | 27/288 | 9.38% | 14.58% | 9.03% |
+| model:gliner-pii-edge | eligible | Passwords, keys & tokens | 187/288 | 64.93% | 87.15% | 63.19% |
+| model:gliner-pii-edge+cpu-int8 | eligible | Passwords, keys & tokens | 32/288 | 11.11% | 15.62% | 10.42% |
+| model:gliner-stream-pii | eligible | Passwords, keys & tokens | 118/288 | 40.97% | 57.99% | 39.58% |
+| model:gliner-urchade | eligible | Passwords, keys & tokens | 126/288 | 43.75% | 61.81% | 43.40% |
+| model:gliner-urchade+cpu-int8 | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 0.00% | 0.00% |
+| model:gliner2-fastino | eligible | Passwords, keys & tokens | 123/288 | 42.71% | 65.28% | 41.67% |
+| model:gliner2-hivetrace-omni | eligible | Passwords, keys & tokens | 60/288 | 20.83% | 35.07% | 20.14% |
+| model:gliner2-hivetrace-uni | eligible | Passwords, keys & tokens | 23/288 | 7.99% | 13.89% | 7.99% |
+| model:gliner2-large | eligible | Passwords, keys & tokens | 39/288 | 13.54% | 32.29% | 13.19% |
+| model:gliner2-vladlinv | eligible | Passwords, keys & tokens | 19/288 | 6.60% | 9.72% | 6.25% |
+| model:gliner25-fastino | eligible | Passwords, keys & tokens | 70/288 | 24.31% | 40.97% | 23.96% |
+| model:gliner25-fastino+nochunk | eligible | Passwords, keys & tokens | 55/288 | 19.10% | 34.38% | 19.10% |
+| model:gliner25-fastino+ov100 | eligible | Passwords, keys & tokens | 105/288 | 36.46% | 54.17% | 35.76% |
+| model:gliner25-fastino+sent300 | eligible | Passwords, keys & tokens | 79/288 | 27.43% | 46.18% | 26.74% |
+| model:gravitee-small | eligible | Passwords, keys & tokens | 35/288 | 12.15% | 25.69% | 8.33% |
+| model:gravitee-small+cpu-int8 | eligible | Passwords, keys & tokens | 33/288 | 11.46% | 24.65% | 6.60% |
+| model:kalyan-ettin | eligible | Passwords, keys & tokens | 174/288 | 60.42% | 88.19% | 14.24% |
+| model:kingfisher | eligible | Passwords, keys & tokens | 40/288 | 13.89% | 15.97% | 13.19% |
+| model:mmbert32k | eligible | Passwords, keys & tokens | 128/288 | 44.44% | 81.60% | 0.35% |
+| model:mmbert32k+cpu-int8 | eligible | Passwords, keys & tokens | 161/288 | 55.90% | 94.44% | 0.00% |
+| model:mmbert32k+nochunk | eligible | Passwords, keys & tokens | 134/288 | 46.53% | 83.68% | 0.00% |
+| model:natasha | eligible | Passwords, keys & tokens | 2/288 | 0.69% | 1.04% | 0.00% |
+| model:ner-ru-gherman | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-gherman+cpu-int8 | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-yqelz | eligible | Passwords, keys & tokens | 73/288 | 25.35% | 34.38% | 0.00% |
+| model:noseyparker | eligible | Passwords, keys & tokens | 67/288 | 23.26% | 30.21% | 21.53% |
+| model:nuner-zero | eligible | Passwords, keys & tokens | 142/288 | 49.31% | 70.49% | 47.92% |
+| model:nym-base | eligible | Passwords, keys & tokens | 200/288 | 69.44% | 98.61% | 35.76% |
+| model:nym-base+cpu-int8 | eligible | Passwords, keys & tokens | 200/288 | 69.44% | 98.26% | 33.68% |
+| model:nym-base+ov100 | eligible | Passwords, keys & tokens | 203/288 | 70.49% | 99.31% | 36.46% |
+| model:nym-base+sent300 | eligible | Passwords, keys & tokens | 206/288 | 71.53% | 98.96% | 35.76% |
+| model:nym-small | eligible | Passwords, keys & tokens | 193/288 | 67.01% | 97.92% | 30.56% |
+| model:openai-base | eligible | Passwords, keys & tokens | 205/288 | 71.18% | 92.71% | 62.85% |
+| model:openmed-multilingual | eligible | Passwords, keys & tokens | 190/288 | 65.97% | 93.06% | 14.58% |
+| model:openmed-nemotron | eligible | Passwords, keys & tokens | 197/288 | 68.40% | 94.10% | 21.18% |
+| model:opf-kz-ru | eligible | Passwords, keys & tokens | 220/288 | 76.39% | 96.88% | 67.36% |
+| model:opf-ru | eligible | Passwords, keys & tokens | 210/288 | 72.92% | 98.26% | 64.58% |
+| model:opf-ru-v2 | eligible | Passwords, keys & tokens | 205/288 | 71.18% | 95.14% | 63.89% |
+| model:opf-ru-v2+ov100 | eligible | Passwords, keys & tokens | 205/288 | 71.18% | 94.79% | 65.97% |
+| model:opf-ru-v2+sent300 | eligible | Passwords, keys & tokens | 207/288 | 71.88% | 96.53% | 64.24% |
+| model:pii-shield-onnx | eligible | Passwords, keys & tokens | 241/288 | 83.68% | 99.65% | 82.29% |
+| model:pplx | eligible | Passwords, keys & tokens | 216/288 | 75.00% | 95.83% | 73.26% |
+| model:pplx+cpu-int8 | eligible | Passwords, keys & tokens | 234/288 | 81.25% | 100.00% | 79.86% |
+| model:pplx+ov100 | eligible | Passwords, keys & tokens | 218/288 | 75.69% | 96.18% | 73.26% |
+| model:pplx+sent300 | eligible | Passwords, keys & tokens | 212/288 | 73.61% | 96.88% | 70.49% |
+| model:ru-legal-ner | eligible | Passwords, keys & tokens | 154/288 | 53.47% | 84.38% | 2.08% |
+| model:ru-legal-ner+cpu-int8 | eligible | Passwords, keys & tokens | 154/288 | 53.47% | 84.03% | 2.78% |
+| model:ru-legal-ner+ov100 | eligible | Passwords, keys & tokens | 163/288 | 56.60% | 86.81% | 6.60% |
+| model:ru-legal-ner+sent300 | eligible | Passwords, keys & tokens | 156/288 | 54.17% | 82.64% | 4.51% |
+| model:ru-pii-ner | eligible | Passwords, keys & tokens | 21/288 | 7.29% | 12.15% | 3.82% |
+| model:rules-ru | eligible | Passwords, keys & tokens | 141/288 | 48.96% | 67.71% | 48.96% |
+| model:spacy-alrosait | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 0.00% | 0.00% |
+| model:spacy-ru-lg | eligible | Passwords, keys & tokens | 10/288 | 3.47% | 4.86% | 2.08% |
+| model:stanza-ru | eligible | Passwords, keys & tokens | 57/288 | 19.79% | 37.85% | 12.50% |
+| model:titus | eligible | Passwords, keys & tokens | 70/288 | 24.31% | 29.86% | 23.26% |
+| model:traciora | eligible | Passwords, keys & tokens | 207/288 | 71.88% | 96.88% | 57.64% |
+| model:trufflehog | eligible | Passwords, keys & tokens | 36/288 | 12.50% | 15.28% | 12.50% |

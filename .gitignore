@@ -1,0 +1,15 @@
+/.local/
+/.venv/
+/.cache/
+/.env
+/.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.DS_Store
+/benchmark/synth_extra.toml
+/BENCH/
+/MODELS/
+/hf_cache/
+/logs/
+*.log

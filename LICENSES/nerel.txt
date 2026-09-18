@@ -1,0 +1,12 @@
+Source: https://huggingface.co/datasets/iluvvatar/NEREL; https://github.com/nerel-ds/NEREL
+Recorded terms: Not specified
+Authors / rights holders: Natalia Loukachevitch, Ekaterina Artemova, Tatiana Batura, Pavel Braslavski, Ilia Denisov, Vladimir Ivanov, Suresh Manandhar, Alexander Pugachev, Elena Tutubalina (arXiv:2108.13112)
+Source audit date: 2026-09-05
+Publication: source references and aggregate results; no corpus text
+Evidence: No source license was found.
+Attribution: Loukachevitch, Natalia, et al. NEREL: A Russian Dataset with Nested Named Entities, Relations and Events. https://arxiv.org/abs/2108.13112 . No license was found in the archived source audit.
+Benchmark changes: row selection and conversion to character offsets; mechanical corruption where explicitly marked. Scoring also normalizes span boundaries.
+
+------------------------------------------------------------------------
+
+No license text was available in the recorded source audit. No corpus files are redistributed. Consult the source owner for reuse permissions.

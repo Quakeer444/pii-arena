@@ -1,0 +1,589 @@
+# Pinned detector configurations; training overlap is not proof of memorisation.
+
+[models.opf-ru]
+repo = "bbeglerov/opf-russian-pii-66k"
+revision = "ae813a5aaeb31def75e87064818f0b1fbc65e31f"
+family = "opf"
+venv = "main"
+cpu = false
+train = "Model card: bbeglerov/russian-pi-66k-opf, derived from wolframko/russian-pii-66k train."
+contaminated = ["russian-pii-66k"]
+
+[models.opf-ru-v2]
+repo = "pii-anon/opf-ru-v2"
+revision = "7975e895ed59a7c58e9ab2dbb7d739fd246086b4"
+family = "opf"
+venv = "main"
+cpu = false
+train = "Not disclosed. Anonymous ACSAC 2026 OPF checkpoint; repository and revision checked 2026-09-04."
+contaminated = []
+
+[models.traciora]
+repo = "dzanozin/traciora-opf-ru-pii-v6"
+revision = "ea69da97d598b662ec447bcb8e0022abee0f4010"
+family = "opf"
+venv = "main"
+cpu = false
+train = "121k synthetic examples (v6-ru-all-5k); original sources not disclosed."
+contaminated = []
+
+[models.apararti]
+repo = "apararti/privacy-filter-ru"
+revision = "a1650a1927ed8aceb9e15fa8ed13ffdf60cbf107"
+family = "opf"
+venv = "main"
+cpu = false
+train = "17k examples; original sources not disclosed."
+contaminated = []
+
+[models.openai-base]
+repo = "openai/privacy-filter"
+revision = "7ffa9a043d54d1be65afb281eddf0ffbe629385b"
+family = "opf"
+venv = "main"
+cpu = false
+train = "OpenAI; training sources not disclosed."
+contaminated = []
+
+[models.pplx]
+repo = "perplexity-ai/pplx-pii-masking"
+revision = "f1f90a53823f5df0a1344c1e137d9fffdaab54d6"
+family = "pplx"
+venv = "main"
+cpu = true
+train = "Not disclosed."
+contaminated = []
+
+[models.openmed-multilingual]
+repo = "OpenMed/privacy-filter-multilingual-v2"
+revision = "0d0c0430fa386435ace1d9f842f0f966903a9ac8"
+family = "hf"
+venv = "main"
+cpu = false
+train = "Model card: ai4privacy 200k/400k/500k/1m, Nemotron-PII, gretel, piimb/privy. All matching source cuts excluded."
+contaminated = ["nemotron-pii", "gretel-multi", "privy"]
+
+[models.openmed-nemotron]
+repo = "OpenMed/privacy-filter-nemotron"
+revision = "f6f3a633dc6fc96a644d20218633a98ac43f6c71"
+family = "hf"
+venv = "main"
+cpu = false
+train = "Model card: NVIDIA Nemotron-PII training split, 100k examples."
+contaminated = ["nemotron-pii"]
+
+[models.gliner-nvidia]
+repo = "nvidia/gliner-PII"
+revision = "bd23e8ef4425fd04e34c5204ab49ffaa706eae79"
+family = "gliner"
+venv = "tf4"
+cpu = true
+train = "Model card: NVIDIA Nemotron-PII; NVIDIA Open Model License."
+contaminated = ["nemotron-pii"]
+
+[models.gliner-urchade]
+repo = "urchade/gliner_multi_pii-v1"
+revision = "1fcf13e85f4eef5394e1fcd406cf2ca9ea82351d"
+family = "gliner"
+venv = "tf4"
+cpu = true
+train = "Model card: urchade/synthetic-pii-ner-mistral-v1."
+contaminated = []
+
+[models.gliner2-fastino]
+repo = "fastino/gliner2-privacy-filter-PII-multi"
+revision = "c153999da5f4c509df4322b0c6a1baf3d2c284d7"
+family = "gliner2"
+venv = "tf4"
+cpu = true
+train = "Model card: 4,910 synthetic texts in EN/FR/ES/DE/IT/PT/NL."
+contaminated = []
+
+[models.gliner2-hivetrace-omni]
+repo = "hivetrace/gliner-guard-omni"
+revision = "763f8aa9a7714dd2c3264f3751acdd5d854c5ac4"
+family = "gliner2"
+venv = "tf4"
+cpu = true
+train = "HiveTrace/gliner-guard: 467,273 examples including Nemotron-PII and Gretel finance; author declares held-out benchmark test splits."
+contaminated = ["nemotron-pii", "gretel-multi"]
+
+[models.gliner2-hivetrace-uni]
+repo = "hivetrace/gliner-guard-uniencoder"
+revision = "5644cdb7c953463fa3a370e76617c03c2dd29f92"
+family = "gliner2"
+venv = "tf4"
+cpu = true
+train = "HiveTrace/gliner-guard: 467,273 examples including Nemotron-PII and Gretel finance; author declares held-out benchmark test splits."
+contaminated = ["nemotron-pii", "gretel-multi"]
+
+[models.gliner2-vladlinv]
+repo = "vladlinv/ru-pii-ner-gliner2.5"
+revision = "d4c05667b10d8e8db0f0626934135731d0530983"
+family = "gliner2"
+venv = "tf4"
+cpu = true
+train = "Not disclosed."
+contaminated = []
+
+[models.ru-pii-ner]
+repo = "vladlinv/ru-pii-ner"
+revision = "3b509ebbcec894e522adef32560644017832deea"
+family = "rupii"
+venv = "main"
+cpu = true
+train = "Not disclosed; loaded with vladlinv/ru-pii-ner."
+contaminated = []
+
+[models.ru-legal-ner]
+repo = "LLAIMlegal/ru-legal-ner"
+revision = "c0313a42ac147ccc38f5c3b0b3e77cab53208683"
+family = "hf"
+venv = "main"
+cpu = true
+train = "Not disclosed; repository updated 2026-09-03."
+contaminated = []
+
+[models.pii-shield-onnx]
+repo = "astifer/pii-shield-onnx"
+revision = "280f050f10a73db88fa9b864e8ca25350e73941e"
+family = "onnx"
+venv = "tf4"
+cpu = true
+train = "Not disclosed; no model card. CPU ONNX graph."
+contaminated = []
+
+
+[models.davlan-xlmr]
+repo = "Davlan/xlm-roberta-base-ner-hrl"
+revision = "253f557bd8249b8515114cfd7f71974fe5fa4d2f"
+family = "hf"
+venv = "main"
+cpu = true
+train = "Training sources not disclosed in card; 10 languages including Russian, PER/ORG/LOC/DATE; AFL-3.0."
+contaminated = []
+
+[models.davlan-mbert]
+repo = "Davlan/bert-base-multilingual-cased-ner-hrl"
+revision = "e756de7f7b8f64fea0c3d7c3872f1322fab747b1"
+family = "hf"
+venv = "main"
+cpu = true
+train = "Same family as davlan-xlmr, mBERT backbone; PER/ORG/LOC/DATE; AFL-3.0."
+contaminated = []
+
+[models.ner-ru-gherman]
+repo = "Gherman/bert-base-NER-Russian"
+revision = "fc6b2c5a2c5d7c82da7416f7fd9c055159bbb984"
+family = "hf"
+venv = "main"
+cpu = true
+train = "Model card: AlexKly/Detailed-NER-Dataset-RU, BIOLU annotation."
+contaminated = []
+
+[models.ner-ru-gherman-onnx]
+repo = "onnx-community/bert-base-NER-Russian-ONNX"
+revision = "2bd219a78a06657c59fa8c2540ccbad703972e7c"
+family = "onnx"
+venv = "tf4"
+cpu = true
+mirror = "ner-ru-gherman"
+file_name = "model_int8.onnx"
+train = "ONNX export of ner-ru-gherman, int8 graph."
+contaminated = []
+
+[models.ner-ru-yqelz]
+repo = "yqelz/xml-roberta-large-ner-russian"
+revision = "4e03a3a079f5bfdb678eb9ee01235e25a7aef5f6"
+family = "hf"
+venv = "main"
+cpu = false
+train = "Model card: XLM-R large trained on Wikiann/ru; PER/ORG/LOC."
+contaminated = []
+
+[models.fef2-secret-ru]
+repo = "fef2/ner_rus_bert-secret_detection"
+revision = "52b5b0745aac14f73fcf2ac0f91d9b5001a85ae4"
+family = "hf"
+venv = "main"
+cpu = true
+train = "Model card: synthetic Russian credentials plus 0.35 replay of unnamed public Russian NER corpora."
+contaminated = []
+
+[models.nym-base]
+repo = "Wismut/nym-pii-multilingual"
+revision = "0ed0242d67a30ca6a83e5f118506ff1e1daf83ca"
+family = "hf"
+venv = "main"
+cpu = true
+train = "Model card: 724k Wismut/nym-pii-multilingual-data synthetic examples plus 77.5k LLM-labelled Wikipedia examples."
+contaminated = ["nym-ru", "nym-en", "nym-multi"]
+
+[models.nym-small]
+repo = "Wismut/nym-pii-multilingual-small"
+revision = "4348999cd3c2e20c49615e9af7c6bbb45b64cd85"
+family = "onnx"
+venv = "tf4"
+cpu = true
+subfolder = ""
+file_name = "model.onnx"
+train = "Distilled nym-base; ONNX weights only, same 40 labels."
+contaminated = ["nym-ru", "nym-en", "nym-multi"]
+
+[models.kalyan-ettin]
+repo = "kalyan-ks/ettin-68m-nemotron-pii"
+revision = "500262a2aaf913825ef750ef255c3fe437cd8e64"
+family = "hf"
+venv = "main"
+cpu = true
+train = "Model card: NVIDIA Nemotron-PII; English, 53 snake_case labels."
+contaminated = ["nemotron-pii"]
+
+[models.gravitee-small]
+repo = "gravitee-io/bert-small-pii-detection"
+revision = "f8c27a85c51c0168f07b9dcf00265bf0a4097939"
+family = "hf"
+venv = "main"
+cpu = true
+train = "Model card: gravitee-io/pii-detection-dataset; English, 28M parameters."
+contaminated = []
+
+[models.bardsai-eu]
+repo = "bardsai/eu-pii-anonimization-multilang"
+revision = "0e72e19f030ed4e661b1673e549af8e0dd176386"
+family = "onnx"
+venv = "tf4"
+cpu = true
+file_name = "model_quantized.onnx"
+train = "Sources not disclosed; 24 EU languages, no Russian stated; GDPR-oriented labels."
+contaminated = []
+
+[models.mmbert32k]
+repo = "llm-semantic-router/mmbert32k-pii-detector-merged"
+revision = "d22c818cf9f2a8bfbbed8508cb417dc16a1ba3ea"
+family = "hf"
+venv = "main"
+cpu = true
+train = "Model card: ai4privacy/pii-masking-400k plus Presidio annotation; 32k context."
+contaminated = []
+
+[models.openai-base-onnx]
+repo = "RedHatAI/privacy-filter"
+revision = "9b7e2f5c794da2c156bd9583bf8e2f5f6bdfd18b"
+family = "onnx"
+venv = "tf4"
+cpu = true
+mirror = "openai-base"
+trust_remote_code = true
+train = "ONNX mirror of openai/privacy-filter; CPU speed reference only."
+contaminated = []
+
+[models.gliner-multi-v21]
+repo = "urchade/gliner_multi-v2.1"
+revision = "443d26d654e0324125a96bebd8e796c14ff2efe6"
+family = "gliner"
+venv = "tf4"
+cpu = true
+train = "Model card: urchade/pile-mistral-v0.1; 289M parameters."
+contaminated = []
+
+[models.gliner-multi-v21-ru]
+repo = "urchade/gliner_multi-v2.1"
+revision = "443d26d654e0324125a96bebd8e796c14ff2efe6"
+family = "gliner"
+venv = "tf4"
+cpu = true
+labels = "ru"
+train = "Same weights as gliner-multi-v21, with Russian zero-shot labels."
+contaminated = []
+
+[models.gliner-pii-edge]
+repo = "knowledgator/gliner-pii-edge-v1.0"
+revision = "9b7f39b0a2da971a5beea78d35f1539d4009c891"
+family = "gliner"
+venv = "tf4"
+cpu = true
+train = "Wordcab/Knowledgator card: training sources not disclosed, 60+ categories, quantization-aware."
+contaminated = []
+
+[models.gliner-pii-base]
+repo = "knowledgator/gliner-pii-base-v1.0"
+revision = "61726e0ad791dcab3e29339bbec3ad42ded65641"
+family = "gliner"
+venv = "tf4"
+cpu = true
+train = "Same PII family as gliner-pii-edge; base configuration."
+contaminated = []
+
+[models.gliner-stream-pii]
+repo = "knowledgator/gliner-stream-pii-v1.0"
+revision = "e871777dc4b3b688747a0433fff8d94a36fcc7b0"
+family = "gliner"
+venv = "tf4"
+cpu = false
+disputed = true
+train = "Qwen3-0.6B decoder backbone; disputed inclusion under the no-LLM scope."
+contaminated = []
+
+[models.nuner-zero]
+repo = "numind/NuNER_Zero"
+revision = "c90187673f464518dca09f41689184ed6976242c"
+family = "gliner"
+venv = "tf4"
+cpu = false
+train = "Model card: numind/NuNER; English claimed, lowercase zero-shot labels."
+contaminated = []
+
+[models.gliner2-large]
+repo = "fastino/gliner2-large-v1"
+revision = "6a498b5a28ec3908bbc5277aeb47d22bcfc02f33"
+family = "gliner2"
+venv = "tf4"
+cpu = false
+train = "Model card: sources not disclosed; EN/FR/ES, 486M parameters."
+contaminated = []
+
+[models.gliner25-fastino]
+repo = "fastino/gliner2.5-multi-v1"
+revision = "aaecfe45db1d828c963717054ccb868e8ad1f1d5"
+family = "gliner2"
+venv = "tf4"
+cpu = true
+train = "Sources not disclosed; mDeBERTa-v3-base boundary architecture, 287M parameters."
+contaminated = []
+
+[models.gliner25-fastino-ru]
+repo = "fastino/gliner2.5-multi-v1"
+revision = "aaecfe45db1d828c963717054ccb868e8ad1f1d5"
+family = "gliner2"
+venv = "tf4"
+cpu = true
+labels = "ru"
+train = "Same weights as gliner25-fastino, with Russian zero-shot labels."
+contaminated = []
+
+[models.gliner-nvidia-ru]
+repo = "nvidia/gliner-PII"
+revision = "bd23e8ef4425fd04e34c5204ab49ffaa706eae79"
+family = "gliner"
+venv = "tf4"
+cpu = true
+labels = "ru"
+train = "Same weights as gliner-nvidia, with Russian zero-shot labels."
+contaminated = ["nemotron-pii"]
+
+[models.gliner-urchade-ru]
+repo = "urchade/gliner_multi_pii-v1"
+revision = "1fcf13e85f4eef5394e1fcd406cf2ca9ea82351d"
+family = "gliner"
+venv = "tf4"
+cpu = true
+labels = "ru"
+train = "Same weights as gliner-urchade, with Russian zero-shot labels."
+contaminated = []
+
+[models.gliner2-fastino-ru]
+repo = "fastino/gliner2-privacy-filter-PII-multi"
+revision = "c153999da5f4c509df4322b0c6a1baf3d2c284d7"
+family = "gliner2"
+venv = "tf4"
+cpu = true
+labels = "ru"
+train = "Same weights as gliner2-fastino, with Russian zero-shot labels."
+contaminated = []
+
+[models.gliner2-hivetrace-omni-ru]
+repo = "hivetrace/gliner-guard-omni"
+revision = "763f8aa9a7714dd2c3264f3751acdd5d854c5ac4"
+family = "gliner2"
+venv = "tf4"
+cpu = true
+labels = "ru"
+train = "Same weights as gliner2-hivetrace-omni, with Russian zero-shot labels."
+contaminated = ["nemotron-pii", "gretel-multi"]
+
+[models.gliner2-hivetrace-uni-ru]
+repo = "hivetrace/gliner-guard-uniencoder"
+revision = "5644cdb7c953463fa3a370e76617c03c2dd29f92"
+family = "gliner2"
+venv = "tf4"
+cpu = true
+labels = "ru"
+train = "Same weights as gliner2-hivetrace-uni, with Russian zero-shot labels."
+contaminated = ["nemotron-pii", "gretel-multi"]
+
+[models.gliner2-vladlinv-ru]
+repo = "vladlinv/ru-pii-ner-gliner2.5"
+revision = "d4c05667b10d8e8db0f0626934135731d0530983"
+family = "gliner2"
+venv = "tf4"
+cpu = true
+labels = "ru"
+train = "Same weights as gliner2-vladlinv, with Russian zero-shot labels."
+contaminated = []
+
+[models.opf-kz-ru]
+repo = "QOSIkz/kz-privacy-filter-v1"
+revision = "b804356ff8ac827fe2b046e8d3d0be2720c6b148"
+family = "opf"
+venv = "main"
+cpu = false
+train = "OpenAI privacy-filter fine-tune for Kazakh/Russian; original sources not disclosed."
+contaminated = []
+
+[models.natasha]
+repo = "natasha"
+revision = "1.6.0"
+family = "natasha"
+venv = "ner"
+cpu = true
+train = "Slovnet NER trained on Nerus silver Wikipedia/news annotation; package version pins the implementation."
+contaminated = []
+
+[models.spacy-ru-lg]
+repo = "spacy/ru_core_news_lg"
+revision = "fa0b3a0086b7b0d6a424d999ce25480bd67dd455"
+family = "spacy"
+venv = "ner"
+cpu = true
+train = "Nerus silver annotation; spaCy 3.8."
+contaminated = []
+
+[models.spacy-alrosait]
+repo = "alrosait/spacy_ru_core_news_lg_pii"
+revision = "8e0d9e49ae62dcb0772f8d8599ed3ffe28d43d7d"
+family = "spacy"
+venv = "ner"
+cpu = true
+train = "Model card: scanpatch Russian NAME/ADDRESS, AlexKly Detailed NER and alrosait synthetic Russian PII, 13,052 training examples."
+contaminated = ["scanpatch", "alrosait"]
+
+[models.stanza-ru]
+repo = "stanfordnlp/stanza-ru"
+revision = "dcbf023decb5a319fff84780779052ed974b9013"
+family = "stanza"
+venv = "ner"
+cpu = true
+train = "WikiNER silver Wikipedia annotation; Russian default package."
+contaminated = []
+
+[models.gitleaks]
+repo = "github.com/gitleaks/gitleaks"
+revision = "8.30.1"
+family = "leaks"
+venv = ""
+train = "Provider patterns and entropy; no model training."
+contaminated = ["secrets-rules"]
+
+[models.betterleaks]
+repo = "github.com/betterleaks/betterleaks"
+revision = "95237cf"
+family = "leaks"
+venv = ""
+train = "Gitleaks fork with its own rule set; no model training."
+contaminated = ["secrets-rules"]
+
+
+[models.rules-ru]
+repo = "benchmark/rules_ru.py"
+revision = "1.0"
+family = "rules"
+venv = ""
+train = "Public checksum algorithms, public token prefixes, and organization forms; no training."
+contaminated = []
+
+[models.presidio-ru]
+repo = "github.com/microsoft/presidio + github.com/brikkoAI/presidio-ru-recognizers"
+revision = "presidio-analyzer 2.2.364, presidio-ru-recognizers 0.1.0, ru_core_news_sm 3.8.0"
+family = "presidio"
+venv = ""
+train = "Presidio and presidio-ru-recognizers rules; spaCy ru_core_news_sm trained on Nerus."
+contaminated = []
+
+[models.trufflehog]
+repo = "github.com/trufflesecurity/trufflehog"
+revision = "3.97.4"
+family = "leaks"
+venv = ""
+train = "Provider detectors, no training; verification disabled; whole-line spans."
+contaminated = []
+
+[models.detect-secrets]
+repo = "github.com/Yelp/detect-secrets"
+revision = "1.5.0"
+family = "leaks"
+venv = ""
+train = "Entropy and keywords; hashed secrets in native report, whole-line spans."
+contaminated = []
+
+[models.noseyparker]
+repo = "github.com/praetorian-inc/noseyparker"
+revision = "0.24.0"
+family = "leaks"
+venv = ""
+train = "Praetorian rules; no training. Successor: Titus."
+contaminated = []
+
+[models.titus]
+repo = "github.com/praetorian-inc/titus"
+revision = "v1.2.9"
+family = "leaks"
+venv = ""
+train = "Nosey Parker successor; provider rules and byte offsets, no training."
+contaminated = ["secrets-rules"]
+
+[models.kingfisher]
+repo = "github.com/mongodb/kingfisher"
+revision = "2.1.0"
+family = "leaks"
+venv = ""
+train = "Provider rules with Betterleaks built-ins; validation disabled, low confidence."
+contaminated = ["secrets-rules"]
+
+[models.credsweeper]
+repo = "github.com/Samsung/CredSweeper"
+revision = "1.18.2"
+family = "leaks"
+venv = ""
+train = "Rules plus ONNX ML classifier trained on Samsung CredData."
+contaminated = ["creddata"]
+
+[models.credsweeper-noml]
+repo = "github.com/Samsung/CredSweeper"
+revision = "1.18.2"
+family = "leaks"
+venv = ""
+train = "CredSweeper with ML filtering disabled via ml_threshold=0."
+contaminated = ["creddata"]
+
+[models.deepsecrets]
+repo = "github.com/ntoskernel/deepsecrets"
+revision = "2.0.1"
+family = "leaks"
+venv = ""
+train = "Entropy, variable-name semantics and code parsing; training sources not disclosed."
+contaminated = []
+
+
+[variants.sent300]
+env = { CHUNK = "300", CHUNK_MODE = "sent" }
+benches = ["secrets-issues", "tab-echr", "dialogpii-en", "nerel", "factrueval", "synth-ru-tickets", "redact-ru", "nemotron-pii", "jayguard", "creddata", "leak-museum"]
+models = ["pplx", "gliner-nvidia", "opf-ru-v2", "ru-legal-ner", "gliner25-fastino", "nym-base"]
+
+[variants.ov100]
+env = { CHUNK = "600", CHUNK_MODE = "overlap", OVERLAP = "100" }
+benches = ["secrets-issues", "tab-echr", "dialogpii-en", "nerel", "factrueval", "synth-ru-tickets", "redact-ru", "nemotron-pii", "jayguard", "creddata", "leak-museum"]
+models = ["pplx", "gliner-nvidia", "opf-ru-v2", "ru-legal-ner", "gliner25-fastino", "nym-base"]
+
+[variants.nochunk]
+env = { CHUNK = "0" }
+benches = ["secrets-issues", "tab-echr", "dialogpii-en", "nerel", "factrueval", "synth-ru-tickets", "redact-ru", "nemotron-pii", "jayguard", "creddata", "leak-museum"]
+models = ["gliner25-fastino", "gliner25-fastino-ru", "mmbert32k"]
+
+[variants.homoglyph]
+env = { NORMALIZE = "homoglyph" }
+benches = ["corrupt-hivetrace", "corrupt-redmadrobot", "corrupt-secrets-issues"]
+models = ["pplx", "gliner-nvidia", "opf-ru-v2", "ru-legal-ner", "gliner2-vladlinv", "nym-base", "ner-ru-gherman"]
+
+[cpu]
+benches = ["hivetrace", "redmadrobot", "nym-ru", "synth-ru-tickets", "secrets-issues", "ameau01", "nemotron-pii", "tab-echr", "kiji-multi"]

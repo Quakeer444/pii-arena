@@ -1,0 +1,124 @@
+{
+  "benchmark/benchlib.py": {
+    "original_sha256": "03f5d18be95c06324d9bb489db855d0019c1b69aa06b587423e9df782ccdd478",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "benchmark/score.py": {
+    "original_sha256": "d585a96b684fe71f9acadb9161b29ec8ebda880cf0af2041d0a08f40c53166ce",
+    "changes": "English diagnostics, configurable local data paths, strict complete-result validation"
+  },
+  "benchmark/ens.py": {
+    "original_sha256": "29e905eb0a30c67e09369d311d64ccfb1ae76e78b69f77224b9b3f5f6cc8397a",
+    "changes": "English diagnostics, configurable local data paths, strict prediction validation"
+  },
+  "benchmark/secrets_recall.py": {
+    "original_sha256": "4d37cf24d55d3428eec2d6b6b69e6bf87aa1da0c1c313b720ee2284966ded16b",
+    "changes": "English diagnostics, configurable local data paths, strict prediction validation"
+  },
+  "benchmark/run.py": {
+    "original_sha256": "d995b741a0c94baf206f35a53203061d0a41e84f0ed18edd097b3827a4e652b1",
+    "changes": "English diagnostics, configurable local data paths, strict batch and Natasha adapter cardinality validation"
+  },
+  "benchmark/run_leaks.py": {
+    "original_sha256": "8d658d8eb8478795fed4123ba31fb852c1cc52b1c766206b27b954649c42034c",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "benchmark/run_presidio.py": {
+    "original_sha256": "d348f8c0c0129b99823a16435bba46edd143594b5efe23d9c3253ee63c1ffc2a",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "benchmark/rules_ru.py": {
+    "original_sha256": "42811e599cabc60fa51d7dc0c4358a8e4e2f6020bf01c461aa632984d3003d0c",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "benchmark/corrupt.py": {
+    "original_sha256": "c3b1446bf0a50d1da9d8e14779082822bc0ebb737b479d5f475b9f3a91fd90e6",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "benchmark/selftest.py": {
+    "original_sha256": "c5005b54532163d2880fda6f5de853a5fa1796e509787d0b4781a813978c0c77",
+    "changes": "English diagnostics, local data paths, incomplete-result and cardinality regressions"
+  },
+  "benchmark/tokenizer_compat.py": {
+    "original_sha256": "cc9ac07c76c088b8be2c4658e10fdd98c9c6d307552154cf47d411529df1b737",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "benchmark/bench.py": {
+    "original_sha256": "c6b0ccb200c28a6aeb5929dfadac5f765b57b60dd92ca8ded71d70faa4768e15",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "benchmark/sets_ru.py": {
+    "original_sha256": "1f6789be5dd7ce4cddd093748811f1eec55bfd48c0cac93d4eecfb16f1814324",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "benchmark/sets_en.py": {
+    "original_sha256": "78158e10f338c03fb37607ba4077e68b1bfaae06c617fe4d32d787e5cd6cdaa9",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "benchmark/sets_code.py": {
+    "original_sha256": "5aa6ecb1032939dfc41c958c21114d20d97540007abcae9da3843adab337cbfe",
+    "changes": "English diagnostics, local data paths, source-relative offsets tied to source hashes"
+  },
+  "benchmark/synth.py": {
+    "original_sha256": "565ef59bd41fc14641f1db3ca100d1373631a05c61ff7ebf202fe486bd9c41cd",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "benchmark/rawsum.py": {
+    "original_sha256": "f7dae8b187c49976a388fb5bbe8aa23815fdfe2b387ad547a8c63b971eafb421",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "benchmark/prep.py": {
+    "original_sha256": "673a2b5354a6c8c75791503c716cb0c2f8cab3b46fd8cbe47da1ac36e3d20575",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "benchmark/conv.py": {
+    "original_sha256": "16b04db1a5cc262572a99a48a8bcceb0ecde44241b88373f9a5d51136b30af7f",
+    "changes": "English diagnostics, removed prose comments/docstrings, configurable local data paths"
+  },
+  "publication_changes": [
+    "Default workspace moved to BENCHMARK_DATA or .local/research; catalog stays beside the adapters.",
+    "English diagnostics; measured-language taxonomies and examples retained.",
+    "Self-checks use temporary synthetic fold inputs instead of depending on private corpora.",
+    "Converter retained verbatim with original Apache-2.0 notice.",
+    "Preparation writes converted weights inside the selected local workspace and retains the download cache.",
+    "Corpus values were replaced by source-relative offsets tied to frozen source hashes.",
+    "Quality reporting rejects missing rows, error rows and truncated batch output.",
+    "Natasha adapter rejects truncated or extra tagger outputs before the shared batch retry path.",
+    "Strict dataset/config binding: rescoring rejects a prediction whose metadata names another dataset, wrong rows/chars metadata, or a mismatched model identity (F01/F03).",
+    "A valid corpus hash no longer skips the rows/chars cross-checks (F03).",
+    "Prediction files must carry exactly one leading metadata record; span shapes, ids, labels and scores are validated on read; duplicate gold row ids are rejected (F04).",
+    "Scanner findings map to the occurrence the scanner reported; ambiguous repeats stay marked unresolved instead of guessing (F02).",
+    "Run metadata records started_utc/finished_utc instead of a post-inference local timestamp (F13).",
+    "Ensemble composition reads validate the expected dataset and model identity like the other consumers (F01).",
+    "Secrets recall rescoring validates the expected dataset and model identity like the other consumers (F01).",
+    "Secrets report replaces clean-rows labels with rows-without-annotations wording (text accuracy).",
+    "Gitleaks adapter normalizes UTF-8 byte Match columns to character offsets and locates the capture-group Secret inside the confirmed Match range (R01); decoded-content findings stay at the native range and are counted as unresolved in run metadata.",
+    "Scanner release status is recorded per adapter in run_leaks.ADAPTER_STATUS and surfaced next to affected tables (R06).",
+    "Scoring accepts a limit larger than the dataset as the whole slice and rejects an empty or non-object metadata record.",
+    "The secrets report labels missed spans as untouched annotations and unannotated rows explicitly; the pooled [k/N] description no longer claims a floor for the full composition (R08).",
+    "scan_secrets validates PROVENANCE digest lines structurally against real module hashes and applies the same reviewed exception policy to full Git history findings (R04/R05).",
+    "Export writes composition-counts.json in both branches, checks staged completeness, and swaps the two public directories as one consistent operation with rollback (R03)."
+  ],
+  "public_module_sha256": {
+    "bench.py": "ad22e9c05954789708c149f2f0fd82b17035d7cb0bf44e19079a79723b5c0579",
+    "benchlib.py": "45a5b2319d45a303b3517f8efdc1700741659ab0ce7bee73189aff4c411fb330",
+    "conv.py": "16b04db1a5cc262572a99a48a8bcceb0ecde44241b88373f9a5d51136b30af7f",
+    "corrupt.py": "d857a7178c13e607937e7e7b5a70f6582e4ef0df09b940f277dc1819572b2a08",
+    "corpus_offsets.json": "8b6b13f633f0d2c46faf59fbbd331d9f8c846c7da760469dd7f22a05f4e2cc6f",
+    "ens.py": "7590ef389d9346c2dfb244e93b43add23aeb128e60df292180e8c2f22962f149",
+    "prep.py": "15235decd94e13072fafb4d8401ec12f0abca2537566fb5623d9236c1a161b48",
+    "rawsum.py": "5b3fc0df2eb7e5cc96cb9b55c8f7ce2853ebb946c73455c2124d8665eaf2f193",
+    "rules_ru.py": "9aa45ed4a7223515c0097a3dd072abd00f4ad68a9fec56c7b8fbd5f43cecd3c1",
+    "run.py": "451a1da46c4d804d07f743d9971b771af0c27638244ecedf59a9b77130ef6b72",
+    "run_leaks.py": "db6ee2a16ee2b7124ecedb94dfedca0d05cfe693a52bfe900e9c2a252a8f3fd1",
+    "run_presidio.py": "bc20890f9e3eeb3eaddcc9820b9fc607540dc47566d0fa47292b691bd8daee15",
+    "score.py": "29e92d1663117431d7a0cd4adf4402fe7503a701aa61dedf6da9928418033e30",
+    "secrets_recall.py": "ea2213a55e60e8866a59ecc883e56ca5236482033b9cc7207614d674f26f4cc2",
+    "selftest.py": "cdfc8bb31a9c9adb991dc84e46749634d557cfde16b6b7af08bcc2f344a1e928",
+    "sets_code.py": "c73acafb8be2ce03baaa648a2c4bfaae2901b41361d4a1caad8940eb6fca0171",
+    "sets_en.py": "9972e832940f3d8cf57b89cafd2e0b99a950e223408a15cf032fed04d9861061",
+    "sets_ru.py": "3d7e75bb0fa1c7ff53b7b87c09f57f27362f52af8f3bd2369ea41baf4f3803cd",
+    "synth.py": "327b3d56d4c2272e5db62b6b88afa249c22710e321253790e23ebd55b5380099",
+    "tokenizer_compat.py": "21ff69cef5882a96eb997db3abd0581a1e1f09b8f38e2cb9f6c786938689f57a"
+  }
+}

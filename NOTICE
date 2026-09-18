@@ -1,0 +1,10 @@
+PII & Secrets Detection Benchmark
+Original project code and publication material: Quakeer444, MIT License.
+
+benchmark/conv.py is retained verbatim from the archived Hugging Face
+conversion script. Copyright 2026 The HuggingFace Team. All rights reserved.
+It is licensed under the Apache License, Version 2.0; see
+LICENSES/Apache-2.0.txt and the source file header.
+
+Third-party datasets and model weights retain their upstream terms.
+Dataset attribution and recorded license evidence: LICENSES/README.md.

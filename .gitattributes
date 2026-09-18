@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.svg text linguist-generated=true
+results/** linguist-generated=true
+datasets/*.json linguist-generated=true

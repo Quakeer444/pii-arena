@@ -1,0 +1,234 @@
+device,model,chars_per_second,rows_per_second,relative_pplx,p50_ms_reported,p95_ms_reported,hardware,threads,workers,quant,variant,rss_mb,datasets
+cpu,betterleaks,1934632.0,6427.14,,0.0,0.0,-,-,-,-,-,,9
+cpu,titus,174472.0,453.1,,1.0,5.0,-,-,-,-,-,,3
+cpu,noseyparker,142288.0,369.51,,2.0,10.0,-,-,-,-,-,,3
+cpu,kingfisher,136969.0,355.7,,2.0,11.0,-,-,-,-,-,,3
+cpu,credsweeper-noml,52155.0,135.44,,4.0,37.0,-,-,-,-,-,,3
+cpu,trufflehog,27652.0,71.81,,12.0,48.0,-,-,-,-,-,,3
+cpu,detect-secrets,18599.0,48.3,,12.0,90.0,-,-,-,-,-,,3
+cpu,deepsecrets,12516.0,32.5,,24.0,96.0,-,-,-,-,-,,3
+cpu,presidio-ru,4846.0,30.66,,23.0,95.0,-,-,-,-,-,,2
+cpu,credsweeper,2466.0,6.4,,193.0,219.0,-,-,-,-,-,,3
+cpu,ru-legal-ner+cpu,30172.0,80.65,,11.0,23.0,-,1,-,-,cpu,550.0,2
+cpu,ru-legal-ner+cpu-int8,54911.0,85.09,,5.0,50.0,AMD EPYC 9654 96-Core Processor,16,24,int8,cpu-int8,1110.0,9
+cpu,ru-legal-ner+cpu-speed,33180.0,500.0,45.67,2.0,4.0,AMD EPYC 9654 96-Core Processor,16,24,-,cpu-speed,755.0,1
+cpu,nym-base+cpu-int8,5230.0,8.1,,45.0,579.0,AMD EPYC 9654 96-Core Processor,16,24,int8,cpu-int8,2627.0,9
+cpu,mmbert32k+cpu-int8,5136.0,7.96,,45.0,589.0,AMD EPYC 9654 96-Core Processor,16,24,int8,cpu-int8,2875.0,9
+cpu,nym-base+cpu-speed,2998.0,7.54,4.13,73.0,470.0,AMD EPYC 9654 96-Core Processor,16,24,-,cpu-speed,1790.0,3
+cpu,opf-ru+cpu-speed,2808.0,6.33,3.86,136.0,300.0,AMD EPYC 9654 96-Core Processor,16,24,-,cpu-speed,2949.0,1
+cpu,gliner2-vladlinv-ru+cpu-speed,2245.0,0.53,3.09,1837.0,3379.0,AMD EPYC 9654 96-Core Processor,16,24,-,cpu-speed,3452.0,1
+cpu,gliner-nvidia+cpu-speed,1182.0,4.29,1.63,211.0,483.0,AMD EPYC 9654 96-Core Processor,16,24,-,cpu-speed,4250.0,1
+cpu,opf-ru-v2+cpu-speed,1125.0,16.95,1.55,53.0,88.0,AMD EPYC 9654 96-Core Processor,16,24,-,cpu-speed,2700.0,1
+cpu,gliner-nvidia+cpu-int8,932.0,1.44,,370.0,2733.0,AMD EPYC 9654 96-Core Processor,16,24,int8,cpu-int8,4882.0,9
+cpu,pplx+cpu-speed,727.0,2.85,1.0,374.0,748.0,AMD EPYC 9654 96-Core Processor,16,24,-,cpu-speed,3959.0,2
+cpu,bardsai-eu,615.0,0.95,,594.0,3914.0,AMD EPYC 9654 96-Core Processor,8,36,-,-,2139.0,9
+cpu,nym-small,487.0,0.76,,770.0,4487.0,AMD EPYC 9654 96-Core Processor,8,36,-,-,2403.0,9
+cpu,pii-shield-onnx,339.0,0.53,,1126.0,6573.0,AMD EPYC 9654 96-Core Processor,8,36,-,-,4222.0,9
+cpu,pplx+cpu-int8,218.0,0.34,1.0,145.0,2483.0,AMD EPYC 9654 96-Core Processor,8,36,int8,cpu-int8,4775.0,9
+cpu,natasha+cpu-speed,130799.0,83.33,130.02,3.0,49.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,209.0,9
+cpu,spacy-alrosait+cpu-speed,53307.0,33.96,52.99,9.0,121.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,1492.0,9
+cpu,spacy-ru-lg+cpu-speed,52320.0,33.33,52.01,7.0,128.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,1494.0,9
+cpu,ru-legal-ner+cpu-speed,50942.0,28.99,50.64,11.0,134.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,903.0,8
+cpu,gravitee-small+cpu-speed,15141.0,9.65,15.05,40.0,485.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,1065.0,9
+cpu,gravitee-small+cpu-int8,12174.0,18.87,,16.0,188.0,AMD EPYC 9K84 96-Core Processor,16,24,int8,cpu-int8,1210.0,9
+cpu,kalyan-ettin+cpu-speed,8742.0,5.57,8.69,65.0,873.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,1148.0,9
+cpu,ru-pii-ner+cpu-speed,7053.0,4.49,7.01,64.0,1023.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,2774.0,9
+cpu,gliner2-hivetrace-uni-ru+cpu-speed,4906.0,4.04,4.88,106.0,1025.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,2088.0,4
+cpu,davlan-xlmr+cpu-speed,4431.0,2.82,4.4,90.0,1552.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,1612.0,9
+cpu,mmbert32k+cpu-speed,4313.0,2.75,4.29,85.0,1514.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,1856.0,9
+cpu,davlan-xlmr+cpu-int8,4108.0,6.37,,38.0,777.0,AMD EPYC 9K84 96-Core Processor,16,24,int8,cpu-int8,2012.0,9
+cpu,ner-ru-gherman+cpu-speed,4026.0,2.56,4.0,118.0,1659.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,1332.0,9
+cpu,davlan-mbert+cpu-speed,3983.0,2.54,3.96,109.0,1686.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,1367.0,9
+cpu,ner-ru-gherman+cpu-int8,3509.0,6.89,,57.0,520.0,AMD EPYC 9K84 96-Core Processor,16,24,int8,cpu-int8,1706.0,8
+cpu,gliner2-hivetrace-uni+cpu-speed,3424.0,1.74,3.4,242.0,2108.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,2495.0,7
+cpu,openmed-nemotron+cpu-speed,3287.0,2.09,3.27,118.0,1844.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,2848.0,9
+cpu,fef2-secret-ru+cpu-speed,3278.0,2.09,3.26,113.0,2073.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,1395.0,9
+cpu,davlan-mbert+cpu-int8,3201.0,6.28,,76.0,550.0,AMD EPYC 9K84 96-Core Processor,16,24,int8,cpu-int8,1618.0,8
+cpu,nym-base+cpu-speed,3116.0,1.45,3.1,168.0,3014.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,2053.0,6
+cpu,openmed-multilingual+cpu-speed,3076.0,1.96,3.06,117.0,2130.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,2783.0,9
+cpu,traciora+cpu-speed,3040.0,1.94,3.02,130.0,1977.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3544.0,9
+cpu,opf-kz-ru+cpu-speed,2950.0,1.88,2.93,128.0,2165.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3807.0,9
+cpu,opf-ru-v2+cpu-speed,2886.0,1.64,2.87,197.0,2264.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3626.0,8
+cpu,opf-ru+cpu-speed,2839.0,1.66,2.82,149.0,2145.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3721.0,8
+cpu,fef2-secret-ru+cpu-int8,2821.0,6.21,,75.0,648.0,AMD EPYC 9K84 96-Core Processor,16,24,int8,cpu-int8,1664.0,7
+cpu,apararti+cpu-speed,2446.0,1.56,2.43,158.0,2499.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3999.0,9
+cpu,openai-base+cpu-speed,2378.0,1.51,2.36,159.0,2679.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,4188.0,9
+cpu,gliner-pii-base+cpu-speed,1907.0,1.21,1.9,310.0,3302.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3054.0,9
+cpu,gliner-urchade+cpu-int8,1624.0,2.73,,174.0,1416.0,AMD EPYC 9K84 96-Core Processor,16,24,int8,cpu-int8,4498.0,8
+cpu,gliner-urchade-ru+cpu-speed,1608.0,1.32,1.6,333.0,2893.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3141.0,4
+cpu,gliner-multi-v21+cpu-int8,1586.0,2.67,,198.0,1398.0,AMD EPYC 9K84 96-Core Processor,16,24,int8,cpu-int8,4578.0,8
+cpu,gliner-multi-v21-ru+cpu-speed,1491.0,1.23,1.48,332.0,3447.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3122.0,4
+cpu,gliner-pii-edge+cpu-speed,1454.0,0.93,1.45,435.0,3678.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3842.0,9
+cpu,ner-ru-yqelz+cpu-speed,1413.0,0.9,1.4,298.0,4727.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,2506.0,9
+cpu,gliner-pii-edge+cpu-int8,1327.0,2.49,,265.0,1340.0,AMD EPYC 9K84 96-Core Processor,16,24,int8,cpu-int8,2343.0,7
+cpu,gliner25-fastino-ru+cpu-speed,1301.0,1.07,1.29,499.0,3438.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3157.0,4
+cpu,gliner-pii-base+cpu-int8,1266.0,5.04,,112.0,544.0,AMD EPYC 9K84 96-Core Processor,16,24,int8,cpu-int8,2743.0,5
+cpu,gliner-stream-pii+cpu-speed,1219.0,0.78,1.21,453.0,5465.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,5957.0,9
+cpu,stanza-ru+cpu-speed,1198.0,0.76,1.19,257.0,6290.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,1467.0,9
+cpu,gliner2-hivetrace-omni-ru+cpu-speed,1163.0,0.96,1.16,683.0,3647.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3330.0,4
+cpu,gliner2-fastino-ru+cpu-speed,1123.0,0.92,1.12,697.0,3585.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3324.0,4
+cpu,gliner-urchade+cpu-speed,1033.0,0.66,1.03,437.0,6519.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3139.0,9
+cpu,gliner-multi-v21+cpu-speed,1011.0,0.64,1.0,483.0,6741.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3244.0,9
+cpu,pplx+cpu-speed,1006.0,0.52,1.0,642.0,7479.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,4133.0,7
+cpu,gliner25-fastino+cpu-speed,802.0,0.51,0.8,714.0,8092.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,4490.0,9
+cpu,gliner2-vladlinv+cpu-speed,690.0,0.44,0.69,860.0,9428.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,4536.0,9
+cpu,gliner2-hivetrace-omni+cpu-speed,676.0,0.43,0.67,865.0,9516.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,4567.0,9
+cpu,gliner2-fastino+cpu-speed,670.0,0.43,0.67,914.0,10073.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,4665.0,9
+cpu,gliner2-vladlinv-ru+cpu-speed,569.0,2.64,0.57,373.0,942.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,3155.0,3
+cpu,gliner-nvidia-ru+cpu-speed,500.0,0.41,0.5,1223.0,8802.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,4266.0,4
+cpu,nuner-zero+cpu-speed,497.0,0.32,0.49,1573.0,12582.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,4263.0,9
+cpu,gliner-nvidia+cpu-speed,442.0,0.26,0.44,2184.0,15780.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,4259.0,8
+cpu,gliner2-large+cpu-speed,405.0,0.26,0.4,2079.0,14714.0,AMD EPYC 9K84 96-Core Processor,16,24,-,cpu-speed,5969.0,9
+cpu,natasha,148920.0,268.66,,2.0,14.0,AMD EPYC 9K84 96-Core Processor,2,123,-,-,209.0,41
+cpu,spacy-alrosait,63466.0,114.5,,4.0,38.0,AMD EPYC 9K84 96-Core Processor,2,123,-,-,1522.0,41
+cpu,spacy-ru-lg,61081.0,110.2,,4.0,40.0,AMD EPYC 9K84 96-Core Processor,2,123,-,-,1495.0,41
+cpu,ner-ru-gherman-onnx,1857.0,5.0,,146.0,403.0,AMD EPYC 9K84 96-Core Processor,8,24,-,-,1065.0,4
+cpu,bardsai-eu,1248.0,1.91,,298.0,1645.0,AMD EPYC 9K84 96-Core Processor,8,24,-,-,1726.0,17
+cpu,bardsai-eu,403.0,1.16,,532.0,2611.0,AMD EPYC 9K84 96-Core Processor,8,32,-,-,1751.0,15
+cpu,nym-small,260.0,1.91,,390.0,1140.0,AMD EPYC 9K84 96-Core Processor,8,32,-,-,1554.0,2
+cpu,pii-shield-onnx,188.0,0.6,,1022.0,4964.0,AMD EPYC 9K84 96-Core Processor,8,32,-,-,1937.0,12
+cpu,gliner-pii-edge+cpu-int8,5958.0,1.17,,602.0,1928.0,AMD EPYC 9K84 96-Core Processor,8,48,int8,cpu-int8,1237.0,1
+cpu,gliner-urchade+cpu-int8,5108.0,1.0,,841.0,2273.0,AMD EPYC 9K84 96-Core Processor,8,48,int8,cpu-int8,3312.0,1
+cpu,gliner-multi-v21+cpu-int8,4583.0,0.9,,862.0,2748.0,AMD EPYC 9K84 96-Core Processor,8,48,int8,cpu-int8,3160.0,1
+cpu,gitleaks,1793782.0,5893.91,,0.0,0.0,Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz,-,1,-,-,,10
+cpu,rules-ru,714630.0,1289.26,,0.0,3.0,Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz,-,1,-,-,,41
+cpu,detect-secrets,23323.0,21.85,,45.0,45.0,Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz,-,1,-,-,,1
+cpu,credsweeper-noml,15359.0,14.39,,69.0,69.0,Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz,-,1,-,-,,1
+cpu,deepsecrets,12851.0,12.04,,82.0,82.0,Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz,-,1,-,-,,1
+cuda,fef2-secret-ru,108162.0,121.64,111.47,1.0,37.0,NVIDIA GeForce RTX 5090,-,1,-,-,1547.0,2
+cuda,gliner2-hivetrace-omni,76484.0,87.64,78.82,2.0,53.0,NVIDIA GeForce RTX 5090,-,1,-,-,3439.0,2
+cuda,gliner2-vladlinv-ru,63859.0,241.1,65.81,4.0,10.0,NVIDIA GeForce RTX 5090,-,1,-,-,3336.0,2
+cuda,gravitee-small,53212.0,307.13,54.84,3.0,5.0,NVIDIA GeForce RTX 5090,-,1,-,-,1232.0,3
+cuda,gliner2-hivetrace-uni-ru,50761.0,60.46,52.31,13.0,39.0,NVIDIA GeForce RTX 5090,-,1,-,-,2073.0,2
+cuda,gliner25-fastino+nochunk,38440.0,74.5,,2.0,75.0,NVIDIA GeForce RTX 5090,-,1,-,nochunk,3343.0,2
+cuda,gliner2-vladlinv,31052.0,759.17,32.0,1.0,4.0,NVIDIA GeForce RTX 5090,-,1,-,-,3342.0,1
+cuda,gliner-nvidia+sent300,28402.0,16.5,,45.0,153.0,NVIDIA GeForce RTX 5090,-,1,-,sent300,4258.0,1
+cuda,ru-legal-ner,26616.0,650.71,27.43,1.0,1.0,NVIDIA GeForce RTX 5090,-,1,-,-,1299.0,1
+cuda,gliner2-fastino-ru,24841.0,607.33,25.6,1.0,4.0,NVIDIA GeForce RTX 5090,-,1,-,-,3336.0,1
+cuda,gliner-multi-v21-ru,23289.0,569.38,24.0,1.0,2.0,NVIDIA GeForce RTX 5090,-,1,-,-,3615.0,1
+cuda,gliner25-fastino-ru,23289.0,569.38,24.0,1.0,7.0,NVIDIA GeForce RTX 5090,-,1,-,-,3331.0,1
+cuda,ner-ru-gherman,23289.0,569.38,24.0,1.0,2.0,NVIDIA GeForce RTX 5090,-,1,-,-,1540.0,1
+cuda,nym-base,23289.0,569.38,24.0,2.0,2.0,NVIDIA GeForce RTX 5090,-,1,-,-,2492.0,1
+cuda,davlan-mbert,21919.0,535.88,22.59,1.0,2.0,NVIDIA GeForce RTX 5090,-,1,-,-,1524.0,1
+cuda,ner-ru-yqelz,21919.0,535.88,22.59,2.0,2.0,NVIDIA GeForce RTX 5090,-,1,-,-,3441.0,1
+cuda,gliner25-fastino,18631.0,455.5,19.2,1.0,8.0,NVIDIA GeForce RTX 5090,-,1,-,-,2753.0,1
+cuda,davlan-xlmr,17744.0,433.81,18.29,1.0,1.0,NVIDIA GeForce RTX 5090,-,1,-,-,2193.0,1
+cuda,mmbert32k,17744.0,433.81,18.29,2.0,2.0,NVIDIA GeForce RTX 5090,-,1,-,-,2459.0,1
+cuda,gliner2-fastino,15526.0,379.58,16.0,2.0,8.0,NVIDIA GeForce RTX 5090,-,1,-,-,3473.0,1
+cuda,kalyan-ettin,15526.0,379.58,16.0,2.0,3.0,NVIDIA GeForce RTX 5090,-,1,-,-,1497.0,1
+cuda,gliner2-hivetrace-omni-ru,13801.0,337.41,14.22,2.0,9.0,NVIDIA GeForce RTX 5090,-,1,-,-,3346.0,1
+cuda,gliner-multi-v21,12849.0,314.14,13.24,2.0,3.0,NVIDIA GeForce RTX 5090,-,1,-,-,3633.0,1
+cuda,gliner-urchade-ru,12849.0,314.14,13.24,2.0,3.0,NVIDIA GeForce RTX 5090,-,1,-,-,3232.0,1
+cuda,gliner2-large,12421.0,303.67,12.8,3.0,8.0,NVIDIA GeForce RTX 5090,-,1,-,-,4534.0,1
+cuda,gliner-pii-base,12020.0,293.87,12.39,2.0,2.0,NVIDIA GeForce RTX 5090,-,1,-,-,2146.0,1
+cuda,gliner-pii-edge,12020.0,293.87,12.39,2.0,15.0,NVIDIA GeForce RTX 5090,-,1,-,-,1569.0,1
+cuda,gliner-nvidia-ru,11292.0,276.06,11.64,3.0,4.0,NVIDIA GeForce RTX 5090,-,1,-,-,4311.0,1
+cuda,gliner-urchade,10959.0,267.94,11.29,3.0,3.0,NVIDIA GeForce RTX 5090,-,1,-,-,3151.0,1
+cuda,gliner-nvidia,10646.0,260.29,10.97,3.0,4.0,NVIDIA GeForce RTX 5090,-,1,-,-,4214.0,1
+cuda,nuner-zero,8872.0,216.9,9.14,4.0,5.0,NVIDIA GeForce RTX 5090,-,1,-,-,4352.0,1
+cuda,gliner2-hivetrace-uni,8280.0,202.44,8.53,5.0,5.0,NVIDIA GeForce RTX 5090,-,1,-,-,2056.0,1
+cuda,traciora,6424.0,157.07,6.62,6.0,6.0,NVIDIA GeForce RTX 5090,-,1,-,-,5061.0,1
+cuda,opf-kz-ru,5733.0,140.15,5.91,7.0,7.0,NVIDIA GeForce RTX 5090,-,1,-,-,4520.0,1
+cuda,stanza-ru,5323.0,130.14,5.49,7.0,8.0,NVIDIA GeForce RTX 5090,-,1,-,-,1908.0,1
+cuda,apararti,5248.0,128.31,5.41,8.0,8.0,NVIDIA GeForce RTX 5090,-,1,-,-,4041.0,1
+cuda,openai-base,3298.0,80.62,3.4,12.0,12.0,NVIDIA GeForce RTX 5090,-,1,-,-,4148.0,1
+cuda,openmed-multilingual,2889.0,70.62,2.98,13.0,15.0,NVIDIA GeForce RTX 5090,-,1,-,-,3916.0,1
+cuda,opf-ru,2606.0,63.71,2.69,15.0,16.0,NVIDIA GeForce RTX 5090,-,1,-,-,3887.0,1
+cuda,openmed-nemotron,2518.0,61.55,2.59,15.0,17.0,NVIDIA GeForce RTX 5090,-,1,-,-,3894.0,1
+cuda,ru-pii-ner,1509.0,36.88,1.55,26.0,29.0,NVIDIA GeForce RTX 5090,-,1,-,-,3493.0,1
+cuda,pplx,970.0,23.72,1.0,39.0,42.0,NVIDIA GeForce RTX 5090,-,1,-,-,4267.0,1
+cuda,gliner25-fastino+ov100,84624.0,61.82,16.31,9.0,52.0,NVIDIA GeForce RTX 5090,-,2,-,ov100,2816.0,11
+cuda,ru-legal-ner+sent300,79749.0,58.26,22.62,9.0,71.0,NVIDIA GeForce RTX 5090,-,2,-,sent300,1372.0,11
+cuda,ru-legal-ner+ov100,77809.0,56.85,15.0,9.0,72.0,NVIDIA GeForce RTX 5090,-,2,-,ov100,1325.0,11
+cuda,ru-legal-ner,76562.0,135.32,16.82,3.0,29.0,NVIDIA GeForce RTX 5090,-,2,-,-,1367.0,40
+cuda,gliner25-fastino+sent300,75466.0,55.13,21.41,10.0,63.0,NVIDIA GeForce RTX 5090,-,2,-,sent300,2839.0,11
+cuda,davlan-xlmr,73674.0,130.22,16.19,4.0,30.0,NVIDIA GeForce RTX 5090,-,2,-,-,2184.0,40
+cuda,nym-base+sent300,73145.0,53.44,20.75,10.0,76.0,NVIDIA GeForce RTX 5090,-,2,-,sent300,2456.0,11
+cuda,nym-base,72492.0,128.13,15.93,4.0,30.0,NVIDIA GeForce RTX 5090,-,2,-,-,2456.0,40
+cuda,nym-base+ov100,71675.0,52.36,13.82,11.0,73.0,NVIDIA GeForce RTX 5090,-,2,-,ov100,2456.0,11
+cuda,ru-legal-ner+homoglyph,69717.0,181.37,15.01,2.0,24.0,NVIDIA GeForce RTX 5090,-,2,-,homoglyph,1301.0,3
+cuda,davlan-mbert,68000.0,120.19,14.94,4.0,32.0,NVIDIA GeForce RTX 5090,-,2,-,-,1522.0,40
+cuda,fef2-secret-ru,66971.0,140.02,14.72,4.0,24.0,NVIDIA GeForce RTX 5090,-,2,-,-,1547.0,35
+cuda,ner-ru-gherman,66682.0,117.86,14.65,4.0,33.0,NVIDIA GeForce RTX 5090,-,2,-,-,1541.0,40
+cuda,gliner25-fastino,65451.0,115.68,14.38,4.0,35.0,NVIDIA GeForce RTX 5090,-,2,-,-,2856.0,40
+cuda,gliner-pii-base,63679.0,112.55,13.99,4.0,37.0,NVIDIA GeForce RTX 5090,-,2,-,-,2123.0,40
+cuda,gliner2-vladlinv+homoglyph,61681.0,160.47,13.28,4.0,18.0,NVIDIA GeForce RTX 5090,-,2,-,homoglyph,3208.0,3
+cuda,nym-base+homoglyph,59103.0,153.76,12.73,3.0,24.0,NVIDIA GeForce RTX 5090,-,2,-,homoglyph,2455.0,3
+cuda,ner-ru-gherman+homoglyph,58063.0,151.06,12.5,3.0,24.0,NVIDIA GeForce RTX 5090,-,2,-,homoglyph,1539.0,3
+cuda,gliner2-vladlinv,57801.0,102.16,12.7,4.0,39.0,NVIDIA GeForce RTX 5090,-,2,-,-,3229.0,40
+cuda,ner-ru-yqelz,56345.0,99.59,12.38,5.0,38.0,NVIDIA GeForce RTX 5090,-,2,-,-,3300.0,40
+cuda,mmbert32k,54765.0,96.8,12.03,4.0,40.0,NVIDIA GeForce RTX 5090,-,2,-,-,2434.0,40
+cuda,gliner-multi-v21,53869.0,95.21,11.84,5.0,39.0,NVIDIA GeForce RTX 5090,-,2,-,-,3182.0,40
+cuda,gliner25-fastino+nochunk,52570.0,37.96,,16.0,84.0,NVIDIA GeForce RTX 5090,-,2,-,nochunk,2774.0,4
+cuda,gliner-urchade,49158.0,86.89,10.8,5.0,46.0,NVIDIA GeForce RTX 5090,-,2,-,-,3140.0,40
+cuda,gliner-stream-pii,48113.0,64.04,10.57,7.0,61.0,NVIDIA GeForce RTX 5090,-,2,-,-,4868.0,11
+cuda,mmbert32k+nochunk,39995.0,29.22,,17.0,138.0,NVIDIA GeForce RTX 5090,-,2,-,nochunk,2433.0,11
+cuda,gliner2-fastino,37693.0,66.62,8.28,7.0,57.0,NVIDIA GeForce RTX 5090,-,2,-,-,3348.0,40
+cuda,gliner2-hivetrace-omni,34790.0,67.59,7.65,7.0,56.0,NVIDIA GeForce RTX 5090,-,2,-,-,3334.0,30
+cuda,gliner-nvidia+ov100,29500.0,21.55,5.69,30.0,146.0,NVIDIA GeForce RTX 5090,-,2,-,ov100,4231.0,11
+cuda,gliner-nvidia+homoglyph,27769.0,72.24,5.98,9.0,38.0,NVIDIA GeForce RTX 5090,-,2,-,homoglyph,4247.0,3
+cuda,gliner-nvidia,26888.0,47.52,5.91,9.0,80.0,NVIDIA GeForce RTX 5090,-,2,-,-,4255.0,40
+cuda,nuner-zero,26176.0,46.27,5.75,10.0,82.0,NVIDIA GeForce RTX 5090,-,2,-,-,4287.0,40
+cuda,gliner-nvidia+sent300,25597.0,27.66,7.26,24.0,104.0,NVIDIA GeForce RTX 5090,-,2,-,sent300,4257.0,7
+cuda,gliner2-large,16474.0,29.12,3.62,16.0,130.0,NVIDIA GeForce RTX 5090,-,2,-,-,4506.0,40
+cuda,openmed-multilingual,11953.0,17.15,2.63,30.0,211.0,NVIDIA GeForce RTX 5090,-,2,-,-,3821.0,31
+cuda,openmed-nemotron,11447.0,16.42,2.52,31.0,222.0,NVIDIA GeForce RTX 5090,-,2,-,-,3821.0,31
+cuda,opf-ru,8946.0,12.83,1.97,42.0,275.0,NVIDIA GeForce RTX 5090,-,2,-,-,3817.0,31
+cuda,traciora,7361.0,11.17,1.62,52.0,347.0,NVIDIA GeForce RTX 5090,-,2,-,-,3814.0,10
+cuda,opf-kz-ru,6275.0,11.09,1.38,59.0,298.0,NVIDIA GeForce RTX 5090,-,2,-,-,3814.0,40
+cuda,apararti,5933.0,10.49,1.3,62.0,320.0,NVIDIA GeForce RTX 5090,-,2,-,-,3815.0,40
+cuda,openai-base,5543.0,7.95,1.22,71.0,437.0,NVIDIA GeForce RTX 5090,-,2,-,-,3814.0,31
+cuda,pplx+ov100,5187.0,3.79,1.0,143.0,854.0,NVIDIA GeForce RTX 5090,-,2,-,ov100,4234.0,11
+cuda,pplx+homoglyph,4645.0,12.08,1.0,54.0,241.0,NVIDIA GeForce RTX 5090,-,2,-,homoglyph,4234.0,3
+cuda,pplx,4551.0,8.04,1.0,60.0,426.0,NVIDIA GeForce RTX 5090,-,2,-,-,4234.0,40
+cuda,pplx+sent300,3525.0,2.58,1.0,215.0,1387.0,NVIDIA GeForce RTX 5090,-,2,-,sent300,4234.0,11
+cuda,gliner-pii-edge,1723.0,9.29,0.38,22.0,435.0,NVIDIA GeForce RTX 5090,-,2,-,-,1685.0,6
+cuda,gravitee-small,67914.0,97.03,,6.0,38.0,NVIDIA GeForce RTX 5090,-,4,-,-,1250.0,26
+cuda,fef2-secret-ru,63108.0,53.4,,11.0,60.0,NVIDIA GeForce RTX 5090,-,4,-,-,1534.0,4
+cuda,gliner2-vladlinv-ru,44875.0,105.86,,6.0,31.0,NVIDIA GeForce RTX 5090,-,4,-,-,3221.0,17
+cuda,gliner25-fastino-ru,38527.0,91.22,,7.0,31.0,NVIDIA GeForce RTX 5090,-,4,-,-,3229.0,18
+cuda,gliner-urchade-ru,35298.0,83.57,,8.0,38.0,NVIDIA GeForce RTX 5090,-,4,-,-,3154.0,18
+cuda,gliner2-hivetrace-omni,27995.0,39.2,,11.0,104.0,NVIDIA GeForce RTX 5090,-,4,-,-,3335.0,9
+cuda,gliner-multi-v21-ru,27925.0,66.11,,10.0,45.0,NVIDIA GeForce RTX 5090,-,4,-,-,3141.0,18
+cuda,gliner25-fastino-ru+nochunk,27579.0,54.84,,12.0,89.0,NVIDIA GeForce RTX 5090,-,4,-,nochunk,3192.0,1
+cuda,kalyan-ettin,24459.0,43.23,,7.0,97.0,NVIDIA GeForce RTX 5090,-,4,-,-,1528.0,40
+cuda,gliner2-hivetrace-uni,23368.0,41.3,,14.0,82.0,NVIDIA GeForce RTX 5090,-,4,-,-,2110.0,40
+cuda,gliner2-hivetrace-omni-ru,23192.0,50.54,,12.0,58.0,NVIDIA GeForce RTX 5090,-,4,-,-,3343.0,16
+cuda,gliner-nvidia+sent300,21204.0,6.12,,131.0,429.0,NVIDIA GeForce RTX 5090,-,4,-,sent300,4260.0,3
+cuda,gliner2-hivetrace-uni-ru,19647.0,53.04,,12.0,52.0,NVIDIA GeForce RTX 5090,-,4,-,-,2072.0,17
+cuda,gliner2-fastino-ru,17889.0,42.35,,16.0,64.0,NVIDIA GeForce RTX 5090,-,4,-,-,3342.0,18
+cuda,gliner-nvidia-ru,7770.0,18.4,,32.0,167.0,NVIDIA GeForce RTX 5090,-,4,-,-,4272.0,18
+cuda,stanza-ru,7663.0,13.54,,38.0,276.0,NVIDIA GeForce RTX 5090,-,4,-,-,1893.0,40
+cuda,ru-pii-ner,4133.0,7.3,,65.0,496.0,NVIDIA GeForce RTX 5090,-,4,-,-,2218.0,40
+cuda,gravitee-small,66918.0,163.33,,2.0,28.0,NVIDIA GeForce RTX 5090,-,8,-,-,1218.0,12
+cuda,opf-ru-v2+ov100,74698.0,42.24,,16.0,74.0,NVIDIA H200 NVL,-,1,-,ov100,3812.0,4
+cuda,opf-ru-v2+sent300,52422.0,26.83,,25.0,120.0,NVIDIA H200 NVL,-,1,-,sent300,3816.0,8
+cuda,opf-ru-v2+homoglyph,43329.0,79.74,,8.0,36.0,NVIDIA H200 NVL,-,1,-,homoglyph,4161.0,2
+cuda,opf-ru-v2+ov100,662.0,0.67,,574.0,5185.0,NVIDIA H200 NVL,-,24,-,ov100,3810.0,7
+cuda,opf-ru-v2+sent300,335.0,1.05,,528.0,3150.0,NVIDIA H200 NVL,-,24,-,sent300,3809.0,3
+cuda,gliner2-hivetrace-omni-ru,71039.0,294.12,,3.0,3.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,1,-,-,3238.0,1
+cuda,gliner25-fastino+nochunk,37505.0,19.38,,32.0,154.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,1,-,nochunk,2920.0,3
+cuda,gliner25-fastino-ru+nochunk,33041.0,14.89,,45.0,165.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,1,-,nochunk,3054.0,4
+cuda,openmed-multilingual,10520.0,57.47,,17.0,19.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,1,-,-,3777.0,1
+cuda,openmed-nemotron,10132.0,55.35,,18.0,19.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,1,-,-,3745.0,1
+cuda,opf-ru,8829.0,48.23,,20.0,22.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,1,-,-,3954.0,1
+cuda,traciora,8346.0,45.59,,21.0,23.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,1,-,-,3806.0,1
+cuda,gliner-stream-pii,7763.0,189.79,,5.0,5.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,1,-,-,4859.0,1
+cuda,openai-base,5805.0,31.71,,31.0,32.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,1,-,-,3806.0,1
+cuda,opf-ru-v2,2286.0,55.89,,17.0,19.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,1,-,-,4196.0,1
+cuda,gliner2-hivetrace-omni-ru,31086.0,238.1,,4.0,4.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,10,-,-,3232.0,1
+cuda,gliner-stream-pii,8919.0,17.07,,38.0,188.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,10,-,-,4862.0,29
+cuda,openmed-multilingual,2176.0,6.89,,134.0,294.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,10,-,-,3807.0,8
+cuda,openmed-nemotron,2102.0,6.66,,139.0,302.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,10,-,-,3807.0,8
+cuda,opf-ru,1736.0,5.5,,156.0,370.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,10,-,-,3805.0,8
+cuda,traciora,1481.0,2.68,,250.0,1079.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,10,-,-,3806.0,29
+cuda,openai-base,1174.0,3.72,,254.0,550.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,10,-,-,3805.0,8
+cuda,opf-ru-v2,1101.0,2.92,,242.0,863.0,NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition,-,10,-,-,3807.0,18
+cuda,opf-ru-v2,35703.0,20.76,,27.0,131.0,NVIDIA RTX PRO 6000 Blackwell Server Edition,-,1,-,-,4144.0,2
+cuda,opf-ru-v2,870.0,1.51,,469.0,975.0,NVIDIA RTX PRO 6000 Blackwell Server Edition,-,16,-,-,3797.0,2
+cuda,opf-ru-v2+homoglyph,1419.0,15.62,,64.0,79.0,NVIDIA RTX PRO 6000 Blackwell Server Edition,-,20,-,homoglyph,3793.0,1
+cuda,opf-ru-v2,970.0,1.56,,438.0,1928.0,NVIDIA RTX PRO 6000 Blackwell Server Edition,-,20,-,-,3804.0,18
+cuda,gliner25-fastino+nochunk,28048.0,35.93,,7.0,141.0,NVIDIA RTX PRO 6000 Blackwell Workstation Edition,-,1,-,nochunk,3219.0,1
+cuda,gliner-pii-edge,2550.0,1.05,,563.0,3200.0,NVIDIA RTX PRO 6000 Blackwell Workstation Edition,-,1,-,-,1702.0,1
+cuda,gliner25-fastino+nochunk,14889.0,6.23,,114.0,496.0,NVIDIA RTX PRO 6000 Blackwell Workstation Edition,-,8,-,nochunk,3222.0,1
+cuda,gliner-pii-edge,1435.0,2.19,,96.0,1822.0,NVIDIA RTX PRO 6000 Blackwell Workstation Edition,-,8,-,-,1920.0,33

@@ -1,0 +1,11230 @@
+[
+  {
+    "composition": "pplx",
+    "dataset": "alexen2",
+    "hit": 1195,
+    "miss": 66,
+    "hid": 701,
+    "nspan": 1261,
+    "f1": 0.9051983210391674,
+    "p": 0.8757268489595847,
+    "r": 0.9367225249306055,
+    "tp": 18223,
+    "fp": 2586,
+    "fn": 1231,
+    "fire": 7,
+    "nneg": 40,
+    "extra": 90,
+    "negchars": 1553,
+    "grp": {
+      "PERSON": [
+        66,
+        571
+      ],
+      "CONTACT": [
+        0,
+        690
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "alexen2",
+    "hit": 1258,
+    "miss": 3,
+    "hid": 350,
+    "nspan": 1261,
+    "f1": 0.9689401888772299,
+    "p": 0.9893924783027965,
+    "r": 0.9493163359720366,
+    "tp": 18468,
+    "fp": 198,
+    "fn": 986,
+    "fire": 14,
+    "nneg": 40,
+    "extra": 130,
+    "negchars": 1553,
+    "grp": {
+      "PERSON": [
+        3,
+        571
+      ],
+      "CONTACT": [
+        0,
+        690
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "alexen2",
+    "hit": 1260,
+    "miss": 1,
+    "hid": 779,
+    "nspan": 1261,
+    "f1": 0.920954855630297,
+    "p": 0.8728193325661681,
+    "r": 0.9747095712963915,
+    "tp": 18962,
+    "fp": 2763,
+    "fn": 492,
+    "fire": 19,
+    "nneg": 40,
+    "extra": 199,
+    "negchars": 1553,
+    "grp": {
+      "PERSON": [
+        1,
+        571
+      ],
+      "CONTACT": [
+        0,
+        690
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "alexen2",
+    "hit": 1260,
+    "miss": 1,
+    "hid": 780,
+    "nspan": 1261,
+    "f1": 0.9187330492057343,
+    "p": 0.8685102096877575,
+    "r": 0.975120797779377,
+    "tp": 18970,
+    "fp": 2872,
+    "fn": 484,
+    "fire": 25,
+    "nneg": 40,
+    "extra": 263,
+    "negchars": 1553,
+    "grp": {
+      "PERSON": [
+        1,
+        571
+      ],
+      "CONTACT": [
+        0,
+        690
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "alexen2",
+    "hit": 1260,
+    "miss": 1,
+    "hid": 807,
+    "nspan": 1261,
+    "f1": 0.9173749275642263,
+    "p": 0.8649940806848192,
+    "r": 0.976508687159453,
+    "tp": 18997,
+    "fp": 2965,
+    "fn": 457,
+    "fire": 23,
+    "nneg": 40,
+    "extra": 294,
+    "negchars": 1553,
+    "grp": {
+      "PERSON": [
+        1,
+        571
+      ],
+      "CONTACT": [
+        0,
+        690
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "alexen2",
+    "hit": 1260,
+    "miss": 1,
+    "hid": 807,
+    "nspan": 1261,
+    "f1": 0.9158270259846695,
+    "p": 0.8622458242556281,
+    "r": 0.976508687159453,
+    "tp": 18997,
+    "fp": 3035,
+    "fn": 457,
+    "fire": 25,
+    "nneg": 40,
+    "extra": 319,
+    "negchars": 1553,
+    "grp": {
+      "PERSON": [
+        1,
+        571
+      ],
+      "CONTACT": [
+        0,
+        690
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "alexen2",
+    "hit": 1233,
+    "miss": 28,
+    "hid": 333,
+    "nspan": 1261,
+    "f1": 0.9663110759910444,
+    "p": 0.9909243152720004,
+    "r": 0.9428909221753881,
+    "tp": 18343,
+    "fp": 168,
+    "fn": 1111,
+    "fire": 8,
+    "nneg": 40,
+    "extra": 91,
+    "negchars": 1553,
+    "grp": {
+      "PERSON": [
+        28,
+        571
+      ],
+      "CONTACT": [
+        0,
+        690
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "alrosait",
+    "hit": 1852,
+    "miss": 10,
+    "hid": 1800,
+    "nspan": 1862,
+    "f1": 0.9376654213547396,
+    "p": 0.8891184003965958,
+    "r": 0.9918200880204613,
+    "tp": 43044,
+    "fp": 5368,
+    "fn": 355,
+    "fire": 122,
+    "nneg": 340,
+    "extra": 2286,
+    "negchars": 56341,
+    "grp": {
+      "PERSON": [
+        5,
+        987
+      ],
+      "ADDRESS": [
+        5,
+        875
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "alrosait",
+    "hit": 1634,
+    "miss": 228,
+    "hid": 1461,
+    "nspan": 1862,
+    "f1": 0.7574651784010684,
+    "p": 0.785006302988358,
+    "r": 0.7317910550934353,
+    "tp": 31759,
+    "fp": 8698,
+    "fn": 11640,
+    "fire": 278,
+    "nneg": 340,
+    "extra": 6397,
+    "negchars": 56341,
+    "grp": {
+      "PERSON": [
+        3,
+        987
+      ],
+      "ADDRESS": [
+        225,
+        875
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "alrosait",
+    "hit": 1860,
+    "miss": 2,
+    "hid": 1824,
+    "nspan": 1862,
+    "f1": 0.8723751891074131,
+    "p": 0.7757349643952575,
+    "r": 0.996520657157999,
+    "tp": 43248,
+    "fp": 12503,
+    "fn": 151,
+    "fire": 297,
+    "nneg": 340,
+    "extra": 7289,
+    "negchars": 56341,
+    "grp": {
+      "PERSON": [
+        1,
+        987
+      ],
+      "ADDRESS": [
+        1,
+        875
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "alrosait",
+    "hit": 1861,
+    "miss": 1,
+    "hid": 1825,
+    "nspan": 1862,
+    "f1": 0.8690328020235275,
+    "p": 0.7698874246385318,
+    "r": 0.997488421392198,
+    "tp": 43290,
+    "fp": 12939,
+    "fn": 109,
+    "fire": 308,
+    "nneg": 340,
+    "extra": 7483,
+    "negchars": 56341,
+    "grp": {
+      "PERSON": [
+        0,
+        987
+      ],
+      "ADDRESS": [
+        1,
+        875
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "alrosait",
+    "hit": 1861,
+    "miss": 1,
+    "hid": 1829,
+    "nspan": 1862,
+    "f1": 0.8640718562874252,
+    "p": 0.7621344694635658,
+    "r": 0.997488421392198,
+    "tp": 43290,
+    "fp": 13511,
+    "fn": 109,
+    "fire": 309,
+    "nneg": 340,
+    "extra": 7755,
+    "negchars": 56341,
+    "grp": {
+      "PERSON": [
+        0,
+        987
+      ],
+      "ADDRESS": [
+        1,
+        875
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "alrosait",
+    "hit": 1861,
+    "miss": 1,
+    "hid": 1829,
+    "nspan": 1862,
+    "f1": 0.8617834394904457,
+    "p": 0.7585010774163031,
+    "r": 0.9976266734256549,
+    "tp": 43296,
+    "fp": 13785,
+    "fn": 103,
+    "fire": 309,
+    "nneg": 340,
+    "extra": 7796,
+    "negchars": 56341,
+    "grp": {
+      "PERSON": [
+        0,
+        987
+      ],
+      "ADDRESS": [
+        1,
+        875
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "alrosait",
+    "hit": 1845,
+    "miss": 17,
+    "hid": 1658,
+    "nspan": 1862,
+    "f1": 0.9468301496573903,
+    "p": 0.9340612528586162,
+    "r": 0.9599529943086246,
+    "tp": 41661,
+    "fp": 2941,
+    "fn": 1738,
+    "fire": 105,
+    "nneg": 340,
+    "extra": 1903,
+    "negchars": 56341,
+    "grp": {
+      "PERSON": [
+        7,
+        987
+      ],
+      "ADDRESS": [
+        10,
+        875
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "ameau01",
+    "hit": 1849,
+    "miss": 393,
+    "hid": 1830,
+    "nspan": 2242,
+    "f1": 0.6879593703668654,
+    "p": 0.6124231276852657,
+    "r": 0.78475045878162,
+    "tp": 21809,
+    "fp": 13802,
+    "fn": 5982,
+    "fire": 173,
+    "nneg": 702,
+    "extra": 4242,
+    "negchars": 112531,
+    "grp": {
+      "PERSON": [
+        1,
+        382
+      ],
+      "ACCOUNT": [
+        27,
+        758
+      ],
+      "NET": [
+        225,
+        777
+      ],
+      "CONTACT": [
+        3,
+        141
+      ],
+      "ADDRESS": [
+        137,
+        184
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "ameau01",
+    "hit": 2082,
+    "miss": 160,
+    "hid": 2081,
+    "nspan": 2242,
+    "f1": 0.7654672769711115,
+    "p": 0.6612721606829549,
+    "r": 0.9086394876039006,
+    "tp": 25252,
+    "fp": 12935,
+    "fn": 2539,
+    "fire": 241,
+    "nneg": 702,
+    "extra": 4923,
+    "negchars": 112531,
+    "grp": {
+      "PERSON": [
+        0,
+        382
+      ],
+      "ACCOUNT": [
+        25,
+        758
+      ],
+      "NET": [
+        114,
+        777
+      ],
+      "CONTACT": [
+        1,
+        141
+      ],
+      "ADDRESS": [
+        20,
+        184
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "ameau01",
+    "hit": 2168,
+    "miss": 74,
+    "hid": 2162,
+    "nspan": 2242,
+    "f1": 0.7029797377830751,
+    "p": 0.5561935497390976,
+    "r": 0.9550214098089309,
+    "tp": 26541,
+    "fp": 21178,
+    "fn": 1250,
+    "fire": 299,
+    "nneg": 702,
+    "extra": 7091,
+    "negchars": 112531,
+    "grp": {
+      "PERSON": [
+        0,
+        382
+      ],
+      "ACCOUNT": [
+        8,
+        758
+      ],
+      "NET": [
+        49,
+        777
+      ],
+      "CONTACT": [
+        0,
+        141
+      ],
+      "ADDRESS": [
+        17,
+        184
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "ameau01",
+    "hit": 2217,
+    "miss": 25,
+    "hid": 2177,
+    "nspan": 2242,
+    "f1": 0.667198233562316,
+    "p": 0.5061512404846544,
+    "r": 0.9785542081968983,
+    "tp": 27195,
+    "fp": 26534,
+    "fn": 596,
+    "fire": 391,
+    "nneg": 702,
+    "extra": 8887,
+    "negchars": 112531,
+    "grp": {
+      "PERSON": [
+        0,
+        382
+      ],
+      "ACCOUNT": [
+        4,
+        758
+      ],
+      "NET": [
+        7,
+        777
+      ],
+      "CONTACT": [
+        0,
+        141
+      ],
+      "ADDRESS": [
+        14,
+        184
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "ameau01",
+    "hit": 2204,
+    "miss": 38,
+    "hid": 2196,
+    "nspan": 2242,
+    "f1": 0.6529976077133123,
+    "p": 0.4915507048658481,
+    "r": 0.9723651541866072,
+    "tp": 27023,
+    "fp": 27952,
+    "fn": 768,
+    "fire": 397,
+    "nneg": 702,
+    "extra": 9278,
+    "negchars": 112531,
+    "grp": {
+      "PERSON": [
+        0,
+        382
+      ],
+      "ACCOUNT": [
+        5,
+        758
+      ],
+      "NET": [
+        32,
+        777
+      ],
+      "CONTACT": [
+        0,
+        141
+      ],
+      "ADDRESS": [
+        1,
+        184
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "ameau01",
+    "hit": 2233,
+    "miss": 9,
+    "hid": 2206,
+    "nspan": 2242,
+    "f1": 0.6268141613146527,
+    "p": 0.4592648413296492,
+    "r": 0.9868302687920549,
+    "tp": 27425,
+    "fp": 32290,
+    "fn": 366,
+    "fire": 455,
+    "nneg": 702,
+    "extra": 10770,
+    "negchars": 112531,
+    "grp": {
+      "PERSON": [
+        0,
+        382
+      ],
+      "ACCOUNT": [
+        3,
+        758
+      ],
+      "NET": [
+        5,
+        777
+      ],
+      "CONTACT": [
+        0,
+        141
+      ],
+      "ADDRESS": [
+        1,
+        184
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "ameau01",
+    "hit": 1679,
+    "miss": 563,
+    "hid": 1651,
+    "nspan": 2242,
+    "f1": 0.6802032312303531,
+    "p": 0.691142061281337,
+    "r": 0.6696052678924832,
+    "tp": 18609,
+    "fp": 8316,
+    "fn": 9182,
+    "fire": 150,
+    "nneg": 702,
+    "extra": 3158,
+    "negchars": 112531,
+    "grp": {
+      "PERSON": [
+        0,
+        382
+      ],
+      "ACCOUNT": [
+        38,
+        758
+      ],
+      "NET": [
+        387,
+        777
+      ],
+      "CONTACT": [
+        2,
+        141
+      ],
+      "ADDRESS": [
+        136,
+        184
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "arthur-passwords",
+    "hit": 280,
+    "miss": 0,
+    "hid": 280,
+    "nspan": 280,
+    "f1": 0.29535864978902954,
+    "p": 0.17326732673267325,
+    "r": 1.0,
+    "tp": 3360,
+    "fp": 16032,
+    "fn": 0,
+    "fire": 227,
+    "nneg": 236,
+    "extra": 7898,
+    "negchars": 44555,
+    "grp": {
+      "SECRET": [
+        0,
+        280
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "arthur-passwords",
+    "hit": 231,
+    "miss": 49,
+    "hid": 231,
+    "nspan": 280,
+    "f1": 0.7498985526849723,
+    "p": 0.6873295313662287,
+    "r": 0.825,
+    "tp": 2772,
+    "fp": 1261,
+    "fn": 588,
+    "fire": 55,
+    "nneg": 236,
+    "extra": 773,
+    "negchars": 44555,
+    "grp": {
+      "SECRET": [
+        49,
+        280
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "arthur-passwords",
+    "hit": 280,
+    "miss": 0,
+    "hid": 280,
+    "nspan": 280,
+    "f1": 0.29190738890578166,
+    "p": 0.1708966990488785,
+    "r": 1.0,
+    "tp": 3360,
+    "fp": 16301,
+    "fn": 0,
+    "fire": 228,
+    "nneg": 236,
+    "extra": 8167,
+    "negchars": 44555,
+    "grp": {
+      "SECRET": [
+        0,
+        280
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "arthur-passwords",
+    "hit": 280,
+    "miss": 0,
+    "hid": 280,
+    "nspan": 280,
+    "f1": 0.2760320394331485,
+    "p": 0.1601143674052895,
+    "r": 1.0,
+    "tp": 3360,
+    "fp": 17625,
+    "fn": 0,
+    "fire": 235,
+    "nneg": 236,
+    "extra": 8883,
+    "negchars": 44555,
+    "grp": {
+      "SECRET": [
+        0,
+        280
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "arthur-passwords",
+    "hit": 280,
+    "miss": 0,
+    "hid": 280,
+    "nspan": 280,
+    "f1": 0.2735933555899357,
+    "p": 0.15847561550797096,
+    "r": 1.0,
+    "tp": 3360,
+    "fp": 17842,
+    "fn": 0,
+    "fire": 232,
+    "nneg": 236,
+    "extra": 9073,
+    "negchars": 44555,
+    "grp": {
+      "SECRET": [
+        0,
+        280
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "arthur-passwords",
+    "hit": 280,
+    "miss": 0,
+    "hid": 280,
+    "nspan": 280,
+    "f1": 0.2624282422775023,
+    "p": 0.15103159976626063,
+    "r": 1.0,
+    "tp": 3360,
+    "fp": 18887,
+    "fn": 0,
+    "fire": 236,
+    "nneg": 236,
+    "extra": 9587,
+    "negchars": 44555,
+    "grp": {
+      "SECRET": [
+        0,
+        280
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "arthur-passwords",
+    "hit": 280,
+    "miss": 0,
+    "hid": 280,
+    "nspan": 280,
+    "f1": 0.39369617435116294,
+    "p": 0.2450944634911372,
+    "r": 1.0,
+    "tp": 3360,
+    "fp": 10349,
+    "fn": 0,
+    "fire": 209,
+    "nneg": 236,
+    "extra": 5578,
+    "negchars": 44555,
+    "grp": {
+      "SECRET": [
+        0,
+        280
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "corrupt-hivetrace",
+    "hit": 1609,
+    "miss": 58,
+    "hid": 1562,
+    "nspan": 1667,
+    "f1": 0.9038776154530582,
+    "p": 0.8423248722818092,
+    "r": 0.9751354698869794,
+    "tp": 31492,
+    "fp": 5895,
+    "fn": 803,
+    "fire": 51,
+    "nneg": 378,
+    "extra": 513,
+    "negchars": 33911,
+    "grp": {
+      "PERSON": [
+        9,
+        228
+      ],
+      "CONTACT": [
+        2,
+        390
+      ],
+      "ID": [
+        42,
+        778
+      ],
+      "ADDRESS": [
+        3,
+        176
+      ],
+      "SECRET": [
+        2,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "corrupt-hivetrace",
+    "hit": 1162,
+    "miss": 505,
+    "hid": 1074,
+    "nspan": 1667,
+    "f1": 0.6919502845858984,
+    "p": 0.9231365256469859,
+    "r": 0.5533673943334881,
+    "tp": 17871,
+    "fp": 1488,
+    "fn": 14424,
+    "fire": 36,
+    "nneg": 378,
+    "extra": 323,
+    "negchars": 33911,
+    "grp": {
+      "PERSON": [
+        34,
+        228
+      ],
+      "CONTACT": [
+        26,
+        390
+      ],
+      "ID": [
+        267,
+        778
+      ],
+      "ADDRESS": [
+        122,
+        176
+      ],
+      "SECRET": [
+        56,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "corrupt-hivetrace",
+    "hit": 1645,
+    "miss": 22,
+    "hid": 1617,
+    "nspan": 1667,
+    "f1": 0.8941754385964913,
+    "p": 0.8177384161211655,
+    "r": 0.9863755999380709,
+    "tp": 31855,
+    "fp": 7100,
+    "fn": 440,
+    "fire": 81,
+    "nneg": 378,
+    "extra": 816,
+    "negchars": 33911,
+    "grp": {
+      "PERSON": [
+        4,
+        228
+      ],
+      "CONTACT": [
+        0,
+        390
+      ],
+      "ID": [
+        14,
+        778
+      ],
+      "ADDRESS": [
+        3,
+        176
+      ],
+      "SECRET": [
+        1,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "corrupt-hivetrace",
+    "hit": 1659,
+    "miss": 8,
+    "hid": 1633,
+    "nspan": 1667,
+    "f1": 0.846227946318998,
+    "p": 0.7373407533459044,
+    "r": 0.9928471899674872,
+    "tp": 32064,
+    "fp": 11422,
+    "fn": 231,
+    "fire": 130,
+    "nneg": 378,
+    "extra": 2092,
+    "negchars": 33911,
+    "grp": {
+      "PERSON": [
+        1,
+        228
+      ],
+      "CONTACT": [
+        0,
+        390
+      ],
+      "ID": [
+        7,
+        778
+      ],
+      "ADDRESS": [
+        0,
+        176
+      ],
+      "SECRET": [
+        0,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "corrupt-hivetrace",
+    "hit": 1650,
+    "miss": 17,
+    "hid": 1628,
+    "nspan": 1667,
+    "f1": 0.8856889676561809,
+    "p": 0.8010218137193519,
+    "r": 0.9903700263198637,
+    "tp": 31984,
+    "fp": 7945,
+    "fn": 311,
+    "fire": 86,
+    "nneg": 378,
+    "extra": 872,
+    "negchars": 33911,
+    "grp": {
+      "PERSON": [
+        3,
+        228
+      ],
+      "CONTACT": [
+        0,
+        390
+      ],
+      "ID": [
+        13,
+        778
+      ],
+      "ADDRESS": [
+        1,
+        176
+      ],
+      "SECRET": [
+        0,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "corrupt-hivetrace",
+    "hit": 1659,
+    "miss": 8,
+    "hid": 1639,
+    "nspan": 1667,
+    "f1": 0.83825641829246,
+    "p": 0.724792809881896,
+    "r": 0.9938380554265366,
+    "tp": 32096,
+    "fp": 12187,
+    "fn": 199,
+    "fire": 133,
+    "nneg": 378,
+    "extra": 2134,
+    "negchars": 33911,
+    "grp": {
+      "PERSON": [
+        1,
+        228
+      ],
+      "CONTACT": [
+        0,
+        390
+      ],
+      "ID": [
+        7,
+        778
+      ],
+      "ADDRESS": [
+        0,
+        176
+      ],
+      "SECRET": [
+        0,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "corrupt-hivetrace",
+    "hit": 1561,
+    "miss": 106,
+    "hid": 1371,
+    "nspan": 1667,
+    "f1": 0.9263762506048168,
+    "p": 0.9339711713979983,
+    "r": 0.9189038550859266,
+    "tp": 29676,
+    "fp": 2098,
+    "fn": 2619,
+    "fire": 32,
+    "nneg": 378,
+    "extra": 266,
+    "negchars": 33911,
+    "grp": {
+      "PERSON": [
+        20,
+        228
+      ],
+      "CONTACT": [
+        11,
+        390
+      ],
+      "ID": [
+        60,
+        778
+      ],
+      "ADDRESS": [
+        14,
+        176
+      ],
+      "SECRET": [
+        1,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "corrupt-redmadrobot",
+    "hit": 4783,
+    "miss": 748,
+    "hid": 4350,
+    "nspan": 5531,
+    "f1": 0.7871389345717204,
+    "p": 0.7872016693474764,
+    "r": 0.7870762097942625,
+    "tp": 54324,
+    "fp": 14685,
+    "fn": 14696,
+    "fire": 170,
+    "nneg": 371,
+    "extra": 3538,
+    "negchars": 225956,
+    "grp": {
+      "ADDRESS": [
+        442,
+        1242
+      ],
+      "CONTACT": [
+        5,
+        389
+      ],
+      "NET": [
+        119,
+        361
+      ],
+      "ID": [
+        67,
+        2279
+      ],
+      "PERSON": [
+        115,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "corrupt-redmadrobot",
+    "hit": 3839,
+    "miss": 1692,
+    "hid": 3440,
+    "nspan": 5531,
+    "f1": 0.7211307324448523,
+    "p": 0.8714816563674065,
+    "r": 0.615024630541872,
+    "tp": 42449,
+    "fp": 6260,
+    "fn": 26571,
+    "fire": 117,
+    "nneg": 371,
+    "extra": 2497,
+    "negchars": 225956,
+    "grp": {
+      "ADDRESS": [
+        268,
+        1242
+      ],
+      "CONTACT": [
+        32,
+        389
+      ],
+      "NET": [
+        165,
+        361
+      ],
+      "ID": [
+        861,
+        2279
+      ],
+      "PERSON": [
+        366,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "corrupt-redmadrobot",
+    "hit": 5293,
+    "miss": 238,
+    "hid": 4911,
+    "nspan": 5531,
+    "f1": 0.8209883174432656,
+    "p": 0.7650025025025025,
+    "r": 0.8858157055925818,
+    "tp": 61139,
+    "fp": 18781,
+    "fn": 7881,
+    "fire": 223,
+    "nneg": 371,
+    "extra": 5366,
+    "negchars": 225956,
+    "grp": {
+      "ADDRESS": [
+        95,
+        1242
+      ],
+      "CONTACT": [
+        0,
+        389
+      ],
+      "NET": [
+        52,
+        361
+      ],
+      "ID": [
+        45,
+        2279
+      ],
+      "PERSON": [
+        46,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "corrupt-redmadrobot",
+    "hit": 5415,
+    "miss": 116,
+    "hid": 4998,
+    "nspan": 5531,
+    "f1": 0.7643885872032837,
+    "p": 0.6565103002194191,
+    "r": 0.9146913937988989,
+    "tp": 63132,
+    "fp": 33031,
+    "fn": 5888,
+    "fire": 301,
+    "nneg": 371,
+    "extra": 9553,
+    "negchars": 225956,
+    "grp": {
+      "ADDRESS": [
+        56,
+        1242
+      ],
+      "CONTACT": [
+        0,
+        389
+      ],
+      "NET": [
+        7,
+        361
+      ],
+      "ID": [
+        30,
+        2279
+      ],
+      "PERSON": [
+        23,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "corrupt-redmadrobot",
+    "hit": 5362,
+    "miss": 169,
+    "hid": 5001,
+    "nspan": 5531,
+    "f1": 0.7933068986806011,
+    "p": 0.7074134192991816,
+    "r": 0.9029411764705882,
+    "tp": 62321,
+    "fp": 25776,
+    "fn": 6699,
+    "fire": 244,
+    "nneg": 371,
+    "extra": 6899,
+    "negchars": 225956,
+    "grp": {
+      "ADDRESS": [
+        58,
+        1242
+      ],
+      "CONTACT": [
+        0,
+        389
+      ],
+      "NET": [
+        36,
+        361
+      ],
+      "ID": [
+        44,
+        2279
+      ],
+      "PERSON": [
+        31,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "corrupt-redmadrobot",
+    "hit": 5442,
+    "miss": 89,
+    "hid": 5068,
+    "nspan": 5531,
+    "f1": 0.7426265966489293,
+    "p": 0.6207443598777568,
+    "r": 0.9240654882642713,
+    "tp": 63779,
+    "fp": 38967,
+    "fn": 5241,
+    "fire": 308,
+    "nneg": 371,
+    "extra": 10826,
+    "negchars": 225956,
+    "grp": {
+      "ADDRESS": [
+        35,
+        1242
+      ],
+      "CONTACT": [
+        0,
+        389
+      ],
+      "NET": [
+        7,
+        361
+      ],
+      "ID": [
+        30,
+        2279
+      ],
+      "PERSON": [
+        17,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "corrupt-redmadrobot",
+    "hit": 4163,
+    "miss": 1368,
+    "hid": 3521,
+    "nspan": 5531,
+    "f1": 0.7465227597383611,
+    "p": 0.8815278079191903,
+    "r": 0.6473775717183425,
+    "tp": 44682,
+    "fp": 6005,
+    "fn": 24338,
+    "fire": 105,
+    "nneg": 371,
+    "extra": 1495,
+    "negchars": 225956,
+    "grp": {
+      "ADDRESS": [
+        520,
+        1242
+      ],
+      "CONTACT": [
+        20,
+        389
+      ],
+      "NET": [
+        142,
+        361
+      ],
+      "ID": [
+        495,
+        2279
+      ],
+      "PERSON": [
+        191,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "corrupt-secrets-issues",
+    "hit": 276,
+    "miss": 12,
+    "hid": 218,
+    "nspan": 288,
+    "f1": 0.3059187768091878,
+    "p": 0.18258961984153613,
+    "r": 0.9425777398811586,
+    "tp": 35374,
+    "fp": 158361,
+    "fn": 2155,
+    "fire": 202,
+    "nneg": 250,
+    "extra": 59676,
+    "negchars": 590730,
+    "grp": {
+      "SECRET": [
+        12,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "corrupt-secrets-issues",
+    "hit": 186,
+    "miss": 102,
+    "hid": 103,
+    "nspan": 288,
+    "f1": 0.3320971440625489,
+    "p": 0.22299594253755894,
+    "r": 0.6502171653920967,
+    "tp": 24402,
+    "fp": 85026,
+    "fn": 13127,
+    "fire": 219,
+    "nneg": 250,
+    "extra": 34030,
+    "negchars": 590730,
+    "grp": {
+      "SECRET": [
+        102,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "corrupt-secrets-issues",
+    "hit": 280,
+    "miss": 8,
+    "hid": 222,
+    "nspan": 288,
+    "f1": 0.25085402359570347,
+    "p": 0.1445290782847241,
+    "r": 0.948999440432732,
+    "tp": 35615,
+    "fp": 210806,
+    "fn": 1914,
+    "fire": 245,
+    "nneg": 250,
+    "extra": 84087,
+    "negchars": 590730,
+    "grp": {
+      "SECRET": [
+        8,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "corrupt-secrets-issues",
+    "hit": 284,
+    "miss": 4,
+    "hid": 223,
+    "nspan": 288,
+    "f1": 0.21705173408745518,
+    "p": 0.12240502705723594,
+    "r": 0.9571264888486237,
+    "tp": 35920,
+    "fp": 257532,
+    "fn": 1609,
+    "fire": 250,
+    "nneg": 250,
+    "extra": 105898,
+    "negchars": 590730,
+    "grp": {
+      "SECRET": [
+        4,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "corrupt-secrets-issues",
+    "hit": 287,
+    "miss": 1,
+    "hid": 230,
+    "nspan": 288,
+    "f1": 0.2309953291033284,
+    "p": 0.13123246198357008,
+    "r": 0.9632817287963975,
+    "tp": 36151,
+    "fp": 239322,
+    "fn": 1378,
+    "fire": 248,
+    "nneg": 250,
+    "extra": 95061,
+    "negchars": 590730,
+    "grp": {
+      "SECRET": [
+        1,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "corrupt-secrets-issues",
+    "hit": 288,
+    "miss": 0,
+    "hid": 230,
+    "nspan": 288,
+    "f1": 0.207250471349406,
+    "p": 0.11611107365419994,
+    "r": 0.963654773641717,
+    "tp": 36165,
+    "fp": 275304,
+    "fn": 1364,
+    "fire": 250,
+    "nneg": 250,
+    "extra": 112610,
+    "negchars": 590730,
+    "grp": {
+      "SECRET": [
+        0,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "corrupt-secrets-issues",
+    "hit": 271,
+    "miss": 17,
+    "hid": 197,
+    "nspan": 288,
+    "f1": 0.4528655650256485,
+    "p": 0.30101279598392167,
+    "r": 0.9139065789123079,
+    "tp": 34298,
+    "fp": 79644,
+    "fn": 3231,
+    "fire": 155,
+    "nneg": 250,
+    "extra": 17737,
+    "negchars": 590730,
+    "grp": {
+      "SECRET": [
+        17,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "creddata",
+    "hit": 731,
+    "miss": 45,
+    "hid": 672,
+    "nspan": 776,
+    "f1": 0.7822388769926243,
+    "p": 0.7472371374186767,
+    "r": 0.8206808324752722,
+    "tp": 52604,
+    "fp": 17794,
+    "fn": 11494,
+    "fire": 169,
+    "nneg": 727,
+    "extra": 10878,
+    "negchars": 150509,
+    "grp": {
+      "SECRET": [
+        45,
+        776
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "creddata",
+    "hit": 665,
+    "miss": 111,
+    "hid": 605,
+    "nspan": 776,
+    "f1": 0.5726638679355734,
+    "p": 0.617141312184571,
+    "r": 0.5341664326500046,
+    "tp": 34239,
+    "fp": 21241,
+    "fn": 29859,
+    "fire": 566,
+    "nneg": 727,
+    "extra": 16303,
+    "negchars": 150509,
+    "grp": {
+      "SECRET": [
+        111,
+        776
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "creddata",
+    "hit": 763,
+    "miss": 13,
+    "hid": 724,
+    "nspan": 776,
+    "f1": 0.7244978772574426,
+    "p": 0.6203917819184418,
+    "r": 0.8705887859215576,
+    "tp": 55803,
+    "fp": 34145,
+    "fn": 8295,
+    "fire": 596,
+    "nneg": 727,
+    "extra": 23213,
+    "negchars": 150509,
+    "grp": {
+      "SECRET": [
+        13,
+        776
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "creddata",
+    "hit": 775,
+    "miss": 1,
+    "hid": 732,
+    "nspan": 776,
+    "f1": 0.6941793316741972,
+    "p": 0.5663873829472647,
+    "r": 0.8964398265156479,
+    "tp": 57460,
+    "fp": 43990,
+    "fn": 6638,
+    "fire": 627,
+    "nneg": 727,
+    "extra": 30623,
+    "negchars": 150509,
+    "grp": {
+      "SECRET": [
+        1,
+        776
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "creddata",
+    "hit": 770,
+    "miss": 6,
+    "hid": 738,
+    "nspan": 776,
+    "f1": 0.7501492791947454,
+    "p": 0.6154322962489003,
+    "r": 0.9603731785703142,
+    "tp": 61558,
+    "fp": 38466,
+    "fn": 2540,
+    "fire": 598,
+    "nneg": 727,
+    "extra": 27099,
+    "negchars": 150509,
+    "grp": {
+      "SECRET": [
+        6,
+        776
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "creddata",
+    "hit": 775,
+    "miss": 1,
+    "hid": 743,
+    "nspan": 776,
+    "f1": 0.7153406522066751,
+    "p": 0.56911753855235,
+    "r": 0.9626821429685793,
+    "tp": 61706,
+    "fp": 46718,
+    "fn": 2392,
+    "fire": 628,
+    "nneg": 727,
+    "extra": 33016,
+    "negchars": 150509,
+    "grp": {
+      "SECRET": [
+        1,
+        776
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "creddata",
+    "hit": 748,
+    "miss": 28,
+    "hid": 692,
+    "nspan": 776,
+    "f1": 0.8574746520158255,
+    "p": 0.8809986176025278,
+    "r": 0.8351742644076259,
+    "tp": 53533,
+    "fp": 7231,
+    "fn": 10565,
+    "fire": 129,
+    "nneg": 727,
+    "extra": 4317,
+    "negchars": 150509,
+    "grp": {
+      "SECRET": [
+        28,
+        776
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "dialogpii-en",
+    "hit": 2343,
+    "miss": 744,
+    "hid": 2192,
+    "nspan": 3087,
+    "f1": 0.760974218164961,
+    "p": 0.8224140588870048,
+    "r": 0.70807618289203,
+    "tp": 21340,
+    "fp": 4608,
+    "fn": 8798,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 150,
+    "negchars": 2661,
+    "grp": {
+      "PERSON": [
+        52,
+        1558
+      ],
+      "ORG": [
+        476,
+        579
+      ],
+      "ADDRESS": [
+        125,
+        483
+      ],
+      "ID": [
+        46,
+        260
+      ],
+      "CONTACT": [
+        45,
+        200
+      ],
+      "NET": [
+        0,
+        7
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "dialogpii-en",
+    "hit": 2774,
+    "miss": 313,
+    "hid": 2529,
+    "nspan": 3087,
+    "f1": 0.6020912196473086,
+    "p": 0.4615997168642718,
+    "r": 0.8655186143738801,
+    "tp": 26085,
+    "fp": 30425,
+    "fn": 4053,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 285,
+    "negchars": 2661,
+    "grp": {
+      "PERSON": [
+        97,
+        1558
+      ],
+      "ORG": [
+        76,
+        579
+      ],
+      "ADDRESS": [
+        32,
+        483
+      ],
+      "ID": [
+        77,
+        260
+      ],
+      "CONTACT": [
+        29,
+        200
+      ],
+      "NET": [
+        2,
+        7
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "dialogpii-en",
+    "hit": 2907,
+    "miss": 180,
+    "hid": 2753,
+    "nspan": 3087,
+    "f1": 0.613091479215208,
+    "p": 0.4562617488818306,
+    "r": 0.9342026677284492,
+    "tp": 28155,
+    "fp": 33553,
+    "fn": 1983,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 347,
+    "negchars": 2661,
+    "grp": {
+      "PERSON": [
+        29,
+        1558
+      ],
+      "ORG": [
+        70,
+        579
+      ],
+      "ADDRESS": [
+        21,
+        483
+      ],
+      "ID": [
+        37,
+        260
+      ],
+      "CONTACT": [
+        23,
+        200
+      ],
+      "NET": [
+        0,
+        7
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "dialogpii-en",
+    "hit": 2924,
+    "miss": 163,
+    "hid": 2763,
+    "nspan": 3087,
+    "f1": 0.5844237791317121,
+    "p": 0.4245735327271361,
+    "r": 0.9373216537261928,
+    "tp": 28249,
+    "fp": 38286,
+    "fn": 1889,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 371,
+    "negchars": 2661,
+    "grp": {
+      "PERSON": [
+        29,
+        1558
+      ],
+      "ORG": [
+        62,
+        579
+      ],
+      "ADDRESS": [
+        20,
+        483
+      ],
+      "ID": [
+        33,
+        260
+      ],
+      "CONTACT": [
+        19,
+        200
+      ],
+      "NET": [
+        0,
+        7
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "dialogpii-en",
+    "hit": 2939,
+    "miss": 148,
+    "hid": 2783,
+    "nspan": 3087,
+    "f1": 0.6034585316111489,
+    "p": 0.4438021435490423,
+    "r": 0.9425310239564669,
+    "tp": 28406,
+    "fp": 35600,
+    "fn": 1732,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 374,
+    "negchars": 2661,
+    "grp": {
+      "PERSON": [
+        29,
+        1558
+      ],
+      "ORG": [
+        42,
+        579
+      ],
+      "ADDRESS": [
+        20,
+        483
+      ],
+      "ID": [
+        36,
+        260
+      ],
+      "CONTACT": [
+        21,
+        200
+      ],
+      "NET": [
+        0,
+        7
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "dialogpii-en",
+    "hit": 2948,
+    "miss": 139,
+    "hid": 2789,
+    "nspan": 3087,
+    "f1": 0.5756778632132741,
+    "p": 0.41410730400861695,
+    "r": 0.9439909748490278,
+    "tp": 28450,
+    "fp": 40252,
+    "fn": 1688,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 398,
+    "negchars": 2661,
+    "grp": {
+      "PERSON": [
+        29,
+        1558
+      ],
+      "ORG": [
+        39,
+        579
+      ],
+      "ADDRESS": [
+        19,
+        483
+      ],
+      "ID": [
+        33,
+        260
+      ],
+      "CONTACT": [
+        19,
+        200
+      ],
+      "NET": [
+        0,
+        7
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "dialogpii-en",
+    "hit": 2241,
+    "miss": 846,
+    "hid": 2040,
+    "nspan": 3087,
+    "f1": 0.7401666198633343,
+    "p": 0.8492503329466856,
+    "r": 0.655916119185082,
+    "tp": 19768,
+    "fp": 3509,
+    "fn": 10370,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 134,
+    "negchars": 2661,
+    "grp": {
+      "PERSON": [
+        96,
+        1558
+      ],
+      "ORG": [
+        472,
+        579
+      ],
+      "ADDRESS": [
+        137,
+        483
+      ],
+      "ID": [
+        81,
+        260
+      ],
+      "CONTACT": [
+        59,
+        200
+      ],
+      "NET": [
+        1,
+        7
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "dialogpii-multi",
+    "hit": 7328,
+    "miss": 3017,
+    "hid": 6740,
+    "nspan": 10345,
+    "f1": 0.6787079900614619,
+    "p": 0.7891497384746381,
+    "r": 0.5953838388473363,
+    "tp": 64876,
+    "fp": 17334,
+    "fn": 44089,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        306,
+        5083
+      ],
+      "ADDRESS": [
+        761,
+        1868
+      ],
+      "ORG": [
+        1571,
+        1806
+      ],
+      "CONTACT": [
+        174,
+        750
+      ],
+      "ID": [
+        196,
+        818
+      ],
+      "NET": [
+        9,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "dialogpii-multi",
+    "hit": 8059,
+    "miss": 2286,
+    "hid": 7417,
+    "nspan": 10345,
+    "f1": 0.5377001395278157,
+    "p": 0.43107601490727254,
+    "r": 0.7144037076125361,
+    "tp": 77845,
+    "fp": 102738,
+    "fn": 31120,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        867,
+        5083
+      ],
+      "ADDRESS": [
+        384,
+        1868
+      ],
+      "ORG": [
+        545,
+        1806
+      ],
+      "CONTACT": [
+        181,
+        750
+      ],
+      "ID": [
+        308,
+        818
+      ],
+      "NET": [
+        1,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "dialogpii-multi",
+    "hit": 9165,
+    "miss": 1180,
+    "hid": 8592,
+    "nspan": 10345,
+    "f1": 0.5728548368646491,
+    "p": 0.4381242618217874,
+    "r": 0.8272472812370945,
+    "tp": 90141,
+    "fp": 115602,
+    "fn": 18824,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        162,
+        5083
+      ],
+      "ADDRESS": [
+        256,
+        1868
+      ],
+      "ORG": [
+        494,
+        1806
+      ],
+      "CONTACT": [
+        113,
+        750
+      ],
+      "ID": [
+        154,
+        818
+      ],
+      "NET": [
+        1,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "dialogpii-multi",
+    "hit": 9500,
+    "miss": 845,
+    "hid": 8755,
+    "nspan": 10345,
+    "f1": 0.5259752024004983,
+    "p": 0.3802902228862646,
+    "r": 0.8525948699123572,
+    "tp": 92903,
+    "fp": 151392,
+    "fn": 16062,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        124,
+        5083
+      ],
+      "ADDRESS": [
+        154,
+        1868
+      ],
+      "ORG": [
+        340,
+        1806
+      ],
+      "CONTACT": [
+        99,
+        750
+      ],
+      "ID": [
+        128,
+        818
+      ],
+      "NET": [
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "dialogpii-multi",
+    "hit": 9450,
+    "miss": 895,
+    "hid": 8865,
+    "nspan": 10345,
+    "f1": 0.5694885060276246,
+    "p": 0.42651204656879543,
+    "r": 0.8566603955398523,
+    "tp": 93346,
+    "fp": 125513,
+    "fn": 15619,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        151,
+        5083
+      ],
+      "ADDRESS": [
+        161,
+        1868
+      ],
+      "ORG": [
+        328,
+        1806
+      ],
+      "CONTACT": [
+        107,
+        750
+      ],
+      "ID": [
+        148,
+        818
+      ],
+      "NET": [
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "dialogpii-multi",
+    "hit": 9658,
+    "miss": 687,
+    "hid": 8971,
+    "nspan": 10345,
+    "f1": 0.5229353258449205,
+    "p": 0.37328539974960456,
+    "r": 0.8728674344973156,
+    "tp": 95112,
+    "fp": 159685,
+    "fn": 13853,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        119,
+        5083
+      ],
+      "ADDRESS": [
+        118,
+        1868
+      ],
+      "ORG": [
+        231,
+        1806
+      ],
+      "CONTACT": [
+        96,
+        750
+      ],
+      "ID": [
+        123,
+        818
+      ],
+      "NET": [
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "dialogpii-multi",
+    "hit": 6309,
+    "miss": 4036,
+    "hid": 5483,
+    "nspan": 10345,
+    "f1": 0.6377504526787933,
+    "p": 0.8976994452681204,
+    "r": 0.4945441196714541,
+    "tp": 53888,
+    "fp": 6141,
+    "fn": 55077,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        1052,
+        5083
+      ],
+      "ADDRESS": [
+        900,
+        1868
+      ],
+      "ORG": [
+        1526,
+        1806
+      ],
+      "CONTACT": [
+        232,
+        750
+      ],
+      "ID": [
+        314,
+        818
+      ],
+      "NET": [
+        12,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "factrueval",
+    "hit": 1002,
+    "miss": 6964,
+    "hid": 1002,
+    "nspan": 7966,
+    "f1": 0.18819837642403983,
+    "p": 0.8790466479734896,
+    "r": 0.10537976134089139,
+    "tp": 6897,
+    "fp": 949,
+    "fn": 58552,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ADDRESS": [
+        2386,
+        2396
+      ],
+      "PERSON": [
+        2380,
+        3369
+      ],
+      "ORG": [
+        2198,
+        2201
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "factrueval",
+    "hit": 6604,
+    "miss": 1362,
+    "hid": 6525,
+    "nspan": 7966,
+    "f1": 0.7577887338718137,
+    "p": 0.6986820725762773,
+    "r": 0.8278201347614172,
+    "tp": 54180,
+    "fp": 23366,
+    "fn": 11269,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ADDRESS": [
+        54,
+        2396
+      ],
+      "PERSON": [
+        1154,
+        3369
+      ],
+      "ORG": [
+        154,
+        2201
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "factrueval",
+    "hit": 6835,
+    "miss": 1131,
+    "hid": 6760,
+    "nspan": 7966,
+    "f1": 0.7666723930596118,
+    "p": 0.6966506818522403,
+    "r": 0.8523430457302632,
+    "tp": 55785,
+    "fp": 24291,
+    "fn": 9664,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ADDRESS": [
+        54,
+        2396
+      ],
+      "PERSON": [
+        923,
+        3369
+      ],
+      "ORG": [
+        154,
+        2201
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "factrueval",
+    "hit": 7507,
+    "miss": 459,
+    "hid": 7412,
+    "nspan": 7966,
+    "f1": 0.7855920557961057,
+    "p": 0.6822137413173922,
+    "r": 0.9258964995645464,
+    "tp": 60599,
+    "fp": 28228,
+    "fn": 4850,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ADDRESS": [
+        46,
+        2396
+      ],
+      "PERSON": [
+        282,
+        3369
+      ],
+      "ORG": [
+        131,
+        2201
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "factrueval",
+    "hit": 7845,
+    "miss": 121,
+    "hid": 7799,
+    "nspan": 7966,
+    "f1": 0.756937172774869,
+    "p": 0.619822470793425,
+    "r": 0.9719476233403108,
+    "tp": 63613,
+    "fp": 39018,
+    "fn": 1836,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ADDRESS": [
+        28,
+        2396
+      ],
+      "PERSON": [
+        26,
+        3369
+      ],
+      "ORG": [
+        67,
+        2201
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "factrueval",
+    "hit": 7858,
+    "miss": 108,
+    "hid": 7811,
+    "nspan": 7966,
+    "f1": 0.7442403850647227,
+    "p": 0.602441769195124,
+    "r": 0.9733380189154914,
+    "tp": 63704,
+    "fp": 42039,
+    "fn": 1745,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ADDRESS": [
+        28,
+        2396
+      ],
+      "PERSON": [
+        15,
+        3369
+      ],
+      "ORG": [
+        65,
+        2201
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "factrueval",
+    "hit": 2087,
+    "miss": 5879,
+    "hid": 2050,
+    "nspan": 7966,
+    "f1": 0.369914479213011,
+    "p": 0.967608456714295,
+    "r": 0.22866659536432948,
+    "tp": 14966,
+    "fp": 501,
+    "fn": 50483,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ADDRESS": [
+        2308,
+        2396
+      ],
+      "PERSON": [
+        1459,
+        3369
+      ],
+      "ORG": [
+        2112,
+        2201
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "gretel-multi",
+    "hit": 3666,
+    "miss": 818,
+    "hid": 3567,
+    "nspan": 4484,
+    "f1": 0.7199477643592205,
+    "p": 0.6220514205257778,
+    "r": 0.8544122711738681,
+    "tp": 64503,
+    "fp": 39191,
+    "fn": 10991,
+    "fire": 12,
+    "nneg": 18,
+    "extra": 538,
+    "negchars": 36996,
+    "grp": {
+      "PERSON": [
+        423,
+        2258
+      ],
+      "NET": [
+        7,
+        276
+      ],
+      "ID": [
+        0,
+        173
+      ],
+      "ADDRESS": [
+        3,
+        624
+      ],
+      "SECRET": [
+        0,
+        217
+      ],
+      "CONTACT": [
+        10,
+        332
+      ],
+      "ORG": [
+        375,
+        452
+      ],
+      "ACCOUNT": [
+        0,
+        132
+      ],
+      "DATE": [
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "gretel-multi",
+    "hit": 3707,
+    "miss": 777,
+    "hid": 3340,
+    "nspan": 4484,
+    "f1": 0.7654481846550747,
+    "p": 0.7531376998320577,
+    "r": 0.778167801414682,
+    "tp": 58747,
+    "fp": 19256,
+    "fn": 16747,
+    "fire": 13,
+    "nneg": 18,
+    "extra": 277,
+    "negchars": 36996,
+    "grp": {
+      "PERSON": [
+        447,
+        2258
+      ],
+      "NET": [
+        122,
+        276
+      ],
+      "ID": [
+        17,
+        173
+      ],
+      "ADDRESS": [
+        54,
+        624
+      ],
+      "SECRET": [
+        38,
+        217
+      ],
+      "CONTACT": [
+        2,
+        332
+      ],
+      "ORG": [
+        72,
+        452
+      ],
+      "ACCOUNT": [
+        25,
+        132
+      ],
+      "DATE": [
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "gretel-multi",
+    "hit": 3996,
+    "miss": 488,
+    "hid": 3915,
+    "nspan": 4484,
+    "f1": 0.7139918116683726,
+    "p": 0.581764048504662,
+    "r": 0.9240072058706652,
+    "tp": 69757,
+    "fp": 50149,
+    "fn": 5737,
+    "fire": 17,
+    "nneg": 18,
+    "extra": 785,
+    "negchars": 36996,
+    "grp": {
+      "PERSON": [
+        412,
+        2258
+      ],
+      "NET": [
+        4,
+        276
+      ],
+      "ID": [
+        0,
+        173
+      ],
+      "ADDRESS": [
+        3,
+        624
+      ],
+      "SECRET": [
+        0,
+        217
+      ],
+      "CONTACT": [
+        1,
+        332
+      ],
+      "ORG": [
+        68,
+        452
+      ],
+      "ACCOUNT": [
+        0,
+        132
+      ],
+      "DATE": [
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "gretel-multi",
+    "hit": 4019,
+    "miss": 465,
+    "hid": 3930,
+    "nspan": 4484,
+    "f1": 0.6616645798388812,
+    "p": 0.5142745921807405,
+    "r": 0.927477680345458,
+    "tp": 70019,
+    "fp": 66132,
+    "fn": 5475,
+    "fire": 17,
+    "nneg": 18,
+    "extra": 1387,
+    "negchars": 36996,
+    "grp": {
+      "PERSON": [
+        403,
+        2258
+      ],
+      "NET": [
+        1,
+        276
+      ],
+      "ID": [
+        0,
+        173
+      ],
+      "ADDRESS": [
+        3,
+        624
+      ],
+      "SECRET": [
+        0,
+        217
+      ],
+      "CONTACT": [
+        1,
+        332
+      ],
+      "ORG": [
+        57,
+        452
+      ],
+      "ACCOUNT": [
+        0,
+        132
+      ],
+      "DATE": [
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "gretel-multi",
+    "hit": 4033,
+    "miss": 451,
+    "hid": 3944,
+    "nspan": 4484,
+    "f1": 0.6742269723423351,
+    "p": 0.5286472248353716,
+    "r": 0.9304580496463295,
+    "tp": 70244,
+    "fp": 62631,
+    "fn": 5250,
+    "fire": 17,
+    "nneg": 18,
+    "extra": 1411,
+    "negchars": 36996,
+    "grp": {
+      "PERSON": [
+        404,
+        2258
+      ],
+      "NET": [
+        2,
+        276
+      ],
+      "ID": [
+        0,
+        173
+      ],
+      "ADDRESS": [
+        3,
+        624
+      ],
+      "SECRET": [
+        0,
+        217
+      ],
+      "CONTACT": [
+        1,
+        332
+      ],
+      "ORG": [
+        41,
+        452
+      ],
+      "ACCOUNT": [
+        0,
+        132
+      ],
+      "DATE": [
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "gretel-multi",
+    "hit": 4044,
+    "miss": 440,
+    "hid": 3956,
+    "nspan": 4484,
+    "f1": 0.633241134273314,
+    "p": 0.4793906749017712,
+    "r": 0.9325111929424855,
+    "tp": 70399,
+    "fp": 76452,
+    "fn": 5095,
+    "fire": 17,
+    "nneg": 18,
+    "extra": 1966,
+    "negchars": 36996,
+    "grp": {
+      "PERSON": [
+        396,
+        2258
+      ],
+      "NET": [
+        1,
+        276
+      ],
+      "ID": [
+        0,
+        173
+      ],
+      "ADDRESS": [
+        3,
+        624
+      ],
+      "SECRET": [
+        0,
+        217
+      ],
+      "CONTACT": [
+        1,
+        332
+      ],
+      "ORG": [
+        39,
+        452
+      ],
+      "ACCOUNT": [
+        0,
+        132
+      ],
+      "DATE": [
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "gretel-multi",
+    "hit": 3613,
+    "miss": 871,
+    "hid": 3204,
+    "nspan": 4484,
+    "f1": 0.7772080862189912,
+    "p": 0.749385114860544,
+    "r": 0.8071767292764988,
+    "tp": 60937,
+    "fp": 20379,
+    "fn": 14557,
+    "fire": 10,
+    "nneg": 18,
+    "extra": 311,
+    "negchars": 36996,
+    "grp": {
+      "PERSON": [
+        430,
+        2258
+      ],
+      "NET": [
+        26,
+        276
+      ],
+      "ID": [
+        4,
+        173
+      ],
+      "ADDRESS": [
+        14,
+        624
+      ],
+      "SECRET": [
+        2,
+        217
+      ],
+      "CONTACT": [
+        10,
+        332
+      ],
+      "ORG": [
+        380,
+        452
+      ],
+      "ACCOUNT": [
+        5,
+        132
+      ],
+      "DATE": [
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "hivetrace",
+    "hit": 1622,
+    "miss": 45,
+    "hid": 1586,
+    "nspan": 1667,
+    "f1": 0.9154437456324248,
+    "p": 0.8599971457114314,
+    "r": 0.9785326881231529,
+    "tp": 30130,
+    "fp": 4905,
+    "fn": 661,
+    "fire": 33,
+    "nneg": 378,
+    "extra": 321,
+    "negchars": 33110,
+    "grp": {
+      "PERSON": [
+        12,
+        228
+      ],
+      "CONTACT": [
+        0,
+        390
+      ],
+      "ID": [
+        29,
+        778
+      ],
+      "ADDRESS": [
+        4,
+        176
+      ],
+      "SECRET": [
+        0,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "hivetrace",
+    "hit": 1216,
+    "miss": 451,
+    "hid": 1195,
+    "nspan": 1667,
+    "f1": 0.7319249287609314,
+    "p": 0.9267443017816264,
+    "r": 0.6047871131174694,
+    "tp": 18622,
+    "fp": 1472,
+    "fn": 12169,
+    "fire": 46,
+    "nneg": 378,
+    "extra": 379,
+    "negchars": 33110,
+    "grp": {
+      "PERSON": [
+        1,
+        228
+      ],
+      "CONTACT": [
+        2,
+        390
+      ],
+      "ID": [
+        282,
+        778
+      ],
+      "ADDRESS": [
+        114,
+        176
+      ],
+      "SECRET": [
+        52,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "hivetrace",
+    "hit": 1656,
+    "miss": 11,
+    "hid": 1641,
+    "nspan": 1667,
+    "f1": 0.9063333926347625,
+    "p": 0.8337743105752707,
+    "r": 0.9927251469585269,
+    "tp": 30567,
+    "fp": 6094,
+    "fn": 224,
+    "fire": 73,
+    "nneg": 378,
+    "extra": 680,
+    "negchars": 33110,
+    "grp": {
+      "PERSON": [
+        1,
+        228
+      ],
+      "CONTACT": [
+        0,
+        390
+      ],
+      "ID": [
+        8,
+        778
+      ],
+      "ADDRESS": [
+        2,
+        176
+      ],
+      "SECRET": [
+        0,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "hivetrace",
+    "hit": 1662,
+    "miss": 5,
+    "hid": 1648,
+    "nspan": 1667,
+    "f1": 0.902876001885903,
+    "p": 0.8262991828699334,
+    "r": 0.9950959696015069,
+    "tp": 30640,
+    "fp": 6441,
+    "fn": 151,
+    "fire": 84,
+    "nneg": 378,
+    "extra": 751,
+    "negchars": 33110,
+    "grp": {
+      "PERSON": [
+        0,
+        228
+      ],
+      "CONTACT": [
+        0,
+        390
+      ],
+      "ID": [
+        5,
+        778
+      ],
+      "ADDRESS": [
+        0,
+        176
+      ],
+      "SECRET": [
+        0,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "hivetrace",
+    "hit": 1661,
+    "miss": 6,
+    "hid": 1645,
+    "nspan": 1667,
+    "f1": 0.8929623472453118,
+    "p": 0.8103379826906281,
+    "r": 0.9943489980838557,
+    "tp": 30617,
+    "fp": 7166,
+    "fn": 174,
+    "fire": 78,
+    "nneg": 378,
+    "extra": 730,
+    "negchars": 33110,
+    "grp": {
+      "PERSON": [
+        0,
+        228
+      ],
+      "CONTACT": [
+        0,
+        390
+      ],
+      "ID": [
+        6,
+        778
+      ],
+      "ADDRESS": [
+        0,
+        176
+      ],
+      "SECRET": [
+        0,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "hivetrace",
+    "hit": 1662,
+    "miss": 5,
+    "hid": 1649,
+    "nspan": 1667,
+    "f1": 0.8904581317292185,
+    "p": 0.8056899453092133,
+    "r": 0.9951609236465201,
+    "tp": 30642,
+    "fp": 7390,
+    "fn": 149,
+    "fire": 87,
+    "nneg": 378,
+    "extra": 785,
+    "negchars": 33110,
+    "grp": {
+      "PERSON": [
+        0,
+        228
+      ],
+      "CONTACT": [
+        0,
+        390
+      ],
+      "ID": [
+        5,
+        778
+      ],
+      "ADDRESS": [
+        0,
+        176
+      ],
+      "SECRET": [
+        0,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "hivetrace",
+    "hit": 1626,
+    "miss": 41,
+    "hid": 1582,
+    "nspan": 1667,
+    "f1": 0.9607018884748894,
+    "p": 0.9423948017868857,
+    "r": 0.9797343379558962,
+    "tp": 30167,
+    "fp": 1844,
+    "fn": 624,
+    "fire": 20,
+    "nneg": 378,
+    "extra": 175,
+    "negchars": 33110,
+    "grp": {
+      "PERSON": [
+        3,
+        228
+      ],
+      "CONTACT": [
+        1,
+        390
+      ],
+      "ID": [
+        32,
+        778
+      ],
+      "ADDRESS": [
+        5,
+        176
+      ],
+      "SECRET": [
+        0,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "jayguard",
+    "hit": 998,
+    "miss": 197,
+    "hid": 860,
+    "nspan": 1195,
+    "f1": 0.5554960059209351,
+    "p": 0.41178251163494645,
+    "r": 0.8533009251999373,
+    "tp": 10883,
+    "fp": 15546,
+    "fn": 1871,
+    "fire": 87,
+    "nneg": 170,
+    "extra": 2396,
+    "negchars": 113627,
+    "grp": {
+      "ADDRESS": [
+        62,
+        389
+      ],
+      "PERSON": [
+        135,
+        806
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "jayguard",
+    "hit": 1069,
+    "miss": 126,
+    "hid": 927,
+    "nspan": 1195,
+    "f1": 0.5850322843052519,
+    "p": 0.4328543484802889,
+    "r": 0.9022267523914066,
+    "tp": 11507,
+    "fp": 15077,
+    "fn": 1247,
+    "fire": 116,
+    "nneg": 170,
+    "extra": 2852,
+    "negchars": 113627,
+    "grp": {
+      "ADDRESS": [
+        24,
+        389
+      ],
+      "PERSON": [
+        102,
+        806
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "jayguard",
+    "hit": 1104,
+    "miss": 91,
+    "hid": 974,
+    "nspan": 1195,
+    "f1": 0.5106917168450392,
+    "p": 0.3504453204847423,
+    "r": 0.9409596989179865,
+    "tp": 12001,
+    "fp": 22244,
+    "fn": 753,
+    "fire": 132,
+    "nneg": 170,
+    "extra": 4350,
+    "negchars": 113627,
+    "grp": {
+      "ADDRESS": [
+        7,
+        389
+      ],
+      "PERSON": [
+        84,
+        806
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "jayguard",
+    "hit": 1110,
+    "miss": 85,
+    "hid": 978,
+    "nspan": 1195,
+    "f1": 0.4774847950551737,
+    "p": 0.3194602762240543,
+    "r": 0.9448800376352516,
+    "tp": 12051,
+    "fp": 25672,
+    "fn": 703,
+    "fire": 157,
+    "nneg": 170,
+    "extra": 5957,
+    "negchars": 113627,
+    "grp": {
+      "ADDRESS": [
+        3,
+        389
+      ],
+      "PERSON": [
+        82,
+        806
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "jayguard",
+    "hit": 1109,
+    "miss": 86,
+    "hid": 979,
+    "nspan": 1195,
+    "f1": 0.46244149466738277,
+    "p": 0.306110010665854,
+    "r": 0.9451152579582875,
+    "tp": 12054,
+    "fp": 27324,
+    "fn": 700,
+    "fire": 139,
+    "nneg": 170,
+    "extra": 5318,
+    "negchars": 113627,
+    "grp": {
+      "ADDRESS": [
+        3,
+        389
+      ],
+      "PERSON": [
+        83,
+        806
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "jayguard",
+    "hit": 1111,
+    "miss": 84,
+    "hid": 981,
+    "nspan": 1195,
+    "f1": 0.4409020359718798,
+    "p": 0.2873771155173645,
+    "r": 0.9466049866708484,
+    "tp": 12073,
+    "fp": 29938,
+    "fn": 681,
+    "fire": 158,
+    "nneg": 170,
+    "extra": 6708,
+    "negchars": 113627,
+    "grp": {
+      "ADDRESS": [
+        3,
+        389
+      ],
+      "PERSON": [
+        81,
+        806
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "jayguard",
+    "hit": 931,
+    "miss": 264,
+    "hid": 769,
+    "nspan": 1195,
+    "f1": 0.5979725770537913,
+    "p": 0.4773599027037141,
+    "r": 0.8001411321938215,
+    "tp": 10205,
+    "fp": 11173,
+    "fn": 2549,
+    "fire": 73,
+    "nneg": 170,
+    "extra": 1340,
+    "negchars": 113627,
+    "grp": {
+      "ADDRESS": [
+        67,
+        389
+      ],
+      "PERSON": [
+        197,
+        806
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "kiji-en",
+    "hit": 7313,
+    "miss": 310,
+    "hid": 7298,
+    "nspan": 7623,
+    "f1": 0.8633085944959928,
+    "p": 0.8014672617228098,
+    "r": 0.9354912370839755,
+    "tp": 65548,
+    "fp": 16237,
+    "fn": 4520,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        9,
+        1926
+      ],
+      "DATE": [
+        0,
+        135
+      ],
+      "CONTACT": [
+        0,
+        484
+      ],
+      "ADDRESS": [
+        99,
+        3541
+      ],
+      "ACCOUNT": [
+        0,
+        46
+      ],
+      "ID": [
+        8,
+        878
+      ],
+      "SECRET": [
+        3,
+        211
+      ],
+      "ORG": [
+        174,
+        241
+      ],
+      "NET": [
+        17,
+        161
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "kiji-en",
+    "hit": 7378,
+    "miss": 245,
+    "hid": 7322,
+    "nspan": 7623,
+    "f1": 0.8777774824580056,
+    "p": 0.8212438454269657,
+    "r": 0.9426699777359137,
+    "tp": 66051,
+    "fp": 14377,
+    "fn": 4017,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        83,
+        1926
+      ],
+      "DATE": [
+        14,
+        135
+      ],
+      "CONTACT": [
+        0,
+        484
+      ],
+      "ADDRESS": [
+        37,
+        3541
+      ],
+      "ACCOUNT": [
+        0,
+        46
+      ],
+      "ID": [
+        11,
+        878
+      ],
+      "SECRET": [
+        2,
+        211
+      ],
+      "ORG": [
+        0,
+        241
+      ],
+      "NET": [
+        98,
+        161
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "kiji-en",
+    "hit": 7594,
+    "miss": 29,
+    "hid": 7588,
+    "nspan": 7623,
+    "f1": 0.8605278461747856,
+    "p": 0.7594954679480179,
+    "r": 0.992564366044414,
+    "tp": 69547,
+    "fp": 22023,
+    "fn": 521,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        2,
+        1926
+      ],
+      "DATE": [
+        0,
+        135
+      ],
+      "CONTACT": [
+        0,
+        484
+      ],
+      "ADDRESS": [
+        5,
+        3541
+      ],
+      "ACCOUNT": [
+        0,
+        46
+      ],
+      "ID": [
+        5,
+        878
+      ],
+      "SECRET": [
+        1,
+        211
+      ],
+      "ORG": [
+        0,
+        241
+      ],
+      "NET": [
+        16,
+        161
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "kiji-en",
+    "hit": 7614,
+    "miss": 9,
+    "hid": 7603,
+    "nspan": 7623,
+    "f1": 0.8576492377132624,
+    "p": 0.7519302320579823,
+    "r": 0.9979591254210196,
+    "tp": 69925,
+    "fp": 23069,
+    "fn": 143,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        1,
+        1926
+      ],
+      "DATE": [
+        0,
+        135
+      ],
+      "CONTACT": [
+        0,
+        484
+      ],
+      "ADDRESS": [
+        2,
+        3541
+      ],
+      "ACCOUNT": [
+        0,
+        46
+      ],
+      "ID": [
+        5,
+        878
+      ],
+      "SECRET": [
+        1,
+        211
+      ],
+      "ORG": [
+        0,
+        241
+      ],
+      "NET": [
+        0,
+        161
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "kiji-en",
+    "hit": 7612,
+    "miss": 11,
+    "hid": 7593,
+    "nspan": 7623,
+    "f1": 0.8398950447143219,
+    "p": 0.7261441445191367,
+    "r": 0.9959039789918365,
+    "tp": 69781,
+    "fp": 26317,
+    "fn": 287,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        0,
+        1926
+      ],
+      "DATE": [
+        0,
+        135
+      ],
+      "CONTACT": [
+        0,
+        484
+      ],
+      "ADDRESS": [
+        4,
+        3541
+      ],
+      "ACCOUNT": [
+        0,
+        46
+      ],
+      "ID": [
+        5,
+        878
+      ],
+      "SECRET": [
+        1,
+        211
+      ],
+      "ORG": [
+        0,
+        241
+      ],
+      "NET": [
+        1,
+        161
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "kiji-en",
+    "hit": 7616,
+    "miss": 7,
+    "hid": 7609,
+    "nspan": 7623,
+    "f1": 0.838325075340455,
+    "p": 0.722441940913456,
+    "r": 0.998487183878518,
+    "tp": 69962,
+    "fp": 26879,
+    "fn": 106,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        0,
+        1926
+      ],
+      "DATE": [
+        0,
+        135
+      ],
+      "CONTACT": [
+        0,
+        484
+      ],
+      "ADDRESS": [
+        1,
+        3541
+      ],
+      "ACCOUNT": [
+        0,
+        46
+      ],
+      "ID": [
+        5,
+        878
+      ],
+      "SECRET": [
+        1,
+        211
+      ],
+      "ORG": [
+        0,
+        241
+      ],
+      "NET": [
+        0,
+        161
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "kiji-en",
+    "hit": 7260,
+    "miss": 363,
+    "hid": 7175,
+    "nspan": 7623,
+    "f1": 0.8799193696669232,
+    "p": 0.8414848583523282,
+    "r": 0.922032882342867,
+    "tp": 64605,
+    "fp": 12170,
+    "fn": 5463,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        27,
+        1926
+      ],
+      "DATE": [
+        3,
+        135
+      ],
+      "CONTACT": [
+        0,
+        484
+      ],
+      "ADDRESS": [
+        136,
+        3541
+      ],
+      "ACCOUNT": [
+        0,
+        46
+      ],
+      "ID": [
+        13,
+        878
+      ],
+      "SECRET": [
+        3,
+        211
+      ],
+      "ORG": [
+        155,
+        241
+      ],
+      "NET": [
+        26,
+        161
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "kiji-multi",
+    "hit": 7247,
+    "miss": 318,
+    "hid": 7234,
+    "nspan": 7565,
+    "f1": 0.8645691390917042,
+    "p": 0.7918560464943,
+    "r": 0.951986384198504,
+    "tp": 63765,
+    "fp": 16761,
+    "fn": 3216,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        27,
+        1866
+      ],
+      "ID": [
+        5,
+        1092
+      ],
+      "CONTACT": [
+        0,
+        259
+      ],
+      "DATE": [
+        0,
+        144
+      ],
+      "SECRET": [
+        9,
+        255
+      ],
+      "ADDRESS": [
+        131,
+        3612
+      ],
+      "ACCOUNT": [
+        0,
+        55
+      ],
+      "NET": [
+        6,
+        133
+      ],
+      "ORG": [
+        140,
+        149
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "kiji-multi",
+    "hit": 7246,
+    "miss": 319,
+    "hid": 7165,
+    "nspan": 7565,
+    "f1": 0.8708133971291866,
+    "p": 0.8140612827836925,
+    "r": 0.9360714232394262,
+    "tp": 62699,
+    "fp": 14321,
+    "fn": 4282,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        79,
+        1866
+      ],
+      "ID": [
+        61,
+        1092
+      ],
+      "CONTACT": [
+        0,
+        259
+      ],
+      "DATE": [
+        13,
+        144
+      ],
+      "SECRET": [
+        12,
+        255
+      ],
+      "ADDRESS": [
+        72,
+        3612
+      ],
+      "ACCOUNT": [
+        0,
+        55
+      ],
+      "NET": [
+        80,
+        133
+      ],
+      "ORG": [
+        2,
+        149
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "kiji-multi",
+    "hit": 7533,
+    "miss": 32,
+    "hid": 7520,
+    "nspan": 7565,
+    "f1": 0.8557365266386867,
+    "p": 0.7504417806291857,
+    "r": 0.9954016810737373,
+    "tp": 66673,
+    "fp": 22172,
+    "fn": 308,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        15,
+        1866
+      ],
+      "ID": [
+        2,
+        1092
+      ],
+      "CONTACT": [
+        0,
+        259
+      ],
+      "DATE": [
+        0,
+        144
+      ],
+      "SECRET": [
+        7,
+        255
+      ],
+      "ADDRESS": [
+        6,
+        3612
+      ],
+      "ACCOUNT": [
+        0,
+        55
+      ],
+      "NET": [
+        2,
+        133
+      ],
+      "ORG": [
+        0,
+        149
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "kiji-multi",
+    "hit": 7540,
+    "miss": 25,
+    "hid": 7527,
+    "nspan": 7565,
+    "f1": 0.8256707113436491,
+    "p": 0.7047923727471413,
+    "r": 0.9965960496260133,
+    "tp": 66753,
+    "fp": 27960,
+    "fn": 228,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        13,
+        1866
+      ],
+      "ID": [
+        2,
+        1092
+      ],
+      "CONTACT": [
+        0,
+        259
+      ],
+      "DATE": [
+        0,
+        144
+      ],
+      "SECRET": [
+        7,
+        255
+      ],
+      "ADDRESS": [
+        3,
+        3612
+      ],
+      "ACCOUNT": [
+        0,
+        55
+      ],
+      "NET": [
+        0,
+        133
+      ],
+      "ORG": [
+        0,
+        149
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "kiji-multi",
+    "hit": 7542,
+    "miss": 23,
+    "hid": 7530,
+    "nspan": 7565,
+    "f1": 0.8345313847807879,
+    "p": 0.7177879807744003,
+    "r": 0.9966259088398203,
+    "tp": 66755,
+    "fp": 26246,
+    "fn": 226,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        12,
+        1866
+      ],
+      "ID": [
+        2,
+        1092
+      ],
+      "CONTACT": [
+        0,
+        259
+      ],
+      "DATE": [
+        0,
+        144
+      ],
+      "SECRET": [
+        7,
+        255
+      ],
+      "ADDRESS": [
+        2,
+        3612
+      ],
+      "ACCOUNT": [
+        0,
+        55
+      ],
+      "NET": [
+        0,
+        133
+      ],
+      "ORG": [
+        0,
+        149
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "kiji-multi",
+    "hit": 7543,
+    "miss": 22,
+    "hid": 7533,
+    "nspan": 7565,
+    "f1": 0.8093001836040938,
+    "p": 0.6810847748041775,
+    "r": 0.9969842194055031,
+    "tp": 66779,
+    "fp": 31269,
+    "fn": 202,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        11,
+        1866
+      ],
+      "ID": [
+        2,
+        1092
+      ],
+      "CONTACT": [
+        0,
+        259
+      ],
+      "DATE": [
+        0,
+        144
+      ],
+      "SECRET": [
+        7,
+        255
+      ],
+      "ADDRESS": [
+        2,
+        3612
+      ],
+      "ACCOUNT": [
+        0,
+        55
+      ],
+      "NET": [
+        0,
+        133
+      ],
+      "ORG": [
+        0,
+        149
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "kiji-multi",
+    "hit": 7128,
+    "miss": 437,
+    "hid": 7028,
+    "nspan": 7565,
+    "f1": 0.8843567272160948,
+    "p": 0.8409014418222694,
+    "r": 0.9325480360102119,
+    "tp": 62463,
+    "fp": 11818,
+    "fn": 4518,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        34,
+        1866
+      ],
+      "ID": [
+        17,
+        1092
+      ],
+      "CONTACT": [
+        1,
+        259
+      ],
+      "DATE": [
+        12,
+        144
+      ],
+      "SECRET": [
+        9,
+        255
+      ],
+      "ADDRESS": [
+        229,
+        3612
+      ],
+      "ACCOUNT": [
+        2,
+        55
+      ],
+      "NET": [
+        10,
+        133
+      ],
+      "ORG": [
+        123,
+        149
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "leak-museum",
+    "hit": 84,
+    "miss": 17,
+    "hid": 83,
+    "nspan": 101,
+    "f1": 0.6040057915057915,
+    "p": 0.5012014417300761,
+    "r": 0.75986642380085,
+    "tp": 2503,
+    "fp": 2491,
+    "fn": 791,
+    "fire": 10,
+    "nneg": 45,
+    "extra": 1552,
+    "negchars": 32812,
+    "grp": {
+      "SECRET": [
+        17,
+        101
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "leak-museum",
+    "hit": 81,
+    "miss": 20,
+    "hid": 73,
+    "nspan": 101,
+    "f1": 0.4142798522773902,
+    "p": 0.2838825778877517,
+    "r": 0.7662416514875531,
+    "tp": 2524,
+    "fp": 6367,
+    "fn": 770,
+    "fire": 39,
+    "nneg": 45,
+    "extra": 3589,
+    "negchars": 32812,
+    "grp": {
+      "SECRET": [
+        20,
+        101
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "leak-museum",
+    "hit": 99,
+    "miss": 2,
+    "hid": 96,
+    "nspan": 101,
+    "f1": 0.40821074238795757,
+    "p": 0.2634926243264729,
+    "r": 0.9055859137826351,
+    "tp": 2983,
+    "fp": 8338,
+    "fn": 311,
+    "fire": 42,
+    "nneg": 45,
+    "extra": 4704,
+    "negchars": 32812,
+    "grp": {
+      "SECRET": [
+        2,
+        101
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "leak-museum",
+    "hit": 99,
+    "miss": 2,
+    "hid": 96,
+    "nspan": 101,
+    "f1": 0.38750648004147226,
+    "p": 0.24633382764870654,
+    "r": 0.9077109896782027,
+    "tp": 2990,
+    "fp": 9148,
+    "fn": 304,
+    "fire": 43,
+    "nneg": 45,
+    "extra": 4881,
+    "negchars": 32812,
+    "grp": {
+      "SECRET": [
+        2,
+        101
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "leak-museum",
+    "hit": 99,
+    "miss": 2,
+    "hid": 96,
+    "nspan": 101,
+    "f1": 0.39975877780755825,
+    "p": 0.25649183147033533,
+    "r": 0.9055859137826351,
+    "tp": 2983,
+    "fp": 8647,
+    "fn": 311,
+    "fire": 42,
+    "nneg": 45,
+    "extra": 4837,
+    "negchars": 32812,
+    "grp": {
+      "SECRET": [
+        2,
+        101
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "leak-museum",
+    "hit": 99,
+    "miss": 2,
+    "hid": 96,
+    "nspan": 101,
+    "f1": 0.38043132514791017,
+    "p": 0.24064386317907444,
+    "r": 0.9077109896782027,
+    "tp": 2990,
+    "fp": 9435,
+    "fn": 304,
+    "fire": 43,
+    "nneg": 45,
+    "extra": 5005,
+    "negchars": 32812,
+    "grp": {
+      "SECRET": [
+        2,
+        101
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "leak-museum",
+    "hit": 77,
+    "miss": 24,
+    "hid": 69,
+    "nspan": 101,
+    "f1": 0.6593277557610451,
+    "p": 0.6382495026996305,
+    "r": 0.6818457802064359,
+    "tp": 2246,
+    "fp": 1273,
+    "fn": 1048,
+    "fire": 5,
+    "nneg": 45,
+    "extra": 865,
+    "negchars": 32812,
+    "grp": {
+      "SECRET": [
+        24,
+        101
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "leaky-repo",
+    "hit": 88,
+    "miss": 7,
+    "hid": 81,
+    "nspan": 95,
+    "f1": 0.7126022913256956,
+    "p": 0.6746900826446282,
+    "r": 0.7550289017341041,
+    "tp": 6531,
+    "fp": 3149,
+    "fn": 2119,
+    "fire": 11,
+    "nneg": 16,
+    "extra": 998,
+    "negchars": 30036,
+    "grp": {
+      "SECRET": [
+        7,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "leaky-repo",
+    "hit": 78,
+    "miss": 17,
+    "hid": 60,
+    "nspan": 95,
+    "f1": 0.5104348839920719,
+    "p": 0.5148165569143932,
+    "r": 0.5061271676300578,
+    "tp": 4378,
+    "fp": 4126,
+    "fn": 4272,
+    "fire": 12,
+    "nneg": 16,
+    "extra": 2525,
+    "negchars": 30036,
+    "grp": {
+      "SECRET": [
+        17,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "leaky-repo",
+    "hit": 94,
+    "miss": 1,
+    "hid": 85,
+    "nspan": 95,
+    "f1": 0.6376005216257336,
+    "p": 0.5109021246952281,
+    "r": 0.8478612716763005,
+    "tp": 7334,
+    "fp": 7021,
+    "fn": 1316,
+    "fire": 13,
+    "nneg": 16,
+    "extra": 3393,
+    "negchars": 30036,
+    "grp": {
+      "SECRET": [
+        1,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "leaky-repo",
+    "hit": 94,
+    "miss": 1,
+    "hid": 85,
+    "nspan": 95,
+    "f1": 0.6218776916451335,
+    "p": 0.48191469073803317,
+    "r": 0.8764161849710983,
+    "tp": 7581,
+    "fp": 8150,
+    "fn": 1069,
+    "fire": 15,
+    "nneg": 16,
+    "extra": 3922,
+    "negchars": 30036,
+    "grp": {
+      "SECRET": [
+        1,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "leaky-repo",
+    "hit": 94,
+    "miss": 1,
+    "hid": 88,
+    "nspan": 95,
+    "f1": 0.6937929352465347,
+    "p": 0.5350134787787599,
+    "r": 0.9865895953757226,
+    "tp": 8534,
+    "fp": 7417,
+    "fn": 116,
+    "fire": 13,
+    "nneg": 16,
+    "extra": 3594,
+    "negchars": 30036,
+    "grp": {
+      "SECRET": [
+        1,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "leaky-repo",
+    "hit": 94,
+    "miss": 1,
+    "hid": 88,
+    "nspan": 95,
+    "f1": 0.6657824933687003,
+    "p": 0.5024137525020606,
+    "r": 0.9865895953757226,
+    "tp": 8534,
+    "fp": 8452,
+    "fn": 116,
+    "fire": 15,
+    "nneg": 16,
+    "extra": 4087,
+    "negchars": 30036,
+    "grp": {
+      "SECRET": [
+        1,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "leaky-repo",
+    "hit": 85,
+    "miss": 10,
+    "hid": 65,
+    "nspan": 95,
+    "f1": 0.7911443716869347,
+    "p": 0.858903182125931,
+    "r": 0.7332947976878613,
+    "tp": 6343,
+    "fp": 1042,
+    "fn": 2307,
+    "fire": 2,
+    "nneg": 16,
+    "extra": 73,
+    "negchars": 30036,
+    "grp": {
+      "SECRET": [
+        10,
+        95
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "multiconer-ru",
+    "hit": 233,
+    "miss": 975,
+    "hid": 141,
+    "nspan": 1208,
+    "f1": 0.23989662701064923,
+    "p": 0.5421953675730111,
+    "r": 0.1540221993363085,
+    "tp": 2692,
+    "fp": 2273,
+    "fn": 14786,
+    "fire": 51,
+    "nneg": 420,
+    "extra": 576,
+    "negchars": 24222,
+    "grp": {
+      "ADDRESS": [
+        337,
+        379
+      ],
+      "ORG": [
+        478,
+        524
+      ],
+      "PERSON": [
+        160,
+        305
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "multiconer-ru",
+    "hit": 1113,
+    "miss": 95,
+    "hid": 891,
+    "nspan": 1208,
+    "f1": 0.6463018959542676,
+    "p": 0.5261058607926983,
+    "r": 0.8376816569401533,
+    "tp": 14641,
+    "fp": 13188,
+    "fn": 2837,
+    "fire": 293,
+    "nneg": 420,
+    "extra": 4127,
+    "negchars": 24222,
+    "grp": {
+      "ADDRESS": [
+        37,
+        379
+      ],
+      "ORG": [
+        52,
+        524
+      ],
+      "PERSON": [
+        6,
+        305
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "multiconer-ru",
+    "hit": 1121,
+    "miss": 87,
+    "hid": 926,
+    "nspan": 1208,
+    "f1": 0.6379994821783033,
+    "p": 0.5121233113959127,
+    "r": 0.8459205858793912,
+    "tp": 14785,
+    "fp": 14085,
+    "fn": 2693,
+    "fire": 297,
+    "nneg": 420,
+    "extra": 4299,
+    "negchars": 24222,
+    "grp": {
+      "ADDRESS": [
+        35,
+        379
+      ],
+      "ORG": [
+        47,
+        524
+      ],
+      "PERSON": [
+        5,
+        305
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "multiconer-ru",
+    "hit": 1138,
+    "miss": 70,
+    "hid": 937,
+    "nspan": 1208,
+    "f1": 0.6238087345653435,
+    "p": 0.48895745371873983,
+    "r": 0.8613685776404623,
+    "tp": 15055,
+    "fp": 15735,
+    "fn": 2423,
+    "fire": 324,
+    "nneg": 420,
+    "extra": 4870,
+    "negchars": 24222,
+    "grp": {
+      "ADDRESS": [
+        28,
+        379
+      ],
+      "ORG": [
+        39,
+        524
+      ],
+      "PERSON": [
+        3,
+        305
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "multiconer-ru",
+    "hit": 1126,
+    "miss": 82,
+    "hid": 934,
+    "nspan": 1208,
+    "f1": 0.6259707272386584,
+    "p": 0.49203024252937516,
+    "r": 0.8601098523858565,
+    "tp": 15033,
+    "fp": 15520,
+    "fn": 2445,
+    "fire": 303,
+    "nneg": 420,
+    "extra": 4697,
+    "negchars": 24222,
+    "grp": {
+      "ADDRESS": [
+        33,
+        379
+      ],
+      "ORG": [
+        44,
+        524
+      ],
+      "PERSON": [
+        5,
+        305
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "multiconer-ru",
+    "hit": 1140,
+    "miss": 68,
+    "hid": 942,
+    "nspan": 1208,
+    "f1": 0.6126897938662645,
+    "p": 0.4723850280646262,
+    "r": 0.8715528092459092,
+    "tp": 15233,
+    "fp": 17014,
+    "fn": 2245,
+    "fire": 327,
+    "nneg": 420,
+    "extra": 5232,
+    "negchars": 24222,
+    "grp": {
+      "ADDRESS": [
+        28,
+        379
+      ],
+      "ORG": [
+        37,
+        524
+      ],
+      "PERSON": [
+        3,
+        305
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "multiconer-ru",
+    "hit": 185,
+    "miss": 1023,
+    "hid": 83,
+    "nspan": 1208,
+    "f1": 0.19662208337401155,
+    "p": 0.6695478723404256,
+    "r": 0.11523057558073006,
+    "tp": 2014,
+    "fp": 994,
+    "fn": 15464,
+    "fire": 26,
+    "nneg": 420,
+    "extra": 227,
+    "negchars": 24222,
+    "grp": {
+      "ADDRESS": [
+        343,
+        379
+      ],
+      "ORG": [
+        489,
+        524
+      ],
+      "PERSON": [
+        191,
+        305
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "nemotron-pii",
+    "hit": 8242,
+    "miss": 1149,
+    "hid": 8094,
+    "nspan": 9391,
+    "f1": 0.8290381528755358,
+    "p": 0.8305790301697134,
+    "r": 0.8275029822176603,
+    "tp": 119316,
+    "fp": 24338,
+    "fn": 24872,
+    "fire": 5,
+    "nneg": 5,
+    "extra": 114,
+    "negchars": 1646,
+    "grp": {
+      "PERSON": [
+        11,
+        2245
+      ],
+      "ID": [
+        19,
+        1584
+      ],
+      "DATE": [
+        0,
+        277
+      ],
+      "CONTACT": [
+        8,
+        1199
+      ],
+      "ADDRESS": [
+        294,
+        1468
+      ],
+      "ACCOUNT": [
+        0,
+        638
+      ],
+      "NET": [
+        69,
+        762
+      ],
+      "SECRET": [
+        11,
+        375
+      ],
+      "ORG": [
+        737,
+        843
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "nemotron-pii",
+    "hit": 8688,
+    "miss": 703,
+    "hid": 8490,
+    "nspan": 9391,
+    "f1": 0.866479679784965,
+    "p": 0.9151417903539358,
+    "r": 0.8227314339612173,
+    "tp": 118628,
+    "fp": 11000,
+    "fn": 25560,
+    "fire": 2,
+    "nneg": 5,
+    "extra": 11,
+    "negchars": 1646,
+    "grp": {
+      "PERSON": [
+        124,
+        2245
+      ],
+      "ID": [
+        90,
+        1584
+      ],
+      "DATE": [
+        1,
+        277
+      ],
+      "CONTACT": [
+        4,
+        1199
+      ],
+      "ADDRESS": [
+        17,
+        1468
+      ],
+      "ACCOUNT": [
+        16,
+        638
+      ],
+      "NET": [
+        424,
+        762
+      ],
+      "SECRET": [
+        21,
+        375
+      ],
+      "ORG": [
+        6,
+        843
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "nemotron-pii",
+    "hit": 9304,
+    "miss": 87,
+    "hid": 9206,
+    "nspan": 9391,
+    "f1": 0.8816372312313454,
+    "p": 0.8116125494405488,
+    "r": 0.9648861208977169,
+    "tp": 139125,
+    "fp": 32293,
+    "fn": 5063,
+    "fire": 5,
+    "nneg": 5,
+    "extra": 114,
+    "negchars": 1646,
+    "grp": {
+      "PERSON": [
+        5,
+        2245
+      ],
+      "ID": [
+        16,
+        1584
+      ],
+      "DATE": [
+        0,
+        277
+      ],
+      "CONTACT": [
+        2,
+        1199
+      ],
+      "ADDRESS": [
+        9,
+        1468
+      ],
+      "ACCOUNT": [
+        0,
+        638
+      ],
+      "NET": [
+        44,
+        762
+      ],
+      "SECRET": [
+        6,
+        375
+      ],
+      "ORG": [
+        5,
+        843
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "nemotron-pii",
+    "hit": 9368,
+    "miss": 23,
+    "hid": 9231,
+    "nspan": 9391,
+    "f1": 0.8696383983960445,
+    "p": 0.7850491305100746,
+    "r": 0.9746580852775543,
+    "tp": 140534,
+    "fp": 38479,
+    "fn": 3654,
+    "fire": 5,
+    "nneg": 5,
+    "extra": 117,
+    "negchars": 1646,
+    "grp": {
+      "PERSON": [
+        5,
+        2245
+      ],
+      "ID": [
+        7,
+        1584
+      ],
+      "DATE": [
+        0,
+        277
+      ],
+      "CONTACT": [
+        2,
+        1199
+      ],
+      "ADDRESS": [
+        8,
+        1468
+      ],
+      "ACCOUNT": [
+        0,
+        638
+      ],
+      "NET": [
+        0,
+        762
+      ],
+      "SECRET": [
+        0,
+        375
+      ],
+      "ORG": [
+        1,
+        843
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "nemotron-pii",
+    "hit": 9345,
+    "miss": 46,
+    "hid": 9238,
+    "nspan": 9391,
+    "f1": 0.849843463339388,
+    "p": 0.7570207437841823,
+    "r": 0.9686104252781091,
+    "tp": 139662,
+    "fp": 44827,
+    "fn": 4526,
+    "fire": 5,
+    "nneg": 5,
+    "extra": 167,
+    "negchars": 1646,
+    "grp": {
+      "PERSON": [
+        2,
+        2245
+      ],
+      "ID": [
+        6,
+        1584
+      ],
+      "DATE": [
+        0,
+        277
+      ],
+      "CONTACT": [
+        2,
+        1199
+      ],
+      "ADDRESS": [
+        6,
+        1468
+      ],
+      "ACCOUNT": [
+        0,
+        638
+      ],
+      "NET": [
+        24,
+        762
+      ],
+      "SECRET": [
+        5,
+        375
+      ],
+      "ORG": [
+        1,
+        843
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "nemotron-pii",
+    "hit": 9377,
+    "miss": 14,
+    "hid": 9253,
+    "nspan": 9391,
+    "f1": 0.8402610930211041,
+    "p": 0.7375160453723836,
+    "r": 0.9762670957361222,
+    "tp": 140766,
+    "fp": 50099,
+    "fn": 3422,
+    "fire": 5,
+    "nneg": 5,
+    "extra": 168,
+    "negchars": 1646,
+    "grp": {
+      "PERSON": [
+        2,
+        2245
+      ],
+      "ID": [
+        3,
+        1584
+      ],
+      "DATE": [
+        0,
+        277
+      ],
+      "CONTACT": [
+        2,
+        1199
+      ],
+      "ADDRESS": [
+        6,
+        1468
+      ],
+      "ACCOUNT": [
+        0,
+        638
+      ],
+      "NET": [
+        0,
+        762
+      ],
+      "SECRET": [
+        0,
+        375
+      ],
+      "ORG": [
+        1,
+        843
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "nerel",
+    "hit": 3087,
+    "miss": 21282,
+    "hid": 3026,
+    "nspan": 24369,
+    "f1": 0.24106652265512904,
+    "p": 0.8368174386920981,
+    "r": 0.14081608697884954,
+    "tp": 38389,
+    "fp": 7486,
+    "fn": 234229,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        6618,
+        9496
+      ],
+      "ORG": [
+        5989,
+        6012
+      ],
+      "ADDRESS": [
+        8675,
+        8861
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "nerel",
+    "hit": 21815,
+    "miss": 2554,
+    "hid": 20976,
+    "nspan": 24369,
+    "f1": 0.8312522984781886,
+    "p": 0.7953265954452233,
+    "r": 0.8705771445759267,
+    "tp": 237335,
+    "fp": 61077,
+    "fn": 35283,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        1170,
+        9496
+      ],
+      "ORG": [
+        341,
+        6012
+      ],
+      "ADDRESS": [
+        1043,
+        8861
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "nerel",
+    "hit": 22017,
+    "miss": 2352,
+    "hid": 21201,
+    "nspan": 24369,
+    "f1": 0.82455269246551,
+    "p": 0.7778945245406755,
+    "r": 0.8771651174904078,
+    "tp": 239131,
+    "fp": 68277,
+    "fn": 33487,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        974,
+        9496
+      ],
+      "ORG": [
+        341,
+        6012
+      ],
+      "ADDRESS": [
+        1037,
+        8861
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "nerel",
+    "hit": 22836,
+    "miss": 1533,
+    "hid": 21892,
+    "nspan": 24369,
+    "f1": 0.8075160795518134,
+    "p": 0.7323440382583153,
+    "r": 0.8998855541453609,
+    "tp": 245325,
+    "fp": 89661,
+    "fn": 27293,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        357,
+        9496
+      ],
+      "ORG": [
+        282,
+        6012
+      ],
+      "ADDRESS": [
+        894,
+        8861
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "nerel",
+    "hit": 23460,
+    "miss": 909,
+    "hid": 22776,
+    "nspan": 24369,
+    "f1": 0.7906955809131206,
+    "p": 0.6853270841965358,
+    "r": 0.9343513634462874,
+    "tp": 254721,
+    "fp": 116957,
+    "fn": 17897,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        70,
+        9496
+      ],
+      "ORG": [
+        163,
+        6012
+      ],
+      "ADDRESS": [
+        676,
+        8861
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "nerel",
+    "hit": 23526,
+    "miss": 843,
+    "hid": 22833,
+    "nspan": 24369,
+    "f1": 0.7703101006718496,
+    "p": 0.6541600910003894,
+    "r": 0.9366109354481362,
+    "tp": 255337,
+    "fp": 134991,
+    "fn": 17281,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        47,
+        9496
+      ],
+      "ORG": [
+        154,
+        6012
+      ],
+      "ADDRESS": [
+        642,
+        8861
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "nerel",
+    "hit": 4961,
+    "miss": 19408,
+    "hid": 4003,
+    "nspan": 24369,
+    "f1": 0.34456958336614946,
+    "p": 0.9890616304952699,
+    "r": 0.20862525585251157,
+    "tp": 56875,
+    "fp": 629,
+    "fn": 215743,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        5296,
+        9496
+      ],
+      "ORG": [
+        5754,
+        6012
+      ],
+      "ADDRESS": [
+        8358,
+        8861
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "nym-en",
+    "hit": 3446,
+    "miss": 138,
+    "hid": 3401,
+    "nspan": 3584,
+    "f1": 0.9269748834705586,
+    "p": 0.9031204557915564,
+    "r": 0.9521236491580799,
+    "tp": 37885,
+    "fp": 4064,
+    "fn": 1905,
+    "fire": 37,
+    "nneg": 149,
+    "extra": 218,
+    "negchars": 10137,
+    "grp": {
+      "PERSON": [
+        8,
+        820
+      ],
+      "DATE": [
+        0,
+        203
+      ],
+      "ID": [
+        6,
+        605
+      ],
+      "OTHER": [
+        3,
+        385
+      ],
+      "ADDRESS": [
+        19,
+        692
+      ],
+      "ACCOUNT": [
+        2,
+        252
+      ],
+      "CONTACT": [
+        0,
+        403
+      ],
+      "ORG": [
+        100,
+        170
+      ],
+      "SECRET": [
+        0,
+        39
+      ],
+      "NET": [
+        0,
+        15
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "nym-en",
+    "hit": 3024,
+    "miss": 560,
+    "hid": 2935,
+    "nspan": 3584,
+    "f1": 0.8761093176144606,
+    "p": 0.9127202418234798,
+    "r": 0.8423221915054033,
+    "tp": 33516,
+    "fp": 3205,
+    "fn": 6274,
+    "fire": 18,
+    "nneg": 149,
+    "extra": 170,
+    "negchars": 10137,
+    "grp": {
+      "PERSON": [
+        54,
+        820
+      ],
+      "DATE": [
+        3,
+        203
+      ],
+      "ID": [
+        108,
+        605
+      ],
+      "OTHER": [
+        190,
+        385
+      ],
+      "ADDRESS": [
+        88,
+        692
+      ],
+      "ACCOUNT": [
+        72,
+        252
+      ],
+      "CONTACT": [
+        7,
+        403
+      ],
+      "ORG": [
+        14,
+        170
+      ],
+      "SECRET": [
+        12,
+        39
+      ],
+      "NET": [
+        12,
+        15
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "nym-en",
+    "hit": 3557,
+    "miss": 27,
+    "hid": 3509,
+    "nspan": 3584,
+    "f1": 0.9194436971447956,
+    "p": 0.8599654289652758,
+    "r": 0.987760743905504,
+    "tp": 39303,
+    "fp": 6400,
+    "fn": 487,
+    "fire": 50,
+    "nneg": 149,
+    "extra": 365,
+    "negchars": 10137,
+    "grp": {
+      "PERSON": [
+        2,
+        820
+      ],
+      "DATE": [
+        0,
+        203
+      ],
+      "ID": [
+        6,
+        605
+      ],
+      "OTHER": [
+        3,
+        385
+      ],
+      "ADDRESS": [
+        6,
+        692
+      ],
+      "ACCOUNT": [
+        0,
+        252
+      ],
+      "CONTACT": [
+        0,
+        403
+      ],
+      "ORG": [
+        10,
+        170
+      ],
+      "SECRET": [
+        0,
+        39
+      ],
+      "NET": [
+        0,
+        15
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "nym-en",
+    "hit": 3569,
+    "miss": 15,
+    "hid": 3529,
+    "nspan": 3584,
+    "f1": 0.9061156152884648,
+    "p": 0.8332735747579778,
+    "r": 0.9929127921588339,
+    "tp": 39508,
+    "fp": 7905,
+    "fn": 282,
+    "fire": 70,
+    "nneg": 149,
+    "extra": 612,
+    "negchars": 10137,
+    "grp": {
+      "PERSON": [
+        2,
+        820
+      ],
+      "DATE": [
+        0,
+        203
+      ],
+      "ID": [
+        3,
+        605
+      ],
+      "OTHER": [
+        1,
+        385
+      ],
+      "ADDRESS": [
+        6,
+        692
+      ],
+      "ACCOUNT": [
+        0,
+        252
+      ],
+      "CONTACT": [
+        0,
+        403
+      ],
+      "ORG": [
+        3,
+        170
+      ],
+      "SECRET": [
+        0,
+        39
+      ],
+      "NET": [
+        0,
+        15
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "nym-en",
+    "hit": 3572,
+    "miss": 12,
+    "hid": 3527,
+    "nspan": 3584,
+    "f1": 0.8925272215375221,
+    "p": 0.8112474563729419,
+    "r": 0.991907514450867,
+    "tp": 39468,
+    "fp": 9183,
+    "fn": 322,
+    "fire": 51,
+    "nneg": 149,
+    "extra": 386,
+    "negchars": 10137,
+    "grp": {
+      "PERSON": [
+        2,
+        820
+      ],
+      "DATE": [
+        0,
+        203
+      ],
+      "ID": [
+        3,
+        605
+      ],
+      "OTHER": [
+        2,
+        385
+      ],
+      "ADDRESS": [
+        3,
+        692
+      ],
+      "ACCOUNT": [
+        0,
+        252
+      ],
+      "CONTACT": [
+        0,
+        403
+      ],
+      "ORG": [
+        2,
+        170
+      ],
+      "SECRET": [
+        0,
+        39
+      ],
+      "NET": [
+        0,
+        15
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "nym-en",
+    "hit": 3576,
+    "miss": 8,
+    "hid": 3542,
+    "nspan": 3584,
+    "f1": 0.8818506685072417,
+    "p": 0.7915542498551073,
+    "r": 0.9954008544860518,
+    "tp": 39607,
+    "fp": 10430,
+    "fn": 183,
+    "fire": 71,
+    "nneg": 149,
+    "extra": 632,
+    "negchars": 10137,
+    "grp": {
+      "PERSON": [
+        2,
+        820
+      ],
+      "DATE": [
+        0,
+        203
+      ],
+      "ID": [
+        2,
+        605
+      ],
+      "OTHER": [
+        0,
+        385
+      ],
+      "ADDRESS": [
+        3,
+        692
+      ],
+      "ACCOUNT": [
+        0,
+        252
+      ],
+      "CONTACT": [
+        0,
+        403
+      ],
+      "ORG": [
+        1,
+        170
+      ],
+      "SECRET": [
+        0,
+        39
+      ],
+      "NET": [
+        0,
+        15
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "nym-en",
+    "hit": 3269,
+    "miss": 315,
+    "hid": 3160,
+    "nspan": 3584,
+    "f1": 0.9227643321931022,
+    "p": 0.9448541030232803,
+    "r": 0.9016838401608445,
+    "tp": 35878,
+    "fp": 2094,
+    "fn": 3912,
+    "fire": 19,
+    "nneg": 149,
+    "extra": 122,
+    "negchars": 10137,
+    "grp": {
+      "PERSON": [
+        8,
+        820
+      ],
+      "DATE": [
+        12,
+        203
+      ],
+      "ID": [
+        26,
+        605
+      ],
+      "OTHER": [
+        118,
+        385
+      ],
+      "ADDRESS": [
+        48,
+        692
+      ],
+      "ACCOUNT": [
+        8,
+        252
+      ],
+      "CONTACT": [
+        2,
+        403
+      ],
+      "ORG": [
+        92,
+        170
+      ],
+      "SECRET": [
+        0,
+        39
+      ],
+      "NET": [
+        1,
+        15
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "nym-multi",
+    "hit": 7942,
+    "miss": 227,
+    "hid": 7860,
+    "nspan": 8169,
+    "f1": 0.9331448748286139,
+    "p": 0.9039682458281624,
+    "r": 0.9642677403120282,
+    "tp": 88136,
+    "fp": 9363,
+    "fn": 3266,
+    "fire": 5,
+    "nneg": 7,
+    "extra": 29,
+    "negchars": 534,
+    "grp": {
+      "PERSON": [
+        18,
+        1806
+      ],
+      "ACCOUNT": [
+        16,
+        685
+      ],
+      "CONTACT": [
+        1,
+        860
+      ],
+      "ADDRESS": [
+        38,
+        1489
+      ],
+      "SECRET": [
+        0,
+        173
+      ],
+      "NET": [
+        0,
+        99
+      ],
+      "ID": [
+        2,
+        1573
+      ],
+      "OTHER": [
+        19,
+        868
+      ],
+      "ORG": [
+        133,
+        256
+      ],
+      "DATE": [
+        0,
+        360
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "nym-multi",
+    "hit": 6162,
+    "miss": 2007,
+    "hid": 5975,
+    "nspan": 8169,
+    "f1": 0.8258593947932694,
+    "p": 0.9488406435032019,
+    "r": 0.7310999759305048,
+    "tp": 66824,
+    "fp": 3603,
+    "fn": 24578,
+    "fire": 1,
+    "nneg": 7,
+    "extra": 6,
+    "negchars": 534,
+    "grp": {
+      "PERSON": [
+        376,
+        1806
+      ],
+      "ACCOUNT": [
+        170,
+        685
+      ],
+      "CONTACT": [
+        81,
+        860
+      ],
+      "ADDRESS": [
+        252,
+        1489
+      ],
+      "SECRET": [
+        56,
+        173
+      ],
+      "NET": [
+        73,
+        99
+      ],
+      "ID": [
+        442,
+        1573
+      ],
+      "OTHER": [
+        475,
+        868
+      ],
+      "ORG": [
+        46,
+        256
+      ],
+      "DATE": [
+        36,
+        360
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "nym-multi",
+    "hit": 8093,
+    "miss": 76,
+    "hid": 8023,
+    "nspan": 8169,
+    "f1": 0.9352804754312218,
+    "p": 0.887638793357571,
+    "r": 0.9883262948294348,
+    "tp": 90335,
+    "fp": 11435,
+    "fn": 1067,
+    "fire": 5,
+    "nneg": 7,
+    "extra": 29,
+    "negchars": 534,
+    "grp": {
+      "PERSON": [
+        18,
+        1806
+      ],
+      "ACCOUNT": [
+        5,
+        685
+      ],
+      "CONTACT": [
+        0,
+        860
+      ],
+      "ADDRESS": [
+        13,
+        1489
+      ],
+      "SECRET": [
+        0,
+        173
+      ],
+      "NET": [
+        0,
+        99
+      ],
+      "ID": [
+        2,
+        1573
+      ],
+      "OTHER": [
+        16,
+        868
+      ],
+      "ORG": [
+        22,
+        256
+      ],
+      "DATE": [
+        0,
+        360
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "nym-multi",
+    "hit": 8143,
+    "miss": 26,
+    "hid": 8088,
+    "nspan": 8169,
+    "f1": 0.8823153057960198,
+    "p": 0.7920582706766918,
+    "r": 0.9957878383405178,
+    "tp": 91017,
+    "fp": 23895,
+    "fn": 385,
+    "fire": 5,
+    "nneg": 7,
+    "extra": 42,
+    "negchars": 534,
+    "grp": {
+      "PERSON": [
+        8,
+        1806
+      ],
+      "ACCOUNT": [
+        4,
+        685
+      ],
+      "CONTACT": [
+        0,
+        860
+      ],
+      "ADDRESS": [
+        4,
+        1489
+      ],
+      "SECRET": [
+        0,
+        173
+      ],
+      "NET": [
+        0,
+        99
+      ],
+      "ID": [
+        2,
+        1573
+      ],
+      "OTHER": [
+        8,
+        868
+      ],
+      "ORG": [
+        0,
+        256
+      ],
+      "DATE": [
+        0,
+        360
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "nym-multi",
+    "hit": 8130,
+    "miss": 39,
+    "hid": 8081,
+    "nspan": 8169,
+    "f1": 0.9234549599175506,
+    "p": 0.8615002794433867,
+    "r": 0.9950110500864313,
+    "tp": 90946,
+    "fp": 14621,
+    "fn": 456,
+    "fire": 5,
+    "nneg": 7,
+    "extra": 34,
+    "negchars": 534,
+    "grp": {
+      "PERSON": [
+        17,
+        1806
+      ],
+      "ACCOUNT": [
+        5,
+        685
+      ],
+      "CONTACT": [
+        0,
+        860
+      ],
+      "ADDRESS": [
+        5,
+        1489
+      ],
+      "SECRET": [
+        0,
+        173
+      ],
+      "NET": [
+        0,
+        99
+      ],
+      "ID": [
+        0,
+        1573
+      ],
+      "OTHER": [
+        10,
+        868
+      ],
+      "ORG": [
+        2,
+        256
+      ],
+      "DATE": [
+        0,
+        360
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "nym-multi",
+    "hit": 8148,
+    "miss": 21,
+    "hid": 8111,
+    "nspan": 8169,
+    "f1": 0.8733337805333821,
+    "p": 0.7769129782445612,
+    "r": 0.9970788385374499,
+    "tp": 91135,
+    "fp": 26169,
+    "fn": 267,
+    "fire": 5,
+    "nneg": 7,
+    "extra": 47,
+    "negchars": 534,
+    "grp": {
+      "PERSON": [
+        8,
+        1806
+      ],
+      "ACCOUNT": [
+        4,
+        685
+      ],
+      "CONTACT": [
+        0,
+        860
+      ],
+      "ADDRESS": [
+        3,
+        1489
+      ],
+      "SECRET": [
+        0,
+        173
+      ],
+      "NET": [
+        0,
+        99
+      ],
+      "ID": [
+        0,
+        1573
+      ],
+      "OTHER": [
+        6,
+        868
+      ],
+      "ORG": [
+        0,
+        256
+      ],
+      "DATE": [
+        0,
+        360
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "nym-multi",
+    "hit": 7207,
+    "miss": 962,
+    "hid": 6923,
+    "nspan": 8169,
+    "f1": 0.909477113016936,
+    "p": 0.9483729216152019,
+    "r": 0.8736460908951664,
+    "tp": 79853,
+    "fp": 4347,
+    "fn": 11549,
+    "fire": 2,
+    "nneg": 7,
+    "extra": 10,
+    "negchars": 534,
+    "grp": {
+      "PERSON": [
+        139,
+        1806
+      ],
+      "ACCOUNT": [
+        80,
+        685
+      ],
+      "CONTACT": [
+        9,
+        860
+      ],
+      "ADDRESS": [
+        136,
+        1489
+      ],
+      "SECRET": [
+        7,
+        173
+      ],
+      "NET": [
+        12,
+        99
+      ],
+      "ID": [
+        70,
+        1573
+      ],
+      "OTHER": [
+        371,
+        868
+      ],
+      "ORG": [
+        109,
+        256
+      ],
+      "DATE": [
+        29,
+        360
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "nym-ru",
+    "hit": 9123,
+    "miss": 374,
+    "hid": 8928,
+    "nspan": 9497,
+    "f1": 0.9114796565341835,
+    "p": 0.8985953726771857,
+    "r": 0.9247387912259583,
+    "tp": 100631,
+    "fp": 11356,
+    "fn": 8190,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "SECRET": [
+        3,
+        307
+      ],
+      "PERSON": [
+        2,
+        2036
+      ],
+      "ACCOUNT": [
+        0,
+        798
+      ],
+      "ORG": [
+        336,
+        454
+      ],
+      "OTHER": [
+        11,
+        1207
+      ],
+      "ADDRESS": [
+        21,
+        1316
+      ],
+      "ID": [
+        0,
+        1766
+      ],
+      "NET": [
+        1,
+        194
+      ],
+      "CONTACT": [
+        0,
+        962
+      ],
+      "DATE": [
+        0,
+        457
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "nym-ru",
+    "hit": 7707,
+    "miss": 1790,
+    "hid": 7224,
+    "nspan": 9497,
+    "f1": 0.8710821614212029,
+    "p": 0.9559989458195155,
+    "r": 0.8000202166861176,
+    "tp": 87059,
+    "fp": 4007,
+    "fn": 21762,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "SECRET": [
+        14,
+        307
+      ],
+      "PERSON": [
+        231,
+        2036
+      ],
+      "ACCOUNT": [
+        103,
+        798
+      ],
+      "ORG": [
+        16,
+        454
+      ],
+      "OTHER": [
+        633,
+        1207
+      ],
+      "ADDRESS": [
+        342,
+        1316
+      ],
+      "ID": [
+        275,
+        1766
+      ],
+      "NET": [
+        169,
+        194
+      ],
+      "CONTACT": [
+        3,
+        962
+      ],
+      "DATE": [
+        4,
+        457
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "nym-ru",
+    "hit": 9473,
+    "miss": 24,
+    "hid": 9120,
+    "nspan": 9497,
+    "f1": 0.9298251729968103,
+    "p": 0.8841981386174718,
+    "r": 0.9804173826743,
+    "tp": 106690,
+    "fp": 13973,
+    "fn": 2131,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "SECRET": [
+        0,
+        307
+      ],
+      "PERSON": [
+        0,
+        2036
+      ],
+      "ACCOUNT": [
+        0,
+        798
+      ],
+      "ORG": [
+        10,
+        454
+      ],
+      "OTHER": [
+        11,
+        1207
+      ],
+      "ADDRESS": [
+        2,
+        1316
+      ],
+      "ID": [
+        0,
+        1766
+      ],
+      "NET": [
+        1,
+        194
+      ],
+      "CONTACT": [
+        0,
+        962
+      ],
+      "DATE": [
+        0,
+        457
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "nym-ru",
+    "hit": 9487,
+    "miss": 10,
+    "hid": 9139,
+    "nspan": 9497,
+    "f1": 0.927200443466662,
+    "p": 0.8768255424410462,
+    "r": 0.9837163782725761,
+    "tp": 107049,
+    "fp": 15038,
+    "fn": 1772,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "SECRET": [
+        0,
+        307
+      ],
+      "PERSON": [
+        0,
+        2036
+      ],
+      "ACCOUNT": [
+        0,
+        798
+      ],
+      "ORG": [
+        4,
+        454
+      ],
+      "OTHER": [
+        5,
+        1207
+      ],
+      "ADDRESS": [
+        1,
+        1316
+      ],
+      "ID": [
+        0,
+        1766
+      ],
+      "NET": [
+        0,
+        194
+      ],
+      "CONTACT": [
+        0,
+        962
+      ],
+      "DATE": [
+        0,
+        457
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "nym-ru",
+    "hit": 9492,
+    "miss": 5,
+    "hid": 9242,
+    "nspan": 9497,
+    "f1": 0.9193886801125264,
+    "p": 0.8562538645696257,
+    "r": 0.9925749625531837,
+    "tp": 108013,
+    "fp": 18133,
+    "fn": 808,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "SECRET": [
+        0,
+        307
+      ],
+      "PERSON": [
+        0,
+        2036
+      ],
+      "ACCOUNT": [
+        0,
+        798
+      ],
+      "ORG": [
+        1,
+        454
+      ],
+      "OTHER": [
+        2,
+        1207
+      ],
+      "ADDRESS": [
+        1,
+        1316
+      ],
+      "ID": [
+        0,
+        1766
+      ],
+      "NET": [
+        1,
+        194
+      ],
+      "CONTACT": [
+        0,
+        962
+      ],
+      "DATE": [
+        0,
+        457
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "nym-ru",
+    "hit": 9495,
+    "miss": 2,
+    "hid": 9253,
+    "nspan": 9497,
+    "f1": 0.9166928079085028,
+    "p": 0.8508463372600864,
+    "r": 0.9935857968590621,
+    "tp": 108123,
+    "fp": 18954,
+    "fn": 698,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "SECRET": [
+        0,
+        307
+      ],
+      "PERSON": [
+        0,
+        2036
+      ],
+      "ACCOUNT": [
+        0,
+        798
+      ],
+      "ORG": [
+        1,
+        454
+      ],
+      "OTHER": [
+        1,
+        1207
+      ],
+      "ADDRESS": [
+        0,
+        1316
+      ],
+      "ID": [
+        0,
+        1766
+      ],
+      "NET": [
+        0,
+        194
+      ],
+      "CONTACT": [
+        0,
+        962
+      ],
+      "DATE": [
+        0,
+        457
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "nym-ru",
+    "hit": 8770,
+    "miss": 727,
+    "hid": 8264,
+    "nspan": 9497,
+    "f1": 0.9229905755244264,
+    "p": 0.9398575020955574,
+    "r": 0.9067183723729795,
+    "tp": 98670,
+    "fp": 6314,
+    "fn": 10151,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "SECRET": [
+        1,
+        307
+      ],
+      "PERSON": [
+        2,
+        2036
+      ],
+      "ACCOUNT": [
+        28,
+        798
+      ],
+      "ORG": [
+        181,
+        454
+      ],
+      "OTHER": [
+        429,
+        1207
+      ],
+      "ADDRESS": [
+        55,
+        1316
+      ],
+      "ID": [
+        27,
+        1766
+      ],
+      "NET": [
+        2,
+        194
+      ],
+      "CONTACT": [
+        0,
+        962
+      ],
+      "DATE": [
+        2,
+        457
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "privy",
+    "hit": 1803,
+    "miss": 96,
+    "hid": 1744,
+    "nspan": 1899,
+    "f1": 0.4187312720363736,
+    "p": 0.2701987239700877,
+    "r": 0.9299269460072215,
+    "tp": 22149,
+    "fp": 59824,
+    "fn": 1669,
+    "fire": 402,
+    "nneg": 530,
+    "extra": 18955,
+    "negchars": 135019,
+    "grp": {
+      "SECRET": [
+        0,
+        30
+      ],
+      "ID": [
+        1,
+        398
+      ],
+      "NET": [
+        3,
+        178
+      ],
+      "PERSON": [
+        6,
+        428
+      ],
+      "ADDRESS": [
+        31,
+        699
+      ],
+      "ORG": [
+        55,
+        79
+      ],
+      "CONTACT": [
+        0,
+        87
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "privy",
+    "hit": 1518,
+    "miss": 381,
+    "hid": 1471,
+    "nspan": 1899,
+    "f1": 0.6299223468507333,
+    "p": 0.5347474510723075,
+    "r": 0.7663111932152153,
+    "tp": 18252,
+    "fp": 15880,
+    "fn": 5566,
+    "fire": 272,
+    "nneg": 530,
+    "extra": 5651,
+    "negchars": 135019,
+    "grp": {
+      "SECRET": [
+        1,
+        30
+      ],
+      "ID": [
+        61,
+        398
+      ],
+      "NET": [
+        94,
+        178
+      ],
+      "PERSON": [
+        26,
+        428
+      ],
+      "ADDRESS": [
+        192,
+        699
+      ],
+      "ORG": [
+        5,
+        79
+      ],
+      "CONTACT": [
+        2,
+        87
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "privy",
+    "hit": 1881,
+    "miss": 18,
+    "hid": 1844,
+    "nspan": 1899,
+    "f1": 0.41318746614005347,
+    "p": 0.2608911546610169,
+    "r": 0.9926526156688219,
+    "tp": 23643,
+    "fp": 66981,
+    "fn": 175,
+    "fire": 473,
+    "nneg": 530,
+    "extra": 21768,
+    "negchars": 135019,
+    "grp": {
+      "SECRET": [
+        0,
+        30
+      ],
+      "ID": [
+        1,
+        398
+      ],
+      "NET": [
+        2,
+        178
+      ],
+      "PERSON": [
+        1,
+        428
+      ],
+      "ADDRESS": [
+        11,
+        699
+      ],
+      "ORG": [
+        3,
+        79
+      ],
+      "CONTACT": [
+        0,
+        87
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "privy",
+    "hit": 1889,
+    "miss": 10,
+    "hid": 1868,
+    "nspan": 1899,
+    "f1": 0.40101110866881967,
+    "p": 0.2510585595122158,
+    "r": 0.9957595096145773,
+    "tp": 23717,
+    "fp": 70751,
+    "fn": 101,
+    "fire": 484,
+    "nneg": 530,
+    "extra": 23234,
+    "negchars": 135019,
+    "grp": {
+      "SECRET": [
+        0,
+        30
+      ],
+      "ID": [
+        0,
+        398
+      ],
+      "NET": [
+        2,
+        178
+      ],
+      "PERSON": [
+        1,
+        428
+      ],
+      "ADDRESS": [
+        7,
+        699
+      ],
+      "ORG": [
+        0,
+        79
+      ],
+      "CONTACT": [
+        0,
+        87
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "privy",
+    "hit": 1882,
+    "miss": 17,
+    "hid": 1847,
+    "nspan": 1899,
+    "f1": 0.40775209830584425,
+    "p": 0.2565273019039771,
+    "r": 0.9933243765219582,
+    "tp": 23659,
+    "fp": 68569,
+    "fn": 159,
+    "fire": 474,
+    "nneg": 530,
+    "extra": 22429,
+    "negchars": 135019,
+    "grp": {
+      "SECRET": [
+        0,
+        30
+      ],
+      "ID": [
+        1,
+        398
+      ],
+      "NET": [
+        2,
+        178
+      ],
+      "PERSON": [
+        1,
+        428
+      ],
+      "ADDRESS": [
+        11,
+        699
+      ],
+      "ORG": [
+        2,
+        79
+      ],
+      "CONTACT": [
+        0,
+        87
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "privy",
+    "hit": 1889,
+    "miss": 10,
+    "hid": 1870,
+    "nspan": 1899,
+    "f1": 0.39636734284663966,
+    "p": 0.2474184867638776,
+    "r": 0.9959274498278613,
+    "tp": 23721,
+    "fp": 72153,
+    "fn": 97,
+    "fire": 485,
+    "nneg": 530,
+    "extra": 23785,
+    "negchars": 135019,
+    "grp": {
+      "SECRET": [
+        0,
+        30
+      ],
+      "ID": [
+        0,
+        398
+      ],
+      "NET": [
+        2,
+        178
+      ],
+      "PERSON": [
+        1,
+        428
+      ],
+      "ADDRESS": [
+        7,
+        699
+      ],
+      "ORG": [
+        0,
+        79
+      ],
+      "CONTACT": [
+        0,
+        87
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "privy",
+    "hit": 1657,
+    "miss": 242,
+    "hid": 1538,
+    "nspan": 1899,
+    "f1": 0.473878591765096,
+    "p": 0.32561793868539735,
+    "r": 0.8700142749181291,
+    "tp": 20722,
+    "fp": 42917,
+    "fn": 3096,
+    "fire": 371,
+    "nneg": 530,
+    "extra": 13323,
+    "negchars": 135019,
+    "grp": {
+      "SECRET": [
+        0,
+        30
+      ],
+      "ID": [
+        11,
+        398
+      ],
+      "NET": [
+        17,
+        178
+      ],
+      "PERSON": [
+        10,
+        428
+      ],
+      "ADDRESS": [
+        157,
+        699
+      ],
+      "ORG": [
+        47,
+        79
+      ],
+      "CONTACT": [
+        0,
+        87
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "redact-multi",
+    "hit": 20437,
+    "miss": 2427,
+    "hid": 19888,
+    "nspan": 22864,
+    "f1": 0.7045948531682114,
+    "p": 0.6259448532690505,
+    "r": 0.8058499349388704,
+    "tp": 231619,
+    "fp": 138412,
+    "fn": 55803,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        923,
+        1017
+      ],
+      "ACCOUNT": [
+        90,
+        2669
+      ],
+      "PERSON": [
+        58,
+        10870
+      ],
+      "DATE": [
+        0,
+        628
+      ],
+      "ADDRESS": [
+        482,
+        2107
+      ],
+      "OTHER": [
+        848,
+        1939
+      ],
+      "ID": [
+        10,
+        967
+      ],
+      "CONTACT": [
+        14,
+        2524
+      ],
+      "NET": [
+        1,
+        111
+      ],
+      "SECRET": [
+        1,
+        32
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "redact-multi",
+    "hit": 19329,
+    "miss": 3535,
+    "hid": 18044,
+    "nspan": 22864,
+    "f1": 0.6938862607360854,
+    "p": 0.6864944378045417,
+    "r": 0.7014389991023652,
+    "tp": 201609,
+    "fp": 92070,
+    "fn": 85813,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        97,
+        1017
+      ],
+      "ACCOUNT": [
+        1289,
+        2669
+      ],
+      "PERSON": [
+        986,
+        10870
+      ],
+      "DATE": [
+        8,
+        628
+      ],
+      "ADDRESS": [
+        220,
+        2107
+      ],
+      "OTHER": [
+        703,
+        1939
+      ],
+      "ID": [
+        179,
+        967
+      ],
+      "CONTACT": [
+        33,
+        2524
+      ],
+      "NET": [
+        9,
+        111
+      ],
+      "SECRET": [
+        11,
+        32
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "redact-multi",
+    "hit": 22179,
+    "miss": 685,
+    "hid": 21514,
+    "nspan": 22864,
+    "f1": 0.6902995716597053,
+    "p": 0.5594513907490776,
+    "r": 0.9010409780740514,
+    "tp": 258979,
+    "fp": 203937,
+    "fn": 28443,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        76,
+        1017
+      ],
+      "ACCOUNT": [
+        62,
+        2669
+      ],
+      "PERSON": [
+        28,
+        10870
+      ],
+      "DATE": [
+        0,
+        628
+      ],
+      "ADDRESS": [
+        65,
+        2107
+      ],
+      "OTHER": [
+        441,
+        1939
+      ],
+      "ID": [
+        7,
+        967
+      ],
+      "CONTACT": [
+        5,
+        2524
+      ],
+      "NET": [
+        0,
+        111
+      ],
+      "SECRET": [
+        1,
+        32
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "redact-multi",
+    "hit": 22523,
+    "miss": 341,
+    "hid": 21675,
+    "nspan": 22864,
+    "f1": 0.6288502483609838,
+    "p": 0.4773471738726769,
+    "r": 0.9212377618971408,
+    "tp": 264784,
+    "fp": 289915,
+    "fn": 22638,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        8,
+        1017
+      ],
+      "ACCOUNT": [
+        5,
+        2669
+      ],
+      "PERSON": [
+        17,
+        10870
+      ],
+      "DATE": [
+        0,
+        628
+      ],
+      "ADDRESS": [
+        14,
+        2107
+      ],
+      "OTHER": [
+        295,
+        1939
+      ],
+      "ID": [
+        1,
+        967
+      ],
+      "CONTACT": [
+        0,
+        2524
+      ],
+      "NET": [
+        0,
+        111
+      ],
+      "SECRET": [
+        1,
+        32
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "redact-multi",
+    "hit": 22420,
+    "miss": 444,
+    "hid": 21809,
+    "nspan": 22864,
+    "f1": 0.6733979128977926,
+    "p": 0.5309987170452287,
+    "r": 0.9201592084113255,
+    "tp": 264474,
+    "fp": 233595,
+    "fn": 22948,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        8,
+        1017
+      ],
+      "ACCOUNT": [
+        9,
+        2669
+      ],
+      "PERSON": [
+        18,
+        10870
+      ],
+      "DATE": [
+        0,
+        628
+      ],
+      "ADDRESS": [
+        18,
+        2107
+      ],
+      "OTHER": [
+        380,
+        1939
+      ],
+      "ID": [
+        6,
+        967
+      ],
+      "CONTACT": [
+        4,
+        2524
+      ],
+      "NET": [
+        0,
+        111
+      ],
+      "SECRET": [
+        1,
+        32
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "redact-multi",
+    "hit": 22575,
+    "miss": 289,
+    "hid": 21891,
+    "nspan": 22864,
+    "f1": 0.6186607502651728,
+    "p": 0.4636406868853768,
+    "r": 0.9294138931605792,
+    "tp": 267134,
+    "fp": 309032,
+    "fn": 20288,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        1,
+        1017
+      ],
+      "ACCOUNT": [
+        1,
+        2669
+      ],
+      "PERSON": [
+        14,
+        10870
+      ],
+      "DATE": [
+        0,
+        628
+      ],
+      "ADDRESS": [
+        7,
+        2107
+      ],
+      "OTHER": [
+        264,
+        1939
+      ],
+      "ID": [
+        1,
+        967
+      ],
+      "CONTACT": [
+        0,
+        2524
+      ],
+      "NET": [
+        0,
+        111
+      ],
+      "SECRET": [
+        1,
+        32
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "redact-multi",
+    "hit": 19010,
+    "miss": 3854,
+    "hid": 16925,
+    "nspan": 22864,
+    "f1": 0.7154372666097005,
+    "p": 0.7186684875144375,
+    "r": 0.7122349715748968,
+    "tp": 204712,
+    "fp": 80137,
+    "fn": 82710,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        787,
+        1017
+      ],
+      "ACCOUNT": [
+        671,
+        2669
+      ],
+      "PERSON": [
+        485,
+        10870
+      ],
+      "DATE": [
+        34,
+        628
+      ],
+      "ADDRESS": [
+        553,
+        2107
+      ],
+      "OTHER": [
+        1184,
+        1939
+      ],
+      "ID": [
+        118,
+        967
+      ],
+      "CONTACT": [
+        18,
+        2524
+      ],
+      "NET": [
+        2,
+        111
+      ],
+      "SECRET": [
+        2,
+        32
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "redact-ru",
+    "hit": 8349,
+    "miss": 881,
+    "hid": 8041,
+    "nspan": 9230,
+    "f1": 0.7094495727152512,
+    "p": 0.6248230510233431,
+    "r": 0.8205910673283461,
+    "tp": 110788,
+    "fp": 66523,
+    "fn": 24222,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 273,
+    "negchars": 2873,
+    "grp": {
+      "PERSON": [
+        5,
+        3854
+      ],
+      "ACCOUNT": [
+        25,
+        1160
+      ],
+      "DATE": [
+        0,
+        324
+      ],
+      "CONTACT": [
+        7,
+        1199
+      ],
+      "ADDRESS": [
+        124,
+        835
+      ],
+      "SECRET": [
+        0,
+        11
+      ],
+      "ORG": [
+        331,
+        366
+      ],
+      "ID": [
+        4,
+        538
+      ],
+      "OTHER": [
+        384,
+        889
+      ],
+      "NET": [
+        1,
+        54
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "redact-ru",
+    "hit": 7905,
+    "miss": 1325,
+    "hid": 7083,
+    "nspan": 9230,
+    "f1": 0.6847792779322236,
+    "p": 0.6826596786184864,
+    "r": 0.6869120805866232,
+    "tp": 92740,
+    "fp": 43111,
+    "fn": 42270,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 477,
+    "negchars": 2873,
+    "grp": {
+      "PERSON": [
+        312,
+        3854
+      ],
+      "ACCOUNT": [
+        547,
+        1160
+      ],
+      "DATE": [
+        0,
+        324
+      ],
+      "CONTACT": [
+        26,
+        1199
+      ],
+      "ADDRESS": [
+        35,
+        835
+      ],
+      "SECRET": [
+        0,
+        11
+      ],
+      "ORG": [
+        24,
+        366
+      ],
+      "ID": [
+        93,
+        538
+      ],
+      "OTHER": [
+        282,
+        889
+      ],
+      "NET": [
+        6,
+        54
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "redact-ru",
+    "hit": 8990,
+    "miss": 240,
+    "hid": 8546,
+    "nspan": 9230,
+    "f1": 0.6905945202732702,
+    "p": 0.5630444428875032,
+    "r": 0.8928597881638397,
+    "tp": 120545,
+    "fp": 93550,
+    "fn": 14465,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 527,
+    "negchars": 2873,
+    "grp": {
+      "PERSON": [
+        4,
+        3854
+      ],
+      "ACCOUNT": [
+        22,
+        1160
+      ],
+      "DATE": [
+        0,
+        324
+      ],
+      "CONTACT": [
+        1,
+        1199
+      ],
+      "ADDRESS": [
+        7,
+        835
+      ],
+      "SECRET": [
+        0,
+        11
+      ],
+      "ORG": [
+        20,
+        366
+      ],
+      "ID": [
+        2,
+        538
+      ],
+      "OTHER": [
+        184,
+        889
+      ],
+      "NET": [
+        0,
+        54
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "redact-ru",
+    "hit": 9080,
+    "miss": 150,
+    "hid": 8591,
+    "nspan": 9230,
+    "f1": 0.6601225327048212,
+    "p": 0.521267511960696,
+    "r": 0.8998148285312199,
+    "tp": 121484,
+    "fp": 111571,
+    "fn": 13526,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 592,
+    "negchars": 2873,
+    "grp": {
+      "PERSON": [
+        3,
+        3854
+      ],
+      "ACCOUNT": [
+        3,
+        1160
+      ],
+      "DATE": [
+        0,
+        324
+      ],
+      "CONTACT": [
+        0,
+        1199
+      ],
+      "ADDRESS": [
+        5,
+        835
+      ],
+      "SECRET": [
+        0,
+        11
+      ],
+      "ORG": [
+        6,
+        366
+      ],
+      "ID": [
+        0,
+        538
+      ],
+      "OTHER": [
+        133,
+        889
+      ],
+      "NET": [
+        0,
+        54
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "redact-ru",
+    "hit": 9051,
+    "miss": 179,
+    "hid": 8707,
+    "nspan": 9230,
+    "f1": 0.6764876222472915,
+    "p": 0.5373877625777866,
+    "r": 0.9127472039108214,
+    "tp": 123230,
+    "fp": 106083,
+    "fn": 11780,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 570,
+    "negchars": 2873,
+    "grp": {
+      "PERSON": [
+        0,
+        3854
+      ],
+      "ACCOUNT": [
+        2,
+        1160
+      ],
+      "DATE": [
+        0,
+        324
+      ],
+      "CONTACT": [
+        1,
+        1199
+      ],
+      "ADDRESS": [
+        4,
+        835
+      ],
+      "SECRET": [
+        0,
+        11
+      ],
+      "ORG": [
+        5,
+        366
+      ],
+      "ID": [
+        0,
+        538
+      ],
+      "OTHER": [
+        167,
+        889
+      ],
+      "NET": [
+        0,
+        54
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "redact-ru",
+    "hit": 9103,
+    "miss": 127,
+    "hid": 8745,
+    "nspan": 9230,
+    "f1": 0.6485617388704267,
+    "p": 0.5020731048654005,
+    "r": 0.9157469817050589,
+    "tp": 123635,
+    "fp": 122614,
+    "fn": 11375,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 635,
+    "negchars": 2873,
+    "grp": {
+      "PERSON": [
+        0,
+        3854
+      ],
+      "ACCOUNT": [
+        0,
+        1160
+      ],
+      "DATE": [
+        0,
+        324
+      ],
+      "CONTACT": [
+        0,
+        1199
+      ],
+      "ADDRESS": [
+        2,
+        835
+      ],
+      "SECRET": [
+        0,
+        11
+      ],
+      "ORG": [
+        4,
+        366
+      ],
+      "ID": [
+        0,
+        538
+      ],
+      "OTHER": [
+        121,
+        889
+      ],
+      "NET": [
+        0,
+        54
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "redact-ru",
+    "hit": 8044,
+    "miss": 1186,
+    "hid": 7417,
+    "nspan": 9230,
+    "f1": 0.7388239144044164,
+    "p": 0.7107222533977526,
+    "r": 0.7692393156062514,
+    "tp": 103855,
+    "fp": 42271,
+    "fn": 31155,
+    "fire": 1,
+    "nneg": 1,
+    "extra": 251,
+    "negchars": 2873,
+    "grp": {
+      "PERSON": [
+        30,
+        3854
+      ],
+      "ACCOUNT": [
+        210,
+        1160
+      ],
+      "DATE": [
+        1,
+        324
+      ],
+      "CONTACT": [
+        9,
+        1199
+      ],
+      "ADDRESS": [
+        127,
+        835
+      ],
+      "SECRET": [
+        0,
+        11
+      ],
+      "ORG": [
+        280,
+        366
+      ],
+      "ID": [
+        37,
+        538
+      ],
+      "OTHER": [
+        491,
+        889
+      ],
+      "NET": [
+        1,
+        54
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "redmadrobot",
+    "hit": 4741,
+    "miss": 775,
+    "hid": 4350,
+    "nspan": 5516,
+    "f1": 0.8001348266405184,
+    "p": 0.798580952963484,
+    "r": 0.8016947591415676,
+    "tp": 52224,
+    "fp": 13172,
+    "fn": 12918,
+    "fire": 152,
+    "nneg": 371,
+    "extra": 3475,
+    "negchars": 218741,
+    "grp": {
+      "ADDRESS": [
+        478,
+        1249
+      ],
+      "CONTACT": [
+        6,
+        389
+      ],
+      "NET": [
+        116,
+        361
+      ],
+      "ID": [
+        56,
+        2257
+      ],
+      "PERSON": [
+        119,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "redmadrobot",
+    "hit": 4286,
+    "miss": 1230,
+    "hid": 4079,
+    "nspan": 5516,
+    "f1": 0.7968639842349803,
+    "p": 0.891988514271588,
+    "r": 0.7200730711369009,
+    "tp": 46907,
+    "fp": 5680,
+    "fn": 18235,
+    "fire": 102,
+    "nneg": 371,
+    "extra": 2069,
+    "negchars": 218741,
+    "grp": {
+      "ADDRESS": [
+        115,
+        1249
+      ],
+      "CONTACT": [
+        14,
+        389
+      ],
+      "NET": [
+        165,
+        361
+      ],
+      "ID": [
+        752,
+        2257
+      ],
+      "PERSON": [
+        184,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "redmadrobot",
+    "hit": 5363,
+    "miss": 153,
+    "hid": 5062,
+    "nspan": 5516,
+    "f1": 0.8446507565298246,
+    "p": 0.7804404988154435,
+    "r": 0.9203739522888459,
+    "tp": 59955,
+    "fp": 16867,
+    "fn": 5187,
+    "fire": 208,
+    "nneg": 371,
+    "extra": 5134,
+    "negchars": 218741,
+    "grp": {
+      "ADDRESS": [
+        34,
+        1249
+      ],
+      "CONTACT": [
+        0,
+        389
+      ],
+      "NET": [
+        50,
+        361
+      ],
+      "ID": [
+        41,
+        2257
+      ],
+      "PERSON": [
+        28,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "redmadrobot",
+    "hit": 5455,
+    "miss": 61,
+    "hid": 5139,
+    "nspan": 5516,
+    "f1": 0.8217131140400838,
+    "p": 0.7291158808490398,
+    "r": 0.9412514199748242,
+    "tp": 61315,
+    "fp": 22780,
+    "fn": 3827,
+    "fire": 289,
+    "nneg": 371,
+    "extra": 8546,
+    "negchars": 218741,
+    "grp": {
+      "ADDRESS": [
+        19,
+        1249
+      ],
+      "CONTACT": [
+        0,
+        389
+      ],
+      "NET": [
+        5,
+        361
+      ],
+      "ID": [
+        31,
+        2257
+      ],
+      "PERSON": [
+        6,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "redmadrobot",
+    "hit": 5434,
+    "miss": 82,
+    "hid": 5136,
+    "nspan": 5516,
+    "f1": 0.8057931892313902,
+    "p": 0.7080731619399775,
+    "r": 0.9348039667188603,
+    "tp": 60895,
+    "fp": 25106,
+    "fn": 4247,
+    "fire": 238,
+    "nneg": 371,
+    "extra": 7705,
+    "negchars": 218741,
+    "grp": {
+      "ADDRESS": [
+        11,
+        1249
+      ],
+      "CONTACT": [
+        0,
+        389
+      ],
+      "NET": [
+        29,
+        361
+      ],
+      "ID": [
+        38,
+        2257
+      ],
+      "PERSON": [
+        4,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "redmadrobot",
+    "hit": 5472,
+    "miss": 44,
+    "hid": 5180,
+    "nspan": 5516,
+    "f1": 0.7895970817655064,
+    "p": 0.6762044402621702,
+    "r": 0.9486813422983635,
+    "tp": 61799,
+    "fp": 29592,
+    "fn": 3343,
+    "fire": 299,
+    "nneg": 371,
+    "extra": 10660,
+    "negchars": 218741,
+    "grp": {
+      "ADDRESS": [
+        6,
+        1249
+      ],
+      "CONTACT": [
+        0,
+        389
+      ],
+      "NET": [
+        5,
+        361
+      ],
+      "ID": [
+        30,
+        2257
+      ],
+      "PERSON": [
+        3,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "redmadrobot",
+    "hit": 4466,
+    "miss": 1050,
+    "hid": 4035,
+    "nspan": 5516,
+    "f1": 0.8004858586455004,
+    "p": 0.8883937765628803,
+    "r": 0.7284087071321114,
+    "tp": 47450,
+    "fp": 5961,
+    "fn": 17692,
+    "fire": 99,
+    "nneg": 371,
+    "extra": 1363,
+    "negchars": 218741,
+    "grp": {
+      "ADDRESS": [
+        463,
+        1249
+      ],
+      "CONTACT": [
+        9,
+        389
+      ],
+      "NET": [
+        132,
+        361
+      ],
+      "ID": [
+        347,
+        2257
+      ],
+      "PERSON": [
+        99,
+        1260
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "rubai-ru",
+    "hit": 3442,
+    "miss": 16,
+    "hid": 370,
+    "nspan": 3458,
+    "f1": 0.941372881534459,
+    "p": 0.9238187775859752,
+    "r": 0.9596070220647447,
+    "tp": 89373,
+    "fp": 7370,
+    "fn": 3762,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "CONTACT": [
+        1,
+        205
+      ],
+      "ADDRESS": [
+        2,
+        1501
+      ],
+      "ID": [
+        8,
+        1322
+      ],
+      "PERSON": [
+        5,
+        430
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "rubai-ru",
+    "hit": 2399,
+    "miss": 1059,
+    "hid": 252,
+    "nspan": 3458,
+    "f1": 0.6325662990655527,
+    "p": 0.9270194062033504,
+    "r": 0.48007730713480434,
+    "tp": 44712,
+    "fp": 3520,
+    "fn": 48423,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "CONTACT": [
+        17,
+        205
+      ],
+      "ADDRESS": [
+        761,
+        1501
+      ],
+      "ID": [
+        275,
+        1322
+      ],
+      "PERSON": [
+        6,
+        430
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "rubai-ru",
+    "hit": 3446,
+    "miss": 12,
+    "hid": 373,
+    "nspan": 3458,
+    "f1": 0.927782559550352,
+    "p": 0.8971191352392031,
+    "r": 0.9606163096580232,
+    "tp": 89467,
+    "fp": 10260,
+    "fn": 3668,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "CONTACT": [
+        1,
+        205
+      ],
+      "ADDRESS": [
+        2,
+        1501
+      ],
+      "ID": [
+        7,
+        1322
+      ],
+      "PERSON": [
+        2,
+        430
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "rubai-ru",
+    "hit": 3449,
+    "miss": 9,
+    "hid": 373,
+    "nspan": 3458,
+    "f1": 0.9228175983917112,
+    "p": 0.8874776918500892,
+    "r": 0.9610887421484942,
+    "tp": 89511,
+    "fp": 11349,
+    "fn": 3624,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "CONTACT": [
+        1,
+        205
+      ],
+      "ADDRESS": [
+        0,
+        1501
+      ],
+      "ID": [
+        7,
+        1322
+      ],
+      "PERSON": [
+        1,
+        430
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "rubai-ru",
+    "hit": 3450,
+    "miss": 8,
+    "hid": 907,
+    "nspan": 3458,
+    "f1": 0.9195404645370706,
+    "p": 0.8763059084453609,
+    "r": 0.9672625758307832,
+    "tp": 90086,
+    "fp": 12716,
+    "fn": 3049,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "CONTACT": [
+        0,
+        205
+      ],
+      "ADDRESS": [
+        0,
+        1501
+      ],
+      "ID": [
+        7,
+        1322
+      ],
+      "PERSON": [
+        1,
+        430
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "rubai-ru",
+    "hit": 3450,
+    "miss": 8,
+    "hid": 907,
+    "nspan": 3458,
+    "f1": 0.9180388001304206,
+    "p": 0.8734598121237386,
+    "r": 0.9674128952595694,
+    "tp": 90100,
+    "fp": 13053,
+    "fn": 3035,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "CONTACT": [
+        0,
+        205
+      ],
+      "ADDRESS": [
+        0,
+        1501
+      ],
+      "ID": [
+        7,
+        1322
+      ],
+      "PERSON": [
+        1,
+        430
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "rubai-ru",
+    "hit": 3419,
+    "miss": 39,
+    "hid": 265,
+    "nspan": 3458,
+    "f1": 0.9522420231006216,
+    "p": 0.9656558073810759,
+    "r": 0.9391957910559939,
+    "tp": 87472,
+    "fp": 3111,
+    "fn": 5663,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "CONTACT": [
+        1,
+        205
+      ],
+      "ADDRESS": [
+        5,
+        1501
+      ],
+      "ID": [
+        19,
+        1322
+      ],
+      "PERSON": [
+        14,
+        430
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "russian-pii-66k",
+    "hit": 4794,
+    "miss": 11,
+    "hid": 4706,
+    "nspan": 4805,
+    "f1": 0.9554312047399605,
+    "p": 0.9202916930881421,
+    "r": 0.9933607118412047,
+    "tp": 58052,
+    "fp": 5028,
+    "fn": 388,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        0,
+        1232
+      ],
+      "CONTACT": [
+        0,
+        793
+      ],
+      "DATE": [
+        0,
+        223
+      ],
+      "PERSON": [
+        4,
+        1151
+      ],
+      "ADDRESS": [
+        6,
+        901
+      ],
+      "ACCOUNT": [
+        1,
+        311
+      ],
+      "SECRET": [
+        0,
+        194
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "russian-pii-66k",
+    "hit": 4562,
+    "miss": 243,
+    "hid": 4433,
+    "nspan": 4805,
+    "f1": 0.965393462047815,
+    "p": 0.9834209031525135,
+    "r": 0.9480150581793292,
+    "tp": 55402,
+    "fp": 934,
+    "fn": 3038,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        62,
+        1232
+      ],
+      "CONTACT": [
+        0,
+        793
+      ],
+      "DATE": [
+        0,
+        223
+      ],
+      "PERSON": [
+        52,
+        1151
+      ],
+      "ADDRESS": [
+        120,
+        901
+      ],
+      "ACCOUNT": [
+        6,
+        311
+      ],
+      "SECRET": [
+        3,
+        194
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "russian-pii-66k",
+    "hit": 4803,
+    "miss": 2,
+    "hid": 4759,
+    "nspan": 4805,
+    "f1": 0.9570242913317955,
+    "p": 0.9197765609960078,
+    "r": 0.9974161533196441,
+    "tp": 58289,
+    "fp": 5084,
+    "fn": 151,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        0,
+        1232
+      ],
+      "CONTACT": [
+        0,
+        793
+      ],
+      "DATE": [
+        0,
+        223
+      ],
+      "PERSON": [
+        2,
+        1151
+      ],
+      "ADDRESS": [
+        0,
+        901
+      ],
+      "ACCOUNT": [
+        0,
+        311
+      ],
+      "SECRET": [
+        0,
+        194
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "russian-pii-66k",
+    "hit": 4805,
+    "miss": 0,
+    "hid": 4764,
+    "nspan": 4805,
+    "f1": 0.9531077647135725,
+    "p": 0.9120678061519696,
+    "r": 0.9980150581793292,
+    "tp": 58324,
+    "fp": 5623,
+    "fn": 116,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        0,
+        1232
+      ],
+      "CONTACT": [
+        0,
+        793
+      ],
+      "DATE": [
+        0,
+        223
+      ],
+      "PERSON": [
+        0,
+        1151
+      ],
+      "ADDRESS": [
+        0,
+        901
+      ],
+      "ACCOUNT": [
+        0,
+        311
+      ],
+      "SECRET": [
+        0,
+        194
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "russian-pii-66k",
+    "hit": 4805,
+    "miss": 0,
+    "hid": 4767,
+    "nspan": 4805,
+    "f1": 0.9499837133550488,
+    "p": 0.9062927284027347,
+    "r": 0.9981006160164271,
+    "tp": 58329,
+    "fp": 6031,
+    "fn": 111,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        0,
+        1232
+      ],
+      "CONTACT": [
+        0,
+        793
+      ],
+      "DATE": [
+        0,
+        223
+      ],
+      "PERSON": [
+        0,
+        1151
+      ],
+      "ADDRESS": [
+        0,
+        901
+      ],
+      "ACCOUNT": [
+        0,
+        311
+      ],
+      "SECRET": [
+        0,
+        194
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "russian-pii-66k",
+    "hit": 4805,
+    "miss": 0,
+    "hid": 4770,
+    "nspan": 4805,
+    "f1": 0.9469831608845608,
+    "p": 0.9006097090375859,
+    "r": 0.9983915126625599,
+    "tp": 58346,
+    "fp": 6439,
+    "fn": 94,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        0,
+        1232
+      ],
+      "CONTACT": [
+        0,
+        793
+      ],
+      "DATE": [
+        0,
+        223
+      ],
+      "PERSON": [
+        0,
+        1151
+      ],
+      "ADDRESS": [
+        0,
+        901
+      ],
+      "ACCOUNT": [
+        0,
+        311
+      ],
+      "SECRET": [
+        0,
+        194
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "russian-pii-66k",
+    "hit": 4789,
+    "miss": 16,
+    "hid": 4611,
+    "nspan": 4805,
+    "f1": 0.9610110647650921,
+    "p": 0.9358369411879165,
+    "r": 0.987577002053388,
+    "tp": 57714,
+    "fp": 3957,
+    "fn": 726,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        0,
+        1232
+      ],
+      "CONTACT": [
+        0,
+        793
+      ],
+      "DATE": [
+        0,
+        223
+      ],
+      "PERSON": [
+        2,
+        1151
+      ],
+      "ADDRESS": [
+        12,
+        901
+      ],
+      "ACCOUNT": [
+        2,
+        311
+      ],
+      "SECRET": [
+        0,
+        194
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "scanpatch",
+    "hit": 7624,
+    "miss": 1084,
+    "hid": 7449,
+    "nspan": 8708,
+    "f1": 0.8623007830237785,
+    "p": 0.8745436777606793,
+    "r": 0.850395936868549,
+    "tp": 77858,
+    "fp": 11169,
+    "fn": 13697,
+    "fire": 28,
+    "nneg": 171,
+    "extra": 337,
+    "negchars": 26160,
+    "grp": {
+      "ADDRESS": [
+        528,
+        1637
+      ],
+      "CONTACT": [
+        2,
+        588
+      ],
+      "PERSON": [
+        24,
+        3798
+      ],
+      "ID": [
+        52,
+        655
+      ],
+      "OTHER": [
+        163,
+        650
+      ],
+      "NET": [
+        66,
+        1103
+      ],
+      "ORG": [
+        249,
+        277
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "scanpatch",
+    "hit": 7070,
+    "miss": 1638,
+    "hid": 6464,
+    "nspan": 8708,
+    "f1": 0.7813914750587465,
+    "p": 0.8580350143715704,
+    "r": 0.7173174594506034,
+    "tp": 65674,
+    "fp": 10866,
+    "fn": 25881,
+    "fire": 73,
+    "nneg": 171,
+    "extra": 936,
+    "negchars": 26160,
+    "grp": {
+      "ADDRESS": [
+        187,
+        1637
+      ],
+      "CONTACT": [
+        5,
+        588
+      ],
+      "PERSON": [
+        179,
+        3798
+      ],
+      "ID": [
+        131,
+        655
+      ],
+      "OTHER": [
+        644,
+        650
+      ],
+      "NET": [
+        451,
+        1103
+      ],
+      "ORG": [
+        41,
+        277
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "scanpatch",
+    "hit": 8354,
+    "miss": 354,
+    "hid": 8146,
+    "nspan": 8708,
+    "f1": 0.8914348909077754,
+    "p": 0.8459848358525174,
+    "r": 0.942045764840806,
+    "tp": 86249,
+    "fp": 15702,
+    "fn": 5306,
+    "fire": 77,
+    "nneg": 171,
+    "extra": 1064,
+    "negchars": 26160,
+    "grp": {
+      "ADDRESS": [
+        87,
+        1637
+      ],
+      "CONTACT": [
+        2,
+        588
+      ],
+      "PERSON": [
+        5,
+        3798
+      ],
+      "ID": [
+        44,
+        655
+      ],
+      "OTHER": [
+        162,
+        650
+      ],
+      "NET": [
+        22,
+        1103
+      ],
+      "ORG": [
+        32,
+        277
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "scanpatch",
+    "hit": 8583,
+    "miss": 125,
+    "hid": 8279,
+    "nspan": 8708,
+    "f1": 0.8972796240006131,
+    "p": 0.8428735963144256,
+    "r": 0.9591939271476162,
+    "tp": 87819,
+    "fp": 16371,
+    "fn": 3736,
+    "fire": 82,
+    "nneg": 171,
+    "extra": 1110,
+    "negchars": 26160,
+    "grp": {
+      "ADDRESS": [
+        45,
+        1637
+      ],
+      "CONTACT": [
+        2,
+        588
+      ],
+      "PERSON": [
+        3,
+        3798
+      ],
+      "ID": [
+        26,
+        655
+      ],
+      "OTHER": [
+        26,
+        650
+      ],
+      "NET": [
+        4,
+        1103
+      ],
+      "ORG": [
+        19,
+        277
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "scanpatch",
+    "hit": 8447,
+    "miss": 261,
+    "hid": 8254,
+    "nspan": 8708,
+    "f1": 0.8888459818706557,
+    "p": 0.8310071921940467,
+    "r": 0.9553383212276774,
+    "tp": 87466,
+    "fp": 17787,
+    "fn": 4089,
+    "fire": 79,
+    "nneg": 171,
+    "extra": 1095,
+    "negchars": 26160,
+    "grp": {
+      "ADDRESS": [
+        26,
+        1637
+      ],
+      "CONTACT": [
+        2,
+        588
+      ],
+      "PERSON": [
+        3,
+        3798
+      ],
+      "ID": [
+        30,
+        655
+      ],
+      "OTHER": [
+        162,
+        650
+      ],
+      "NET": [
+        20,
+        1103
+      ],
+      "ORG": [
+        18,
+        277
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "scanpatch",
+    "hit": 8626,
+    "miss": 82,
+    "hid": 8367,
+    "nspan": 8708,
+    "f1": 0.8932820259693164,
+    "p": 0.8288577116845972,
+    "r": 0.968565343236306,
+    "tp": 88677,
+    "fp": 18310,
+    "fn": 2878,
+    "fire": 82,
+    "nneg": 171,
+    "extra": 1120,
+    "negchars": 26160,
+    "grp": {
+      "ADDRESS": [
+        15,
+        1637
+      ],
+      "CONTACT": [
+        2,
+        588
+      ],
+      "PERSON": [
+        2,
+        3798
+      ],
+      "ID": [
+        22,
+        655
+      ],
+      "OTHER": [
+        26,
+        650
+      ],
+      "NET": [
+        4,
+        1103
+      ],
+      "ORG": [
+        11,
+        277
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "scanpatch",
+    "hit": 6992,
+    "miss": 1716,
+    "hid": 6247,
+    "nspan": 8708,
+    "f1": 0.7988794505693114,
+    "p": 0.8907503190703299,
+    "r": 0.7241876467697013,
+    "tp": 66303,
+    "fp": 8132,
+    "fn": 25252,
+    "fire": 31,
+    "nneg": 171,
+    "extra": 345,
+    "negchars": 26160,
+    "grp": {
+      "ADDRESS": [
+        518,
+        1637
+      ],
+      "CONTACT": [
+        7,
+        588
+      ],
+      "PERSON": [
+        83,
+        3798
+      ],
+      "ID": [
+        79,
+        655
+      ],
+      "OTHER": [
+        632,
+        650
+      ],
+      "NET": [
+        200,
+        1103
+      ],
+      "ORG": [
+        197,
+        277
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "secrets-issues",
+    "hit": 276,
+    "miss": 12,
+    "hid": 216,
+    "nspan": 288,
+    "f1": 0.28845636933272817,
+    "p": 0.17259271367780513,
+    "r": 0.8776008151008151,
+    "tp": 32731,
+    "fp": 156912,
+    "fn": 4565,
+    "fire": 191,
+    "nneg": 250,
+    "extra": 57544,
+    "negchars": 582397,
+    "grp": {
+      "SECRET": [
+        12,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "secrets-issues",
+    "hit": 188,
+    "miss": 100,
+    "hid": 123,
+    "nspan": 288,
+    "f1": 0.3517223976484549,
+    "p": 0.2358525944151247,
+    "r": 0.6913878163878164,
+    "tp": 25786,
+    "fp": 83545,
+    "fn": 11510,
+    "fire": 219,
+    "nneg": 250,
+    "extra": 33191,
+    "negchars": 582397,
+    "grp": {
+      "SECRET": [
+        100,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "secrets-issues",
+    "hit": 281,
+    "miss": 7,
+    "hid": 223,
+    "nspan": 288,
+    "f1": 0.2530030775340018,
+    "p": 0.1457785150440453,
+    "r": 0.9566441441441441,
+    "tp": 35679,
+    "fp": 209069,
+    "fn": 1617,
+    "fire": 243,
+    "nneg": 250,
+    "extra": 82299,
+    "negchars": 582397,
+    "grp": {
+      "SECRET": [
+        7,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "secrets-issues",
+    "hit": 282,
+    "miss": 6,
+    "hid": 223,
+    "nspan": 288,
+    "f1": 0.21494697457305958,
+    "p": 0.12105248893917733,
+    "r": 0.9580920205920206,
+    "tp": 35733,
+    "fp": 259453,
+    "fn": 1563,
+    "fire": 250,
+    "nneg": 250,
+    "extra": 108424,
+    "negchars": 582397,
+    "grp": {
+      "SECRET": [
+        6,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "secrets-issues",
+    "hit": 287,
+    "miss": 1,
+    "hid": 229,
+    "nspan": 288,
+    "f1": 0.23272687261736022,
+    "p": 0.13233594641345553,
+    "r": 0.9640980265980266,
+    "tp": 35957,
+    "fp": 235753,
+    "fn": 1339,
+    "fire": 248,
+    "nneg": 250,
+    "extra": 93753,
+    "negchars": 582397,
+    "grp": {
+      "SECRET": [
+        1,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "secrets-issues",
+    "hit": 288,
+    "miss": 0,
+    "hid": 229,
+    "nspan": 288,
+    "f1": 0.20607860641853223,
+    "p": 0.11534888786387863,
+    "r": 0.965545903045903,
+    "tp": 36011,
+    "fp": 276181,
+    "fn": 1285,
+    "fire": 250,
+    "nneg": 250,
+    "extra": 115510,
+    "negchars": 582397,
+    "grp": {
+      "SECRET": [
+        0,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "secrets-issues",
+    "hit": 276,
+    "miss": 12,
+    "hid": 206,
+    "nspan": 288,
+    "f1": 0.45094709340300454,
+    "p": 0.29808987599737485,
+    "r": 0.9255684255684256,
+    "tp": 34520,
+    "fp": 81284,
+    "fn": 2776,
+    "fire": 151,
+    "nneg": 250,
+    "extra": 17672,
+    "negchars": 582397,
+    "grp": {
+      "SECRET": [
+        12,
+        288
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "secrets-rules",
+    "hit": 717,
+    "miss": 29,
+    "hid": 697,
+    "nspan": 746,
+    "f1": 0.753199004409927,
+    "p": 0.6245824983299934,
+    "r": 0.94852252627198,
+    "tp": 36465,
+    "fp": 21918,
+    "fn": 1979,
+    "fire": 385,
+    "nneg": 750,
+    "extra": 21139,
+    "negchars": 57576,
+    "grp": {
+      "SECRET": [
+        29,
+        746
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "secrets-rules",
+    "hit": 712,
+    "miss": 34,
+    "hid": 652,
+    "nspan": 746,
+    "f1": 0.6839450408413009,
+    "p": 0.5537886477516233,
+    "r": 0.8940797003433566,
+    "tp": 34372,
+    "fp": 27695,
+    "fn": 4072,
+    "fire": 573,
+    "nneg": 750,
+    "extra": 26148,
+    "negchars": 57576,
+    "grp": {
+      "SECRET": [
+        34,
+        746
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "secrets-rules",
+    "hit": 741,
+    "miss": 5,
+    "hid": 730,
+    "nspan": 746,
+    "f1": 0.6772777957627424,
+    "p": 0.5175645959318307,
+    "r": 0.9795546769326813,
+    "tp": 37658,
+    "fp": 35102,
+    "fn": 786,
+    "fire": 638,
+    "nneg": 750,
+    "extra": 32915,
+    "negchars": 57576,
+    "grp": {
+      "SECRET": [
+        5,
+        746
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "secrets-rules",
+    "hit": 746,
+    "miss": 0,
+    "hid": 736,
+    "nspan": 746,
+    "f1": 0.6231132151947989,
+    "p": 0.45261087688720353,
+    "r": 0.9997138695245031,
+    "tp": 38433,
+    "fp": 46481,
+    "fn": 11,
+    "fire": 713,
+    "nneg": 750,
+    "extra": 40757,
+    "negchars": 57576,
+    "grp": {
+      "SECRET": [
+        0,
+        746
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "secrets-rules",
+    "hit": 744,
+    "miss": 2,
+    "hid": 737,
+    "nspan": 746,
+    "f1": 0.6654356306892067,
+    "p": 0.49903778638857826,
+    "r": 0.9983092290084279,
+    "tp": 38379,
+    "fp": 38527,
+    "fn": 65,
+    "fire": 661,
+    "nneg": 750,
+    "extra": 36003,
+    "negchars": 57576,
+    "grp": {
+      "SECRET": [
+        2,
+        746
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "secrets-rules",
+    "hit": 746,
+    "miss": 0,
+    "hid": 740,
+    "nspan": 746,
+    "f1": 0.6188685928657108,
+    "p": 0.44812470124631293,
+    "r": 0.9998179169701383,
+    "tp": 38437,
+    "fp": 47336,
+    "fn": 7,
+    "fire": 716,
+    "nneg": 750,
+    "extra": 41382,
+    "negchars": 57576,
+    "grp": {
+      "SECRET": [
+        0,
+        746
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "secrets-rules",
+    "hit": 724,
+    "miss": 22,
+    "hid": 709,
+    "nspan": 746,
+    "f1": 0.7535110346804242,
+    "p": 0.621219281663516,
+    "r": 0.9573925710123816,
+    "tp": 36806,
+    "fp": 22442,
+    "fn": 1638,
+    "fire": 389,
+    "nneg": 750,
+    "extra": 21782,
+    "negchars": 57576,
+    "grp": {
+      "SECRET": [
+        22,
+        746
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "synth-env-configs",
+    "hit": 392,
+    "miss": 0,
+    "hid": 385,
+    "nspan": 392,
+    "f1": 0.41824239632323795,
+    "p": 0.26467437729657906,
+    "r": 0.9963250306247448,
+    "tp": 19520,
+    "fp": 54231,
+    "fn": 72,
+    "fire": 193,
+    "nneg": 200,
+    "extra": 25405,
+    "negchars": 86861,
+    "grp": {
+      "SECRET": [
+        0,
+        392
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "synth-env-configs",
+    "hit": 211,
+    "miss": 181,
+    "hid": 191,
+    "nspan": 392,
+    "f1": 0.28744493392070486,
+    "p": 0.2610870290096699,
+    "r": 0.3197223356472029,
+    "tp": 6264,
+    "fp": 17728,
+    "fn": 13328,
+    "fire": 196,
+    "nneg": 200,
+    "extra": 9978,
+    "negchars": 86861,
+    "grp": {
+      "SECRET": [
+        181,
+        392
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "synth-env-configs",
+    "hit": 392,
+    "miss": 0,
+    "hid": 385,
+    "nspan": 392,
+    "f1": 0.3750528378741882,
+    "p": 0.23100591715976332,
+    "r": 0.9963250306247448,
+    "tp": 19520,
+    "fp": 64980,
+    "fn": 72,
+    "fire": 200,
+    "nneg": 200,
+    "extra": 31877,
+    "negchars": 86861,
+    "grp": {
+      "SECRET": [
+        0,
+        392
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "synth-env-configs",
+    "hit": 392,
+    "miss": 0,
+    "hid": 385,
+    "nspan": 392,
+    "f1": 0.3401304843950071,
+    "p": 0.20506033966663514,
+    "r": 0.9965291955900367,
+    "tp": 19524,
+    "fp": 75687,
+    "fn": 68,
+    "fire": 200,
+    "nneg": 200,
+    "extra": 37836,
+    "negchars": 86861,
+    "grp": {
+      "SECRET": [
+        0,
+        392
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "synth-env-configs",
+    "hit": 392,
+    "miss": 0,
+    "hid": 387,
+    "nspan": 392,
+    "f1": 0.3472635666491909,
+    "p": 0.21023185755016408,
+    "r": 0.9973458554512046,
+    "tp": 19540,
+    "fp": 73405,
+    "fn": 52,
+    "fire": 200,
+    "nneg": 200,
+    "extra": 36847,
+    "negchars": 86861,
+    "grp": {
+      "SECRET": [
+        0,
+        392
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "synth-env-configs",
+    "hit": 392,
+    "miss": 0,
+    "hid": 387,
+    "nspan": 392,
+    "f1": 0.33518844059512065,
+    "p": 0.20143677272399327,
+    "r": 0.9975500204164965,
+    "tp": 19544,
+    "fp": 77479,
+    "fn": 48,
+    "fire": 200,
+    "nneg": 200,
+    "extra": 38909,
+    "negchars": 86861,
+    "grp": {
+      "SECRET": [
+        0,
+        392
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "synth-env-configs",
+    "hit": 384,
+    "miss": 8,
+    "hid": 268,
+    "nspan": 392,
+    "f1": 0.4508871334629223,
+    "p": 0.3088676928888469,
+    "r": 0.8346774193548387,
+    "tp": 16353,
+    "fp": 36592,
+    "fn": 3239,
+    "fire": 187,
+    "nneg": 200,
+    "extra": 17556,
+    "negchars": 86861,
+    "grp": {
+      "SECRET": [
+        8,
+        392
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "synth-jira-comments",
+    "hit": 2703,
+    "miss": 2,
+    "hid": 2694,
+    "nspan": 2705,
+    "f1": 0.8181286956521738,
+    "p": 0.6932844443396449,
+    "r": 0.9978110364487884,
+    "tp": 58803,
+    "fp": 26015,
+    "fn": 129,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        0,
+        566
+      ],
+      "NET": [
+        2,
+        1132
+      ],
+      "SECRET": [
+        0,
+        344
+      ],
+      "CONTACT": [
+        0,
+        442
+      ],
+      "ACCOUNT": [
+        0,
+        221
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "synth-jira-comments",
+    "hit": 2334,
+    "miss": 371,
+    "hid": 2297,
+    "nspan": 2705,
+    "f1": 0.8007927145755674,
+    "p": 0.9020900218995174,
+    "r": 0.7199484151225141,
+    "tp": 42428,
+    "fp": 4605,
+    "fn": 16504,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        10,
+        566
+      ],
+      "NET": [
+        97,
+        1132
+      ],
+      "SECRET": [
+        259,
+        344
+      ],
+      "CONTACT": [
+        0,
+        442
+      ],
+      "ACCOUNT": [
+        5,
+        221
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "synth-jira-comments",
+    "hit": 2703,
+    "miss": 2,
+    "hid": 2698,
+    "nspan": 2705,
+    "f1": 0.8144984911824147,
+    "p": 0.6877805311389564,
+    "r": 0.9984558474173624,
+    "tp": 58841,
+    "fp": 26711,
+    "fn": 91,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        0,
+        566
+      ],
+      "NET": [
+        2,
+        1132
+      ],
+      "SECRET": [
+        0,
+        344
+      ],
+      "CONTACT": [
+        0,
+        442
+      ],
+      "ACCOUNT": [
+        0,
+        221
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "synth-jira-comments",
+    "hit": 2705,
+    "miss": 0,
+    "hid": 2698,
+    "nspan": 2705,
+    "f1": 0.8000434702873794,
+    "p": 0.6670139872019933,
+    "r": 0.9993551890314261,
+    "tp": 58894,
+    "fp": 29401,
+    "fn": 38,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        0,
+        566
+      ],
+      "NET": [
+        0,
+        1132
+      ],
+      "SECRET": [
+        0,
+        344
+      ],
+      "CONTACT": [
+        0,
+        442
+      ],
+      "ACCOUNT": [
+        0,
+        221
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "synth-jira-comments",
+    "hit": 2703,
+    "miss": 2,
+    "hid": 2698,
+    "nspan": 2705,
+    "f1": 0.8134119452297185,
+    "p": 0.6862324333780395,
+    "r": 0.9984558474173624,
+    "tp": 58841,
+    "fp": 26904,
+    "fn": 91,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        0,
+        566
+      ],
+      "NET": [
+        2,
+        1132
+      ],
+      "SECRET": [
+        0,
+        344
+      ],
+      "CONTACT": [
+        0,
+        442
+      ],
+      "ACCOUNT": [
+        0,
+        221
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "synth-jira-comments",
+    "hit": 2705,
+    "miss": 0,
+    "hid": 2698,
+    "nspan": 2705,
+    "f1": 0.799006905533924,
+    "p": 0.6655742151300771,
+    "r": 0.9993551890314261,
+    "tp": 58894,
+    "fp": 29592,
+    "fn": 38,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        0,
+        566
+      ],
+      "NET": [
+        0,
+        1132
+      ],
+      "SECRET": [
+        0,
+        344
+      ],
+      "CONTACT": [
+        0,
+        442
+      ],
+      "ACCOUNT": [
+        0,
+        221
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "synth-jira-comments",
+    "hit": 2548,
+    "miss": 157,
+    "hid": 2478,
+    "nspan": 2705,
+    "f1": 0.9353106795295628,
+    "p": 0.9320874269055122,
+    "r": 0.9385563021787823,
+    "tp": 55311,
+    "fp": 4030,
+    "fn": 3621,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        5,
+        566
+      ],
+      "NET": [
+        42,
+        1132
+      ],
+      "SECRET": [
+        11,
+        344
+      ],
+      "CONTACT": [
+        0,
+        442
+      ],
+      "ACCOUNT": [
+        99,
+        221
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "synth-ru-tickets",
+    "hit": 31250,
+    "miss": 849,
+    "hid": 30685,
+    "nspan": 32099,
+    "f1": 0.8331427669371767,
+    "p": 0.7319227710805051,
+    "r": 0.9668518779958185,
+    "tp": 575273,
+    "fp": 210702,
+    "fn": 19723,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        0,
+        1992
+      ],
+      "CONTACT": [
+        0,
+        3149
+      ],
+      "NET": [
+        13,
+        16675
+      ],
+      "SECRET": [
+        0,
+        364
+      ],
+      "ACCOUNT": [
+        62,
+        8361
+      ],
+      "ORG": [
+        774,
+        1172
+      ],
+      "ADDRESS": [
+        0,
+        386
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "synth-ru-tickets",
+    "hit": 30787,
+    "miss": 1312,
+    "hid": 26924,
+    "nspan": 32099,
+    "f1": 0.9172281268419815,
+    "p": 0.9639438435085029,
+    "r": 0.8748310913014541,
+    "tp": 520521,
+    "fp": 19470,
+    "fn": 74475,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        22,
+        1992
+      ],
+      "CONTACT": [
+        8,
+        3149
+      ],
+      "NET": [
+        756,
+        16675
+      ],
+      "SECRET": [
+        0,
+        364
+      ],
+      "ACCOUNT": [
+        75,
+        8361
+      ],
+      "ORG": [
+        85,
+        1172
+      ],
+      "ADDRESS": [
+        366,
+        386
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "synth-ru-tickets",
+    "hit": 32068,
+    "miss": 31,
+    "hid": 31307,
+    "nspan": 32099,
+    "f1": 0.8350641642218768,
+    "p": 0.7216637081471506,
+    "r": 0.9907478369602485,
+    "tp": 589491,
+    "fp": 227359,
+    "fn": 5505,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        0,
+        1992
+      ],
+      "CONTACT": [
+        0,
+        3149
+      ],
+      "NET": [
+        1,
+        16675
+      ],
+      "SECRET": [
+        0,
+        364
+      ],
+      "ACCOUNT": [
+        2,
+        8361
+      ],
+      "ORG": [
+        28,
+        1172
+      ],
+      "ADDRESS": [
+        0,
+        386
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "synth-ru-tickets",
+    "hit": 32089,
+    "miss": 10,
+    "hid": 31326,
+    "nspan": 32099,
+    "f1": 0.8032591699042114,
+    "p": 0.675058669263256,
+    "r": 0.9915680105412473,
+    "tp": 589979,
+    "fp": 283988,
+    "fn": 5017,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        0,
+        1992
+      ],
+      "CONTACT": [
+        0,
+        3149
+      ],
+      "NET": [
+        0,
+        16675
+      ],
+      "SECRET": [
+        0,
+        364
+      ],
+      "ACCOUNT": [
+        0,
+        8361
+      ],
+      "ORG": [
+        10,
+        1172
+      ],
+      "ADDRESS": [
+        0,
+        386
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "synth-ru-tickets",
+    "hit": 32093,
+    "miss": 6,
+    "hid": 31408,
+    "nspan": 32099,
+    "f1": 0.8208858668339963,
+    "p": 0.6992214475588644,
+    "r": 0.9938083617368856,
+    "tp": 591312,
+    "fp": 254360,
+    "fn": 3684,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        0,
+        1992
+      ],
+      "CONTACT": [
+        0,
+        3149
+      ],
+      "NET": [
+        1,
+        16675
+      ],
+      "SECRET": [
+        0,
+        364
+      ],
+      "ACCOUNT": [
+        0,
+        8361
+      ],
+      "ORG": [
+        5,
+        1172
+      ],
+      "ADDRESS": [
+        0,
+        386
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "synth-ru-tickets",
+    "hit": 32096,
+    "miss": 3,
+    "hid": 31426,
+    "nspan": 32099,
+    "f1": 0.7943822510610327,
+    "p": 0.6614342179559571,
+    "r": 0.9942201292109527,
+    "tp": 591557,
+    "fp": 302798,
+    "fn": 3439,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        0,
+        1992
+      ],
+      "CONTACT": [
+        0,
+        3149
+      ],
+      "NET": [
+        0,
+        16675
+      ],
+      "SECRET": [
+        0,
+        364
+      ],
+      "ACCOUNT": [
+        0,
+        8361
+      ],
+      "ORG": [
+        3,
+        1172
+      ],
+      "ADDRESS": [
+        0,
+        386
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "synth-ru-tickets",
+    "hit": 23479,
+    "miss": 8620,
+    "hid": 20444,
+    "nspan": 32099,
+    "f1": 0.6963099359210428,
+    "p": 0.9310314749264197,
+    "r": 0.5561096209050145,
+    "tp": 330883,
+    "fp": 24511,
+    "fn": 264113,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "PERSON": [
+        3,
+        1992
+      ],
+      "CONTACT": [
+        12,
+        3149
+      ],
+      "NET": [
+        7415,
+        16675
+      ],
+      "SECRET": [
+        0,
+        364
+      ],
+      "ACCOUNT": [
+        796,
+        8361
+      ],
+      "ORG": [
+        386,
+        1172
+      ],
+      "ADDRESS": [
+        8,
+        386
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "synth-secrets-en",
+    "hit": 580,
+    "miss": 1,
+    "hid": 566,
+    "nspan": 581,
+    "f1": 0.3299004336937267,
+    "p": 0.19827744450889545,
+    "r": 0.9813569793218737,
+    "tp": 27004,
+    "fp": 109189,
+    "fn": 513,
+    "fire": 275,
+    "nneg": 300,
+    "extra": 53318,
+    "negchars": 121400,
+    "grp": {
+      "SECRET": [
+        1,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "synth-secrets-en",
+    "hit": 375,
+    "miss": 206,
+    "hid": 337,
+    "nspan": 581,
+    "f1": 0.46611437846497605,
+    "p": 0.5549643610079309,
+    "r": 0.40178798560889634,
+    "tp": 11056,
+    "fp": 8866,
+    "fn": 16461,
+    "fire": 159,
+    "nneg": 300,
+    "extra": 5573,
+    "negchars": 121400,
+    "grp": {
+      "SECRET": [
+        206,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "synth-secrets-en",
+    "hit": 580,
+    "miss": 1,
+    "hid": 566,
+    "nspan": 581,
+    "f1": 0.3270631727737306,
+    "p": 0.1961326967521318,
+    "r": 0.9838281789439256,
+    "tp": 27072,
+    "fp": 110957,
+    "fn": 445,
+    "fire": 285,
+    "nneg": 300,
+    "extra": 54705,
+    "negchars": 121400,
+    "grp": {
+      "SECRET": [
+        1,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "synth-secrets-en",
+    "hit": 581,
+    "miss": 0,
+    "hid": 567,
+    "nspan": 581,
+    "f1": 0.30014493876060766,
+    "p": 0.17701909963523416,
+    "r": 0.985863284515027,
+    "tp": 27128,
+    "fp": 126121,
+    "fn": 389,
+    "fire": 300,
+    "nneg": 300,
+    "extra": 63390,
+    "negchars": 121400,
+    "grp": {
+      "SECRET": [
+        0,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "synth-secrets-en",
+    "hit": 581,
+    "miss": 0,
+    "hid": 569,
+    "nspan": 581,
+    "f1": 0.3168383876711129,
+    "p": 0.1887361949536818,
+    "r": 0.9862266962241524,
+    "tp": 27138,
+    "fp": 116650,
+    "fn": 379,
+    "fire": 290,
+    "nneg": 300,
+    "extra": 58432,
+    "negchars": 121400,
+    "grp": {
+      "SECRET": [
+        0,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "synth-secrets-en",
+    "hit": 581,
+    "miss": 0,
+    "hid": 569,
+    "nspan": 581,
+    "f1": 0.2982412791495764,
+    "p": 0.17566169051253525,
+    "r": 0.9869535196424029,
+    "tp": 27158,
+    "fp": 127446,
+    "fn": 359,
+    "fire": 300,
+    "nneg": 300,
+    "extra": 64076,
+    "negchars": 121400,
+    "grp": {
+      "SECRET": [
+        0,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "synth-secrets-en",
+    "hit": 567,
+    "miss": 14,
+    "hid": 479,
+    "nspan": 581,
+    "f1": 0.39531870155907445,
+    "p": 0.2548012270969911,
+    "r": 0.8813824181415125,
+    "tp": 24253,
+    "fp": 70931,
+    "fn": 3264,
+    "fire": 276,
+    "nneg": 300,
+    "extra": 36673,
+    "negchars": 121400,
+    "grp": {
+      "SECRET": [
+        14,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "synth-secrets-ru",
+    "hit": 581,
+    "miss": 0,
+    "hid": 567,
+    "nspan": 581,
+    "f1": 0.3275219968874329,
+    "p": 0.19650486847841883,
+    "r": 0.9827742849874623,
+    "tp": 27043,
+    "fp": 110577,
+    "fn": 474,
+    "fire": 285,
+    "nneg": 300,
+    "extra": 54077,
+    "negchars": 121005,
+    "grp": {
+      "SECRET": [
+        0,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "synth-secrets-ru",
+    "hit": 377,
+    "miss": 204,
+    "hid": 346,
+    "nspan": 581,
+    "f1": 0.4752341574550671,
+    "p": 0.5664001609091366,
+    "r": 0.4093469491587019,
+    "tp": 11264,
+    "fp": 8623,
+    "fn": 16253,
+    "fire": 158,
+    "nneg": 300,
+    "extra": 5383,
+    "negchars": 121005,
+    "grp": {
+      "SECRET": [
+        204,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "synth-secrets-ru",
+    "hit": 581,
+    "miss": 0,
+    "hid": 567,
+    "nspan": 581,
+    "f1": 0.3252399502992251,
+    "p": 0.19479436295657176,
+    "r": 0.9845550023621761,
+    "tp": 27092,
+    "fp": 111988,
+    "fn": 425,
+    "fire": 289,
+    "nneg": 300,
+    "extra": 55071,
+    "negchars": 121005,
+    "grp": {
+      "SECRET": [
+        0,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "synth-secrets-ru",
+    "hit": 581,
+    "miss": 0,
+    "hid": 567,
+    "nspan": 581,
+    "f1": 0.29899749649840635,
+    "p": 0.17624115088832404,
+    "r": 0.9852454846095141,
+    "tp": 27111,
+    "fp": 126718,
+    "fn": 406,
+    "fire": 300,
+    "nneg": 300,
+    "extra": 63552,
+    "negchars": 121005,
+    "grp": {
+      "SECRET": [
+        0,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "synth-secrets-ru",
+    "hit": 581,
+    "miss": 0,
+    "hid": 571,
+    "nspan": 581,
+    "f1": 0.3146471471906919,
+    "p": 0.18720150180824338,
+    "r": 0.985717919831377,
+    "tp": 27124,
+    "fp": 117768,
+    "fn": 393,
+    "fire": 292,
+    "nneg": 300,
+    "extra": 58976,
+    "negchars": 121005,
+    "grp": {
+      "SECRET": [
+        0,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "synth-secrets-ru",
+    "hit": 581,
+    "miss": 0,
+    "hid": 571,
+    "nspan": 581,
+    "f1": 0.2972995175167171,
+    "p": 0.17502579313902503,
+    "r": 0.9864084020787149,
+    "tp": 27143,
+    "fp": 127937,
+    "fn": 374,
+    "fire": 300,
+    "nneg": 300,
+    "extra": 64314,
+    "negchars": 121005,
+    "grp": {
+      "SECRET": [
+        0,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "synth-secrets-ru",
+    "hit": 570,
+    "miss": 11,
+    "hid": 482,
+    "nspan": 581,
+    "f1": 0.397189538304131,
+    "p": 0.2545933372272946,
+    "r": 0.9028963913217284,
+    "tp": 24845,
+    "fp": 72742,
+    "fn": 2672,
+    "fire": 281,
+    "nneg": 300,
+    "extra": 37565,
+    "negchars": 121005,
+    "grp": {
+      "SECRET": [
+        11,
+        581
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "synth-wiki-tables",
+    "hit": 12360,
+    "miss": 734,
+    "hid": 11639,
+    "nspan": 13094,
+    "f1": 0.9438847187351418,
+    "p": 0.9926377092279776,
+    "r": 0.8996964974161267,
+    "tp": 219364,
+    "fp": 1627,
+    "fn": 24456,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        201,
+        300
+      ],
+      "PERSON": [
+        0,
+        1597
+      ],
+      "CONTACT": [
+        0,
+        4791
+      ],
+      "ACCOUNT": [
+        1,
+        3194
+      ],
+      "NET": [
+        532,
+        3212
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "synth-wiki-tables",
+    "hit": 11545,
+    "miss": 1549,
+    "hid": 11220,
+    "nspan": 13094,
+    "f1": 0.8979321679030133,
+    "p": 0.9953035709829561,
+    "r": 0.8179148552210648,
+    "tp": 199424,
+    "fp": 941,
+    "fn": 44396,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        37,
+        300
+      ],
+      "PERSON": [
+        2,
+        1597
+      ],
+      "CONTACT": [
+        0,
+        4791
+      ],
+      "ACCOUNT": [
+        170,
+        3194
+      ],
+      "NET": [
+        1340,
+        3212
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "synth-wiki-tables",
+    "hit": 13007,
+    "miss": 87,
+    "hid": 12454,
+    "nspan": 13094,
+    "f1": 0.9811192745565264,
+    "p": 0.9896843546044835,
+    "r": 0.9727011729964729,
+    "tp": 237164,
+    "fp": 2472,
+    "fn": 6656,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        2,
+        300
+      ],
+      "PERSON": [
+        0,
+        1597
+      ],
+      "CONTACT": [
+        0,
+        4791
+      ],
+      "ACCOUNT": [
+        0,
+        3194
+      ],
+      "NET": [
+        85,
+        3212
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "synth-wiki-tables",
+    "hit": 13057,
+    "miss": 37,
+    "hid": 12468,
+    "nspan": 13094,
+    "f1": 0.97910982897177,
+    "p": 0.9838537352989896,
+    "r": 0.9744114510704618,
+    "tp": 237581,
+    "fp": 3899,
+    "fn": 6239,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        0,
+        300
+      ],
+      "PERSON": [
+        0,
+        1597
+      ],
+      "CONTACT": [
+        0,
+        4791
+      ],
+      "ACCOUNT": [
+        0,
+        3194
+      ],
+      "NET": [
+        37,
+        3212
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "synth-wiki-tables",
+    "hit": 13017,
+    "miss": 77,
+    "hid": 12496,
+    "nspan": 13094,
+    "f1": 0.9102849663597328,
+    "p": 0.8532256213051713,
+    "r": 0.9755229267492412,
+    "tp": 237852,
+    "fp": 40916,
+    "fn": 5968,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        0,
+        300
+      ],
+      "PERSON": [
+        0,
+        1597
+      ],
+      "CONTACT": [
+        0,
+        4791
+      ],
+      "ACCOUNT": [
+        0,
+        3194
+      ],
+      "NET": [
+        77,
+        3212
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "synth-wiki-tables",
+    "hit": 13059,
+    "miss": 35,
+    "hid": 12513,
+    "nspan": 13094,
+    "f1": 0.9089836681402754,
+    "p": 0.8501663905393053,
+    "r": 0.9765441719301123,
+    "tp": 238101,
+    "fp": 41963,
+    "fn": 5719,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        0,
+        300
+      ],
+      "PERSON": [
+        0,
+        1597
+      ],
+      "CONTACT": [
+        0,
+        4791
+      ],
+      "ACCOUNT": [
+        0,
+        3194
+      ],
+      "NET": [
+        35,
+        3212
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "synth-wiki-tables",
+    "hit": 11075,
+    "miss": 2019,
+    "hid": 10061,
+    "nspan": 13094,
+    "f1": 0.8143720971840418,
+    "p": 0.9919192871067868,
+    "r": 0.6907349684193257,
+    "tp": 168415,
+    "fp": 1372,
+    "fn": 75405,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ORG": [
+        118,
+        300
+      ],
+      "PERSON": [
+        5,
+        1597
+      ],
+      "CONTACT": [
+        21,
+        4791
+      ],
+      "ACCOUNT": [
+        467,
+        3194
+      ],
+      "NET": [
+        1408,
+        3212
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "tab-echr",
+    "hit": 1516,
+    "miss": 2314,
+    "hid": 1086,
+    "nspan": 3830,
+    "f1": 0.3055690343772162,
+    "p": 0.3598777914541938,
+    "r": 0.265502367516378,
+    "tp": 16373,
+    "fp": 29123,
+    "fn": 45295,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        46,
+        334
+      ],
+      "ORG": [
+        1874,
+        1950
+      ],
+      "PERSON": [
+        53,
+        1030
+      ],
+      "ADDRESS": [
+        341,
+        516
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "tab-echr",
+    "hit": 3770,
+    "miss": 60,
+    "hid": 3114,
+    "nspan": 3830,
+    "f1": 0.6350117544147394,
+    "p": 0.47900067633328386,
+    "r": 0.9417363948887592,
+    "tp": 58075,
+    "fp": 63167,
+    "fn": 3593,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        22,
+        334
+      ],
+      "ORG": [
+        25,
+        1950
+      ],
+      "PERSON": [
+        11,
+        1030
+      ],
+      "ADDRESS": [
+        2,
+        516
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "tab-echr",
+    "hit": 3777,
+    "miss": 53,
+    "hid": 3255,
+    "nspan": 3830,
+    "f1": 0.5518684322133737,
+    "p": 0.388967862789122,
+    "r": 0.9495362262437569,
+    "tp": 58556,
+    "fp": 91986,
+    "fn": 3112,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        21,
+        334
+      ],
+      "ORG": [
+        25,
+        1950
+      ],
+      "PERSON": [
+        5,
+        1030
+      ],
+      "ADDRESS": [
+        2,
+        516
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "tab-echr",
+    "hit": 3787,
+    "miss": 43,
+    "hid": 3265,
+    "nspan": 3830,
+    "f1": 0.5403135859596081,
+    "p": 0.3774290755025562,
+    "r": 0.9505253940455342,
+    "tp": 58617,
+    "fp": 96689,
+    "fn": 3051,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        11,
+        334
+      ],
+      "ORG": [
+        25,
+        1950
+      ],
+      "PERSON": [
+        5,
+        1030
+      ],
+      "ADDRESS": [
+        2,
+        516
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "tab-echr",
+    "hit": 3783,
+    "miss": 47,
+    "hid": 3368,
+    "nspan": 3830,
+    "f1": 0.5434032132286883,
+    "p": 0.3780081592254446,
+    "r": 0.9661250567555296,
+    "tp": 59579,
+    "fp": 98034,
+    "fn": 2089,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        21,
+        334
+      ],
+      "ORG": [
+        20,
+        1950
+      ],
+      "PERSON": [
+        4,
+        1030
+      ],
+      "ADDRESS": [
+        2,
+        516
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "tab-echr",
+    "hit": 3793,
+    "miss": 37,
+    "hid": 3376,
+    "nspan": 3830,
+    "f1": 0.5330317510694697,
+    "p": 0.3679439154288112,
+    "r": 0.9668223389764545,
+    "tp": 59622,
+    "fp": 102419,
+    "fn": 2046,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        11,
+        334
+      ],
+      "ORG": [
+        20,
+        1950
+      ],
+      "PERSON": [
+        4,
+        1030
+      ],
+      "ADDRESS": [
+        2,
+        516
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "tab-echr",
+    "hit": 1384,
+    "miss": 2446,
+    "hid": 858,
+    "nspan": 3830,
+    "f1": 0.3899925085892899,
+    "p": 0.9582963057001397,
+    "r": 0.2448109230070701,
+    "tp": 15097,
+    "fp": 657,
+    "fn": 46571,
+    "fire": 0,
+    "nneg": 0,
+    "extra": 0,
+    "negchars": 0,
+    "grp": {
+      "ID": [
+        172,
+        334
+      ],
+      "ORG": [
+        1854,
+        1950
+      ],
+      "PERSON": [
+        77,
+        1030
+      ],
+      "ADDRESS": [
+        343,
+        516
+      ]
+    }
+  },
+  {
+    "composition": "pplx",
+    "dataset": "tonicai",
+    "hit": 1915,
+    "miss": 502,
+    "hid": 1825,
+    "nspan": 2417,
+    "f1": 0.8480915296606095,
+    "p": 0.8813948840927258,
+    "r": 0.817213266629609,
+    "tp": 17642,
+    "fp": 2374,
+    "fn": 3946,
+    "fire": 41,
+    "nneg": 440,
+    "extra": 317,
+    "negchars": 42006,
+    "grp": {
+      "PERSON": [
+        155,
+        1530
+      ],
+      "ORG": [
+        347,
+        426
+      ],
+      "CONTACT": [
+        0,
+        365
+      ],
+      "ACCOUNT": [
+        0,
+        96
+      ]
+    }
+  },
+  {
+    "composition": "fastino",
+    "dataset": "tonicai",
+    "hit": 2309,
+    "miss": 108,
+    "hid": 2228,
+    "nspan": 2417,
+    "f1": 0.88480622807768,
+    "p": 0.8218769866497139,
+    "r": 0.958171206225681,
+    "tp": 20685,
+    "fp": 4483,
+    "fn": 903,
+    "fire": 154,
+    "nneg": 440,
+    "extra": 1172,
+    "negchars": 42006,
+    "grp": {
+      "PERSON": [
+        30,
+        1530
+      ],
+      "ORG": [
+        65,
+        426
+      ],
+      "CONTACT": [
+        0,
+        365
+      ],
+      "ACCOUNT": [
+        13,
+        96
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino",
+    "dataset": "tonicai",
+    "hit": 2351,
+    "miss": 66,
+    "hid": 2265,
+    "nspan": 2417,
+    "f1": 0.8554819301597626,
+    "p": 0.7621876131836292,
+    "r": 0.9748008152677413,
+    "tp": 21044,
+    "fp": 6566,
+    "fn": 544,
+    "fire": 176,
+    "nneg": 440,
+    "extra": 1436,
+    "negchars": 42006,
+    "grp": {
+      "PERSON": [
+        5,
+        1530
+      ],
+      "ORG": [
+        61,
+        426
+      ],
+      "CONTACT": [
+        0,
+        365
+      ],
+      "ACCOUNT": [
+        0,
+        96
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+mmbert",
+    "dataset": "tonicai",
+    "hit": 2355,
+    "miss": 62,
+    "hid": 2270,
+    "nspan": 2417,
+    "f1": 0.8482875060299083,
+    "p": 0.7492543672773754,
+    "r": 0.9774874930516954,
+    "tp": 21102,
+    "fp": 7062,
+    "fn": 486,
+    "fire": 190,
+    "nneg": 440,
+    "extra": 1508,
+    "negchars": 42006,
+    "grp": {
+      "PERSON": [
+        4,
+        1530
+      ],
+      "ORG": [
+        58,
+        426
+      ],
+      "CONTACT": [
+        0,
+        365
+      ],
+      "ACCOUNT": [
+        0,
+        96
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai",
+    "dataset": "tonicai",
+    "hit": 2355,
+    "miss": 62,
+    "hid": 2276,
+    "nspan": 2417,
+    "f1": 0.8345834978286616,
+    "p": 0.7271601541001651,
+    "r": 0.9792477302204928,
+    "tp": 21140,
+    "fp": 7932,
+    "fn": 448,
+    "fire": 180,
+    "nneg": 440,
+    "extra": 1486,
+    "negchars": 42006,
+    "grp": {
+      "PERSON": [
+        5,
+        1530
+      ],
+      "ORG": [
+        57,
+        426
+      ],
+      "CONTACT": [
+        0,
+        365
+      ],
+      "ACCOUNT": [
+        0,
+        96
+      ]
+    }
+  },
+  {
+    "composition": "pplx+fastino+bardsai+mmbert",
+    "dataset": "tonicai",
+    "hit": 2358,
+    "miss": 59,
+    "hid": 2280,
+    "nspan": 2417,
+    "f1": 0.8293399682620536,
+    "p": 0.7185876761161093,
+    "r": 0.9804521030201964,
+    "tp": 21166,
+    "fp": 8289,
+    "fn": 422,
+    "fire": 193,
+    "nneg": 440,
+    "extra": 1551,
+    "negchars": 42006,
+    "grp": {
+      "PERSON": [
+        4,
+        1530
+      ],
+      "ORG": [
+        55,
+        426
+      ],
+      "CONTACT": [
+        0,
+        365
+      ],
+      "ACCOUNT": [
+        0,
+        96
+      ]
+    }
+  },
+  {
+    "composition": "vote2(pplx,opf2,nvidia)",
+    "dataset": "tonicai",
+    "hit": 1910,
+    "miss": 507,
+    "hid": 1822,
+    "nspan": 2417,
+    "f1": 0.887344587081775,
+    "p": 0.9762566725978647,
+    "r": 0.8132758940151936,
+    "tp": 17557,
+    "fp": 427,
+    "fn": 4031,
+    "fire": 7,
+    "nneg": 440,
+    "extra": 43,
+    "negchars": 42006,
+    "grp": {
+      "PERSON": [
+        147,
+        1530
+      ],
+      "ORG": [
+        357,
+        426
+      ],
+      "CONTACT": [
+        0,
+        365
+      ],
+      "ACCOUNT": [
+        3,
+        96
+      ]
+    }
+  }
+]
