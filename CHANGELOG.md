@@ -63,6 +63,14 @@ publish.
 - Tests: the documented usage example is now extracted from `docs/usage.md`
   and executed as published, and new modules cover the scanner mapping, the
   scan gate and the scoring contract; all of them run in `scripts/verify.py`.
+- Figure determinism: the three heatmaps are drawn as vector cells
+  (`pcolormesh`) instead of `imshow`, which embedded a resampled PNG whose
+  bytes differ between macOS and Linux. Re-rendering `assets/coverage.svg`,
+  `assets/dataset-heatmap.svg` and `assets/language-cuts.svg` is now
+  byte-identical on both, so the `git diff --exit-code` release gate no longer
+  depends on the platform the renderer ran on.
+- `tests/test_stratify_frozen.py` was tracked but executed by nothing; it now
+  runs in `scripts/verify.py` with the other checks.
 - Version metadata is synchronized at 1.0.2.
 
 ### Regenerated public artifacts

@@ -73,6 +73,15 @@ def canvas(title, subtitle, height=6.2):
     return fig, ax
 
 
+def heat(ax, matrix, cmap, vmin, vmax):
+    # Vector cells: imshow embeds a resampled PNG whose bytes differ per platform.
+    rows, cols = len(matrix), len(matrix[0])
+    ax.pcolormesh([c - .5 for c in range(cols + 1)], [r - .5 for r in range(rows + 1)],
+                  matrix, cmap=cmap, vmin=vmin, vmax=vmax)
+    ax.set_xlim(-.5, cols - .5)
+    ax.set_ylim(rows - .5, -.5)
+
+
 def save(fig, slug, title, description, footer):
     fig.text(.035, .055, footer, color=MUTED, fontsize=9, va='bottom')
     fig.text(.965, .02, 'PII & Secrets Benchmark | snapshot 2026-09-09', color=MUTED,
@@ -114,7 +123,7 @@ def figures():
     matrix = [[pct(aggregate(n, c)['miss'], aggregate(n, c)['nspan']) for c in CUTS] for n in names]
     fig, ax = canvas('Language and task change the answer', 'Untouched spans (%) | lower is better | each column uses the same datasets for every row', 6.8)
     cmap = LinearSegmentedColormap.from_list('missed', ['#eef7f6', '#58a7b1', '#1c3f64'])
-    ax.imshow(matrix, cmap=cmap, vmin=0, vmax=36, aspect='auto')
+    heat(ax, matrix, cmap, 0, 36)
     ax.set_yticks(range(6), NAMES.values())
     cuts = [f"{a.upper()} / {b.upper()}\n{sum((d['lang'], d['kind']) == (a,b) for d in CAT.values())} {'dataset' if (a,b)==('ru','secrets') else 'datasets'}" for a,b in CUTS]
     ax.set_xticks(range(5), cuts); ax.xaxis.tick_top()
@@ -177,7 +186,7 @@ def figures():
             row.append((len(eligible),denom))
         coverage.append(row)
     fig, ax = canvas('Coverage is part of the result', 'Eligible base-configuration datasets / available datasets | training-source overlaps excluded', 8.8)
-    ax.imshow([[a/b for a,b in row] for row in coverage], aspect='auto', cmap=LinearSegmentedColormap.from_list('coverage',['#f0f3f7','#087e8b']), vmin=0,vmax=1)
+    heat(ax, [[a/b for a,b in row] for row in coverage], LinearSegmentedColormap.from_list('coverage',['#f0f3f7','#087e8b']), 0, 1)
     ax.set_yticks(range(len(selected)),selected); ax.set_xticks(range(5),[f'{a.upper()} / {b.upper()}' for a,b in CUTS]); ax.xaxis.tick_top();ax.tick_params(length=0,pad=8)
     for i,row in enumerate(coverage):
         for j,(a,b) in enumerate(row):ax.text(j,i,f'{a}/{b}',ha='center',va='center',color='white' if a/b>.6 else INK,fontsize=10)
@@ -350,7 +359,7 @@ def detail_views():
     fig, ax = plt.subplots(figsize=(13.2, 16.8))
     fig.text(.035, .974, 'Every dataset stays visible', fontsize=22, fontweight='bold')
     fig.text(.035, .948, 'Fully hidden normalized spans (%) | higher is better | same dataset in every column', color=MUTED)
-    ax.imshow(matrix, aspect='auto', cmap=LinearSegmentedColormap.from_list('hidden', ['#f5e9e2', '#dddfe9', '#8bc2c5', '#087e8b']), vmin=0, vmax=100)
+    heat(ax, matrix, LinearSegmentedColormap.from_list('hidden', ['#f5e9e2', '#dddfe9', '#8bc2c5', '#087e8b']), 0, 100)
     ax.set_yticks(range(len(ids)), [f"{b}   ({CAT[b]['lang'].upper()}, n={CAT[b]['gold_spans']:,})" for b in ids], fontsize=9)
     ax.set_xticks(range(len(names)), short); ax.xaxis.tick_top(); ax.tick_params(length=0, pad=9)
     for i, b in enumerate(ids):
