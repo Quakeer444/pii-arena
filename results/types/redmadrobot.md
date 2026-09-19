@@ -126,6 +126,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-multi-v21-ru | eligible | Phone numbers & email | 50/389 | 12.85% | 27.76% | 10.03% |
 | model:gliner-multi-v21-ru | eligible | Addresses & locations | 861/1249 | 68.94% | 73.18% | 68.86% |
 | model:gliner-multi-v21-ru | eligible | Network identifiers | 68/361 | 18.84% | 28.53% | 18.28% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Bank accounts & cards | 0/202 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Documents & identifiers | 0/2055 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | People's names | 0/1260 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Phone numbers & email | 0/389 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Addresses & locations | 0/1249 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Network identifiers | 0/361 | 0.00% | 0.00% | 0.00% |
 | model:gliner-nvidia | eligible | Bank accounts & cards | 169/202 | 83.66% | 83.66% | 83.17% |
 | model:gliner-nvidia | eligible | Documents & identifiers | 1024/2055 | 49.83% | 50.17% | 49.73% |
 | model:gliner-nvidia | eligible | People's names | 1184/1260 | 93.97% | 95.48% | 93.97% |
@@ -144,6 +150,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-nvidia-ru | eligible | Phone numbers & email | 350/389 | 89.97% | 90.75% | 89.97% |
 | model:gliner-nvidia-ru | eligible | Addresses & locations | 921/1249 | 73.74% | 84.55% | 73.50% |
 | model:gliner-nvidia-ru | eligible | Network identifiers | 245/361 | 67.87% | 68.70% | 67.87% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Bank accounts & cards | 0/202 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Documents & identifiers | 0/2055 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | People's names | 0/1260 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Phone numbers & email | 0/389 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Addresses & locations | 0/1249 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Network identifiers | 0/361 | 0.00% | 0.00% | 0.00% |
 | model:gliner-pii-base | eligible | Bank accounts & cards | 109/202 | 53.96% | 53.96% | 53.96% |
 | model:gliner-pii-base | eligible | Documents & identifiers | 573/2055 | 27.88% | 28.03% | 27.88% |
 | model:gliner-pii-base | eligible | People's names | 793/1260 | 62.94% | 64.13% | 62.94% |
@@ -192,6 +204,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-urchade-ru | eligible | Phone numbers & email | 332/389 | 85.35% | 85.60% | 85.35% |
 | model:gliner-urchade-ru | eligible | Addresses & locations | 1014/1249 | 81.18% | 83.75% | 81.18% |
 | model:gliner-urchade-ru | eligible | Network identifiers | 197/361 | 54.57% | 58.17% | 54.29% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Bank accounts & cards | 0/202 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Documents & identifiers | 0/2055 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | People's names | 0/1260 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Phone numbers & email | 0/389 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Addresses & locations | 0/1249 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Network identifiers | 0/361 | 0.00% | 0.00% | 0.00% |
 | model:gliner2-fastino | eligible | Bank accounts & cards | 199/202 | 98.51% | 98.51% | 98.02% |
 | model:gliner2-fastino | eligible | Documents & identifiers | 1258/2055 | 61.22% | 63.55% | 61.02% |
 | model:gliner2-fastino | eligible | People's names | 1057/1260 | 83.89% | 85.40% | 83.89% |
@@ -276,6 +294,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:kalyan-ettin | eligible | Phone numbers & email | 182/389 | 46.79% | 69.92% | 39.85% |
 | model:kalyan-ettin | eligible | Addresses & locations | 397/1249 | 31.79% | 51.00% | 14.65% |
 | model:kalyan-ettin | eligible | Network identifiers | 161/361 | 44.60% | 84.76% | 43.77% |
+| model:kalyan-ettin+cpu-int8 | eligible | Bank accounts & cards | 11/202 | 5.45% | 31.68% | 0.50% |
+| model:kalyan-ettin+cpu-int8 | eligible | Documents & identifiers | 200/2055 | 9.73% | 15.33% | 1.61% |
+| model:kalyan-ettin+cpu-int8 | eligible | People's names | 579/1260 | 45.95% | 46.67% | 16.27% |
+| model:kalyan-ettin+cpu-int8 | eligible | Phone numbers & email | 74/389 | 19.02% | 48.07% | 7.20% |
+| model:kalyan-ettin+cpu-int8 | eligible | Addresses & locations | 91/1249 | 7.29% | 12.17% | 1.92% |
+| model:kalyan-ettin+cpu-int8 | eligible | Network identifiers | 8/361 | 2.22% | 55.40% | 1.39% |
 | model:mmbert32k | eligible | Bank accounts & cards | 80/202 | 39.60% | 96.53% | 37.13% |
 | model:mmbert32k | eligible | Documents & identifiers | 1245/2055 | 60.58% | 77.18% | 22.48% |
 | model:mmbert32k | eligible | People's names | 1058/1260 | 83.97% | 85.00% | 64.05% |
@@ -306,6 +330,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:ner-ru-gherman+cpu-int8 | eligible | Phone numbers & email | 0/389 | 0.00% | 23.14% | 0.00% |
 | model:ner-ru-gherman+cpu-int8 | eligible | Addresses & locations | 679/1249 | 54.36% | 87.27% | 40.11% |
 | model:ner-ru-gherman+cpu-int8 | eligible | Network identifiers | 0/361 | 0.00% | 1.11% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Bank accounts & cards | 0/202 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Documents & identifiers | 0/2055 | 0.00% | 0.19% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | People's names | 1169/1260 | 92.78% | 94.29% | 89.29% |
+| model:ner-ru-gherman-onnx | eligible | Phone numbers & email | 0/389 | 0.00% | 25.19% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Addresses & locations | 754/1249 | 60.37% | 92.07% | 43.31% |
+| model:ner-ru-gherman-onnx | eligible | Network identifiers | 0/361 | 0.00% | 0.83% | 0.00% |
 | model:ner-ru-yqelz | eligible | Bank accounts & cards | 37/202 | 18.32% | 41.58% | 4.46% |
 | model:ner-ru-yqelz | eligible | Documents & identifiers | 222/2055 | 10.80% | 19.61% | 8.22% |
 | model:ner-ru-yqelz | eligible | People's names | 1115/1260 | 88.49% | 89.92% | 86.51% |
@@ -342,6 +372,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:openai-base | eligible | Phone numbers & email | 288/389 | 74.04% | 88.43% | 72.75% |
 | model:openai-base | eligible | Addresses & locations | 534/1249 | 42.75% | 46.92% | 40.51% |
 | model:openai-base | eligible | Network identifiers | 162/361 | 44.88% | 50.14% | 44.04% |
+| model:openai-base-onnx | eligible | Bank accounts & cards | 166/202 | 82.18% | 90.10% | 81.19% |
+| model:openai-base-onnx | eligible | Documents & identifiers | 1536/2055 | 74.74% | 81.36% | 72.80% |
+| model:openai-base-onnx | eligible | People's names | 911/1260 | 72.30% | 73.33% | 70.48% |
+| model:openai-base-onnx | eligible | Phone numbers & email | 284/389 | 73.01% | 88.17% | 72.49% |
+| model:openai-base-onnx | eligible | Addresses & locations | 536/1249 | 42.91% | 46.76% | 41.07% |
+| model:openai-base-onnx | eligible | Network identifiers | 163/361 | 45.15% | 49.86% | 44.04% |
 | model:openmed-multilingual | eligible | Bank accounts & cards | 151/202 | 74.75% | 95.05% | 71.78% |
 | model:openmed-multilingual | eligible | Documents & identifiers | 913/2055 | 44.43% | 60.10% | 35.33% |
 | model:openmed-multilingual | eligible | People's names | 739/1260 | 58.65% | 60.00% | 41.27% |

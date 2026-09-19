@@ -86,6 +86,14 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:davlan-mbert | eligible | Organizations | 631/1172 | 53.84% | 98.81% | 51.96% |
 | model:davlan-mbert | eligible | Network identifiers | 0/16675 | 0.00% | 0.08% | 0.00% |
 | model:davlan-mbert | eligible | Customer & employee IDs | 0/796 | 0.00% | 0.00% | 0.00% |
+| model:davlan-mbert+cpu-int8 | eligible | Passwords, keys & tokens | 1/364 | 0.27% | 0.27% | 0.00% |
+| model:davlan-mbert+cpu-int8 | eligible | Logins & usernames | 51/7565 | 0.67% | 1.30% | 0.08% |
+| model:davlan-mbert+cpu-int8 | eligible | People's names | 1954/1992 | 98.09% | 99.65% | 79.77% |
+| model:davlan-mbert+cpu-int8 | eligible | Phone numbers & email | 0/3149 | 0.00% | 1.43% | 0.00% |
+| model:davlan-mbert+cpu-int8 | eligible | Addresses & locations | 0/386 | 0.00% | 100.00% | 0.00% |
+| model:davlan-mbert+cpu-int8 | eligible | Organizations | 322/1172 | 27.47% | 95.31% | 23.72% |
+| model:davlan-mbert+cpu-int8 | eligible | Network identifiers | 0/16675 | 0.00% | 0.01% | 0.00% |
+| model:davlan-mbert+cpu-int8 | eligible | Customer & employee IDs | 0/796 | 0.00% | 0.00% | 0.00% |
 | model:davlan-xlmr | eligible | Passwords, keys & tokens | 0/364 | 0.00% | 0.00% | 0.00% |
 | model:davlan-xlmr | eligible | Logins & usernames | 860/7565 | 11.37% | 15.12% | 6.27% |
 | model:davlan-xlmr | eligible | People's names | 1991/1992 | 99.95% | 100.00% | 87.30% |
@@ -110,6 +118,14 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:fef2-secret-ru | eligible | Organizations | 430/1172 | 36.69% | 91.55% | 36.26% |
 | model:fef2-secret-ru | eligible | Network identifiers | 1/16675 | <0.01% | 1.18% | <0.01% |
 | model:fef2-secret-ru | eligible | Customer & employee IDs | 152/796 | 19.10% | 22.49% | 16.08% |
+| model:fef2-secret-ru+cpu-int8 | eligible | Passwords, keys & tokens | 282/364 | 77.47% | 94.78% | 70.05% |
+| model:fef2-secret-ru+cpu-int8 | eligible | Logins & usernames | 7089/7565 | 93.71% | 95.27% | 87.36% |
+| model:fef2-secret-ru+cpu-int8 | eligible | People's names | 1227/1992 | 61.60% | 98.69% | 41.06% |
+| model:fef2-secret-ru+cpu-int8 | eligible | Phone numbers & email | 1398/3149 | 44.40% | 70.15% | 41.03% |
+| model:fef2-secret-ru+cpu-int8 | eligible | Addresses & locations | 0/386 | 0.00% | 90.16% | 0.00% |
+| model:fef2-secret-ru+cpu-int8 | eligible | Organizations | 206/1172 | 17.58% | 83.11% | 15.44% |
+| model:fef2-secret-ru+cpu-int8 | eligible | Network identifiers | 0/16675 | 0.00% | 0.91% | 0.00% |
+| model:fef2-secret-ru+cpu-int8 | eligible | Customer & employee IDs | 89/796 | 11.18% | 16.33% | 9.05% |
 | model:gliner-multi-v21 | eligible | Passwords, keys & tokens | 326/364 | 89.56% | 93.96% | 89.01% |
 | model:gliner-multi-v21 | eligible | Logins & usernames | 5789/7565 | 76.52% | 87.81% | 76.52% |
 | model:gliner-multi-v21 | eligible | People's names | 1891/1992 | 94.93% | 95.08% | 94.93% |
@@ -134,6 +150,14 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-multi-v21-ru | eligible | Organizations | 754/1172 | 64.33% | 80.97% | 64.33% |
 | model:gliner-multi-v21-ru | eligible | Network identifiers | 3710/16675 | 22.25% | 36.88% | 22.25% |
 | model:gliner-multi-v21-ru | eligible | Customer & employee IDs | 157/796 | 19.72% | 19.72% | 19.72% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Passwords, keys & tokens | 0/364 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Logins & usernames | 0/7565 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | People's names | 0/1992 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Phone numbers & email | 0/3149 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Addresses & locations | 0/386 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Organizations | 0/1172 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Network identifiers | 0/16675 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Customer & employee IDs | 0/796 | 0.00% | 0.00% | 0.00% |
 | model:gliner-nvidia | eligible | Passwords, keys & tokens | 363/364 | 99.73% | 99.73% | 99.73% |
 | model:gliner-nvidia | eligible | Logins & usernames | 5859/7565 | 77.45% | 77.96% | 77.45% |
 | model:gliner-nvidia | eligible | People's names | 944/1992 | 47.39% | 72.59% | 42.87% |
@@ -174,6 +198,14 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-nvidia-ru | eligible | Organizations | 639/1172 | 54.52% | 74.83% | 54.52% |
 | model:gliner-nvidia-ru | eligible | Network identifiers | 3597/16675 | 21.57% | 21.59% | 21.57% |
 | model:gliner-nvidia-ru | eligible | Customer & employee IDs | 319/796 | 40.08% | 59.17% | 40.08% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Passwords, keys & tokens | 0/364 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Logins & usernames | 0/7565 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | People's names | 0/1992 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Phone numbers & email | 0/3149 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Addresses & locations | 0/386 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Organizations | 0/1172 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Network identifiers | 0/16675 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Customer & employee IDs | 0/796 | 0.00% | 0.00% | 0.00% |
 | model:gliner-pii-base | eligible | Passwords, keys & tokens | 51/364 | 14.01% | 14.01% | 14.01% |
 | model:gliner-pii-base | eligible | Logins & usernames | 5259/7565 | 69.52% | 70.19% | 69.52% |
 | model:gliner-pii-base | eligible | People's names | 521/1992 | 26.15% | 30.42% | 26.15% |
@@ -182,6 +214,14 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-pii-base | eligible | Organizations | 220/1172 | 18.77% | 62.29% | 18.77% |
 | model:gliner-pii-base | eligible | Network identifiers | 7503/16675 | 45.00% | 56.00% | 45.00% |
 | model:gliner-pii-base | eligible | Customer & employee IDs | 419/796 | 52.64% | 52.89% | 52.64% |
+| model:gliner-pii-base+cpu-int8 | eligible | Passwords, keys & tokens | 0/364 | 0.00% | 0.00% | 0.00% |
+| model:gliner-pii-base+cpu-int8 | eligible | Logins & usernames | 0/7565 | 0.00% | 0.00% | 0.00% |
+| model:gliner-pii-base+cpu-int8 | eligible | People's names | 0/1992 | 0.00% | 0.00% | 0.00% |
+| model:gliner-pii-base+cpu-int8 | eligible | Phone numbers & email | 0/3149 | 0.00% | 0.00% | 0.00% |
+| model:gliner-pii-base+cpu-int8 | eligible | Addresses & locations | 0/386 | 0.00% | 0.00% | 0.00% |
+| model:gliner-pii-base+cpu-int8 | eligible | Organizations | 0/1172 | 0.00% | 0.00% | 0.00% |
+| model:gliner-pii-base+cpu-int8 | eligible | Network identifiers | 0/16675 | 0.00% | 0.00% | 0.00% |
+| model:gliner-pii-base+cpu-int8 | eligible | Customer & employee IDs | 0/796 | 0.00% | 0.00% | 0.00% |
 | model:gliner-pii-edge | eligible | Passwords, keys & tokens | 305/364 | 83.79% | 87.09% | 83.79% |
 | model:gliner-pii-edge | eligible | Logins & usernames | 5763/7565 | 76.18% | 86.25% | 76.18% |
 | model:gliner-pii-edge | eligible | People's names | 1119/1992 | 56.17% | 76.15% | 55.77% |
@@ -230,6 +270,14 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-urchade-ru | eligible | Organizations | 785/1172 | 66.98% | 79.52% | 66.98% |
 | model:gliner-urchade-ru | eligible | Network identifiers | 5854/16675 | 35.11% | 70.15% | 35.11% |
 | model:gliner-urchade-ru | eligible | Customer & employee IDs | 435/796 | 54.65% | 65.45% | 54.65% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Passwords, keys & tokens | 0/364 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Logins & usernames | 0/7565 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | People's names | 0/1992 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Phone numbers & email | 0/3149 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Addresses & locations | 0/386 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Organizations | 0/1172 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Network identifiers | 0/16675 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Customer & employee IDs | 0/796 | 0.00% | 0.00% | 0.00% |
 | model:gliner2-fastino | eligible | Passwords, keys & tokens | 364/364 | 100.00% | 100.00% | 88.19% |
 | model:gliner2-fastino | eligible | Logins & usernames | 7552/7565 | 99.83% | 99.97% | 99.83% |
 | model:gliner2-fastino | eligible | People's names | 1947/1992 | 97.74% | 98.90% | 97.74% |
@@ -374,6 +422,14 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:kalyan-ettin | eligible | Organizations | 46/1172 | 3.92% | 49.40% | 0.51% |
 | model:kalyan-ettin | eligible | Network identifiers | 2764/16675 | 16.58% | 42.43% | 14.24% |
 | model:kalyan-ettin | eligible | Customer & employee IDs | 195/796 | 24.50% | 35.18% | 0.63% |
+| model:kalyan-ettin+cpu-int8 | eligible | Passwords, keys & tokens | 9/364 | 2.47% | 10.16% | 0.00% |
+| model:kalyan-ettin+cpu-int8 | eligible | Logins & usernames | 4582/7565 | 60.57% | 75.89% | 23.94% |
+| model:kalyan-ettin+cpu-int8 | eligible | People's names | 746/1992 | 37.45% | 82.58% | 1.81% |
+| model:kalyan-ettin+cpu-int8 | eligible | Phone numbers & email | 333/3149 | 10.57% | 61.13% | 3.68% |
+| model:kalyan-ettin+cpu-int8 | eligible | Addresses & locations | 0/386 | 0.00% | 5.18% | 0.00% |
+| model:kalyan-ettin+cpu-int8 | eligible | Organizations | 3/1172 | 0.26% | 6.06% | 0.00% |
+| model:kalyan-ettin+cpu-int8 | eligible | Network identifiers | 3/16675 | 0.02% | 9.03% | 0.02% |
+| model:kalyan-ettin+cpu-int8 | eligible | Customer & employee IDs | 12/796 | 1.51% | 1.88% | 0.00% |
 | model:mmbert32k | eligible | Passwords, keys & tokens | 189/364 | 51.92% | 91.48% | 2.47% |
 | model:mmbert32k | eligible | Logins & usernames | 4323/7565 | 57.14% | 87.34% | 11.30% |
 | model:mmbert32k | eligible | People's names | 1259/1992 | 63.20% | 99.20% | 33.63% |
@@ -414,6 +470,22 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:ner-ru-gherman | eligible | Organizations | 0/1172 | 0.00% | 81.74% | 0.00% |
 | model:ner-ru-gherman | eligible | Network identifiers | 0/16675 | 0.00% | 0.00% | 0.00% |
 | model:ner-ru-gherman | eligible | Customer & employee IDs | 0/796 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-gherman+cpu-int8 | eligible | Passwords, keys & tokens | 0/364 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-gherman+cpu-int8 | eligible | Logins & usernames | 838/7565 | 11.08% | 31.00% | 0.00% |
+| model:ner-ru-gherman+cpu-int8 | eligible | People's names | 12/1992 | 0.60% | 99.90% | 0.35% |
+| model:ner-ru-gherman+cpu-int8 | eligible | Phone numbers & email | 0/3149 | 0.00% | 33.41% | 0.00% |
+| model:ner-ru-gherman+cpu-int8 | eligible | Addresses & locations | 0/386 | 0.00% | 100.00% | 0.00% |
+| model:ner-ru-gherman+cpu-int8 | eligible | Organizations | 0/1172 | 0.00% | 77.22% | 0.00% |
+| model:ner-ru-gherman+cpu-int8 | eligible | Network identifiers | 0/16675 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-gherman+cpu-int8 | eligible | Customer & employee IDs | 0/796 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Passwords, keys & tokens | 0/364 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Logins & usernames | 1491/7565 | 19.71% | 52.78% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | People's names | 18/1992 | 0.90% | 99.90% | 0.55% |
+| model:ner-ru-gherman-onnx | eligible | Phone numbers & email | 0/3149 | 0.00% | 44.27% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Addresses & locations | 0/386 | 0.00% | 100.00% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Organizations | 0/1172 | 0.00% | 80.46% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Network identifiers | 0/16675 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Customer & employee IDs | 0/796 | 0.00% | 0.00% | 0.00% |
 | model:ner-ru-yqelz | eligible | Passwords, keys & tokens | 5/364 | 1.37% | 4.40% | 0.00% |
 | model:ner-ru-yqelz | eligible | Logins & usernames | 648/7565 | 8.57% | 11.50% | 3.48% |
 | model:ner-ru-yqelz | eligible | People's names | 1990/1992 | 99.90% | 100.00% | 97.99% |
@@ -478,6 +550,14 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:openai-base | eligible | Organizations | 346/1172 | 29.52% | 74.57% | 28.58% |
 | model:openai-base | eligible | Network identifiers | 12427/16675 | 74.52% | 84.12% | 73.90% |
 | model:openai-base | eligible | Customer & employee IDs | 629/796 | 79.02% | 88.57% | 72.11% |
+| model:openai-base-onnx | eligible | Passwords, keys & tokens | 364/364 | 100.00% | 100.00% | 100.00% |
+| model:openai-base-onnx | eligible | Logins & usernames | 4909/7565 | 64.89% | 70.67% | 52.66% |
+| model:openai-base-onnx | eligible | People's names | 1851/1992 | 92.92% | 96.84% | 90.96% |
+| model:openai-base-onnx | eligible | Phone numbers & email | 2938/3149 | 93.30% | 95.90% | 92.95% |
+| model:openai-base-onnx | eligible | Addresses & locations | 219/386 | 56.74% | 98.45% | 55.70% |
+| model:openai-base-onnx | eligible | Organizations | 344/1172 | 29.35% | 74.57% | 28.75% |
+| model:openai-base-onnx | eligible | Network identifiers | 12447/16675 | 74.64% | 84.18% | 74.02% |
+| model:openai-base-onnx | eligible | Customer & employee IDs | 622/796 | 78.14% | 88.82% | 71.98% |
 | model:openmed-multilingual | eligible | Passwords, keys & tokens | 364/364 | 100.00% | 100.00% | 100.00% |
 | model:openmed-multilingual | eligible | Logins & usernames | 4952/7565 | 65.46% | 81.85% | 47.61% |
 | model:openmed-multilingual | eligible | People's names | 271/1992 | 13.60% | 89.16% | 36.09% |

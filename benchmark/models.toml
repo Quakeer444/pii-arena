@@ -275,7 +275,7 @@ venv = "tf4"
 cpu = true
 mirror = "openai-base"
 trust_remote_code = true
-train = "ONNX mirror of openai/privacy-filter; CPU speed reference only."
+train = "ONNX mirror of openai/privacy-filter; CPU-only graph."
 contaminated = []
 
 [models.gliner-multi-v21]

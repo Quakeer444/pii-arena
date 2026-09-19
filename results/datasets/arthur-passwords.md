@@ -8,6 +8,7 @@ Main metric: **missed** - gold spans no predicted character touched. Score thres
 | pplx | **0** | 0.0% [0.0%, 0.0%] | 100.0% | 0.295 [0.273, 0.318] | 0.173 | 1.000 | 0.337 | 0.352 | 0.262 | 227/236 | 7898 | 0 | 50 | 596M |  |
 | openmed-multilingual | **0** | 0.0% [0.0%, 0.0%] | 100.0% | 0.235 [0.216, 0.256] | 0.133 | 1.000 | 0.281 | 0.285 | 0.234 | 236/236 | 11042 | 0 | 28 | 1.4B |  |
 | gliner-pii-edge | **1** | 0.4% [0.0%, 1.1%] | 99.6% | 0.606 [0.562, 0.650] | 0.435 | 0.996 | 0.716 | 0.718 | 0.606 | 99/236 | 2293 | 0 | 15 | 45M |  |
+| nym-small | **2** | 0.7% [0.0%, 1.8%] | 99.3% | 0.309 [0.285, 0.332] | 0.183 | 0.993 | 0.319 | 0.327 | 0.277 | 227/236 | 7394 | 0 | 55 | - |  |
 | gliner25-fastino | **3** | 1.1% [0.0%, 2.4%] | 98.9% | 0.579 [0.534, 0.625] | 0.409 | 0.989 | 0.662 | 0.664 | 0.579 | 126/236 | 3232 | 0 | 2 | 287M |  |
 | opf-ru | **3** | 1.1% [0.0%, 2.5%] | 98.9% | 0.370 [0.343, 0.396] | 0.228 | 0.989 | 0.330 | 0.341 | 0.332 | 214/236 | 5878 | 0 | 39 | 1.4B |  |
 | gliner2-hivetrace-omni | **4** | 1.4% [0.3%, 3.0%] | 98.6% | 0.622 [0.580, 0.662] | 0.455 | 0.986 | 0.672 | 0.675 | 0.622 | 171/236 | 3026 | 0 | 2 | 307M |  |
@@ -45,7 +46,7 @@ Main metric: **missed** - gold spans no predicted character touched. Score thres
 | natasha | **280** | 100.0% [100.0%, 100.0%] | 0.0% | 0.000 [0.000, 0.000] | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 43/236 | 461 | 0 | 1 | - |  |
 | spacy-alrosait | **280** | 100.0% [100.0%, 100.0%] | 0.0% | 0.000 [0.000, 0.000] | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 1/236 | 20 | 0 | 3 | - |  |
 
-Neighbours by rank a paired bootstrap cannot tell apart (95%, missed %) - pairs, not a transitive chain, so `a ≈ b` and `b ≈ c` do not make `a ≈ c`: gliner-pii-base ≈ pplx; pplx ≈ openmed-multilingual; openmed-multilingual ≈ gliner-pii-edge; gliner-pii-edge ≈ gliner25-fastino; gliner25-fastino ≈ opf-ru; opf-ru ≈ gliner2-hivetrace-omni; gliner2-hivetrace-omni ≈ apararti; apararti ≈ gliner-nvidia; gliner-nvidia ≈ pii-shield-onnx; pii-shield-onnx ≈ nym-base; nym-base ≈ nuner-zero; nuner-zero ≈ opf-kz-ru; opf-kz-ru ≈ gliner2-vladlinv; gliner2-vladlinv ≈ bardsai-eu; bardsai-eu ≈ gliner-multi-v21; gliner-multi-v21 ≈ opf-ru-v2; opf-ru-v2 ≈ traciora; traciora ≈ openai-base; openai-base ≈ gliner-urchade; gliner-urchade ≈ kalyan-ettin; kalyan-ettin ≈ gliner2-large; gliner2-large ≈ openmed-nemotron; openmed-nemotron ≈ gliner2-fastino; gliner2-fastino ≈ mmbert32k; mmbert32k ≈ ru-legal-ner; gliner-stream-pii ≈ gravitee-small; fef2-secret-ru ≈ ru-pii-ner; ner-ru-gherman ≈ spacy-ru-lg; spacy-ru-lg ≈ davlan-mbert; davlan-mbert ≈ davlan-xlmr; davlan-xlmr ≈ natasha; natasha ≈ spacy-alrosait
+Neighbours by rank a paired bootstrap cannot tell apart (95%, missed %) - pairs, not a transitive chain, so `a ≈ b` and `b ≈ c` do not make `a ≈ c`: gliner-pii-base ≈ pplx; pplx ≈ openmed-multilingual; openmed-multilingual ≈ gliner-pii-edge; gliner-pii-edge ≈ nym-small; nym-small ≈ gliner25-fastino; gliner25-fastino ≈ opf-ru; opf-ru ≈ gliner2-hivetrace-omni; gliner2-hivetrace-omni ≈ apararti; apararti ≈ gliner-nvidia; gliner-nvidia ≈ pii-shield-onnx; pii-shield-onnx ≈ nym-base; nym-base ≈ nuner-zero; nuner-zero ≈ opf-kz-ru; opf-kz-ru ≈ gliner2-vladlinv; gliner2-vladlinv ≈ bardsai-eu; bardsai-eu ≈ gliner-multi-v21; gliner-multi-v21 ≈ opf-ru-v2; opf-ru-v2 ≈ traciora; traciora ≈ openai-base; openai-base ≈ gliner-urchade; gliner-urchade ≈ kalyan-ettin; kalyan-ettin ≈ gliner2-large; gliner2-large ≈ openmed-nemotron; openmed-nemotron ≈ gliner2-fastino; gliner2-fastino ≈ mmbert32k; mmbert32k ≈ ru-legal-ner; gliner-stream-pii ≈ gravitee-small; fef2-secret-ru ≈ ru-pii-ner; ner-ru-gherman ≈ spacy-ru-lg; spacy-ru-lg ≈ davlan-mbert; davlan-mbert ≈ davlan-xlmr; davlan-xlmr ≈ natasha; natasha ≈ spacy-alrosait
 
 ## Missed by group
 
@@ -56,6 +57,7 @@ Neighbours by rank a paired bootstrap cannot tell apart (95%, missed %) - pairs,
 | pplx | 0 (0.0%) |
 | openmed-multilingual | 0 (0.0%) |
 | gliner-pii-edge | 1 (0.4%) |
+| nym-small | 2 (0.7%) |
 | gliner25-fastino | 3 (1.1%) |
 | opf-ru | 3 (1.1%) |
 | gliner2-hivetrace-omni | 4 (1.4%) |
@@ -95,16 +97,16 @@ Neighbours by rank a paired bootstrap cannot tell apart (95%, missed %) - pairs,
 
 ## Char recall by gold type
 
-| type | group | gliner-pii-base | pplx | openmed-multilingual | gliner-pii-edge | gliner25-fastino | opf-ru | gliner2-hivetrace-omni | apararti | gliner-nvidia | pii-shield-onnx | nym-base | nuner-zero | opf-kz-ru | gliner2-vladlinv | bardsai-eu | gliner-multi-v21 | opf-ru-v2 | traciora | openai-base | gliner-urchade | kalyan-ettin | gliner2-large | openmed-nemotron | gliner2-fastino | mmbert32k | ru-legal-ner | gliner-stream-pii | gravitee-small | fef2-secret-ru | ru-pii-ner | stanza-ru | gliner2-hivetrace-uni | rules-ru | ner-ru-yqelz | ner-ru-gherman | spacy-ru-lg | davlan-mbert | davlan-xlmr | natasha | spacy-alrosait |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| PASSWORD | SECRET | 1.000 | 1.000 | 1.000 | 0.996 | 0.989 | 0.989 | 0.986 | 0.986 | 0.979 | 0.979 | 0.979 | 0.975 | 0.975 | 0.961 | 0.950 | 0.946 | 0.943 | 0.936 | 0.929 | 0.904 | 0.882 | 0.861 | 0.861 | 0.825 | 0.821 | 0.800 | 0.707 | 0.686 | 0.600 | 0.568 | 0.311 | 0.150 | 0.089 | 0.039 | 0.011 | 0.011 | 0.007 | 0.000 | 0.000 | 0.000 |
+| type | group | gliner-pii-base | pplx | openmed-multilingual | gliner-pii-edge | nym-small | gliner25-fastino | opf-ru | gliner2-hivetrace-omni | apararti | gliner-nvidia | pii-shield-onnx | nym-base | nuner-zero | opf-kz-ru | gliner2-vladlinv | bardsai-eu | gliner-multi-v21 | opf-ru-v2 | traciora | openai-base | gliner-urchade | kalyan-ettin | gliner2-large | openmed-nemotron | gliner2-fastino | mmbert32k | ru-legal-ner | gliner-stream-pii | gravitee-small | fef2-secret-ru | ru-pii-ner | stanza-ru | gliner2-hivetrace-uni | rules-ru | ner-ru-yqelz | ner-ru-gherman | spacy-ru-lg | davlan-mbert | davlan-xlmr | natasha | spacy-alrosait |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| PASSWORD | SECRET | 1.000 | 1.000 | 1.000 | 0.996 | 0.993 | 0.989 | 0.989 | 0.986 | 0.986 | 0.979 | 0.979 | 0.979 | 0.975 | 0.975 | 0.961 | 0.950 | 0.946 | 0.943 | 0.936 | 0.929 | 0.904 | 0.882 | 0.861 | 0.861 | 0.825 | 0.821 | 0.800 | 0.707 | 0.686 | 0.600 | 0.568 | 0.311 | 0.150 | 0.089 | 0.039 | 0.011 | 0.011 | 0.007 | 0.000 | 0.000 | 0.000 |
 
 ## char F1 by domain
 
-| domain | n | gliner-pii-base | pplx | openmed-multilingual | gliner-pii-edge | gliner25-fastino | opf-ru | gliner2-hivetrace-omni | apararti | gliner-nvidia | pii-shield-onnx | nym-base | nuner-zero | opf-kz-ru | gliner2-vladlinv | bardsai-eu | gliner-multi-v21 | opf-ru-v2 | traciora | openai-base | gliner-urchade | kalyan-ettin | gliner2-large | openmed-nemotron | gliner2-fastino | mmbert32k | ru-legal-ner | gliner-stream-pii | gravitee-small | fef2-secret-ru | ru-pii-ner | stanza-ru | gliner2-hivetrace-uni | rules-ru | ner-ru-yqelz | ner-ru-gherman | spacy-ru-lg | davlan-mbert | davlan-xlmr | natasha | spacy-alrosait |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| easy | 289 | 0.715 | 0.281 | 0.226 | 0.632 | 0.717 | 0.356 | 0.644 | 0.318 | 0.769 | 0.340 | 0.301 | 0.827 | 0.306 | 0.573 | 0.324 | 0.658 | 0.396 | 0.392 | 0.337 | 0.975 | 0.300 | 0.941 | 0.291 | 0.977 | 0.273 | 0.350 | 0.730 | 0.308 | 0.656 | 0.283 | 0.074 | 0.041 | 0.122 | 0.007 | 0.007 | 0.006 | 0.000 | 0.000 | 0.000 | 0.000 |
-| hard | 227 | 0.746 | 0.312 | 0.244 | 0.581 | 0.481 | 0.387 | 0.600 | 0.330 | 0.720 | 0.361 | 0.319 | 0.570 | 0.326 | 0.459 | 0.337 | 0.567 | 0.371 | 0.371 | 0.319 | 0.625 | 0.267 | 0.532 | 0.246 | 0.547 | 0.269 | 0.360 | 0.426 | 0.141 | 0.199 | 0.269 | 0.075 | 0.332 | 0.000 | 0.036 | 0.014 | 0.014 | 0.014 | 0.000 | 0.000 | 0.000 |
+| domain | n | gliner-pii-base | pplx | openmed-multilingual | gliner-pii-edge | nym-small | gliner25-fastino | opf-ru | gliner2-hivetrace-omni | apararti | gliner-nvidia | pii-shield-onnx | nym-base | nuner-zero | opf-kz-ru | gliner2-vladlinv | bardsai-eu | gliner-multi-v21 | opf-ru-v2 | traciora | openai-base | gliner-urchade | kalyan-ettin | gliner2-large | openmed-nemotron | gliner2-fastino | mmbert32k | ru-legal-ner | gliner-stream-pii | gravitee-small | fef2-secret-ru | ru-pii-ner | stanza-ru | gliner2-hivetrace-uni | rules-ru | ner-ru-yqelz | ner-ru-gherman | spacy-ru-lg | davlan-mbert | davlan-xlmr | natasha | spacy-alrosait |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| easy | 289 | 0.715 | 0.281 | 0.226 | 0.632 | 0.297 | 0.717 | 0.356 | 0.644 | 0.318 | 0.769 | 0.340 | 0.301 | 0.827 | 0.306 | 0.573 | 0.324 | 0.658 | 0.396 | 0.392 | 0.337 | 0.975 | 0.300 | 0.941 | 0.291 | 0.977 | 0.273 | 0.350 | 0.730 | 0.308 | 0.656 | 0.283 | 0.074 | 0.041 | 0.122 | 0.007 | 0.007 | 0.006 | 0.000 | 0.000 | 0.000 | 0.000 |
+| hard | 227 | 0.746 | 0.312 | 0.244 | 0.581 | 0.323 | 0.481 | 0.387 | 0.600 | 0.330 | 0.720 | 0.361 | 0.319 | 0.570 | 0.326 | 0.459 | 0.337 | 0.567 | 0.371 | 0.371 | 0.319 | 0.625 | 0.267 | 0.532 | 0.246 | 0.547 | 0.269 | 0.360 | 0.426 | 0.141 | 0.199 | 0.269 | 0.075 | 0.332 | 0.000 | 0.036 | 0.014 | 0.014 | 0.014 | 0.000 | 0.000 | 0.000 |
 
 ## Missed at thresholds 0.5 / 0.3 / 0.2 / 0.1
 
@@ -115,6 +117,7 @@ Only models that return a score. A lower threshold keeps more spans: fewer misse
 | gliner-pii-base | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) |
 | openmed-multilingual | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) |
 | gliner-pii-edge | 1 (0.4%) | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) |
+| nym-small | 2 (0.7%) | 2 (0.7%) | 2 (0.7%) | 2 (0.7%) |
 | gliner25-fastino | 3 (1.1%) | 2 (0.7%) | 2 (0.7%) | 2 (0.7%) |
 | opf-ru | 3 (1.1%) | 2 (0.7%) | 2 (0.7%) | 2 (0.7%) |
 | gliner2-hivetrace-omni | 4 (1.4%) | 2 (0.7%) | 2 (0.7%) | 1 (0.4%) |

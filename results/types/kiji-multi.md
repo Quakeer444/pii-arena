@@ -356,6 +356,16 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:kalyan-ettin | eligible | Dates & times | 114/144 | 79.17% | 98.61% | 77.08% |
 | model:kalyan-ettin | eligible | Organizations | 72/149 | 48.32% | 71.81% | 36.24% |
 | model:kalyan-ettin | eligible | Network identifiers | 9/133 | 6.77% | 69.92% | 3.76% |
+| model:kalyan-ettin+cpu-int8 | eligible | Passwords, keys & tokens | 24/255 | 9.41% | 16.47% | 0.00% |
+| model:kalyan-ettin+cpu-int8 | eligible | Logins & usernames | 13/55 | 23.64% | 25.45% | 5.45% |
+| model:kalyan-ettin+cpu-int8 | eligible | Bank accounts & cards | 13/215 | 6.05% | 23.72% | 0.00% |
+| model:kalyan-ettin+cpu-int8 | eligible | Documents & identifiers | 17/877 | 1.94% | 5.13% | 0.00% |
+| model:kalyan-ettin+cpu-int8 | eligible | People's names | 1014/1866 | 54.34% | 56.27% | 42.07% |
+| model:kalyan-ettin+cpu-int8 | eligible | Phone numbers & email | 71/259 | 27.41% | 69.88% | 15.44% |
+| model:kalyan-ettin+cpu-int8 | eligible | Addresses & locations | 1904/3612 | 52.71% | 57.34% | 37.10% |
+| model:kalyan-ettin+cpu-int8 | eligible | Dates & times | 46/144 | 31.94% | 86.11% | 21.53% |
+| model:kalyan-ettin+cpu-int8 | eligible | Organizations | 42/149 | 28.19% | 46.31% | 15.44% |
+| model:kalyan-ettin+cpu-int8 | eligible | Network identifiers | 1/133 | 0.75% | 10.53% | 0.75% |
 | model:mmbert32k | eligible | Passwords, keys & tokens | 103/255 | 40.39% | 75.29% | 2.35% |
 | model:mmbert32k | eligible | Logins & usernames | 35/55 | 63.64% | 67.27% | 10.91% |
 | model:mmbert32k | eligible | Bank accounts & cards | 90/215 | 41.86% | 97.21% | 26.05% |
@@ -476,6 +486,16 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:openai-base | eligible | Dates & times | 141/144 | 97.92% | 98.61% | 97.92% |
 | model:openai-base | eligible | Organizations | 11/149 | 7.38% | 12.08% | 6.71% |
 | model:openai-base | eligible | Network identifiers | 47/133 | 35.34% | 40.60% | 32.33% |
+| model:openai-base-onnx | eligible | Passwords, keys & tokens | 201/255 | 78.82% | 84.71% | 75.29% |
+| model:openai-base-onnx | eligible | Logins & usernames | 44/55 | 80.00% | 83.64% | 74.55% |
+| model:openai-base-onnx | eligible | Bank accounts & cards | 203/215 | 94.42% | 98.14% | 96.28% |
+| model:openai-base-onnx | eligible | Documents & identifiers | 829/877 | 94.53% | 96.47% | 93.61% |
+| model:openai-base-onnx | eligible | People's names | 1632/1866 | 87.46% | 88.21% | 87.46% |
+| model:openai-base-onnx | eligible | Phone numbers & email | 257/259 | 99.23% | 99.61% | 99.61% |
+| model:openai-base-onnx | eligible | Addresses & locations | 2441/3612 | 67.58% | 68.22% | 66.36% |
+| model:openai-base-onnx | eligible | Dates & times | 141/144 | 97.92% | 98.61% | 97.92% |
+| model:openai-base-onnx | eligible | Organizations | 11/149 | 7.38% | 12.08% | 7.38% |
+| model:openai-base-onnx | eligible | Network identifiers | 47/133 | 35.34% | 41.35% | 33.83% |
 | model:openmed-multilingual | eligible | Passwords, keys & tokens | 200/255 | 78.43% | 82.75% | 61.18% |
 | model:openmed-multilingual | eligible | Logins & usernames | 50/55 | 90.91% | 92.73% | 80.00% |
 | model:openmed-multilingual | eligible | Bank accounts & cards | 149/215 | 69.30% | 71.16% | 60.47% |

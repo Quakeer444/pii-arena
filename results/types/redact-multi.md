@@ -358,6 +358,17 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base | eligible | Network identifiers | 45/111 | 40.54% | 51.35% | 28.83% |
 | model:nym-base | eligible | Customer & employee IDs | 585/2669 | 21.92% | 29.64% | 18.62% |
 | model:nym-base | eligible | Other sensitive attributes | 585/1939 | 30.17% | 38.73% | 24.39% |
+| model:nym-small | eligible | Passwords, keys & tokens | 13/32 | 40.62% | 84.38% | 15.62% |
+| model:nym-small | eligible | Bank accounts & cards | 41/138 | 29.71% | 70.29% | 26.81% |
+| model:nym-small | eligible | Documents & identifiers | 704/829 | 84.92% | 92.28% | 78.77% |
+| model:nym-small | eligible | People's names | 6731/10870 | 61.92% | 90.34% | 81.43% |
+| model:nym-small | eligible | Phone numbers & email | 2035/2524 | 80.63% | 93.50% | 77.34% |
+| model:nym-small | eligible | Addresses & locations | 1223/2107 | 58.04% | 92.88% | 55.53% |
+| model:nym-small | eligible | Dates & times | 559/628 | 89.01% | 95.70% | 84.08% |
+| model:nym-small | eligible | Organizations | 697/1017 | 68.53% | 81.02% | 65.29% |
+| model:nym-small | eligible | Network identifiers | 45/111 | 40.54% | 49.55% | 29.73% |
+| model:nym-small | eligible | Customer & employee IDs | 611/2669 | 22.89% | 33.50% | 19.30% |
+| model:nym-small | eligible | Other sensitive attributes | 568/1939 | 29.29% | 38.06% | 23.83% |
 | model:openai-base | eligible | Passwords, keys & tokens | 25/32 | 78.12% | 87.50% | 65.62% |
 | model:openai-base | eligible | Bank accounts & cards | 55/138 | 39.86% | 54.35% | 34.78% |
 | model:openai-base | eligible | Documents & identifiers | 711/829 | 85.77% | 90.83% | 82.75% |
@@ -424,6 +435,17 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:opf-ru-v2 | eligible | Network identifiers | 97/111 | 87.39% | 93.69% | 81.98% |
 | model:opf-ru-v2 | eligible | Customer & employee IDs | 472/2669 | 17.68% | 49.49% | 10.90% |
 | model:opf-ru-v2 | eligible | Other sensitive attributes | 162/1939 | 8.35% | 12.64% | 4.38% |
+| model:pii-shield-onnx | eligible | Passwords, keys & tokens | 26/32 | 81.25% | 90.62% | 78.12% |
+| model:pii-shield-onnx | eligible | Bank accounts & cards | 81/138 | 58.70% | 73.91% | 52.90% |
+| model:pii-shield-onnx | eligible | Documents & identifiers | 667/829 | 80.46% | 87.33% | 65.98% |
+| model:pii-shield-onnx | eligible | People's names | 7381/10870 | 67.90% | 75.46% | 55.79% |
+| model:pii-shield-onnx | eligible | Phone numbers & email | 2172/2524 | 86.05% | 98.42% | 81.70% |
+| model:pii-shield-onnx | eligible | Addresses & locations | 1230/2107 | 58.38% | 80.97% | 51.40% |
+| model:pii-shield-onnx | eligible | Dates & times | 302/628 | 48.09% | 83.28% | 46.34% |
+| model:pii-shield-onnx | eligible | Organizations | 553/1017 | 54.38% | 76.20% | 46.12% |
+| model:pii-shield-onnx | eligible | Network identifiers | 94/111 | 84.68% | 97.30% | 79.28% |
+| model:pii-shield-onnx | eligible | Customer & employee IDs | 2463/2669 | 92.28% | 96.89% | 85.95% |
+| model:pii-shield-onnx | eligible | Other sensitive attributes | 1088/1939 | 56.11% | 72.61% | 48.07% |
 | model:pplx | eligible | Passwords, keys & tokens | 29/32 | 90.62% | 96.88% | 90.62% |
 | model:pplx | eligible | Bank accounts & cards | 69/138 | 50.00% | 98.55% | 47.83% |
 | model:pplx | eligible | Documents & identifiers | 799/829 | 96.38% | 99.03% | 94.81% |

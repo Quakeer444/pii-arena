@@ -246,6 +246,18 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-multi-v21-ru | eligible | Network identifiers | 4/194 | 2.06% | 6.19% | 2.06% |
 | model:gliner-multi-v21-ru | eligible | Customer & employee IDs | 68/483 | 14.08% | 14.08% | 14.08% |
 | model:gliner-multi-v21-ru | eligible | Other sensitive attributes | 14/224 | 6.25% | 6.25% | 6.25% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Passwords, keys & tokens | 0/307 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Logins & usernames | 0/315 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Bank accounts & cards | 0/596 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Documents & identifiers | 0/1170 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | People's names | 0/2036 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Phone numbers & email | 0/962 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Addresses & locations | 0/1316 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Dates & times | 0/1440 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Organizations | 0/454 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Network identifiers | 0/194 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Customer & employee IDs | 0/483 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Other sensitive attributes | 0/224 | 0.00% | 0.00% | 0.00% |
 | model:gliner-nvidia | eligible | Passwords, keys & tokens | 280/307 | 91.21% | 97.07% | 91.21% |
 | model:gliner-nvidia | eligible | Logins & usernames | 307/315 | 97.46% | 98.41% | 97.46% |
 | model:gliner-nvidia | eligible | Bank accounts & cards | 347/596 | 58.22% | 58.39% | 58.22% |
@@ -282,6 +294,18 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-nvidia-ru | eligible | Network identifiers | 184/194 | 94.85% | 94.85% | 94.85% |
 | model:gliner-nvidia-ru | eligible | Customer & employee IDs | 410/483 | 84.89% | 84.89% | 84.89% |
 | model:gliner-nvidia-ru | eligible | Other sensitive attributes | 17/224 | 7.59% | 7.59% | 7.59% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Passwords, keys & tokens | 0/307 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Logins & usernames | 0/315 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Bank accounts & cards | 0/596 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Documents & identifiers | 0/1170 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | People's names | 0/2036 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Phone numbers & email | 0/962 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Addresses & locations | 0/1316 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Dates & times | 0/1440 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Organizations | 0/454 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Network identifiers | 0/194 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Customer & employee IDs | 0/483 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Other sensitive attributes | 0/224 | 0.00% | 0.00% | 0.00% |
 | model:gliner-pii-base | eligible | Passwords, keys & tokens | 107/307 | 34.85% | 38.11% | 34.85% |
 | model:gliner-pii-base | eligible | Logins & usernames | 146/315 | 46.35% | 46.67% | 46.35% |
 | model:gliner-pii-base | eligible | Bank accounts & cards | 244/596 | 40.94% | 40.94% | 40.94% |
@@ -378,6 +402,18 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-urchade-ru | eligible | Network identifiers | 189/194 | 97.42% | 97.42% | 96.91% |
 | model:gliner-urchade-ru | eligible | Customer & employee IDs | 259/483 | 53.62% | 53.62% | 53.62% |
 | model:gliner-urchade-ru | eligible | Other sensitive attributes | 3/224 | 1.34% | 1.34% | 1.34% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Passwords, keys & tokens | 0/307 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Logins & usernames | 0/315 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Bank accounts & cards | 0/596 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Documents & identifiers | 0/1170 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | People's names | 0/2036 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Phone numbers & email | 0/962 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Addresses & locations | 0/1316 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Dates & times | 0/1440 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Organizations | 0/454 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Network identifiers | 0/194 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Customer & employee IDs | 0/483 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Other sensitive attributes | 0/224 | 0.00% | 0.00% | 0.00% |
 | model:gliner2-fastino | eligible | Passwords, keys & tokens | 264/307 | 85.99% | 95.44% | 85.34% |
 | model:gliner2-fastino | eligible | Logins & usernames | 306/315 | 97.14% | 97.14% | 97.14% |
 | model:gliner2-fastino | eligible | Bank accounts & cards | 421/596 | 70.64% | 70.64% | 70.64% |
@@ -546,6 +582,18 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:kalyan-ettin | eligible | Network identifiers | 66/194 | 34.02% | 89.18% | 23.20% |
 | model:kalyan-ettin | eligible | Customer & employee IDs | 53/483 | 10.97% | 42.03% | 7.66% |
 | model:kalyan-ettin | eligible | Other sensitive attributes | 33/224 | 14.73% | 14.73% | 14.29% |
+| model:kalyan-ettin+cpu-int8 | eligible | Passwords, keys & tokens | 8/307 | 2.61% | 29.97% | 0.00% |
+| model:kalyan-ettin+cpu-int8 | eligible | Logins & usernames | 139/315 | 44.13% | 44.44% | 7.94% |
+| model:kalyan-ettin+cpu-int8 | eligible | Bank accounts & cards | 110/596 | 18.46% | 18.96% | 0.00% |
+| model:kalyan-ettin+cpu-int8 | eligible | Documents & identifiers | 119/1170 | 10.17% | 14.79% | 0.85% |
+| model:kalyan-ettin+cpu-int8 | eligible | People's names | 938/2036 | 46.07% | 46.12% | 13.61% |
+| model:kalyan-ettin+cpu-int8 | eligible | Phone numbers & email | 125/962 | 12.99% | 54.37% | 5.93% |
+| model:kalyan-ettin+cpu-int8 | eligible | Addresses & locations | 64/1316 | 4.86% | 10.56% | 1.44% |
+| model:kalyan-ettin+cpu-int8 | eligible | Dates & times | 386/1440 | 26.81% | 84.24% | 21.88% |
+| model:kalyan-ettin+cpu-int8 | eligible | Organizations | 10/454 | 2.20% | 30.84% | 0.00% |
+| model:kalyan-ettin+cpu-int8 | eligible | Network identifiers | 0/194 | 0.00% | 13.40% | 0.00% |
+| model:kalyan-ettin+cpu-int8 | eligible | Customer & employee IDs | 17/483 | 3.52% | 8.90% | 0.41% |
+| model:kalyan-ettin+cpu-int8 | eligible | Other sensitive attributes | 8/224 | 3.57% | 3.57% | 3.57% |
 | model:mmbert32k | eligible | Passwords, keys & tokens | 76/307 | 24.76% | 85.99% | 5.54% |
 | model:mmbert32k | eligible | Logins & usernames | 248/315 | 78.73% | 80.00% | 32.70% |
 | model:mmbert32k | eligible | Bank accounts & cards | 524/596 | 87.92% | 88.76% | 33.56% |
@@ -606,6 +654,18 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:ner-ru-gherman+cpu-int8 | eligible | Network identifiers | 0/194 | 0.00% | 2.06% | 0.00% |
 | model:ner-ru-gherman+cpu-int8 | eligible | Customer & employee IDs | 0/483 | 0.00% | 0.00% | 0.00% |
 | model:ner-ru-gherman+cpu-int8 | eligible | Other sensitive attributes | 0/224 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Passwords, keys & tokens | 0/307 | 0.00% | 0.33% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Logins & usernames | 85/315 | 26.98% | 27.62% | 17.14% |
+| model:ner-ru-gherman-onnx | eligible | Bank accounts & cards | 1/596 | 0.17% | 0.17% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Documents & identifiers | 0/1170 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | People's names | 1971/2036 | 96.81% | 97.15% | 95.28% |
+| model:ner-ru-gherman-onnx | eligible | Phone numbers & email | 0/962 | 0.00% | 13.93% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Addresses & locations | 334/1316 | 25.38% | 78.57% | 22.26% |
+| model:ner-ru-gherman-onnx | eligible | Dates & times | 0/1440 | 0.00% | 0.21% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Organizations | 7/454 | 1.54% | 72.47% | 0.88% |
+| model:ner-ru-gherman-onnx | eligible | Network identifiers | 0/194 | 0.00% | 2.58% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Customer & employee IDs | 0/483 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Other sensitive attributes | 0/224 | 0.00% | 0.00% | 0.00% |
 | model:ner-ru-yqelz | eligible | Passwords, keys & tokens | 3/307 | 0.98% | 20.52% | 0.33% |
 | model:ner-ru-yqelz | eligible | Logins & usernames | 15/315 | 4.76% | 5.08% | 1.90% |
 | model:ner-ru-yqelz | eligible | Bank accounts & cards | 86/596 | 14.43% | 14.93% | 3.52% |
@@ -678,6 +738,18 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:openai-base | eligible | Network identifiers | 132/194 | 68.04% | 81.96% | 65.98% |
 | model:openai-base | eligible | Customer & employee IDs | 384/483 | 79.50% | 86.75% | 74.33% |
 | model:openai-base | eligible | Other sensitive attributes | 12/224 | 5.36% | 5.36% | 5.36% |
+| model:openai-base-onnx | eligible | Passwords, keys & tokens | 257/307 | 83.71% | 89.58% | 82.74% |
+| model:openai-base-onnx | eligible | Logins & usernames | 236/315 | 74.92% | 74.92% | 69.52% |
+| model:openai-base-onnx | eligible | Bank accounts & cards | 557/596 | 93.46% | 93.46% | 92.11% |
+| model:openai-base-onnx | eligible | Documents & identifiers | 1121/1170 | 95.81% | 99.15% | 96.15% |
+| model:openai-base-onnx | eligible | People's names | 1776/2036 | 87.23% | 87.33% | 84.97% |
+| model:openai-base-onnx | eligible | Phone numbers & email | 948/962 | 98.54% | 99.90% | 98.54% |
+| model:openai-base-onnx | eligible | Addresses & locations | 973/1316 | 73.94% | 84.80% | 72.80% |
+| model:openai-base-onnx | eligible | Dates & times | 1378/1440 | 95.69% | 96.53% | 94.79% |
+| model:openai-base-onnx | eligible | Organizations | 51/454 | 11.23% | 58.15% | 9.91% |
+| model:openai-base-onnx | eligible | Network identifiers | 135/194 | 69.59% | 82.47% | 67.01% |
+| model:openai-base-onnx | eligible | Customer & employee IDs | 384/483 | 79.50% | 86.54% | 74.53% |
+| model:openai-base-onnx | eligible | Other sensitive attributes | 12/224 | 5.36% | 5.36% | 5.36% |
 | model:openmed-multilingual | eligible | Passwords, keys & tokens | 240/307 | 78.18% | 93.16% | 64.50% |
 | model:openmed-multilingual | eligible | Logins & usernames | 239/315 | 75.87% | 76.51% | 59.68% |
 | model:openmed-multilingual | eligible | Bank accounts & cards | 562/596 | 94.30% | 95.64% | 79.53% |

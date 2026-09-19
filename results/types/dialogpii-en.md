@@ -246,6 +246,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base+sent300 | eligible | Addresses & locations | 386/483 | 79.92% | 84.27% | 80.33% |
 | model:nym-base+sent300 | eligible | Organizations | 164/579 | 28.32% | 44.56% | 27.98% |
 | model:nym-base+sent300 | eligible | Network identifiers | 2/7 | 28.57% | 71.43% | 28.57% |
+| model:nym-small | eligible | Documents & identifiers | 124/260 | 47.69% | 71.92% | 41.15% |
+| model:nym-small | eligible | People's names | 1098/1558 | 70.47% | 92.43% | 79.59% |
+| model:nym-small | eligible | Phone numbers & email | 45/200 | 22.50% | 54.00% | 21.50% |
+| model:nym-small | eligible | Addresses & locations | 392/483 | 81.16% | 84.89% | 80.54% |
+| model:nym-small | eligible | Organizations | 138/579 | 23.83% | 44.21% | 24.18% |
+| model:nym-small | eligible | Network identifiers | 2/7 | 28.57% | 85.71% | 28.57% |
 | model:openai-base | eligible | Documents & identifiers | 154/260 | 59.23% | 73.46% | 56.92% |
 | model:openai-base | eligible | People's names | 1216/1558 | 78.05% | 80.30% | 77.60% |
 | model:openai-base | eligible | Phone numbers & email | 111/200 | 55.50% | 68.50% | 56.00% |

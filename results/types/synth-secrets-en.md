@@ -38,12 +38,14 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:ner-ru-yqelz | eligible | Passwords, keys & tokens | 33/581 | 5.68% | 11.36% | 0.34% |
 | model:nuner-zero | eligible | Passwords, keys & tokens | 309/581 | 53.18% | 64.37% | 51.29% |
 | model:nym-base | eligible | Passwords, keys & tokens | 363/581 | 62.48% | 93.98% | 41.31% |
+| model:nym-small | eligible | Passwords, keys & tokens | 333/581 | 57.31% | 93.29% | 29.60% |
 | model:openai-base | eligible | Passwords, keys & tokens | 491/581 | 84.51% | 92.94% | 79.35% |
 | model:openmed-multilingual | eligible | Passwords, keys & tokens | 479/581 | 82.44% | 99.14% | 61.79% |
 | model:openmed-nemotron | eligible | Passwords, keys & tokens | 332/581 | 57.14% | 87.09% | 30.46% |
 | model:opf-kz-ru | eligible | Passwords, keys & tokens | 531/581 | 91.39% | 98.28% | 84.51% |
 | model:opf-ru | eligible | Passwords, keys & tokens | 450/581 | 77.45% | 98.28% | 63.86% |
 | model:opf-ru-v2 | eligible | Passwords, keys & tokens | 457/581 | 78.66% | 96.04% | 70.74% |
+| model:pii-shield-onnx | eligible | Passwords, keys & tokens | 568/581 | 97.76% | 99.66% | 93.98% |
 | model:pplx | eligible | Passwords, keys & tokens | 566/581 | 97.42% | 99.83% | 97.07% |
 | model:ru-legal-ner | eligible | Passwords, keys & tokens | 195/581 | 33.56% | 89.16% | 1.72% |
 | model:ru-pii-ner | eligible | Passwords, keys & tokens | 62/581 | 10.67% | 14.63% | 8.78% |

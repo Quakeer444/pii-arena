@@ -34,6 +34,7 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-nvidia+ov100 | eligible | Passwords, keys & tokens | 132/288 | 45.83% | 64.93% | 43.06% |
 | model:gliner-nvidia+sent300 | eligible | Passwords, keys & tokens | 122/288 | 42.36% | 60.42% | 41.32% |
 | model:gliner-pii-base | eligible | Passwords, keys & tokens | 27/288 | 9.38% | 14.58% | 9.03% |
+| model:gliner-pii-base+cpu-int8 | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 0.00% | 0.00% |
 | model:gliner-pii-edge | eligible | Passwords, keys & tokens | 187/288 | 64.93% | 87.15% | 63.19% |
 | model:gliner-pii-edge+cpu-int8 | eligible | Passwords, keys & tokens | 32/288 | 11.11% | 15.62% | 10.42% |
 | model:gliner-stream-pii | eligible | Passwords, keys & tokens | 118/288 | 40.97% | 57.99% | 39.58% |
@@ -51,6 +52,7 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gravitee-small | eligible | Passwords, keys & tokens | 35/288 | 12.15% | 25.69% | 8.33% |
 | model:gravitee-small+cpu-int8 | eligible | Passwords, keys & tokens | 33/288 | 11.46% | 24.65% | 6.60% |
 | model:kalyan-ettin | eligible | Passwords, keys & tokens | 174/288 | 60.42% | 88.19% | 14.24% |
+| model:kalyan-ettin+cpu-int8 | eligible | Passwords, keys & tokens | 153/288 | 53.12% | 78.82% | 3.82% |
 | model:kingfisher | eligible | Passwords, keys & tokens | 40/288 | 13.89% | 15.97% | 13.19% |
 | model:mmbert32k | eligible | Passwords, keys & tokens | 128/288 | 44.44% | 81.60% | 0.35% |
 | model:mmbert32k+cpu-int8 | eligible | Passwords, keys & tokens | 161/288 | 55.90% | 94.44% | 0.00% |
@@ -58,6 +60,7 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:natasha | eligible | Passwords, keys & tokens | 2/288 | 0.69% | 1.04% | 0.00% |
 | model:ner-ru-gherman | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 0.00% | 0.00% |
 | model:ner-ru-gherman+cpu-int8 | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 0.00% | 0.00% |
+| model:ner-ru-gherman-onnx | eligible | Passwords, keys & tokens | 0/288 | 0.00% | 0.00% | 0.00% |
 | model:ner-ru-yqelz | eligible | Passwords, keys & tokens | 73/288 | 25.35% | 34.38% | 0.00% |
 | model:noseyparker | eligible | Passwords, keys & tokens | 67/288 | 23.26% | 30.21% | 21.53% |
 | model:nuner-zero | eligible | Passwords, keys & tokens | 142/288 | 49.31% | 70.49% | 47.92% |
@@ -67,6 +70,7 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base+sent300 | eligible | Passwords, keys & tokens | 206/288 | 71.53% | 98.96% | 35.76% |
 | model:nym-small | eligible | Passwords, keys & tokens | 193/288 | 67.01% | 97.92% | 30.56% |
 | model:openai-base | eligible | Passwords, keys & tokens | 205/288 | 71.18% | 92.71% | 62.85% |
+| model:openai-base-onnx | eligible | Passwords, keys & tokens | 204/288 | 70.83% | 92.71% | 63.54% |
 | model:openmed-multilingual | eligible | Passwords, keys & tokens | 190/288 | 65.97% | 93.06% | 14.58% |
 | model:openmed-nemotron | eligible | Passwords, keys & tokens | 197/288 | 68.40% | 94.10% | 21.18% |
 | model:opf-kz-ru | eligible | Passwords, keys & tokens | 220/288 | 76.39% | 96.88% | 67.36% |

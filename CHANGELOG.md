@@ -1,5 +1,44 @@
 # Changelog
 
+## 1.0.3 - 2026-09-19
+
+The CPU side of the frozen experiment is measured out. The experiment itself is
+unchanged (2026-09-09): every new prediction ran the same protocol against the
+same pinned model revisions and the same frozen dataset hashes, so this release
+moves `result_revision` to 2026-09-19 and leaves `experiment_date` where it was.
+
+- CPU coverage closed: dynamic int8 is 147/147 triples, up from 117/147, and the
+  ONNX CPU queue is 61/61, up from 28/61. The CPU dispatcher stands at 501/506.
+  The snapshot gains 91 quality rows and loses none: 2,137 to 2,228 measurements,
+  2,500 to 2,591 run records, 2,423 to 2,514 breakdown results.
+- `results/report.md`, section "int8 dynamic quantization against fp32": 14 model
+  pairs became 18, each over its full set list. Pooled, 41.0% of gold spans are
+  missed in fp32 against 69.4% in int8 over 1,199,483 spans. The three Russian
+  GLiNER variants that had no int8 pair - `gliner-nvidia-ru`, `gliner-urchade-ru`
+  and `gliner-multi-v21-ru` - read 100.0% missed under `quantize_dynamic` on every
+  set they cover, the same collapse their non-Russian siblings already showed.
+- Catalog holes closed: `nym-small` moved from 11 measured datasets to 41,
+  `pii-shield-onnx` from 24 to 41, `ner-ru-gherman-onnx` from 4 to 9 and
+  `openai-base-onnx` from 0 to 9. Speed rows went from 233 to 254 over 862
+  pooled CPU sets.
+- `docs/limitations.md` no longer states that the CPU queue was intentionally
+  stopped. It now names what is left: two `gliner2-hivetrace-uni` speed triples,
+  which only pool into the published row on the same AMD EPYC 9K84 machine group,
+  and three legacy `pii-shield-onnx` records that are complete and error-free but
+  carry no per-run dataset hash.
+- `docs/methodology.md` no longer states that int8 has intentionally omitted runs,
+  and `benchmark/models.toml` no longer describes `openai-base-onnx` as a CPU
+  speed reference only, because it now carries quality rows.
+- `scripts/verify.py` prints the snapshot totals it read instead of a hard-coded
+  summary line, so a coverage change cannot leave a stale count in the output.
+
+### Regenerated public artifacts
+
+- `results/*` and `results/datasets/*`, `results/types/*`, the exact CSVs,
+  `README.md` and the catalogs under `datasets/` were rebuilt from the stored
+  predictions. The figures under `assets/` are byte-identical to 1.0.2: the new
+  records are CPU variants, which no headline figure draws.
+
 ## 1.0.2 - 2026-09-18
 
 Pre-release hardening from the 2026-09-17 third review. The frozen experiment

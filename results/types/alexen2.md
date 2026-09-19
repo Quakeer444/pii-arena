@@ -86,6 +86,8 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nuner-zero | eligible | Phone numbers & email | 59/690 | 8.55% | 100.00% | 5.65% |
 | model:nym-base | eligible | People's names | 90/571 | 15.76% | 97.55% | 51.31% |
 | model:nym-base | eligible | Phone numbers & email | 59/690 | 8.55% | 99.86% | 8.55% |
+| model:nym-small | eligible | People's names | 70/571 | 12.26% | 93.52% | 45.88% |
+| model:nym-small | eligible | Phone numbers & email | 59/690 | 8.55% | 99.86% | 8.55% |
 | model:openai-base | eligible | People's names | 204/571 | 35.73% | 75.66% | 32.92% |
 | model:openai-base | eligible | Phone numbers & email | 59/690 | 8.55% | 97.97% | 8.55% |
 | model:openmed-multilingual | eligible | People's names | 37/571 | 6.48% | 74.96% | 19.96% |

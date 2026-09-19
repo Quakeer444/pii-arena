@@ -206,6 +206,11 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base | eligible | People's names | 11/566 | 1.94% | 100.00% | 99.29% |
 | model:nym-base | eligible | Phone numbers & email | 413/442 | 93.44% | 99.55% | 93.44% |
 | model:nym-base | eligible | Network identifiers | 196/1132 | 17.31% | 30.21% | 11.13% |
+| model:nym-small | eligible | Passwords, keys & tokens | 225/344 | 65.41% | 97.67% | 35.47% |
+| model:nym-small | eligible | Logins & usernames | 117/221 | 52.94% | 65.61% | 31.22% |
+| model:nym-small | eligible | People's names | 14/566 | 2.47% | 100.00% | 99.12% |
+| model:nym-small | eligible | Phone numbers & email | 426/442 | 96.38% | 100.00% | 96.15% |
+| model:nym-small | eligible | Network identifiers | 191/1132 | 16.87% | 35.60% | 13.96% |
 | model:openai-base | eligible | Passwords, keys & tokens | 324/344 | 94.19% | 95.93% | 91.57% |
 | model:openai-base | eligible | Logins & usernames | 126/221 | 57.01% | 66.52% | 46.15% |
 | model:openai-base | eligible | People's names | 515/566 | 90.99% | 93.11% | 89.40% |
@@ -236,6 +241,11 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:opf-ru-v2 | eligible | People's names | 512/566 | 90.46% | 95.05% | 85.69% |
 | model:opf-ru-v2 | eligible | Phone numbers & email | 409/442 | 92.53% | 99.77% | 91.86% |
 | model:opf-ru-v2 | eligible | Network identifiers | 485/1132 | 42.84% | 47.88% | 42.40% |
+| model:pii-shield-onnx | eligible | Passwords, keys & tokens | 344/344 | 100.00% | 100.00% | 96.22% |
+| model:pii-shield-onnx | eligible | Logins & usernames | 178/221 | 80.54% | 88.69% | 59.73% |
+| model:pii-shield-onnx | eligible | People's names | 291/566 | 51.41% | 62.90% | 45.23% |
+| model:pii-shield-onnx | eligible | Phone numbers & email | 436/442 | 98.64% | 100.00% | 95.70% |
+| model:pii-shield-onnx | eligible | Network identifiers | 1067/1132 | 94.26% | 99.73% | 91.78% |
 | model:pplx | eligible | Passwords, keys & tokens | 340/344 | 98.84% | 100.00% | 98.84% |
 | model:pplx | eligible | Logins & usernames | 221/221 | 100.00% | 100.00% | 100.00% |
 | model:pplx | eligible | People's names | 566/566 | 100.00% | 100.00% | 100.00% |

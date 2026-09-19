@@ -206,6 +206,11 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base | eligible | People's names | 63/430 | 14.65% | 96.05% | 30.23% |
 | model:nym-base | eligible | Phone numbers & email | 9/205 | 4.39% | 99.51% | 4.39% |
 | model:nym-base | eligible | Addresses & locations | 2/1501 | 0.13% | 98.80% | 0.07% |
+| model:nym-small | eligible | Bank accounts & cards | 67/1054 | 6.36% | 99.91% | 6.36% |
+| model:nym-small | eligible | Documents & identifiers | 38/268 | 14.18% | 93.28% | 14.18% |
+| model:nym-small | eligible | People's names | 59/430 | 13.72% | 94.88% | 28.37% |
+| model:nym-small | eligible | Phone numbers & email | 9/205 | 4.39% | 100.00% | 4.39% |
+| model:nym-small | eligible | Addresses & locations | 0/1501 | 0.00% | 98.73% | 0.00% |
 | model:openai-base | eligible | Bank accounts & cards | 70/1054 | 6.64% | 98.20% | 7.12% |
 | model:openai-base | eligible | Documents & identifiers | 42/268 | 15.67% | 94.40% | 15.67% |
 | model:openai-base | eligible | People's names | 71/430 | 16.51% | 61.16% | 15.35% |
@@ -236,6 +241,11 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:opf-ru-v2 | eligible | People's names | 69/430 | 16.05% | 68.14% | 12.56% |
 | model:opf-ru-v2 | eligible | Phone numbers & email | 6/205 | 2.93% | 99.51% | 3.41% |
 | model:opf-ru-v2 | eligible | Addresses & locations | 20/1501 | 1.33% | 98.33% | 1.27% |
+| model:pii-shield-onnx | eligible | Bank accounts & cards | 68/1054 | 6.45% | 96.02% | 6.26% |
+| model:pii-shield-onnx | eligible | Documents & identifiers | 24/268 | 8.96% | 50.00% | 4.48% |
+| model:pii-shield-onnx | eligible | People's names | 81/430 | 18.84% | 82.79% | 14.42% |
+| model:pii-shield-onnx | eligible | Phone numbers & email | 3/205 | 1.46% | 78.05% | 0.98% |
+| model:pii-shield-onnx | eligible | Addresses & locations | 1/1501 | 0.07% | 92.67% | 0.07% |
 | model:pplx | eligible | Bank accounts & cards | 72/1054 | 6.83% | 100.00% | 6.83% |
 | model:pplx | eligible | Documents & identifiers | 41/268 | 15.30% | 97.01% | 15.30% |
 | model:pplx | eligible | People's names | 145/430 | 33.72% | 98.84% | 33.49% |

@@ -216,6 +216,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:kalyan-ettin | eligible | Addresses & locations | 136/184 | 73.91% | 73.91% | 72.83% |
 | model:kalyan-ettin | eligible | Network identifiers | 172/777 | 22.14% | 35.78% | 21.88% |
 | model:kalyan-ettin | eligible | Customer & employee IDs | 63/131 | 48.09% | 81.68% | 35.11% |
+| model:kalyan-ettin+cpu-int8 | eligible | Logins & usernames | 224/627 | 35.73% | 38.44% | 14.35% |
+| model:kalyan-ettin+cpu-int8 | eligible | People's names | 33/382 | 8.64% | 85.34% | 11.78% |
+| model:kalyan-ettin+cpu-int8 | eligible | Phone numbers & email | 80/141 | 56.74% | 91.49% | 34.75% |
+| model:kalyan-ettin+cpu-int8 | eligible | Addresses & locations | 40/184 | 21.74% | 21.74% | 21.20% |
+| model:kalyan-ettin+cpu-int8 | eligible | Network identifiers | 1/777 | 0.13% | 8.37% | 0.13% |
+| model:kalyan-ettin+cpu-int8 | eligible | Customer & employee IDs | 17/131 | 12.98% | 35.11% | 3.82% |
 | model:mmbert32k | eligible | Logins & usernames | 432/627 | 68.90% | 71.93% | 49.44% |
 | model:mmbert32k | eligible | People's names | 373/382 | 97.64% | 100.00% | 97.64% |
 | model:mmbert32k | eligible | Phone numbers & email | 103/141 | 73.05% | 99.29% | 41.84% |
@@ -288,6 +294,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:openai-base | eligible | Addresses & locations | 3/184 | 1.63% | 1.63% | 1.09% |
 | model:openai-base | eligible | Network identifiers | 218/777 | 28.06% | 30.12% | 26.90% |
 | model:openai-base | eligible | Customer & employee IDs | 69/131 | 52.67% | 61.83% | 48.85% |
+| model:openai-base-onnx | eligible | Logins & usernames | 405/627 | 64.59% | 64.59% | 62.84% |
+| model:openai-base-onnx | eligible | People's names | 364/382 | 95.29% | 96.34% | 95.55% |
+| model:openai-base-onnx | eligible | Phone numbers & email | 137/141 | 97.16% | 97.16% | 97.16% |
+| model:openai-base-onnx | eligible | Addresses & locations | 3/184 | 1.63% | 1.63% | 1.09% |
+| model:openai-base-onnx | eligible | Network identifiers | 217/777 | 27.93% | 30.24% | 26.77% |
+| model:openai-base-onnx | eligible | Customer & employee IDs | 69/131 | 52.67% | 62.60% | 48.09% |
 | model:openmed-multilingual | eligible | Logins & usernames | 458/627 | 73.05% | 73.68% | 58.37% |
 | model:openmed-multilingual | eligible | People's names | 23/382 | 6.02% | 99.74% | 96.86% |
 | model:openmed-multilingual | eligible | Phone numbers & email | 140/141 | 99.29% | 99.29% | 97.87% |

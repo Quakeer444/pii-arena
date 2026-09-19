@@ -6,7 +6,7 @@ Russian, English and multilingual dataset cuts. Frozen experiment: **2026-09-09*
 A descriptive comparison under one declared masking protocol, not a production-safety certification.
 
 <!-- BEGIN SNAPSHOT -->
-The frozen experiment contains **41 datasets**, **41,643 rows**, **227,466 normalized gold spans** and **2,500 saved prediction runs**. The catalog has 62 execution records, including label variants, mirrors, scanners and rules.
+The frozen experiment contains **41 datasets**, **41,643 rows**, **227,466 normalized gold spans** and **2,591 saved prediction runs**. The catalog has 62 execution records, including label variants, mirrors, scanners and rules.
 <!-- END SNAPSHOT -->
 
 ## Find your result

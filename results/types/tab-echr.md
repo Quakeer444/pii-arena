@@ -62,6 +62,10 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:fef2-secret-ru | eligible | People's names | 4/1030 | 0.39% | 22.52% | 0.39% |
 | model:fef2-secret-ru | eligible | Addresses & locations | 47/516 | 9.11% | 12.21% | 6.78% |
 | model:fef2-secret-ru | eligible | Organizations | 28/1950 | 1.44% | 2.72% | 1.38% |
+| model:fef2-secret-ru+cpu-int8 | eligible | Documents & identifiers | 0/334 | 0.00% | 0.00% | 0.00% |
+| model:fef2-secret-ru+cpu-int8 | eligible | People's names | 10/1030 | 0.97% | 28.35% | 0.58% |
+| model:fef2-secret-ru+cpu-int8 | eligible | Addresses & locations | 41/516 | 7.95% | 10.27% | 6.01% |
+| model:fef2-secret-ru+cpu-int8 | eligible | Organizations | 28/1950 | 1.44% | 2.56% | 1.28% |
 | model:gliner-multi-v21 | eligible | Documents & identifiers | 165/334 | 49.40% | 50.30% | 49.40% |
 | model:gliner-multi-v21 | eligible | People's names | 990/1030 | 96.12% | 96.80% | 96.12% |
 | model:gliner-multi-v21 | eligible | Addresses & locations | 448/516 | 86.82% | 96.12% | 86.82% |
@@ -90,6 +94,10 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-pii-base | eligible | People's names | 898/1030 | 87.18% | 88.16% | 87.18% |
 | model:gliner-pii-base | eligible | Addresses & locations | 441/516 | 85.47% | 90.31% | 85.47% |
 | model:gliner-pii-base | eligible | Organizations | 1547/1950 | 79.33% | 88.62% | 79.33% |
+| model:gliner-pii-base+cpu-int8 | eligible | Documents & identifiers | 0/334 | 0.00% | 0.00% | 0.00% |
+| model:gliner-pii-base+cpu-int8 | eligible | People's names | 0/1030 | 0.00% | 0.00% | 0.00% |
+| model:gliner-pii-base+cpu-int8 | eligible | Addresses & locations | 1/516 | 0.19% | 0.19% | 0.19% |
+| model:gliner-pii-base+cpu-int8 | eligible | Organizations | 89/1950 | 4.56% | 4.77% | 4.56% |
 | model:gliner-pii-edge | eligible | Documents & identifiers | 4/334 | 1.20% | 1.20% | 1.20% |
 | model:gliner-pii-edge | eligible | People's names | 966/1030 | 93.79% | 96.41% | 93.79% |
 | model:gliner-pii-edge | eligible | Addresses & locations | 457/516 | 88.57% | 97.67% | 88.37% |
@@ -158,6 +166,10 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:kalyan-ettin | eligible | People's names | 27/1030 | 2.62% | 90.00% | 6.60% |
 | model:kalyan-ettin | eligible | Addresses & locations | 308/516 | 59.69% | 71.71% | 54.26% |
 | model:kalyan-ettin | eligible | Organizations | 122/1950 | 6.26% | 31.54% | 5.13% |
+| model:kalyan-ettin+cpu-int8 | eligible | Documents & identifiers | 7/334 | 2.10% | 12.28% | 0.30% |
+| model:kalyan-ettin+cpu-int8 | eligible | People's names | 21/1030 | 2.04% | 62.04% | 2.72% |
+| model:kalyan-ettin+cpu-int8 | eligible | Addresses & locations | 210/516 | 40.70% | 52.71% | 27.13% |
+| model:kalyan-ettin+cpu-int8 | eligible | Organizations | 61/1950 | 3.13% | 19.13% | 2.26% |
 | model:mmbert32k | eligible | Documents & identifiers | 185/334 | 55.39% | 94.01% | 12.87% |
 | model:mmbert32k | eligible | People's names | 149/1030 | 14.47% | 92.14% | 14.56% |
 | model:mmbert32k | eligible | Addresses & locations | 138/516 | 26.74% | 34.50% | 22.29% |
@@ -218,6 +230,10 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:openai-base | eligible | People's names | 733/1030 | 71.17% | 73.50% | 70.78% |
 | model:openai-base | eligible | Addresses & locations | 12/516 | 2.33% | 2.33% | 1.94% |
 | model:openai-base | eligible | Organizations | 12/1950 | 0.62% | 1.13% | 0.62% |
+| model:openai-base-onnx | eligible | Documents & identifiers | 94/334 | 28.14% | 28.44% | 27.84% |
+| model:openai-base-onnx | eligible | People's names | 738/1030 | 71.65% | 73.59% | 71.36% |
+| model:openai-base-onnx | eligible | Addresses & locations | 11/516 | 2.13% | 2.33% | 1.94% |
+| model:openai-base-onnx | eligible | Organizations | 13/1950 | 0.67% | 1.13% | 0.62% |
 | model:openmed-multilingual | eligible | Documents & identifiers | 166/334 | 49.70% | 80.84% | 38.02% |
 | model:openmed-multilingual | eligible | People's names | 144/1030 | 13.98% | 92.43% | 45.53% |
 | model:openmed-multilingual | eligible | Addresses & locations | 393/516 | 76.16% | 88.57% | 75.00% |

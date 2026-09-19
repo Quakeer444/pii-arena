@@ -1,6 +1,6 @@
 [project]
 name = "pii-secrets-benchmark"
-version = "1.0.2"
+version = "1.0.3"
 description = "Reproducible PII and secret detection measurements across Russian, English and multilingual datasets"
 requires-python = ">=3.12,<3.13"
 dependencies = []

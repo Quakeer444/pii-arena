@@ -38,7 +38,7 @@ Overview charts show descriptive point estimates. They do not establish statisti
 
 Speed is throughput under the recorded concurrent load, not single-request latency. Compare hardware, threads, concurrent workers, chunking and quantization together. CPU reference costs are calibrated through a same-condition pplx run to 1,100 characters/second. RTX 5090 reference costs use two concurrent processes. CPU runs used 24 processes with 16 threads each on the measured node.
 
-Compositions assume sequential detectors, so their per-character times add. Estimates borrowing a speed from another thread count are marked explicitly. ONNX records loaded with CPUExecutionProvider have no GPU inference path. Dynamic int8 quantization was closed after the observed quality and speed results; this release does not require the intentionally omitted runs to be completed.
+Compositions assume sequential detectors, so their per-character times add. Estimates borrowing a speed from another thread count are marked explicitly. ONNX records loaded with CPUExecutionProvider have no GPU inference path. Dynamic int8 quantization is measured in full: all 147 eligible triples ran, so every int8/fp32 pair rests on complete coverage rather than on an omitted remainder.
 
 Any future service-latency result must measure the complete candidate at one concurrent request, declare batch size, warmup, repeated trials, preprocessing, postprocessing, workload-size distribution, peak memory and latency percentiles. It must be reported separately from concurrent throughput. This release has no such W=1 measurement and makes no application-latency SLA claim.
 

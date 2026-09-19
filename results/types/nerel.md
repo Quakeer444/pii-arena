@@ -153,6 +153,9 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base+sent300 | eligible | People's names | 7344/9496 | 77.34% | 95.33% | 92.82% |
 | model:nym-base+sent300 | eligible | Addresses & locations | 7330/8861 | 82.72% | 86.59% | 81.18% |
 | model:nym-base+sent300 | eligible | Organizations | 3474/6012 | 57.78% | 75.42% | 59.68% |
+| model:nym-small | eligible | People's names | 7662/9496 | 80.69% | 96.35% | 94.22% |
+| model:nym-small | eligible | Addresses & locations | 7430/8861 | 83.85% | 87.80% | 81.55% |
+| model:nym-small | eligible | Organizations | 3520/6012 | 58.55% | 77.01% | 61.06% |
 | model:openai-base | eligible | People's names | 1840/9496 | 19.38% | 20.65% | 17.68% |
 | model:openai-base | eligible | Addresses & locations | 241/8861 | 2.72% | 3.08% | 2.39% |
 | model:openai-base | eligible | Organizations | 84/6012 | 1.40% | 2.15% | 1.20% |
@@ -177,6 +180,9 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:opf-ru-v2+sent300 | eligible | People's names | 3959/9496 | 41.69% | 45.23% | 35.77% |
 | model:opf-ru-v2+sent300 | eligible | Addresses & locations | 611/8861 | 6.90% | 8.28% | 5.47% |
 | model:opf-ru-v2+sent300 | eligible | Organizations | 335/6012 | 5.57% | 9.36% | 4.19% |
+| model:pii-shield-onnx | eligible | People's names | 3832/9496 | 40.35% | 51.53% | 30.90% |
+| model:pii-shield-onnx | eligible | Addresses & locations | 3454/8861 | 38.98% | 42.74% | 31.16% |
+| model:pii-shield-onnx | eligible | Organizations | 280/6012 | 4.66% | 15.64% | 3.09% |
 | model:pplx | eligible | People's names | 2841/9496 | 29.92% | 30.31% | 29.22% |
 | model:pplx | eligible | Addresses & locations | 169/8861 | 1.91% | 2.10% | 1.85% |
 | model:pplx | eligible | Organizations | 16/6012 | 0.27% | 0.38% | 0.25% |

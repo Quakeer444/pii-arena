@@ -100,7 +100,7 @@
 - **gravitee-small:** Model card: gravitee-io/pii-detection-dataset; English, 28M parameters.
 - **bardsai-eu:** Sources not disclosed; 24 EU languages, no Russian stated; GDPR-oriented labels.
 - **mmbert32k:** Model card: ai4privacy/pii-masking-400k plus Presidio annotation; 32k context.
-- **openai-base-onnx:** ONNX mirror of openai/privacy-filter; CPU speed reference only.
+- **openai-base-onnx:** ONNX mirror of openai/privacy-filter; CPU-only graph.
 - **gliner-multi-v21:** Model card: urchade/pile-mistral-v0.1; 289M parameters.
 - **gliner-multi-v21-ru:** Same weights as gliner-multi-v21, with Russian zero-shot labels.
 - **gliner-pii-edge:** Wordcab/Knowledgator card: training sources not disclosed, 60+ categories, quantization-aware.

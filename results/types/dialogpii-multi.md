@@ -198,6 +198,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base | eligible | Addresses & locations | 1313/1868 | 70.29% | 77.41% | 68.25% |
 | model:nym-base | eligible | Organizations | 343/1806 | 18.99% | 34.72% | 18.22% |
 | model:nym-base | eligible | Network identifiers | 0/20 | 0.00% | 70.00% | 0.00% |
+| model:nym-small | eligible | Documents & identifiers | 336/818 | 41.08% | 62.47% | 35.94% |
+| model:nym-small | eligible | People's names | 3253/5083 | 64.00% | 82.04% | 72.58% |
+| model:nym-small | eligible | Phone numbers & email | 277/750 | 36.93% | 59.73% | 33.87% |
+| model:nym-small | eligible | Addresses & locations | 1221/1868 | 65.36% | 72.22% | 62.90% |
+| model:nym-small | eligible | Organizations | 234/1806 | 12.96% | 29.62% | 12.24% |
+| model:nym-small | eligible | Network identifiers | 1/20 | 5.00% | 85.00% | 0.00% |
 | model:openai-base | eligible | Documents & identifiers | 330/818 | 40.34% | 55.50% | 39.61% |
 | model:openai-base | eligible | People's names | 1957/5083 | 38.50% | 40.74% | 36.93% |
 | model:openai-base | eligible | Phone numbers & email | 358/750 | 47.73% | 60.67% | 46.93% |
@@ -234,6 +240,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:opf-ru-v2 | eligible | Addresses & locations | 364/1868 | 19.49% | 23.55% | 17.40% |
 | model:opf-ru-v2 | eligible | Organizations | 128/1806 | 7.09% | 12.35% | 5.59% |
 | model:opf-ru-v2 | eligible | Network identifiers | 0/20 | 0.00% | 15.00% | 0.00% |
+| model:pii-shield-onnx | eligible | Documents & identifiers | 570/818 | 69.68% | 85.45% | 63.08% |
+| model:pii-shield-onnx | eligible | People's names | 3840/5083 | 75.55% | 79.83% | 64.29% |
+| model:pii-shield-onnx | eligible | Phone numbers & email | 546/750 | 72.80% | 91.20% | 65.47% |
+| model:pii-shield-onnx | eligible | Addresses & locations | 1423/1868 | 76.18% | 82.39% | 66.22% |
+| model:pii-shield-onnx | eligible | Organizations | 1291/1806 | 71.48% | 83.61% | 63.68% |
+| model:pii-shield-onnx | eligible | Network identifiers | 17/20 | 85.00% | 90.00% | 75.00% |
 | model:pplx | eligible | Documents & identifiers | 529/818 | 64.67% | 76.04% | 64.43% |
 | model:pplx | eligible | People's names | 4523/5083 | 88.98% | 93.98% | 88.67% |
 | model:pplx | eligible | Phone numbers & email | 478/750 | 63.73% | 76.80% | 62.40% |

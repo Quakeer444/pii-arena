@@ -25,6 +25,7 @@ A `-ru` suffix changes zero-shot labels to Russian using the same weights. Such 
 | gliner25-fastino-ru | 18/18 | 36,178 / 135,838 | 26.63% |
 | gliner-pii-edge | 18/18 | 38,386 / 135,838 | 28.26% |
 | gliner2-large | 18/18 | 38,450 / 135,838 | 28.31% |
+| pii-shield-onnx | 18/18 | 38,653 / 135,838 | 28.46% |
 | apararti | 18/18 | 40,487 / 135,838 | 29.81% |
 | openmed-nemotron | 18/18 | 40,648 / 135,838 | 29.92% |
 | gliner-nvidia | 18/18 | 40,898 / 135,838 | 30.11% |
@@ -57,14 +58,14 @@ A `-ru` suffix changes zero-shot labels to Russian using the same weights. Such 
 | rules-ru | 18/18 | 89,774 / 135,838 | 66.09% |
 | gliner2-hivetrace-uni-ru | 18/18 | 103,253 / 135,838 | 76.01% |
 | nym-base | 17/18 | 22,989 / 126,341 | 18.20% |
+| nym-small | 17/18 | 25,347 / 126,341 | 20.06% |
 | opf-ru | 17/18 | 48,162 / 131,033 | 36.76% |
 | spacy-alrosait | 16/18 | 88,917 / 125,268 | 70.98% |
-| pii-shield-onnx | 12/18 | 15,721 / 77,451 | 20.30% |
 | betterleaks *(historical pre-fix)* | 7/18 | 33,233 / 33,250 | 99.95% |
 | gitleaks *(corrected rerun)* | 7/18 | 33,233 / 33,250 | 99.95% |
-| nym-small | 4/18 | 15,981 / 40,490 | 39.47% |
+| openai-base-onnx | 4/18 | 8,408 / 48,779 | 17.24% |
+| ner-ru-gherman-onnx | 4/18 | 33,555 / 48,779 | 68.79% |
 | presidio-ru | 2/18 | 3,426 / 7,183 | 47.70% |
-| ner-ru-gherman-onnx | 1/18 | 1,164 / 1,667 | 69.83% |
 | detect-secrets *(verified unchanged)* | 1/18 | 1,641 / 1,667 | 98.44% |
 | kingfisher *(historical pre-fix)* | 1/18 | 1,650 / 1,667 | 98.98% |
 | noseyparker *(historical pre-fix)* | 1/18 | 1,650 / 1,667 | 98.98% |
@@ -86,6 +87,7 @@ Datasets: [alexen2](datasets/alexen2.md), [alrosait](datasets/alrosait.md), [cor
 |---|---:|---:|---:|
 | pplx | 1/1 | 0 / 581 | 0.00% |
 | opf-ru | 1/1 | 1 / 581 | 0.17% |
+| pii-shield-onnx | 1/1 | 2 / 581 | 0.34% |
 | apararti | 1/1 | 4 / 581 | 0.69% |
 | opf-kz-ru | 1/1 | 4 / 581 | 0.69% |
 | openai-base | 1/1 | 12 / 581 | 2.07% |
@@ -93,6 +95,7 @@ Datasets: [alexen2](datasets/alexen2.md), [alrosait](datasets/alrosait.md), [cor
 | traciora | 1/1 | 17 / 581 | 2.93% |
 | openmed-multilingual | 1/1 | 20 / 581 | 3.44% |
 | nym-base | 1/1 | 21 / 581 | 3.61% |
+| nym-small | 1/1 | 32 / 581 | 5.51% |
 | ru-legal-ner | 1/1 | 52 / 581 | 8.95% |
 | bardsai-eu | 1/1 | 55 / 581 | 9.47% |
 | gliner-pii-edge | 1/1 | 86 / 581 | 14.80% |
@@ -168,6 +171,7 @@ Datasets: [synth-secrets-ru](datasets/synth-secrets-ru.md).
 | davlan-mbert | 8/8 | 15,530 / 34,073 | 45.58% |
 | ner-ru-yqelz | 8/8 | 15,851 / 34,073 | 46.52% |
 | ner-ru-gherman | 8/8 | 17,600 / 34,073 | 51.65% |
+| pii-shield-onnx | 8/8 | 18,746 / 34,073 | 55.02% |
 | ru-legal-ner | 8/8 | 21,418 / 34,073 | 62.86% |
 | spacy-ru-lg | 8/8 | 29,048 / 34,073 | 85.25% |
 | fef2-secret-ru | 8/8 | 29,641 / 34,073 | 86.99% |
@@ -176,14 +180,14 @@ Datasets: [synth-secrets-ru](datasets/synth-secrets-ru.md).
 | spacy-alrosait | 8/8 | 34,066 / 34,073 | 99.98% |
 | gliner2-hivetrace-omni | 7/8 | 2,778 / 24,682 | 11.26% |
 | gliner-nvidia | 7/8 | 3,002 / 24,682 | 12.16% |
+| nym-small | 7/8 | 4,589 / 30,489 | 15.05% |
 | nym-base | 7/8 | 4,613 / 30,489 | 15.13% |
 | kalyan-ettin | 7/8 | 5,775 / 24,682 | 23.40% |
 | openmed-nemotron | 7/8 | 6,080 / 24,682 | 24.63% |
 | gliner2-hivetrace-uni | 7/8 | 9,625 / 24,682 | 39.00% |
 | openmed-multilingual | 6/8 | 3,940 / 22,783 | 17.29% |
-| pii-shield-onnx | 6/8 | 16,473 / 29,757 | 55.36% |
-| nym-small | 3/8 | 2,757 / 15,463 | 17.83% |
-| ner-ru-gherman-onnx | 2/8 | 3,272 / 6,072 | 53.89% |
+| openai-base-onnx | 3/8 | 6,737 / 15,463 | 43.57% |
+| ner-ru-gherman-onnx | 3/8 | 8,957 / 15,463 | 57.93% |
 
 `Missed` means no predicted character touches the normalized annotation; it says nothing about full hiding. A detector that touches nearly every annotation can still leave characters exposed, and one that hides well can mask text without annotations. Full-hiding and extra-masking outcomes for the fixed reference composition are in the [overview](overview.md#headline-masking-outcome).
 
@@ -195,12 +199,14 @@ Datasets: [ameau01](datasets/ameau01.md), [dialogpii-en](datasets/dialogpii-en.m
 
 | Model | Eligible sets | Missed / eligible gold | Missed % |
 |---|---:|---:|---:|
+| pii-shield-onnx | 9/9 | 66 / 3,547 | 1.86% |
 | opf-ru | 9/9 | 76 / 3,547 | 2.14% |
 | apararti | 9/9 | 100 / 3,547 | 2.82% |
 | opf-kz-ru | 9/9 | 103 / 3,547 | 2.90% |
 | pplx | 9/9 | 123 / 3,547 | 3.47% |
 | traciora | 9/9 | 144 / 3,547 | 4.06% |
 | nym-base | 9/9 | 156 / 3,547 | 4.40% |
+| nym-small | 9/9 | 168 / 3,547 | 4.74% |
 | opf-ru-v2 | 9/9 | 175 / 3,547 | 4.93% |
 | openmed-multilingual | 9/9 | 264 / 3,547 | 7.44% |
 | openai-base | 9/9 | 272 / 3,547 | 7.67% |
@@ -234,7 +240,6 @@ Datasets: [ameau01](datasets/ameau01.md), [dialogpii-en](datasets/dialogpii-en.m
 | ner-ru-gherman | 9/9 | 3,542 / 3,547 | 99.86% |
 | davlan-xlmr | 9/9 | 3,546 / 3,547 | 99.97% |
 | spacy-alrosait | 9/9 | 3,547 / 3,547 | 100.00% |
-| pii-shield-onnx | 5/9 | 35 / 1,510 | 2.32% |
 | credsweeper-noml *(historical pre-fix)* | 3/9 | 220 / 1,129 | 19.49% |
 | deepsecrets *(historical pre-fix)* | 3/9 | 658 / 1,129 | 58.28% |
 | detect-secrets *(verified unchanged)* | 3/9 | 680 / 1,129 | 60.23% |
@@ -242,10 +247,11 @@ Datasets: [ameau01](datasets/ameau01.md), [dialogpii-en](datasets/dialogpii-en.m
 | gitleaks *(corrected rerun)* | 2/9 | 203 / 383 | 53.00% |
 | trufflehog *(historical pre-fix)* | 2/9 | 802 / 1,034 | 77.56% |
 | noseyparker *(historical pre-fix)* | 2/9 | 826 / 1,034 | 79.88% |
-| nym-small | 1/9 | 6 / 288 | 2.08% |
+| openai-base-onnx | 1/9 | 21 / 288 | 7.29% |
 | betterleaks *(historical pre-fix)* | 1/9 | 123 / 288 | 42.71% |
 | titus *(historical pre-fix)* | 1/9 | 202 / 288 | 70.14% |
 | kingfisher *(historical pre-fix)* | 1/9 | 242 / 288 | 84.03% |
+| ner-ru-gherman-onnx | 1/9 | 288 / 288 | 100.00% |
 
 `Missed` means no predicted character touches the normalized annotation; it says nothing about full hiding. A detector that touches nearly every annotation can still leave characters exposed, and one that hides well can mask text without annotations. Full-hiding and extra-masking outcomes for the fixed reference composition are in the [overview](overview.md#headline-masking-outcome).
 
@@ -262,6 +268,7 @@ Datasets: [arthur-passwords](datasets/arthur-passwords.md), [corrupt-secrets-iss
 | mmbert32k | 5/5 | 8,290 / 53,427 | 15.52% |
 | gliner2-fastino | 5/5 | 8,924 / 53,427 | 16.70% |
 | gliner-nvidia | 5/5 | 10,258 / 53,427 | 19.20% |
+| pii-shield-onnx | 5/5 | 11,590 / 53,427 | 21.69% |
 | gliner-urchade | 5/5 | 13,310 / 53,427 | 24.91% |
 | nuner-zero | 5/5 | 14,237 / 53,427 | 26.65% |
 | opf-ru | 5/5 | 14,655 / 53,427 | 27.43% |
@@ -294,10 +301,10 @@ Datasets: [arthur-passwords](datasets/arthur-passwords.md), [corrupt-secrets-iss
 | spacy-alrosait | 5/5 | 53,242 / 53,427 | 99.65% |
 | nym-base | 4/5 | 7,975 / 45,258 | 17.62% |
 | gliner2-hivetrace-omni | 4/5 | 8,964 / 48,943 | 18.32% |
+| nym-small | 4/5 | 9,022 / 45,258 | 19.93% |
 | openmed-multilingual | 4/5 | 12,068 / 48,943 | 24.66% |
 | gliner2-hivetrace-uni | 4/5 | 15,677 / 48,943 | 32.03% |
-| nym-small | 1/5 | 204 / 7,565 | 2.70% |
-| pii-shield-onnx | 1/5 | 2,409 / 7,565 | 31.84% |
+| openai-base-onnx | 1/5 | 1,663 / 7,565 | 21.98% |
 | ner-ru-gherman-onnx | 1/5 | 2,989 / 7,565 | 39.51% |
 
 `Missed` means no predicted character touches the normalized annotation; it says nothing about full hiding. A detector that touches nearly every annotation can still leave characters exposed, and one that hides well can mask text without annotations. Full-hiding and extra-masking outcomes for the fixed reference composition are in the [overview](overview.md#headline-masking-outcome).

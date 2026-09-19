@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # bundle are separate identities (T08): the experiment date is never rewritten
 # by a later fix, and `code_version` is read from the single declared source.
 EXPERIMENT_DATE = '2026-09-09'
-RESULT_REVISION = '2026-09-18'
+RESULT_REVISION = '2026-09-19'
 # Fields a reuse-only export must find unchanged: they are what the published
 # numbers were computed from. `sources` holds the SHA-256 of every prediction
 # and report file, so a changed input cannot pass as a republish (T03).

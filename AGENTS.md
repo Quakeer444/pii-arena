@@ -1,7 +1,7 @@
 # Project
 
 Public benchmark of PII and secret detectors. English is the publication language.
-The initial release is prepared locally; no GitHub remote is configured.
+Releases are prepared locally and pushed to the public `origin` remote on GitHub.
 
 - Keep corpus text, predictions, logs, caches and research history under ignored `.local/`.
 - Preserve the scoring protocol, frozen dataset hashes, training-overlap exclusions and coverage labels.

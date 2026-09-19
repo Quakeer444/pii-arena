@@ -134,6 +134,10 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base | eligible | People's names | 846/1530 | 55.29% | 55.36% | 53.66% |
 | model:nym-base | eligible | Phone numbers & email | 339/365 | 92.88% | 100.00% | 90.96% |
 | model:nym-base | eligible | Organizations | 119/426 | 27.93% | 30.05% | 26.53% |
+| model:nym-small | eligible | Logins & usernames | 34/96 | 35.42% | 88.54% | 34.38% |
+| model:nym-small | eligible | People's names | 979/1530 | 63.99% | 63.99% | 63.40% |
+| model:nym-small | eligible | Phone numbers & email | 359/365 | 98.36% | 99.73% | 98.36% |
+| model:nym-small | eligible | Organizations | 127/426 | 29.81% | 32.16% | 27.70% |
 | model:openai-base | eligible | Logins & usernames | 18/96 | 18.75% | 95.83% | 18.75% |
 | model:openai-base | eligible | People's names | 1175/1530 | 76.80% | 76.80% | 76.14% |
 | model:openai-base | eligible | Phone numbers & email | 365/365 | 100.00% | 100.00% | 100.00% |
@@ -158,6 +162,10 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:opf-ru-v2 | eligible | People's names | 544/1530 | 35.56% | 35.62% | 34.51% |
 | model:opf-ru-v2 | eligible | Phone numbers & email | 361/365 | 98.90% | 100.00% | 98.90% |
 | model:opf-ru-v2 | eligible | Organizations | 14/426 | 3.29% | 3.29% | 2.58% |
+| model:pii-shield-onnx | eligible | Logins & usernames | 10/96 | 10.42% | 54.17% | 8.33% |
+| model:pii-shield-onnx | eligible | People's names | 224/1530 | 14.64% | 14.71% | 10.20% |
+| model:pii-shield-onnx | eligible | Phone numbers & email | 361/365 | 98.90% | 99.73% | 97.81% |
+| model:pii-shield-onnx | eligible | Organizations | 26/426 | 6.10% | 7.51% | 3.99% |
 | model:pplx | eligible | Logins & usernames | 12/96 | 12.50% | 100.00% | 12.50% |
 | model:pplx | eligible | People's names | 1375/1530 | 89.87% | 89.87% | 87.19% |
 | model:pplx | eligible | Phone numbers & email | 365/365 | 100.00% | 100.00% | 98.36% |

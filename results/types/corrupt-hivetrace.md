@@ -270,6 +270,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base+homoglyph | eligible | People's names | 30/228 | 13.16% | 97.37% | 71.49% |
 | model:nym-base+homoglyph | eligible | Phone numbers & email | 339/390 | 86.92% | 96.15% | 82.56% |
 | model:nym-base+homoglyph | eligible | Addresses & locations | 27/176 | 15.34% | 97.16% | 21.59% |
+| model:nym-small | eligible | Passwords, keys & tokens | 70/95 | 73.68% | 98.95% | 50.53% |
+| model:nym-small | eligible | Bank accounts & cards | 120/169 | 71.01% | 86.98% | 63.31% |
+| model:nym-small | eligible | Documents & identifiers | 452/609 | 74.22% | 95.73% | 66.83% |
+| model:nym-small | eligible | People's names | 37/228 | 16.23% | 89.91% | 59.21% |
+| model:nym-small | eligible | Phone numbers & email | 341/390 | 87.44% | 97.95% | 80.26% |
+| model:nym-small | eligible | Addresses & locations | 28/176 | 15.91% | 98.86% | 18.18% |
 | model:openai-base | eligible | Passwords, keys & tokens | 85/95 | 89.47% | 91.58% | 88.42% |
 | model:openai-base | eligible | Bank accounts & cards | 78/169 | 46.15% | 47.34% | 43.79% |
 | model:openai-base | eligible | Documents & identifiers | 426/609 | 69.95% | 77.67% | 67.32% |

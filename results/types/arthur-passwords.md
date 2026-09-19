@@ -38,6 +38,7 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:ner-ru-yqelz | eligible | Passwords, keys & tokens | 11/280 | 3.93% | 3.93% | 1.43% |
 | model:nuner-zero | eligible | Passwords, keys & tokens | 273/280 | 97.50% | 97.50% | 97.50% |
 | model:nym-base | eligible | Passwords, keys & tokens | 274/280 | 97.86% | 97.86% | 94.64% |
+| model:nym-small | eligible | Passwords, keys & tokens | 278/280 | 99.29% | 99.29% | 92.86% |
 | model:openai-base | eligible | Passwords, keys & tokens | 260/280 | 92.86% | 92.86% | 88.93% |
 | model:openmed-multilingual | eligible | Passwords, keys & tokens | 280/280 | 100.00% | 100.00% | 100.00% |
 | model:openmed-nemotron | eligible | Passwords, keys & tokens | 241/280 | 86.07% | 86.07% | 56.07% |

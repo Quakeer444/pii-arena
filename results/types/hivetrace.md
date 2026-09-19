@@ -150,6 +150,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-multi-v21-ru | eligible | People's names | 226/228 | 99.12% | 99.12% | 99.12% |
 | model:gliner-multi-v21-ru | eligible | Phone numbers & email | 134/390 | 34.36% | 61.54% | 33.33% |
 | model:gliner-multi-v21-ru | eligible | Addresses & locations | 41/176 | 23.30% | 96.59% | 18.75% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Passwords, keys & tokens | 0/95 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Bank accounts & cards | 0/169 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Documents & identifiers | 0/609 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | People's names | 0/228 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Phone numbers & email | 0/390 | 0.00% | 0.00% | 0.00% |
+| model:gliner-multi-v21-ru+cpu-int8 | eligible | Addresses & locations | 0/176 | 0.00% | 0.00% | 0.00% |
 | model:gliner-nvidia | eligible | Passwords, keys & tokens | 91/95 | 95.79% | 95.79% | 95.79% |
 | model:gliner-nvidia | eligible | Bank accounts & cards | 141/169 | 83.43% | 83.43% | 83.43% |
 | model:gliner-nvidia | eligible | Documents & identifiers | 502/609 | 82.43% | 83.91% | 82.27% |
@@ -168,6 +174,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-nvidia-ru | eligible | People's names | 218/228 | 95.61% | 99.56% | 15.79% |
 | model:gliner-nvidia-ru | eligible | Phone numbers & email | 378/390 | 96.92% | 97.44% | 96.92% |
 | model:gliner-nvidia-ru | eligible | Addresses & locations | 97/176 | 55.11% | 69.89% | 55.11% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Passwords, keys & tokens | 0/95 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Bank accounts & cards | 0/169 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Documents & identifiers | 0/609 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | People's names | 0/228 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Phone numbers & email | 0/390 | 0.00% | 0.00% | 0.00% |
+| model:gliner-nvidia-ru+cpu-int8 | eligible | Addresses & locations | 0/176 | 0.00% | 0.00% | 0.00% |
 | model:gliner-pii-base | eligible | Passwords, keys & tokens | 30/95 | 31.58% | 46.32% | 30.53% |
 | model:gliner-pii-base | eligible | Bank accounts & cards | 44/169 | 26.04% | 26.04% | 26.04% |
 | model:gliner-pii-base | eligible | Documents & identifiers | 96/609 | 15.76% | 15.76% | 15.76% |
@@ -216,6 +228,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:gliner-urchade-ru | eligible | People's names | 88/228 | 38.60% | 38.60% | 38.60% |
 | model:gliner-urchade-ru | eligible | Phone numbers & email | 350/390 | 89.74% | 89.74% | 89.74% |
 | model:gliner-urchade-ru | eligible | Addresses & locations | 122/176 | 69.32% | 72.73% | 69.32% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Passwords, keys & tokens | 0/95 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Bank accounts & cards | 0/169 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Documents & identifiers | 0/609 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | People's names | 0/228 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Phone numbers & email | 0/390 | 0.00% | 0.00% | 0.00% |
+| model:gliner-urchade-ru+cpu-int8 | eligible | Addresses & locations | 0/176 | 0.00% | 0.00% | 0.00% |
 | model:gliner2-fastino | eligible | Passwords, keys & tokens | 40/95 | 42.11% | 45.26% | 42.11% |
 | model:gliner2-fastino | eligible | Bank accounts & cards | 153/169 | 90.53% | 90.53% | 90.53% |
 | model:gliner2-fastino | eligible | Documents & identifiers | 339/609 | 55.67% | 56.32% | 55.67% |
@@ -300,6 +318,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:kalyan-ettin | eligible | People's names | 108/228 | 47.37% | 92.98% | 25.00% |
 | model:kalyan-ettin | eligible | Phone numbers & email | 290/390 | 74.36% | 91.54% | 63.33% |
 | model:kalyan-ettin | eligible | Addresses & locations | 9/176 | 5.11% | 66.48% | 1.14% |
+| model:kalyan-ettin+cpu-int8 | eligible | Passwords, keys & tokens | 78/95 | 82.11% | 88.42% | 8.42% |
+| model:kalyan-ettin+cpu-int8 | eligible | Bank accounts & cards | 43/169 | 25.44% | 27.22% | 1.78% |
+| model:kalyan-ettin+cpu-int8 | eligible | Documents & identifiers | 173/609 | 28.41% | 33.66% | 2.13% |
+| model:kalyan-ettin+cpu-int8 | eligible | People's names | 94/228 | 41.23% | 76.32% | 6.14% |
+| model:kalyan-ettin+cpu-int8 | eligible | Phone numbers & email | 144/390 | 36.92% | 68.46% | 10.51% |
+| model:kalyan-ettin+cpu-int8 | eligible | Addresses & locations | 2/176 | 1.14% | 27.27% | 0.57% |
 | model:kingfisher | eligible | Passwords, keys & tokens | 17/95 | 17.89% | 17.89% | 17.89% |
 | model:kingfisher | eligible | Bank accounts & cards | 0/169 | 0.00% | 0.00% | 0.00% |
 | model:kingfisher | eligible | Documents & identifiers | 0/609 | 0.00% | 0.00% | 0.00% |
@@ -384,6 +408,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:openai-base | eligible | People's names | 192/228 | 84.21% | 86.40% | 82.02% |
 | model:openai-base | eligible | Phone numbers & email | 374/390 | 95.90% | 96.15% | 95.90% |
 | model:openai-base | eligible | Addresses & locations | 119/176 | 67.61% | 89.20% | 68.18% |
+| model:openai-base-onnx | eligible | Passwords, keys & tokens | 94/95 | 98.95% | 98.95% | 98.95% |
+| model:openai-base-onnx | eligible | Bank accounts & cards | 105/169 | 62.13% | 62.72% | 59.76% |
+| model:openai-base-onnx | eligible | Documents & identifiers | 563/609 | 92.45% | 94.09% | 90.64% |
+| model:openai-base-onnx | eligible | People's names | 192/228 | 84.21% | 86.40% | 82.02% |
+| model:openai-base-onnx | eligible | Phone numbers & email | 376/390 | 96.41% | 96.41% | 96.15% |
+| model:openai-base-onnx | eligible | Addresses & locations | 120/176 | 68.18% | 88.64% | 68.75% |
 | model:openmed-multilingual | eligible | Passwords, keys & tokens | 87/95 | 91.58% | 94.74% | 48.42% |
 | model:openmed-multilingual | eligible | Bank accounts & cards | 153/169 | 90.53% | 90.53% | 89.94% |
 | model:openmed-multilingual | eligible | Documents & identifiers | 538/609 | 88.34% | 92.12% | 79.64% |

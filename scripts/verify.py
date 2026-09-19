@@ -109,7 +109,7 @@ def check_snapshot():
     cfg = tomllib.loads((ROOT / 'benchmark/models.toml').read_text())['models']
     assert len(cfg) == 62 and all(c.get('revision') for c in cfg.values())
     measurements = s['measurements']
-    assert len(measurements) == 2137
+    assert len(measurements) == 2228
     assert len({(r['dataset'], r['model']) for r in measurements}) == len(measurements)
     for r in measurements:
         assert r['dataset'] in ds and r['model'].split('+')[0] in cfg
@@ -169,7 +169,7 @@ def check_snapshot():
     assert len(excluded) == 9 and len(included) == 32 and not excluded & included
     assert excluded | included == set(ds)
     inventory = load('results/run-inventory.json')
-    assert len(inventory)==len({(r['dataset'],r['file']) for r in inventory})==2500
+    assert len(inventory)==len({(r['dataset'],r['file']) for r in inventory})==2591
     assert all(r['dataset'] in ds and not {'host','hostname','text','spans','token','api_key'} & r.keys() for r in inventory)
     check_provenance(s, inventory)
     assert len(s['costs'])==5 and sum(r['mixed_device_estimate'] for r in s['costs'])==1
@@ -180,7 +180,8 @@ def check_snapshot():
             for k,v in record.items():
                 expected=' + '.join(v) if k=='members' else '' if v is None else str(v)
                 assert row[k]==expected, (filename,k)
-    print('Snapshot: exact totals, 2,137 quality rows, 286 recomputed composition rows, 2,500 run records.')
+    print(f'Snapshot: exact totals, {len(measurements):,} quality rows, {len(counts):,} recomputed '
+          f'composition rows, {len(inventory):,} run records.')
     check_breakdowns(s, ds)
 
 
@@ -205,7 +206,7 @@ def check_breakdowns(snapshot, datasets):
     expected = {(f"model:{r['model']}", r['dataset']): r for r in snapshot['measurements']}
     expected.update({(f"composition:{r['composition']}", r['dataset']): r for r in snapshot['composition_counts']})
     rows = {(r['system'], r['dataset']): r for r in b['results']}
-    assert len(rows) == len(b['results']) == 2423 and rows.keys() == expected.keys()
+    assert len(rows) == len(b['results']) == 2514 and rows.keys() == expected.keys()
     csv_labels, csv_categories, csv_datasets = {}, {}, {}
     for key, r in rows.items():
         assert r['system'] in systems

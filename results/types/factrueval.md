@@ -153,6 +153,9 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base+sent300 | eligible | People's names | 3152/3369 | 93.56% | 93.68% | 92.58% |
 | model:nym-base+sent300 | eligible | Addresses & locations | 1996/2396 | 83.31% | 84.47% | 82.43% |
 | model:nym-base+sent300 | eligible | Organizations | 1623/2201 | 73.74% | 78.06% | 71.83% |
+| model:nym-small | eligible | People's names | 3158/3369 | 93.74% | 93.83% | 92.79% |
+| model:nym-small | eligible | Addresses & locations | 2004/2396 | 83.64% | 85.06% | 83.01% |
+| model:nym-small | eligible | Organizations | 1585/2201 | 72.01% | 76.19% | 69.65% |
 | model:openai-base | eligible | People's names | 1033/3369 | 30.66% | 30.72% | 28.67% |
 | model:openai-base | eligible | Addresses & locations | 38/2396 | 1.59% | 1.67% | 1.04% |
 | model:openai-base | eligible | Organizations | 46/2201 | 2.09% | 2.41% | 1.95% |

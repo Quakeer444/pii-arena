@@ -4,10 +4,12 @@ Main metric: **missed** - gold spans no predicted character touched. Score thres
 
 | model | missed | missed % [95% CI] | hidden | char F1 [95% CI] | P | R | entity exact | entity overlap | typed F1 | rows touched | chars masked | dropped spans | ms/row | params | train |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| pii-shield-onnx | **0** | 0.0% [0.0%, 0.0%] | 84.7% | 0.101 [0.058, 0.157] | 0.053 | 0.985 | 0.002 | 0.028 | 0.098 | 248/250 | 313358 | 0 | 1338 | - |  |
 | opf-ru | **7** | 2.4% [0.7%, 4.6%] | 70.8% | 0.340 [0.210, 0.474] | 0.208 | 0.919 | 0.019 | 0.090 | 0.316 | 230/250 | 50933 | 0 | 170 | 1.4B |  |
 | apararti | **8** | 2.8% [0.7%, 5.4%] | 72.9% | 0.335 [0.208, 0.463] | 0.204 | 0.933 | 0.042 | 0.137 | 0.306 | 205/250 | 46142 | 0 | 212 | 1.4B |  |
 | nym-base+homoglyph | **11** | 3.8% [1.5%, 6.9%] | 63.2% | 0.357 [0.228, 0.487] | 0.221 | 0.923 | 0.035 | 0.085 | 0.082 | 203/250 | 37216 | 0 | 25 | 308M |  |
 | nym-base | **11** | 3.8% [1.5%, 6.9%] | 63.2% | 0.356 [0.228, 0.486] | 0.221 | 0.922 | 0.035 | 0.085 | 0.082 | 208/250 | 37384 | 0 | 26 | 308M |  |
+| nym-small | **12** | 4.2% [1.5%, 7.2%] | 55.9% | 0.329 [0.206, 0.458] | 0.201 | 0.921 | 0.038 | 0.076 | 0.132 | 211/250 | 43191 | 0 | 1115 | - |  |
 | pplx | **12** | 4.2% [1.7%, 7.3%] | 75.7% | 0.306 [0.187, 0.427] | 0.183 | 0.943 | 0.034 | 0.122 | 0.283 | 202/250 | 59676 | 0 | 294 | 596M |  |
 | pplx+homoglyph | **12** | 4.2% [1.7%, 7.3%] | 75.7% | 0.304 [0.186, 0.426] | 0.182 | 0.943 | 0.034 | 0.121 | 0.281 | 202/250 | 60755 | 0 | 193 | 596M |  |
 | opf-kz-ru | **13** | 4.5% [2.1%, 7.6%] | 73.3% | 0.319 [0.194, 0.445] | 0.193 | 0.917 | 0.025 | 0.122 | 0.281 | 211/250 | 48591 | 0 | 212 | 1.4B |  |
@@ -51,17 +53,19 @@ Main metric: **missed** - gold spans no predicted character touched. Score thres
 | ner-ru-gherman | **288** | 100.0% [100.0%, 100.0%] | 0.0% | 0.000 [0.000, 0.000] | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 38/250 | 565 | 0 | 26 | 177M |  |
 | spacy-alrosait | **288** | 100.0% [100.0%, 100.0%] | 0.0% | 0.000 [0.000, 0.000] | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 12/250 | 132 | 0 | 27 | - |  |
 
-Neighbours by rank a paired bootstrap cannot tell apart (95%, missed %) - pairs, not a transitive chain, so `a ≈ b` and `b ≈ c` do not make `a ≈ c`: opf-ru ≈ apararti; apararti ≈ nym-base+homoglyph; nym-base+homoglyph ≈ nym-base; nym-base ≈ pplx; pplx ≈ pplx+homoglyph; pplx+homoglyph ≈ opf-kz-ru; opf-kz-ru ≈ traciora; traciora ≈ bardsai-eu; bardsai-eu ≈ opf-ru-v2; opf-ru-v2 ≈ opf-ru-v2+homoglyph; opf-ru-v2+homoglyph ≈ openmed-nemotron; openmed-nemotron ≈ openai-base; openai-base ≈ openmed-multilingual; openmed-multilingual ≈ kalyan-ettin; kalyan-ettin ≈ gliner-pii-edge; gliner-pii-edge ≈ mmbert32k; mmbert32k ≈ ru-legal-ner; ru-legal-ner ≈ ru-legal-ner+homoglyph; ru-legal-ner+homoglyph ≈ nuner-zero; nuner-zero ≈ gliner2-fastino; gliner2-fastino ≈ rules-ru; rules-ru ≈ gliner-stream-pii; gliner-stream-pii ≈ gliner-urchade; gliner-urchade ≈ fef2-secret-ru; fef2-secret-ru ≈ gliner-nvidia; gliner-nvidia ≈ gliner-nvidia+homoglyph; gliner-nvidia+homoglyph ≈ stanza-ru; stanza-ru ≈ gliner25-fastino; gliner25-fastino ≈ ner-ru-yqelz; ner-ru-yqelz ≈ gliner2-hivetrace-omni; gliner2-hivetrace-omni ≈ gliner2-large; gliner2-large ≈ gravitee-small; gravitee-small ≈ ru-pii-ner; ru-pii-ner ≈ gliner-multi-v21; gliner2-hivetrace-uni ≈ gliner-pii-base; gliner-pii-base ≈ gliner2-vladlinv+homoglyph; gliner2-vladlinv+homoglyph ≈ gliner2-vladlinv; gliner2-vladlinv ≈ spacy-ru-lg; spacy-ru-lg ≈ natasha; natasha ≈ davlan-mbert; davlan-mbert ≈ davlan-xlmr; davlan-xlmr ≈ ner-ru-gherman+homoglyph; ner-ru-gherman+homoglyph ≈ ner-ru-gherman; ner-ru-gherman ≈ spacy-alrosait
+Neighbours by rank a paired bootstrap cannot tell apart (95%, missed %) - pairs, not a transitive chain, so `a ≈ b` and `b ≈ c` do not make `a ≈ c`: opf-ru ≈ apararti; apararti ≈ nym-base+homoglyph; nym-base+homoglyph ≈ nym-base; nym-base ≈ nym-small; nym-small ≈ pplx; pplx ≈ pplx+homoglyph; pplx+homoglyph ≈ opf-kz-ru; opf-kz-ru ≈ traciora; traciora ≈ bardsai-eu; bardsai-eu ≈ opf-ru-v2; opf-ru-v2 ≈ opf-ru-v2+homoglyph; opf-ru-v2+homoglyph ≈ openmed-nemotron; openmed-nemotron ≈ openai-base; openai-base ≈ openmed-multilingual; openmed-multilingual ≈ kalyan-ettin; kalyan-ettin ≈ gliner-pii-edge; gliner-pii-edge ≈ mmbert32k; mmbert32k ≈ ru-legal-ner; ru-legal-ner ≈ ru-legal-ner+homoglyph; ru-legal-ner+homoglyph ≈ nuner-zero; nuner-zero ≈ gliner2-fastino; gliner2-fastino ≈ rules-ru; rules-ru ≈ gliner-stream-pii; gliner-stream-pii ≈ gliner-urchade; gliner-urchade ≈ fef2-secret-ru; fef2-secret-ru ≈ gliner-nvidia; gliner-nvidia ≈ gliner-nvidia+homoglyph; gliner-nvidia+homoglyph ≈ stanza-ru; stanza-ru ≈ gliner25-fastino; gliner25-fastino ≈ ner-ru-yqelz; ner-ru-yqelz ≈ gliner2-hivetrace-omni; gliner2-hivetrace-omni ≈ gliner2-large; gliner2-large ≈ gravitee-small; gravitee-small ≈ ru-pii-ner; ru-pii-ner ≈ gliner-multi-v21; gliner2-hivetrace-uni ≈ gliner-pii-base; gliner-pii-base ≈ gliner2-vladlinv+homoglyph; gliner2-vladlinv+homoglyph ≈ gliner2-vladlinv; gliner2-vladlinv ≈ spacy-ru-lg; spacy-ru-lg ≈ natasha; natasha ≈ davlan-mbert; davlan-mbert ≈ davlan-xlmr; davlan-xlmr ≈ ner-ru-gherman+homoglyph; ner-ru-gherman+homoglyph ≈ ner-ru-gherman; ner-ru-gherman ≈ spacy-alrosait
 
 ## Missed by group
 
 | model | SECRET |
 |---|---|
 | spans in gold | 288 |
+| pii-shield-onnx | 0 (0.0%) |
 | opf-ru | 7 (2.4%) |
 | apararti | 8 (2.8%) |
 | nym-base+homoglyph | 11 (3.8%) |
 | nym-base | 11 (3.8%) |
+| nym-small | 12 (4.2%) |
 | pplx | 12 (4.2%) |
 | pplx+homoglyph | 12 (4.2%) |
 | opf-kz-ru | 13 (4.5%) |
@@ -107,15 +111,15 @@ Neighbours by rank a paired bootstrap cannot tell apart (95%, missed %) - pairs,
 
 ## Char recall by gold type
 
-| type | group | opf-ru | apararti | nym-base+homoglyph | nym-base | pplx | pplx+homoglyph | opf-kz-ru | traciora | bardsai-eu | opf-ru-v2 | opf-ru-v2+homoglyph | openmed-nemotron | openai-base | openmed-multilingual | kalyan-ettin | gliner-pii-edge | mmbert32k | ru-legal-ner | ru-legal-ner+homoglyph | nuner-zero | gliner2-fastino | rules-ru | gliner-stream-pii | gliner-urchade | fef2-secret-ru | gliner-nvidia | gliner-nvidia+homoglyph | stanza-ru | gliner25-fastino | ner-ru-yqelz | gliner2-hivetrace-omni | gliner2-large | gravitee-small | ru-pii-ner | gliner-multi-v21 | gliner2-hivetrace-uni | gliner-pii-base | gliner2-vladlinv+homoglyph | gliner2-vladlinv | spacy-ru-lg | natasha | davlan-mbert | davlan-xlmr | ner-ru-gherman+homoglyph | ner-ru-gherman | spacy-alrosait |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| SECRET | SECRET | 0.919 | 0.933 | 0.923 | 0.922 | 0.943 | 0.943 | 0.917 | 0.925 | 0.930 | 0.905 | 0.905 | 0.918 | 0.890 | 0.886 | 0.873 | 0.854 | 0.808 | 0.384 | 0.383 | 0.573 | 0.650 | 0.415 | 0.554 | 0.281 | 0.590 | 0.674 | 0.674 | 0.643 | 0.217 | 0.190 | 0.220 | 0.077 | 0.101 | 0.292 | 0.064 | 0.032 | 0.101 | 0.026 | 0.026 | 0.463 | 0.128 | 0.001 | 0.000 | 0.000 | 0.000 | 0.000 |
+| type | group | pii-shield-onnx | opf-ru | apararti | nym-base+homoglyph | nym-base | nym-small | pplx | pplx+homoglyph | opf-kz-ru | traciora | bardsai-eu | opf-ru-v2 | opf-ru-v2+homoglyph | openmed-nemotron | openai-base | openmed-multilingual | kalyan-ettin | gliner-pii-edge | mmbert32k | ru-legal-ner | ru-legal-ner+homoglyph | nuner-zero | gliner2-fastino | rules-ru | gliner-stream-pii | gliner-urchade | fef2-secret-ru | gliner-nvidia | gliner-nvidia+homoglyph | stanza-ru | gliner25-fastino | ner-ru-yqelz | gliner2-hivetrace-omni | gliner2-large | gravitee-small | ru-pii-ner | gliner-multi-v21 | gliner2-hivetrace-uni | gliner-pii-base | gliner2-vladlinv+homoglyph | gliner2-vladlinv | spacy-ru-lg | natasha | davlan-mbert | davlan-xlmr | ner-ru-gherman+homoglyph | ner-ru-gherman | spacy-alrosait |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| SECRET | SECRET | 0.985 | 0.919 | 0.933 | 0.923 | 0.922 | 0.921 | 0.943 | 0.943 | 0.917 | 0.925 | 0.930 | 0.905 | 0.905 | 0.918 | 0.890 | 0.886 | 0.873 | 0.854 | 0.808 | 0.384 | 0.383 | 0.573 | 0.650 | 0.415 | 0.554 | 0.281 | 0.590 | 0.674 | 0.674 | 0.643 | 0.217 | 0.190 | 0.220 | 0.077 | 0.101 | 0.292 | 0.064 | 0.032 | 0.101 | 0.026 | 0.026 | 0.463 | 0.128 | 0.001 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 ## char F1 by domain
 
-| domain | n | opf-ru | apararti | nym-base+homoglyph | nym-base | pplx | pplx+homoglyph | opf-kz-ru | traciora | bardsai-eu | opf-ru-v2 | opf-ru-v2+homoglyph | openmed-nemotron | openai-base | openmed-multilingual | kalyan-ettin | gliner-pii-edge | mmbert32k | ru-legal-ner | ru-legal-ner+homoglyph | nuner-zero | gliner2-fastino | rules-ru | gliner-stream-pii | gliner-urchade | fef2-secret-ru | gliner-nvidia | gliner-nvidia+homoglyph | stanza-ru | gliner25-fastino | ner-ru-yqelz | gliner2-hivetrace-omni | gliner2-large | gravitee-small | ru-pii-ner | gliner-multi-v21 | gliner2-hivetrace-uni | gliner-pii-base | gliner2-vladlinv+homoglyph | gliner2-vladlinv | spacy-ru-lg | natasha | davlan-mbert | davlan-xlmr | ner-ru-gherman+homoglyph | ner-ru-gherman | spacy-alrosait |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| issue | 500 | 0.340 | 0.335 | 0.357 | 0.356 | 0.306 | 0.304 | 0.319 | 0.404 | 0.360 | 0.414 | 0.417 | 0.273 | 0.408 | 0.291 | 0.345 | 0.332 | 0.305 | 0.137 | 0.144 | 0.442 | 0.332 | 0.196 | 0.453 | 0.246 | 0.546 | 0.418 | 0.417 | 0.144 | 0.129 | 0.102 | 0.248 | 0.086 | 0.078 | 0.250 | 0.074 | 0.055 | 0.155 | 0.047 | 0.046 | 0.384 | 0.180 | 0.001 | 0.000 | 0.000 | 0.000 | 0.000 |
+| domain | n | pii-shield-onnx | opf-ru | apararti | nym-base+homoglyph | nym-base | nym-small | pplx | pplx+homoglyph | opf-kz-ru | traciora | bardsai-eu | opf-ru-v2 | opf-ru-v2+homoglyph | openmed-nemotron | openai-base | openmed-multilingual | kalyan-ettin | gliner-pii-edge | mmbert32k | ru-legal-ner | ru-legal-ner+homoglyph | nuner-zero | gliner2-fastino | rules-ru | gliner-stream-pii | gliner-urchade | fef2-secret-ru | gliner-nvidia | gliner-nvidia+homoglyph | stanza-ru | gliner25-fastino | ner-ru-yqelz | gliner2-hivetrace-omni | gliner2-large | gravitee-small | ru-pii-ner | gliner-multi-v21 | gliner2-hivetrace-uni | gliner-pii-base | gliner2-vladlinv+homoglyph | gliner2-vladlinv | spacy-ru-lg | natasha | davlan-mbert | davlan-xlmr | ner-ru-gherman+homoglyph | ner-ru-gherman | spacy-alrosait |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| issue | 500 | 0.101 | 0.340 | 0.335 | 0.357 | 0.356 | 0.329 | 0.306 | 0.304 | 0.319 | 0.404 | 0.360 | 0.414 | 0.417 | 0.273 | 0.408 | 0.291 | 0.345 | 0.332 | 0.305 | 0.137 | 0.144 | 0.442 | 0.332 | 0.196 | 0.453 | 0.246 | 0.546 | 0.418 | 0.417 | 0.144 | 0.129 | 0.102 | 0.248 | 0.086 | 0.078 | 0.250 | 0.074 | 0.055 | 0.155 | 0.047 | 0.046 | 0.384 | 0.180 | 0.001 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 ## Missed at thresholds 0.5 / 0.3 / 0.2 / 0.1
 
@@ -123,10 +127,12 @@ Only models that return a score. A lower threshold keeps more spans: fewer misse
 
 | model | 0.5 | 0.3 | 0.2 | 0.1 |
 |---|---|---|---|---|
+| pii-shield-onnx | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) |
 | opf-ru | 7 (2.4%) | 7 (2.4%) | 7 (2.4%) | 7 (2.4%) |
 | apararti | 8 (2.8%) | 8 (2.8%) | 8 (2.8%) | 8 (2.8%) |
 | nym-base+homoglyph | 11 (3.8%) | 11 (3.8%) | 11 (3.8%) | 11 (3.8%) |
 | nym-base | 11 (3.8%) | 11 (3.8%) | 11 (3.8%) | 11 (3.8%) |
+| nym-small | 12 (4.2%) | 10 (3.5%) | 10 (3.5%) | 10 (3.5%) |
 | opf-kz-ru | 13 (4.5%) | 11 (3.8%) | 11 (3.8%) | 11 (3.8%) |
 | traciora | 16 (5.6%) | 11 (3.8%) | 11 (3.8%) | 11 (3.8%) |
 | bardsai-eu | 16 (5.6%) | 12 (4.2%) | 11 (3.8%) | 11 (3.8%) |

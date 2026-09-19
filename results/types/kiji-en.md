@@ -326,6 +326,16 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base | eligible | Dates & times | 128/135 | 94.81% | 95.56% | 91.11% |
 | model:nym-base | eligible | Organizations | 226/241 | 93.78% | 95.02% | 92.95% |
 | model:nym-base | eligible | Network identifiers | 106/161 | 65.84% | 95.03% | 61.49% |
+| model:nym-small | eligible | Passwords, keys & tokens | 167/211 | 79.15% | 86.73% | 72.04% |
+| model:nym-small | eligible | Logins & usernames | 46/46 | 100.00% | 100.00% | 97.83% |
+| model:nym-small | eligible | Bank accounts & cards | 142/153 | 92.81% | 93.46% | 90.85% |
+| model:nym-small | eligible | Documents & identifiers | 701/725 | 96.69% | 98.21% | 94.21% |
+| model:nym-small | eligible | People's names | 1882/1926 | 97.72% | 97.98% | 97.72% |
+| model:nym-small | eligible | Phone numbers & email | 467/484 | 96.49% | 99.38% | 95.25% |
+| model:nym-small | eligible | Addresses & locations | 3466/3541 | 97.88% | 98.50% | 98.05% |
+| model:nym-small | eligible | Dates & times | 129/135 | 95.56% | 97.78% | 95.56% |
+| model:nym-small | eligible | Organizations | 214/241 | 88.80% | 92.53% | 88.38% |
+| model:nym-small | eligible | Network identifiers | 111/161 | 68.94% | 96.89% | 67.70% |
 | model:openai-base | eligible | Passwords, keys & tokens | 169/211 | 80.09% | 82.94% | 75.36% |
 | model:openai-base | eligible | Logins & usernames | 46/46 | 100.00% | 100.00% | 100.00% |
 | model:openai-base | eligible | Bank accounts & cards | 132/153 | 86.27% | 87.58% | 86.93% |

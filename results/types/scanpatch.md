@@ -300,6 +300,13 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base | eligible | Dates & times | 572/650 | 88.00% | 94.31% | 86.15% |
 | model:nym-base | eligible | Organizations | 183/277 | 66.06% | 72.56% | 66.43% |
 | model:nym-base | eligible | Network identifiers | 541/1103 | 49.05% | 64.82% | 35.45% |
+| model:nym-small | eligible | Documents & identifiers | 441/655 | 67.33% | 82.14% | 63.82% |
+| model:nym-small | eligible | People's names | 2983/3798 | 78.54% | 97.02% | 95.08% |
+| model:nym-small | eligible | Phone numbers & email | 553/588 | 94.05% | 98.64% | 92.69% |
+| model:nym-small | eligible | Addresses & locations | 969/1637 | 59.19% | 88.76% | 58.28% |
+| model:nym-small | eligible | Dates & times | 557/650 | 85.69% | 92.00% | 82.62% |
+| model:nym-small | eligible | Organizations | 177/277 | 63.90% | 69.68% | 60.29% |
+| model:nym-small | eligible | Network identifiers | 529/1103 | 47.96% | 68.63% | 33.73% |
 | model:openai-base | eligible | Documents & identifiers | 524/655 | 80.00% | 85.50% | 80.00% |
 | model:openai-base | eligible | People's names | 2881/3798 | 75.86% | 78.12% | 72.54% |
 | model:openai-base | eligible | Phone numbers & email | 564/588 | 95.92% | 97.45% | 94.56% |

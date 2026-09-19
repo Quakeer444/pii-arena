@@ -14,6 +14,7 @@ alexen2,ru,pii,nym-base,hf,base,15,1261,1.189532117367169,0.6,1.8,11.8,0.932,0.9
 alexen2,ru,pii,gliner-nvidia,gliner,base,18,1261,1.4274385408406027,0.8,2.1,26.5,0.957,0.986,0.931,False,0,10/40,98
 alexen2,ru,pii,mmbert32k,hf,base,21,1261,1.6653449643140366,1.0,2.4,22.6,0.954,0.989,0.922,False,0,14/40,126
 alexen2,ru,pii,gliner-nvidia-ru,gliner,base,25,1261,1.9825535289452816,1.3,2.8,23.5,0.949,0.991,0.909,False,0,16/40,134
+alexen2,ru,pii,nym-small,onnx,base,38,1261,3.013481363996828,2.1,4.0,10.2,0.943,0.981,0.907,False,0,17/40,194
 alexen2,ru,pii,traciora,opf,base,41,1261,3.2513877874702617,2.3,4.3,25.9,0.941,0.956,0.926,False,0,16/40,191
 alexen2,ru,pii,opf-ru,opf,base,54,1261,4.282315622521808,3.2,5.4,23.5,0.942,0.986,0.901,False,0,19/40,178
 alexen2,ru,pii,pii-shield-onnx,onnx,base,63,1261,4.9960348929421095,3.9,6.2,22.8,0.946,0.988,0.907,False,0,14/40,146
@@ -57,6 +58,7 @@ alrosait,ru,pii,gliner-multi-v21-ru,gliner,base,15,1862,0.8055853920515574,0.4,1
 alrosait,ru,pii,gliner25-fastino-ru,gliner2,base,18,1862,0.966702470461869,0.5,1.4,86.6,0.923,0.908,0.939,False,0,181/340,3418
 alrosait,ru,pii,ner-ru-yqelz,hf,base,20,1862,1.0741138560687433,0.6,1.6,55.0,0.779,0.896,0.689,False,0,171/340,2440
 alrosait,ru,pii,opf-ru,opf,base,22,1862,1.1815252416756177,0.7,1.7,45.6,0.838,0.876,0.804,False,0,210/340,3049
+alrosait,ru,pii,nym-small,onnx,base,28,1862,1.5037593984962405,1.0,2.1,17.8,0.898,0.911,0.886,False,0,164/340,2620
 alrosait,ru,pii,mmbert32k,hf,base,33,1862,1.7722878625134264,1.1,2.4,44.0,0.843,0.924,0.775,False,0,134/340,1840
 alrosait,ru,pii,davlan-xlmr,hf,base,35,1862,1.8796992481203008,1.2,2.6,56.1,0.883,0.94,0.832,False,0,120/340,1971
 alrosait,ru,pii,gliner2-vladlinv,gliner2,base,53,1862,2.8464017185821695,1.9,3.8,90.7,0.957,0.973,0.942,False,0,55/340,895
@@ -121,6 +123,7 @@ ameau01,en,pii,pii-shield-onnx,onnx,base,923,2242,41.1685994647636,39.1,43.1,46.
 ameau01,en,pii,nym-base+cpu-int8,hf,cpu-int8,938,2242,41.83764495985727,40.0,43.9,39.6,0.552,0.656,0.476,False,0,126/702,1791
 ameau01,en,pii,nym-small,onnx,base,994,2242,44.335414808206956,42.4,46.4,38.4,0.538,0.645,0.461,False,0,142/702,2077
 ameau01,en,pii,openai-base,opf,base,1008,2242,44.95985727029438,43.0,47.1,53.7,0.528,0.574,0.489,False,0,94/702,2902
+ameau01,en,pii,openai-base-onnx,onnx,base,1012,2242,45.13826940231936,43.1,47.3,53.3,0.527,0.574,0.488,False,0,93/702,2908
 ameau01,en,pii,bardsai-eu,onnx,base,1013,2242,45.1828724353256,42.8,47.7,44.7,0.518,0.551,0.489,False,0,224/702,3677
 ameau01,en,pii,mmbert32k+cpu-int8,hf,cpu-int8,1033,2242,46.07493309545049,43.8,48.2,19.4,0.415,0.483,0.363,False,0,335/702,3834
 ameau01,en,pii,opf-kz-ru,opf,base,1036,2242,46.208742194469224,44.3,48.2,50.8,0.485,0.486,0.485,False,0,160/702,4547
@@ -133,6 +136,7 @@ ameau01,en,pii,ru-pii-ner,rupii,base,1239,2242,55.26315789473684,52.7,58.0,44.5,
 ameau01,en,pii,ner-ru-yqelz,hf,base,1285,2242,57.314897413024084,55.5,59.2,38.8,0.302,0.249,0.383,False,0,686/702,14496
 ameau01,en,pii,gliner2-hivetrace-uni,gliner2,base,1311,2242,58.47457627118644,56.8,60.2,41.4,0.534,0.852,0.389,False,0,65/702,919
 ameau01,en,pii,gliner2-vladlinv,gliner2,base,1364,2242,60.83853702051739,58.7,63.0,39.1,0.527,0.952,0.364,False,0,7/702,52
+ameau01,en,pii,kalyan-ettin+cpu-int8,hf,cpu-int8,1395,2242,62.22123104371097,60.3,64.4,17.6,0.377,0.584,0.278,False,0,247/702,1541
 ameau01,en,pii,davlan-xlmr,hf,base,1448,2242,64.58519179304193,62.5,66.8,34.3,0.358,0.479,0.285,False,0,254/702,3139
 ameau01,en,pii,davlan-mbert,hf,base,1485,2242,66.23550401427298,64.2,68.5,29.2,0.333,0.41,0.28,False,0,289/702,3913
 ameau01,en,pii,ru-legal-ner+cpu-int8,hf,cpu-int8,1523,2242,67.93041926851026,65.9,69.9,17.1,0.331,0.522,0.243,False,0,184/702,2143
@@ -157,6 +161,7 @@ arthur-passwords,en,secrets,gliner-pii-base,gliner,base,0,280,0.0,0.0,0.0,100.0,
 arthur-passwords,en,secrets,pplx,pplx,base,0,280,0.0,0.0,0.0,100.0,0.295,0.173,1.0,False,0,227/236,7898
 arthur-passwords,en,secrets,openmed-multilingual,hf,base,0,280,0.0,0.0,0.0,100.0,0.235,0.133,1.0,False,0,236/236,11042
 arthur-passwords,en,secrets,gliner-pii-edge,gliner,base,1,280,0.35714285714285715,0.0,1.1,99.6,0.606,0.435,0.996,False,0,99/236,2293
+arthur-passwords,en,secrets,nym-small,onnx,base,2,280,0.7142857142857143,0.0,1.8,99.3,0.309,0.183,0.993,False,0,227/236,7394
 arthur-passwords,en,secrets,gliner25-fastino,gliner2,base,3,280,1.0714285714285714,0.0,2.4,98.9,0.579,0.409,0.989,False,0,126/236,3232
 arthur-passwords,en,secrets,opf-ru,opf,base,3,280,1.0714285714285714,0.0,2.5,98.9,0.37,0.228,0.989,False,0,214/236,5878
 arthur-passwords,en,secrets,gliner2-hivetrace-omni,gliner2,base,4,280,1.4285714285714286,0.3,3.0,98.6,0.622,0.455,0.986,False,0,171/236,3026
@@ -197,6 +202,7 @@ corrupt-hivetrace,ru,pii,nym-base+homoglyph,hf,homoglyph,44,1667,2.6394721055788
 corrupt-hivetrace,ru,pii,nym-base,hf,base,47,1667,2.8194361127774443,2.0,3.6,71.5,0.931,0.973,0.893,False,0,22/378,166
 corrupt-hivetrace,ru,pii,pplx+homoglyph,pplx,homoglyph,58,1667,3.4793041391721657,2.6,4.3,93.8,0.905,0.844,0.975,False,0,48/378,493
 corrupt-hivetrace,ru,pii,pplx,pplx,base,58,1667,3.4793041391721657,2.6,4.3,93.7,0.904,0.842,0.975,False,0,51/378,513
+corrupt-hivetrace,ru,pii,nym-small,onnx,base,82,1667,4.919016196760648,3.9,6.0,62.9,0.901,0.952,0.855,False,0,40/378,569
 corrupt-hivetrace,ru,pii,mmbert32k,hf,base,83,1667,4.979004199160168,4.0,6.1,61.8,0.853,0.843,0.864,False,0,70/378,1383
 corrupt-hivetrace,ru,pii,opf-ru,opf,base,146,1667,8.758248350329934,7.4,10.3,63.5,0.829,0.844,0.815,False,0,172/378,3214
 corrupt-hivetrace,ru,pii,apararti,opf,base,164,1667,9.838032393521296,8.4,11.3,80.4,0.862,0.831,0.896,False,0,75/378,1650
@@ -254,12 +260,14 @@ corrupt-redmadrobot,ru,pii,nym-base+homoglyph,hf,homoglyph,902,5531,16.308081721
 corrupt-redmadrobot,ru,pii,nym-base,hf,base,939,5531,16.977038510215152,15.4,18.7,71.3,0.768,0.794,0.745,False,0,165/371,4342
 corrupt-redmadrobot,ru,pii,mmbert32k,hf,base,1145,5531,20.70150063279696,18.5,23.1,51.0,0.657,0.676,0.64,False,0,256/371,6395
 corrupt-redmadrobot,ru,pii,ru-pii-ner,rupii,base,1189,5531,21.49701681431929,19.4,23.6,72.9,0.701,0.693,0.71,False,0,214/371,13319
+corrupt-redmadrobot,ru,pii,nym-small,onnx,base,1191,5531,21.533176640752124,19.8,23.4,62.3,0.73,0.767,0.695,False,0,180/371,4989
 corrupt-redmadrobot,ru,pii,gliner2-fastino-ru,gliner2,base,1371,5531,24.787561019707105,23.1,26.4,70.2,0.744,0.845,0.664,False,3,136/371,2815
 corrupt-redmadrobot,ru,pii,ru-legal-ner,hf,base,1422,5531,25.70963659374435,23.8,27.8,58.0,0.501,0.413,0.639,False,0,311/371,39558
 corrupt-redmadrobot,ru,pii,ru-legal-ner+homoglyph,hf,homoglyph,1492,5531,26.975230518893508,25.1,29.1,57.3,0.525,0.453,0.624,False,0,295/371,28664
 corrupt-redmadrobot,ru,pii,apararti,opf,base,1498,5531,27.08370999819201,24.9,29.3,60.9,0.661,0.657,0.665,False,0,238/371,8183
 corrupt-redmadrobot,ru,pii,gliner-nvidia-ru,gliner,base,1676,5531,30.301934550714158,28.6,31.9,65.3,0.713,0.813,0.636,False,0,177/371,2823
 corrupt-redmadrobot,ru,pii,gliner2-fastino,gliner2,base,1692,5531,30.59121316217682,28.8,32.4,62.2,0.721,0.871,0.615,False,3,117/371,2497
+corrupt-redmadrobot,ru,pii,pii-shield-onnx,onnx,base,1778,5531,32.146085698788646,30.4,33.9,54.4,0.39,0.272,0.686,False,0,311/371,99976
 corrupt-redmadrobot,ru,pii,opf-kz-ru,opf,base,1801,5531,32.56192370276623,30.4,34.8,54.3,0.627,0.651,0.604,False,0,229/371,7343
 corrupt-redmadrobot,ru,pii,traciora,opf,base,1917,5531,34.65919363587055,32.4,37.0,50.8,0.631,0.676,0.591,False,0,201/371,5775
 corrupt-redmadrobot,ru,pii,opf-ru,opf,base,1929,5531,34.87615259446755,32.9,37.0,42.3,0.552,0.624,0.496,False,0,272/371,13446
@@ -302,10 +310,12 @@ corrupt-redmadrobot,ru,pii,spacy-ru-lg,spacy,base,4130,5531,74.6700415838004,72.
 corrupt-redmadrobot,ru,pii,natasha,natasha,base,4322,5531,78.14138492135238,76.1,80.2,18.8,0.227,0.439,0.153,False,0,107/371,2979
 corrupt-redmadrobot,ru,pii,rules-ru,rules,base,4870,5531,88.04917736394866,86.6,89.4,9.7,0.259,0.862,0.152,False,0,21/371,402
 corrupt-redmadrobot,ru,pii,spacy-alrosait,spacy,base,4912,5531,88.80853371903815,87.1,90.3,10.1,0.14,0.689,0.078,False,0,26/371,396
+corrupt-secrets-issues,en,secrets,pii-shield-onnx,onnx,base,0,288,0.0,0.0,0.0,84.7,0.101,0.053,0.985,False,0,248/250,313358
 corrupt-secrets-issues,en,secrets,opf-ru,opf,base,7,288,2.4305555555555554,0.7,4.6,70.8,0.34,0.208,0.919,False,0,230/250,50933
 corrupt-secrets-issues,en,secrets,apararti,opf,base,8,288,2.7777777777777777,0.7,5.4,72.9,0.335,0.204,0.933,False,0,205/250,46142
 corrupt-secrets-issues,en,secrets,nym-base+homoglyph,hf,homoglyph,11,288,3.8194444444444446,1.5,6.9,63.2,0.357,0.221,0.923,False,0,203/250,37216
 corrupt-secrets-issues,en,secrets,nym-base,hf,base,11,288,3.8194444444444446,1.5,6.9,63.2,0.356,0.221,0.922,False,0,208/250,37384
+corrupt-secrets-issues,en,secrets,nym-small,onnx,base,12,288,4.166666666666667,1.5,7.2,55.9,0.329,0.201,0.921,False,0,211/250,43191
 corrupt-secrets-issues,en,secrets,pplx,pplx,base,12,288,4.166666666666667,1.7,7.3,75.7,0.306,0.183,0.943,False,0,202/250,59676
 corrupt-secrets-issues,en,secrets,pplx+homoglyph,pplx,homoglyph,12,288,4.166666666666667,1.7,7.3,75.7,0.304,0.182,0.943,False,0,202/250,60755
 corrupt-secrets-issues,en,secrets,opf-kz-ru,opf,base,13,288,4.513888888888889,2.1,7.6,73.3,0.319,0.193,0.917,False,0,211/250,48591
@@ -351,10 +361,12 @@ corrupt-secrets-issues,en,secrets,spacy-alrosait,spacy,base,288,288,100.0,100.0,
 creddata,en,secrets,nym-base+sent300,hf,sent300,9,776,1.1597938144329898,0.5,2.0,87.2,0.773,0.687,0.883,False,0,175/727,19441
 creddata,en,secrets,nym-base+ov100,hf,ov100,10,776,1.288659793814433,0.6,2.1,87.4,0.781,0.712,0.864,False,0,175/727,16416
 creddata,en,secrets,nym-base,hf,base,10,776,1.288659793814433,0.6,2.1,87.4,0.779,0.711,0.862,False,0,175/727,16523
+creddata,en,secrets,nym-small,onnx,base,15,776,1.9329896907216495,1.1,3.0,83.8,0.778,0.677,0.914,False,0,213/727,21472
 creddata,en,secrets,opf-kz-ru,opf,base,16,776,2.0618556701030926,1.1,3.2,95.4,0.881,0.8,0.981,False,0,175/727,9945
 creddata,en,secrets,traciora,opf,base,19,776,2.448453608247423,1.4,3.7,91.4,0.916,0.869,0.969,False,0,165/727,6147
 creddata,en,secrets,apararti,opf,base,19,776,2.448453608247423,1.4,3.6,94.2,0.887,0.809,0.98,False,0,209/727,9971
 creddata,en,secrets,opf-ru,opf,base,23,776,2.963917525773196,1.7,4.6,92.7,0.906,0.85,0.971,False,0,283/727,7379
+creddata,en,secrets,pii-shield-onnx,onnx,base,29,776,3.7371134020618557,2.5,5.1,92.1,0.585,0.416,0.986,False,0,420/727,60572
 creddata,en,secrets,opf-ru-v2,opf,base,34,776,4.381443298969073,3.0,5.8,90.9,0.932,0.898,0.97,False,0,76/727,3853
 creddata,en,secrets,opf-ru-v2+sent300,opf,sent300,34,776,4.381443298969073,2.9,5.8,90.6,0.924,0.892,0.959,False,0,73/727,4051
 creddata,en,secrets,opf-ru-v2+ov100,opf,ov100,35,776,4.510309278350515,3.1,5.9,91.0,0.933,0.896,0.975,False,0,78/727,3996
@@ -415,6 +427,7 @@ dialogpii-en,en,pii,gliner-urchade,gliner,base,570,3087,18.464528668610303,15.7,
 dialogpii-en,en,pii,gliner-pii-base,gliner,base,617,3087,19.987042436022026,17.4,22.3,71.6,0.643,0.568,0.74,False,0,1/1,137
 dialogpii-en,en,pii,gliner-pii-edge,gliner,base,624,3087,20.21379980563654,17.5,23.0,71.2,0.723,0.71,0.738,False,0,1/1,67
 dialogpii-en,en,pii,openmed-multilingual,hf,base,660,3087,21.379980563654033,19.4,23.3,56.2,0.603,0.565,0.645,False,0,1/1,171
+dialogpii-en,en,pii,nym-small,onnx,base,680,3087,22.02785876255264,19.5,24.5,58.3,0.757,0.931,0.637,False,0,1/1,102
 dialogpii-en,en,pii,nym-base+sent300,hf,sent300,695,3087,22.513767411726594,20.0,25.0,58.3,0.754,0.919,0.64,False,0,1/1,90
 dialogpii-en,en,pii,gliner25-fastino+ov100,gliner2,ov100,702,3087,22.740524781341108,20.2,25.0,70.1,0.674,0.626,0.73,False,0,1/1,177
 dialogpii-en,en,pii,davlan-xlmr,hf,base,718,3087,23.258827340459995,20.2,26.3,66.4,0.78,0.972,0.651,False,0,1/1,62
@@ -455,6 +468,7 @@ dialogpii-en,en,pii,natasha,natasha,base,2778,3087,89.99028182701652,88.4,91.5,9
 dialogpii-en,en,pii,rules-ru,rules,base,2977,3087,96.43666990605766,95.5,97.5,0.3,0.096,0.996,0.05,False,0,0/1,0
 dialogpii-en,en,pii,fef2-secret-ru,hf,base,3032,3087,98.21833495302883,97.4,98.9,1.2,0.038,0.908,0.019,False,0,0/1,0
 dialogpii-en,en,pii,spacy-alrosait,spacy,base,3083,3087,99.87042436022028,99.6,100.0,0.1,0.002,0.081,0.001,False,0,0/1,0
+dialogpii-multi,multi,pii,pii-shield-onnx,onnx,base,1837,10345,17.757370710488157,16.0,19.8,74.3,0.119,0.064,0.827,False,0,0/0,0
 dialogpii-multi,multi,pii,gliner2-fastino,gliner2,base,2286,10345,22.09763170613823,19.8,24.6,71.7,0.538,0.431,0.714,False,0,0/0,0
 dialogpii-multi,multi,pii,bardsai-eu,onnx,base,2373,10345,22.938617689705172,21.3,24.6,64.7,0.718,0.794,0.656,False,0,0/0,0
 dialogpii-multi,multi,pii,gliner-urchade,gliner,base,2579,10345,24.929917834702756,22.7,27.2,70.5,0.459,0.343,0.694,False,0,0/0,0
@@ -465,6 +479,7 @@ dialogpii-multi,multi,pii,gliner-multi-v21,gliner,base,3094,10345,29.90816819719
 dialogpii-multi,multi,pii,davlan-xlmr,hf,base,3163,10345,30.57515708071532,28.8,32.2,60.6,0.68,0.92,0.539,False,0,0/0,0
 dialogpii-multi,multi,pii,mmbert32k,hf,base,3267,10345,31.580473658772355,30.1,33.3,49.7,0.485,0.451,0.524,False,0,0/0,0
 dialogpii-multi,multi,pii,nuner-zero,gliner,base,3290,10345,31.80280328661189,29.2,34.6,62.7,0.443,0.343,0.626,False,0,0/0,0
+dialogpii-multi,multi,pii,nym-small,onnx,base,3315,10345,32.044465925567906,30.2,34.0,51.4,0.667,0.902,0.529,False,0,0/0,0
 dialogpii-multi,multi,pii,gliner-nvidia,gliner,base,3357,10345,32.45045915901402,29.9,35.1,57.3,0.479,0.418,0.561,False,0,0/0,0
 dialogpii-multi,multi,pii,ner-ru-yqelz,hf,base,3592,10345,34.72208796520058,33.1,36.4,56.3,0.644,0.699,0.597,False,0,0/0,0
 dialogpii-multi,multi,pii,davlan-mbert,hf,base,3662,10345,35.39874335427743,33.5,37.3,55.0,0.635,0.83,0.514,False,0,0/0,0
@@ -505,6 +520,7 @@ factrueval,ru,pii,nym-base+ov100,hf,ov100,839,7966,10.532262113984434,8.9,12.5,8
 factrueval,ru,pii,nym-base,hf,base,903,7966,11.335676625659051,9.6,13.3,87.2,0.792,0.735,0.857,False,0,0/0,0
 factrueval,ru,pii,gliner2-fastino-ru,gliner2,base,970,7966,12.176751192568416,11.0,13.4,87.1,0.764,0.68,0.872,False,0,0/0,0
 factrueval,ru,pii,nym-base+sent300,hf,sent300,1068,7966,13.406979663570173,11.6,15.3,85.0,0.788,0.747,0.833,False,0,0/0,0
+factrueval,ru,pii,nym-small,onnx,base,1090,7966,13.683153401958323,11.9,15.4,84.7,0.79,0.755,0.829,False,0,0/0,0
 factrueval,ru,pii,gliner-pii-edge,gliner,base,1227,7966,15.4029625910118,14.1,16.7,81.5,0.733,0.712,0.756,False,0,0/0,0
 factrueval,ru,pii,gliner2-fastino,gliner2,base,1362,7966,17.097665076575446,15.5,18.6,81.9,0.758,0.699,0.828,False,0,0/0,0
 factrueval,ru,pii,gliner-nvidia+sent300,gliner,sent300,1435,7966,18.014059753954307,16.7,19.5,80.9,0.811,0.825,0.799,False,0,0/0,0
@@ -560,6 +576,7 @@ factrueval,ru,pii,rules-ru,rules,base,7922,7966,99.4476525232237,99.2,99.7,0.6,0
 gretel-multi,multi,pii,gravitee-small,hf,base,728,4484,16.23550401427297,14.5,17.9,79.7,0.716,0.613,0.86,False,0,15/18,1011
 gretel-multi,multi,pii,gliner-nvidia,gliner,base,759,4484,16.92685102586976,15.0,18.9,50.9,0.707,0.655,0.767,False,0,17/18,933
 gretel-multi,multi,pii,gliner2-fastino,gliner2,base,777,4484,17.32827832292596,15.4,19.4,74.5,0.765,0.753,0.778,False,1,13/18,277
+gretel-multi,multi,pii,nym-small,onnx,base,777,4484,17.32827832292596,15.2,19.5,46.8,0.709,0.618,0.831,False,0,14/18,622
 gretel-multi,multi,pii,nym-base,hf,base,796,4484,17.752007136485283,15.7,20.2,45.6,0.728,0.653,0.821,False,0,12/18,748
 gretel-multi,multi,pii,pplx,pplx,base,818,4484,18.24264049955397,16.2,20.6,79.5,0.72,0.622,0.854,False,0,12/18,538
 gretel-multi,multi,pii,gliner2-hivetrace-omni,gliner2,base,827,4484,18.44335414808207,16.4,20.5,78.5,0.804,0.81,0.797,True,0,12/18,251
@@ -587,6 +604,7 @@ gretel-multi,multi,pii,davlan-xlmr,hf,base,1684,4484,37.55575379125781,35.5,39.7
 gretel-multi,multi,pii,davlan-mbert,hf,base,1764,4484,39.33987511150758,37.3,41.4,42.3,0.642,0.83,0.524,False,0,5/18,108
 gretel-multi,multi,pii,ru-pii-ner,rupii,base,1770,4484,39.473684210526315,36.9,42.2,55.9,0.652,0.729,0.589,False,0,8/18,227
 gretel-multi,multi,pii,ru-legal-ner,hf,base,1963,4484,43.7778768956289,41.7,46.0,28.0,0.239,0.16,0.466,False,0,14/18,6152
+gretel-multi,multi,pii,pii-shield-onnx,onnx,base,2068,4484,46.11953612845674,43.5,48.8,34.7,0.286,0.192,0.559,False,0,15/18,5597
 gretel-multi,multi,pii,ner-ru-gherman,hf,base,2132,4484,47.546833184656556,45.3,50.0,13.2,0.536,0.894,0.383,False,0,1/18,31
 gretel-multi,multi,pii,gliner2-vladlinv,gliner2,base,2268,4484,50.579839429081176,47.9,53.4,45.0,0.59,0.855,0.451,False,0,4/18,66
 gretel-multi,multi,pii,ner-ru-yqelz,hf,base,2365,4484,52.74308652988403,50.7,54.9,29.9,0.447,0.499,0.404,False,0,18/18,1556
@@ -608,6 +626,7 @@ hivetrace,ru,pii,gliner-nvidia-ru,gliner,base,108,1667,6.47870425914817,5.3,7.7,
 hivetrace,ru,pii,opf-ru-v2,opf,base,125,1667,7.498500299940012,6.2,8.7,86.6,0.946,0.963,0.93,False,0,15/378,126
 hivetrace,ru,pii,opf-kz-ru,opf,base,125,1667,7.498500299940012,6.3,8.8,83.8,0.889,0.878,0.901,False,0,24/378,299
 hivetrace,ru,pii,openmed-multilingual,hf,base,130,1667,7.798440311937613,6.5,9.1,69.8,0.871,0.922,0.824,False,0,74/378,602
+hivetrace,ru,pii,openai-base-onnx,onnx,base,165,1667,9.898020395920815,8.4,11.4,87.0,0.91,0.89,0.93,False,0,23/378,550
 hivetrace,ru,pii,openai-base,opf,base,165,1667,9.898020395920815,8.5,11.3,86.9,0.909,0.889,0.929,False,0,23/378,564
 hivetrace,ru,pii,ru-pii-ner,rupii,base,166,1667,9.958008398320336,8.4,11.4,88.4,0.856,0.976,0.762,False,0,23/378,136
 hivetrace,ru,pii,traciora,opf,base,170,1667,10.197960407918416,8.8,11.8,85.7,0.928,0.919,0.938,False,0,50/378,520
@@ -642,6 +661,7 @@ hivetrace,ru,pii,fef2-secret-ru+cpu-int8,hf,cpu-int8,690,1667,41.39172165566887,
 hivetrace,ru,pii,gliner25-fastino,gliner2,base,697,1667,41.81163767246551,39.2,44.4,55.8,0.687,0.909,0.551,False,0,43/378,378
 hivetrace,ru,pii,gliner-multi-v21-ru,gliner,base,738,1667,44.271145770845834,42.0,46.5,41.6,0.568,0.803,0.44,False,0,29/378,352
 hivetrace,ru,pii,gliner-multi-v21,gliner,base,799,1667,47.930413917216555,45.6,50.5,37.9,0.535,0.757,0.414,False,0,63/378,1005
+hivetrace,ru,pii,kalyan-ettin+cpu-int8,hf,cpu-int8,843,1667,50.569886022795444,47.8,53.2,32.0,0.648,0.947,0.492,False,0,44/378,248
 hivetrace,ru,pii,gliner-pii-edge+cpu-int8,gliner,cpu-int8,938,1667,56.26874625074985,53.8,58.7,33.5,0.445,0.953,0.291,False,0,19/378,142
 hivetrace,ru,pii,gliner-pii-base,gliner,base,954,1667,57.228554289142174,54.9,59.6,41.0,0.585,0.928,0.427,False,0,39/378,278
 hivetrace,ru,pii,ner-ru-yqelz,hf,base,1037,1667,62.20755848830234,60.0,64.4,26.9,0.422,0.591,0.329,False,0,144/378,1972
@@ -669,8 +689,11 @@ hivetrace,ru,pii,credsweeper,leaks,base,1659,1667,99.52009598080384,99.1,99.8,0.
 hivetrace,ru,pii,trufflehog,leaks,base,1666,1667,99.94001199760048,99.8,100.0,0.1,0.011,1.0,0.006,False,0,0/378,0
 hivetrace,ru,pii,deepsecrets,leaks,base,1666,1667,99.94001199760048,99.8,100.0,0.1,0.011,1.0,0.005,False,0,0/378,0
 hivetrace,ru,pii,gliner-multi-v21+cpu-int8,gliner,cpu-int8,1667,1667,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/378,0
+hivetrace,ru,pii,gliner-multi-v21-ru+cpu-int8,gliner,cpu-int8,1667,1667,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/378,0
 hivetrace,ru,pii,gliner-nvidia+cpu-int8,gliner,cpu-int8,1667,1667,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/378,0
+hivetrace,ru,pii,gliner-nvidia-ru+cpu-int8,gliner,cpu-int8,1667,1667,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/378,0
 hivetrace,ru,pii,gliner-urchade+cpu-int8,gliner,cpu-int8,1667,1667,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/378,0
+hivetrace,ru,pii,gliner-urchade-ru+cpu-int8,gliner,cpu-int8,1667,1667,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/378,0
 jayguard,ru,pii,gliner2-fastino,gliner2,base,126,1195,10.543933054393305,8.2,12.8,77.6,0.585,0.433,0.902,False,0,116/170,2852
 jayguard,ru,pii,gliner2-fastino-ru,gliner2,base,139,1195,11.631799163179917,9.2,14.0,76.9,0.666,0.53,0.893,False,0,92/170,1439
 jayguard,ru,pii,gliner25-fastino+sent300,gliner2,sent300,154,1195,12.887029288702928,10.5,15.2,75.0,0.56,0.409,0.887,False,0,117/170,2795
@@ -700,6 +723,7 @@ jayguard,ru,pii,mmbert32k,hf,base,246,1195,20.585774058577407,17.9,23.3,48.8,0.4
 jayguard,ru,pii,spacy-ru-lg,spacy,base,248,1195,20.753138075313807,18.2,23.4,52.6,0.488,0.369,0.72,False,0,125/170,3700
 jayguard,ru,pii,ru-pii-ner,rupii,base,250,1195,20.92050209205021,18.2,23.5,67.8,0.556,0.43,0.788,False,0,79/170,1651
 jayguard,ru,pii,ner-ru-gherman,hf,base,251,1195,21.00418410041841,18.1,23.9,37.2,0.595,0.512,0.712,False,0,76/170,1005
+jayguard,ru,pii,nym-small,onnx,base,257,1195,21.506276150627617,18.6,24.4,48.8,0.508,0.377,0.779,False,0,112/170,3024
 jayguard,ru,pii,ru-legal-ner+ov100,hf,ov100,259,1195,21.673640167364017,18.8,24.4,59.4,0.461,0.328,0.778,False,0,135/170,4735
 jayguard,ru,pii,ru-legal-ner,hf,base,265,1195,22.175732217573223,19.2,24.9,59.0,0.467,0.334,0.777,False,0,132/170,4534
 jayguard,ru,pii,gliner-nvidia+sent300,gliner,sent300,274,1195,22.92887029288703,20.0,25.6,62.7,0.574,0.462,0.76,False,0,120/170,2252
@@ -736,6 +760,7 @@ jayguard,ru,pii,gliner2-hivetrace-uni-ru,gliner2,base,899,1195,75.23012552301255
 jayguard,ru,pii,rules-ru,rules,base,1194,1195,99.9163179916318,99.7,100.0,0.1,0.0,0.001,0.0,False,0,16/170,957
 jayguard,ru,pii,betterleaks,leaks,base,1195,1195,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/170,0
 jayguard,ru,pii,gitleaks,leaks,base,1195,1195,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/170,0
+kiji-en,en,pii,nym-small,onnx,base,172,7623,2.256329529056802,1.9,2.6,96.1,0.907,0.86,0.96,False,0,0/0,0
 kiji-en,en,pii,nym-base,hf,base,209,7623,2.7417027417027415,2.4,3.2,95.4,0.901,0.859,0.947,False,0,0/0,0
 kiji-en,en,pii,gliner2-fastino,gliner2,base,245,7623,3.2139577594123048,2.8,3.7,96.1,0.878,0.821,0.943,False,8,0/0,0
 kiji-en,en,pii,gliner-nvidia,gliner,base,277,7623,3.633739997376361,3.1,4.3,93.1,0.874,0.833,0.919,False,0,0/0,0
@@ -790,6 +815,7 @@ kiji-multi,multi,pii,gliner-stream-pii,gliner,base,1251,7565,16.53668208856576,1
 kiji-multi,multi,pii,openmed-multilingual,hf,base,1263,7565,16.695307336417713,15.8,17.6,79.5,0.825,0.87,0.785,False,0,0/0,0
 kiji-multi,multi,pii,gliner2-large,gliner2,base,1495,7565,19.762062128222077,18.7,20.9,78.8,0.803,0.787,0.82,False,0,0/0,0
 kiji-multi,multi,pii,kalyan-ettin,hf,base,1516,7565,20.039656311962986,19.0,21.1,71.8,0.752,0.767,0.738,False,0,0/0,0
+kiji-multi,multi,pii,openai-base-onnx,onnx,base,1663,7565,21.982815598149372,20.6,23.3,76.7,0.79,0.805,0.777,False,0,0/0,0
 kiji-multi,multi,pii,openai-base,opf,base,1677,7565,22.16787838730998,20.7,23.5,76.7,0.789,0.804,0.775,False,0,0/0,0
 kiji-multi,multi,pii,apararti,opf,base,1683,7565,22.247191011235955,21.1,23.4,76.0,0.808,0.826,0.791,False,0,0/0,0
 kiji-multi,multi,pii,opf-kz-ru,opf,base,1698,7565,22.445472571050892,21.4,23.6,76.1,0.797,0.804,0.789,False,0,0/0,0
@@ -820,6 +846,7 @@ kiji-multi,multi,pii,ru-legal-ner,hf,base,3482,7565,46.02775941837409,44.7,47.4,
 kiji-multi,multi,pii,gliner2-vladlinv,gliner2,base,3556,7565,47.00594844679445,45.2,48.7,52.6,0.654,0.824,0.542,False,0,0/0,0
 kiji-multi,multi,pii,ner-ru-yqelz,hf,base,3616,7565,47.7990746860542,46.8,48.8,49.8,0.563,0.741,0.454,False,0,0/0,0
 kiji-multi,multi,pii,gliner-pii-base,gliner,base,3782,7565,49.99339061467283,48.7,51.4,49.2,0.664,0.825,0.555,False,0,0/0,0
+kiji-multi,multi,pii,kalyan-ettin+cpu-int8,hf,cpu-int8,3904,7565,51.60608063450099,50.2,53.0,41.6,0.528,0.737,0.411,False,0,0/0,0
 kiji-multi,multi,pii,stanza-ru,stanza,base,4060,7565,53.668208856576335,52.6,54.7,44.5,0.302,0.247,0.387,False,0,0/0,0
 kiji-multi,multi,pii,spacy-ru-lg,spacy,base,6126,7565,80.97818902842036,79.8,82.1,18.9,0.193,0.233,0.165,False,0,0/0,0
 kiji-multi,multi,pii,gliner-pii-edge+cpu-int8,gliner,cpu-int8,6145,7565,81.22934567085261,80.2,82.3,17.5,0.294,0.701,0.186,False,0,0/0,0
@@ -860,6 +887,7 @@ leak-museum,en,secrets,gliner25-fastino,gliner2,base,46,101,45.54455445544554,33
 leak-museum,en,secrets,gliner25-fastino+nochunk,gliner2,nochunk,47,101,46.53465346534654,34.2,58.7,51.5,0.45,0.398,0.516,False,0,32/45,1807
 leak-museum,en,secrets,gliner-urchade,gliner,base,51,101,50.495049504950494,39.1,61.1,45.5,0.283,0.208,0.444,False,0,39/45,2987
 leak-museum,en,secrets,ru-legal-ner,hf,base,51,101,50.495049504950494,40.0,60.4,26.7,0.276,0.248,0.312,False,0,26/45,1759
+leak-museum,en,secrets,nym-small,onnx,base,52,101,51.48514851485149,39.5,62.9,38.6,0.401,0.404,0.399,False,0,13/45,1311
 leak-museum,en,secrets,nym-base+sent300,hf,sent300,52,101,51.48514851485149,40.2,62.6,35.6,0.357,0.377,0.338,False,0,15/45,1239
 leak-museum,en,secrets,ru-legal-ner+ov100,hf,ov100,52,101,51.48514851485149,40.5,61.5,25.7,0.264,0.23,0.31,False,0,28/45,1922
 leak-museum,en,secrets,ru-legal-ner+sent300,hf,sent300,52,101,51.48514851485149,42.1,60.7,24.8,0.223,0.175,0.306,False,0,38/45,2583
@@ -889,6 +917,7 @@ leak-museum,en,secrets,spacy-alrosait,spacy,base,101,101,100.0,100.0,100.0,0.0,0
 leaky-repo,en,secrets,pplx,pplx,base,7,95,7.368421052631579,2.2,15.5,85.3,0.713,0.675,0.755,False,0,11/16,998
 leaky-repo,en,secrets,opf-ru,opf,base,8,95,8.421052631578947,3.5,15.3,80.0,0.868,0.786,0.969,False,0,14/16,997
 leaky-repo,en,secrets,openmed-multilingual,hf,base,9,95,9.473684210526315,4.2,18.6,58.9,0.739,0.645,0.867,False,0,15/16,2049
+leaky-repo,en,secrets,nym-small,onnx,base,11,95,11.578947368421053,4.4,20.4,60.0,0.746,0.636,0.902,False,0,14/16,2086
 leaky-repo,en,secrets,openmed-nemotron,hf,base,14,95,14.736842105263158,7.4,24.1,54.7,0.735,0.641,0.863,False,0,14/16,1935
 leaky-repo,en,secrets,apararti,opf,base,15,95,15.789473684210526,8.0,25.3,70.5,0.85,0.769,0.951,False,0,12/16,1200
 leaky-repo,en,secrets,opf-kz-ru,opf,base,16,95,16.842105263157894,9.1,26.8,75.8,0.841,0.753,0.952,False,0,12/16,1150
@@ -1000,6 +1029,7 @@ nemotron-pii,en,pii,pplx+sent300,pplx,sent300,1069,9391,11.383239271643063,10.4,
 nemotron-pii,en,pii,pplx+ov100,pplx,ov100,1103,9391,11.745288041742093,10.6,12.9,86.5,0.828,0.827,0.829,False,0,5/5,114
 nemotron-pii,en,pii,pplx,pplx,base,1149,9391,12.235118730699606,11.1,13.4,86.2,0.829,0.831,0.828,False,0,5/5,114
 nemotron-pii,en,pii,mmbert32k,hf,base,1277,9391,13.598125865190076,12.6,14.7,62.0,0.763,0.819,0.715,False,0,4/5,51
+nemotron-pii,en,pii,kalyan-ettin+cpu-int8,hf,cpu-int8,1485,9391,15.813012458737088,14.8,16.9,64.7,0.754,0.765,0.744,True,0,5/5,178
 nemotron-pii,en,pii,mmbert32k+nochunk,hf,nochunk,1601,9391,17.048237674369076,15.8,18.4,56.8,0.728,0.806,0.663,False,0,4/5,51
 nemotron-pii,en,pii,gliner-pii-base,gliner,base,1752,9391,18.656160153338302,17.4,19.9,78.5,0.793,0.92,0.696,False,0,3/5,18
 nemotron-pii,en,pii,gliner-pii-edge,gliner,base,1812,9391,19.29506974763071,18.2,20.5,73.6,0.808,0.948,0.705,False,0,1/5,10
@@ -1014,6 +1044,7 @@ nemotron-pii,en,pii,gliner25-fastino+ov100,gliner2,ov100,2511,9391,26.7383665211
 nemotron-pii,en,pii,gliner25-fastino,gliner2,base,2601,9391,27.69673091257587,26.4,29.1,70.4,0.763,0.936,0.643,False,0,1/5,6
 nemotron-pii,en,pii,gliner-urchade,gliner,base,2612,9391,27.813864338196144,26.3,29.2,69.9,0.761,0.862,0.682,False,0,0/5,0
 nemotron-pii,en,pii,opf-ru,opf,base,2628,9391,27.984240230007455,26.4,29.8,62.4,0.701,0.856,0.593,False,0,2/5,29
+nemotron-pii,en,pii,openai-base-onnx,onnx,base,2782,9391,29.6241081886913,27.8,31.7,68.8,0.719,0.852,0.622,False,0,2/5,42
 nemotron-pii,en,pii,openai-base,opf,base,2792,9391,29.73059312107337,28.0,31.8,68.6,0.718,0.852,0.621,False,0,2/5,42
 nemotron-pii,en,pii,gliner25-fastino+sent300,gliner2,sent300,2824,9391,30.071344904695984,28.7,31.6,67.8,0.722,0.921,0.594,False,0,1/5,6
 nemotron-pii,en,pii,mmbert32k+cpu-int8,hf,cpu-int8,3019,9391,32.14780108614631,30.8,33.5,34.3,0.594,0.773,0.482,False,0,4/5,37
@@ -1035,13 +1066,16 @@ nemotron-pii,en,pii,ru-legal-ner+ov100,hf,ov100,4989,9391,53.125332765413695,51.
 nemotron-pii,en,pii,ner-ru-yqelz,hf,base,4995,9391,53.18922372484293,51.9,54.6,40.5,0.379,0.478,0.314,False,0,4/5,240
 nemotron-pii,en,pii,davlan-mbert+cpu-int8,hf,cpu-int8,5169,9391,55.04206154829092,53.4,56.7,41.1,0.421,0.874,0.278,False,0,0/5,0
 nemotron-pii,en,pii,ner-ru-gherman,hf,base,5651,9391,60.17463528910659,58.5,62.0,31.9,0.305,0.977,0.181,False,0,0/5,0
+nemotron-pii,en,pii,ner-ru-gherman-onnx,onnx,base,5685,9391,60.53668405920562,58.8,62.4,31.8,0.302,0.979,0.179,False,0,0/5,0
 nemotron-pii,en,pii,ner-ru-gherman+cpu-int8,hf,cpu-int8,5920,9391,63.03907997018422,61.4,64.8,30.7,0.281,0.978,0.164,False,0,0/5,0
 nemotron-pii,en,pii,davlan-xlmr+cpu-int8,hf,cpu-int8,6160,9391,65.59471834735385,63.9,67.3,30.2,0.334,0.902,0.205,False,0,0/5,0
 nemotron-pii,en,pii,rules-ru,rules,base,7630,9391,81.24800340751784,80.2,82.2,18.1,0.58,0.988,0.41,False,0,0/5,0
+nemotron-pii,en,pii,gliner-pii-edge+cpu-int8,gliner,cpu-int8,7696,9391,81.95080396123949,81.1,82.9,16.5,0.222,0.878,0.127,False,0,0/5,0
 nemotron-pii,en,pii,fef2-secret-ru,hf,base,7727,9391,82.2809072516239,81.2,83.4,14.9,0.322,0.965,0.193,False,0,0/5,0
 nemotron-pii,en,pii,fef2-secret-ru+cpu-int8,hf,cpu-int8,7891,9391,84.02726014268981,83.0,85.0,11.9,0.276,0.971,0.161,False,0,0/5,0
 nemotron-pii,en,pii,spacy-ru-lg,spacy,base,8341,9391,88.81908209988286,87.9,89.8,10.9,0.104,0.16,0.077,False,0,1/5,7
 nemotron-pii,en,pii,natasha,natasha,base,8668,9391,92.30113938877649,91.5,93.2,7.3,0.077,0.545,0.041,False,0,0/5,0
+nemotron-pii,en,pii,gliner-pii-base+cpu-int8,gliner,cpu-int8,9135,9391,97.27398573101907,96.9,97.6,2.7,0.038,0.988,0.02,False,0,0/5,0
 nemotron-pii,en,pii,spacy-alrosait,spacy,base,9390,9391,99.98935150676179,100.0,100.0,0.0,0.0,1.0,0.0,False,0,0/5,0
 nemotron-pii,en,pii,gliner-multi-v21+cpu-int8,gliner,cpu-int8,9391,9391,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/5,0
 nemotron-pii,en,pii,gliner-nvidia+cpu-int8,gliner,cpu-int8,9391,9391,100.0,100.0,100.0,0.0,0.0,0.0,0.0,True,0,0/5,0
@@ -1055,6 +1089,7 @@ nerel,ru,pii,fef2-secret-ru,hf,base,2662,24369,10.923714555377734,10.3,11.5,83.1
 nerel,ru,pii,davlan-xlmr,hf,base,2720,24369,11.161721859739833,10.6,11.8,84.1,0.897,0.975,0.83,False,0,0/0,0
 nerel,ru,pii,davlan-mbert,hf,base,2739,24369,11.239689769789488,10.6,11.8,83.6,0.891,0.977,0.819,False,0,0/0,0
 nerel,ru,pii,gliner2-fastino-ru,gliner2,base,2743,24369,11.256104066642045,10.7,11.8,84.9,0.817,0.778,0.86,False,0,0/0,0
+nerel,ru,pii,nym-small,onnx,base,2810,24369,11.531043538922402,10.7,12.4,76.4,0.739,0.671,0.823,False,0,0/0,0
 nerel,ru,pii,spacy-ru-lg,spacy,base,2858,24369,11.728015101153105,11.0,12.4,82.1,0.881,0.953,0.819,False,0,0/0,0
 nerel,ru,pii,natasha,natasha,base,3099,24369,12.716976486519759,12.0,13.5,81.4,0.88,0.965,0.808,False,0,0/0,0
 nerel,ru,pii,nym-base+sent300,hf,sent300,3109,24369,12.758012228651156,11.9,13.6,74.5,0.734,0.667,0.816,False,0,0/0,0
@@ -1089,6 +1124,7 @@ nerel,ru,pii,gliner2-hivetrace-uni,gliner2,base,12237,24369,50.215437646189834,4
 nerel,ru,pii,mmbert32k,hf,base,12467,24369,51.15925971521195,50.0,52.4,34.1,0.542,0.812,0.407,False,0,0/0,0
 nerel,ru,pii,gliner-urchade-ru,gliner,base,13036,24369,53.49419344248841,52.4,54.7,43.4,0.527,0.775,0.399,False,0,0/0,0
 nerel,ru,pii,openmed-nemotron,hf,base,13198,24369,54.15897246501703,53.1,55.3,25.0,0.468,0.589,0.388,False,0,0/0,0
+nerel,ru,pii,pii-shield-onnx,onnx,base,14749,24369,60.52361606959662,59.4,61.7,31.0,0.485,0.748,0.359,False,0,0/0,0
 nerel,ru,pii,opf-ru,opf,base,15177,24369,62.27994583282039,61.2,63.3,29.6,0.495,0.853,0.349,False,0,0/0,0
 nerel,ru,pii,gliner2-vladlinv-ru,gliner2,base,15224,24369,62.47281382083795,61.3,63.6,36.0,0.547,0.969,0.381,False,0,0/0,0
 nerel,ru,pii,gliner2-vladlinv,gliner2,base,15259,24369,62.61643891829784,61.4,63.8,36.0,0.548,0.982,0.38,False,0,0/0,0
@@ -1149,9 +1185,11 @@ nym-en,en,pii,spacy-ru-lg,spacy,base,3190,3584,89.00669642857143,87.6,90.3,9.9,0
 nym-en,en,pii,rules-ru,rules,base,3201,3584,89.31361607142857,88.3,90.3,10.4,0.302,0.945,0.18,False,0,0/149,0
 nym-en,en,pii,natasha,natasha,base,3215,3584,89.70424107142857,88.4,91.0,9.3,0.137,0.678,0.076,False,0,2/149,18
 nym-en,en,pii,spacy-alrosait,spacy,base,3584,3584,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/149,0
+nym-multi,multi,pii,nym-small,onnx,base,2,8169,0.02448280083241523,0.0,0.1,99.9,0.999,0.999,1.0,True,0,0/7,0
 nym-multi,multi,pii,nym-base,hf,base,2,8169,0.02448280083241523,0.0,0.1,100.0,0.999,0.999,1.0,True,0,0/7,0
 nym-multi,multi,pii,pplx,pplx,base,227,8169,2.7787978944791285,2.4,3.2,96.2,0.933,0.904,0.964,False,0,5/7,29
 nym-multi,multi,pii,mmbert32k,hf,base,571,8169,6.989839637654548,6.4,7.6,79.1,0.857,0.82,0.896,False,0,5/7,31
+nym-multi,multi,pii,pii-shield-onnx,onnx,base,1060,8169,12.975884441180071,11.8,14.1,79.2,0.455,0.308,0.875,False,0,1/7,10
 nym-multi,multi,pii,openmed-multilingual,hf,base,1243,8169,15.216060717346064,14.4,16.1,77.4,0.869,0.922,0.821,False,0,7/7,37
 nym-multi,multi,pii,bardsai-eu,onnx,base,1272,8169,15.571061329416086,14.7,16.4,76.8,0.864,0.903,0.828,False,0,1/7,5
 nym-multi,multi,pii,apararti,opf,base,1606,8169,19.65968906842943,18.6,20.7,76.0,0.859,0.878,0.841,False,0,3/7,21
@@ -1197,6 +1235,7 @@ nym-ru,ru,pii,mmbert32k,hf,base,806,9497,8.48689059703064,7.9,9.1,63.4,0.884,0.9
 nym-ru,ru,pii,opf-ru,opf,base,1096,9497,11.540486469411393,10.9,12.2,75.7,0.894,0.952,0.842,False,0,0/0,0
 nym-ru,ru,pii,apararti,opf,base,1097,9497,11.551016110350638,10.9,12.3,82.0,0.862,0.85,0.875,False,0,0/0,0
 nym-ru,ru,pii,openmed-multilingual,hf,base,1127,9497,11.866905338527957,11.2,12.5,76.8,0.881,0.956,0.818,False,0,0/0,0
+nym-ru,ru,pii,openai-base-onnx,onnx,base,1170,9497,12.319679898915448,11.6,13.1,82.4,0.852,0.828,0.877,False,0,0/0,0
 nym-ru,ru,pii,openai-base,opf,base,1171,9497,12.33020953985469,11.6,13.1,82.4,0.852,0.828,0.877,False,0,0/0,0
 nym-ru,ru,pii,bardsai-eu,onnx,base,1320,9497,13.899126039802043,13.2,14.6,74.2,0.872,0.903,0.844,False,0,0/0,0
 nym-ru,ru,pii,gliner-nvidia,gliner,base,1343,9497,14.141307781404654,13.4,15.0,82.2,0.891,0.932,0.854,False,0,0/0,0
@@ -1237,6 +1276,8 @@ nym-ru,ru,pii,gliner-multi-v21,gliner,base,5417,9497,57.03906496788459,55.8,58.2
 nym-ru,ru,pii,gliner-pii-base,gliner,base,5725,9497,60.28219437717174,59.3,61.3,35.1,0.58,0.926,0.422,False,0,0/0,0
 nym-ru,ru,pii,ner-ru-yqelz,hf,base,5857,9497,61.67210698115194,60.8,62.6,29.8,0.442,0.682,0.327,False,0,0/0,0
 nym-ru,ru,pii,ner-ru-gherman,hf,base,5902,9497,62.145940823417924,61.1,63.2,25.4,0.441,0.947,0.287,False,0,0/0,0
+nym-ru,ru,pii,ner-ru-gherman-onnx,onnx,base,5925,9497,62.38812256502053,61.3,63.4,25.3,0.437,0.947,0.284,False,0,0/0,0
+nym-ru,ru,pii,kalyan-ettin+cpu-int8,hf,cpu-int8,5948,9497,62.630304306623145,61.5,63.8,20.3,0.43,0.914,0.281,False,0,0/0,0
 nym-ru,ru,pii,gliner2-hivetrace-uni-ru,gliner2,base,5966,9497,62.819837843529534,61.8,63.8,35.6,0.462,0.956,0.304,False,0,0/0,0
 nym-ru,ru,pii,spacy-ru-lg,spacy,base,6015,9497,63.33579024955249,62.4,64.2,30.5,0.442,0.777,0.309,False,0,0/0,0
 nym-ru,ru,pii,ner-ru-gherman+cpu-int8,hf,cpu-int8,6042,9497,63.620090554912075,62.6,64.7,24.8,0.426,0.959,0.274,False,0,0/0,0
@@ -1252,11 +1293,15 @@ nym-ru,ru,pii,gliner-pii-base+cpu-int8,gliner,cpu-int8,9496,9497,99.989470359060
 nym-ru,ru,pii,betterleaks,leaks,base,9497,9497,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
 nym-ru,ru,pii,gitleaks,leaks,base,9497,9497,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
 nym-ru,ru,pii,gliner-multi-v21+cpu-int8,gliner,cpu-int8,9497,9497,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
+nym-ru,ru,pii,gliner-multi-v21-ru+cpu-int8,gliner,cpu-int8,9497,9497,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
 nym-ru,ru,pii,gliner-nvidia+cpu-int8,gliner,cpu-int8,9497,9497,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
+nym-ru,ru,pii,gliner-nvidia-ru+cpu-int8,gliner,cpu-int8,9497,9497,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
 nym-ru,ru,pii,gliner-urchade+cpu-int8,gliner,cpu-int8,9497,9497,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
+nym-ru,ru,pii,gliner-urchade-ru+cpu-int8,gliner,cpu-int8,9497,9497,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
 privy,en,pii,gravitee-small,hf,base,8,1899,0.421274354923644,0.2,0.8,99.2,0.878,0.783,0.997,False,0,256/530,2577
 privy,en,pii,nym-base,hf,base,69,1899,3.6334913112164298,2.8,4.6,83.4,0.47,0.312,0.952,False,0,413/530,15527
 privy,en,pii,pplx,pplx,base,96,1899,5.055292259083728,4.0,6.2,91.8,0.419,0.27,0.93,False,0,402/530,18955
+privy,en,pii,nym-small,onnx,base,128,1899,6.740389678778304,5.6,8.0,79.1,0.46,0.307,0.923,False,0,401/530,15032
 privy,en,pii,openmed-multilingual,hf,base,321,1899,16.903633491311215,15.0,19.1,82.3,0.698,0.648,0.756,True,0,313/530,3962
 privy,en,pii,gliner-nvidia,gliner,base,330,1899,17.377567140600316,15.6,19.2,78.8,0.545,0.409,0.817,False,0,437/530,9914
 privy,en,pii,nuner-zero,gliner,base,380,1899,20.01053185887309,17.9,22.0,76.7,0.786,0.731,0.851,False,0,191/530,2926
@@ -1267,6 +1312,7 @@ privy,en,pii,apararti,opf,base,464,1899,24.433912585571353,22.3,26.7,69.2,0.419,
 privy,en,pii,opf-kz-ru,opf,base,473,1899,24.907846234860454,22.8,27.1,68.5,0.417,0.288,0.756,False,0,351/530,13782
 privy,en,pii,opf-ru,opf,base,480,1899,25.276461295418642,23.3,27.5,59.9,0.362,0.248,0.667,False,0,410/530,15693
 privy,en,pii,kalyan-ettin,hf,base,481,1899,25.329120589784097,23.3,27.4,55.5,0.547,0.455,0.686,False,0,339/530,6464
+privy,en,pii,pii-shield-onnx,onnx,base,529,1899,27.85676671932596,25.4,30.4,63.9,0.108,0.058,0.711,False,0,421/530,76265
 privy,en,pii,openai-base,opf,base,592,1899,31.17430226434966,28.9,33.7,63.8,0.418,0.299,0.692,False,0,283/530,11713
 privy,en,pii,gliner2-large,gliner2,base,596,1899,31.38493944181148,29.3,33.6,64.6,0.562,0.488,0.662,False,7,317/530,5822
 privy,en,pii,gliner-stream-pii,gliner,base,607,1899,31.96419167983149,29.9,34.0,66.1,0.746,0.874,0.652,False,0,135/530,1252
@@ -1301,6 +1347,8 @@ redact-multi,multi,pii,gliner2-fastino,gliner2,base,3535,22864,15.46098670398880
 redact-multi,multi,pii,gliner2-hivetrace-omni,gliner2,base,3652,22864,15.972708187543736,14.9,17.1,78.4,0.717,0.73,0.705,False,0,0/0,0
 redact-multi,multi,pii,gliner-nvidia,gliner,base,3960,22864,17.319804058782367,16.1,18.6,62.2,0.623,0.572,0.685,False,0,0/0,0
 redact-multi,multi,pii,nym-base,hf,base,4132,22864,18.072078376487053,17.0,19.1,59.4,0.662,0.653,0.671,False,0,0/0,0
+redact-multi,multi,pii,pii-shield-onnx,onnx,base,4216,22864,18.439468159552135,16.9,20.1,70.2,0.329,0.208,0.79,False,0,0/0,0
+redact-multi,multi,pii,nym-small,onnx,base,4726,22864,20.67004898530441,19.3,22.0,57.9,0.657,0.662,0.653,False,0,0/0,0
 redact-multi,multi,pii,nuner-zero,gliner,base,4925,22864,21.540412876137157,20.0,23.1,73.4,0.662,0.602,0.735,False,0,0/0,0
 redact-multi,multi,pii,openmed-multilingual,hf,base,5105,22864,22.327676696990903,21.1,23.5,54.5,0.614,0.594,0.634,False,0,0/0,0
 redact-multi,multi,pii,gliner2-hivetrace-uni,gliner2,base,5321,22864,23.272393282015397,22.0,24.6,72.4,0.689,0.747,0.64,False,0,0/0,0
@@ -1346,6 +1394,7 @@ redact-ru,ru,pii,gliner2-hivetrace-omni,gliner2,base,1432,9230,15.51462621885157
 redact-ru,ru,pii,nym-base+ov100,hf,ov100,1440,9230,15.601300108342361,14.4,16.8,60.8,0.675,0.646,0.708,False,0,1/1,287
 redact-ru,ru,pii,nym-base,hf,base,1454,9230,15.752979414951247,14.5,17.1,60.6,0.674,0.645,0.707,False,0,1/1,270
 redact-ru,ru,pii,apararti,opf,base,1555,9230,16.84723726977248,15.6,18.2,77.5,0.648,0.563,0.764,False,0,1/1,370
+redact-ru,ru,pii,nym-small,onnx,base,1590,9230,17.22643553629469,15.8,18.8,59.9,0.675,0.653,0.699,False,0,1/1,249
 redact-ru,ru,pii,nuner-zero,gliner,base,1646,9230,17.833152762730226,16.3,19.6,73.9,0.682,0.618,0.761,False,0,1/1,369
 redact-ru,ru,pii,openai-base,opf,base,1785,9230,19.33911159263272,17.9,20.8,76.9,0.654,0.587,0.739,False,0,1/1,338
 redact-ru,ru,pii,opf-ru,opf,base,1805,9230,19.555796316359697,18.2,21.1,63.1,0.651,0.652,0.651,False,0,1/1,255
@@ -1369,6 +1418,7 @@ redact-ru,ru,pii,opf-ru-v2,opf,base,2563,9230,27.768147345612135,26.0,29.6,63.4,
 redact-ru,ru,pii,gliner-nvidia-ru,gliner,base,2571,9230,27.854821235102925,26.2,29.6,50.1,0.537,0.543,0.531,False,0,1/1,262
 redact-ru,ru,pii,kalyan-ettin,hf,base,2618,9230,28.364030335861322,26.8,30.3,44.9,0.533,0.538,0.528,False,0,1/1,226
 redact-ru,ru,pii,traciora,opf,base,2752,9230,29.81581798483207,28.1,31.7,62.6,0.707,0.79,0.639,False,0,1/1,170
+redact-ru,ru,pii,pii-shield-onnx,onnx,base,2760,9230,29.90249187432286,28.3,31.6,55.5,0.535,0.463,0.632,False,0,1/1,190
 redact-ru,ru,pii,gliner25-fastino-ru,gliner2,base,2858,9230,30.96424702058505,28.9,33.2,64.1,0.696,0.76,0.643,False,0,1/1,269
 redact-ru,ru,pii,gliner25-fastino+nochunk,gliner2,nochunk,2877,9230,31.17009750812568,29.1,33.4,64.8,0.707,0.797,0.636,False,0,1/1,204
 redact-ru,ru,pii,fef2-secret-ru,hf,base,2934,9230,31.78764897074756,30.0,33.7,54.3,0.629,0.746,0.543,False,0,1/1,209
@@ -1413,6 +1463,7 @@ redmadrobot,ru,pii,opf-kz-ru,opf,base,1502,5516,27.22987672226251,24.9,29.5,64.5
 redmadrobot,ru,pii,gliner2-hivetrace-omni-ru,gliner2,base,1543,5516,27.97316896301668,26.5,29.6,66.3,0.755,0.88,0.662,False,3,114/371,1697
 redmadrobot,ru,pii,opf-ru,opf,base,1568,5516,28.426395939086294,26.5,30.3,52.8,0.663,0.797,0.567,False,0,213/371,4038
 redmadrobot,ru,pii,openai-base,opf,base,1623,5516,29.423495286439447,27.1,31.9,65.2,0.68,0.716,0.647,False,0,133/371,3047
+redmadrobot,ru,pii,openai-base-onnx,onnx,base,1631,5516,29.568527918781726,27.2,32.1,65.2,0.679,0.716,0.646,False,0,131/371,3030
 redmadrobot,ru,pii,gliner-stream-pii,gliner,base,1690,5516,30.638143582306018,28.8,32.8,50.8,0.651,0.834,0.535,False,0,266/371,2322
 redmadrobot,ru,pii,traciora,opf,base,1719,5516,31.163886874546773,29.0,33.4,59.3,0.715,0.81,0.639,False,0,130/371,2514
 redmadrobot,ru,pii,gliner2-hivetrace-omni,gliner2,base,1741,5516,31.562726613488035,30.1,33.3,63.5,0.731,0.914,0.609,False,1,93/371,1335
@@ -1439,6 +1490,7 @@ redmadrobot,ru,pii,gliner2-vladlinv,gliner2,base,2763,5516,50.090645395213926,47
 redmadrobot,ru,pii,stanza-ru,stanza,base,2788,5516,50.54387237128354,47.8,53.6,43.0,0.361,0.361,0.362,False,0,288/371,20745
 redmadrobot,ru,pii,gliner-pii-base,gliner,base,2882,5516,52.2480058013053,50.2,54.3,44.1,0.578,0.876,0.431,False,0,93/371,1167
 redmadrobot,ru,pii,presidio-ru,presidio,base,3026,5516,54.85859318346628,52.4,57.3,41.7,0.521,0.631,0.444,False,0,204/371,7319
+redmadrobot,ru,pii,ner-ru-gherman-onnx,onnx,base,3073,5516,55.71065989847716,52.9,58.7,34.9,0.462,0.948,0.306,False,0,40/371,409
 redmadrobot,ru,pii,ner-ru-gherman,hf,base,3073,5516,55.71065989847716,52.9,58.7,35.0,0.462,0.948,0.306,False,0,39/371,421
 redmadrobot,ru,pii,gliner25-fastino,gliner2,base,3088,5516,55.982596084118924,53.6,58.4,42.2,0.562,0.83,0.424,False,0,118/371,3475
 redmadrobot,ru,pii,ner-ru-gherman+cpu-int8,hf,cpu-int8,3153,5516,57.160986221899925,54.4,60.1,33.3,0.449,0.947,0.294,False,0,33/371,383
@@ -1451,6 +1503,7 @@ redmadrobot,ru,pii,spacy-ru-lg,spacy,base,3628,5516,65.77229876722262,63.2,68.3,
 redmadrobot,ru,pii,natasha,natasha,base,3656,5516,66.27991298042059,63.5,68.9,30.4,0.36,0.657,0.247,False,0,124/371,2553
 redmadrobot,ru,pii,gliner2-hivetrace-uni-ru,gliner2,base,3725,5516,67.53081943437273,66.0,69.1,31.5,0.384,0.867,0.247,False,0,51/371,593
 redmadrobot,ru,pii,davlan-xlmr+cpu-int8,hf,cpu-int8,3734,5516,67.69398114575779,64.7,70.7,28.4,0.371,0.804,0.241,False,0,45/371,583
+redmadrobot,ru,pii,kalyan-ettin+cpu-int8,hf,cpu-int8,4010,5516,72.69760696156635,70.6,74.6,17.5,0.317,0.761,0.2,False,0,196/371,1273
 redmadrobot,ru,pii,spacy-alrosait,spacy,base,4052,5516,73.4590282813633,70.7,75.7,24.4,0.314,0.806,0.195,False,0,42/371,648
 redmadrobot,ru,pii,gliner-pii-edge+cpu-int8,gliner,cpu-int8,4195,5516,76.05148658448151,74.6,77.5,19.1,0.318,0.749,0.202,False,0,89/371,920
 redmadrobot,ru,pii,rules-ru,rules,base,4657,5516,84.42712110224801,83.1,85.6,14.6,0.36,0.893,0.226,False,0,21/371,384
@@ -1458,11 +1511,15 @@ redmadrobot,ru,pii,gliner-pii-base+cpu-int8,gliner,cpu-int8,5499,5516,99.6918056
 redmadrobot,ru,pii,betterleaks,leaks,base,5516,5516,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/371,0
 redmadrobot,ru,pii,gitleaks,leaks,base,5516,5516,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/371,0
 redmadrobot,ru,pii,gliner-multi-v21+cpu-int8,gliner,cpu-int8,5516,5516,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/371,0
+redmadrobot,ru,pii,gliner-multi-v21-ru+cpu-int8,gliner,cpu-int8,5516,5516,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/371,0
 redmadrobot,ru,pii,gliner-nvidia+cpu-int8,gliner,cpu-int8,5516,5516,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/371,0
+redmadrobot,ru,pii,gliner-nvidia-ru+cpu-int8,gliner,cpu-int8,5516,5516,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/371,0
 redmadrobot,ru,pii,gliner-urchade+cpu-int8,gliner,cpu-int8,5516,5516,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/371,0
+redmadrobot,ru,pii,gliner-urchade-ru+cpu-int8,gliner,cpu-int8,5516,5516,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/371,0
 rubai-ru,ru,pii,pplx,pplx,base,16,3458,0.4626951995373048,0.2,0.7,10.7,0.941,0.924,0.96,False,0,0/0,0
 rubai-ru,ru,pii,nym-base,hf,base,56,3458,1.6194331983805668,1.2,2.1,5.3,0.73,0.936,0.598,False,0,0/0,0
 rubai-ru,ru,pii,mmbert32k,hf,base,56,3458,1.6194331983805668,1.2,2.1,5.7,0.651,0.911,0.506,False,0,0/0,0
+rubai-ru,ru,pii,nym-small,onnx,base,60,3458,1.735106998264893,1.3,2.2,5.0,0.716,0.953,0.574,False,0,0/0,0
 rubai-ru,ru,pii,gliner25-fastino,gliner2,base,71,3458,2.0532099479467902,1.6,2.6,7.9,0.957,0.962,0.952,False,0,0/0,0
 rubai-ru,ru,pii,gliner25-fastino-ru,gliner2,base,75,3458,2.1688837478311163,1.7,2.7,7.9,0.961,0.972,0.951,False,0,0/0,0
 rubai-ru,ru,pii,opf-ru,opf,base,83,3458,2.4002313475997687,1.9,3.0,5.6,0.639,0.9,0.496,False,0,0/0,0
@@ -1477,6 +1534,7 @@ rubai-ru,ru,pii,opf-kz-ru,opf,base,242,3458,6.9982648930017355,6.2,7.9,4.2,0.915
 rubai-ru,ru,pii,openmed-multilingual,hf,base,251,3458,7.258530942741469,6.4,8.1,4.0,0.633,0.941,0.477,False,0,0/0,0
 rubai-ru,ru,pii,ru-legal-ner,hf,base,347,3458,10.034702139965297,9.1,11.1,6.7,0.697,0.855,0.588,False,0,0/0,0
 rubai-ru,ru,pii,gliner2-large,gliner2,base,360,3458,10.410641989589358,9.5,11.3,6.4,0.75,0.887,0.65,False,0,0/0,0
+rubai-ru,ru,pii,pii-shield-onnx,onnx,base,405,3458,11.711972238288027,10.6,12.8,5.1,0.845,0.959,0.755,False,0,0/0,0
 rubai-ru,ru,pii,gliner-multi-v21,gliner,base,470,3458,13.591671486408329,12.6,14.6,6.0,0.76,0.938,0.639,False,0,0/0,0
 rubai-ru,ru,pii,gliner-stream-pii,gliner,base,490,3458,14.17004048582996,13.1,15.3,4.2,0.777,0.969,0.648,False,0,0/0,0
 rubai-ru,ru,pii,openmed-nemotron,hf,base,537,3458,15.529207634470792,14.4,16.7,2.9,0.664,0.789,0.574,False,0,0/0,0
@@ -1510,6 +1568,7 @@ rubai-ru,ru,pii,rules-ru,rules,base,3339,3458,96.5587044534413,95.9,97.1,0.2,0.0
 russian-pii-66k,ru,pii,opf-ru,opf,base,3,4805,0.062434963579604576,0.0,0.1,99.9,0.995,0.991,1.0,True,0,0/0,0
 russian-pii-66k,ru,pii,nym-base,hf,base,3,4805,0.062434963579604576,0.0,0.1,99.4,0.993,0.987,0.999,False,0,0/0,0
 russian-pii-66k,ru,pii,pplx,pplx,base,11,4805,0.22892819979188345,0.1,0.4,97.9,0.955,0.92,0.993,False,0,0/0,0
+russian-pii-66k,ru,pii,nym-small,onnx,base,14,4805,0.29136316337148804,0.1,0.5,99.4,0.991,0.985,0.997,False,0,0/0,0
 russian-pii-66k,ru,pii,mmbert32k,hf,base,127,4805,2.643080124869927,2.2,3.1,76.0,0.942,0.958,0.926,False,0,0/0,0
 russian-pii-66k,ru,pii,bardsai-eu,onnx,base,165,4805,3.433922996878252,2.9,4.0,81.6,0.93,0.946,0.915,False,0,0/0,0
 russian-pii-66k,ru,pii,gliner-nvidia-ru,gliner,base,168,4805,3.4963579604578565,2.9,4.0,91.9,0.961,0.967,0.955,False,0,0/0,0
@@ -1558,6 +1617,7 @@ russian-pii-66k,ru,pii,natasha,natasha,base,3358,4805,69.88553590010406,68.6,71.
 russian-pii-66k,ru,pii,betterleaks,leaks,base,4805,4805,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
 russian-pii-66k,ru,pii,gitleaks,leaks,base,4805,4805,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
 scanpatch,ru,pii,nym-base,hf,base,776,8708,8.91134588883785,8.0,9.8,70.7,0.856,0.885,0.828,False,0,35/171,380
+scanpatch,ru,pii,nym-small,onnx,base,904,8708,10.381258612769868,9.4,11.3,71.3,0.846,0.884,0.811,False,0,30/171,348
 scanpatch,ru,pii,pplx,pplx,base,1084,8708,12.448323380799264,11.2,13.7,85.5,0.862,0.875,0.85,False,0,28/171,337
 scanpatch,ru,pii,mmbert32k,hf,base,1413,8708,16.226458429030778,15.2,17.3,50.4,0.758,0.903,0.653,False,0,41/171,351
 scanpatch,ru,pii,nuner-zero,gliner,base,1529,8708,17.558566835094165,16.3,19.0,76.2,0.803,0.812,0.794,False,0,125/171,2031
@@ -1629,6 +1689,7 @@ secrets-issues,en,secrets,opf-ru-v2+ov100,opf,ov100,15,288,5.208333333333333,2.7
 secrets-issues,en,secrets,mmbert32k+cpu-int8,hf,cpu-int8,16,288,5.555555555555555,2.6,8.9,55.9,0.3,0.18,0.913,False,0,245/250,55672
 secrets-issues,en,secrets,openmed-nemotron,hf,base,17,288,5.902777777777778,3.2,8.9,68.4,0.269,0.157,0.935,False,0,237/250,68471
 secrets-issues,en,secrets,openmed-multilingual,hf,base,20,288,6.944444444444445,3.8,10.4,66.0,0.284,0.168,0.919,False,0,234/250,60068
+secrets-issues,en,secrets,openai-base-onnx,onnx,base,21,288,7.291666666666667,3.9,11.6,70.8,0.402,0.258,0.914,False,0,128/250,23802
 secrets-issues,en,secrets,openai-base,opf,base,21,288,7.291666666666667,3.9,11.6,71.2,0.402,0.258,0.915,False,0,129/250,23834
 secrets-issues,en,secrets,kalyan-ettin,hf,base,34,288,11.805555555555555,8.3,15.7,60.4,0.344,0.213,0.891,False,0,220/250,38351
 secrets-issues,en,secrets,gliner-pii-edge,gliner,base,37,288,12.847222222222221,8.7,17.4,64.9,0.352,0.22,0.877,False,0,248/250,46265
@@ -1639,6 +1700,7 @@ secrets-issues,en,secrets,mmbert32k+nochunk,hf,nochunk,47,288,16.319444444444443
 secrets-issues,en,secrets,ru-legal-ner+sent300,hf,sent300,50,288,17.36111111111111,12.4,22.8,54.2,0.125,0.075,0.362,False,0,240/250,60833
 secrets-issues,en,secrets,credsweeper-noml,leaks,base,52,288,18.055555555555557,12.5,24.7,60.1,0.477,0.356,0.722,False,0,102/250,10572
 secrets-issues,en,secrets,mmbert32k,hf,base,53,288,18.40277777777778,13.4,23.0,44.4,0.298,0.182,0.815,False,0,240/250,56920
+secrets-issues,en,secrets,kalyan-ettin+cpu-int8,hf,cpu-int8,61,288,21.180555555555557,16.4,26.4,53.1,0.416,0.274,0.862,False,0,215/250,21859
 secrets-issues,en,secrets,credsweeper,leaks,base,76,288,26.38888888888889,20.2,33.2,55.9,0.49,0.379,0.693,False,0,59/250,7870
 secrets-issues,en,secrets,nuner-zero,gliner,base,85,288,29.51388888888889,23.7,36.1,49.3,0.308,0.264,0.369,False,0,171/250,14718
 secrets-issues,en,secrets,rules-ru,rules,base,93,288,32.291666666666664,25.7,39.3,49.0,0.246,0.152,0.649,False,0,228/250,59328
@@ -1682,8 +1744,10 @@ secrets-issues,en,secrets,davlan-xlmr+cpu-int8,hf,cpu-int8,287,288,99.6527777777
 secrets-issues,en,secrets,davlan-xlmr,hf,base,287,288,99.65277777777777,98.9,100.0,0.0,0.0,0.001,0.0,False,0,132/250,2869
 secrets-issues,en,secrets,gliner-multi-v21+cpu-int8,gliner,cpu-int8,288,288,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/250,0
 secrets-issues,en,secrets,gliner-nvidia+cpu-int8,gliner,cpu-int8,288,288,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/250,0
+secrets-issues,en,secrets,gliner-pii-base+cpu-int8,gliner,cpu-int8,288,288,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/250,0
 secrets-issues,en,secrets,gliner-urchade+cpu-int8,gliner,cpu-int8,288,288,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/250,0
 secrets-issues,en,secrets,ner-ru-gherman+cpu-int8,hf,cpu-int8,288,288,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,24/250,609
+secrets-issues,en,secrets,ner-ru-gherman-onnx,onnx,base,288,288,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,33/250,645
 secrets-issues,en,secrets,ner-ru-gherman,hf,base,288,288,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,33/250,624
 secrets-issues,en,secrets,spacy-alrosait,spacy,base,288,288,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/250,0
 secrets-rules,en,secrets,traciora,opf,base,1,746,0.13404825737265416,0.0,0.4,97.5,0.728,0.573,0.997,False,0,503/750,27643
@@ -1696,6 +1760,7 @@ secrets-rules,en,secrets,nym-base,hf,base,8,746,1.0723860589812333,0.4,1.9,83.2,
 secrets-rules,en,secrets,opf-ru-v2,opf,base,9,746,1.2064343163538873,0.5,2.1,97.2,0.754,0.61,0.987,False,0,415/750,23171
 secrets-rules,en,secrets,gliner-pii-edge,gliner,base,13,746,1.742627345844504,0.9,2.8,88.6,0.666,0.511,0.957,False,0,667/750,30751
 secrets-rules,en,secrets,gitleaks,leaks,base,18,746,2.4128686327077746,1.4,3.5,97.6,0.913,0.862,0.971,True,0,110/750,5977
+secrets-rules,en,secrets,nym-small,onnx,base,20,746,2.680965147453083,1.6,3.9,79.1,0.713,0.573,0.945,False,0,531/750,26647
 secrets-rules,en,secrets,ru-legal-ner,hf,base,23,746,3.0831099195710454,1.9,4.4,65.0,0.695,0.581,0.862,False,0,450/750,20871
 secrets-rules,en,secrets,betterleaks,leaks,base,27,746,3.6193029490616624,2.3,5.1,96.4,0.917,0.87,0.97,True,0,100/750,5571
 secrets-rules,en,secrets,pplx,pplx,base,29,746,3.8873994638069704,2.5,5.4,93.4,0.753,0.625,0.949,False,0,385/750,21139
@@ -1737,12 +1802,14 @@ secrets-rules,en,secrets,davlan-xlmr,hf,base,746,746,100.0,100.0,100.0,0.0,0.0,0
 secrets-rules,en,secrets,natasha,natasha,base,746,746,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,43/750,1077
 secrets-rules,en,secrets,spacy-alrosait,spacy,base,746,746,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/750,0
 synth-env-configs,en,secrets,pplx,pplx,base,0,392,0.0,0.0,0.0,98.2,0.418,0.265,0.996,False,0,193/200,25405
+synth-env-configs,en,secrets,pii-shield-onnx,onnx,base,0,392,0.0,0.0,0.0,99.2,0.214,0.12,0.999,False,0,200/200,66629
 synth-env-configs,en,secrets,opf-kz-ru,opf,base,1,392,0.25510204081632654,0.0,0.9,83.2,0.463,0.307,0.94,False,0,184/200,19843
 synth-env-configs,en,secrets,traciora,opf,base,2,392,0.5102040816326531,0.0,1.3,67.1,0.466,0.315,0.893,False,0,181/200,18482
 synth-env-configs,en,secrets,opf-ru,opf,base,2,392,0.5102040816326531,0.0,1.3,67.3,0.375,0.254,0.714,False,0,196/200,20060
 synth-env-configs,en,secrets,apararti,opf,base,3,392,0.7653061224489796,0.0,1.8,78.3,0.472,0.32,0.9,False,0,182/200,18490
 synth-env-configs,en,secrets,openmed-multilingual,hf,base,4,392,1.0204081632653061,0.2,2.2,64.3,0.391,0.265,0.743,False,0,197/200,19804
 synth-env-configs,en,secrets,opf-ru-v2,opf,base,8,392,2.0408163265306123,0.8,3.5,66.6,0.44,0.299,0.833,False,0,186/200,18049
+synth-env-configs,en,secrets,nym-small,onnx,base,11,392,2.806122448979592,1.3,4.4,51.5,0.292,0.193,0.597,False,0,195/200,24490
 synth-env-configs,en,secrets,nym-base,hf,base,12,392,3.061224489795918,1.4,5.1,56.4,0.314,0.214,0.588,False,0,183/200,21531
 synth-env-configs,en,secrets,rules-ru,rules,base,16,392,4.081632653061225,2.2,6.2,95.7,0.65,0.486,0.981,False,0,192/200,10104
 synth-env-configs,en,secrets,openai-base,opf,base,19,392,4.846938775510204,2.8,7.2,77.3,0.549,0.401,0.873,False,0,123/200,12337
@@ -1776,6 +1843,7 @@ synth-env-configs,en,secrets,davlan-mbert,hf,base,392,392,100.0,100.0,100.0,0.0,
 synth-env-configs,en,secrets,davlan-xlmr,hf,base,392,392,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/200,0
 synth-env-configs,en,secrets,spacy-alrosait,spacy,base,392,392,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/200,0
 synth-jira-comments,ru,pii,pplx,pplx,base,2,2705,0.07393715341959335,0.0,0.2,99.6,0.818,0.693,0.998,False,0,0/0,0
+synth-jira-comments,ru,pii,pii-shield-onnx,onnx,base,238,2705,8.798521256931608,7.6,9.9,85.6,0.667,0.52,0.931,False,0,0/0,0
 synth-jira-comments,ru,pii,gliner2-hivetrace-omni,gliner2,base,287,2705,10.609981515711645,9.7,11.6,88.7,0.898,0.951,0.85,False,0,0/0,0
 synth-jira-comments,ru,pii,mmbert32k,hf,base,310,2705,11.460258780036968,10.3,12.7,47.3,0.724,0.742,0.707,False,0,0/0,0
 synth-jira-comments,ru,pii,gliner-nvidia,gliner,base,369,2705,13.641404805914972,12.4,14.9,81.4,0.895,0.947,0.849,False,0,0/0,0
@@ -1794,6 +1862,7 @@ synth-jira-comments,ru,pii,gliner2-large,gliner2,base,713,2705,26.35859519408502
 synth-jira-comments,ru,pii,gliner25-fastino-ru,gliner2,base,749,2705,27.68946395563771,26.2,29.4,71.6,0.728,0.908,0.607,False,0,0/0,0
 synth-jira-comments,ru,pii,opf-ru-v2,opf,base,778,2705,28.76155268022181,27.9,29.6,65.1,0.778,0.948,0.66,False,0,0/0,0
 synth-jira-comments,ru,pii,rules-ru,rules,base,807,2705,29.833641404805913,29.4,30.3,70.2,0.728,0.675,0.791,False,0,0/0,0
+synth-jira-comments,ru,pii,nym-small,onnx,base,813,2705,30.055452865064694,28.6,31.6,36.0,0.753,0.864,0.667,False,0,0/0,0
 synth-jira-comments,ru,pii,gliner-urchade,gliner,base,846,2705,31.275415896487985,29.6,33.1,67.1,0.723,0.927,0.592,False,0,0/0,0
 synth-jira-comments,ru,pii,opf-ru,opf,base,855,2705,31.608133086876155,30.2,33.1,51.7,0.73,0.91,0.61,False,0,0/0,0
 synth-jira-comments,ru,pii,nym-base,hf,base,861,2705,31.829944547134936,30.3,33.4,37.7,0.742,0.872,0.645,False,0,0/0,0
@@ -1837,6 +1906,7 @@ synth-ru-tickets,ru,pii,apararti,opf,base,4233,32099,13.187326707997133,12.5,13.
 synth-ru-tickets,ru,pii,openmed-nemotron,hf,base,4379,32099,13.642169537991839,13.0,14.3,55.1,0.65,0.589,0.725,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner-urchade,gliner,base,4513,32099,14.059628025795195,13.4,14.7,64.0,0.821,0.988,0.702,False,0,0/0,0
 synth-ru-tickets,ru,pii,openmed-multilingual,hf,base,4915,32099,15.31200348920527,14.6,15.9,53.2,0.67,0.677,0.662,False,0,0/0,0
+synth-ru-tickets,ru,pii,openai-base-onnx,onnx,base,5442,32099,16.953799183775196,15.9,18.0,73.8,0.751,0.697,0.814,False,0,0/0,0
 synth-ru-tickets,ru,pii,opf-kz-ru,opf,base,5459,32099,17.006760335212935,16.3,17.7,68.9,0.684,0.598,0.798,False,0,0/0,0
 synth-ru-tickets,ru,pii,openai-base,opf,base,5469,32099,17.037913953705722,16.0,18.1,73.7,0.75,0.697,0.813,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner25-fastino+ov100,gliner2,ov100,5581,32099,17.386834480824948,16.7,18.1,70.0,0.859,0.982,0.763,False,0,0/0,0
@@ -1874,29 +1944,39 @@ synth-ru-tickets,ru,pii,gliner-nvidia+ov100,gliner,ov100,14919,32099,46.47808342
 synth-ru-tickets,ru,pii,gliner-multi-v21-ru,gliner,base,15473,32099,48.203993893890775,47.5,48.9,39.1,0.502,0.988,0.336,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner2-hivetrace-uni,gliner2,base,18160,32099,56.57497118290289,56.0,57.2,39.8,0.488,0.97,0.326,False,0,0/0,0
 synth-ru-tickets,ru,pii,fef2-secret-ru,hf,base,18329,32099,57.10146733543101,56.4,57.8,34.9,0.476,0.879,0.327,False,0,0/0,0
+synth-ru-tickets,ru,pii,fef2-secret-ru+cpu-int8,hf,cpu-int8,18768,32099,58.4691111872644,57.8,59.2,32.1,0.456,0.891,0.306,False,0,0/0,0
 synth-ru-tickets,ru,pii,ru-pii-ner,rupii,base,18846,32099,58.712109411508145,57.6,59.8,39.1,0.457,0.784,0.323,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner-nvidia-ru,gliner,base,19601,32099,61.064207607713634,60.0,62.2,35.2,0.468,0.936,0.312,False,0,0/0,0
 synth-ru-tickets,ru,pii,gravitee-small,hf,base,20079,32099,62.5533505716689,62.0,63.1,28.3,0.432,0.658,0.322,False,0,0/0,0
 synth-ru-tickets,ru,pii,gravitee-small+cpu-int8,hf,cpu-int8,20288,32099,63.20446119816817,62.7,63.7,27.6,0.427,0.669,0.314,False,0,0/0,0
+synth-ru-tickets,ru,pii,kalyan-ettin+cpu-int8,hf,cpu-int8,21140,32099,65.8587494937537,65.3,66.4,17.7,0.285,0.636,0.184,False,0,0/0,0
 synth-ru-tickets,ru,pii,ner-ru-yqelz,hf,base,22516,32099,70.14548739836133,69.7,70.6,10.5,0.337,0.812,0.212,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner25-fastino-ru+nochunk,gliner2,nochunk,22656,32099,70.58163805726035,69.0,72.1,27.8,0.42,0.908,0.274,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner2-vladlinv,gliner2,base,23039,32099,71.77482164553413,70.6,73.0,26.5,0.373,0.951,0.232,False,0,0/0,0
 synth-ru-tickets,ru,pii,ner-ru-gherman,hf,base,23371,32099,72.80912177949469,71.6,74.1,4.7,0.305,1.0,0.18,False,0,0/0,0
+synth-ru-tickets,ru,pii,ner-ru-gherman-onnx,onnx,base,23393,32099,72.87765974017883,71.7,74.2,4.7,0.305,0.999,0.18,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner2-vladlinv-ru,gliner2,base,24232,32099,75.49144833172373,74.2,76.9,22.7,0.345,0.941,0.211,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner2-hivetrace-uni-ru,gliner2,base,24532,32099,76.42605688650737,75.7,77.1,22.0,0.249,0.965,0.143,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner25-fastino+nochunk,gliner2,nochunk,25393,32099,79.10838343873641,77.5,80.7,19.8,0.325,0.897,0.198,False,0,0/0,0
+synth-ru-tickets,ru,pii,ner-ru-gherman+cpu-int8,hf,cpu-int8,25421,32099,79.19561357051622,78.0,80.4,2.6,0.256,0.999,0.147,False,0,0/0,0
 synth-ru-tickets,ru,pii,stanza-ru,stanza,base,26813,32099,83.5321972647123,82.5,84.6,11.7,0.211,0.412,0.142,False,0,0/0,0
 synth-ru-tickets,ru,pii,davlan-xlmr,hf,base,26916,32099,83.85307953518802,82.7,84.9,10.2,0.238,0.718,0.143,False,0,0/0,0
 synth-ru-tickets,ru,pii,spacy-ru-lg,spacy,base,28044,32099,87.3672077011745,86.5,88.3,10.0,0.228,0.941,0.13,False,0,0/0,0
 synth-ru-tickets,ru,pii,davlan-mbert,hf,base,28344,32099,88.30181625595813,87.5,89.1,8.2,0.207,1.0,0.115,False,0,0/0,0
+synth-ru-tickets,ru,pii,davlan-mbert+cpu-int8,hf,cpu-int8,28465,32099,88.67877503972086,87.9,89.5,7.3,0.196,1.0,0.109,False,0,0/0,0
 synth-ru-tickets,ru,pii,natasha,natasha,base,28707,32099,89.43269260724634,88.7,90.1,8.1,0.184,0.967,0.102,False,0,0/0,0
 synth-ru-tickets,ru,pii,davlan-xlmr+cpu-int8,hf,cpu-int8,29164,32099,90.85641297236674,90.2,91.5,4.5,0.143,0.989,0.077,False,0,0/0,0
 synth-ru-tickets,ru,pii,spacy-alrosait,spacy,base,29273,32099,91.19598741393813,90.6,91.8,6.9,0.186,0.985,0.103,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner-pii-edge+cpu-int8,gliner,cpu-int8,31213,32099,97.23978940153899,97.0,97.5,1.2,0.032,0.738,0.016,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner-multi-v21+cpu-int8,gliner,cpu-int8,32099,32099,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
+synth-ru-tickets,ru,pii,gliner-multi-v21-ru+cpu-int8,gliner,cpu-int8,32099,32099,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner-nvidia+cpu-int8,gliner,cpu-int8,32099,32099,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
+synth-ru-tickets,ru,pii,gliner-nvidia-ru+cpu-int8,gliner,cpu-int8,32099,32099,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
+synth-ru-tickets,ru,pii,gliner-pii-base+cpu-int8,gliner,cpu-int8,32099,32099,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
 synth-ru-tickets,ru,pii,gliner-urchade+cpu-int8,gliner,cpu-int8,32099,32099,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
+synth-ru-tickets,ru,pii,gliner-urchade-ru+cpu-int8,gliner,cpu-int8,32099,32099,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
 synth-secrets-en,en,secrets,pplx,pplx,base,1,581,0.1721170395869191,0.0,0.5,97.4,0.33,0.198,0.981,False,0,275/300,53318
+synth-secrets-en,en,secrets,pii-shield-onnx,onnx,base,2,581,0.3442340791738382,0.0,0.9,97.8,0.241,0.137,0.995,False,0,289/300,85054
 synth-secrets-en,en,secrets,openmed-multilingual,hf,base,5,581,0.8605851979345955,0.2,1.7,82.4,0.335,0.205,0.917,False,0,300/300,50927
 synth-secrets-en,en,secrets,opf-ru,opf,base,10,581,1.721170395869191,0.7,3.1,77.5,0.404,0.264,0.859,False,0,273/300,35382
 synth-secrets-en,en,secrets,opf-kz-ru,opf,base,10,581,1.721170395869191,0.6,3.1,91.4,0.319,0.191,0.974,False,0,274/300,57799
@@ -1904,6 +1984,7 @@ synth-secrets-en,en,secrets,apararti,opf,base,17,581,2.9259896729776247,1.6,4.6,
 synth-secrets-en,en,secrets,opf-ru-v2,opf,base,23,581,3.9586919104991396,2.3,5.6,78.7,0.378,0.241,0.881,False,0,274/300,39111
 synth-secrets-en,en,secrets,traciora,opf,base,32,581,5.507745266781411,3.4,7.8,70.6,0.396,0.254,0.896,False,0,265/300,37195
 synth-secrets-en,en,secrets,nym-base,hf,base,35,581,6.024096385542169,4.1,8.1,62.5,0.354,0.23,0.768,False,0,267/300,38844
+synth-secrets-en,en,secrets,nym-small,onnx,base,39,581,6.712564543889845,4.6,8.9,57.3,0.352,0.23,0.75,False,0,274/300,37462
 synth-secrets-en,en,secrets,bardsai-eu,onnx,base,41,581,7.056798623063683,5.3,9.1,73.5,0.398,0.263,0.819,False,0,259/300,33980
 synth-secrets-en,en,secrets,openai-base,opf,base,41,581,7.056798623063683,4.7,9.6,84.5,0.3,0.179,0.923,False,0,240/300,60039
 synth-secrets-en,en,secrets,ru-legal-ner,hf,base,63,581,10.843373493975903,8.4,13.4,33.6,0.368,0.244,0.75,False,0,279/300,33030
@@ -1937,6 +2018,7 @@ synth-secrets-en,en,secrets,spacy-alrosait,spacy,base,581,581,100.0,100.0,100.0,
 synth-secrets-en,en,secrets,spacy-ru-lg,spacy,base,581,581,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,29/300,945
 synth-secrets-ru,ru,secrets,pplx,pplx,base,0,581,0.0,0.0,0.0,97.6,0.328,0.197,0.983,False,0,285/300,54077
 synth-secrets-ru,ru,secrets,opf-ru,opf,base,1,581,0.1721170395869191,0.0,0.6,79.7,0.395,0.255,0.877,False,0,285/300,37681
+synth-secrets-ru,ru,secrets,pii-shield-onnx,onnx,base,2,581,0.3442340791738382,0.0,0.9,97.4,0.241,0.137,0.995,False,0,292/300,85073
 synth-secrets-ru,ru,secrets,opf-kz-ru,opf,base,4,581,0.6884681583476764,0.2,1.4,94.1,0.314,0.187,0.981,False,0,278/300,59343
 synth-secrets-ru,ru,secrets,apararti,opf,base,4,581,0.6884681583476764,0.0,1.7,91.7,0.3,0.178,0.974,False,0,282/300,63103
 synth-secrets-ru,ru,secrets,openai-base,opf,base,12,581,2.0654044750430294,0.9,3.6,91.7,0.304,0.18,0.972,False,0,252/300,62394
@@ -1944,6 +2026,7 @@ synth-secrets-ru,ru,secrets,opf-ru-v2,opf,base,15,581,2.5817555938037864,1.4,3.9
 synth-secrets-ru,ru,secrets,traciora,opf,base,17,581,2.9259896729776247,1.6,4.3,77.3,0.392,0.248,0.933,False,0,268/300,39261
 synth-secrets-ru,ru,secrets,openmed-multilingual,hf,base,20,581,3.442340791738382,2.1,5.1,72.1,0.334,0.207,0.871,False,0,286/300,47615
 synth-secrets-ru,ru,secrets,nym-base,hf,base,21,581,3.6144578313253013,2.2,5.3,68.2,0.346,0.222,0.785,False,0,274/300,41531
+synth-secrets-ru,ru,secrets,nym-small,onnx,base,32,581,5.507745266781411,3.6,7.5,60.9,0.35,0.226,0.778,False,0,284/300,39428
 synth-secrets-ru,ru,secrets,ru-legal-ner,hf,base,52,581,8.950086058519794,6.5,11.6,35.6,0.369,0.241,0.789,False,0,282/300,35118
 synth-secrets-ru,ru,secrets,bardsai-eu,onnx,base,55,581,9.46643717728055,7.3,12.0,70.2,0.4,0.264,0.821,False,0,266/300,34172
 synth-secrets-ru,ru,secrets,gliner-pii-edge,gliner,base,86,581,14.802065404475043,11.9,17.9,71.3,0.391,0.267,0.73,False,0,285/300,32286
@@ -1982,6 +2065,7 @@ synth-secrets-ru,ru,secrets,davlan-mbert,hf,base,581,581,100.0,100.0,100.0,0.0,0
 synth-secrets-ru,ru,secrets,davlan-xlmr,hf,base,581,581,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/300,0
 synth-secrets-ru,ru,secrets,ner-ru-gherman,hf,base,581,581,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/300,0
 synth-secrets-ru,ru,secrets,spacy-alrosait,spacy,base,581,581,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/300,0
+synth-wiki-tables,ru,pii,nym-small,onnx,base,489,13094,3.7345349014815947,3.4,4.1,74.5,0.932,0.976,0.892,False,0,0/0,0
 synth-wiki-tables,ru,pii,pplx,pplx,base,734,13094,5.605620895066442,4.8,6.5,88.9,0.944,0.993,0.9,False,0,0/0,0
 synth-wiki-tables,ru,pii,ru-legal-ner,hf,base,776,13094,5.926378493966702,5.3,6.6,63.5,0.815,0.882,0.757,False,0,0/0,0
 synth-wiki-tables,ru,pii,nym-base,hf,base,897,13094,6.850465862226974,5.6,8.2,68.6,0.842,0.994,0.73,False,0,0/0,0
@@ -1999,6 +2083,7 @@ synth-wiki-tables,ru,pii,gliner2-hivetrace-omni,gliner2,base,2632,13094,20.10080
 synth-wiki-tables,ru,pii,nuner-zero,gliner,base,2767,13094,21.131816098976632,20.1,22.2,64.0,0.903,0.979,0.838,False,0,0/0,0
 synth-wiki-tables,ru,pii,gliner-pii-edge,gliner,base,2951,13094,22.537039865587293,20.3,24.8,55.2,0.773,0.968,0.643,False,0,0/0,0
 synth-wiki-tables,ru,pii,traciora,opf,base,2970,13094,22.68214449366122,19.9,25.8,65.3,0.765,0.995,0.622,False,0,0/0,0
+synth-wiki-tables,ru,pii,pii-shield-onnx,onnx,base,3002,13094,22.926531235680464,21.6,24.4,63.4,0.878,0.938,0.824,False,0,0/0,0
 synth-wiki-tables,ru,pii,gliner2-large,gliner2,base,3202,13094,24.453948373300747,23.5,25.4,74.2,0.873,0.978,0.788,False,0,0/0,0
 synth-wiki-tables,ru,pii,kalyan-ettin,hf,base,3207,13094,24.492133801741254,23.5,25.6,33.5,0.729,0.98,0.581,False,0,0/0,0
 synth-wiki-tables,ru,pii,opf-ru,opf,base,3226,13094,24.63723842981518,22.3,27.1,49.8,0.742,0.99,0.593,False,0,0/0,0
@@ -2072,6 +2157,7 @@ tab-echr,en,pii,pplx+ov100,pplx,ov100,2136,3830,55.77023498694517,51.8,60.2,29.7
 tab-echr,en,pii,pplx,pplx,base,2314,3830,60.4177545691906,56.3,64.8,28.4,0.306,0.36,0.266,False,0,0/0,0
 tab-echr,en,pii,mmbert32k+nochunk,hf,nochunk,2368,3830,61.82767624020888,58.3,65.5,8.7,0.285,0.427,0.213,False,0,0/0,0
 tab-echr,en,pii,mmbert32k+cpu-int8,hf,cpu-int8,2481,3830,64.7780678851175,61.8,68.0,5.9,0.258,0.465,0.178,False,0,0/0,0
+tab-echr,en,pii,kalyan-ettin+cpu-int8,hf,cpu-int8,2505,3830,65.40469973890339,62.9,68.1,7.8,0.24,0.298,0.201,False,0,0/0,0
 tab-echr,en,pii,gliner2-hivetrace-uni,gliner2,base,2555,3830,66.71018276762402,63.7,69.6,24.6,0.465,0.849,0.321,False,0,0/0,0
 tab-echr,en,pii,gliner2-vladlinv,gliner2,base,2642,3830,68.9817232375979,64.9,73.1,19.1,0.344,0.856,0.215,False,0,0/0,0
 tab-echr,en,pii,pii-shield-onnx,onnx,base,2658,3830,69.39947780678851,66.0,72.4,12.4,0.216,0.303,0.168,False,0,0/0,0
@@ -2081,6 +2167,7 @@ tab-echr,en,pii,opf-ru,opf,base,2794,3830,72.95039164490862,69.6,76.3,19.6,0.267
 tab-echr,en,pii,opf-kz-ru,opf,base,2804,3830,73.21148825065274,69.7,76.7,23.3,0.254,0.37,0.193,False,0,0/0,0
 tab-echr,en,pii,spacy-ru-lg,spacy,base,2812,3830,73.42036553524804,70.4,76.3,25.4,0.26,0.256,0.264,False,0,0/0,0
 tab-echr,en,pii,ru-legal-ner+sent300,hf,sent300,2824,3830,73.73368146214099,70.9,76.7,7.7,0.185,0.221,0.158,False,0,0/0,0
+tab-echr,en,pii,openai-base-onnx,onnx,base,2943,3830,76.84073107049609,73.5,80.6,22.3,0.259,0.48,0.177,False,0,0/0,0
 tab-echr,en,pii,openai-base,opf,base,2944,3830,76.8668407310705,73.5,80.5,22.2,0.258,0.479,0.177,False,0,0/0,0
 tab-echr,en,pii,opf-ru-v2+sent300,opf,sent300,2957,3830,77.20626631853786,74.2,80.3,19.1,0.293,0.912,0.174,False,0,0/0,0
 tab-echr,en,pii,opf-ru-v2+ov100,opf,ov100,2958,3830,77.23237597911228,74.1,80.2,19.8,0.296,0.944,0.175,False,0,0/0,0
@@ -2090,8 +2177,10 @@ tab-echr,en,pii,ru-legal-ner+cpu-int8,hf,cpu-int8,3067,3830,80.07832898172323,76
 tab-echr,en,pii,ru-legal-ner,hf,base,3080,3830,80.4177545691906,76.8,83.8,5.9,0.138,0.181,0.111,False,0,0/0,0
 tab-echr,en,pii,ru-legal-ner+ov100,hf,ov100,3095,3830,80.80939947780679,77.0,84.4,6.3,0.133,0.174,0.108,False,0,0/0,0
 tab-echr,en,pii,natasha,natasha,base,3233,3830,84.41253263707571,82.1,86.8,14.3,0.223,0.734,0.132,False,0,0/0,0
+tab-echr,en,pii,fef2-secret-ru+cpu-int8,hf,cpu-int8,3435,3830,89.68668407310705,87.8,91.6,2.1,0.131,0.98,0.07,False,0,0/0,0
 tab-echr,en,pii,fef2-secret-ru,hf,base,3482,3830,90.91383812010444,89.2,92.6,2.1,0.114,0.969,0.061,False,0,0/0,0
 tab-echr,en,pii,gliner-pii-edge+cpu-int8,gliner,cpu-int8,3684,3830,96.18798955613578,95.5,97.0,3.3,0.057,0.927,0.029,False,0,0/0,0
+tab-echr,en,pii,gliner-pii-base+cpu-int8,gliner,cpu-int8,3736,3830,97.54569190600522,96.5,98.4,2.3,0.067,0.968,0.035,False,0,0/0,0
 tab-echr,en,pii,spacy-alrosait,spacy,base,3829,3830,99.9738903394256,99.9,100.0,0.0,0.0,1.0,0.0,False,0,0/0,0
 tab-echr,en,pii,gliner-multi-v21+cpu-int8,gliner,cpu-int8,3830,3830,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
 tab-echr,en,pii,gliner-nvidia+cpu-int8,gliner,cpu-int8,3830,3830,100.0,100.0,100.0,0.0,0.0,0.0,0.0,False,0,0/0,0
@@ -2116,6 +2205,7 @@ tonicai,en,pii,bardsai-eu,onnx,base,738,2417,30.533719486967314,28.3,32.9,53.6,0
 tonicai,en,pii,gliner2-hivetrace-uni,gliner2,base,755,2417,31.237070748862227,29.1,33.3,67.4,0.814,0.903,0.741,False,0,76/440,517
 tonicai,en,pii,openai-base,opf,base,761,2417,31.48531237070749,29.3,33.8,65.4,0.841,0.949,0.755,False,0,14/440,124
 tonicai,en,pii,openmed-multilingual,hf,base,762,2417,31.526685974348364,29.5,33.7,63.4,0.815,0.869,0.768,False,0,124/440,574
+tonicai,en,pii,nym-small,onnx,base,852,2417,35.25031030202731,33.0,37.7,62.0,0.849,0.945,0.77,False,0,18/440,118
 tonicai,en,pii,ner-ru-yqelz,hf,base,855,2417,35.374431112949935,33.4,37.5,57.3,0.514,0.599,0.45,False,0,192/440,2207
 tonicai,en,pii,opf-ru,opf,base,891,2417,36.863880844021516,34.7,39.0,59.5,0.816,0.944,0.719,False,0,22/440,112
 tonicai,en,pii,apararti,opf,base,901,2417,37.27761688043029,35.1,39.6,59.3,0.815,0.926,0.727,False,0,22/440,150
@@ -2131,6 +2221,7 @@ tonicai,en,pii,gliner-pii-base,gliner,base,1395,2417,57.71617707902358,55.7,59.8
 tonicai,en,pii,gliner-urchade,gliner,base,1397,2417,57.798924286305336,55.3,60.0,37.7,0.67,0.705,0.639,False,0,123/440,1229
 tonicai,en,pii,opf-ru-v2,opf,base,1412,2417,58.4195283409185,56.2,60.5,38.4,0.748,0.971,0.608,False,0,2/440,8
 tonicai,en,pii,ru-legal-ner,hf,base,1647,2417,68.14232519652462,65.8,70.4,25.2,0.554,0.576,0.534,False,0,156/440,1573
+tonicai,en,pii,pii-shield-onnx,onnx,base,1744,2417,72.1555647496897,70.2,74.1,25.7,0.652,0.861,0.525,False,0,40/440,234
 tonicai,en,pii,rules-ru,rules,base,1954,2417,80.84402151427389,79.0,82.6,15.6,0.651,0.998,0.483,False,0,0/440,0
 tonicai,en,pii,fef2-secret-ru,hf,base,2073,2417,85.76748034753827,84.1,87.2,10.9,0.484,0.939,0.326,False,0,2/440,24
 tonicai,en,pii,spacy-ru-lg,spacy,base,2076,2417,85.8916011584609,83.9,87.8,14.1,0.154,0.309,0.102,False,0,11/440,269

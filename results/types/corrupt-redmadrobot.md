@@ -270,6 +270,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base+homoglyph | eligible | Phone numbers & email | 295/389 | 75.84% | 95.37% | 73.78% |
 | model:nym-base+homoglyph | eligible | Addresses & locations | 788/1242 | 63.45% | 77.46% | 60.63% |
 | model:nym-base+homoglyph | eligible | Network identifiers | 259/361 | 71.75% | 86.98% | 67.87% |
+| model:nym-small | eligible | Bank accounts & cards | 120/203 | 59.11% | 96.06% | 53.69% |
+| model:nym-small | eligible | Documents & identifiers | 1168/2076 | 56.26% | 73.41% | 47.59% |
+| model:nym-small | eligible | People's names | 996/1260 | 79.05% | 83.02% | 71.19% |
+| model:nym-small | eligible | Phone numbers & email | 283/389 | 72.75% | 97.17% | 70.18% |
+| model:nym-small | eligible | Addresses & locations | 667/1242 | 53.70% | 73.59% | 49.28% |
+| model:nym-small | eligible | Network identifiers | 214/361 | 59.28% | 78.39% | 52.08% |
 | model:openai-base | eligible | Bank accounts & cards | 131/203 | 64.53% | 76.85% | 63.05% |
 | model:openai-base | eligible | Documents & identifiers | 1142/2076 | 55.01% | 65.22% | 53.61% |
 | model:openai-base | eligible | People's names | 795/1260 | 63.10% | 64.60% | 58.41% |
@@ -312,6 +318,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:opf-ru-v2+homoglyph | eligible | Phone numbers & email | 204/389 | 52.44% | 77.12% | 52.70% |
 | model:opf-ru-v2+homoglyph | eligible | Addresses & locations | 329/1242 | 26.49% | 36.96% | 23.43% |
 | model:opf-ru-v2+homoglyph | eligible | Network identifiers | 94/361 | 26.04% | 44.32% | 23.27% |
+| model:pii-shield-onnx | eligible | Bank accounts & cards | 113/203 | 55.67% | 81.28% | 42.86% |
+| model:pii-shield-onnx | eligible | Documents & identifiers | 867/2076 | 41.76% | 54.09% | 33.62% |
+| model:pii-shield-onnx | eligible | People's names | 884/1260 | 70.16% | 74.52% | 56.83% |
+| model:pii-shield-onnx | eligible | Phone numbers & email | 316/389 | 81.23% | 96.14% | 76.35% |
+| model:pii-shield-onnx | eligible | Addresses & locations | 634/1242 | 51.05% | 68.52% | 39.77% |
+| model:pii-shield-onnx | eligible | Network identifiers | 195/361 | 54.02% | 83.38% | 47.37% |
 | model:pplx | eligible | Bank accounts & cards | 166/203 | 81.77% | 99.51% | 79.31% |
 | model:pplx | eligible | Documents & identifiers | 1774/2076 | 85.45% | 96.82% | 82.95% |
 | model:pplx | eligible | People's names | 1125/1260 | 89.29% | 90.87% | 84.84% |

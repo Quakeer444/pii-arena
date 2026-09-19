@@ -19,6 +19,15 @@ Left out: pii-shield-onnx - onnx runs whose meta says `cuda`. The graph always g
 | presidio-ru | 4846 | 30.66 | - | 23 | 95 | - | - | - | - | - | - | 2 |
 | credsweeper | 2466 | 6.40 | - | 193 | 219 | - | - | - | - | - | - | 3 |
 | ru-legal-ner+cpu | 30172 | 80.65 | - | 11 | 23 | - | 1 | - | - | cpu | 550 | 2 |
+| openai-base-onnx | 3152 | 0.91 | - | 938 | 2329 | AMD EPYC 7713P 64-Core Processor | 8 | 1 | - | - | 8894 | 3 |
+| gliner-urchade-ru+cpu-int8 | 843 | 3.88 | - | 230 | 605 | AMD EPYC 7713P 64-Core Processor | 8 | 1 | int8 | cpu-int8 | 3559 | 3 |
+| nym-small | 3375 | 6.39 | - | 66 | 572 | AMD EPYC 7713P 64-Core Processor | 8 | 2 | - | - | 3986 | 15 |
+| pii-shield-onnx | 1167 | 3.80 | - | 224 | 732 | AMD EPYC 7713P 64-Core Processor | 8 | 2 | - | - | 3820 | 7 |
+| pii-shield-onnx | 1236 | 0.79 | - | 514 | 5031 | AMD EPYC 7713P 64-Core Processor | 8 | 3 | - | - | 8601 | 8 |
+| ner-ru-gherman+cpu-int8 | 5693 | 1.33 | - | 728 | 1230 | AMD EPYC 7763 64-Core Processor | 8 | 1 | int8 | cpu-int8 | 1524 | 1 |
+| gliner-nvidia-ru+cpu-int8 | 493 | 0.11 | - | 8614 | 15117 | AMD EPYC 7B13 64-Core Processor | 16 | 1 | int8 | cpu-int8 | 3947 | 1 |
+| gliner-pii-edge+cpu-int8 | 250 | 0.26 | - | 2610 | 10948 | AMD EPYC 7B13 64-Core Processor | 40 | 1 | int8 | cpu-int8 | 4967 | 1 |
+| gliner-urchade-ru+cpu-int8 | 983 | 0.23 | - | 4308 | 7126 | AMD EPYC 7B13 64-Core Processor | 8 | 1 | int8 | cpu-int8 | 3098 | 1 |
 | ru-legal-ner+cpu-int8 | 54911 | 85.09 | - | 5 | 50 | AMD EPYC 9654 96-Core Processor | 16 | 24 | int8 | cpu-int8 | 1110 | 9 |
 | ru-legal-ner+cpu-speed | 33180 | 500.00 | 45.67 | 2 | 4 | AMD EPYC 9654 96-Core Processor | 16 | 24 | - | cpu-speed | 755 | 1 |
 | nym-base+cpu-int8 | 5230 | 8.10 | - | 45 | 579 | AMD EPYC 9654 96-Core Processor | 16 | 24 | int8 | cpu-int8 | 2627 | 9 |
@@ -104,6 +113,18 @@ Left out: pii-shield-onnx - onnx runs whose meta says `cuda`. The graph always g
 | detect-secrets | 23323 | 21.85 | - | 45 | 45 | Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz | - | 1 | - | - | - | 1 |
 | credsweeper-noml | 15359 | 14.39 | - | 69 | 69 | Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz | - | 1 | - | - | - | 1 |
 | deepsecrets | 12851 | 12.04 | - | 82 | 82 | Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz | - | 1 | - | - | - | 1 |
+| openai-base-onnx | 1496 | 9.12 | - | 83 | 226 | Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz | 3 | 1 | - | - | 6079 | 2 |
+| nym-small | 2137 | 17.68 | - | 54 | 98 | Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz | 3 | 2 | - | - | 1290 | 4 |
+| davlan-mbert+cpu-int8 | 3231 | 0.75 | - | 1289 | 2150 | Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz | 8 | 10 | int8 | cpu-int8 | 1412 | 1 |
+| fef2-secret-ru+cpu-int8 | 3230 | 0.72 | - | 1353 | 2399 | Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz | 8 | 10 | int8 | cpu-int8 | 1443 | 2 |
+| gliner-pii-base+cpu-int8 | 1837 | 0.92 | - | 749 | 3116 | Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz | 8 | 10 | int8 | cpu-int8 | 3948 | 4 |
+| nym-small | 2286 | 2.74 | - | 162 | 1336 | Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz | 8 | 2 | - | - | 2020 | 11 |
+| ner-ru-gherman-onnx | 1913 | 2.32 | - | 186 | 1745 | Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz | 8 | 2 | - | - | 2446 | 5 |
+| openai-base-onnx | 1263 | 2.80 | - | 261 | 940 | Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz | 8 | 2 | - | - | 8355 | 4 |
+| pii-shield-onnx | 430 | 2.14 | - | 376 | 1088 | Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz | 8 | 3 | - | - | 1988 | 2 |
+| gliner-multi-v21-ru+cpu-int8 | 823 | 1.77 | - | 346 | 2316 | Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz | 8 | 4 | int8 | cpu-int8 | 3477 | 4 |
+| gliner-nvidia-ru+cpu-int8 | 149 | 0.68 | - | 1076 | 4144 | Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz | 8 | 4 | int8 | cpu-int8 | 4647 | 3 |
+| kalyan-ettin+cpu-int8 | 3243 | 5.03 | - | 110 | 716 | Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz | 8 | 6 | int8 | cpu-int8 | 1408 | 9 |
 
 ## cuda
 

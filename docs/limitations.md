@@ -9,7 +9,7 @@
 - The primary compositions are hand-picked. No usable greedy optimum was produced with all candidates.
 - CPU throughput is calibrated, and GPU throughput was measured under concurrent load. Neither is a single-request SLA or a monetary cost estimate.
 - Compositions containing `bardsai-eu` use an ONNX CPU member. Its CPU cost borrows an eight-thread measurement and is an estimate; a GPU deployment is a mixed-device estimate.
-- The CPU queue was intentionally stopped at 440/506 triples; int8 at 117/147. Missing records are not assigned invented performance.
+- CPU quality coverage is complete: dynamic int8 is 147/147 and the ONNX CPU queue is 61/61. CPU throughput stays at 363/365 sets, because the two `gliner2-hivetrace-uni` speed triples only pool into the published row on the same AMD EPYC 9K84 machine group. Three `pii-shield-onnx` CPU records predate the current run contract: complete and error-free, but without a per-run dataset hash.
 - One open CPU subset has a tested source-to-score route. Exact full inference reproduction still requires historical model environments and source data; the public lightweight validation does not download all models or rerun the full experiment.
 - The headline masking view measures residual annotated characters and masking on unannotated rows under the published boundary expansion. It is not a production incident probability, and raw-offset maskers have a different result.
 - The sensitivity cut excludes project synthetic sets and corrupted copies, but its remaining 32 datasets still include upstream synthetic material and shared source lineage.

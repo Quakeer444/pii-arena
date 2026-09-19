@@ -246,6 +246,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base | eligible | Organizations | 296/300 | 98.67% | 100.00% | 97.67% |
 | model:nym-base | eligible | Network identifiers | 1425/3212 | 44.36% | 72.95% | 42.15% |
 | model:nym-base | eligible | Customer & employee IDs | 1065/1597 | 66.69% | 99.31% | 66.62% |
+| model:nym-small | eligible | Logins & usernames | 1230/1597 | 77.02% | 82.59% | 61.43% |
+| model:nym-small | eligible | People's names | 0/1597 | 0.00% | 100.00% | 99.44% |
+| model:nym-small | eligible | Phone numbers & email | 4633/4791 | 96.70% | 97.93% | 94.87% |
+| model:nym-small | eligible | Organizations | 292/300 | 97.33% | 99.00% | 96.33% |
+| model:nym-small | eligible | Network identifiers | 2535/3212 | 78.92% | 96.61% | 74.25% |
+| model:nym-small | eligible | Customer & employee IDs | 1065/1597 | 66.69% | 100.00% | 66.25% |
 | model:openai-base | eligible | Logins & usernames | 1514/1597 | 94.80% | 95.55% | 91.73% |
 | model:openai-base | eligible | People's names | 1541/1597 | 96.49% | 98.37% | 95.62% |
 | model:openai-base | eligible | Phone numbers & email | 4784/4791 | 99.85% | 99.96% | 99.67% |
@@ -282,6 +288,12 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:opf-ru-v2 | eligible | Organizations | 69/300 | 23.00% | 61.00% | 22.00% |
 | model:opf-ru-v2 | eligible | Network identifiers | 706/3212 | 21.98% | 27.46% | 21.61% |
 | model:opf-ru-v2 | eligible | Customer & employee IDs | 647/1597 | 40.51% | 85.28% | 16.28% |
+| model:pii-shield-onnx | eligible | Logins & usernames | 913/1597 | 57.17% | 63.37% | 32.87% |
+| model:pii-shield-onnx | eligible | People's names | 666/1597 | 41.70% | 59.24% | 34.13% |
+| model:pii-shield-onnx | eligible | Phone numbers & email | 3680/4791 | 76.81% | 92.63% | 72.89% |
+| model:pii-shield-onnx | eligible | Organizations | 9/300 | 3.00% | 22.00% | 2.00% |
+| model:pii-shield-onnx | eligible | Network identifiers | 2754/3212 | 85.74% | 99.56% | 78.61% |
+| model:pii-shield-onnx | eligible | Customer & employee IDs | 286/1597 | 17.91% | 27.05% | 12.27% |
 | model:pplx | eligible | Logins & usernames | 1597/1597 | 100.00% | 100.00% | 99.69% |
 | model:pplx | eligible | People's names | 1597/1597 | 100.00% | 100.00% | 100.00% |
 | model:pplx | eligible | Phone numbers & email | 4791/4791 | 100.00% | 100.00% | 100.00% |

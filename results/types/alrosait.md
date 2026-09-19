@@ -90,6 +90,8 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nuner-zero | eligible | Addresses & locations | 478/875 | 54.63% | 99.66% | 0.00% |
 | model:nym-base | eligible | People's names | 90/987 | 9.12% | 98.89% | 94.83% |
 | model:nym-base | eligible | Addresses & locations | 249/875 | 28.46% | 99.89% | 30.63% |
+| model:nym-small | eligible | People's names | 99/987 | 10.03% | 97.47% | 91.29% |
+| model:nym-small | eligible | Addresses & locations | 233/875 | 26.63% | 99.66% | 28.46% |
 | model:openai-base | eligible | People's names | 764/987 | 77.41% | 83.89% | 74.06% |
 | model:openai-base | eligible | Addresses & locations | 611/875 | 69.83% | 90.86% | 70.40% |
 | model:openmed-multilingual | eligible | People's names | 125/987 | 12.66% | 68.29% | 20.97% |

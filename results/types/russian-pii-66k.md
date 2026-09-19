@@ -342,6 +342,14 @@ Exact counts from the frozen predictions at threshold 0.5. `train` marks a known
 | model:nym-base | eligible | Phone numbers & email | 793/793 | 100.00% | 100.00% | 100.00% |
 | model:nym-base | eligible | Addresses & locations | 882/901 | 97.89% | 99.89% | 98.56% |
 | model:nym-base | eligible | Dates & times | 222/223 | 99.55% | 100.00% | 99.55% |
+| model:nym-small | eligible | Passwords, keys & tokens | 194/194 | 100.00% | 100.00% | 100.00% |
+| model:nym-small | eligible | Logins & usernames | 309/311 | 99.36% | 99.36% | 99.36% |
+| model:nym-small | eligible | Bank accounts & cards | 448/448 | 100.00% | 100.00% | 100.00% |
+| model:nym-small | eligible | Documents & identifiers | 781/784 | 99.62% | 100.00% | 99.11% |
+| model:nym-small | eligible | People's names | 1146/1151 | 99.57% | 99.57% | 99.39% |
+| model:nym-small | eligible | Phone numbers & email | 793/793 | 100.00% | 100.00% | 100.00% |
+| model:nym-small | eligible | Addresses & locations | 885/901 | 98.22% | 99.45% | 98.45% |
+| model:nym-small | eligible | Dates & times | 221/223 | 99.10% | 99.10% | 99.10% |
 | model:openai-base | eligible | Passwords, keys & tokens | 189/194 | 97.42% | 98.97% | 97.42% |
 | model:openai-base | eligible | Logins & usernames | 252/311 | 81.03% | 81.03% | 76.21% |
 | model:openai-base | eligible | Bank accounts & cards | 448/448 | 100.00% | 100.00% | 99.55% |
