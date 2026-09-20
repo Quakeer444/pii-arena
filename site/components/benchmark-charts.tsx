@@ -110,3 +110,86 @@ export function Tradeoff({ rows, onSelect }: { rows: Score[]; onSelect: (id: str
     </div>
   );
 }
+
+export function SpeedQuality({ rows, onSelect }: { rows: Score[]; onSelect: (id: string) => void }) {
+  const [hover, setHover] = useState<Score | null>(null);
+  const points = rows.filter((row) => row.cpu !== null && row.fullyHidden !== null);
+  const maxX = Math.max(1_000, Math.ceil(Math.max(...points.map((row) => 10_000 / row.cpu!), 0) / 1_000) * 1_000);
+  const width = 500;
+  const height = 237;
+  const left = 47;
+  const right = 22;
+  const top = 14;
+  const bottom = 40;
+  const x = (value: number) => left + value / maxX * (width - left - right);
+  const y = (value: number) => height - bottom - value / 100 * (height - bottom - top);
+
+  return (
+    <div className="scatter-wrap">
+      <svg
+        role="group"
+        aria-label="Scatter plot: complete masking versus measured CPU throughput"
+        viewBox={`0 0 ${width} ${height}`}
+        className="scatter"
+      >
+        {[0, 25, 50, 75, 100].map((value) => (
+          <g key={value}>
+            <line x1={left} x2={width - right} y1={y(value)} y2={y(value)} stroke="var(--border)" strokeDasharray="3 5" />
+            <text x={left - 9} y={y(value) + 4} textAnchor="end" fill="var(--muted-foreground)" fontSize="12">{value}%</text>
+          </g>
+        ))}
+        {[0, 1, 2, 3, 4].map((index) => (
+          <text
+            key={index}
+            x={x(maxX * index / 4)}
+            y={height - bottom + 22}
+            textAnchor="middle"
+            fill="var(--muted-foreground)"
+            fontSize="12"
+          >
+            {n(maxX * index / 4)}
+          </text>
+        ))}
+        {points.map((row) => {
+          const throughput = 10_000 / row.cpu!;
+          return (
+            <circle
+              key={row.id}
+              cx={x(throughput)}
+              cy={y(row.fullyHidden!)}
+              r={hover?.id === row.id ? 7 : 5}
+              fill={colorFor(row.family)}
+              fillOpacity={hover && hover.id !== row.id ? 0.45 : 0.86}
+              stroke="var(--card)"
+              strokeWidth="1.5"
+              tabIndex={0}
+              role="button"
+              aria-label={`${row.name}: ${percent(row.fullyHidden)} fully hidden, ${n(throughput)} CPU characters per second`}
+              onMouseEnter={() => setHover(row)}
+              onMouseLeave={() => setHover(null)}
+              onFocus={() => setHover(row)}
+              onBlur={() => setHover(null)}
+              onClick={() => onSelect(row.id)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  onSelect(row.id);
+                }
+              }}
+            >
+              <title>{row.name}</title>
+            </circle>
+          );
+        })}
+      </svg>
+      {hover && (
+        <div className="chart-tooltip">
+          <strong>{hover.name}</strong>
+          <span>Fully hidden <b>{percent(hover.fullyHidden)}</b></span>
+          <span>CPU throughput <b>{n(10_000 / hover.cpu!)} chars/s</b></span>
+        </div>
+      )}
+      <p className="axis-caption">Measured CPU throughput · characters / second →</p>
+    </div>
+  );
+}

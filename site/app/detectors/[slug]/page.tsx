@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import raw from "@/public/data/benchmark.json";
 import { PublicationPage } from "@/components/publication-page";
-import { aggregate, type Benchmark, detectorSlug, n, percent, ratio } from "@/lib/benchmark";
+import { aggregate, categoryScores, type Benchmark, detectorSlug, n, percent, ratio } from "@/lib/benchmark";
 import { pageMetadata } from "@/lib/seo";
 
 const data = raw as Benchmark;
@@ -36,7 +36,16 @@ export default async function DetectorPage({ params }: { params: Promise<{ slug:
   if (!score) notFound();
   const rows = data.records
     .filter((row) => row.system === model.id && !row.train)
-    .sort((a, b) => (ratio(a.gold - a.hit, a.gold) ?? Infinity) - (ratio(b.gold - b.hit, b.gold) ?? Infinity));
+    .sort((a, b) => (ratio(a.hidden, a.gold) ?? -Infinity) - (ratio(b.hidden, b.gold) ?? -Infinity));
+  const categoryResults = categoryScores(data, model.id, datasetIds)
+    .filter((entry) => entry.gold > 0)
+    .sort((a, b) => (ratio(b.hidden, b.gold) ?? -Infinity) - (ratio(a.hidden, a.gold) ?? -Infinity));
+  const strengths = categoryResults.slice(0, 3);
+  const watchList = categoryResults.slice(-3).reverse();
+  const languageScores = ["en", "ru", "multi"].map((language) => {
+    const ids = new Set(data.datasets.filter((dataset) => dataset.lang === language).map((dataset) => dataset.id));
+    return { language, score: aggregate(data, ids).find((entry) => entry.id === model.id) };
+  }).filter((entry) => entry.score);
   const title = `${model.name} PII detection benchmark`;
 
   return (
@@ -46,40 +55,58 @@ export default async function DetectorPage({ params }: { params: Promise<{ slug:
       description={`Measured on ${score.sets} of ${data.datasets.length} retained datasets under the same frozen scoring and masking protocol.`}
     >
       <div className="publication-summary">
-        <div><strong>{percent(score.untouched)}</strong><span>untouched annotations</span></div>
         <div><strong>{percent(score.fullyHidden)}</strong><span>fully hidden annotations</span></div>
-        <div><strong>{score.f1?.toFixed(3) ?? "—"}</strong><span>pooled character F1</span></div>
-        <div><strong>{score.sets}/{data.datasets.length}</strong><span>eligible datasets</span></div>
+        <div><strong>{percent(score.detected)}</strong><span>detected / overlapped</span></div>
+        <div><strong>{percent(score.extra)}</strong><span>extra masking</span></div>
+        <div><strong>{score.cpu ? n(10_000 / score.cpu) : "—"}</strong><span>CPU characters / second</span></div>
       </div>
+      <section className="detector-profile-grid">
+        <div className="publication-panel detector-signal detector-signal-good">
+          <div className="publication-panel-heading"><div><h2>Strengths</h2><p>Highest complete-masking rates by normalized data type.</p></div></div>
+          <div className="detector-signal-list">{strengths.map((entry) => <div key={entry.id}><span>{entry.title}</span><strong>{percent(ratio(entry.hidden, entry.gold))}</strong><small>{n(entry.hidden)} / {n(entry.gold)}</small></div>)}</div>
+        </div>
+        <div className="publication-panel detector-signal detector-signal-watch">
+          <div className="publication-panel-heading"><div><h2>Watch list</h2><p>Lowest observed complete-masking rates; inspect before deployment.</p></div></div>
+          <div className="detector-signal-list">{watchList.map((entry) => <div key={entry.id}><span>{entry.title}</span><strong>{percent(ratio(entry.hidden, entry.gold))}</strong><small>{n(entry.hidden)} / {n(entry.gold)}</small></div>)}</div>
+        </div>
+      </section>
+      <section className="publication-panel">
+        <div className="publication-panel-heading"><div><h2>Language coverage</h2><p>The overall leader can differ from the best choice for one language slice.</p></div></div>
+        <div className="publication-table-scroll"><table className="publication-table"><thead><tr><th>Language</th><th>Datasets</th><th>Fully hidden ↑</th><th>Detected ↑</th><th>Extra masking ↓</th></tr></thead><tbody>{languageScores.map(({language,score:languageScore}) => languageScore && <tr key={language}><td>{language === "en" ? "English" : language === "ru" ? "Russian" : "Multilingual"}</td><td className="number">{languageScore.sets}</td><td className="number metric-emphasis">{percent(languageScore.fullyHidden)}</td><td className="number">{percent(languageScore.detected)}</td><td className="number">{percent(languageScore.extra)}</td></tr>)}</tbody></table></div>
+      </section>
       <section className="publication-panel publication-copy">
-        <h2>Configuration</h2>
+        <h2>Configuration, source and version</h2>
         <dl className="publication-definition-list">
           <div><dt>Family</dt><dd>{model.family.toUpperCase()}</dd></div>
           <div><dt>Revision</dt><dd className="mono">{model.revision || "Not recorded"}</dd></div>
-          <div><dt>Untouched count</dt><dd className="mono">{n(score.missed)} / {n(score.gold)}</dd></div>
-          <div><dt>Additional masked text</dt><dd>{percent(score.extra)}</dd></div>
+          <div><dt>Eligible datasets</dt><dd>{score.sets} / {data.datasets.length}</dd></div>
+          <div><dt>Character F1</dt><dd>{score.f1?.toFixed(3) ?? "Not measured"}</dd></div>
+          <div><dt>Untouched diagnostic</dt><dd className="mono">{percent(score.untouched)} · {n(score.missed)} / {n(score.gold)}</dd></div>
+          <div><dt>Benchmark version</dt><dd className="mono">{data.meta.version} · {data.meta.experimentDate}</dd></div>
           <div><dt>CPU seconds / 10k chars</dt><dd>{score.cpu?.toFixed(3) ?? "Not measured"}</dd></div>
           <div><dt>GPU seconds / 10k chars</dt><dd>{score.gpu?.toFixed(3) ?? "Not measured"}</dd></div>
         </dl>
         {model.flags && model.flags !== "-" && <p className="publication-note">{model.flags}</p>}
         <div className="publication-actions">
           {model.upstream && <a className="action" href={model.upstream}>Upstream model</a>}
-          <Link className="action" href="/compare">Compare detectors</Link>
+          <Link className="action" href={`/compare?compare=${encodeURIComponent(`${model.id},model:pplx`)}`}>Compare detectors</Link>
+          <a className="action" href="https://github.com/Quakeer444/pii-secrets-benchmark/blob/main/docs/models.md">Model catalog</a>
           <Link className="action" href="/methodology">Read methodology</Link>
         </div>
       </section>
       <section className="publication-panel">
-        <div className="publication-panel-heading"><div><h2>Results by dataset</h2><p>Lower untouched and higher fully hidden are better. Counts remain visible.</p></div></div>
+        <div className="publication-panel-heading"><div><h2>Results by dataset</h2><p>Complete masking is primary; detection shows whether any character overlapped.</p></div></div>
         <div className="publication-table-scroll">
           <table className="publication-table">
-            <thead><tr><th>Dataset</th><th>Gold annotations</th><th>Untouched ↓</th><th>Fully hidden ↑</th></tr></thead>
+            <thead><tr><th>Dataset</th><th>Gold annotations</th><th>Fully hidden ↑</th><th>Detected ↑</th><th>Extra masking ↓</th></tr></thead>
             <tbody>
               {rows.map((row) => (
                 <tr key={row.dataset}>
                   <td><Link href={`/datasets/${row.dataset}`}>{row.dataset}</Link></td>
                   <td className="number">{n(row.gold)}</td>
-                  <td className="number">{percent(ratio(row.gold - row.hit, row.gold))}</td>
-                  <td className="number">{percent(ratio(row.hidden, row.gold))}</td>
+                  <td className="number metric-emphasis">{percent(ratio(row.hidden, row.gold))}</td>
+                  <td className="number">{percent(ratio(row.hit, row.gold))}</td>
+                  <td className="number">{percent(ratio(row.maskedNegativeChars, row.negativeChars))}</td>
                 </tr>
               ))}
             </tbody>

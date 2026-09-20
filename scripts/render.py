@@ -477,15 +477,15 @@ def readme_blocks(selected):
     stats=f"The frozen experiment contains **{len(CAT)} datasets**, **{sum(d['rows'] for d in CAT.values()):,} rows**, **{sum(d['gold_spans'] for d in CAT.values()):,} normalized gold spans** and **{len(json.loads((ROOT/'results/run-inventory.json').read_text())):,} saved prediction runs**. The catalog has {len(MODELS)} execution records, including label variants, mirrors, scanners and rules."
     mask=S['masking_diagnostics']
     headline=['| Outcome | Exact count | Rate |','|---|---:|---:|',
-              f"| Normalized annotations untouched | {aggregate(mask['composition'])['miss']:,} / {mask['gold_normalized']:,} | {format_pct(aggregate(mask['composition'])['miss'], mask['gold_normalized'])} |",
-              f"| Normalized annotations not fully hidden | {mask['gold_normalized'] - mask['normalized_fully_hidden_normalized']:,} / {mask['gold_normalized']:,} | {format_pct(mask['gold_normalized'] - mask['normalized_fully_hidden_normalized'], mask['gold_normalized'])} |",
+              f"| Normalized annotations fully hidden | {mask['normalized_fully_hidden_normalized']:,} / {mask['gold_normalized']:,} | {format_pct(mask['normalized_fully_hidden_normalized'], mask['gold_normalized'])} |",
+              f"| Normalized annotations detected / overlapped | {mask['gold_normalized'] - aggregate(mask['composition'])['miss']:,} / {mask['gold_normalized']:,} | {format_pct(mask['gold_normalized'] - aggregate(mask['composition'])['miss'], mask['gold_normalized'])} |",
+              f"| Characters masked in unannotated rows | {mask['clean_characters_masked']:,} / {mask['clean_characters']:,} | {format_pct(mask['clean_characters_masked'], mask['clean_characters'])} |",
               f"| Annotated rows with residual gold characters | {mask['positive_rows_residual_normalized']:,} / {mask['positive_rows']:,} | {format_pct(mask['positive_rows_residual_normalized'], mask['positive_rows'])} |",
-              f"| Unannotated rows touched by a mask | {mask['clean_rows_touched']:,} / {mask['clean_rows']:,} | {format_pct(mask['clean_rows_touched'], mask['clean_rows'])} |",
-              f"| Characters masked in unannotated rows | {mask['clean_characters_masked']:,} / {mask['clean_characters']:,} | {format_pct(mask['clean_characters_masked'], mask['clean_characters'])} |"]
-    comparison=['| Fixed configuration | Untouched annotations | Not fully hidden | Unannotated characters masked |','|---|---:|---:|---:|']
+              f"| Unannotated rows touched by a mask | {mask['clean_rows_touched']:,} / {mask['clean_rows']:,} | {format_pct(mask['clean_rows_touched'], mask['clean_rows'])} |"]
+    comparison=['| Fixed configuration | Fully hidden ↑ | Detected / overlapped ↑ | Extra masking ↓ |','|---|---:|---:|---:|']
     for n,label in NAMES.items():
         r=aggregate(n)
-        comparison.append(f"| {label} | {format_pct(r['miss'],r['nspan'])} | {format_pct(r['nspan']-r['hid'],r['nspan'])} | {format_pct(r['extra'],r['negchars'])} |")
+        comparison.append(f"| {label} | {format_pct(r['hid'],r['nspan'])} | {format_pct(r['nspan']-r['miss'],r['nspan'])} | {format_pct(r['extra'],r['negchars'])} |")
     qualifying=[r for r in selected if r['gold']>=100]
     ordered=sorted(qualifying,key=lambda r:(-r['hidden']/r['gold'],-r['gold'],r['dataset'],r['category']))
     samples=[('High observed coverage',r) for r in ordered[:3]]+ [('Low observed coverage',r) for r in sorted(qualifying,key=lambda r:(r['hidden']/r['gold'],-r['gold'],r['dataset'],r['category']))[:3]]

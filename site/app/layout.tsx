@@ -25,12 +25,14 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: "PII & Secrets Detection Benchmark",
     description: DEFAULT_DESCRIPTION,
-    url: "/leaderboard"
+    url: "/leaderboard",
+    images: [{ url: "/og.png", width: 1280, height: 640, alt: "PII & Secrets Benchmark leaderboard" }]
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "PII & Secrets Detection Benchmark",
-    description: DEFAULT_DESCRIPTION
+    description: DEFAULT_DESCRIPTION,
+    images: ["/og.png"]
   },
   other: {
     "source-code": GITHUB_URL

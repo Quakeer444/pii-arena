@@ -28,12 +28,14 @@ export function pageMetadata(title: string, description: string, path: string): 
       siteName: SITE_NAME,
       title,
       description,
-      url: path
+      url: path,
+      images: [{ url: "/og.png", width: 1280, height: 640, alt: "PII & Secrets Benchmark leaderboard" }]
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
-      description
+      description,
+      images: ["/og.png"]
     }
   };
 }
@@ -41,7 +43,7 @@ export function pageMetadata(title: string, description: string, path: string): 
 export const VIEW_METADATA = {
   leaderboard: {
     title: "PII & secrets detector leaderboard",
-    description: "Rank PII and secret detectors by untouched annotations, complete masking, character F1 and measured throughput."
+    description: "Rank PII and secret detectors by complete masking, detection, extra masking, character F1 and measured throughput."
   },
   compare: {
     title: "Compare PII detectors",

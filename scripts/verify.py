@@ -396,19 +396,19 @@ def check_readme_blocks():
     summary = {r['composition']: r for r in csv.DictReader((ROOT / 'results/summary.csv').open())}
     total_miss = int(summary[head]['miss'])
     for label, part, whole in (
-            ('Normalized annotations untouched', total_miss, mask['gold_normalized']),
-            ('Normalized annotations not fully hidden', mask['gold_normalized'] - mask['normalized_fully_hidden_normalized'], mask['gold_normalized']),
+            ('Normalized annotations fully hidden', mask['normalized_fully_hidden_normalized'], mask['gold_normalized']),
+            ('Normalized annotations detected / overlapped', mask['gold_normalized'] - total_miss, mask['gold_normalized']),
+            ('Characters masked in unannotated rows', mask['clean_characters_masked'], mask['clean_characters']),
             ('Annotated rows with residual gold characters', mask['positive_rows_residual_normalized'], mask['positive_rows']),
-            ('Unannotated rows touched by a mask', mask['clean_rows_touched'], mask['clean_rows']),
-            ('Characters masked in unannotated rows', mask['clean_characters_masked'], mask['clean_characters'])):
+            ('Unannotated rows touched by a mask', mask['clean_rows_touched'], mask['clean_rows'])):
         assert f'| {label} | {part:,} / {whole:,} |' in text, f'README headline row missing or stale: {label}'
     summary = {r['composition']: r for r in csv.DictReader((ROOT / 'results/summary.csv').open())}
     for name in names:
         r = summary[name]
-        untouched = f"{100 * int(r['miss']) / int(r['nspan']):.2f}%"
-        residual = f"{float(r['residual_pct']):.2f}%"
+        fully_hidden = f"{100 * int(r['hid']) / int(r['nspan']):.2f}%"
+        detected = f"{100 * (int(r['nspan']) - int(r['miss'])) / int(r['nspan']):.2f}%"
         clean = f"{100 * int(r['extra']) / int(r['negchars']):.2f}%"
-        assert f'| {untouched} | {residual} | {clean} |' in text, f'README comparison row missing or stale: {name}'
+        assert f'| {fully_hidden} | {detected} | {clean} |' in text, f'README comparison row missing or stale: {name}'
     print('README: four generated blocks present and matched to the snapshot.')
 
 
