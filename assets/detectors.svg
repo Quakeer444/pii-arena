@@ -1,0 +1,486 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 904" width="960" height="904" font-family="ui-sans-serif,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" role="img" aria-label="Pooled outcomes for every complete-coverage detector">
+<title>Every detector measured on the complete matrix</title>
+<desc>Pooled outcomes for every complete-coverage detector</desc>
+<metadata>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<cc:Work>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title>Every detector measured on the complete matrix</dc:title>
+<dc:description>Pooled outcomes for every complete-coverage detector</dc:description>
+<dc:format>image/svg+xml</dc:format>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<style>:root{--bg:#ffffff;--ink:#111827;--muted:#5b6472;--soft:#8b93a1;--grid:rgba(17,24,39,.09);--rule:rgba(17,24,39,.20);--zebra:rgba(17,24,39,.032);--bar:rgba(91,100,114,.16);--barline:#98a0ad;--accent:#0d7d74;--accent-bar:rgba(13,125,116,.22);--second:#7c5cbf;--second-bar:rgba(124,92,191,.20);--heat0:rgba(13,125,116,.06);--heat1:rgba(13,125,116,.20);--heat2:rgba(13,125,116,.40);--heat3:rgba(13,125,116,.65);--heat4:#0d7d74;--heat-ink0:#111827;--heat-ink1:#111827;--heat-ink2:#111827;--heat-ink3:#0a2f2b;--heat-ink4:#ffffff}@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--ink:#e6edf3;--muted:#9198a1;--soft:#6e7681;--grid:rgba(230,237,243,.08);--rule:rgba(230,237,243,.20);--zebra:rgba(230,237,243,.035);--bar:rgba(145,152,161,.20);--barline:#6e7681;--accent:#2dd4bf;--accent-bar:rgba(45,212,191,.24);--second:#c4a7f5;--second-bar:rgba(196,167,245,.22);--heat0:rgba(45,212,191,.08);--heat1:rgba(45,212,191,.22);--heat2:rgba(45,212,191,.42);--heat3:rgba(45,212,191,.66);--heat4:#2dd4bf;--heat-ink0:#e6edf3;--heat-ink1:#e6edf3;--heat-ink2:#e6edf3;--heat-ink3:#04211d;--heat-ink4:#04211d}}text{dominant-baseline:middle}</style>
+<rect width="960" height="904" fill="var(--bg)"/>
+<text x="40.0" y="34.0" fill="var(--accent)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.6">DETECTORS</text>
+<text x="40.0" y="64.0" fill="var(--ink)" font-size="21" text-anchor="start" font-weight="650">Every detector measured on the complete matrix</text>
+<text x="40.0" y="89.0" fill="var(--muted)" font-size="11.5" text-anchor="start" font-weight="400">31 configurations with all 41 datasets and 227,466 normalized gold spans; ranked by untouched annotations</text>
+<line x1="40.0" y1="109.0" x2="920.0" y2="109.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="290.0" y="127.0" fill="var(--muted)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.1">ANNOTATIONS UNTOUCHED</text>
+<text x="290.0" y="141.0" fill="var(--soft)" font-size="8.5" text-anchor="start" font-weight="400">lower is better  |  scale 0-100%</text>
+<line x1="278.0" y1="153.0" x2="278.0" y2="812.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="447.5" y="127.0" fill="var(--muted)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.1">FULLY HIDDEN</text>
+<text x="447.5" y="141.0" fill="var(--soft)" font-size="8.5" text-anchor="start" font-weight="400">higher is better  |  scale 0-100%</text>
+<line x1="435.5" y1="153.0" x2="435.5" y2="812.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="605.0" y="127.0" fill="var(--muted)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.1">MASKED OUTSIDE GOLD</text>
+<text x="605.0" y="141.0" fill="var(--soft)" font-size="8.5" text-anchor="start" font-weight="400">lower is better  |  scale 0-40%</text>
+<line x1="593.0" y1="153.0" x2="593.0" y2="812.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="762.5" y="127.0" fill="var(--muted)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.1">CHARACTER F1</text>
+<text x="762.5" y="141.0" fill="var(--soft)" font-size="8.5" text-anchor="start" font-weight="400">higher is better  |  scale 0-1</text>
+<line x1="750.5" y1="153.0" x2="750.5" y2="812.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="40.0" y="171.0" fill="var(--accent)" font-size="11" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-fastino</text>
+<text x="274.0" y="171.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2</text>
+<line x1="290.0" y1="177.0" x2="369.5" y2="177.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="166.5" width="10.5" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="379.5" y="171.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">13.2%</text>
+<line x1="447.5" y1="177.0" x2="527.0" y2="177.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="166.5" width="63.5" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="537.0" y="171.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">79.9%</text>
+<line x1="605.0" y1="177.0" x2="684.5" y2="177.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="166.5" width="11.7" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="694.5" y="171.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">5.9%</text>
+<line x1="762.5" y1="177.0" x2="842.0" y2="177.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="166.5" width="60.6" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="852.0" y="171.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.763</text>
+<rect x="40.0" y="181.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="192.0" fill="var(--accent)" font-size="11" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">bardsai-eu</text>
+<text x="274.0" y="192.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">onnx</text>
+<line x1="290.0" y1="198.0" x2="369.5" y2="198.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="187.5" width="14.8" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="379.5" y="192.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">18.6%</text>
+<line x1="447.5" y1="198.0" x2="527.0" y2="198.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="187.5" width="53.0" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="537.0" y="192.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">66.6%</text>
+<line x1="605.0" y1="198.0" x2="684.5" y2="198.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="187.5" width="15.3" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="694.5" y="192.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">7.7%</text>
+<line x1="762.5" y1="198.0" x2="842.0" y2="198.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="187.5" width="55.9" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="852.0" y="192.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.703</text>
+<text x="40.0" y="213.0" fill="var(--accent)" font-size="11" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">pplx</text>
+<text x="274.0" y="213.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">pplx</text>
+<line x1="290.0" y1="219.0" x2="369.5" y2="219.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="208.5" width="16.7" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="379.5" y="213.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">20.9%</text>
+<line x1="447.5" y1="219.0" x2="527.0" y2="219.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="208.5" width="59.6" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="537.0" y="213.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">74.9%</text>
+<line x1="605.0" y1="219.0" x2="684.5" y2="219.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="208.5" width="22.7" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="694.5" y="213.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">11.4%</text>
+<line x1="762.5" y1="219.0" x2="842.0" y2="219.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="208.5" width="56.9" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="852.0" y="213.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.716</text>
+<rect x="40.0" y="223.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="234.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">nuner-zero</text>
+<text x="274.0" y="234.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner</text>
+<line x1="290.0" y1="240.0" x2="369.5" y2="240.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="229.5" width="16.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="234.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">21.2%</text>
+<line x1="447.5" y1="240.0" x2="527.0" y2="240.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="229.5" width="56.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="234.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">71.6%</text>
+<line x1="605.0" y1="240.0" x2="684.5" y2="240.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="229.5" width="7.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="234.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">3.9%</text>
+<line x1="762.5" y1="240.0" x2="842.0" y2="240.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="229.5" width="60.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="234.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.760</text>
+<text x="40.0" y="255.0" fill="var(--accent)" font-size="11" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">mmbert32k</text>
+<text x="274.0" y="255.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">hf</text>
+<line x1="290.0" y1="261.0" x2="369.5" y2="261.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="250.5" width="17.1" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="379.5" y="255.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">21.5%</text>
+<line x1="447.5" y1="261.0" x2="527.0" y2="261.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="250.5" width="39.9" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="537.0" y="255.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">50.2%</text>
+<line x1="605.0" y1="261.0" x2="684.5" y2="261.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="250.5" width="20.5" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="694.5" y="255.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">10.3%</text>
+<line x1="762.5" y1="261.0" x2="842.0" y2="261.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="250.5" width="48.7" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="852.0" y="255.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.613</text>
+<rect x="40.0" y="265.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="276.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-urchade</text>
+<text x="274.0" y="276.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner</text>
+<line x1="290.0" y1="282.0" x2="369.5" y2="282.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="271.5" width="21.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="276.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">27.5%</text>
+<line x1="447.5" y1="282.0" x2="527.0" y2="282.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="271.5" width="52.1" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="276.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">65.5%</text>
+<line x1="605.0" y1="282.0" x2="684.5" y2="282.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="271.5" width="7.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="276.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">3.8%</text>
+<line x1="762.5" y1="282.0" x2="842.0" y2="282.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="271.5" width="54.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="276.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.687</text>
+<text x="40.0" y="297.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-large</text>
+<text x="274.0" y="297.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2</text>
+<line x1="290.0" y1="303.0" x2="369.5" y2="303.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="292.5" width="22.3" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="297.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">28.0%</text>
+<line x1="447.5" y1="303.0" x2="527.0" y2="303.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="292.5" width="52.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="297.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">65.6%</text>
+<line x1="605.0" y1="303.0" x2="684.5" y2="303.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="292.5" width="7.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="297.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">3.5%</text>
+<line x1="762.5" y1="303.0" x2="842.0" y2="303.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="292.5" width="54.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="297.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.685</text>
+<rect x="40.0" y="307.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="318.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">apararti</text>
+<text x="274.0" y="318.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">opf</text>
+<line x1="290.0" y1="324.0" x2="369.5" y2="324.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="313.5" width="23.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="318.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">29.8%</text>
+<line x1="447.5" y1="324.0" x2="527.0" y2="324.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="313.5" width="49.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="318.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">62.5%</text>
+<line x1="605.0" y1="324.0" x2="684.5" y2="324.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="313.5" width="22.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="318.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">11.2%</text>
+<line x1="762.5" y1="324.0" x2="842.0" y2="324.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="313.5" width="52.3" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="318.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.658</text>
+<text x="40.0" y="339.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">pii-shield-onnx</text>
+<text x="274.0" y="339.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">onnx</text>
+<line x1="290.0" y1="345.0" x2="369.5" y2="345.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="334.5" width="24.1" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="339.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">30.4%</text>
+<line x1="447.5" y1="345.0" x2="527.0" y2="345.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="334.5" width="44.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="339.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">56.4%</text>
+<line x1="605.0" y1="345.0" x2="684.5" y2="345.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="334.5" width="77.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="339.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">38.9%</text>
+<line x1="762.5" y1="345.0" x2="842.0" y2="345.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="334.5" width="33.1" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="339.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.416</text>
+<rect x="40.0" y="349.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="360.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner25-fastino</text>
+<text x="274.0" y="360.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2</text>
+<line x1="290.0" y1="366.0" x2="369.5" y2="366.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="355.5" width="24.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="360.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">30.9%</text>
+<line x1="447.5" y1="366.0" x2="527.0" y2="366.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="355.5" width="49.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="360.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">62.8%</text>
+<line x1="605.0" y1="366.0" x2="684.5" y2="366.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="355.5" width="14.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="360.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">7.3%</text>
+<line x1="762.5" y1="366.0" x2="842.0" y2="366.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="355.5" width="55.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="360.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.696</text>
+<text x="40.0" y="381.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-pii-edge</text>
+<text x="274.0" y="381.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner</text>
+<line x1="290.0" y1="387.0" x2="369.5" y2="387.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="376.5" width="25.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="381.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">31.7%</text>
+<line x1="447.5" y1="387.0" x2="527.0" y2="387.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="376.5" width="45.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="381.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">57.1%</text>
+<line x1="605.0" y1="387.0" x2="684.5" y2="387.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="376.5" width="19.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="381.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">9.5%</text>
+<line x1="762.5" y1="387.0" x2="842.0" y2="387.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="376.5" width="50.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="381.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.629</text>
+<rect x="40.0" y="391.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="402.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">ru-legal-ner</text>
+<text x="274.0" y="402.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">hf</text>
+<line x1="290.0" y1="408.0" x2="369.5" y2="408.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="397.5" width="27.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="402.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">34.5%</text>
+<line x1="447.5" y1="408.0" x2="527.0" y2="408.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="397.5" width="35.1" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="402.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">44.2%</text>
+<line x1="605.0" y1="408.0" x2="684.5" y2="408.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="397.5" width="25.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="402.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">12.6%</text>
+<line x1="762.5" y1="408.0" x2="842.0" y2="408.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="397.5" width="35.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="402.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.449</text>
+<text x="40.0" y="423.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">openai-base</text>
+<text x="274.0" y="423.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">opf</text>
+<line x1="290.0" y1="429.0" x2="369.5" y2="429.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="418.5" width="27.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="423.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">34.6%</text>
+<line x1="447.5" y1="429.0" x2="527.0" y2="429.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="418.5" width="47.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="423.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">59.7%</text>
+<line x1="605.0" y1="429.0" x2="684.5" y2="429.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="418.5" width="17.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="423.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">8.8%</text>
+<line x1="762.5" y1="429.0" x2="842.0" y2="429.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="418.5" width="52.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="423.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.657</text>
+<rect x="40.0" y="433.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="444.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">opf-kz-ru</text>
+<text x="274.0" y="444.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">opf</text>
+<line x1="290.0" y1="450.0" x2="369.5" y2="450.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="439.5" width="27.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="444.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">34.8%</text>
+<line x1="447.5" y1="450.0" x2="527.0" y2="450.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="439.5" width="44.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="444.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">56.5%</text>
+<line x1="605.0" y1="450.0" x2="684.5" y2="450.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="439.5" width="21.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="444.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">10.9%</text>
+<line x1="762.5" y1="450.0" x2="842.0" y2="450.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="439.5" width="50.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="444.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.634</text>
+<text x="40.0" y="465.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-stream-pii</text>
+<text x="274.0" y="465.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner</text>
+<line x1="290.0" y1="471.0" x2="369.5" y2="471.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="460.5" width="28.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="465.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">36.2%</text>
+<line x1="447.5" y1="471.0" x2="527.0" y2="471.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="460.5" width="41.1" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="465.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">51.7%</text>
+<line x1="605.0" y1="471.0" x2="684.5" y2="471.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="460.5" width="7.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="465.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">3.5%</text>
+<line x1="762.5" y1="471.0" x2="842.0" y2="471.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="460.5" width="50.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="465.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.636</text>
+<rect x="40.0" y="475.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="486.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-multi-v21</text>
+<text x="274.0" y="486.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner</text>
+<line x1="290.0" y1="492.0" x2="369.5" y2="492.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="481.5" width="31.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="486.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">39.9%</text>
+<line x1="447.5" y1="492.0" x2="527.0" y2="492.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="481.5" width="40.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="486.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">51.3%</text>
+<line x1="605.0" y1="492.0" x2="684.5" y2="492.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="481.5" width="5.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="486.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">2.7%</text>
+<line x1="762.5" y1="492.0" x2="842.0" y2="492.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="481.5" width="42.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="486.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.537</text>
+<text x="40.0" y="507.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">traciora</text>
+<text x="274.0" y="507.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">opf</text>
+<line x1="290.0" y1="513.0" x2="369.5" y2="513.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="502.5" width="32.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="507.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">40.5%</text>
+<line x1="447.5" y1="513.0" x2="527.0" y2="513.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="502.5" width="38.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="507.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">48.6%</text>
+<line x1="605.0" y1="513.0" x2="684.5" y2="513.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="502.5" width="14.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="507.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">7.5%</text>
+<line x1="762.5" y1="513.0" x2="842.0" y2="513.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="502.5" width="50.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="507.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.638</text>
+<rect x="40.0" y="517.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="528.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">ru-pii-ner</text>
+<text x="274.0" y="528.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">rupii</text>
+<line x1="290.0" y1="534.0" x2="369.5" y2="534.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="523.5" width="33.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="528.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">42.7%</text>
+<line x1="447.5" y1="534.0" x2="527.0" y2="534.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="523.5" width="42.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="528.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">53.1%</text>
+<line x1="605.0" y1="534.0" x2="684.5" y2="534.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="523.5" width="5.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="528.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">2.7%</text>
+<line x1="762.5" y1="534.0" x2="842.0" y2="534.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="523.5" width="47.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="528.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.599</text>
+<text x="40.0" y="549.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">opf-ru-v2</text>
+<text x="274.0" y="549.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">opf</text>
+<line x1="290.0" y1="555.0" x2="369.5" y2="555.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="544.5" width="34.1" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="549.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">42.9%</text>
+<line x1="447.5" y1="555.0" x2="527.0" y2="555.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="544.5" width="37.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="549.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">47.5%</text>
+<line x1="605.0" y1="555.0" x2="684.5" y2="555.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="544.5" width="13.3" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="549.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">6.7%</text>
+<line x1="762.5" y1="555.0" x2="842.0" y2="555.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="544.5" width="50.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="549.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.629</text>
+<rect x="40.0" y="559.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="570.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">davlan-xlmr</text>
+<text x="274.0" y="570.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">hf</text>
+<line x1="290.0" y1="576.0" x2="369.5" y2="576.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="565.5" width="38.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="570.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">48.7%</text>
+<line x1="447.5" y1="576.0" x2="527.0" y2="576.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="565.5" width="35.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="570.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">44.0%</text>
+<line x1="605.0" y1="576.0" x2="684.5" y2="576.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="565.5" width="1.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="570.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.7%</text>
+<line x1="762.5" y1="576.0" x2="842.0" y2="576.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="565.5" width="39.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="570.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.501</text>
+<text x="40.0" y="591.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">stanza-ru</text>
+<text x="274.0" y="591.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">stanza</text>
+<line x1="290.0" y1="597.0" x2="369.5" y2="597.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="586.5" width="38.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="591.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">48.9%</text>
+<line x1="447.5" y1="597.0" x2="527.0" y2="597.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="586.5" width="34.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="591.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">43.4%</text>
+<line x1="605.0" y1="597.0" x2="684.5" y2="597.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="586.5" width="32.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="591.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">16.1%</text>
+<line x1="762.5" y1="597.0" x2="842.0" y2="597.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="586.5" width="25.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="591.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.326</text>
+<rect x="40.0" y="601.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="612.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-pii-base</text>
+<text x="274.0" y="612.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner</text>
+<line x1="290.0" y1="618.0" x2="369.5" y2="618.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="607.5" width="39.3" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="612.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">49.5%</text>
+<line x1="447.5" y1="618.0" x2="527.0" y2="618.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="607.5" width="35.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="612.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">44.6%</text>
+<line x1="605.0" y1="618.0" x2="684.5" y2="618.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="607.5" width="3.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="612.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1.9%</text>
+<line x1="762.5" y1="618.0" x2="842.0" y2="618.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="607.5" width="43.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="612.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.550</text>
+<text x="40.0" y="633.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gravitee-small</text>
+<text x="274.0" y="633.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">hf</text>
+<line x1="290.0" y1="639.0" x2="369.5" y2="639.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="628.5" width="39.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="633.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">49.5%</text>
+<line x1="447.5" y1="639.0" x2="527.0" y2="639.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="628.5" width="34.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="633.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">43.0%</text>
+<line x1="605.0" y1="639.0" x2="684.5" y2="639.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="628.5" width="10.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="633.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">5.4%</text>
+<line x1="762.5" y1="639.0" x2="842.0" y2="639.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="628.5" width="39.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="633.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.496</text>
+<rect x="40.0" y="643.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="654.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">ner-ru-yqelz</text>
+<text x="274.0" y="654.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">hf</text>
+<line x1="290.0" y1="660.0" x2="369.5" y2="660.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="649.5" width="39.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="654.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">50.2%</text>
+<line x1="447.5" y1="660.0" x2="527.0" y2="660.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="649.5" width="31.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="654.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">39.7%</text>
+<line x1="605.0" y1="660.0" x2="684.5" y2="660.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="649.5" width="18.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="654.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">9.2%</text>
+<line x1="762.5" y1="660.0" x2="842.0" y2="660.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="649.5" width="35.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="654.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.445</text>
+<text x="40.0" y="675.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-vladlinv</text>
+<text x="274.0" y="675.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2</text>
+<line x1="290.0" y1="681.0" x2="369.5" y2="681.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="670.5" width="40.1" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="675.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">50.4%</text>
+<line x1="447.5" y1="681.0" x2="527.0" y2="681.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="670.5" width="36.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="675.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">46.1%</text>
+<line x1="605.0" y1="681.0" x2="684.5" y2="681.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="670.5" width="1.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="675.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.9%</text>
+<line x1="762.5" y1="681.0" x2="842.0" y2="681.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="670.5" width="45.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="675.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.572</text>
+<rect x="40.0" y="685.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="696.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">davlan-mbert</text>
+<text x="274.0" y="696.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">hf</text>
+<line x1="290.0" y1="702.0" x2="369.5" y2="702.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="691.5" width="40.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="696.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">51.1%</text>
+<line x1="447.5" y1="702.0" x2="527.0" y2="702.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="691.5" width="33.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="696.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">42.0%</text>
+<line x1="605.0" y1="702.0" x2="684.5" y2="702.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="691.5" width="1.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="696.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.9%</text>
+<line x1="762.5" y1="702.0" x2="842.0" y2="702.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="691.5" width="38.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="696.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.481</text>
+<text x="40.0" y="717.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">ner-ru-gherman</text>
+<text x="274.0" y="717.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">hf</text>
+<line x1="290.0" y1="723.0" x2="369.5" y2="723.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="712.5" width="40.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="717.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">51.2%</text>
+<line x1="447.5" y1="723.0" x2="527.0" y2="723.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="712.5" width="22.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="717.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">27.6%</text>
+<line x1="605.0" y1="723.0" x2="684.5" y2="723.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="712.5" width="0.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="717.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.3%</text>
+<line x1="762.5" y1="723.0" x2="842.0" y2="723.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="712.5" width="36.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="717.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.453</text>
+<rect x="40.0" y="727.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="738.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">fef2-secret-ru</text>
+<text x="274.0" y="738.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">hf</text>
+<line x1="290.0" y1="744.0" x2="369.5" y2="744.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="733.5" width="45.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="738.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">56.6%</text>
+<line x1="447.5" y1="744.0" x2="527.0" y2="744.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="733.5" width="28.3" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="738.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">35.6%</text>
+<line x1="605.0" y1="744.0" x2="684.5" y2="744.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="733.5" width="4.3" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="738.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">2.2%</text>
+<line x1="762.5" y1="744.0" x2="842.0" y2="744.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="733.5" width="42.1" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="738.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.530</text>
+<text x="40.0" y="759.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">spacy-ru-lg</text>
+<text x="274.0" y="759.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">spacy</text>
+<line x1="290.0" y1="765.0" x2="369.5" y2="765.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="754.5" width="54.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="759.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">68.6%</text>
+<line x1="447.5" y1="765.0" x2="527.0" y2="765.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="754.5" width="21.3" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="759.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">26.7%</text>
+<line x1="605.0" y1="765.0" x2="684.5" y2="765.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="754.5" width="6.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="759.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">3.2%</text>
+<line x1="762.5" y1="765.0" x2="842.0" y2="765.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="754.5" width="25.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="759.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.326</text>
+<rect x="40.0" y="769.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="780.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">natasha</text>
+<text x="274.0" y="780.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">natasha</text>
+<line x1="290.0" y1="786.0" x2="369.5" y2="786.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="775.5" width="57.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="780.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">72.0%</text>
+<line x1="447.5" y1="786.0" x2="527.0" y2="786.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="775.5" width="19.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="780.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">24.2%</text>
+<line x1="605.0" y1="786.0" x2="684.5" y2="786.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="775.5" width="2.1" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="780.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1.1%</text>
+<line x1="762.5" y1="786.0" x2="842.0" y2="786.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="775.5" width="25.1" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="780.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.316</text>
+<text x="40.0" y="801.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">rules-ru</text>
+<text x="274.0" y="801.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">rules</text>
+<line x1="290.0" y1="807.0" x2="369.5" y2="807.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="290.0" y="796.5" width="59.3" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="379.5" y="801.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">74.6%</text>
+<line x1="447.5" y1="807.0" x2="527.0" y2="807.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="447.5" y="796.5" width="19.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="537.0" y="801.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">24.5%</text>
+<line x1="605.0" y1="807.0" x2="684.5" y2="807.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="605.0" y="796.5" width="13.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="694.5" y="801.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">7.0%</text>
+<line x1="762.5" y1="807.0" x2="842.0" y2="807.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="762.5" y="796.5" width="40.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="852.0" y="801.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.506</text>
+<line x1="40.0" y1="839.0" x2="920.0" y2="839.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="40.0" y="859.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Untouched means no predicted character reaches the normalized annotation; fully hidden means every one of its characters is masked.</text>
+<text x="40.0" y="872.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Configurations with partial coverage are excluded from this chart and listed with their dataset counts in results/detectors.md.</text>
+<text x="40.0" y="885.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Highlighted rows are the four members of the reference composition. This is a descriptive comparison, not a selected winner.</text>
+<text x="920.0" y="859.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
+</svg>

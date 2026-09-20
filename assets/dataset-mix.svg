@@ -1,398 +1,96 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="950.4pt" height="511.2pt" viewBox="0 0 950.4 511.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <title>Full-hiding sensitivity to dataset weighting</title>
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:title>Full-hiding sensitivity to dataset weighting</dc:title>
-    <dc:description>Span-weighted and dataset-macro full hiding on all forty-one cuts and span-weighted full hiding on the predeclared thirty-two-cut sensitivity subset.</dc:description>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 511.2 
-L 950.4 511.2 
-L 950.4 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
-  </g>
-  <g id="axes_1">
-   <g id="patch_2">
-    <path d="M 294.624 362.952 
-L 921.888 362.952 
-L 921.888 107.352 
-L 294.624 107.352 
-z
-" style="fill: #ffffff"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 294.624 118.970182 
-L 721.838966 118.970182 
-L 721.838966 127.938603 
-L 294.624 127.938603 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 294.624 159.735732 
-L 749.999244 159.735732 
-L 749.999244 168.704153 
-L 294.624 168.704153 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 294.624 200.501282 
-L 818.876984 200.501282 
-L 818.876984 209.469703 
-L 294.624 209.469703 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 294.624 241.266833 
-L 824.725638 241.266833 
-L 824.725638 250.235254 
-L 294.624 250.235254 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 294.624 282.032383 
-L 831.093225 282.032383 
-L 831.093225 291.000804 
-L 294.624 291.000804 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 294.624 322.797933 
-L 832.95587 322.797933 
-L 832.95587 331.766354 
-L 294.624 331.766354 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 294.624 128.753914 
-L 740.620889 128.753914 
-L 740.620889 137.722335 
-L 294.624 137.722335 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #98c3c8"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 294.624 169.519464 
-L 711.025314 169.519464 
-L 711.025314 178.487885 
-L 294.624 178.487885 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #98c3c8"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 294.624 210.285014 
-L 808.191183 210.285014 
-L 808.191183 219.253435 
-L 294.624 219.253435 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #98c3c8"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 294.624 251.050565 
-L 812.201682 251.050565 
-L 812.201682 260.018986 
-L 294.624 260.018986 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #98c3c8"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 294.624 291.816115 
-L 818.248657 291.816115 
-L 818.248657 300.784536 
-L 294.624 300.784536 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #98c3c8"/>
-   </g>
-   <g id="patch_14">
-    <path d="M 294.624 332.581665 
-L 819.961449 332.581665 
-L 819.961449 341.550086 
-L 294.624 341.550086 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #98c3c8"/>
-   </g>
-   <g id="patch_15">
-    <path d="M 294.624 138.537646 
-L 688.369423 138.537646 
-L 688.369423 147.506067 
-L 294.624 147.506067 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #8b7eae"/>
-   </g>
-   <g id="patch_16">
-    <path d="M 294.624 179.303196 
-L 748.450478 179.303196 
-L 748.450478 188.271617 
-L 294.624 188.271617 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #8b7eae"/>
-   </g>
-   <g id="patch_17">
-    <path d="M 294.624 220.068746 
-L 810.915781 220.068746 
-L 810.915781 229.037167 
-L 294.624 229.037167 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #8b7eae"/>
-   </g>
-   <g id="patch_18">
-    <path d="M 294.624 260.834297 
-L 818.255788 260.834297 
-L 818.255788 269.802718 
-L 294.624 269.802718 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #8b7eae"/>
-   </g>
-   <g id="patch_19">
-    <path d="M 294.624 301.599847 
-L 826.338157 301.599847 
-L 826.338157 310.568268 
-L 294.624 310.568268 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #8b7eae"/>
-   </g>
-   <g id="patch_20">
-    <path d="M 294.624 342.365397 
-L 828.444856 342.365397 
-L 828.444856 351.333818 
-L 294.624 351.333818 
-z
-" clip-path="url(#pa5bab239de)" style="fill: #8b7eae"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m8ba886339c" d="M 0 0 
-L 0 3.5 
-" style="stroke: #50647a; stroke-width: 0.8"/>
-      </defs>
-      <g>
-       <use xlink:href="#m8ba886339c" x="294.624" y="362.952" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="294.624" y="378.310281" transform="rotate(-0 294.624 378.310281)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m8ba886339c" x="437.184" y="362.952" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="437.184" y="378.310281" transform="rotate(-0 437.184 378.310281)">25</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m8ba886339c" x="579.744" y="362.952" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="579.744" y="378.310281" transform="rotate(-0 579.744 378.310281)">50</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m8ba886339c" x="722.304" y="362.952" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="722.304" y="378.310281" transform="rotate(-0 722.304 378.310281)">75</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m8ba886339c" x="864.864" y="362.952" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="864.864" y="378.310281" transform="rotate(-0 864.864 378.310281)">100</text>
-     </g>
-    </g>
-    <g id="text_6">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="608.256" y="392.956219" transform="rotate(-0 608.256 392.956219)">Share fully hidden (%)</text>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_6"/>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="291.124" y="137.417265" transform="rotate(-0 291.124 137.417265)">PPLX</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_7"/>
-     <g id="text_8">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="291.124" y="178.182815" transform="rotate(-0 291.124 178.182815)">Fastino GLiNER2</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_8"/>
-     <g id="text_9">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="291.124" y="218.948366" transform="rotate(-0 291.124 218.948366)">PPLX + Fastino</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_9"/>
-     <g id="text_10">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="291.124" y="259.713916" transform="rotate(-0 291.124 259.713916)">PPLX + Fastino + mmBERT</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_10"/>
-     <g id="text_11">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="291.124" y="300.479466" transform="rotate(-0 291.124 300.479466)">PPLX + Fastino + BardsAI</text>
-     </g>
-    </g>
-    <g id="ytick_6">
-     <g id="line2d_11"/>
-     <g id="text_12">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="291.124" y="341.245016" transform="rotate(-0 291.124 341.245016)">PPLX + Fastino + mmBERT + BardsAI</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_21">
-    <path d="M 294.624 362.952 
-L 921.888 362.952 
-" style="fill: none; stroke: #dce4ed; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="text_13">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="725.830646" y="125.93783" transform="rotate(-0 725.830646 125.93783)">74.92%</text>
-   </g>
-   <g id="text_14">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="753.990924" y="166.70338" transform="rotate(-0 753.990924 166.70338)">79.86%</text>
-   </g>
-   <g id="text_15">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="822.868664" y="207.46893" transform="rotate(-0 822.868664 207.46893)">91.94%</text>
-   </g>
-   <g id="text_16">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="828.717318" y="248.234481" transform="rotate(-0 828.717318 248.234481)">92.96%</text>
-   </g>
-   <g id="text_17">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="835.084905" y="289.000031" transform="rotate(-0 835.084905 289.000031)">94.08%</text>
-   </g>
-   <g id="text_18">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="836.94755" y="329.765581" transform="rotate(-0 836.94755 329.765581)">94.40%</text>
-   </g>
-   <g id="text_19">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="744.612569" y="135.721562" transform="rotate(-0 744.612569 135.721562)">78.21%</text>
-   </g>
-   <g id="text_20">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="715.016994" y="176.487112" transform="rotate(-0 715.016994 176.487112)">73.02%</text>
-   </g>
-   <g id="text_21">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="812.182863" y="217.252662" transform="rotate(-0 812.182863 217.252662)">90.06%</text>
-   </g>
-   <g id="text_22">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="816.193362" y="258.018213" transform="rotate(-0 816.193362 258.018213)">90.76%</text>
-   </g>
-   <g id="text_23">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="822.240337" y="298.783763" transform="rotate(-0 822.240337 298.783763)">91.83%</text>
-   </g>
-   <g id="text_24">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="823.953129" y="339.549313" transform="rotate(-0 823.953129 339.549313)">92.13%</text>
-   </g>
-   <g id="text_25">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="692.361103" y="145.505294" transform="rotate(-0 692.361103 145.505294)">69.05%</text>
-   </g>
-   <g id="text_26">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="752.442158" y="186.270844" transform="rotate(-0 752.442158 186.270844)">79.59%</text>
-   </g>
-   <g id="text_27">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="814.907461" y="227.036394" transform="rotate(-0 814.907461 227.036394)">90.54%</text>
-   </g>
-   <g id="text_28">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="822.247468" y="267.801945" transform="rotate(-0 822.247468 267.801945)">91.83%</text>
-   </g>
-   <g id="text_29">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="830.329837" y="308.567495" transform="rotate(-0 830.329837 308.567495)">93.24%</text>
-   </g>
-   <g id="text_30">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="832.436536" y="349.333045" transform="rotate(-0 832.436536 349.333045)">93.61%</text>
-   </g>
-   <g id="legend_1">
-    <g id="patch_22">
-     <path d="M 58.99104 399.196062 
-L 78.99104 399.196062 
-L 78.99104 392.196062 
-L 58.99104 392.196062 
-z
-" style="fill: #087e8b"/>
-    </g>
-    <g id="text_31">
-     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="86.99104" y="399.196062" transform="rotate(-0 86.99104 399.196062)">All 41, span-weighted</text>
-    </g>
-    <g id="patch_23">
-     <path d="M 58.99104 413.874187 
-L 78.99104 413.874187 
-L 78.99104 406.874187 
-L 58.99104 406.874187 
-z
-" style="fill: #98c3c8"/>
-    </g>
-    <g id="text_32">
-     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="86.99104" y="413.874187" transform="rotate(-0 86.99104 413.874187)">All 41, equal dataset weight</text>
-    </g>
-    <g id="patch_24">
-     <path d="M 58.99104 428.552312 
-L 78.99104 428.552312 
-L 78.99104 421.552312 
-L 58.99104 421.552312 
-z
-" style="fill: #8b7eae"/>
-    </g>
-    <g id="text_33">
-     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="86.99104" y="428.552312" transform="rotate(-0 86.99104 428.552312)">Remaining 32, span-weighted</text>
-    </g>
-   </g>
-  </g>
-  <g id="text_34">
-   <text style="font-weight: 700; font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="33.264" y="37.164563" transform="rotate(-0 33.264 37.164563)">The dataset mix changes the percentage</text>
-  </g>
-  <g id="text_35">
-   <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #50647a" x="33.264" y="62.082406" transform="rotate(-0 33.264 62.082406)">Fully hidden normalized spans (%) | same compositions in every cut</text>
-  </g>
-  <g id="text_36">
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(33.264 471.13425)">Remaining 32 excludes six project-generated synthetic sets and three corrupted copies; upstream synthetic data remains.</text>
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(33.264 481.212281)">This is a descriptive sensitivity analysis, not a new selection or test split.</text>
-  </g>
-  <g id="text_37">
-   <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #50647a" x="917.136" y="500.976" transform="rotate(-0 917.136 500.976)">PII &amp; Secrets Benchmark | snapshot 2026-09-09</text>
-  </g>
- </g>
- <defs>
-  <clipPath id="pa5bab239de">
-   <rect x="294.624" y="107.352" width="627.264" height="255.6"/>
-  </clipPath>
- </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 401" width="960" height="401" font-family="ui-sans-serif,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" role="img" aria-label="Full-hiding sensitivity to dataset weighting">
+<title>The dataset mix changes the percentage</title>
+<desc>Full-hiding sensitivity to dataset weighting</desc>
+<metadata>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<cc:Work>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title>The dataset mix changes the percentage</dc:title>
+<dc:description>Full-hiding sensitivity to dataset weighting</dc:description>
+<dc:format>image/svg+xml</dc:format>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<style>:root{--bg:#ffffff;--ink:#111827;--muted:#5b6472;--soft:#8b93a1;--grid:rgba(17,24,39,.09);--rule:rgba(17,24,39,.20);--zebra:rgba(17,24,39,.032);--bar:rgba(91,100,114,.16);--barline:#98a0ad;--accent:#0d7d74;--accent-bar:rgba(13,125,116,.22);--second:#7c5cbf;--second-bar:rgba(124,92,191,.20);--heat0:rgba(13,125,116,.06);--heat1:rgba(13,125,116,.20);--heat2:rgba(13,125,116,.40);--heat3:rgba(13,125,116,.65);--heat4:#0d7d74;--heat-ink0:#111827;--heat-ink1:#111827;--heat-ink2:#111827;--heat-ink3:#0a2f2b;--heat-ink4:#ffffff}@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--ink:#e6edf3;--muted:#9198a1;--soft:#6e7681;--grid:rgba(230,237,243,.08);--rule:rgba(230,237,243,.20);--zebra:rgba(230,237,243,.035);--bar:rgba(145,152,161,.20);--barline:#6e7681;--accent:#2dd4bf;--accent-bar:rgba(45,212,191,.24);--second:#c4a7f5;--second-bar:rgba(196,167,245,.22);--heat0:rgba(45,212,191,.08);--heat1:rgba(45,212,191,.22);--heat2:rgba(45,212,191,.42);--heat3:rgba(45,212,191,.66);--heat4:#2dd4bf;--heat-ink0:#e6edf3;--heat-ink1:#e6edf3;--heat-ink2:#e6edf3;--heat-ink3:#04211d;--heat-ink4:#04211d}}text{dominant-baseline:middle}</style>
+<rect width="960" height="401" fill="var(--bg)"/>
+<text x="40.0" y="34.0" fill="var(--accent)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.6">WEIGHTING SENSITIVITY</text>
+<text x="40.0" y="64.0" fill="var(--ink)" font-size="21" text-anchor="start" font-weight="650">The dataset mix changes the percentage</text>
+<text x="40.0" y="89.0" fill="var(--muted)" font-size="11.5" text-anchor="start" font-weight="400">Fully hidden normalized spans under three weightings of the same predictions</text>
+<line x1="40.0" y1="109.0" x2="920.0" y2="109.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="292.0" y="127.0" fill="var(--muted)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.1">ALL 41, SPAN-WEIGHTED</text>
+<text x="292.0" y="141.0" fill="var(--soft)" font-size="8.5" text-anchor="start" font-weight="400">higher is better  |  scale 0-100%</text>
+<line x1="280.0" y1="153.0" x2="280.0" y2="322.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="501.3" y="127.0" fill="var(--muted)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.1">ALL 41, EQUAL DATASET WEIGHT</text>
+<text x="501.3" y="141.0" fill="var(--soft)" font-size="8.5" text-anchor="start" font-weight="400">higher is better  |  scale 0-100%</text>
+<line x1="489.3" y1="153.0" x2="489.3" y2="322.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="710.7" y="127.0" fill="var(--muted)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.1">REMAINING 32, SPAN-WEIGHTED</text>
+<text x="710.7" y="141.0" fill="var(--soft)" font-size="8.5" text-anchor="start" font-weight="400">higher is better  |  scale 0-100%</text>
+<line x1="698.7" y1="153.0" x2="698.7" y2="322.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="40.0" y="171.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX</text>
+<line x1="292.0" y1="177.0" x2="401.3" y2="177.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="292.0" y="166.5" width="81.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="411.3" y="171.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">74.92%</text>
+<line x1="501.3" y1="177.0" x2="610.7" y2="177.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="501.3" y="166.5" width="85.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="620.7" y="171.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">78.21%</text>
+<line x1="710.7" y1="177.0" x2="820.0" y2="177.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="710.7" y="166.5" width="75.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="830.0" y="171.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">69.05%</text>
+<rect x="40.0" y="185.0" width="880.0" height="28" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="199.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">Fastino GLiNER2</text>
+<line x1="292.0" y1="205.0" x2="401.3" y2="205.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="292.0" y="194.5" width="87.3" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="411.3" y="199.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">79.86%</text>
+<line x1="501.3" y1="205.0" x2="610.7" y2="205.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="501.3" y="194.5" width="79.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="620.7" y="199.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">73.02%</text>
+<line x1="710.7" y1="205.0" x2="820.0" y2="205.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="710.7" y="194.5" width="87.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="830.0" y="199.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">79.59%</text>
+<text x="40.0" y="227.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX + Fastino</text>
+<line x1="292.0" y1="233.0" x2="401.3" y2="233.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="292.0" y="222.5" width="100.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="411.3" y="227.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">91.94%</text>
+<line x1="501.3" y1="233.0" x2="610.7" y2="233.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="501.3" y="222.5" width="98.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="620.7" y="227.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">90.06%</text>
+<line x1="710.7" y1="233.0" x2="820.0" y2="233.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="710.7" y="222.5" width="99.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="830.0" y="227.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">90.54%</text>
+<rect x="40.0" y="241.0" width="880.0" height="28" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="255.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX + Fastino + mmBERT</text>
+<line x1="292.0" y1="261.0" x2="401.3" y2="261.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="292.0" y="250.5" width="101.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="411.3" y="255.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">92.96%</text>
+<line x1="501.3" y1="261.0" x2="610.7" y2="261.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="501.3" y="250.5" width="99.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="620.7" y="255.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">90.76%</text>
+<line x1="710.7" y1="261.0" x2="820.0" y2="261.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="710.7" y="250.5" width="100.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="830.0" y="255.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">91.83%</text>
+<text x="40.0" y="283.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX + Fastino + BardsAI</text>
+<line x1="292.0" y1="289.0" x2="401.3" y2="289.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="292.0" y="278.5" width="102.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="411.3" y="283.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">94.08%</text>
+<line x1="501.3" y1="289.0" x2="610.7" y2="289.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="501.3" y="278.5" width="100.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="620.7" y="283.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">91.83%</text>
+<line x1="710.7" y1="289.0" x2="820.0" y2="289.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="710.7" y="278.5" width="101.9" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="830.0" y="283.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">93.24%</text>
+<rect x="40.0" y="297.0" width="880.0" height="28" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="311.0" fill="var(--accent)" font-size="11" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX + Fastino + mmBERT + BardsAI</text>
+<line x1="292.0" y1="317.0" x2="401.3" y2="317.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="292.0" y="306.5" width="103.2" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="411.3" y="311.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">94.40%</text>
+<line x1="501.3" y1="317.0" x2="610.7" y2="317.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="501.3" y="306.5" width="100.7" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="620.7" y="311.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">92.13%</text>
+<line x1="710.7" y1="317.0" x2="820.0" y2="317.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="710.7" y="306.5" width="102.4" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="830.0" y="311.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">93.61%</text>
+<line x1="40.0" y1="349.0" x2="920.0" y2="349.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="40.0" y="369.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Remaining 32 excludes six project-generated synthetic sets and three corrupted copies; upstream synthetic data remains.</text>
+<text x="40.0" y="382.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">This is a descriptive sensitivity analysis, not a new selection or a held-out test split.</text>
+<text x="920.0" y="369.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
 </svg>

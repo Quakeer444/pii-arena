@@ -1,5 +1,29 @@
 # Changelog
 
+## Unreleased
+
+Presentation only. No prediction, score, dataset hash, protocol or frozen date
+changed: every number below is read from the same snapshot.
+
+- The README now answers the two questions it never answered. A generated table
+  and figure cover the 31 configurations with complete 41-dataset coverage
+  (untouched annotations, full hiding, masking outside annotations, character
+  F1), and two more cover measured cost: 45 CPU rows and 28 GPU rows, each from
+  a single comparable machine group, in seconds per 10,000 characters.
+- New `results/detectors.md` pools all 103 measured configurations, including
+  partial coverage, Russian-label variants, chunking and quantization runs, each
+  with its eligible dataset count and its measured cost.
+- Four new figures: `detectors`, `cpu-speed`, `gpu-speed` and `speed-quality`.
+  The eleven existing figures were redrawn in the same skin; assets now number
+  15.
+- Figures are written directly as SVG by `scripts/figures.py` instead of being
+  plotted through matplotlib. Each one carries a light and a dark palette chosen
+  by the reader's `prefers-color-scheme`, and the published bytes no longer
+  depend on a plotting library's platform behavior. The `plots` dependency group
+  is gone, so the publication rebuild needs no third-party package.
+- `scripts/verify.py` checks the three new README blocks against the snapshot
+  rows they are generated from, and the required asset count moved from 11 to 15.
+
 ## 1.0.3 - 2026-09-19
 
 The CPU side of the frozen experiment is measured out. The experiment itself is

@@ -2,24 +2,20 @@
 import csv
 import json
 import math
-import os
 import sys
 import tomllib
 import re
 from collections import defaultdict
+from functools import cache
 from pathlib import Path
 
-os.environ.setdefault('MPLCONFIGDIR', str(Path(__file__).resolve().parent.parent / '.local/matplotlib'))
-
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-from matplotlib.colors import LinearSegmentedColormap
+import figures as fx
 
 ROOT = Path(__file__).resolve().parent.parent
 S = json.loads((ROOT / 'results/snapshot.json').read_text())
 COUNTS = S['composition_counts']
 CAT = {d['id']: d for d in S['datasets']}
+IDS = sorted(CAT, key=lambda b: (('ru', 'en', 'multi').index(CAT[b]['lang']), CAT[b]['kind'], b))
 sys.path.insert(0, str(ROOT / 'benchmark'))
 from run_leaks import STATUS_VALUES, adapter_status
 # T05: the release status of a scanner row is shown next to the number and is
@@ -35,13 +31,16 @@ NAMES = {
     'pplx+fastino+bardsai': 'PPLX + Fastino + BardsAI',
     'pplx+fastino+bardsai+mmbert': 'PPLX + Fastino + mmBERT + BardsAI',
 }
-COLORS = ['#8ea2b8', '#4b6c93', '#268baf', '#087e8b', '#7863a9', '#ba6a38']
-INK, MUTED = '#152b43', '#50647a'
-plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 11, 'text.color': INK,
-    'axes.labelcolor': MUTED, 'xtick.color': MUTED, 'ytick.color': INK,
-    'axes.edgecolor': '#dce4ed', 'axes.spines.top': False, 'axes.spines.right': False,
-    'axes.spines.left': False, 'svg.fonttype': 'none', 'svg.hashsalt': 'pii-secrets-benchmark-v1',
-    'savefig.facecolor': 'white'})
+REFERENCE = 'composition:pplx+fastino+bardsai+mmbert'
+MEMBERS = {'pplx', 'gliner2-fastino', 'mmbert32k', 'bardsai-eu'}
+# One machine group per device: speed rows are only comparable within the same
+# processor, worker count, threads and cutting variant.
+CPU_GROUP = (('device', 'cpu'), ('hardware', 'AMD EPYC 9K84 96-Core Processor'),
+             ('threads', '16'), ('workers', '24'), ('quant', '-'), ('variant', 'cpu-speed'))
+GPU_GROUP = (('device', 'cuda'), ('hardware', 'NVIDIA GeForce RTX 5090'), ('workers', '2'),
+             ('quant', '-'), ('variant', '-'))
+CPU_LABEL = 'AMD EPYC 9K84, 16 threads per process, 24 concurrent workers'
+GPU_LABEL = 'NVIDIA GeForce RTX 5090, 2 concurrent workers'
 
 
 def aggregate(name, cut=None, datasets=None):
@@ -66,134 +65,332 @@ def format_pct(n, d):
     return '<0.01%' if n and value < 0.01 else f'{value:.2f}%'
 
 
-def canvas(title, subtitle, height=6.2):
-    fig, ax = plt.subplots(figsize=(13.2, height))
-    fig.text(.035, .96, title, fontsize=22, fontweight='bold', va='top')
-    fig.text(.035, .895, subtitle, fontsize=11, color=MUTED, va='top')
-    return fig, ax
+def bucket(value, edges):
+    """Index of the first edge the value falls under, for the five-step heat scale."""
+    return sum(value >= edge for edge in edges)
 
 
-def heat(ax, matrix, cmap, vmin, vmax):
-    # Vector cells: imshow embeds a resampled PNG whose bytes differ per platform.
-    rows, cols = len(matrix), len(matrix[0])
-    ax.pcolormesh([c - .5 for c in range(cols + 1)], [r - .5 for r in range(rows + 1)],
-                  matrix, cmap=cmap, vmin=vmin, vmax=vmax)
-    ax.set_xlim(-.5, cols - .5)
-    ax.set_ylim(rows - .5, -.5)
+@cache
+def model_totals():
+    """Pooled counts per detector configuration over its eligible runs.
+
+    Training-source runs are excluded here exactly as they are in the language
+    tables, so a configuration's dataset count is part of its result.
+    """
+    taxonomy = {(r['dataset'], r['label']): r for r in S['breakdowns']['taxonomy']}
+    totals = {}
+    for r in S['breakdowns']['results']:
+        if not r['system'].startswith('model:') or r['train']:
+            continue
+        acc = totals.setdefault(r['system'].removeprefix('model:'), defaultdict(int))
+        acc['sets'] += 1
+        for t in r['types']:
+            definition = taxonomy[(r['dataset'], t['label'])]
+            acc['gold'] += definition['gold']
+            acc['hit'] += t['hit']
+            acc['hidden'] += t['hidden']
+        for key in ('char_tp', 'char_fp', 'char_fn', 'negative_rows', 'negative_rows_touched',
+                    'negative_characters', 'negative_characters_masked'):
+            acc[key] += r[key]
+    rows = []
+    for name, a in totals.items():
+        precision = a['char_tp'] / (a['char_tp'] + a['char_fp']) if a['char_tp'] + a['char_fp'] else 0
+        recall = a['char_tp'] / (a['char_tp'] + a['char_fn']) if a['char_tp'] + a['char_fn'] else 0
+        rows.append({
+            'model': name, 'base': name.split('+')[0],
+            'family': MODELS.get(name.split('+')[0], {}).get('family', '-'),
+            'sets': a['sets'], 'gold': a['gold'], 'missed': a['gold'] - a['hit'], 'hidden': a['hidden'],
+            'missed_pct': pct(a['gold'] - a['hit'], a['gold']),
+            'hidden_pct': pct(a['hidden'], a['gold']),
+            'extra_pct': pct(a['negative_characters_masked'], a['negative_characters']),
+            'char_f1': 2 * precision * recall / (precision + recall) if precision + recall else 0,
+        })
+    return tuple(sorted(rows, key=lambda r: (-r['sets'], r['missed_pct'], r['model'])))
 
 
-def save(fig, slug, title, description, footer):
-    fig.text(.035, .055, footer, color=MUTED, fontsize=9, va='bottom')
-    fig.text(.965, .02, 'PII & Secrets Benchmark | snapshot 2026-09-09', color=MUTED,
-             fontsize=8, ha='right')
-    (ROOT / 'assets').mkdir(exist_ok=True)
-    previews = ROOT / '.local/previews'
-    previews.mkdir(parents=True, exist_ok=True)
-    fig.savefig(ROOT / f'assets/{slug}.svg', metadata={'Date': None, 'Title': title, 'Description': description})
-    fig.savefig(previews / f'{slug}.png', dpi=135)
-    plt.close(fig)
+@cache
+def speed_group(group):
+    """Speed rows of one machine group, fastest first, with derived seconds per 10k characters."""
+    rows = []
+    for r in S['speed']:
+        if any(r[key] != value for key, value in group):
+            continue
+        rows.append(r | {'model': r['model'].split('+cpu-')[0],
+                         'seconds_10k': 10000 / r['chars_per_second']})
+    return tuple(sorted(rows, key=lambda r: -r['chars_per_second']))
 
 
-def figures():
+def category_pools(categories):
+    defs = S['breakdowns']['categories']
+    selected = [r for r in categories if r['system'] == REFERENCE and not r['train']]
+    keys = ('gold', 'original_gold', 'hit', 'hidden', 'raw_hidden', 'original_hidden',
+            'characters', 'covered_characters')
+    pooled = {}
+    for definition in defs:
+        rows = [r for r in selected if r['category'] == definition['id']]
+        pooled[definition['id']] = {key: sum(r[key] for r in rows) for key in keys}
+        pooled[definition['id']]['datasets'] = len(rows)
+    return defs, selected, pooled
+
+
+def figures(categories):
+    defs, selected, pooled = category_pools(categories)
     names = list(NAMES)
-    totals = [aggregate(n) for n in names]
-    residual = [pct(r['nspan'] - r['hid'], r['nspan']) for r in totals]
-    overmask = [pct(r['extra'], r['negchars']) for r in totals]
-    fig, axes = plt.subplots(1, 2, figsize=(13.2, 6.5), sharey=True)
-    fig.text(.035, .96, 'Masking leaves residuals and masks unannotated text', fontsize=22, fontweight='bold', va='top')
-    fig.text(.035, .89, 'All 41 datasets | normalized word-boundary masks | lower is better', color=MUTED)
-    for ax, values, title in zip(axes, (residual, overmask),
-                                 ('Gold spans not fully hidden', 'Characters masked in unannotated rows')):
-        ax.barh(range(6), values, color=COLORS, height=.6)
-        ax.set_title(title, loc='left', fontsize=12, pad=15, fontweight='bold')
-        ax.set_yticks(range(6), NAMES.values())
-        ax.set_xlim(0, max(values) * 1.28)
-        ax.set_xlabel('Percent')
-        ax.xaxis.grid(True, color='#e9eef4'); ax.set_axisbelow(True)
-        ax.tick_params(axis='y', length=0, pad=10)
-        for i, (value, row) in enumerate(zip(values, totals)):
-            count = row['nspan'] - row['hid'] if ax is axes[0] else row['extra']
-            ax.text(value + max(values) * .025, i, f'{value:.1f}%  ({count:,})', va='center', fontsize=9.5)
-    axes[0].invert_yaxis()
-    fig.subplots_adjust(left=.31, right=.97, top=.77, bottom=.22, wspace=.18)
-    save(fig, 'overview', 'Residual exposure and masking outside annotations',
-         'Residual normalized gold spans and characters masked in unannotated rows for six complete compositions on all 41 datasets.',
-         '227,466 normalized gold spans; 2,895,905 characters in 7,566 rows without annotations.\nAnnotation-based descriptive counts. Unannotated text is not guaranteed to contain no sensitive content.')
+    totals = {n: aggregate(n) for n in names}
+    quality = model_totals()
+    complete = [r for r in quality if r['sets'] == len(CAT) and '+' not in r['model']]
+    cpu, gpu = speed_group(CPU_GROUP), speed_group(GPU_GROUP)
 
-    matrix = [[pct(aggregate(n, c)['miss'], aggregate(n, c)['nspan']) for c in CUTS] for n in names]
-    fig, ax = canvas('Language and task change the answer', 'Untouched spans (%) | lower is better | each column uses the same datasets for every row', 6.8)
-    cmap = LinearSegmentedColormap.from_list('missed', ['#eef7f6', '#58a7b1', '#1c3f64'])
-    heat(ax, matrix, cmap, 0, 36)
-    ax.set_yticks(range(6), NAMES.values())
-    cuts = [f"{a.upper()} / {b.upper()}\n{sum((d['lang'], d['kind']) == (a,b) for d in CAT.values())} {'dataset' if (a,b)==('ru','secrets') else 'datasets'}" for a,b in CUTS]
-    ax.set_xticks(range(5), cuts); ax.xaxis.tick_top()
-    ax.tick_params(length=0, pad=9)
-    for i, name in enumerate(names):
-        for j, cut in enumerate(CUTS):
-            r = aggregate(name, cut)
-            ax.text(j, i, format_pct(r['miss'], r['nspan']), ha='center', va='center',
-                    color='white' if matrix[i][j] > 17 else INK, fontsize=13, fontweight='bold')
-    fig.subplots_adjust(left=.31, right=.97, top=.74, bottom=.18)
-    save(fig, 'language-cuts', 'Missed spans by language and task',
-         'Russian PII, synthetic Russian secrets, English PII, English secrets, and multilingual PII. No multilingual-secrets cut exists.',
-         'RU / secrets is one synthetic dataset. MULTI pools languages and may include English; it is not a per-language guarantee.\nZero observed misses is not a guarantee. There is no MULTI / secrets dataset in this snapshot.')
+    fig = fx.Figure('Masking leaves residuals and masks unannotated text',
+                    'Six complete configurations on all 41 datasets and 227,466 normalized gold spans',
+                    'masking outcome')
+    rows = [{'label': NAMES[n], 'focal': n == 'pplx+fastino+bardsai+mmbert',
+             'untouched': pct(totals[n]['miss'], totals[n]['nspan']),
+             'untouched_text': f"{format_pct(totals[n]['miss'], totals[n]['nspan'])}  ({totals[n]['miss']:,})",
+             'residual': pct(totals[n]['nspan'] - totals[n]['hid'], totals[n]['nspan']),
+             'residual_text': f"{format_pct(totals[n]['nspan'] - totals[n]['hid'], totals[n]['nspan'])}"
+                              f"  ({totals[n]['nspan'] - totals[n]['hid']:,})",
+             'extra': pct(totals[n]['extra'], totals[n]['negchars']),
+             'extra_text': f"{format_pct(totals[n]['extra'], totals[n]['negchars'])}  ({totals[n]['extra']:,})"}
+            for n in names]
+    fx.bartable(fig, rows, [
+        ('Annotations untouched', 'untouched', 'lower is better  |  scale 0-30%', 30, lambda v: f'{v:.2f}%'),
+        ('Not fully hidden', 'residual', 'lower is better  |  scale 0-30%', 30, lambda v: f'{v:.2f}%'),
+        ('Characters masked outside annotations', 'extra', 'lower is better  |  scale 0-30%', 30, lambda v: f'{v:.2f}%')],
+        label_width=252, value_width=126, pitch=26)
+    fig.save(ROOT, 'overview', 'Residual exposure and masking outside annotations',
+             ['227,466 normalized gold spans; 2,895,905 characters in 7,566 rows without annotations.',
+              'Annotation-based descriptive counts. Unannotated text is not guaranteed to be free of sensitive content.'])
+
+    fig = fx.Figure('Language and task change the answer',
+                    'Untouched normalized gold spans; lower is better; every column uses the same datasets in every row',
+                    'language cuts')
+    rows = []
+    for n in names:
+        cells = []
+        for cut in CUTS:
+            r = aggregate(n, cut)
+            cells.append((bucket(pct(r['miss'], r['nspan']), (2, 8, 18, 30)), format_pct(r['miss'], r['nspan'])))
+        rows.append((NAMES[n], None, cells))
+    headers = [(f'{a.upper()} / {b.upper()}',
+                f"{sum((d['lang'], d['kind']) == (a, b) for d in CAT.values())} "
+                f"{'dataset' if (a, b) == ('ru', 'secrets') else 'datasets'}") for a, b in CUTS]
+    fx.heatmap(fig, rows, headers, label_width=252, header_lines=2)
+    fig.save(ROOT, 'language-cuts', 'Missed spans by language and task',
+             ['Darker cells hold a larger share of untouched annotations. RU / secrets is one synthetic dataset.',
+              'MULTI pools source languages and may include English; it is not a per-language guarantee.',
+              'Zero observed misses is not a guarantee, and there is no MULTI / secrets dataset in this snapshot.'])
+
+    fig = fx.Figure('Every detector measured on the complete matrix',
+                    f'{len(complete)} configurations with all {len(CAT)} datasets and '
+                    f"{complete[0]['gold']:,} normalized gold spans; ranked by untouched annotations",
+                    'detectors')
+    fx.bartable(fig, [{'label': r['model'], 'sub': r['family'], 'focal': r['model'] in MEMBERS,
+                       'missed_pct': r['missed_pct'], 'hidden_pct': r['hidden_pct'],
+                       'extra_pct': r['extra_pct'], 'char_f1': r['char_f1']} for r in complete], [
+        ('Annotations untouched', 'missed_pct', 'lower is better  |  scale 0-100%', 100, lambda v: f'{v:.1f}%'),
+        ('Fully hidden', 'hidden_pct', 'higher is better  |  scale 0-100%', 100, lambda v: f'{v:.1f}%'),
+        ('Masked outside gold', 'extra_pct', 'lower is better  |  scale 0-40%', 40, lambda v: f'{v:.1f}%'),
+        ('Character F1', 'char_f1', 'higher is better  |  scale 0-1', 1, lambda v: f'{v:.3f}')])
+    fig.save(ROOT, 'detectors', 'Pooled outcomes for every complete-coverage detector',
+             ['Untouched means no predicted character reaches the normalized annotation; fully hidden means every one of its characters is masked.',
+              'Configurations with partial coverage are excluded from this chart and listed with their dataset counts in results/detectors.md.',
+              'Highlighted rows are the four members of the reference composition. This is a descriptive comparison, not a selected winner.'])
+
+    fig = fx.Figure('CPU cost of one detector pass',
+                    f'{CPU_LABEL}; batch throughput under load, not the latency of a single request',
+                    'cpu speed')
+    fx.lollipop(fig, [{'label': r['model'], 'value': r['seconds_10k'], 'text': fx.short(r['seconds_10k']),
+                       'focal': r['model'] in MEMBERS,
+                       'right': f"{r['chars_per_second']:,.0f} ch/s   {r['datasets']} sets"} for r in cpu],
+                'seconds per 10,000 characters', 'throughput / datasets')
+    fig.save(ROOT, 'cpu-speed', 'Measured CPU throughput per detector',
+             ['Seconds per 10,000 characters = 10,000 / chars per second, on a log axis.',
+              'Only this one machine group is shown, so the rows are directly comparable; other CPU machines are in results/speed.md.',
+              'BardsAI, the scanners and the ONNX runs were measured on other machines and are absent here.'])
+
+    fig = fx.Figure('GPU cost of one detector pass',
+                    f'{GPU_LABEL}; batch throughput pooled over the datasets of each run',
+                    'gpu speed')
+    fx.lollipop(fig, [{'label': r['model'], 'value': r['seconds_10k'], 'text': fx.short(r['seconds_10k']),
+                       'focal': r['model'] in MEMBERS,
+                       'right': f"{r['chars_per_second']:,.0f} ch/s   {r['datasets']} sets"} for r in gpu],
+                'seconds per 10,000 characters', 'throughput / datasets')
+    fig.save(ROOT, 'gpu-speed', 'Measured GPU throughput per detector',
+             ['Seconds per 10,000 characters = 10,000 / chars per second, on a log axis.',
+              'BardsAI has no row here: its ONNX graph runs on CPU only, which is why composition GPU cost is a mixed-device estimate.',
+              'Rows pool different numbers of datasets; a row measured on few datasets carries less evidence.'])
+
+    fig = fx.Figure('What a detector costs for what it finds',
+                    'Untouched annotations against measured cost; both axes are lower is better',
+                    'cost and quality')
+    lookup = {r['model']: r for r in quality if '+' not in r['model']}
+    for rows, label, device in ((cpu, CPU_LABEL, 'CPU'), (gpu, GPU_LABEL, 'GPU')):
+        points = [{'x': r['seconds_10k'], 'y': lookup[r['model']]['missed_pct'], 'label': r['model'],
+                   'focal': r['model'] in MEMBERS} for r in rows if r['model'] in lookup]
+        fx.scatter(fig, points, f'{device} seconds per 10,000 characters, log scale',
+                   'Annotations untouched, %', 100, height=380, label_min=30,
+                   corner='cheaper and more thorough is down and left', title=f'{device}: {label}')
+    fig.save(ROOT, 'speed-quality', 'Detector quality against measured cost',
+             ['Quality pools every eligible dataset of a configuration; speed comes from one machine group, so the two axes are different runs.',
+              'Configurations without a run in the machine group are absent; dataset coverage differs between points.',
+              'No position here is a production safety claim.'])
 
     costs = S['costs']
-    fig, axes = plt.subplots(1, 2, figsize=(13.2, 6.4), sharey=True)
-    fig.text(.035, .96, 'More detection has a compute cost', fontsize=22, fontweight='bold', va='top')
-    fig.text(.035, .89, 'Seconds per 10,000 characters from throughput | lower is better | not single-request latency', color=MUTED)
-    for ax, key, title in zip(axes, ('cpu_seconds_10k', 'gpu_seconds_10k'), ('CPU reference, calibrated', 'RTX 5090 reference')):
-        vals = [r[key] for r in costs]
-        bars = ax.barh(range(len(costs)), vals, color=[COLORS[names.index(r['composition'])] for r in costs], height=.57)
-        bars[-1].set_hatch('//')
-        ax.set_title(title, loc='left', fontsize=12, pad=15, fontweight='bold')
-        ax.set_yticks(range(len(costs)), [NAMES[r['composition']] for r in costs])
-        ax.set_xlim(0, max(vals) * 1.25); ax.set_xlabel('Seconds / 10,000 characters')
-        ax.tick_params(axis='y', length=0, pad=10)
-        ax.xaxis.grid(True, color='#e9eef4'); ax.set_axisbelow(True)
-        for i,v in enumerate(vals): ax.text(v+max(vals)*.025, i, f'{v:.1f}' + (' *' if i == 4 else ''), va='center')
-    axes[0].invert_yaxis()
-    fig.subplots_adjust(left=.31, right=.97, top=.76, bottom=.23, wspace=.15)
-    save(fig, 'compute-cost', 'Reference throughput cost',
-         'Sequential composition cost from the frozen verdict. CPU W24 with 16 threads per worker; GPU W2. BardsAI uses a CPU-only ONNX graph.',
-         'CPU: AMD EPYC 9K84, W=24, 16 threads per process; calibrated to PPLX at 1,100 chars/s. GPU: W=2.\n* Hatched bars include BardsAI at 8 CPU threads: a different-condition estimate; the right bar mixes GPU and CPU.\nAll composition costs are derived from member throughput; they are not measured end-to-end request times.')
+    fig = fx.Figure('More detection has a compute cost',
+                    'Seconds per 10,000 characters derived from member throughput; lower is better',
+                    'composition cost')
+    fx.bartable(fig, [{'label': NAMES[r['composition']], 'focal': r['mixed_device_estimate'],
+                       'cpu': r['cpu_seconds_10k'], 'gpu': r['gpu_seconds_10k'],
+                       'cpu_text': f"{r['cpu_seconds_10k']:.1f} s",
+                       'gpu_text': f"{r['gpu_seconds_10k']:.1f} s" + (' mixed device' if r['mixed_device_estimate'] else '')}
+                      for r in costs], [
+        ('CPU reference, calibrated', 'cpu', 'lower is better  |  scale 0-35 s', 35, lambda v: f'{v:.1f}'),
+        ('RTX 5090 reference', 'gpu', 'lower is better  |  scale 0-12 s', 12, lambda v: f'{v:.1f}')],
+        label_width=276, value_width=134, pitch=28)
+    fig.save(ROOT, 'compute-cost', 'Reference throughput cost',
+             ['CPU: AMD EPYC 9K84, W=24, 16 threads per process, calibrated to PPLX at 1,100 chars/s. GPU: RTX 5090, W=2.',
+              'The highlighted row includes BardsAI at 8 CPU threads: a different-condition estimate whose GPU column mixes devices.',
+              'All composition costs are derived from member throughput; they are not measured end-to-end request times.'])
 
-    detected = [100-pct(r['miss'], r['nspan']) for r in totals]
-    hidden = [pct(r['hid'], r['nspan']) for r in totals]
-    fig, ax = canvas('Detected does not mean fully hidden', 'Gold spans (%) | higher is better | both metrics use the same normalized span boundaries', 6.5)
-    y = list(range(6))
-    ax.barh([v-.17 for v in y], detected, .3, color='#96c8cd', label='Touched by at least one predicted character')
-    ax.barh([v+.17 for v in y], hidden, .3, color='#087e8b', label='All normalized gold characters hidden')
-    ax.set_yticks(y, NAMES.values()); ax.invert_yaxis(); ax.set_xlim(0, 112)
-    ax.set_xticks([0,25,50,75,100]); ax.set_xlabel('Share of normalized gold spans (%)')
-    ax.tick_params(axis='y', length=0, pad=10)
-    for i,(a,b) in enumerate(zip(detected,hidden)):
-        ax.text(a+.8, i-.17, f'{a:.1f}%', va='center', fontsize=10)
-        ax.text(b+.8, i+.17, f'{b:.1f}%', va='center', fontsize=10)
-    ax.legend(loc='upper left', bbox_to_anchor=(-.40, -.19), frameon=False, ncols=1, fontsize=10)
-    fig.subplots_adjust(left=.31, right=.97, top=.81, bottom=.28)
-    save(fig, 'full-hiding', 'Touched versus fully hidden spans',
-         'Detection recall and full hiding are computed independently from saved predictions on all 41 datasets.',
-         '227,466 normalized spans. Word-boundary normalization can expand masks; neither percentage proves that original secrets are unusable.')
+    fig = fx.Figure('Detected does not mean fully hidden',
+                    'Share of normalized gold spans; higher is better; both metrics use the same span boundaries',
+                    'detection and hiding')
+    fx.bartable(fig, [{'label': NAMES[n], 'focal': n == 'pplx+fastino+bardsai+mmbert',
+                       'detected': 100 - pct(totals[n]['miss'], totals[n]['nspan']),
+                       'hidden': pct(totals[n]['hid'], totals[n]['nspan'])} for n in names], [
+        ('Touched by a prediction', 'detected', 'higher is better  |  scale 0-100%', 100, lambda v: f'{v:.1f}%'),
+        ('All characters hidden', 'hidden', 'higher is better  |  scale 0-100%', 100, lambda v: f'{v:.1f}%')],
+        label_width=272, value_width=96, pitch=28)
+    fig.save(ROOT, 'full-hiding', 'Touched versus fully hidden spans',
+             ['227,466 normalized spans. Word-boundary normalization can expand masks.',
+              'Neither percentage proves that an original secret is unusable after masking.'])
 
-    selected = ['pplx','gliner2-fastino','mmbert32k','bardsai-eu','rules-ru','presidio-ru'] + [n for n,v in MODELS.items() if v['family'] == 'leaks']
-    coverage = []
-    for name in selected:
-        row = []
-        for a,b in CUTS:
-            eligible = {r['dataset'] for r in S['measurements'] if r['model'] == name and not r['train'] and (r['lang'],r['kind']) == (a,b)}
-            denom = sum((d['lang'],d['kind']) == (a,b) for d in CAT.values())
-            row.append((len(eligible),denom))
-        coverage.append(row)
-    fig, ax = canvas('Coverage is part of the result', 'Eligible base-configuration datasets / available datasets | training-source overlaps excluded', 8.8)
-    heat(ax, [[a/b for a,b in row] for row in coverage], LinearSegmentedColormap.from_list('coverage',['#f0f3f7','#087e8b']), 0, 1)
-    ax.set_yticks(range(len(selected)),selected); ax.set_xticks(range(5),[f'{a.upper()} / {b.upper()}' for a,b in CUTS]); ax.xaxis.tick_top();ax.tick_params(length=0,pad=8)
-    for i,row in enumerate(coverage):
-        for j,(a,b) in enumerate(row):ax.text(j,i,f'{a}/{b}',ha='center',va='center',color='white' if a/b>.6 else INK,fontsize=10)
-    fig.subplots_adjust(left=.20,right=.97,top=.81,bottom=.13)
-    save(fig, 'coverage', 'Eligible dataset coverage',
-         'Selected full-coverage models, Russian rules, Presidio, and all ten scanner configurations. A missing measurement is not a zero-miss result.',
-         'This is measurement coverage, not detection quality. A zero can mean missing runs or excluded source overlap.\nScanners have a narrower intended scope. See the full per-dataset reports before comparing unequal subsets.')
+    chosen = ['pplx', 'gliner2-fastino', 'mmbert32k', 'bardsai-eu', 'rules-ru', 'presidio-ru']
+    chosen += [n for n, v in MODELS.items() if v['family'] == 'leaks']
+    fig = fx.Figure('Coverage is part of the result',
+                    'Eligible base-configuration datasets out of the datasets available in each cut',
+                    'coverage')
+    rows = []
+    for name in chosen:
+        cells = []
+        for a, b in CUTS:
+            eligible = {r['dataset'] for r in S['measurements']
+                        if r['model'] == name and not r['train'] and (r['lang'], r['kind']) == (a, b)}
+            denominator = sum((d['lang'], d['kind']) == (a, b) for d in CAT.values())
+            cells.append((bucket(len(eligible) / denominator, (.01, .34, .67, .99)),
+                          f'{len(eligible)}/{denominator}'))
+        rows.append((name, None, cells))
+    fx.heatmap(fig, rows, [(f'{a.upper()} / {b.upper()}',) for a, b in CUTS], label_width=252)
+    fig.save(ROOT, 'coverage', 'Eligible dataset coverage',
+             ['This is measurement coverage, not detection quality. A zero can mean a missing run or an excluded source overlap.',
+              'Training-source overlaps are excluded. A missing measurement is never counted as a zero-miss result.',
+              'Scanners have a narrower intended scope; compare them on their own datasets, not across unequal subsets.'])
+
+    fig = fx.Figure('Full hiding by sensitive-data type',
+                    'PPLX + Fastino + mmBERT + BardsAI; one fixed composition on every retained dataset',
+                    'data types')
+    fx.bartable(fig, [{'label': d['title'], 'sub': d['family'].split(' &')[0].lower(),
+                       'hidden': pct(pooled[d['id']]['hidden'], pooled[d['id']]['gold']),
+                       'detected': pct(pooled[d['id']]['hit'], pooled[d['id']]['gold']),
+                       'gold': pooled[d['id']]['gold'],
+                       'gold_text': f"{pooled[d['id']]['gold']:,}  |  {pooled[d['id']]['datasets']} sets"}
+                      for d in defs], [
+        ('Fully hidden', 'hidden', 'higher is better  |  scale 0-100%', 100, lambda v: f'{v:.1f}%'),
+        ('Touched by a prediction', 'detected', 'higher is better  |  scale 0-100%', 100, lambda v: f'{v:.1f}%'),
+        ('Normalized gold spans', 'gold', 'category weight in pooled scores', max(p['gold'] for p in pooled.values()), lambda v: f'{v:,}')],
+        label_width=252, value_width=118, pitch=26)
+    fig.save(ROOT, 'entity-types', 'Fully hidden and detected spans by data type',
+             ['Full hiding uses normalized word-boundary masks; detected means at least one character was touched.',
+              'Usernames are not necessarily secret, and organizations and locations depend on context.',
+              'All original source labels are preserved in results/entity-metrics.csv.'])
+
+    fig = fx.Figure('Raw offsets and expanded masks differ',
+                    'Same normalized gold spans, four-member composition; only the applied mask changes',
+                    'mask boundaries')
+    fx.bartable(fig, [{'label': d['title'], 'sub': d['family'].split(' &')[0].lower(),
+                       'raw': pct(pooled[d['id']]['raw_hidden'], pooled[d['id']]['gold']),
+                       'expanded': pct(pooled[d['id']]['hidden'], pooled[d['id']]['gold'])} for d in defs], [
+        ('Raw detector offsets', 'raw', 'higher is better  |  scale 0-100%', 100, lambda v: f'{v:.1f}%'),
+        ('Word-boundary masks', 'expanded', 'higher is better  |  scale 0-100%', 100, lambda v: f'{v:.1f}%')],
+        label_width=252, value_width=96, pitch=26)
+    fig.save(ROOT, 'raw-offsets', 'Raw and normalized mask full hiding by type',
+             ['Do not use expanded-mask percentages for an application that applies raw detector offsets.',
+              'These categories do not measure label correctness or whether a partially hidden credential stays usable.'])
+
+    fig = fx.Figure('What the benchmark contains',
+                    'Normalized gold spans per presentation category; larger categories carry more weight in pooled scores',
+                    'composition of the corpus')
+    fx.bartable(fig, [{'label': d['title'], 'sub': d['family'].split(' &')[0].lower(),
+                       'gold': pooled[d['id']]['gold'],
+                       'gold_text': f"{pooled[d['id']]['gold']:,}  |  {pooled[d['id']]['datasets']} datasets"}
+                      for d in defs], [
+        ('Normalized gold spans', 'gold', 'annotation units, not distinct people',
+         max(p['gold'] for p in pooled.values()), lambda v: f'{v:,}')],
+        label_width=252, value_width=180, pitch=26)
+    fig.save(ROOT, 'category-distribution', 'Benchmark category support',
+             ['These are annotation units, not distinct people or unique credentials.',
+              'Nested and differently labeled annotations remain separate rows in the source data.',
+              'Category families are an explanatory grouping, not a legal determination.'])
+
+    head = [r for r in COUNTS if r['composition'] == REFERENCE.removeprefix('composition:')]
+    influential = sorted(head, key=lambda r: (-(r['nspan'] - r['hid']), r['dataset']))[:10]
+    total = sum(r['nspan'] - r['hid'] for r in head)
+    shown = sum(r['nspan'] - r['hid'] for r in influential)
+    fig = fx.Figure('Where residual exposure comes from',
+                    'Ten largest contributions for the same four-member composition; every other dataset stays in the total',
+                    'dataset influence')
+    fx.bartable(fig, [{'label': r['dataset'], 'sub': f"{format_pct(r['hid'], r['nspan'])} hidden",
+                       'residual': r['nspan'] - r['hid'],
+                       'residual_text': f"{r['nspan'] - r['hid']:,} / {r['nspan']:,}"} for r in influential], [
+        ('Normalized spans not fully hidden', 'residual', 'absolute count, not a rate',
+         max(r['nspan'] - r['hid'] for r in influential), lambda v: f'{v:,}')],
+        label_width=252, value_width=190, pitch=26)
+    fig.save(ROOT, 'dataset-influence', 'Dataset contributions to residual spans',
+             [f'These ten contribute {shown:,} of {total:,} residual spans; the other datasets contribute {total - shown:,}.',
+              'A large contribution can reflect dataset size, annotation policy or difficulty. It is not proof of defective data.'])
+
+    fig = fx.Figure('The dataset mix changes the percentage',
+                    'Fully hidden normalized spans under three weightings of the same predictions',
+                    'weighting sensitivity')
+    remaining = set(S['sensitivity']['included_dataset_ids'])
+    rows = []
+    for n in names:
+        every = [r for r in COUNTS if r['composition'] == n]
+        subset = [r for r in every if r['dataset'] in remaining]
+        rows.append({'label': NAMES[n], 'focal': n == 'pplx+fastino+bardsai+mmbert',
+                     'pooled': pct(sum(r['hid'] for r in every), sum(r['nspan'] for r in every)),
+                     'macro': 100 * sum(r['hid'] / r['nspan'] for r in every) / len(every),
+                     'subset': pct(sum(r['hid'] for r in subset), sum(r['nspan'] for r in subset))})
+    fx.bartable(fig, rows, [
+        ('All 41, span-weighted', 'pooled', 'higher is better  |  scale 0-100%', 100, lambda v: f'{v:.2f}%'),
+        ('All 41, equal dataset weight', 'macro', 'higher is better  |  scale 0-100%', 100, lambda v: f'{v:.2f}%'),
+        ('Remaining 32, span-weighted', 'subset', 'higher is better  |  scale 0-100%', 100, lambda v: f'{v:.2f}%')],
+        label_width=252, value_width=100, pitch=28)
+    fig.save(ROOT, 'dataset-mix', 'Full-hiding sensitivity to dataset weighting',
+             ['Remaining 32 excludes six project-generated synthetic sets and three corrupted copies; upstream synthetic data remains.',
+              'This is a descriptive sensitivity analysis, not a new selection or a held-out test split.'])
+
+    fig = fx.Figure('Every dataset stays visible',
+                    'Fully hidden normalized spans; higher is better; the same dataset appears in every column',
+                    'all datasets')
+    lookup = {(r['composition'], r['dataset']): r for r in COUNTS}
+    rows = []
+    for dataset in IDS:
+        cells = []
+        for n in names:
+            r = lookup[(n, dataset)]
+            cells.append((bucket(pct(r['hid'], r['nspan']), (25, 55, 80, 95)),
+                          format_pct(r['hid'], r['nspan'])))
+        rows.append((f"{dataset}   n={CAT[dataset]['gold_spans']:,}",
+                     f"{CAT[dataset]['lang'].upper()} / {CAT[dataset]['kind']}", cells))
+    fx.heatmap(fig, rows, [('PPLX',), ('Fastino',), ('P + F',), ('P + F + M',), ('P + F + B',), ('P + F + M + B',)],
+               label_width=290, cell_height=22)
+    fig.save(ROOT, 'dataset-heatmap', 'Full hiding across every frozen dataset',
+             ['P = PPLX, F = Fastino, M = mmBERT, B = BardsAI. n = normalized gold spans in that dataset.',
+              'Rows are ordered by language, task and identifier, and are never removed for a low score.',
+              '100% means zero observed residuals on that sample, not zero population risk.'])
+    return len(list((ROOT / 'assets').glob('*.svg')))
 
 
 def markdown():
@@ -318,8 +515,7 @@ def detail_rows():
     return labels, categories, datasets
 
 
-def detail_views():
-    labels, categories, datasets = detail_rows()
+def detail_views(labels, categories, datasets):
     csv_file('entity-metrics.csv', labels)
     csv_file('category-metrics.csv', categories)
     csv_file('dataset-metrics.csv', datasets)
@@ -332,104 +528,8 @@ def detail_views():
         rows = [r for r in selected if r['category'] == definition['id']]
         pooled[definition['id']] = {key: sum(r[key] for r in rows) for key in
             ('gold', 'original_gold', 'hit', 'hidden', 'raw_hidden', 'original_hidden', 'characters', 'covered_characters')}
-    subtitle = 'PPLX + Fastino + mmBERT + BardsAI | fixed composition | all retained datasets'
-    fig, ax = canvas('Full hiding by sensitive-data type', subtitle, 10.1)
-    ax.set_position([.035, .14, .93, .67]); ax.set_xlim(0, 1); ax.set_ylim(-.7, len(defs)-.1); ax.invert_yaxis(); ax.axis('off')
-    for x, title, align in ((0, 'DATA TYPE', 'left'), (.72, 'FULLY HIDDEN', 'right'), (.86, 'DETECTED', 'right'), (1, 'GOLD SPANS', 'right')):
-        ax.text(x, -.48, title, fontsize=9, color=MUTED, ha=align)
-    for i, d in enumerate(defs):
-        r = pooled[d['id']]
-        ax.axhline(i+.68, color='#e4eaf0', lw=.8)
-        ax.text(0, i+.12, d['title'], fontsize=13, fontweight='bold')
-        ax.text(0, i+.43, d['family'], fontsize=9, color=MUTED)
-        ax.barh(i+.2, .19, left=.42, height=.16, color='#e9eef4')
-        ax.barh(i+.2, .19*r['hidden']/r['gold'], left=.42, height=.16, color='#087e8b')
-        for x, value, color in ((.72, format_pct(r['hidden'], r['gold']), INK),
-                                (.86, format_pct(r['hit'], r['gold']), MUTED), (1, f"{r['gold']:,}", MUTED)):
-            ax.text(x, i+.2, value, ha='right', va='center', fontsize=12, color=color)
-    save(fig, 'entity-types', 'Fully hidden and detected spans by data type',
-         'Exact normalized annotation counts for one fixed four-member composition, with source labels mapped to twelve presentation categories.',
-         'Full hiding uses normalized word-boundary masks. Detected means at least one character touched.\nUsernames are not necessarily secret; organizations and locations depend on context. All original labels remain in the CSV.')
-
-    ids = sorted(CAT, key=lambda b: (('ru', 'en', 'multi').index(CAT[b]['lang']), CAT[b]['kind'], b))
-    names = list(NAMES)
-    short = ['PPLX', 'Fastino', 'P + F', 'P + F + M', 'P + F + B', 'P + F + M + B']
-    lookup = {(r['composition'], r['dataset']): r for r in COUNTS}
-    matrix = [[pct(lookup[(n, b)]['hid'], lookup[(n, b)]['nspan']) for n in names] for b in ids]
-    fig, ax = plt.subplots(figsize=(13.2, 16.8))
-    fig.text(.035, .974, 'Every dataset stays visible', fontsize=22, fontweight='bold')
-    fig.text(.035, .948, 'Fully hidden normalized spans (%) | higher is better | same dataset in every column', color=MUTED)
-    heat(ax, matrix, LinearSegmentedColormap.from_list('hidden', ['#f5e9e2', '#dddfe9', '#8bc2c5', '#087e8b']), 0, 100)
-    ax.set_yticks(range(len(ids)), [f"{b}   ({CAT[b]['lang'].upper()}, n={CAT[b]['gold_spans']:,})" for b in ids], fontsize=9)
-    ax.set_xticks(range(len(names)), short); ax.xaxis.tick_top(); ax.tick_params(length=0, pad=9)
-    for i, b in enumerate(ids):
-        for j, n in enumerate(names):
-            r = lookup[(n, b)]
-            ax.text(j, i, format_pct(r['hid'], r['nspan']), ha='center', va='center', fontsize=9,
-                    color='white' if matrix[i][j] >= 88 else INK)
-    fig.subplots_adjust(left=.39, right=.97, top=.913, bottom=.10)
-    save(fig, 'dataset-heatmap', 'Full hiding across every frozen dataset',
-         'All forty-one dataset cuts and all six complete compositions; rows are ordered by language, task, and dataset identifier, never removed for low scores.',
-         'P = PPLX, F = Fastino, M = mmBERT, B = BardsAI. n = normalized gold spans.\nDifferent datasets have different annotations and difficulty; 100% means zero observed residuals on that sample.\nSee results/by-dataset.md for provenance, original-offset coverage, precision, recall and negative-row masking.')
-
+    ids = IDS
     head = [r for r in COUNTS if r['composition'] == reference.removeprefix('composition:')]
-    influential = sorted(head, key=lambda r: (-(r['nspan'] - r['hid']), r['dataset']))[:10]
-    fig, ax = canvas('Where residual exposure comes from', 'Same four-member composition | ten largest contributions | all other datasets remain in the total', 7.4)
-    values = [r['nspan']-r['hid'] for r in influential]
-    ax.barh(range(len(values)), values, color='#b96e48', height=.65)
-    ax.set_yticks(range(len(values)), [r['dataset'] for r in influential]); ax.invert_yaxis()
-    ax.set_xlim(0, max(values)*1.55); ax.set_xlabel('Normalized spans not fully hidden')
-    ax.xaxis.grid(True, color='#e9eef4'); ax.set_axisbelow(True); ax.tick_params(axis='y', length=0)
-    for i, r in enumerate(influential):
-        ax.text(values[i]+max(values)*.025, i, f"{values[i]:,} / {r['nspan']:,}  |  {format_pct(r['hid'],r['nspan'])} hidden", va='center', fontsize=10)
-    total = sum(r['nspan']-r['hid'] for r in head)
-    fig.subplots_adjust(left=.22, right=.97, top=.80, bottom=.19)
-    save(fig, 'dataset-influence', 'Dataset contributions to residual spans',
-         'Absolute residual counts for the ten largest contributors, with their denominators and full-hiding rates; no dataset is excluded.',
-         f"These ten contribute {sum(values):,} of {total:,} residual spans; the other datasets contribute {total-sum(values):,}.\nA large contribution can reflect dataset size, annotation policy or difficulty. It is not proof of defective data.")
-
-    fig, ax = canvas('The dataset mix changes the percentage', 'Fully hidden normalized spans (%) | same compositions in every cut', 7.1)
-    series = [('All 41, span-weighted', None, False), ('All 41, equal dataset weight', None, True),
-              ('Remaining 32, span-weighted', set(S['sensitivity']['included_dataset_ids']), False)]
-    for j, (label, include, macro) in enumerate(series):
-        values = []
-        for n in names:
-            rows = [r for r in COUNTS if r['composition']==n and (include is None or r['dataset'] in include)]
-            values.append(100*sum(r['hid']/r['nspan'] for r in rows)/len(rows) if macro else pct(sum(r['hid'] for r in rows),sum(r['nspan'] for r in rows)))
-        ax.barh([i+(j-1)*.24 for i in range(6)], values, height=.22, color=['#087e8b','#98c3c8','#8b7eae'][j], label=label)
-        for i, v in enumerate(values): ax.text(v+.7, i+(j-1)*.24, f'{v:.2f}%', va='center', fontsize=9)
-    ax.set_yticks(range(6),NAMES.values());ax.invert_yaxis();ax.set_xlim(0,110);ax.set_xticks([0,25,50,75,100])
-    ax.legend(loc='lower left',bbox_to_anchor=(-.39,-.30),frameon=False,fontsize=10)
-    ax.set_xlabel('Share fully hidden (%)');ax.tick_params(axis='y',length=0)
-    fig.subplots_adjust(left=.31,right=.97,top=.79,bottom=.29)
-    save(fig, 'dataset-mix', 'Full-hiding sensitivity to dataset weighting',
-         'Span-weighted and dataset-macro full hiding on all forty-one cuts and span-weighted full hiding on the predeclared thirty-two-cut sensitivity subset.',
-         'Remaining 32 excludes six project-generated synthetic sets and three corrupted copies; upstream synthetic data remains.\nThis is a descriptive sensitivity analysis, not a new selection or test split.')
-
-    fig, ax = canvas('What the benchmark contains', 'Normalized gold spans by presentation category | larger categories have more weight in pooled scores', 8)
-    ax.barh(range(len(defs)), [pooled[d['id']]['gold'] for d in defs], color=['#8b7eae' if d['family']=='Credentials' else '#087e8b' for d in defs],height=.65)
-    ax.set_yticks(range(len(defs)),[d['title'] for d in defs]);ax.invert_yaxis();ax.set_xlabel('Normalized gold spans')
-    largest=max(r['gold'] for r in pooled.values());ax.set_xlim(0,largest*1.45);ax.tick_params(axis='y',length=0)
-    for i,d in enumerate(defs):
-        r=pooled[d['id']]; nsets=sum(x['category']==d['id'] for x in selected)
-        ax.text(r['gold']+largest*.025,i,f"{r['gold']:,}  |  {nsets} datasets",va='center',fontsize=10)
-    fig.subplots_adjust(left=.28,right=.97,top=.81,bottom=.16)
-    save(fig, 'category-distribution', 'Benchmark category support',
-         'Gold-span counts and contributing dataset counts for twelve presentation categories. Each normalized annotation has exactly one category.',
-         'These are annotation units, not distinct people or unique credentials. Nested and differently labeled annotations remain separate.\nCategory families are an explanatory grouping, not a legal determination that every occurrence is personal data.')
-
-    fig,ax=canvas('Raw offsets and expanded masks differ', 'Same normalized gold spans | four-member composition | higher is better',8.1)
-    for j,(key,label,color) in enumerate((('raw_hidden','Raw detector offsets','#98c3c8'),('hidden','Word-boundary masks','#087e8b'))):
-        vals=[pct(pooled[d['id']][key],pooled[d['id']]['gold']) for d in defs]
-        ax.barh([i+(j-.5)*.33 for i in range(len(defs))],vals,height=.30,color=color,label=label)
-        for i,d in enumerate(defs):ax.text(vals[i]+.7,i+(j-.5)*.33,format_pct(pooled[d['id']][key],pooled[d['id']]['gold']),va='center',fontsize=9)
-    ax.set_yticks(range(len(defs)),[d['title'] for d in defs]);ax.invert_yaxis();ax.set_xlim(0,113);ax.set_xticks([0,25,50,75,100]);ax.tick_params(axis='y',length=0)
-    ax.legend(loc='lower left',bbox_to_anchor=(-.35,-.18),frameon=False,ncols=2,fontsize=10)
-    fig.subplots_adjust(left=.28,right=.97,top=.81,bottom=.22)
-    save(fig,'raw-offsets','Raw and normalized mask full hiding by type',
-         'Both series use normalized gold spans; only the predicted mask changes. Original-annotation raw coverage is available separately in the CSV.',
-         'Do not use expanded-mask percentages for an application that applies raw offsets.\nThese categories do not measure entity-type correctness or whether a partially hidden credential remains usable.')
-
     out=['# Results by sensitive-data type','','All figures and tables on this page use **PPLX + Fastino + mmBERT + BardsAI**, threshold 0.5. The same fixed composition is used in every cell. It is an illustration of category behavior, not an independently selected winner.','','![Full hiding by data type](../assets/entity-types.svg)','','## Pooled category results','','| Category | Fully hidden / normalized gold | Hidden % | Detected % | Raw mask / same normalized gold | Raw mask / original annotations | Datasets |','|---|---:|---:|---:|---:|---:|---:|']
     for d in defs:
         r=pooled[d['id']]
@@ -471,6 +571,73 @@ def detail_views():
     return selected
 
 
+def costs_by_model():
+    return ({r['model']: r['seconds_10k'] for r in speed_group(CPU_GROUP)},
+            {r['model']: r['seconds_10k'] for r in speed_group(GPU_GROUP)})
+
+
+def speed_table(group):
+    out = ['| Detector | Seconds / 10k chars | Chars / s | Rows / s | Amortized ms/row p50 | p95 | Peak RSS MB | Datasets |',
+           '|---|---:|---:|---:|---:|---:|---:|---:|']
+    quantile = lambda value: '-' if value is None else f'{value:,.0f}'
+    for r in speed_group(group):
+        rss = f"{r['rss_mb']:,.0f}" if r['rss_mb'] else '-'
+        out.append(f"| {r['model']} | {r['seconds_10k']:.2f} | {r['chars_per_second']:,.0f} | "
+                   f"{r['rows_per_second']:,.2f} | {quantile(r['p50_ms_reported'])} | "
+                   f"{quantile(r['p95_ms_reported'])} | {rss} | {r['datasets']} |")
+    return out
+
+
+def detector_table(rows):
+    cpu, gpu = costs_by_model()
+    out = ['| Detector | Family | Eligible sets | Untouched / gold | Untouched | Fully hidden | Masked outside annotations | Char F1 | CPU s/10k | GPU s/10k |',
+           '|---|---|---:|---:|---:|---:|---:|---:|---:|---:|']
+    for r in rows:
+        cost = lambda value: f'{value:.2f}' if value else '-'
+        out.append(f"| {r['model']} | {r['family']} | {r['sets']}/{len(CAT)} | {r['missed']:,} / {r['gold']:,} | "
+                   f"{format_pct(r['missed'], r['gold'])} | {r['hidden_pct']:.2f}% | {r['extra_pct']:.2f}% | "
+                   f"{r['char_f1']:.3f} | {cost(cpu.get(r['model']))} | {cost(gpu.get(r['model']))} |")
+    return out
+
+
+def detectors_page():
+    """One page with every measured configuration, its coverage and its measured cost."""
+    quality = model_totals()
+    complete = [r for r in quality if r['sets'] == len(CAT) and '+' not in r['model']]
+    partial = [r for r in quality if r not in complete]
+    out = ['# Every detector configuration', '',
+           f'Pooled outcomes for {len(quality)} measured configurations at threshold 0.5. Every number below comes from the '
+           'saved predictions of the frozen experiment. Runs on a known training source are excluded from these pools, '
+           'so the eligible dataset count is part of the result and configurations with different counts are not directly comparable.', '',
+           '`Untouched` means no predicted character reaches the normalized annotation. `Fully hidden` means every character of '
+           'the annotation is masked after word-boundary expansion. `Masked outside annotations` is the share of characters masked '
+           'in rows that carry no annotation; those rows are not verified clean content. Speed columns come from the two reference '
+           'machine groups below and are blank when a configuration was never run there.', '',
+           f'![Pooled outcomes for every complete-coverage detector](../assets/detectors.svg)', '',
+           f'## Complete coverage: all {len(CAT)} datasets', '']
+    out += detector_table(complete)
+    out += ['', '## Partial coverage, label variants, chunking and quantization', '',
+            'A `-ru` suffix switches zero-shot labels to Russian with the same weights, so those runs apply only to Russian cuts. '
+            '`+sent300`, `+ov100` and `+nochunk` are cutting variants, `+cpu-int8` and `+cpu-speed` are CPU execution variants. '
+            'A smaller dataset count is a missing measurement, never a zero-miss result.', '']
+    out += detector_table(partial)
+    out += ['', '## Measured CPU speed', '',
+            f'{CPU_LABEL}. Batch throughput under that load, not the latency of one request. '
+            'Amortized ms/row quantiles are the per-row share of measured compute, not individually timed requests.', '',
+            '![Measured CPU throughput per detector](../assets/cpu-speed.svg)', '']
+    out += speed_table(CPU_GROUP)
+    out += ['', '## Measured GPU speed', '',
+            f'{GPU_LABEL}. BardsAI has no row: its ONNX graph runs on CPU only.', '',
+            '![Measured GPU throughput per detector](../assets/gpu-speed.svg)', '']
+    out += speed_table(GPU_GROUP)
+    out += ['', '## Cost against quality', '',
+            '![Detector quality against measured cost](../assets/speed-quality.svg)', '',
+            'Other machines, quantized runs, scanners and every historical measurement condition are in [speed.md](speed.md). '
+            'Per-language results are in [by-language.md](by-language.md), exact per-dataset counts in '
+            '[dataset-metrics.csv](dataset-metrics.csv), and execution metadata in [run-inventory.json](run-inventory.json).', '']
+    (ROOT / 'results/detectors.md').write_text('\n'.join(out))
+
+
 def readme_blocks(selected):
     path=ROOT/'README.md'
     text=path.read_text()
@@ -493,7 +660,12 @@ def readme_blocks(selected):
     examples=['| Diagnostic example | Dataset | Data type | Fully hidden / gold | Fully hidden |','|---|---|---|---:|---:|']
     for label,r in samples:
         examples.append(f"| {label} | [{r['dataset']}](results/types/{r['dataset']}.md) | {titles[r['category']]} | {r['hidden']:,} / {r['gold']:,} | {format_pct(r['hidden'],r['gold'])} |")
-    for name,body in (('SNAPSHOT',stats),('HEADLINE OUTCOMES','\n'.join(headline)),('COMPOSITION COMPARISON','\n'.join(comparison)),('DATASET EXAMPLES','\n'.join(examples))):
+    complete=[r for r in model_totals() if r['sets']==len(CAT) and '+' not in r['model']]
+    detectors=detector_table(complete)
+    for name,body in (('SNAPSHOT',stats),('HEADLINE OUTCOMES','\n'.join(headline)),
+                      ('COMPOSITION COMPARISON','\n'.join(comparison)),('DATASET EXAMPLES','\n'.join(examples)),
+                      ('DETECTOR TABLE','\n'.join(detectors)),('CPU SPEED','\n'.join(speed_table(CPU_GROUP))),
+                      ('GPU SPEED','\n'.join(speed_table(GPU_GROUP)))):
         pattern=f'<!-- BEGIN {name} -->.*?<!-- END {name} -->'
         text,n=re.subn(pattern,lambda _:f'<!-- BEGIN {name} -->\n{body}\n<!-- END {name} -->',text,flags=re.S)
         if n!=1:raise ValueError(f'Missing README generated block: {name}')
@@ -501,7 +673,10 @@ def readme_blocks(selected):
 
 
 if __name__ == '__main__':
+    detail = detail_rows()
     markdown()
-    figures()
-    readme_blocks(detail_views())
-    print('Rendered 11 SVG figures, PNG previews, exact CSVs, category pages, README blocks and catalogs.')
+    selected = detail_views(*detail)
+    count = figures(detail[1])
+    detectors_page()
+    readme_blocks(selected)
+    print(f'Rendered {count} SVG figures, exact CSVs, category pages, README blocks and catalogs.')

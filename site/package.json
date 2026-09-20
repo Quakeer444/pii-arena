@@ -7,7 +7,7 @@
   },
   "scripts": {
     "predev": "node scripts/sync-benchmark.mjs",
-    "dev": "next dev",
+    "dev": "WATCHPACK_POLLING=500 next dev --webpack -p 3001",
     "prebuild": "node scripts/sync-benchmark.mjs",
     "build": "next build",
     "start": "next start",

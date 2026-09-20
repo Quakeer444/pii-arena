@@ -1,6 +1,7 @@
 /.local/
 /.venv/
 /.cache/
+/.pnpm-store/
 /.env
 /.env.*
 !.env.example

@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 1216" width="960" height="1216" font-family="ui-sans-serif,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" role="img" aria-label="Detector quality against measured cost">
+<title>What a detector costs for what it finds</title>
+<desc>Detector quality against measured cost</desc>
+<metadata>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<cc:Work>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title>What a detector costs for what it finds</dc:title>
+<dc:description>Detector quality against measured cost</dc:description>
+<dc:format>image/svg+xml</dc:format>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<style>:root{--bg:#ffffff;--ink:#111827;--muted:#5b6472;--soft:#8b93a1;--grid:rgba(17,24,39,.09);--rule:rgba(17,24,39,.20);--zebra:rgba(17,24,39,.032);--bar:rgba(91,100,114,.16);--barline:#98a0ad;--accent:#0d7d74;--accent-bar:rgba(13,125,116,.22);--second:#7c5cbf;--second-bar:rgba(124,92,191,.20);--heat0:rgba(13,125,116,.06);--heat1:rgba(13,125,116,.20);--heat2:rgba(13,125,116,.40);--heat3:rgba(13,125,116,.65);--heat4:#0d7d74;--heat-ink0:#111827;--heat-ink1:#111827;--heat-ink2:#111827;--heat-ink3:#0a2f2b;--heat-ink4:#ffffff}@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--ink:#e6edf3;--muted:#9198a1;--soft:#6e7681;--grid:rgba(230,237,243,.08);--rule:rgba(230,237,243,.20);--zebra:rgba(230,237,243,.035);--bar:rgba(145,152,161,.20);--barline:#6e7681;--accent:#2dd4bf;--accent-bar:rgba(45,212,191,.24);--second:#c4a7f5;--second-bar:rgba(196,167,245,.22);--heat0:rgba(45,212,191,.08);--heat1:rgba(45,212,191,.22);--heat2:rgba(45,212,191,.42);--heat3:rgba(45,212,191,.66);--heat4:#2dd4bf;--heat-ink0:#e6edf3;--heat-ink1:#e6edf3;--heat-ink2:#e6edf3;--heat-ink3:#04211d;--heat-ink4:#04211d}}text{dominant-baseline:middle}</style>
+<rect width="960" height="1216" fill="var(--bg)"/>
+<text x="40.0" y="34.0" fill="var(--accent)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.6">COST AND QUALITY</text>
+<text x="40.0" y="64.0" fill="var(--ink)" font-size="21" text-anchor="start" font-weight="650">What a detector costs for what it finds</text>
+<text x="40.0" y="89.0" fill="var(--muted)" font-size="11.5" text-anchor="start" font-weight="400">Untouched annotations against measured cost; both axes are lower is better</text>
+<line x1="40.0" y1="109.0" x2="920.0" y2="109.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="40.0" y="131.0" fill="var(--ink)" font-size="12" text-anchor="start" font-weight="600">CPU: AMD EPYC 9K84, 16 threads per process, 24 concurrent workers</text>
+<line x1="175.4" y1="187.0" x2="175.4" y2="567.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="175.4" y="585.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.10</text>
+<line x1="264.8" y1="187.0" x2="264.8" y2="567.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="264.8" y="585.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.20</text>
+<line x1="383.1" y1="187.0" x2="383.1" y2="567.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="383.1" y="585.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.50</text>
+<line x1="472.5" y1="187.0" x2="472.5" y2="567.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="472.5" y="585.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1.0</text>
+<line x1="561.9" y1="187.0" x2="561.9" y2="567.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="561.9" y="585.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">2.0</text>
+<line x1="680.1" y1="187.0" x2="680.1" y2="567.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="680.1" y="585.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">5.0</text>
+<line x1="769.5" y1="187.0" x2="769.5" y2="567.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="769.5" y="585.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">10</text>
+<line x1="859.0" y1="187.0" x2="859.0" y2="567.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="859.0" y="585.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">20</text>
+<line x1="112.0" y1="567.0" x2="920.0" y2="567.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="100.0" y="567.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0%</text>
+<line x1="112.0" y1="491.0" x2="920.0" y2="491.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="100.0" y="491.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">20%</text>
+<line x1="112.0" y1="415.0" x2="920.0" y2="415.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="100.0" y="415.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">40%</text>
+<line x1="112.0" y1="339.0" x2="920.0" y2="339.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="100.0" y="339.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">60%</text>
+<line x1="112.0" y1="263.0" x2="920.0" y2="263.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="100.0" y="263.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">80%</text>
+<line x1="112.0" y1="187.0" x2="920.0" y2="187.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="100.0" y="187.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">100%</text>
+<line x1="112.0" y1="187.0" x2="112.0" y2="567.0" stroke="var(--rule)" stroke-width="1"/>
+<line x1="112.0" y1="567.0" x2="920.0" y2="567.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="112.0" y="167.0" fill="var(--muted)" font-size="10" text-anchor="start" font-weight="400">Annotations untouched, %</text>
+<text x="112.0" y="607.0" fill="var(--muted)" font-size="10" text-anchor="start" font-weight="400">CPU seconds per 10,000 characters, log scale</text>
+<text x="920.0" y="167.0" fill="var(--soft)" font-size="9.5" text-anchor="end" font-weight="400">cheaper and more thorough is down and left</text>
+<circle cx="821.2" cy="516.9" r="6" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1.5"/>
+<circle cx="768.8" cy="487.4" r="6" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1.5"/>
+<circle cx="581.0" cy="485.4" r="6" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1.5"/>
+<circle cx="754.6" cy="516.0" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="622.9" cy="501.1" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="820.1" cy="493.7" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="859.7" cy="486.4" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="750.1" cy="484.2" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="874.9" cy="470.2" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="735.6" cy="465.5" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="624.6" cy="462.7" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="765.4" cy="462.6" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="886.2" cy="460.5" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="616.0" cy="455.3" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="654.1" cy="453.9" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="798.0" cy="449.7" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="721.3" cy="446.5" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="634.9" cy="439.6" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="489.8" cy="436.4" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="262.4" cy="435.7" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="657.8" cy="435.5" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="630.0" cy="434.6" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="744.0" cy="429.5" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="859.0" cy="418.6" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="768.1" cy="415.4" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="626.1" cy="413.3" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="517.5" cy="404.8" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="632.8" cy="404.2" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="610.8" cy="396.4" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="708.3" cy="394.1" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="718.0" cy="386.8" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="577.5" cy="382.0" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="746.2" cy="381.4" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="686.3" cy="379.0" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="419.0" cy="378.9" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="724.9" cy="376.1" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="817.4" cy="375.5" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="591.2" cy="372.8" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="589.9" cy="372.4" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="842.3" cy="364.8" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="616.4" cy="351.7" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="259.0" cy="306.2" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="140.8" cy="293.5" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="564.4" cy="278.0" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="256.6" cy="251.0" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<text x="810.2" y="516.9" fill="var(--accent)" font-size="9.5" text-anchor="end" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-fastino</text>
+<text x="779.8" y="487.4" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">pplx</text>
+<text x="592.0" y="485.4" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">mmbert32k</text>
+<text x="765.6" y="538.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-fastino-ru</text>
+<line x1="761.6" y1="516.0" x2="764.6" y2="538.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="633.9" y="501.1" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">nym-base</text>
+<text x="809.1" y="471.7" fill="var(--muted)" font-size="9.5" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-hivetrace-omni</text>
+<line x1="813.1" y1="493.7" x2="810.1" y2="471.7" stroke="var(--grid)" stroke-width="1"/>
+<text x="848.7" y="453.4" fill="var(--muted)" font-size="9.5" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">nuner-zero</text>
+<line x1="852.7" y1="486.4" x2="849.7" y2="453.4" stroke="var(--grid)" stroke-width="1"/>
+<text x="739.1" y="451.2" fill="var(--muted)" font-size="9.5" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-hivetrace-omni-ru</text>
+<line x1="743.1" y1="484.2" x2="740.1" y2="451.2" stroke="var(--grid)" stroke-width="1"/>
+<text x="863.9" y="437.2" fill="var(--muted)" font-size="9.5" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-nvidia</text>
+<line x1="867.9" y1="470.2" x2="864.9" y2="437.2" stroke="var(--grid)" stroke-width="1"/>
+<text x="635.6" y="429.7" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">openmed-multilingual</text>
+<line x1="631.6" y1="462.7" x2="634.6" y2="429.7" stroke="var(--grid)" stroke-width="1"/>
+<text x="665.1" y="486.9" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">apararti</text>
+<line x1="661.1" y1="453.9" x2="664.1" y2="486.9" stroke="var(--grid)" stroke-width="1"/>
+<text x="40.0" y="641.0" fill="var(--ink)" font-size="12" text-anchor="start" font-weight="600">GPU: NVIDIA GeForce RTX 5090, 2 concurrent workers</text>
+<line x1="234.6" y1="697.0" x2="234.6" y2="1077.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="234.6" y="1095.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.20</text>
+<line x1="407.6" y1="697.0" x2="407.6" y2="1077.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="407.6" y="1095.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.50</text>
+<line x1="538.4" y1="697.0" x2="538.4" y2="1077.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="538.4" y="1095.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1.0</text>
+<line x1="669.3" y1="697.0" x2="669.3" y2="1077.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="669.3" y="1095.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">2.0</text>
+<line x1="842.3" y1="697.0" x2="842.3" y2="1077.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="842.3" y="1095.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">5.0</text>
+<line x1="112.0" y1="1077.0" x2="920.0" y2="1077.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="100.0" y="1077.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0%</text>
+<line x1="112.0" y1="1001.0" x2="920.0" y2="1001.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="100.0" y="1001.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">20%</text>
+<line x1="112.0" y1="925.0" x2="920.0" y2="925.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="100.0" y="925.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">40%</text>
+<line x1="112.0" y1="849.0" x2="920.0" y2="849.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="100.0" y="849.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">60%</text>
+<line x1="112.0" y1="773.0" x2="920.0" y2="773.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="100.0" y="773.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">80%</text>
+<line x1="112.0" y1="697.0" x2="920.0" y2="697.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="100.0" y="697.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">100%</text>
+<line x1="112.0" y1="697.0" x2="112.0" y2="1077.0" stroke="var(--rule)" stroke-width="1"/>
+<line x1="112.0" y1="1077.0" x2="920.0" y2="1077.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="112.0" y="677.0" fill="var(--muted)" font-size="10" text-anchor="start" font-weight="400">Annotations untouched, %</text>
+<text x="112.0" y="1117.0" fill="var(--muted)" font-size="10" text-anchor="start" font-weight="400">GPU seconds per 10,000 characters, log scale</text>
+<text x="920.0" y="677.0" fill="var(--soft)" font-size="9.5" text-anchor="end" font-weight="400">cheaper and more thorough is down and left</text>
+<circle cx="287.9" cy="1026.9" r="6" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1.5"/>
+<circle cx="687.1" cy="997.4" r="6" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1.5"/>
+<circle cx="217.4" cy="995.4" r="6" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1.5"/>
+<circle cx="164.4" cy="1011.1" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="303.1" cy="1003.7" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="356.8" cy="996.4" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="351.7" cy="980.2" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="504.8" cy="972.7" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="237.8" cy="972.6" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="444.2" cy="970.5" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="512.9" cy="965.3" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="637.0" cy="963.9" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="183.7" cy="959.7" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="870.5" cy="956.5" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="559.5" cy="949.6" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="154.1" cy="945.7" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="649.9" cy="945.5" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="626.4" cy="944.6" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="241.8" cy="939.5" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="220.5" cy="925.4" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="596.3" cy="923.3" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="161.4" cy="892.0" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="188.9" cy="889.0" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="212.0" cy="886.1" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="207.2" cy="885.5" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="176.5" cy="882.8" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="180.2" cy="882.4" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<circle cx="179.4" cy="861.7" r="4.3" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.9"/>
+<text x="298.9" y="1026.9" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-fastino</text>
+<text x="698.1" y="997.4" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">pplx</text>
+<text x="228.4" y="995.4" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">mmbert32k</text>
+<text x="175.4" y="1011.1" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">nym-base</text>
+<text x="314.1" y="1003.7" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-hivetrace-omni</text>
+<text x="367.8" y="985.4" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">nuner-zero</text>
+<line x1="363.8" y1="996.4" x2="366.8" y2="985.4" stroke="var(--grid)" stroke-width="1"/>
+<text x="362.7" y="969.2" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-nvidia</text>
+<line x1="358.7" y1="980.2" x2="361.7" y2="969.2" stroke="var(--grid)" stroke-width="1"/>
+<text x="515.8" y="972.7" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">openmed-multilingual</text>
+<text x="248.8" y="972.6" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-urchade</text>
+<text x="455.2" y="959.5" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-large</text>
+<line x1="451.2" y1="970.5" x2="454.2" y2="959.5" stroke="var(--grid)" stroke-width="1"/>
+<text x="523.9" y="943.3" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">openmed-nemotron</text>
+<line x1="519.9" y1="965.3" x2="522.9" y2="943.3" stroke="var(--grid)" stroke-width="1"/>
+<text x="648.0" y="952.9" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">apararti</text>
+<line x1="644.0" y1="963.9" x2="647.0" y2="952.9" stroke="var(--grid)" stroke-width="1"/>
+<line x1="40.0" y1="1151.0" x2="920.0" y2="1151.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="40.0" y="1171.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Quality pools every eligible dataset of a configuration; speed comes from one machine group, so the two axes are different runs.</text>
+<text x="40.0" y="1184.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Configurations without a run in the machine group are absent; dataset coverage differs between points.</text>
+<text x="40.0" y="1197.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">No position here is a production safety claim.</text>
+<text x="920.0" y="1171.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
+</svg>

@@ -1,320 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="950.4pt" height="468pt" viewBox="0 0 950.4 468" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <title>Touched versus fully hidden spans</title>
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:title>Touched versus fully hidden spans</dc:title>
-    <dc:description>Detection recall and full hiding are computed independently from saved predictions on all 41 datasets.</dc:description>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 468 
-L 950.4 468 
-L 950.4 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
-  </g>
-  <g id="axes_1">
-   <g id="patch_2">
-    <path d="M 294.624 336.96 
-L 921.888 336.96 
-L 921.888 88.92 
-L 294.624 88.92 
-z
-" style="fill: #ffffff"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 294.624 100.194545 
-L 737.366719 100.194545 
-L 737.366719 112.188743 
-L 294.624 112.188743 
-z
-" clip-path="url(#p4abfe20148)" style="fill: #96c8cd"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 294.624 140.175203 
-L 780.789331 140.175203 
-L 780.789331 152.1694 
-L 294.624 152.1694 
-z
-" clip-path="url(#p4abfe20148)" style="fill: #96c8cd"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 294.624 180.155861 
-L 835.299038 180.155861 
-L 835.299038 192.150058 
-L 294.624 192.150058 
-z
-" clip-path="url(#p4abfe20148)" style="fill: #96c8cd"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 294.624 220.136518 
-L 842.995743 220.136518 
-L 842.995743 232.130716 
-L 294.624 232.130716 
-z
-" clip-path="url(#p4abfe20148)" style="fill: #96c8cd"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 294.624 260.117176 
-L 844.197276 260.117176 
-L 844.197276 272.111373 
-L 294.624 272.111373 
-z
-" clip-path="url(#p4abfe20148)" style="fill: #96c8cd"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 294.624 300.097834 
-L 846.669282 300.097834 
-L 846.669282 312.092031 
-L 294.624 312.092031 
-z
-" clip-path="url(#p4abfe20148)" style="fill: #96c8cd"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 294.624 113.787969 
-L 714.210127 113.787969 
-L 714.210127 125.782166 
-L 294.624 125.782166 
-z
-" clip-path="url(#p4abfe20148)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 294.624 153.768627 
-L 741.867543 153.768627 
-L 741.867543 165.762824 
-L 294.624 165.762824 
-z
-" clip-path="url(#p4abfe20148)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 294.624 193.749284 
-L 809.515324 193.749284 
-L 809.515324 205.743482 
-L 294.624 205.743482 
-z
-" clip-path="url(#p4abfe20148)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 294.624 233.729942 
-L 815.259537 233.729942 
-L 815.259537 245.724139 
-L 294.624 245.724139 
-z
-" clip-path="url(#p4abfe20148)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 294.624 273.7106 
-L 821.513418 273.7106 
-L 821.513418 285.704797 
-L 294.624 285.704797 
-z
-" clip-path="url(#p4abfe20148)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_14">
-    <path d="M 294.624 313.691257 
-L 823.342801 313.691257 
-L 823.342801 325.685455 
-L 294.624 325.685455 
-z
-" clip-path="url(#p4abfe20148)" style="fill: #087e8b"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m8ba886339c" d="M 0 0 
-L 0 3.5 
-" style="stroke: #50647a; stroke-width: 0.8"/>
-      </defs>
-      <g>
-       <use xlink:href="#m8ba886339c" x="294.624" y="336.96" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="294.624" y="352.318281" transform="rotate(-0 294.624 352.318281)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m8ba886339c" x="434.638286" y="336.96" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="434.638286" y="352.318281" transform="rotate(-0 434.638286 352.318281)">25</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m8ba886339c" x="574.652571" y="336.96" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="574.652571" y="352.318281" transform="rotate(-0 574.652571 352.318281)">50</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m8ba886339c" x="714.666857" y="336.96" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="714.666857" y="352.318281" transform="rotate(-0 714.666857 352.318281)">75</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m8ba886339c" x="854.681143" y="336.96" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="854.681143" y="352.318281" transform="rotate(-0 854.681143 352.318281)">100</text>
-     </g>
-    </g>
-    <g id="text_6">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="608.256" y="366.964219" transform="rotate(-0 608.256 366.964219)">Share of normalized gold spans (%)</text>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_6"/>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="284.624" y="117.167497" transform="rotate(-0 284.624 117.167497)">PPLX</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_7"/>
-     <g id="text_8">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="284.624" y="157.148154" transform="rotate(-0 284.624 157.148154)">Fastino GLiNER2</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_8"/>
-     <g id="text_9">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="284.624" y="197.128812" transform="rotate(-0 284.624 197.128812)">PPLX + Fastino</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_9"/>
-     <g id="text_10">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="284.624" y="237.109469" transform="rotate(-0 284.624 237.109469)">PPLX + Fastino + mmBERT</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_10"/>
-     <g id="text_11">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="284.624" y="277.090127" transform="rotate(-0 284.624 277.090127)">PPLX + Fastino + BardsAI</text>
-     </g>
-    </g>
-    <g id="ytick_6">
-     <g id="line2d_11"/>
-     <g id="text_12">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="284.624" y="317.070785" transform="rotate(-0 284.624 317.070785)">PPLX + Fastino + mmBERT + BardsAI</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_15">
-    <path d="M 294.624 336.96 
-L 921.888 336.96 
-" style="fill: none; stroke: #dce4ed; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="text_13">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="741.847176" y="108.951019" transform="rotate(-0 741.847176 108.951019)">79.1%</text>
-   </g>
-   <g id="text_14">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="718.690584" y="122.544443" transform="rotate(-0 718.690584 122.544443)">74.9%</text>
-   </g>
-   <g id="text_15">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="785.269788" y="148.931677" transform="rotate(-0 785.269788 148.931677)">86.8%</text>
-   </g>
-   <g id="text_16">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="746.348" y="162.5251" transform="rotate(-0 746.348 162.5251)">79.9%</text>
-   </g>
-   <g id="text_17">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="839.779495" y="188.912334" transform="rotate(-0 839.779495 188.912334)">96.5%</text>
-   </g>
-   <g id="text_18">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="813.995781" y="202.505758" transform="rotate(-0 813.995781 202.505758)">91.9%</text>
-   </g>
-   <g id="text_19">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="847.4762" y="228.892992" transform="rotate(-0 847.4762 228.892992)">97.9%</text>
-   </g>
-   <g id="text_20">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="819.739995" y="242.486416" transform="rotate(-0 819.739995 242.486416)">93.0%</text>
-   </g>
-   <g id="text_21">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="848.677733" y="268.87365" transform="rotate(-0 848.677733 268.87365)">98.1%</text>
-   </g>
-   <g id="text_22">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="825.993875" y="282.467073" transform="rotate(-0 825.993875 282.467073)">94.1%</text>
-   </g>
-   <g id="text_23">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="851.149739" y="308.854307" transform="rotate(-0 851.149739 308.854307)">98.6%</text>
-   </g>
-   <g id="text_24">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="827.823258" y="322.447731" transform="rotate(-0 827.823258 322.447731)">94.4%</text>
-   </g>
-   <g id="legend_1">
-    <g id="patch_16">
-     <path d="M 52.7184 400.686037 
-L 72.7184 400.686037 
-L 72.7184 393.686037 
-L 52.7184 393.686037 
-z
-" style="fill: #96c8cd"/>
-    </g>
-    <g id="text_25">
-     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="80.7184" y="400.686037" transform="rotate(-0 80.7184 400.686037)">Touched by at least one predicted character</text>
-    </g>
-    <g id="patch_17">
-     <path d="M 52.7184 415.364162 
-L 72.7184 415.364162 
-L 72.7184 408.364162 
-L 52.7184 408.364162 
-z
-" style="fill: #087e8b"/>
-    </g>
-    <g id="text_26">
-     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="80.7184" y="415.364162" transform="rotate(-0 80.7184 415.364162)">All normalized gold characters hidden</text>
-    </g>
-   </g>
-  </g>
-  <g id="text_27">
-   <text style="font-weight: 700; font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="33.264" y="35.436563" transform="rotate(-0 33.264 35.436563)">Detected does not mean fully hidden</text>
-  </g>
-  <g id="text_28">
-   <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #50647a" x="33.264" y="57.546406" transform="rotate(-0 33.264 57.546406)">Gold spans (%) | higher is better | both metrics use the same normalized span boundaries</text>
-  </g>
-  <g id="text_29">
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #50647a" x="33.264" y="440.388281" transform="rotate(-0 33.264 440.388281)">227,466 normalized spans. Word-boundary normalization can expand masks; neither percentage proves that original secrets are unusable.</text>
-  </g>
-  <g id="text_30">
-   <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #50647a" x="917.136" y="458.64" transform="rotate(-0 917.136 458.64)">PII &amp; Secrets Benchmark | snapshot 2026-09-09</text>
-  </g>
- </g>
- <defs>
-  <clipPath id="p4abfe20148">
-   <rect x="294.624" y="88.92" width="627.264" height="248.04"/>
-  </clipPath>
- </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 401" width="960" height="401" font-family="ui-sans-serif,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" role="img" aria-label="Touched versus fully hidden spans">
+<title>Detected does not mean fully hidden</title>
+<desc>Touched versus fully hidden spans</desc>
+<metadata>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<cc:Work>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title>Detected does not mean fully hidden</dc:title>
+<dc:description>Touched versus fully hidden spans</dc:description>
+<dc:format>image/svg+xml</dc:format>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<style>:root{--bg:#ffffff;--ink:#111827;--muted:#5b6472;--soft:#8b93a1;--grid:rgba(17,24,39,.09);--rule:rgba(17,24,39,.20);--zebra:rgba(17,24,39,.032);--bar:rgba(91,100,114,.16);--barline:#98a0ad;--accent:#0d7d74;--accent-bar:rgba(13,125,116,.22);--second:#7c5cbf;--second-bar:rgba(124,92,191,.20);--heat0:rgba(13,125,116,.06);--heat1:rgba(13,125,116,.20);--heat2:rgba(13,125,116,.40);--heat3:rgba(13,125,116,.65);--heat4:#0d7d74;--heat-ink0:#111827;--heat-ink1:#111827;--heat-ink2:#111827;--heat-ink3:#0a2f2b;--heat-ink4:#ffffff}@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--ink:#e6edf3;--muted:#9198a1;--soft:#6e7681;--grid:rgba(230,237,243,.08);--rule:rgba(230,237,243,.20);--zebra:rgba(230,237,243,.035);--bar:rgba(145,152,161,.20);--barline:#6e7681;--accent:#2dd4bf;--accent-bar:rgba(45,212,191,.24);--second:#c4a7f5;--second-bar:rgba(196,167,245,.22);--heat0:rgba(45,212,191,.08);--heat1:rgba(45,212,191,.22);--heat2:rgba(45,212,191,.42);--heat3:rgba(45,212,191,.66);--heat4:#2dd4bf;--heat-ink0:#e6edf3;--heat-ink1:#e6edf3;--heat-ink2:#e6edf3;--heat-ink3:#04211d;--heat-ink4:#04211d}}text{dominant-baseline:middle}</style>
+<rect width="960" height="401" fill="var(--bg)"/>
+<text x="40.0" y="34.0" fill="var(--accent)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.6">DETECTION AND HIDING</text>
+<text x="40.0" y="64.0" fill="var(--ink)" font-size="21" text-anchor="start" font-weight="650">Detected does not mean fully hidden</text>
+<text x="40.0" y="89.0" fill="var(--muted)" font-size="11.5" text-anchor="start" font-weight="400">Share of normalized gold spans; higher is better; both metrics use the same span boundaries</text>
+<line x1="40.0" y1="109.0" x2="920.0" y2="109.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="312.0" y="127.0" fill="var(--muted)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.1">TOUCHED BY A PREDICTION</text>
+<text x="312.0" y="141.0" fill="var(--soft)" font-size="8.5" text-anchor="start" font-weight="400">higher is better  |  scale 0-100%</text>
+<line x1="300.0" y1="153.0" x2="300.0" y2="322.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="616.0" y="127.0" fill="var(--muted)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.1">ALL CHARACTERS HIDDEN</text>
+<text x="616.0" y="141.0" fill="var(--soft)" font-size="8.5" text-anchor="start" font-weight="400">higher is better  |  scale 0-100%</text>
+<line x1="604.0" y1="153.0" x2="604.0" y2="322.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="40.0" y="171.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX</text>
+<line x1="312.0" y1="177.0" x2="520.0" y2="177.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="312.0" y="166.5" width="164.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="530.0" y="171.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">79.1%</text>
+<line x1="616.0" y1="177.0" x2="824.0" y2="177.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="616.0" y="166.5" width="155.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="834.0" y="171.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">74.9%</text>
+<rect x="40.0" y="185.0" width="880.0" height="28" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="199.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">Fastino GLiNER2</text>
+<line x1="312.0" y1="205.0" x2="520.0" y2="205.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="312.0" y="194.5" width="180.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="530.0" y="199.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">86.8%</text>
+<line x1="616.0" y1="205.0" x2="824.0" y2="205.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="616.0" y="194.5" width="166.1" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="834.0" y="199.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">79.9%</text>
+<text x="40.0" y="227.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX + Fastino</text>
+<line x1="312.0" y1="233.0" x2="520.0" y2="233.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="312.0" y="222.5" width="200.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="530.0" y="227.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">96.5%</text>
+<line x1="616.0" y1="233.0" x2="824.0" y2="233.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="616.0" y="222.5" width="191.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="834.0" y="227.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">91.9%</text>
+<rect x="40.0" y="241.0" width="880.0" height="28" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="255.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX + Fastino + mmBERT</text>
+<line x1="312.0" y1="261.0" x2="520.0" y2="261.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="312.0" y="250.5" width="203.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="530.0" y="255.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">97.9%</text>
+<line x1="616.0" y1="261.0" x2="824.0" y2="261.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="616.0" y="250.5" width="193.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="834.0" y="255.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">93.0%</text>
+<text x="40.0" y="283.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX + Fastino + BardsAI</text>
+<line x1="312.0" y1="289.0" x2="520.0" y2="289.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="312.0" y="278.5" width="204.1" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="530.0" y="283.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">98.1%</text>
+<line x1="616.0" y1="289.0" x2="824.0" y2="289.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="616.0" y="278.5" width="195.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="834.0" y="283.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">94.1%</text>
+<rect x="40.0" y="297.0" width="880.0" height="28" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="311.0" fill="var(--accent)" font-size="11" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX + Fastino + mmBERT + BardsAI</text>
+<line x1="312.0" y1="317.0" x2="520.0" y2="317.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="312.0" y="306.5" width="205.0" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="530.0" y="311.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">98.6%</text>
+<line x1="616.0" y1="317.0" x2="824.0" y2="317.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="616.0" y="306.5" width="196.4" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="834.0" y="311.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">94.4%</text>
+<line x1="40.0" y1="349.0" x2="920.0" y2="349.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="40.0" y="369.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">227,466 normalized spans. Word-boundary normalization can expand masks.</text>
+<text x="40.0" y="382.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Neither percentage proves that an original secret is unusable after masking.</text>
+<text x="920.0" y="369.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
 </svg>

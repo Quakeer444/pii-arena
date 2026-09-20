@@ -17,9 +17,9 @@ jobs:
         with:
           version: '0.8.3'
           python-version: '3.12.11'
-      - run: uv sync --frozen --group plots
+      - run: uv sync --frozen
       - run: uv run python scripts/verify.py
-      - run: uv run --group plots python scripts/render.py
+      - run: uv run python scripts/render.py
       - run: uv run python scripts/verify.py
       - name: Install pinned Gitleaks for the secret scan
         run: |

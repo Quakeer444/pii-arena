@@ -1,491 +1,96 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="950.4pt" height="468pt" viewBox="0 0 950.4 468" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <title>Residual exposure and masking outside annotations</title>
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:title>Residual exposure and masking outside annotations</dc:title>
-    <dc:description>Residual normalized gold spans and characters masked in unannotated rows for six complete compositions on all 41 datasets.</dc:description>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 468 
-L 950.4 468 
-L 950.4 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
-  </g>
-  <g id="axes_1">
-   <g id="patch_2">
-    <path d="M 294.624 365.04 
-L 582.35978 365.04 
-L 582.35978 107.64 
-L 294.624 107.64 
-z
-" style="fill: #ffffff"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <path d="M 294.624 365.04 
-L 294.624 107.64 
-" clip-path="url(#pb1de414975)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_2">
-      <defs>
-       <path id="m8ba886339c" d="M 0 0 
-L 0 3.5 
-" style="stroke: #50647a; stroke-width: 0.8"/>
-      </defs>
-      <g>
-       <use xlink:href="#m8ba886339c" x="294.624" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="294.624" y="380.398281" transform="rotate(-0 294.624 380.398281)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_3">
-      <path d="M 339.436536 365.04 
-L 339.436536 107.64 
-" clip-path="url(#pb1de414975)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m8ba886339c" x="339.436536" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="339.436536" y="380.398281" transform="rotate(-0 339.436536 380.398281)">5</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_5">
-      <path d="M 384.249072 365.04 
-L 384.249072 107.64 
-" clip-path="url(#pb1de414975)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m8ba886339c" x="384.249072" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="384.249072" y="380.398281" transform="rotate(-0 384.249072 380.398281)">10</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_7">
-      <path d="M 429.061608 365.04 
-L 429.061608 107.64 
-" clip-path="url(#pb1de414975)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_8">
-      <g>
-       <use xlink:href="#m8ba886339c" x="429.061608" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="429.061608" y="380.398281" transform="rotate(-0 429.061608 380.398281)">15</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_9">
-      <path d="M 473.874144 365.04 
-L 473.874144 107.64 
-" clip-path="url(#pb1de414975)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_10">
-      <g>
-       <use xlink:href="#m8ba886339c" x="473.874144" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="473.874144" y="380.398281" transform="rotate(-0 473.874144 380.398281)">20</text>
-     </g>
-    </g>
-    <g id="xtick_6">
-     <g id="line2d_11">
-      <path d="M 518.68668 365.04 
-L 518.68668 107.64 
-" clip-path="url(#pb1de414975)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_12">
-      <g>
-       <use xlink:href="#m8ba886339c" x="518.68668" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="518.68668" y="380.398281" transform="rotate(-0 518.68668 380.398281)">25</text>
-     </g>
-    </g>
-    <g id="xtick_7">
-     <g id="line2d_13">
-      <path d="M 563.499216 365.04 
-L 563.499216 107.64 
-" clip-path="url(#pb1de414975)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_14">
-      <g>
-       <use xlink:href="#m8ba886339c" x="563.499216" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="563.499216" y="380.398281" transform="rotate(-0 563.499216 380.398281)">30</text>
-     </g>
-    </g>
-    <g id="text_8">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="438.49189" y="395.044219" transform="rotate(-0 438.49189 395.044219)">Percent</text>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_15"/>
-     <g id="text_9">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="284.624" y="136.054855" transform="rotate(-0 284.624 136.054855)">PPLX</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_16"/>
-     <g id="text_10">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="284.624" y="177.840569" transform="rotate(-0 284.624 177.840569)">Fastino GLiNER2</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_17"/>
-     <g id="text_11">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="284.624" y="219.626283" transform="rotate(-0 284.624 219.626283)">PPLX + Fastino</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_18"/>
-     <g id="text_12">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="284.624" y="261.411998" transform="rotate(-0 284.624 261.411998)">PPLX + Fastino + mmBERT</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_19"/>
-     <g id="text_13">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="284.624" y="303.197712" transform="rotate(-0 284.624 303.197712)">PPLX + Fastino + BardsAI</text>
-     </g>
-    </g>
-    <g id="ytick_6">
-     <g id="line2d_20"/>
-     <g id="text_14">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #152b43" x="284.624" y="344.983426" transform="rotate(-0 284.624 344.983426)">PPLX + Fastino + mmBERT + BardsAI</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_3">
-    <path d="M 294.624 119.34 
-L 519.417578 119.34 
-L 519.417578 144.411429 
-L 294.624 144.411429 
-z
-" clip-path="url(#pb1de414975)" style="fill: #8ea2b8"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 294.624 161.125714 
-L 475.157845 161.125714 
-L 475.157845 186.197143 
-L 294.624 186.197143 
-z
-" clip-path="url(#pb1de414975)" style="fill: #4b6c93"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 294.624 202.911429 
-L 366.902157 202.911429 
-L 366.902157 227.982857 
-L 294.624 227.982857 
-z
-" clip-path="url(#pb1de414975)" style="fill: #268baf"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 294.624 244.697143 
-L 357.709781 244.697143 
-L 357.709781 269.768571 
-L 294.624 269.768571 
-z
-" clip-path="url(#pb1de414975)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 294.624 286.482857 
-L 347.701794 286.482857 
-L 347.701794 311.554286 
-L 294.624 311.554286 
-z
-" clip-path="url(#pb1de414975)" style="fill: #7863a9"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 294.624 328.268571 
-L 344.77426 328.268571 
-L 344.77426 353.34 
-L 294.624 353.34 
-z
-" clip-path="url(#pb1de414975)" style="fill: #ba6a38"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 294.624 365.04 
-L 582.35978 365.04 
-" style="fill: none; stroke: #dce4ed; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="text_15">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="525.037417" y="134.497121" transform="rotate(-0 525.037417 134.497121)">25.1%  (57,052)</text>
-   </g>
-   <g id="text_16">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="480.777685" y="176.282835" transform="rotate(-0 480.777685 176.282835)">20.1%  (45,819)</text>
-   </g>
-   <g id="text_17">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="372.521996" y="218.068549" transform="rotate(-0 372.521996 218.068549)">8.1%  (18,344)</text>
-   </g>
-   <g id="text_18">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="363.32962" y="259.854263" transform="rotate(-0 363.32962 259.854263)">7.0%  (16,011)</text>
-   </g>
-   <g id="text_19">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="353.321633" y="301.639978" transform="rotate(-0 353.321633 301.639978)">5.9%  (13,471)</text>
-   </g>
-   <g id="text_20">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="350.3941" y="343.425692" transform="rotate(-0 350.3941 343.425692)">5.6%  (12,728)</text>
-   </g>
-   <g id="text_21">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="294.624" y="92.64" transform="rotate(-0 294.624 92.64)">Gold spans not fully hidden</text>
-   </g>
-  </g>
-  <g id="axes_2">
-   <g id="patch_10">
-    <path d="M 634.15222 365.04 
-L 921.888 365.04 
-L 921.888 107.64 
-L 634.15222 107.64 
-z
-" style="fill: #ffffff"/>
-   </g>
-   <g id="matplotlib.axis_3">
-    <g id="xtick_8">
-     <g id="line2d_21">
-      <path d="M 634.15222 365.04 
-L 634.15222 107.64 
-" clip-path="url(#p5a825a3aae)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_22">
-      <g>
-       <use xlink:href="#m8ba886339c" x="634.15222" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_22">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="634.15222" y="380.398281" transform="rotate(-0 634.15222 380.398281)">0</text>
-     </g>
-    </g>
-    <g id="xtick_9">
-     <g id="line2d_23">
-      <path d="M 690.855103 365.04 
-L 690.855103 107.64 
-" clip-path="url(#p5a825a3aae)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_24">
-      <g>
-       <use xlink:href="#m8ba886339c" x="690.855103" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_23">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="690.855103" y="380.398281" transform="rotate(-0 690.855103 380.398281)">5</text>
-     </g>
-    </g>
-    <g id="xtick_10">
-     <g id="line2d_25">
-      <path d="M 747.557985 365.04 
-L 747.557985 107.64 
-" clip-path="url(#p5a825a3aae)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_26">
-      <g>
-       <use xlink:href="#m8ba886339c" x="747.557985" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_24">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="747.557985" y="380.398281" transform="rotate(-0 747.557985 380.398281)">10</text>
-     </g>
-    </g>
-    <g id="xtick_11">
-     <g id="line2d_27">
-      <path d="M 804.260868 365.04 
-L 804.260868 107.64 
-" clip-path="url(#p5a825a3aae)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_28">
-      <g>
-       <use xlink:href="#m8ba886339c" x="804.260868" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_25">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="804.260868" y="380.398281" transform="rotate(-0 804.260868 380.398281)">15</text>
-     </g>
-    </g>
-    <g id="xtick_12">
-     <g id="line2d_29">
-      <path d="M 860.963751 365.04 
-L 860.963751 107.64 
-" clip-path="url(#p5a825a3aae)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_30">
-      <g>
-       <use xlink:href="#m8ba886339c" x="860.963751" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_26">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="860.963751" y="380.398281" transform="rotate(-0 860.963751 380.398281)">20</text>
-     </g>
-    </g>
-    <g id="xtick_13">
-     <g id="line2d_31">
-      <path d="M 917.666633 365.04 
-L 917.666633 107.64 
-" clip-path="url(#p5a825a3aae)" style="fill: none; stroke: #e9eef4; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_32">
-      <g>
-       <use xlink:href="#m8ba886339c" x="917.666633" y="365.04" style="fill: #50647a; stroke: #50647a; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_27">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="917.666633" y="380.398281" transform="rotate(-0 917.666633 380.398281)">25</text>
-     </g>
-    </g>
-    <g id="text_28">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #50647a" x="778.02011" y="395.044219" transform="rotate(-0 778.02011 395.044219)">Percent</text>
-    </g>
-   </g>
-   <g id="matplotlib.axis_4">
-    <g id="ytick_7">
-     <g id="line2d_33"/>
-    </g>
-    <g id="ytick_8">
-     <g id="line2d_34"/>
-    </g>
-    <g id="ytick_9">
-     <g id="line2d_35"/>
-    </g>
-    <g id="ytick_10">
-     <g id="line2d_36"/>
-    </g>
-    <g id="ytick_11">
-     <g id="line2d_37"/>
-    </g>
-    <g id="ytick_12">
-     <g id="line2d_38"/>
-    </g>
-   </g>
-   <g id="patch_11">
-    <path d="M 634.15222 119.34 
-L 763.716683 119.34 
-L 763.716683 144.411429 
-L 634.15222 144.411429 
-z
-" clip-path="url(#p5a825a3aae)" style="fill: #8ea2b8"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 634.15222 161.125714 
-L 700.793999 161.125714 
-L 700.793999 186.197143 
-L 634.15222 186.197143 
-z
-" clip-path="url(#p5a825a3aae)" style="fill: #4b6c93"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 634.15222 202.911429 
-L 807.277909 202.911429 
-L 807.277909 227.982857 
-L 634.15222 227.982857 
-z
-" clip-path="url(#p5a825a3aae)" style="fill: #268baf"/>
-   </g>
-   <g id="patch_14">
-    <path d="M 634.15222 244.697143 
-L 847.79008 244.697143 
-L 847.79008 269.768571 
-L 634.15222 269.768571 
-z
-" clip-path="url(#p5a825a3aae)" style="fill: #087e8b"/>
-   </g>
-   <g id="patch_15">
-    <path d="M 634.15222 286.482857 
-L 828.066385 286.482857 
-L 828.066385 311.554286 
-L 634.15222 311.554286 
-z
-" clip-path="url(#p5a825a3aae)" style="fill: #7863a9"/>
-   </g>
-   <g id="patch_16">
-    <path d="M 634.15222 328.268571 
-L 858.945798 328.268571 
-L 858.945798 353.34 
-L 634.15222 353.34 
-z
-" clip-path="url(#p5a825a3aae)" style="fill: #ba6a38"/>
-   </g>
-   <g id="patch_17">
-    <path d="M 634.15222 365.04 
-L 921.888 365.04 
-" style="fill: none; stroke: #dce4ed; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="text_29">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="769.336523" y="134.497121" transform="rotate(-0 769.336523 134.497121)">11.4%  (330,853)</text>
-   </g>
-   <g id="text_30">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="706.413839" y="176.282835" transform="rotate(-0 706.413839 176.282835)">5.9%  (170,175)</text>
-   </g>
-   <g id="text_31">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="812.897748" y="218.068549" transform="rotate(-0 812.897748 218.068549)">15.3%  (442,090)</text>
-   </g>
-   <g id="text_32">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="853.409919" y="259.854263" transform="rotate(-0 853.409919 259.854263)">18.8%  (545,541)</text>
-   </g>
-   <g id="text_33">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="833.686224" y="301.639978" transform="rotate(-0 833.686224 301.639978)">17.1%  (495,175)</text>
-   </g>
-   <g id="text_34">
-    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="864.565638" y="343.425692" transform="rotate(-0 864.565638 343.425692)">19.8%  (574,028)</text>
-   </g>
-   <g id="text_35">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="634.15222" y="92.64" transform="rotate(-0 634.15222 92.64)">Characters masked in unannotated rows</text>
-   </g>
-  </g>
-  <g id="text_36">
-   <text style="font-weight: 700; font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152b43" x="33.264" y="35.436563" transform="rotate(-0 33.264 35.436563)">Masking leaves residuals and masks unannotated text</text>
-  </g>
-  <g id="text_37">
-   <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #50647a" x="33.264" y="51.48" transform="rotate(-0 33.264 51.48)">All 41 datasets | normalized word-boundary masks | lower is better</text>
-  </g>
-  <g id="text_38">
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(33.264 430.31025)">227,466 normalized gold spans; 2,895,905 characters in 7,566 rows without annotations.</text>
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #50647a" transform="translate(33.264 440.388281)">Annotation-based descriptive counts. Unannotated text is not guaranteed to contain no sensitive content.</text>
-  </g>
-  <g id="text_39">
-   <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #50647a" x="917.136" y="458.64" transform="rotate(-0 917.136 458.64)">PII &amp; Secrets Benchmark | snapshot 2026-09-09</text>
-  </g>
- </g>
- <defs>
-  <clipPath id="pb1de414975">
-   <rect x="294.624" y="107.64" width="287.73578" height="257.4"/>
-  </clipPath>
-  <clipPath id="p5a825a3aae">
-   <rect x="634.15222" y="107.64" width="287.73578" height="257.4"/>
-  </clipPath>
- </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 391" width="960" height="391" font-family="ui-sans-serif,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" role="img" aria-label="Residual exposure and masking outside annotations">
+<title>Masking leaves residuals and masks unannotated text</title>
+<desc>Residual exposure and masking outside annotations</desc>
+<metadata>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<cc:Work>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title>Masking leaves residuals and masks unannotated text</dc:title>
+<dc:description>Residual exposure and masking outside annotations</dc:description>
+<dc:format>image/svg+xml</dc:format>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<style>:root{--bg:#ffffff;--ink:#111827;--muted:#5b6472;--soft:#8b93a1;--grid:rgba(17,24,39,.09);--rule:rgba(17,24,39,.20);--zebra:rgba(17,24,39,.032);--bar:rgba(91,100,114,.16);--barline:#98a0ad;--accent:#0d7d74;--accent-bar:rgba(13,125,116,.22);--second:#7c5cbf;--second-bar:rgba(124,92,191,.20);--heat0:rgba(13,125,116,.06);--heat1:rgba(13,125,116,.20);--heat2:rgba(13,125,116,.40);--heat3:rgba(13,125,116,.65);--heat4:#0d7d74;--heat-ink0:#111827;--heat-ink1:#111827;--heat-ink2:#111827;--heat-ink3:#0a2f2b;--heat-ink4:#ffffff}@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--ink:#e6edf3;--muted:#9198a1;--soft:#6e7681;--grid:rgba(230,237,243,.08);--rule:rgba(230,237,243,.20);--zebra:rgba(230,237,243,.035);--bar:rgba(145,152,161,.20);--barline:#6e7681;--accent:#2dd4bf;--accent-bar:rgba(45,212,191,.24);--second:#c4a7f5;--second-bar:rgba(196,167,245,.22);--heat0:rgba(45,212,191,.08);--heat1:rgba(45,212,191,.22);--heat2:rgba(45,212,191,.42);--heat3:rgba(45,212,191,.66);--heat4:#2dd4bf;--heat-ink0:#e6edf3;--heat-ink1:#e6edf3;--heat-ink2:#e6edf3;--heat-ink3:#04211d;--heat-ink4:#04211d}}text{dominant-baseline:middle}</style>
+<rect width="960" height="391" fill="var(--bg)"/>
+<text x="40.0" y="34.0" fill="var(--accent)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.6">MASKING OUTCOME</text>
+<text x="40.0" y="64.0" fill="var(--ink)" font-size="21" text-anchor="start" font-weight="650">Masking leaves residuals and masks unannotated text</text>
+<text x="40.0" y="89.0" fill="var(--muted)" font-size="11.5" text-anchor="start" font-weight="400">Six complete configurations on all 41 datasets and 227,466 normalized gold spans</text>
+<line x1="40.0" y1="109.0" x2="920.0" y2="109.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="292.0" y="127.0" fill="var(--muted)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.1">ANNOTATIONS UNTOUCHED</text>
+<text x="292.0" y="141.0" fill="var(--soft)" font-size="8.5" text-anchor="start" font-weight="400">lower is better  |  scale 0-30%</text>
+<line x1="280.0" y1="153.0" x2="280.0" y2="312.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="501.3" y="127.0" fill="var(--muted)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.1">NOT FULLY HIDDEN</text>
+<text x="501.3" y="141.0" fill="var(--soft)" font-size="8.5" text-anchor="start" font-weight="400">lower is better  |  scale 0-30%</text>
+<line x1="489.3" y1="153.0" x2="489.3" y2="312.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="710.7" y="127.0" fill="var(--muted)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.1">CHARACTERS MASKED OUTSIDE ANNOTATIONS</text>
+<text x="710.7" y="141.0" fill="var(--soft)" font-size="8.5" text-anchor="start" font-weight="400">lower is better  |  scale 0-30%</text>
+<line x1="698.7" y1="153.0" x2="698.7" y2="312.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="40.0" y="171.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX</text>
+<line x1="292.0" y1="177.0" x2="375.3" y2="177.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="292.0" y="166.5" width="58.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="385.3" y="171.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">20.95%  (47,647)</text>
+<line x1="501.3" y1="177.0" x2="584.7" y2="177.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="501.3" y="166.5" width="69.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="594.7" y="171.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">25.08%  (57,052)</text>
+<line x1="710.7" y1="177.0" x2="794.0" y2="177.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="710.7" y="166.5" width="31.7" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="804.0" y="171.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">11.42%  (330,853)</text>
+<rect x="40.0" y="184.0" width="880.0" height="26" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="197.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">Fastino GLiNER2</text>
+<line x1="292.0" y1="203.0" x2="375.3" y2="203.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="292.0" y="192.5" width="36.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="385.3" y="197.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">13.19%  (30,011)</text>
+<line x1="501.3" y1="203.0" x2="584.7" y2="203.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="501.3" y="192.5" width="56.0" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="594.7" y="197.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">20.14%  (45,819)</text>
+<line x1="710.7" y1="203.0" x2="794.0" y2="203.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="710.7" y="192.5" width="16.3" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="804.0" y="197.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">5.88%  (170,175)</text>
+<text x="40.0" y="223.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX + Fastino</text>
+<line x1="292.0" y1="229.0" x2="375.3" y2="229.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="292.0" y="218.5" width="9.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="385.3" y="223.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">3.46%  (7,872)</text>
+<line x1="501.3" y1="229.0" x2="584.7" y2="229.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="501.3" y="218.5" width="22.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="594.7" y="223.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">8.06%  (18,344)</text>
+<line x1="710.7" y1="229.0" x2="794.0" y2="229.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="710.7" y="218.5" width="42.4" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="804.0" y="223.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">15.27%  (442,090)</text>
+<rect x="40.0" y="236.0" width="880.0" height="26" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="249.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX + Fastino + mmBERT</text>
+<line x1="292.0" y1="255.0" x2="375.3" y2="255.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="292.0" y="244.5" width="5.8" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="385.3" y="249.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">2.09%  (4,746)</text>
+<line x1="501.3" y1="255.0" x2="584.7" y2="255.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="501.3" y="244.5" width="19.6" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="594.7" y="249.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">7.04%  (16,011)</text>
+<line x1="710.7" y1="255.0" x2="794.0" y2="255.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="710.7" y="244.5" width="52.3" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="804.0" y="249.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">18.84%  (545,541)</text>
+<text x="40.0" y="275.0" fill="var(--ink)" font-size="11" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX + Fastino + BardsAI</text>
+<line x1="292.0" y1="281.0" x2="375.3" y2="281.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="292.0" y="270.5" width="5.2" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="385.3" y="275.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1.87%  (4,258)</text>
+<line x1="501.3" y1="281.0" x2="584.7" y2="281.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="501.3" y="270.5" width="16.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="594.7" y="275.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">5.92%  (13,471)</text>
+<line x1="710.7" y1="281.0" x2="794.0" y2="281.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="710.7" y="270.5" width="47.5" height="9" rx="1.5" fill="var(--bar)" stroke="var(--barline)" stroke-width="0.7"/>
+<text x="804.0" y="275.0" fill="var(--muted)" font-size="9.5" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">17.10%  (495,175)</text>
+<rect x="40.0" y="288.0" width="880.0" height="26" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="40.0" y="301.0" fill="var(--accent)" font-size="11" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PPLX + Fastino + mmBERT + BardsAI</text>
+<line x1="292.0" y1="307.0" x2="375.3" y2="307.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="292.0" y="296.5" width="4.0" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="385.3" y="301.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1.43%  (3,254)</text>
+<line x1="501.3" y1="307.0" x2="584.7" y2="307.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="501.3" y="296.5" width="15.5" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="594.7" y="301.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">5.60%  (12,728)</text>
+<line x1="710.7" y1="307.0" x2="794.0" y2="307.0" stroke="var(--grid)" stroke-width="1"/>
+<rect x="710.7" y="296.5" width="55.1" height="9" rx="1.5" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1"/>
+<text x="804.0" y="301.0" fill="var(--accent)" font-size="9.5" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">19.82%  (574,028)</text>
+<line x1="40.0" y1="339.0" x2="920.0" y2="339.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="40.0" y="359.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">227,466 normalized gold spans; 2,895,905 characters in 7,566 rows without annotations.</text>
+<text x="40.0" y="372.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Annotation-based descriptive counts. Unannotated text is not guaranteed to be free of sensitive content.</text>
+<text x="920.0" y="359.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
 </svg>

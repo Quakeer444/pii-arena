@@ -12,7 +12,6 @@ Everything needed to retain the original research is stored under `.local/`, whi
 | `.local/research/hf_cache/` | Existing local model cache |
 | `.local/research/.git-history/` | Historical Git files retained as an inactive archive |
 | `.local/research/REVIEW/` | Historical audit notes |
-| `.local/previews/` | Raster previews of the published vector figures |
 | `.local/archive-manifest.json` | Local inventory and verification of the preserved archive |
 
 Original archived materials retain their original language and contents. Public documentation, navigation, explanations and chart labels are English. Multilingual corpus examples, regexes and taxonomy identifiers retain their measured languages.

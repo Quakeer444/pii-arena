@@ -16,12 +16,12 @@ CI additionally runs the secret-scan release gate: `scripts/scan_secrets.py` sca
 ## Rebuild tables and figures
 
 ```sh
-uv sync --frozen --group plots
-uv run --group plots python scripts/render.py
+uv sync --frozen
+uv run python scripts/render.py
 uv run python scripts/verify.py
 ```
 
-The renderer consumes only `results/snapshot.json`. Verification checks that its embedded composition rows equal the companion `results/composition-counts.json`. It never uses screenshots or manually estimated bar lengths as data. SVG is the publication format; PNG previews are written into ignored `.local/previews/`.
+The renderer consumes only `results/snapshot.json`. Verification checks that its embedded composition rows equal the companion `results/composition-counts.json`. It never uses screenshots or manually estimated bar lengths as data. SVG is the publication format: `scripts/figures.py` writes the markup directly, with no plotting dependency, so the published bytes stay identical across platforms. Each figure carries one palette for light readers and one for dark, selected by the reader's `prefers-color-scheme` setting.
 
 Schema 3 adds exact diagnostics for every historical quality configuration and the recomputed compositions. The renderer also builds category/dataset CSVs, per-dataset category pages and the marked README result blocks. [Field definitions](metrics.md) distinguish raw and normalized boundaries.
 
@@ -43,7 +43,7 @@ The prepared local workspace includes the complete archive. In a public clone, t
 
 ```sh
 uv run python scripts/export.py --data .local/research --recompute-compositions
-uv run --group plots python scripts/render.py
+uv run python scripts/render.py
 ```
 
 Export reads frozen reports for all model configurations, preserves their exact missed counts and confidence intervals, and reads prediction metadata into an allowlisted public inventory. Key compositions are independently recomputed from saved predictions using the inherited scorer; a mismatch against the frozen report stops export. No detector inference is performed by these commands.
@@ -52,7 +52,7 @@ With `--recompute-compositions`, export also rebuilds the category diagnostics a
 
 ```sh
 uv run python scripts/stratify.py --data .local/research
-uv run --group plots python scripts/render.py
+uv run python scripts/render.py
 uv run python scripts/verify.py
 ```
 

@@ -358,7 +358,7 @@ def check_public(paths):
         node=ET.parse(p).getroot()
         assert node.find('{http://www.w3.org/2000/svg}title') is not None, p.name
         assert 'http://purl.org/dc/elements/1.1/' in p.read_text(),p.name
-    assert len(list((ROOT/'assets').glob('*.svg')))==11
+    assert len(list((ROOT/'assets').glob('*.svg')))==15
     offsets = load('benchmark/corpus_offsets.json')
     assert set(offsets) == {'leak-museum', 'leaky-repo'}
     totals = {}
@@ -383,13 +383,14 @@ def check_public(paths):
 
 
 def check_readme_blocks():
-    """The four README generated blocks must exist and match the snapshot (audit E/7.5)."""
+    """The seven README generated blocks must match the snapshot."""
     s = load('results/snapshot.json')
     counts = s['composition_counts']
     names = ('pplx', 'fastino', 'pplx+fastino', 'pplx+fastino+mmbert',
              'pplx+fastino+bardsai', 'pplx+fastino+bardsai+mmbert')
     text = (ROOT / 'README.md').read_text()
-    for name in ('SNAPSHOT', 'HEADLINE OUTCOMES', 'COMPOSITION COMPARISON', 'DATASET EXAMPLES'):
+    for name in ('SNAPSHOT', 'HEADLINE OUTCOMES', 'COMPOSITION COMPARISON', 'DATASET EXAMPLES',
+                 'DETECTOR TABLE', 'CPU SPEED', 'GPU SPEED'):
         assert len(re.findall(f'<!-- (BEGIN|END) {name} -->', text)) == 2, f'Missing README block: {name}'
     mask = s['masking_diagnostics']
     head = mask['composition']
@@ -409,7 +410,23 @@ def check_readme_blocks():
         detected = f"{100 * (int(r['nspan']) - int(r['miss'])) / int(r['nspan']):.2f}%"
         clean = f"{100 * int(r['extra']) / int(r['negchars']):.2f}%"
         assert f'| {fully_hidden} | {detected} | {clean} |' in text, f'README comparison row missing or stale: {name}'
-    print('README: four generated blocks present and matched to the snapshot.')
+    # Detector and speed rows must retain the exact snapshot-derived values.
+    sys.path.insert(0, str(ROOT / 'scripts'))
+    import render
+    complete = [r for r in render.model_totals() if r['sets'] == len(s['datasets']) and '+' not in r['model']]
+    assert len(complete) >= 30, 'Complete-coverage detector list collapsed'
+    for r in complete:
+        assert f"| {r['model']} | {r['family']} | {r['sets']}/{len(s['datasets'])} | {r['missed']:,} / {r['gold']:,} |" in text, \
+            f"README detector row missing or stale: {r['model']}"
+    for group, block in ((render.CPU_GROUP, 'CPU SPEED'), (render.GPU_GROUP, 'GPU SPEED')):
+        rows = render.speed_group(group)
+        assert rows, f'Empty reference machine group: {block}'
+        for r in rows:
+            assert f"| {r['model']} | {r['seconds_10k']:.2f} | {r['chars_per_second']:,.0f} |" in text, \
+                f"README speed row missing or stale: {block} / {r['model']}"
+    print(f'README: seven generated blocks present, {len(complete)} detector rows and '
+          f'{len(render.speed_group(render.CPU_GROUP)) + len(render.speed_group(render.GPU_GROUP))} '
+          'speed rows matched to the snapshot.')
 
 
 def check_reports():

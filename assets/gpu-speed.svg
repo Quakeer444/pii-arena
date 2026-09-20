@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 835" width="960" height="835" font-family="ui-sans-serif,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" role="img" aria-label="Measured GPU throughput per detector">
+<title>GPU cost of one detector pass</title>
+<desc>Measured GPU throughput per detector</desc>
+<metadata>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<cc:Work>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title>GPU cost of one detector pass</dc:title>
+<dc:description>Measured GPU throughput per detector</dc:description>
+<dc:format>image/svg+xml</dc:format>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<style>:root{--bg:#ffffff;--ink:#111827;--muted:#5b6472;--soft:#8b93a1;--grid:rgba(17,24,39,.09);--rule:rgba(17,24,39,.20);--zebra:rgba(17,24,39,.032);--bar:rgba(91,100,114,.16);--barline:#98a0ad;--accent:#0d7d74;--accent-bar:rgba(13,125,116,.22);--second:#7c5cbf;--second-bar:rgba(124,92,191,.20);--heat0:rgba(13,125,116,.06);--heat1:rgba(13,125,116,.20);--heat2:rgba(13,125,116,.40);--heat3:rgba(13,125,116,.65);--heat4:#0d7d74;--heat-ink0:#111827;--heat-ink1:#111827;--heat-ink2:#111827;--heat-ink3:#0a2f2b;--heat-ink4:#ffffff}@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--ink:#e6edf3;--muted:#9198a1;--soft:#6e7681;--grid:rgba(230,237,243,.08);--rule:rgba(230,237,243,.20);--zebra:rgba(230,237,243,.035);--bar:rgba(145,152,161,.20);--barline:#6e7681;--accent:#2dd4bf;--accent-bar:rgba(45,212,191,.24);--second:#c4a7f5;--second-bar:rgba(196,167,245,.22);--heat0:rgba(45,212,191,.08);--heat1:rgba(45,212,191,.22);--heat2:rgba(45,212,191,.42);--heat3:rgba(45,212,191,.66);--heat4:#2dd4bf;--heat-ink0:#e6edf3;--heat-ink1:#e6edf3;--heat-ink2:#e6edf3;--heat-ink3:#04211d;--heat-ink4:#04211d}}text{dominant-baseline:middle}</style>
+<rect width="960" height="835" fill="var(--bg)"/>
+<text x="40.0" y="34.0" fill="var(--accent)" font-size="9" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" letter-spacing="1.6">GPU SPEED</text>
+<text x="40.0" y="64.0" fill="var(--ink)" font-size="21" text-anchor="start" font-weight="650">GPU cost of one detector pass</text>
+<text x="40.0" y="89.0" fill="var(--muted)" font-size="11.5" text-anchor="start" font-weight="400">NVIDIA GeForce RTX 5090, 2 concurrent workers; batch throughput pooled over the datasets of each run</text>
+<line x1="40.0" y1="109.0" x2="920.0" y2="109.0" stroke="var(--rule)" stroke-width="1"/>
+<line x1="371.7" y1="151.0" x2="371.7" y2="744.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="371.7" y="139.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.20</text>
+<line x1="473.0" y1="151.0" x2="473.0" y2="744.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="473.0" y="139.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.50</text>
+<line x1="549.6" y1="151.0" x2="549.6" y2="744.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="549.6" y="139.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1.0</text>
+<line x1="626.1" y1="151.0" x2="626.1" y2="744.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="626.1" y="139.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">2.0</text>
+<line x1="727.4" y1="151.0" x2="727.4" y2="744.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="727.4" y="139.0" fill="var(--soft)" font-size="9" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">5.0</text>
+<text x="40.0" y="139.0" fill="var(--soft)" font-size="9" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">seconds per 10,000 characters</text>
+<text x="920.0" y="139.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">throughput / datasets</text>
+<text x="284.0" y="165.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">ru-legal-ner</text>
+<line x1="300.0" y1="165.0" x2="324.7" y2="165.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="324.7" cy="165.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="335.7" y="165.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.13</text>
+<text x="920.0" y="165.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">76,562 ch/s   40 sets</text>
+<rect x="40.0" y="175.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="186.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">davlan-xlmr</text>
+<line x1="300.0" y1="186.0" x2="328.9" y2="186.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="328.9" cy="186.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="339.9" y="186.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.14</text>
+<text x="920.0" y="186.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">73,674 ch/s   40 sets</text>
+<text x="284.0" y="207.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">nym-base</text>
+<line x1="300.0" y1="207.0" x2="330.7" y2="207.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="330.7" cy="207.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="341.7" y="207.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.14</text>
+<text x="920.0" y="207.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">72,492 ch/s   40 sets</text>
+<rect x="40.0" y="217.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="228.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">davlan-mbert</text>
+<line x1="300.0" y1="228.0" x2="337.8" y2="228.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="337.8" cy="228.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="348.8" y="228.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.15</text>
+<text x="920.0" y="228.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">68,000 ch/s   40 sets</text>
+<text x="284.0" y="249.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">fef2-secret-ru</text>
+<line x1="300.0" y1="249.0" x2="339.4" y2="249.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="339.4" cy="249.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="350.4" y="249.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.15</text>
+<text x="920.0" y="249.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">66,971 ch/s   35 sets</text>
+<rect x="40.0" y="259.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="270.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">ner-ru-gherman</text>
+<line x1="300.0" y1="270.0" x2="339.9" y2="270.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="339.9" cy="270.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="350.9" y="270.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.15</text>
+<text x="920.0" y="270.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">66,682 ch/s   40 sets</text>
+<text x="284.0" y="291.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner25-fastino</text>
+<line x1="300.0" y1="291.0" x2="342.0" y2="291.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="342.0" cy="291.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="353.0" y="291.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.15</text>
+<text x="920.0" y="291.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">65,451 ch/s   40 sets</text>
+<rect x="40.0" y="301.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="312.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-pii-base</text>
+<line x1="300.0" y1="312.0" x2="345.0" y2="312.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="345.0" cy="312.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="356.0" y="312.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.16</text>
+<text x="920.0" y="312.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">63,679 ch/s   40 sets</text>
+<text x="284.0" y="333.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-vladlinv</text>
+<line x1="300.0" y1="333.0" x2="355.7" y2="333.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="355.7" cy="333.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="366.7" y="333.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.17</text>
+<text x="920.0" y="333.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">57,801 ch/s   40 sets</text>
+<rect x="40.0" y="343.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="354.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">ner-ru-yqelz</text>
+<line x1="300.0" y1="354.0" x2="358.5" y2="354.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="358.5" cy="354.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="369.5" y="354.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.18</text>
+<text x="920.0" y="354.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">56,345 ch/s   40 sets</text>
+<text x="284.0" y="375.0" fill="var(--accent)" font-size="11" text-anchor="end" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">mmbert32k</text>
+<line x1="300.0" y1="375.0" x2="361.7" y2="375.0" stroke="var(--accent)" stroke-width="1.4" stroke-opacity="1"/>
+<circle cx="361.7" cy="375.0" r="5.2" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1.4"/>
+<text x="372.7" y="375.0" fill="var(--accent)" font-size="10" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.18</text>
+<text x="920.0" y="375.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">54,765 ch/s   40 sets</text>
+<rect x="40.0" y="385.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="396.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-multi-v21</text>
+<line x1="300.0" y1="396.0" x2="363.5" y2="396.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="363.5" cy="396.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="374.5" y="396.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.19</text>
+<text x="920.0" y="396.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">53,869 ch/s   40 sets</text>
+<text x="284.0" y="417.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-urchade</text>
+<line x1="300.0" y1="417.0" x2="373.6" y2="417.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="373.6" cy="417.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="384.6" y="417.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.20</text>
+<text x="920.0" y="417.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">49,158 ch/s   40 sets</text>
+<rect x="40.0" y="427.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="438.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-stream-pii</text>
+<line x1="300.0" y1="438.0" x2="376.0" y2="438.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="376.0" cy="438.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="387.0" y="438.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.21</text>
+<text x="920.0" y="438.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">48,113 ch/s   11 sets</text>
+<text x="284.0" y="459.0" fill="var(--accent)" font-size="11" text-anchor="end" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-fastino</text>
+<line x1="300.0" y1="459.0" x2="403.0" y2="459.0" stroke="var(--accent)" stroke-width="1.4" stroke-opacity="1"/>
+<circle cx="403.0" cy="459.0" r="5.2" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1.4"/>
+<text x="414.0" y="459.0" fill="var(--accent)" font-size="10" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.27</text>
+<text x="920.0" y="459.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">37,693 ch/s   40 sets</text>
+<rect x="40.0" y="469.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="480.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-hivetrace-omni</text>
+<line x1="300.0" y1="480.0" x2="411.8" y2="480.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="411.8" cy="480.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="422.8" y="480.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.29</text>
+<text x="920.0" y="480.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">34,790 ch/s   30 sets</text>
+<text x="284.0" y="501.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-nvidia</text>
+<line x1="300.0" y1="501.0" x2="440.3" y2="501.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="440.3" cy="501.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="451.3" y="501.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.37</text>
+<text x="920.0" y="501.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">26,888 ch/s   40 sets</text>
+<rect x="40.0" y="511.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="522.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">nuner-zero</text>
+<line x1="300.0" y1="522.0" x2="443.2" y2="522.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="443.2" cy="522.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="454.2" y="522.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.38</text>
+<text x="920.0" y="522.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">26,176 ch/s   40 sets</text>
+<text x="284.0" y="543.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner2-large</text>
+<line x1="300.0" y1="543.0" x2="494.4" y2="543.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="494.4" cy="543.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="505.4" y="543.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.61</text>
+<text x="920.0" y="543.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">16,474 ch/s   40 sets</text>
+<rect x="40.0" y="553.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="564.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">openmed-multilingual</text>
+<line x1="300.0" y1="564.0" x2="529.8" y2="564.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="529.8" cy="564.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="540.8" y="564.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.84</text>
+<text x="920.0" y="564.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">11,953 ch/s   31 sets</text>
+<text x="284.0" y="585.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">openmed-nemotron</text>
+<line x1="300.0" y1="585.0" x2="534.6" y2="585.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="534.6" cy="585.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="545.6" y="585.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">0.87</text>
+<text x="920.0" y="585.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">11,447 ch/s   31 sets</text>
+<rect x="40.0" y="595.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="606.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">opf-ru</text>
+<line x1="300.0" y1="606.0" x2="561.9" y2="606.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="561.9" cy="606.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="572.9" y="606.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1.1</text>
+<text x="920.0" y="606.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">8,946 ch/s   31 sets</text>
+<text x="284.0" y="627.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">traciora</text>
+<line x1="300.0" y1="627.0" x2="583.4" y2="627.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="583.4" cy="627.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="594.4" y="627.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1.4</text>
+<text x="920.0" y="627.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">7,361 ch/s   10 sets</text>
+<rect x="40.0" y="637.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="648.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">opf-kz-ru</text>
+<line x1="300.0" y1="648.0" x2="601.0" y2="648.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="601.0" cy="648.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="612.0" y="648.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1.6</text>
+<text x="920.0" y="648.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">6,275 ch/s   40 sets</text>
+<text x="284.0" y="669.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">apararti</text>
+<line x1="300.0" y1="669.0" x2="607.2" y2="669.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="607.2" cy="669.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="618.2" y="669.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1.7</text>
+<text x="920.0" y="669.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">5,933 ch/s   40 sets</text>
+<rect x="40.0" y="679.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="690.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">openai-base</text>
+<line x1="300.0" y1="690.0" x2="614.8" y2="690.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="614.8" cy="690.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="625.8" y="690.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1.8</text>
+<text x="920.0" y="690.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">5,543 ch/s   31 sets</text>
+<text x="284.0" y="711.0" fill="var(--accent)" font-size="11" text-anchor="end" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">pplx</text>
+<line x1="300.0" y1="711.0" x2="636.5" y2="711.0" stroke="var(--accent)" stroke-width="1.4" stroke-opacity="1"/>
+<circle cx="636.5" cy="711.0" r="5.2" fill="var(--accent-bar)" stroke="var(--accent)" stroke-width="1.4"/>
+<text x="647.5" y="711.0" fill="var(--accent)" font-size="10" text-anchor="start" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">2.2</text>
+<text x="920.0" y="711.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">4,551 ch/s   40 sets</text>
+<rect x="40.0" y="721.5" width="880.0" height="21" rx="0" fill="var(--zebra)" stroke="none" stroke-width="0"/>
+<text x="284.0" y="732.0" fill="var(--ink)" font-size="11" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">gliner-pii-edge</text>
+<line x1="300.0" y1="732.0" x2="743.9" y2="732.0" stroke="var(--barline)" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="743.9" cy="732.0" r="4.2" fill="var(--bar)" stroke="var(--barline)" stroke-width="1"/>
+<text x="754.9" y="732.0" fill="var(--ink)" font-size="10" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">5.8</text>
+<text x="920.0" y="732.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">1,723 ch/s   6 sets</text>
+<line x1="40.0" y1="770.0" x2="920.0" y2="770.0" stroke="var(--grid)" stroke-width="1"/>
+<text x="40.0" y="790.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Seconds per 10,000 characters = 10,000 / chars per second, on a log axis.</text>
+<text x="40.0" y="803.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">BardsAI has no row here: its ONNX graph runs on CPU only, which is why composition GPU cost is a mixed-device estimate.</text>
+<text x="40.0" y="816.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Rows pool different numbers of datasets; a row measured on few datasets carries less evidence.</text>
+<text x="920.0" y="790.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
+</svg>
