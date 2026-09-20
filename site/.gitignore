@@ -1,0 +1,7 @@
+/.next/
+/node_modules/
+/public/data/
+/public/evidence/
+*.tsbuildinfo
+.env*
+!.env.example

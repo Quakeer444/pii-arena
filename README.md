@@ -2,6 +2,8 @@
 
 **Compare what detectors miss, what masks leave visible, and how much other text they remove.**
 
+The interactive website lives in [`site/`](site/README.md). It is a Vercel-ready Next.js app with indexable detector and dataset pages, canonical metadata, a generated sitemap and Dataset structured data.
+
 Russian, English and multilingual dataset cuts. Frozen experiment: **2026-09-09**.
 A descriptive comparison under one declared masking protocol, not a production-safety certification.
 
