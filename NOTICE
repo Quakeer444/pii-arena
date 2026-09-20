@@ -1,4 +1,4 @@
-PII & Secrets Detection Benchmark
+PII Arena
 Original project code and publication material: Quakeer444, MIT License.
 
 benchmark/conv.py is retained verbatim from the archived Hugging Face

@@ -5,6 +5,10 @@
 Presentation only. No prediction, score, dataset hash, protocol or frozen date
 changed: every number below is read from the same snapshot.
 
+- The public project identity is now **PII Arena**, with `piiarena.com` as the
+  canonical home across the website, README, citation metadata and social cards.
+- GitHub and website links now use the `pii-arena` repository and production
+  domain; the former Vercel URL remains only as a platform deployment address.
 - The README now answers the two questions it never answered. A generated table
   and figure cover the 31 configurations with complete 41-dataset coverage
   (untouched annotations, full hiding, masking outside annotations, character

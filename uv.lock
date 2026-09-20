@@ -3,6 +3,6 @@ revision = 2
 requires-python = "==3.12.*"
 
 [[package]]
-name = "pii-secrets-benchmark"
+name = "pii-arena"
 version = "1.0.3"
 source = { virtual = "." }

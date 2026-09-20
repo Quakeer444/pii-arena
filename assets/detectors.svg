@@ -482,5 +482,5 @@
 <text x="40.0" y="859.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Untouched means no predicted character reaches the normalized annotation; fully hidden means every one of its characters is masked.</text>
 <text x="40.0" y="872.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Configurations with partial coverage are excluded from this chart and listed with their dataset counts in results/detectors.md.</text>
 <text x="40.0" y="885.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Highlighted rows are the four members of the reference composition. This is a descriptive comparison, not a selected winner.</text>
-<text x="920.0" y="859.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
+<text x="920.0" y="859.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII Arena  |  snapshot 2026-09-09</text>
 </svg>

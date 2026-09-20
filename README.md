@@ -1,8 +1,8 @@
-# PII & Secrets Detection Benchmark
+# PII Arena
 
-**An independent, reproducible benchmark for choosing PII and secret detection tools.**
+**The independent benchmark for PII and secret detectors.**
 
-[![Live Leaderboard](https://img.shields.io/badge/Live-Leaderboard-2dd4bf?style=for-the-badge&logo=vercel&logoColor=06110f)](https://pii-secrets-benchmark.vercel.app/leaderboard)
+[![Live Leaderboard](https://img.shields.io/badge/PII_Arena-Live_Leaderboard-2dd4bf?style=for-the-badge&logo=vercel&logoColor=06110f)](https://www.piiarena.com/leaderboard)
 [![Methodology](https://img.shields.io/badge/Read-Methodology-1f2937?style=for-the-badge)](docs/methodology.md)
 [![Reproduce](https://img.shields.io/badge/Run-Reproduction-1f2937?style=for-the-badge)](docs/reproduce.md)
 [![Datasets](https://img.shields.io/badge/Browse-Datasets-1f2937?style=for-the-badge)](docs/datasets.md)
@@ -43,7 +43,7 @@ All rows below cover the same 41 retained datasets. **Fully Hidden** is the prim
 | `bardsai-eu` | **66.62%** | 81.37% | 7.72% |
 | `gliner2-large` | **65.65%** | 71.98% | 3.51% |
 
-[Open the live leaderboard](https://pii-secrets-benchmark.vercel.app/leaderboard) to change the language/task slice, include partial coverage, sort every metric, open detector profiles and share the exact filtered URL.
+[Open the live leaderboard](https://www.piiarena.com/leaderboard) to change the language/task slice, include partial coverage, sort every metric, open detector profiles and share the exact filtered URL.
 
 ## Compare trade-offs, not one marketing score
 
@@ -55,13 +55,13 @@ The comparison view uses the shared eligible dataset intersection for every sele
 
 | Your question | Start here |
 |---|---|
-| Which detector should I choose? | [Live leaderboard](https://pii-secrets-benchmark.vercel.app/leaderboard) · [Detector profiles](https://pii-secrets-benchmark.vercel.app/detectors) |
+| Which detector should I choose? | [Live leaderboard](https://www.piiarena.com/leaderboard) · [Detector profiles](https://www.piiarena.com/detectors) |
 | How does every detector score, and what does it cost? | [Every detector](#every-detector-on-the-same-denominator) · [Full configuration list](results/detectors.md) |
-| How fast is it on my hardware? | [Performance explorer](https://pii-secrets-benchmark.vercel.app/performance) · [CPU results](#cpu-cost-of-one-pass) · [GPU results](#gpu-cost-of-one-pass) · [All measurement conditions](results/speed.md) |
-| How do individual detectors compare? | [Interactive compare](https://pii-secrets-benchmark.vercel.app/compare) · [Models by language and task](results/by-language.md) · [Detector catalog](docs/models.md) |
-| What happens to names, passwords, IDs and other types? | [Data-type explorer](https://pii-secrets-benchmark.vercel.app/entities) · [Exact type outcomes](results/by-entity.md) |
-| Where are the weak datasets? | [Dataset explorer](https://pii-secrets-benchmark.vercel.app/datasets) · [Dataset report](results/by-dataset.md) · [Dataset catalog](docs/datasets.md) |
-| What is the quality / masking / speed trade-off? | [Performance explorer](https://pii-secrets-benchmark.vercel.app/performance) · [Masking outcomes](results/overview.md) · [Ensembles](results/ensemble.md) |
+| How fast is it on my hardware? | [Performance explorer](https://www.piiarena.com/performance) · [CPU results](#cpu-cost-of-one-pass) · [GPU results](#gpu-cost-of-one-pass) · [All measurement conditions](results/speed.md) |
+| How do individual detectors compare? | [Interactive compare](https://www.piiarena.com/compare) · [Models by language and task](results/by-language.md) · [Detector catalog](docs/models.md) |
+| What happens to names, passwords, IDs and other types? | [Data-type explorer](https://www.piiarena.com/entities) · [Exact type outcomes](results/by-entity.md) |
+| Where are the weak datasets? | [Dataset explorer](https://www.piiarena.com/datasets) · [Dataset report](results/by-dataset.md) · [Dataset catalog](docs/datasets.md) |
+| What is the quality / masking / speed trade-off? | [Performance explorer](https://www.piiarena.com/performance) · [Masking outcomes](results/overview.md) · [Ensembles](results/ensemble.md) |
 | Where are the machine-readable results? | [Summary CSV](results/summary.csv) · [Category CSV](results/category-metrics.csv) · [Metric definitions](docs/metrics.md) |
 | How do I score my own detector? | [Evaluate your detector](#evaluate-your-own-detector) - one command, expected output included |
 

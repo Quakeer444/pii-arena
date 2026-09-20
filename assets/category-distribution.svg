@@ -90,5 +90,5 @@
 <text x="40.0" y="515.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">These are annotation units, not distinct people or unique credentials.</text>
 <text x="40.0" y="528.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Nested and differently labeled annotations remain separate rows in the source data.</text>
 <text x="40.0" y="541.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Category families are an explanatory grouping, not a legal determination.</text>
-<text x="920.0" y="515.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
+<text x="920.0" y="515.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII Arena  |  snapshot 2026-09-09</text>
 </svg>

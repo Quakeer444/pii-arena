@@ -202,5 +202,5 @@
 <text x="40.0" y="645.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">This is measurement coverage, not detection quality. A zero can mean a missing run or an excluded source overlap.</text>
 <text x="40.0" y="658.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Training-source overlaps are excluded. A missing measurement is never counted as a zero-miss result.</text>
 <text x="40.0" y="671.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Scanners have a narrower intended scope; compare them on their own datasets, not across unequal subsets.</text>
-<text x="920.0" y="645.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
+<text x="920.0" y="645.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII Arena  |  snapshot 2026-09-09</text>
 </svg>

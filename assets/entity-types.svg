@@ -168,5 +168,5 @@
 <text x="40.0" y="515.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Full hiding uses normalized word-boundary masks; detected means at least one character was touched.</text>
 <text x="40.0" y="528.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Usernames are not necessarily secret, and organizations and locations depend on context.</text>
 <text x="40.0" y="541.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">All original source labels are preserved in results/entity-metrics.csv.</text>
-<text x="920.0" y="515.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
+<text x="920.0" y="515.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII Arena  |  snapshot 2026-09-09</text>
 </svg>

@@ -16,7 +16,7 @@ export function PublicationPage({
   return (
     <div className="publication-shell">
       <header className="publication-header">
-        <Link href="/leaderboard" className="publication-brand">PII<span>Bench</span></Link>
+        <Link href="/leaderboard" className="publication-brand">PII <span>Arena</span></Link>
         <nav aria-label="Primary">
           <Link href="/leaderboard">Leaderboard</Link>
           <Link href="/detectors">Detectors</Link>
@@ -35,7 +35,7 @@ export function PublicationPage({
       </main>
       <footer className="publication-footer">
         <span>Frozen experiment · 09 September 2026</span>
-        <a href="https://github.com/Quakeer444/pii-secrets-benchmark">Source and reproduction</a>
+        <a href="https://github.com/Quakeer444/pii-arena">Source and reproduction</a>
       </footer>
     </div>
   );

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const model = getModel(slug);
   if (!model) return {};
   const title = `${model.name} PII detection benchmark`;
-  const description = `Measured masking quality, character F1, dataset coverage and throughput for ${model.name} under the frozen PII & Secrets Detection Benchmark protocol.`;
+  const description = `Measured masking quality, character F1, dataset coverage and throughput for ${model.name} under the frozen PII Arena protocol.`;
   return pageMetadata(title, description, `/detectors/${slug}`);
 }
 
@@ -90,7 +90,7 @@ export default async function DetectorPage({ params }: { params: Promise<{ slug:
         <div className="publication-actions">
           {model.upstream && <a className="action" href={model.upstream}>Upstream model</a>}
           <Link className="action" href={`/compare?compare=${encodeURIComponent(`${model.id},model:pplx`)}`}>Compare detectors</Link>
-          <a className="action" href="https://github.com/Quakeer444/pii-secrets-benchmark/blob/main/docs/models.md">Model catalog</a>
+          <a className="action" href="https://github.com/Quakeer444/pii-arena/blob/main/docs/models.md">Model catalog</a>
           <Link className="action" href="/methodology">Read methodology</Link>
         </div>
       </section>

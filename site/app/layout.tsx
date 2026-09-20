@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "PII & Secrets Detection Benchmark",
+    default: "PII Arena — PII & Secret Detector Benchmark",
     template: `%s | ${SITE_NAME}`
   },
   description: DEFAULT_DESCRIPTION,
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
-    title: "PII & Secrets Detection Benchmark",
+    title: "PII Arena — PII & Secret Detector Benchmark",
     description: DEFAULT_DESCRIPTION,
     url: "/leaderboard",
-    images: [{ url: "/og.png", width: 1280, height: 640, alt: "PII & Secrets Benchmark leaderboard" }]
+    images: [{ url: "/og.png", width: 1280, height: 640, alt: "PII Arena detector leaderboard" }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "PII & Secrets Detection Benchmark",
+    title: "PII Arena — PII & Secret Detector Benchmark",
     description: DEFAULT_DESCRIPTION,
     images: ["/og.png"]
   },

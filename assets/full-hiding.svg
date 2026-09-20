@@ -71,5 +71,5 @@
 <line x1="40.0" y1="349.0" x2="920.0" y2="349.0" stroke="var(--grid)" stroke-width="1"/>
 <text x="40.0" y="369.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">227,466 normalized spans. Word-boundary normalization can expand masks.</text>
 <text x="40.0" y="382.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Neither percentage proves that an original secret is unusable after masking.</text>
-<text x="920.0" y="369.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
+<text x="920.0" y="369.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII Arena  |  snapshot 2026-09-09</text>
 </svg>

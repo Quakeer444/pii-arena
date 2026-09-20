@@ -97,5 +97,5 @@
 <text x="40.0" y="379.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Darker cells hold a larger share of untouched annotations. RU / secrets is one synthetic dataset.</text>
 <text x="40.0" y="392.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">MULTI pools source languages and may include English; it is not a per-language guarantee.</text>
 <text x="40.0" y="405.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Zero observed misses is not a guarantee, and there is no MULTI / secrets dataset in this snapshot.</text>
-<text x="920.0" y="379.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
+<text x="920.0" y="379.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII Arena  |  snapshot 2026-09-09</text>
 </svg>

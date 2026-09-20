@@ -191,5 +191,5 @@
 <text x="40.0" y="1171.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Quality pools every eligible dataset of a configuration; speed comes from one machine group, so the two axes are different runs.</text>
 <text x="40.0" y="1184.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">Configurations without a run in the machine group are absent; dataset coverage differs between points.</text>
 <text x="40.0" y="1197.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">No position here is a production safety claim.</text>
-<text x="920.0" y="1171.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
+<text x="920.0" y="1171.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII Arena  |  snapshot 2026-09-09</text>
 </svg>

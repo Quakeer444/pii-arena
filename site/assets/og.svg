@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-labelledby="title description">
+  <title id="title">PII Arena detector leaderboard</title>
+  <desc id="description">The independent benchmark for PII and secret detectors, with the leading detector results from the frozen September 2026 snapshot.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1118"/>
+      <stop offset="0.62" stop-color="#0a1519"/>
+      <stop offset="1" stop-color="#0b2b29"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#background)"/>
+  <rect x="0.5" y="0.5" width="1279" height="639" fill="none" stroke="#223043"/>
+
+  <circle cx="72" cy="69" r="25" fill="#36d4c3"/>
+  <text x="72" y="77" fill="#071a1c" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24" font-weight="700" text-anchor="middle">{}</text>
+  <text x="112" y="77" fill="#eef2f7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="25" font-weight="700">PII <tspan fill="#9daabd" font-weight="400">Arena</tspan></text>
+
+  <text x="64" y="174" fill="#f3f6fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="52" font-weight="720" letter-spacing="-1.4">PII &amp; Secrets Detector Benchmark</text>
+  <text x="64" y="224" fill="#9daabd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="22">The independent benchmark for PII and secret detectors.</text>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500">
+    <text x="64" y="292" fill="#7f8da2">41 DATASETS</text>
+    <text x="246" y="292" fill="#7f8da2">41,643 ROWS</text>
+    <text x="445" y="292" fill="#7f8da2">227,466 ANNOTATIONS</text>
+    <text x="713" y="292" fill="#36d4c3">EN · RU · MULTILINGUAL</text>
+  </g>
+
+  <rect x="64" y="337" width="1152" height="226" rx="12" fill="#0e1723" stroke="#29364a"/>
+  <rect x="64" y="337" width="1152" height="49" rx="12" fill="#141f30"/>
+  <path d="M64 374h1152v12H64z" fill="#141f30"/>
+  <g fill="#8795a9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="650">
+    <text x="91" y="368">#</text>
+    <text x="137" y="368">DETECTOR</text>
+    <text x="570" y="368" fill="#36d4c3">FULLY HIDDEN ↑</text>
+    <text x="772" y="368">DETECTED ↑</text>
+    <text x="934" y="368">EXTRA MASKING ↓</text>
+  </g>
+  <g stroke="#243044">
+    <path d="M89 452h1102"/>
+    <path d="M89 517h1102"/>
+  </g>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16">
+    <g transform="translate(0 423)">
+      <text x="91" fill="#718198">01</text><text x="137" fill="#e8edf4" font-weight="650">gliner2-fastino</text>
+      <text x="603" fill="#36d4c3" font-weight="700">79.86%</text><text x="792" fill="#d1d8e2">86.81%</text><text x="975" fill="#d1d8e2">5.88%</text>
+    </g>
+    <g transform="translate(0 488)">
+      <text x="91" fill="#718198">02</text><text x="137" fill="#e8edf4" font-weight="650">pplx</text>
+      <text x="603" fill="#36d4c3" font-weight="700">74.92%</text><text x="792" fill="#d1d8e2">79.05%</text><text x="975" fill="#d1d8e2">11.42%</text>
+    </g>
+    <g transform="translate(0 553)">
+      <text x="91" fill="#718198">03</text><text x="137" fill="#e8edf4" font-weight="650">nuner-zero</text>
+      <text x="603" fill="#36d4c3" font-weight="700">71.63%</text><text x="792" fill="#d1d8e2">78.78%</text><text x="975" fill="#d1d8e2">3.94%</text>
+    </g>
+  </g>
+
+  <text x="64" y="609" fill="#65748a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">FROZEN SNAPSHOT · 09 SEP 2026</text>
+  <text x="1216" y="609" fill="#8291a6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="end">piiarena.com</text>
+</svg>

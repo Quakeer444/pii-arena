@@ -5,7 +5,7 @@ import { PublicationPage } from "@/components/publication-page";
 import { aggregate, type Benchmark, n, percent, REF } from "@/lib/benchmark";
 import { pageMetadata } from "@/lib/seo";
 
-const title = "PII & secrets benchmark results — September 2026";
+const title = "PII Arena results — September 2026";
 const description = "Frozen September 2026 PII and secret detector results across 41 datasets, 227,466 annotations and 2,591 saved prediction runs.";
 export const metadata: Metadata = pageMetadata(title, description, "/results/2026-09");
 

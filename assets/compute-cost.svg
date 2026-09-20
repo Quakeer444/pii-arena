@@ -64,5 +64,5 @@
 <text x="40.0" y="341.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">CPU: AMD EPYC 9K84, W=24, 16 threads per process, calibrated to PPLX at 1,100 chars/s. GPU: RTX 5090, W=2.</text>
 <text x="40.0" y="354.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">The highlighted row includes BardsAI at 8 CPU threads: a different-condition estimate whose GPU column mixes devices.</text>
 <text x="40.0" y="367.0" fill="var(--soft)" font-size="9.5" text-anchor="start" font-weight="400">All composition costs are derived from member throughput; they are not measured end-to-end request times.</text>
-<text x="920.0" y="341.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII &amp; Secrets Benchmark  |  snapshot 2026-09-09</text>
+<text x="920.0" y="341.0" fill="var(--soft)" font-size="9" text-anchor="end" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PII Arena  |  snapshot 2026-09-09</text>
 </svg>

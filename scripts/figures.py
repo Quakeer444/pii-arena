@@ -105,7 +105,7 @@ class Figure:
         for i, note in enumerate(notes):
             foot.append(text(MARGIN, height - 13 * len(notes) - 6 + 13 * i, note, SOFT, 9.5))
         foot.append(text(self.width - MARGIN, height - 13 * len(notes) - 6,
-                         'PII & Secrets Benchmark  |  snapshot 2026-09-09', SOFT, 9, 'end', MONO))
+                         'PII Arena  |  snapshot 2026-09-09', SOFT, 9, 'end', MONO))
         body = '\n'.join(part for part in self.parts + foot if part)
         svg = (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
                f'viewBox="0 0 {self.width} {height}" width="{self.width}" height="{height}" '

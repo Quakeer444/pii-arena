@@ -4,7 +4,7 @@ Authors / rights holders: Quakeer444, 2026
 Source audit date: 2026-09-05
 Publication: source references and aggregate results; no corpus text
 Evidence: Full recorded license text retained.
-Attribution: PII & Secrets Detection Benchmark, synthetic sets (synth-*), Quakeer444, 2026. CC BY 4.0. Generator code is MIT licensed.
+Attribution: PII Arena, synthetic sets (synth-*), Quakeer444, 2026. CC BY 4.0. Generator code is MIT licensed.
 Benchmark changes: row selection and conversion to character offsets; mechanical corruption where explicitly marked. Scoring also normalizes span boundaries.
 
 ------------------------------------------------------------------------

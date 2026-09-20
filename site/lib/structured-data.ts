@@ -11,7 +11,7 @@ export function benchmarkDatasetJsonLd(data: Benchmark) {
   return {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    name: `PII & Secrets Detection Benchmark Results v${data.meta.version}`,
+    name: `PII Arena Results v${data.meta.version}`,
     description:
       "Reproducible detector measurements across Russian, English and multilingual PII and secrets datasets, including exact masking outcomes, character metrics and CPU/GPU throughput.",
     creator,
@@ -23,7 +23,7 @@ export function benchmarkDatasetJsonLd(data: Benchmark) {
     sameAs: GITHUB_URL,
     includedInDataCatalog: {
       "@type": "DataCatalog",
-      name: "PII & Secrets Detection Benchmark",
+      name: "PII Arena",
       url: absoluteUrl("/datasets")
     },
     distribution: [
@@ -52,7 +52,7 @@ export function datasetJsonLd(dataset: Dataset, data: Benchmark) {
     "@context": "https://schema.org",
     "@type": "Dataset",
     name: `${dataset.id} benchmark evaluation slice`,
-    description: `${dataset.id} is evaluated in the PII & Secrets Detection Benchmark across ${dataset.rows.toLocaleString("en-US")} input rows and ${dataset.gold_spans.toLocaleString("en-US")} normalized gold annotations. This page reports detector outcomes under the frozen ${data.meta.experimentDate} protocol.`,
+    description: `${dataset.id} is evaluated in PII Arena across ${dataset.rows.toLocaleString("en-US")} input rows and ${dataset.gold_spans.toLocaleString("en-US")} normalized gold annotations. This page reports detector outcomes under the frozen ${data.meta.experimentDate} protocol.`,
     creator,
     identifier: dataset.id,
     license: dataset.license,
@@ -62,7 +62,7 @@ export function datasetJsonLd(dataset: Dataset, data: Benchmark) {
     isBasedOn: basedOn,
     isPartOf: {
       "@type": "Dataset",
-      name: `PII & Secrets Detection Benchmark Results v${data.meta.version}`,
+      name: `PII Arena Results v${data.meta.version}`,
       url: absoluteUrl("/datasets")
     }
   };

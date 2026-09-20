@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite this benchmark version when using its measurements."
 type: software
-title: "PII & Secrets Detection Benchmark: Russian, English and Multilingual"
+title: "PII Arena: PII and Secret Detector Benchmark"
 authors:
   - name: Quakeer444
 version: 1.0.3

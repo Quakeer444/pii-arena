@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 
-export const SITE_NAME = "PII Bench";
-export const GITHUB_URL = "https://github.com/Quakeer444/pii-secrets-benchmark";
+export const SITE_NAME = "PII Arena";
+export const GITHUB_URL = "https://github.com/Quakeer444/pii-arena";
 export const DEFAULT_DESCRIPTION =
-  "Compare PII and secret detectors across Russian, English and multilingual datasets with exact masking, quality and throughput measurements.";
+  "The independent benchmark for PII and secret detectors. Compare masking quality, coverage and throughput across Russian, English and multilingual datasets.";
 
 function productionOrigin() {
   const configured = process.env.SITE_URL;
-  const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL;
-  const value = configured ?? (vercel ? `https://${vercel}` : "http://localhost:3000");
+  const value = configured ?? "https://www.piiarena.com";
   return value.replace(/\/$/, "");
 }
 
@@ -29,7 +28,7 @@ export function pageMetadata(title: string, description: string, path: string): 
       title,
       description,
       url: path,
-      images: [{ url: "/og.png", width: 1280, height: 640, alt: "PII & Secrets Benchmark leaderboard" }]
+      images: [{ url: "/og.png", width: 1280, height: 640, alt: "PII Arena detector leaderboard" }]
     },
     twitter: {
       card: "summary_large_image",
