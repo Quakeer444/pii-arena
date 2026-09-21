@@ -20,10 +20,12 @@
 .decision-info:hover { color:var(--primary); }
 .decision-info svg { width:10px; height:10px; }
 .decision-text-link { display:flex; align-items:center; gap:5px; font-size:.75rem; color:var(--primary); white-space:nowrap; margin-top:3px; }
-.decision-search { display:flex; align-items:center; gap:6px; flex-shrink:0; border:1px solid var(--input); background:var(--background); border-radius:5px; padding:6px 8px; margin-bottom:8px; color:var(--muted-foreground); transition:border-color .15s,box-shadow .15s; }
-.decision-search:focus-within { border-color:var(--ring); box-shadow:0 0 0 2px color-mix(in srgb,var(--ring) 20%,transparent); }
+.decision-search { display:flex; align-items:center; gap:6px; flex-shrink:0; border:1px solid transparent; background:transparent; border-radius:5px; padding:6px 8px; margin-bottom:8px; color:color-mix(in srgb,var(--muted-foreground) 58%,transparent); transition:background .15s,border-color .15s,box-shadow .15s,color .15s; }
+.decision-search:hover { background:color-mix(in srgb,var(--secondary) 55%,transparent); color:var(--muted-foreground); }
+.decision-search:focus-within { border-color:var(--input); background:var(--background); color:var(--muted-foreground); box-shadow:0 0 0 2px color-mix(in srgb,var(--ring) 20%,transparent); }
 .decision-search input { min-width:0; width:100%; padding:0; margin:0; border:0; background:transparent; outline:none; color:var(--foreground); font-size:.6875rem; }
-.decision-search input::placeholder { color:var(--muted-foreground); opacity:1; }
+.decision-search input::placeholder { color:var(--muted-foreground); opacity:.58; transition:opacity .15s; }
+.decision-search:hover input::placeholder,.decision-search:focus-within input::placeholder { opacity:1; }
 .difficulty-grid .decision-search { padding:4px 8px; margin-bottom:5px; }
 .difficulty-grid .decision-view-head>.decision-search { width:230px; max-width:42%; margin:0; padding:3px 7px; }
 .decision-scroll { overflow:auto; scrollbar-gutter:stable; scrollbar-width:thin; scrollbar-color:var(--input) var(--secondary); padding-right:8px; min-width:0; }
