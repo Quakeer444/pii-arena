@@ -79,7 +79,12 @@ Expected output:
   "char_fp": 0,
   "char_fn": 7,
   "dropped_spans": 0,
-  "train": false
+  "train": false,
+  "protocol": 1,
+  "threshold": 0.5,
+  "bench_sha256": "d790b2a513814328568e304097095d6891bb30efcbbcccf60fc240e20320244f",
+  "dataset_sha256": "d790b2a513814328568e304097095d6891bb30efcbbcccf60fc240e20320244f",
+  "legacy": false
 }
 ```
 

@@ -44,23 +44,44 @@ if (!Array.isArray(catalog) || new Set(catalog.map((entry) => entry.id)).size !=
   throw new Error("Invalid or duplicate model catalog records.");
 }
 const catalogById = new Map(catalog.map((entry) => [entry.id, entry]));
+const inventory = JSON.parse(fs.readFileSync(path.join(evidenceRoot, "results", "run-inventory.json"), "utf8"));
+const runsByKey = new Map();
+for (const run of inventory) {
+  if (!run.adapter_status) continue;
+  const key = `${run.name}|${run.dataset}`;
+  if (runsByKey.has(key)) throw new Error(`Duplicate scanner run: ${key}`);
+  runsByKey.set(key, run);
+}
 
 const systems = source.breakdowns.systems.map((system) => {
   const name = system.id.slice(system.id.indexOf(":") + 1);
-  const base = system.members[0].split("+")[0];
+  const participants = system.members.map((member) => {
+    const id = member.split("+")[0];
+    const meta = catalogById.get(id);
+    if (system.kind === "model" && (!meta?.family || !meta?.revision)) {
+      throw new Error(`Missing required model catalog metadata: ${id}`);
+    }
+    return {
+      member: id,
+      revision: meta?.revision ?? null,
+      upstream: meta?.upstream ?? null,
+      flags: meta?.flags ?? "",
+    };
+  });
+  const base = participants[0].member;
   const meta = catalogById.get(base);
   const measurement = source.measurements.find((entry) => entry.model === base);
-  if (system.kind === "model" && (!meta?.family || !meta?.revision)) {
-    throw new Error(`Missing required model catalog metadata: ${base}`);
-  }
+  const model = system.kind === "model";
   return {
     ...system,
     name,
-    family: system.kind === "composition" ? "ensemble" : meta?.family ?? measurement?.family ?? "other",
-    upstream: meta?.upstream ?? null,
-    revision: meta?.revision ?? null,
-    flags: meta?.flags ?? "",
-    base
+    family: model ? meta?.family ?? measurement?.family ?? "other" : "ensemble",
+    // One member pin is not the version of an ensemble.
+    upstream: model ? meta?.upstream ?? null : null,
+    revision: model ? meta?.revision ?? null : null,
+    flags: model ? meta?.flags ?? "" : "",
+    base,
+    ...(model ? {} : { participants }),
   };
 });
 
@@ -94,6 +115,8 @@ const records = source.breakdowns.results.map((result) => {
     category.rawHidden += type.raw_hidden;
     categories.set(category.id, category);
   }
+  const scanner = result.system.startsWith("model:") ? result.system.slice("model:".length) : "";
+  const run = runsByKey.get(`${scanner}|${result.dataset}`);
   return {
     system: result.system,
     dataset: result.dataset,
@@ -113,7 +136,14 @@ const records = source.breakdowns.results.map((result) => {
     touchedNegativeRows: result.negative_rows_touched,
     positiveRows: result.positive_rows,
     residualRows: result.residual_rows,
-    categories: [...categories.values()]
+    categories: [...categories.values()],
+    ...(run
+      ? {
+          adapterStatus: run.adapter_status,
+          adapterPolicy: run.adapter_policy ?? "",
+          unresolvedSpans: run.unresolved_spans ?? 0,
+        }
+      : {}),
   };
 });
 
@@ -144,7 +174,8 @@ fs.writeFileSync(path.join(dataRoot, "benchmark.json"), JSON.stringify(data));
 const cell = (value) => `"${String(value ?? "").replaceAll('"', '""')}"`;
 const resultFields = [
   "system", "dataset", "train", "gold", "hit", "hidden", "rawHidden", "tp", "fp", "fn",
-  "negativeChars", "maskedNegativeChars", "negativeRows", "touchedNegativeRows", "positiveRows", "residualRows"
+  "negativeChars", "maskedNegativeChars", "negativeRows", "touchedNegativeRows", "positiveRows", "residualRows",
+  "adapterStatus", "adapterPolicy", "unresolvedSpans"
 ];
 fs.writeFileSync(
   path.join(dataRoot, "all-results.csv"),

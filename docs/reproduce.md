@@ -68,7 +68,7 @@ The initial preservation was verified separately by an archive manifest. Export 
 uv run python scripts/evaluate.py --data .local/research --dataset hivetrace --model pplx
 ```
 
-This checks the protocol, dataset hash, row completeness and errors, and recomputes metrics without overwriting a report. You can point `--data` at another workspace containing `BENCH/<dataset>/bench.csv`, its original `meta.json`, and `RESULTS/<dataset>/pred.<model>.jsonl`.
+This requires `protocol` and `bench_sha256`, checks them against the corpus, checks row completeness and errors, and recomputes metrics without overwriting a report. A file that omits either field fails unless you pass `--legacy`, which prints a marked result instead of a strict one. You can point `--data` at another workspace containing `BENCH/<dataset>/bench.csv`, its original `meta.json`, and `RESULTS/<dataset>/pred.<model>.jsonl`.
 
 ## Run a detector again
 

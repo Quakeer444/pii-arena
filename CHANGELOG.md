@@ -13,7 +13,7 @@ changed: every number below is read from the same snapshot.
   and figure cover the 31 configurations with complete 41-dataset coverage
   (untouched annotations, full hiding, masking outside annotations, character
   F1), and two more cover measured cost: 45 CPU rows and 28 GPU rows, each from
-  a single comparable machine group, in seconds per 10,000 characters.
+  a single reference machine group, in seconds per 10,000 characters.
 - New `results/detectors.md` pools all 103 measured configurations, including
   partial coverage, Russian-label variants, chunking and quantization runs, each
   with its eligible dataset count and its measured cost.
@@ -27,6 +27,30 @@ changed: every number below is read from the same snapshot.
   is gone, so the publication rebuild needs no third-party package.
 - `scripts/verify.py` checks the three new README blocks against the snapshot
   rows they are generated from, and the required asset count moved from 11 to 15.
+- Filtered CSV no longer repeats the header `family`. The scope column is
+  `filter_family` and the detector column is `system_family`. Readers that
+  took the last `family` cell were keeping the detector and dropping the filter.
+- Scanner runs now carry `adapter_status`, `adapter_policy` and
+  `unresolved_spans` from the run inventory into the site records, profiles,
+  comparison and CSV. A slice counts only the runs inside it. Gitleaks' 38
+  unresolved spans stay on the full 10-run inventory; the eligible slice is
+  9 runs and 32 unresolved spans because `secrets-rules` is a training-overlap
+  exclusion. Historical pre-fix scanners stay out of a mixed-policy comparison
+  until the reader includes them.
+- Comparison CSV records the dataset filters that built the shared slice, the
+  selected detectors and `rowOrder=selection`. Leaderboard search and sort are
+  left out, because they do not order those rows.
+- A composition card lists every member revision and upstream. The single
+  model revision field stays empty, so it is not the version of the ensemble.
+- `scripts/evaluate.py` refuses a prediction that omits `protocol` or
+  `bench_sha256` unless `--legacy` is set. A legacy result is marked and names
+  that limit. The JSON also records the threshold, protocol and dataset hash
+  actually used. Historical scoring of already published runs is unchanged.
+- The methodology example for Extra masking uses an unlabeled row and shows
+  5 / 11. Masking beside a labeled email is not that metric.
+- The CPU speed note in the README, the CPU figure and `results/detectors.md`
+  now says the shared machine group is saved throughput. Different dataset
+  counts are not a same-input comparison or request latency.
 
 ## 1.0.3 - 2026-09-19
 

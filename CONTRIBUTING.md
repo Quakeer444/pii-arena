@@ -7,7 +7,7 @@ Contributions are welcome for detector adapters, dataset provenance, scoring def
 1. Choose an existing dataset and detector record, or add their source and license metadata first.
 2. Keep source text, model files, predictions and logs under `.local/`.
 3. Record the exact model revision, detector version, dataset fingerprint, taxonomy, chunking, threshold, device, processor, threads and concurrent workers.
-4. Run the detector, then rescore it with `uv run python scripts/evaluate.py --data <workspace> --dataset <id> --model <id>`. Missing rows, error rows and mismatched fingerprints must fail.
+4. Run the detector, then rescore it with `uv run python scripts/evaluate.py --data <workspace> --dataset <id> --model <id>`. Missing rows, error rows, a missing protocol, a missing fingerprint and a mismatched fingerprint must fail. `--legacy` is only for an old run that never recorded protocol and fingerprint; that output is marked and is not a strict result.
 5. Run `uv run python scripts/verify.py`. Run `uv run python scripts/render.py` only when aggregate publication data changes.
 
 Submit public-safe metadata and aggregates with a synthetic reproduction for adapter or scoring changes. Maintainer review checks provenance, licensing notes, completeness, scoring compatibility and disclosure of execution conditions. Review is best effort; no response-time SLA is promised.

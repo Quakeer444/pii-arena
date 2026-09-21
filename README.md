@@ -113,7 +113,7 @@ Label variants, chunking and quantization variants, partial-coverage runs and se
 
 ## CPU cost of one pass
 
-One machine group only, so the rows are comparable: **AMD EPYC 9K84, 16 threads per process, 24 concurrent workers**. These are batch throughput numbers under that load, not the latency of a single request.
+One reference machine group: **AMD EPYC 9K84, 16 threads per process, 24 concurrent workers**. These are saved batch-throughput measurements. Dataset counts differ by detector, so the table is not a controlled same-input comparison and is not request latency.
 
 ![Measured CPU seconds per 10,000 characters for every detector in the reference CPU machine group](assets/cpu-speed.svg)
 

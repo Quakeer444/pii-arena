@@ -88,8 +88,10 @@ import { toast } from "sonner";
 import {
   Benchmark,
   Score,
+  adapterNote,
   aggregate,
   categoryScores,
+  compareExportContext,
   compareScores,
   n,
   percent,
@@ -152,6 +154,27 @@ const help: Record<string, string> = {
   cpu: "Seconds per 10,000 characters from a saved CPU reference measurement. Dataset workloads differ by detector, so this is not a strict same-input speedup or request latency.",
   gpu: "Seconds per 10,000 characters from a saved GPU reference measurement. Dataset workloads differ by detector, so this is not a strict same-input speedup or request latency.",
 };
+function AdapterStatus({
+  score,
+  inventory = false,
+}: {
+  score: Score;
+  inventory?: boolean;
+}) {
+  const note = adapterNote(score);
+  if (!note) return null;
+  return (
+    <p className="adapter-status">
+      <span>{note.slice || "No scanner runs in this slice"}</span>
+      {inventory && note.inventory && (
+        <span>
+          Full inventory: {note.inventory}. These counts cover every stored
+          run, including runs left out of this slice.
+        </span>
+      )}
+    </p>
+  );
+}
 function Pick({
   value,
   onChange,
@@ -437,6 +460,7 @@ export function BenchmarkExplorer({
     [datasetQuery, setDatasetQuery] = useState(""),
     [device, setDevice] = useState("cpu"),
     [speedGroup, setSpeedGroup] = useState("reference"),
+    [includeHistorical, setIncludeHistorical] = useState(false),
     [sourceFiles, setSourceFiles] = useState<{ path: string; bytes: number }[]>(
       [],
     );
@@ -473,6 +497,7 @@ export function BenchmarkExplorer({
       setDatasetQuery(next.datasetQuery);
       setDevice(next.device);
       setSpeedGroup(next.speedGroup);
+      setIncludeHistorical(next.includeHistorical);
       setDashboard(next.dashboard);
       setUrlReady(true);
     };
@@ -497,6 +522,7 @@ export function BenchmarkExplorer({
         datasetQuery,
         device,
         speedGroup,
+        includeHistorical,
         dashboard,
       }),
     [
@@ -514,6 +540,7 @@ export function BenchmarkExplorer({
       datasetQuery,
       device,
       speedGroup,
+      includeHistorical,
       dashboard,
     ],
   );
@@ -586,6 +613,8 @@ export function BenchmarkExplorer({
     [data, ids],
   );
   const scope = {
+    view: "leaderboard",
+    rowOrder: `${sort}:${ascending ? "ascending" : "descending"}`,
     language,
     task,
     dataset,
@@ -616,12 +645,32 @@ export function BenchmarkExplorer({
           ? [...prev, id]
           : prev,
     );
-  const commonSelected = selected.length
+  const picked = selected.length
     ? selected
     : ["model:gliner2-fastino", "model:pplx"];
+  const historicalIds = new Set(
+    picked.filter((id) =>
+      data.records.some(
+        (row) =>
+          row.system === id && row.adapterStatus === "historical-pre-fix",
+      ),
+    ),
+  );
+  const policyKeys = new Set(
+    picked.flatMap((id) =>
+      data.records
+        .filter((row) => row.system === id && row.adapterStatus)
+        .map((row) => `${row.adapterStatus}|${row.adapterPolicy ?? ""}`),
+    ),
+  );
+  const policiesDiffer = policyKeys.size > 1;
+  const scoredIds =
+    policiesDiffer && !includeHistorical && historicalIds.size < picked.length
+      ? picked.filter((id) => !historicalIds.has(id))
+      : picked;
   const commonIds = new Set(
     [...ids].filter((id) =>
-      commonSelected.every((s) =>
+      scoredIds.every((s) =>
         data.records.some(
           (r) => r.system === s && r.dataset === id && !r.train,
         ),
@@ -629,9 +678,10 @@ export function BenchmarkExplorer({
     ),
   );
   const comparedScores = aggregate(data, commonIds);
-  const compared = commonSelected.flatMap(
+  const compared = scoredIds.flatMap(
     (id) => comparedScores.find((score) => score.id === id) ?? [],
   );
+  const leftOut = picked.filter((id) => !scoredIds.includes(id));
   const inspect = detail
     ? (view === "compare" ? compared : [...scores, ...ensembles]).find(
         (s) => s.id === detail,
@@ -1107,6 +1157,7 @@ export function BenchmarkExplorer({
                               </span>
                               <ArrowUpRight size={13} />
                             </Link>
+                            <AdapterStatus score={r} />
                           </TableCell>
                           <TableCell>
                             <span className="family-pill">
@@ -1259,11 +1310,10 @@ export function BenchmarkExplorer({
                       <button
                         className="text-button"
                         onClick={() =>
-                          exportCsv(compared, {
-                            ...scope,
-                            comparisonSystemIds: commonSelected,
-                            scopeDatasetIds: [...commonIds],
-                          })
+                          exportCsv(
+                            compared,
+                            compareExportContext(scope, scoredIds, [...commonIds]),
+                          )
                         }
                       >
                         <Download size={15} />
@@ -1277,7 +1327,7 @@ export function BenchmarkExplorer({
                   }
                 >
                   <div className="compare-pickers">
-                    {commonSelected.map((id, i) => (
+                    {picked.map((id, i) => (
                       <div key={`${id}-${i}`} className="compare-picker">
                         <span
                           className="compare-dot"
@@ -1287,7 +1337,7 @@ export function BenchmarkExplorer({
                           value={id}
                           label={`Detector ${i + 1}`}
                           onChange={(v) => {
-                            const arr = [...commonSelected];
+                            const arr = [...picked];
                             arr[i] = v;
                             setSelected(arr);
                           }}
@@ -1295,17 +1345,17 @@ export function BenchmarkExplorer({
                             .filter(
                               (s) =>
                                 s.kind === "model" &&
-                                (s.id === id || !commonSelected.includes(s.id)),
+                                (s.id === id || !picked.includes(s.id)),
                             )
                             .map((s) => ({ value: s.id, label: s.name }))}
                         />
-                        {commonSelected.length > 2 && (
+                        {picked.length > 2 && (
                           <button
                             className="icon-button"
                             aria-label={`Remove detector ${i + 1}`}
                             onClick={() =>
                               setSelected(
-                                commonSelected.filter((_, j) => j !== i),
+                                picked.filter((_, j) => j !== i),
                               )
                             }
                           >
@@ -1314,14 +1364,14 @@ export function BenchmarkExplorer({
                         )}
                       </div>
                     ))}
-                    {commonSelected.length < 4 && (
+                    {picked.length < 4 && (
                       <button
                         className="action"
                         onClick={() =>
                           setSelected([
-                            ...commonSelected,
+                            ...picked,
                             ...scores
-                              .filter((s) => !commonSelected.includes(s.id))
+                              .filter((s) => !picked.includes(s.id))
                               .slice(0, 1)
                               .map((s) => s.id),
                           ])
@@ -1331,6 +1381,38 @@ export function BenchmarkExplorer({
                       </button>
                     )}
                   </div>
+                  {policiesDiffer && (
+                    <p className="publication-note" role="status">
+                      These detectors use different scanner mapping policies, so
+                      their numbers are not one measurement.
+                      {leftOut.length > 0 && (
+                        <>
+                          {" "}
+                          Left out until you include historical pre-fix
+                          results:{" "}
+                          {leftOut
+                            .map(
+                              (id) =>
+                                data.systems.find((system) => system.id === id)
+                                  ?.name,
+                            )
+                            .join(", ")}
+                          .
+                        </>
+                      )}
+                      {historicalIds.size > 0 && (
+                        <label className="scanner-choice">
+                          <Checkbox
+                            checked={includeHistorical}
+                            onCheckedChange={(value) =>
+                              setIncludeHistorical(value === true)
+                            }
+                          />
+                          Include historical pre-fix results
+                        </label>
+                      )}
+                    </p>
+                  )}
                   <div className="inline-note">
                     <ShieldCheck size={15} />
                     {commonIds.size} shared datasets ·{" "}
@@ -1372,6 +1454,7 @@ export function BenchmarkExplorer({
                             </Link>
                           </div>
                           <h2>{r.name}</h2>
+                          <AdapterStatus score={r} inventory />
                           <div className="comparison-main mono">
                             {percent(r.fullyHidden)}
                             <span>fully hidden</span>
@@ -1997,7 +2080,7 @@ export function BenchmarkExplorer({
                 </Panel>
                 <Panel
                   title="One artificial example"
-                  subtitle="The text below is illustrative and is not part of the benchmark corpus."
+                  subtitle="Illustrative text, not corpus. Extra masking counts only rows that have no labels. Unlabeled does not mean verified clean."
                 >
                   <div className="metric-example">
                     <div>
@@ -2021,9 +2104,13 @@ export function BenchmarkExplorer({
                     <div>
                       <span>Extra masking</span>
                       <code>
-                        <mark>Account:</mark> alex@example.com
+                        <mark>Hello</mark> there
                       </code>
-                      <small>Masked outside the labeled value</small>
+                      <small>
+                        A different row, with no labels: 5 masked characters /
+                        11 characters. The email row above is not in this
+                        denominator.
+                      </small>
                     </div>
                   </div>
                 </Panel>
@@ -2198,16 +2285,52 @@ export function BenchmarkExplorer({
                     </div>
                   ))}
                 </div>
-                {inspect.upstream && (
-                  <a
-                    href={inspect.upstream}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="action"
-                  >
-                    <ExternalLink size={15} />
-                    Upstream model
-                  </a>
+                {inspect.kind === "composition" ? (
+                  <div className="detail-revision">
+                    <span>Member revisions</span>
+                    {(inspect.participants ?? []).map((item) => (
+                      <div key={item.member}>
+                        <code>
+                          {item.member} {item.revision || "not recorded"}
+                        </code>
+                        {item.upstream && (
+                          <a href={item.upstream} target="_blank" rel="noreferrer">
+                            {item.upstream}
+                          </a>
+                        )}
+                        {item.flags && item.flags !== "-" && (
+                          <span>{item.flags}</span>
+                        )}
+                      </div>
+                    ))}
+                    <span>
+                      These are member pins. Result revision {data.meta.revision}{" "}
+                      identifies the published ensemble.
+                    </span>
+                  </div>
+                ) : (
+                  <>
+                    {inspect.upstream && (
+                      <a
+                        href={inspect.upstream}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="action"
+                      >
+                        <ExternalLink size={15} />
+                        Upstream model
+                      </a>
+                    )}
+                    {inspect.revision && (
+                      <div className="detail-revision">
+                        <span>Pinned revision / version</span>
+                        <code>{inspect.revision}</code>
+                      </div>
+                    )}
+                    {inspect.flags && inspect.flags !== "-" && (
+                      <p className="inline-note">{inspect.flags}</p>
+                    )}
+                  </>
                 )}
                 {inspect.kind === "model" && (
                   <Link
@@ -2218,15 +2341,7 @@ export function BenchmarkExplorer({
                     <ArrowUpRight size={15} />
                   </Link>
                 )}
-                {inspect.revision && (
-                  <div className="detail-revision">
-                    <span>Pinned revision / version</span>
-                    <code>{inspect.revision}</code>
-                  </div>
-                )}
-                {inspect.flags && inspect.flags !== "-" && (
-                  <p className="inline-note">{inspect.flags}</p>
-                )}
+                <AdapterStatus score={inspect} inventory />
                 <h3>Results by dataset</h3>
                 <Table>
                   <TableHeader>
@@ -2276,7 +2391,12 @@ export function BenchmarkExplorer({
                       `${inspect.name.replace(/[^a-z0-9-]/gi, "_")}.json`,
                       JSON.stringify(
                         {
-                          scope: { ...scope, datasetIds: [...inspectIds] },
+                          scope: {
+                            ...(view === "compare"
+                              ? compareExportContext(scope, scoredIds, [...commonIds])
+                              : scope),
+                            datasetIds: [...inspectIds],
+                          },
                           score: inspect,
                           records: data.records.filter(
                             (r) =>
