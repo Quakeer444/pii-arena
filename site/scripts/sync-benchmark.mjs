@@ -16,7 +16,9 @@ const copies = [
   ["LICENSE", "LICENSE"],
   ["NOTICE", "NOTICE"],
   ["assets", "assets"],
+  ["LICENSES", "LICENSES"],
   ["datasets/catalog.json", "datasets/catalog.json"],
+  ["datasets/samples.json", "datasets/samples.json"],
   ["docs", "docs"],
   ["results", "results"]
 ];

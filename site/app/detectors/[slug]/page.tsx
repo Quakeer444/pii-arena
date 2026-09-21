@@ -47,6 +47,7 @@ export default async function DetectorPage({ params }: { params: Promise<{ slug:
     return { language, score: aggregate(data, ids).find((entry) => entry.id === model.id) };
   }).filter((entry) => entry.score);
   const title = `${model.name} PII detection benchmark`;
+  const comparisonModel = model.id === "model:pplx" ? "model:gliner2-fastino" : "model:pplx";
 
   return (
     <PublicationPage
@@ -89,7 +90,7 @@ export default async function DetectorPage({ params }: { params: Promise<{ slug:
         {model.flags && model.flags !== "-" && <p className="publication-note">{model.flags}</p>}
         <div className="publication-actions">
           {model.upstream && <a className="action" href={model.upstream}>Upstream model</a>}
-          <Link className="action" href={`/compare?compare=${encodeURIComponent(`${model.id},model:pplx`)}`}>Compare detectors</Link>
+          <Link className="action" href={`/compare?compare=${encodeURIComponent(`${model.id},${comparisonModel}`)}`}>Compare detectors</Link>
           <a className="action" href="https://github.com/Quakeer444/pii-arena/blob/main/docs/models.md">Model catalog</a>
           <Link className="action" href="/methodology">Read methodology</Link>
         </div>

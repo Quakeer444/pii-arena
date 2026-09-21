@@ -13,7 +13,7 @@ export default function DetectorsPage() {
   const data = raw as Benchmark;
   const datasetIds = new Set(data.datasets.map((dataset) => dataset.id));
   const rows = aggregate(data, datasetIds)
-    .sort((a, b) => Number(b.sets === datasetIds.size) - Number(a.sets === datasetIds.size) || (a.untouched ?? Infinity) - (b.untouched ?? Infinity));
+    .sort((a, b) => Number(b.sets === datasetIds.size) - Number(a.sets === datasetIds.size) || (b.fullyHidden ?? -Infinity) - (a.fullyHidden ?? -Infinity));
 
   return (
     <PublicationPage eyebrow="Detector directory" title={title} description={description}>
@@ -24,20 +24,20 @@ export default function DetectorsPage() {
       </div>
       <section className="publication-panel">
         <div className="publication-panel-heading">
-          <div><h2>All detector configurations</h2><p>Complete-coverage rows appear first. Partial rows keep their original denominator.</p></div>
+          <div><h2>All detector configurations</h2><p>Complete-coverage rows appear first, then rank by fully hidden annotations. Partial rows keep their original denominator.</p></div>
           <Link className="text-button" href="/compare">Interactive comparison</Link>
         </div>
         <div className="publication-table-scroll">
           <table className="publication-table">
-            <thead><tr><th>Detector</th><th>Family</th><th>Datasets</th><th>Untouched ↓</th><th>Fully hidden ↑</th><th>Char F1 ↑</th></tr></thead>
+            <thead><tr><th>Detector</th><th>Family</th><th>Datasets</th><th>Fully hidden ↑</th><th>Untouched ↓</th><th>Char F1 ↑</th></tr></thead>
             <tbody>
               {rows.map((row) => (
                 <tr key={row.id}>
                   <td><Link href={`/detectors/${detectorSlug(row.id)}`}>{row.name}</Link></td>
                   <td>{row.family.toUpperCase()}</td>
                   <td className="mono">{row.sets}/{datasetIds.size}</td>
-                  <td className="number">{percent(row.untouched)}</td>
                   <td className="number">{percent(row.fullyHidden)}</td>
+                  <td className="number">{percent(row.untouched)}</td>
                   <td className="number">{row.f1?.toFixed(3) ?? "—"}</td>
                 </tr>
               ))}

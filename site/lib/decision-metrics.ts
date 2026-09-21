@@ -64,8 +64,8 @@ function fullyHidden(rows: RecordRow[], macro: boolean): number | null {
   return 100 * eligible.reduce((sum, row) => sum + row.hidden, 0) / eligible.reduce((sum, row) => sum + row.gold, 0);
 }
 
-export function buildDecisionMetrics(data: Benchmark): DecisionMetrics {
-  const datasetIds = new Set(data.datasets.map(dataset => dataset.id));
+export function buildDecisionMetrics(data: Benchmark, scopeIds?: Set<string>): DecisionMetrics {
+  const datasetIds = scopeIds ?? new Set(data.datasets.map(dataset => dataset.id));
   const tierIds = Object.fromEntries(tiers.map(tier => [
     tier,
     new Set(DIFFICULTY.filter(row => row.tier === tier && datasetIds.has(row.dataset)).map(row => String(row.dataset))),
@@ -141,9 +141,9 @@ export function buildDecisionMetrics(data: Benchmark): DecisionMetrics {
       },
     })),
     categories: Object.fromEntries([...categoryIds].map(([categoryId, ids]) => [categoryId, slices(ids, categoryId)])),
-    languages: Object.fromEntries([...new Set(data.datasets.map(dataset => dataset.lang))].map(language => [
+    languages: Object.fromEntries([...new Set(data.datasets.filter(dataset => datasetIds.has(dataset.id)).map(dataset => dataset.lang))].map(language => [
       language,
-      slices(new Set(data.datasets.filter(dataset => dataset.lang === language).map(dataset => dataset.id))),
+      slices(new Set(data.datasets.filter(dataset => datasetIds.has(dataset.id) && dataset.lang === language).map(dataset => dataset.id))),
     ])),
   };
 }

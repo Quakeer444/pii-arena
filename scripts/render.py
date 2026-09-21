@@ -463,7 +463,14 @@ def markdown():
     (ROOT/'results/by-language.md').write_text('\n'.join(language))
     datasets=['# Dataset catalog','','41 datasets, 41,643 rows, 230,446 original annotations; scoring normalization leaves 227,466 gold spans. Raw texts and annotations are stored only in the ignored local workspace. Public metadata, source links, row-selection IDs, checksums and aggregate results remain available.','','The `synthetic` flag in the machine-readable catalog identifies only this project\'s six `synth-*` datasets; other sources also contain synthetic material. Corrupted copies inherit their source and training-overlap exclusions. License labels describe the archived 2026-09-05 source audit, not a fresh legal review.','','| Dataset | Language | Task | Rows | Normalized spans | Source license | Report |','|---|---|---|---:|---:|---|---|']
     for d in CAT.values():
-        src=d['source']; link=f"[{d['id']}]({src})" if src.startswith('https://') else d['id']
+        sources = re.findall(r'https://[^\s)]+', d['source'])
+        if len(sources) == 1:
+            link = f"[{d['id']}]({sources[0]})"
+        elif sources:
+            refs = ' + '.join(f"[{url.rstrip('/').rsplit('/', 1)[-1]}]({url})" for url in sources)
+            link = f"{d['id']} ({refs}; rule test cases)"
+        else:
+            link = d['id']
         datasets.append(f"| {link} | {d['lang']} | {d['kind']} | {d['rows']:,} | {d['gold_spans']:,} | {d['license']} | [Results](../results/datasets/{d['id']}.md) |")
     missing_revision = [d['id'] for d in CAT.values() if not d.get('raw') or d['raw'].get('revision') in (None, '-')]
     datasets += ['', '## Reconstruction status', '', 'The public Leak Museum route is tested from source download through CPU inference and scoring. The following 22 historical cuts have no retained raw-source revision and cannot be reconstructed exactly from an upstream revision alone:', '', ', '.join(f'`{name}`' for name in missing_revision) + '.', '', 'A retained aggregate raw hash identifies the archived bytes where available but does not make a newer upstream download equivalent. Other dependency and acquisition gaps are documented in [source acquisition](sources.md).', '', 'See [source acquisition and conversion caveats](sources.md), [license notices](../LICENSES/README.md), [catalog.json](../datasets/catalog.json) and [samples.json](../datasets/samples.json). A source publication mode of `files` in archived metadata describes the original experiment; this repository distributes no corpus text.','']

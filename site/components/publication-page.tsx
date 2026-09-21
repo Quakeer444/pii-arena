@@ -19,9 +19,14 @@ export function PublicationPage({
         <Link href="/leaderboard" className="publication-brand">PII <span>Arena</span></Link>
         <nav aria-label="Primary">
           <Link href="/leaderboard">Leaderboard</Link>
+          <Link href="/compare">Compare</Link>
+          <Link href="/ensembles">Ensembles</Link>
+          <Link href="/entities">Data types</Link>
           <Link href="/detectors">Detectors</Link>
           <Link href="/datasets">Datasets</Link>
+          <Link href="/performance">Performance</Link>
           <Link href="/methodology">Methodology</Link>
+          <Link href="/downloads">Reports</Link>
         </nav>
         <ThemeToggle />
       </header>

@@ -4,7 +4,7 @@ import { useMemo, useState, type CSSProperties, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowRight, CircleHelp, Search } from "lucide-react";
 import { aggregate, detectorSlug, percent, type Benchmark } from "@/lib/benchmark";
-import { CATEGORY_LEADERS, DIFFICULTY, MODEL_LABELS, type DifficultyTier } from "@/lib/decision-data";
+import { DIFFICULTY, MODEL_LABELS, type DifficultyTier } from "@/lib/decision-data";
 import { buildDecisionMetrics, type DecisionMetrics, type DomainRow, type RobustnessRow, type SliceRow } from "@/lib/decision-metrics";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
@@ -55,17 +55,18 @@ function SearchBox({ value, onChange, placeholder, label: accessibleLabel }: { v
   return <label className="decision-search"><Search size={14}/><input aria-label={accessibleLabel} value={value} onChange={event => onChange(event.target.value)} placeholder={placeholder}/></label>;
 }
 
-function DifficultyMap() {
+function DifficultyMap({ datasetIds }: { datasetIds: Set<string> }) {
   const [tier, setTier] = useState<DifficultyTier | "All">("All");
   const [query, setQuery] = useState("");
-  const rows = [...DIFFICULTY].filter(row => (tier === "All" || row.tier === tier) && row.dataset.includes(query.toLowerCase().trim())).sort((a, b) => b.score - a.score);
-  return <Card title="Hardest datasets" description="Higher scores mean the dataset was harder for the tested detectors." note="Difficulty score = 100 minus the median completely hidden score from a fixed group of detectors." tools={<SearchBox value={query} onChange={setQuery} placeholder="Find a dataset…" label="Search datasets by difficulty"/>}>
+  const scopedRows = [...DIFFICULTY].filter(row => datasetIds.has(row.dataset));
+  const rows = scopedRows.filter(row => (tier === "All" || row.tier === tier) && row.dataset.includes(query.toLowerCase().trim())).sort((a, b) => b.score - a.score);
+  return <Card title="Hardest datasets" description="Higher scores mean the dataset was harder for the tested detectors." note="Difficulty is empirical: 100 minus the median fully hidden score of the frozen four-detector panel in release v1.0.3. Tiers use the recorded release thresholds." tools={<SearchBox value={query} onChange={setQuery} placeholder="Find a dataset…" label="Search datasets by difficulty"/>}>
     <div className="difficulty-filters" role="group" aria-label="Filter datasets by difficulty">
       <button type="button" aria-pressed={tier === "All"} onClick={() => setTier("All")}>All levels</button>
-      {tiers.map(item => <button type="button" key={item} className={`tier-${item.toLowerCase()}`} aria-pressed={tier === item} onClick={() => setTier(item)}><i/>{item}<span className="mono">{DIFFICULTY.filter(row => row.tier === item).length}</span></button>)}
+      {tiers.map(item => <button type="button" key={item} className={`tier-${item.toLowerCase()}`} aria-pressed={tier === item} onClick={() => setTier(item)}><i/>{item}<span className="mono">{scopedRows.filter(row => row.tier === item).length}</span></button>)}
     </div>
     <Scroll label="Dataset difficulty results" className="difficulty-scroll">
-      <div className="difficulty-map">{rows.map(row => <Link href={`/datasets?dataset=${encodeURIComponent(row.dataset)}`} key={row.dataset} className={`difficulty-cell tier-${row.tier.toLowerCase()}`}>
+      <div className="difficulty-map">{rows.map(row => <Link href={`/datasets/${row.dataset}`} key={row.dataset} className={`difficulty-cell tier-${row.tier.toLowerCase()}`}>
         <span title={row.dataset}>{row.dataset}</span>
         <div><strong className="mono">{row.score.toFixed(1)}</strong><small>{row.tier}</small></div>
         <div className="difficulty-meter"><i style={{ width: `${row.score}%` }}/></div>
@@ -84,7 +85,7 @@ function Robustness({ rows }: { rows: RobustnessRow[] }) {
         <tbody>{filtered.map(row => <tr key={row.system}>
           <th scope="row"><ModelName system={row.system} name={row.name} complete={row.complete}/></th>
           {tiers.map(tier => <td key={tier} className={`tier-${tier.toLowerCase()}`} title={`${tier}: ${percent(row[tier])}; ${row.coverage[tier].gold.toLocaleString("en-US")} labeled items`}>
-            <span className="robustness-value" style={{ "--value": `${row[tier] ?? 0}%` } as CSSProperties}>{row[tier] === null ? "—" : row[tier].toFixed(1)}</span>
+            <span className="robustness-value" style={{ "--value": `${row[tier] ?? 0}%` } as CSSProperties}>{row[tier] === null ? "—" : `${row[tier].toFixed(1)}%`}</span>
           </td>)}
         </tr>)}</tbody>
       </table>
@@ -93,18 +94,18 @@ function Robustness({ rows }: { rows: RobustnessRow[] }) {
   </Card>;
 }
 
-function Protection({ data }: { data: Benchmark }) {
+function Protection({ data, datasetIds }: { data: Benchmark; datasetIds: Set<string> }) {
   const rows = useMemo(() => {
-    const scores = aggregate(data, new Set(data.datasets.map(row => row.id)), "composition");
+    const scores = aggregate(data, datasetIds, "composition");
     return configurations.flatMap(config => {
       const score = scores.find(row => row.id === `composition:${config.id}`);
       return score ? [{ ...config, ...score, title: config.name, kind: config.kind }] : [];
     });
-  }, [data]);
+  }, [data, datasetIds]);
   return <Card title="One detector vs several combined" description="See whether combining detectors hides more sensitive data and how much extra text it masks." note="These combinations merge saved predictions. Extra text masked is measured on rows without labels, not verified false positives." tools={<Link className="decision-text-link" href="/ensembles">See combinations<ArrowRight size={14}/></Link>} className="protection-card">
     <Scroll label="Compare single and combined detectors" className="protection-scroll">
       <table className="protection-table"><thead><tr>
-        <th scope="col">Detector setup</th><th scope="col">Completely hidden ↑<div className="protection-ruler mono"><span>0%</span><span>50%</span><span>100%</span></div></th><th scope="col">Extra text masked ↓</th><th scope="col">Not fully hidden ↓</th>
+        <th scope="col">Detector setup</th><th scope="col">Completely hidden, % ↑<div className="protection-ruler mono"><span>0%</span><span>50%</span><span>100%</span></div></th><th scope="col">Extra text masked, % ↓</th><th scope="col">Not fully hidden, items ↓</th>
       </tr></thead><tbody>{rows.map(row => <tr key={row.id} className={`protection-${row.kind}`}>
         <th scope="row"><span className="configuration-kind">{row.label}</span><strong>{row.title}</strong></th>
         <td><div className="protection-bar"><b className="mono">{percent(row.fullyHidden)}</b><span><i style={{ width: `${row.fullyHidden ?? 0}%` }}/></span></div></td>
@@ -119,12 +120,12 @@ function Protection({ data }: { data: Benchmark }) {
 function Domains({ rows }: { rows: DomainRow[] }) {
   const [query, setQuery] = useState("");
   const filtered = rows.filter(row => matchesModel(row, query));
-  return <Card title="Personal data vs secrets" description="Compare how well each detector hides personal data, credentials, and other secrets." note="Scores count labeled sensitive items in each task. Detectors covering all datasets are shown first." tools={<SearchBox value={query} onChange={setQuery} placeholder="Find a detector…" label="Search detectors by data type"/>}>
+  return <Card title="PII datasets vs secrets datasets" description="Compare how well each detector hides labeled items in datasets assigned to each task." note="This split uses each dataset's task. Category results below instead group individual annotations by type. Detectors covering all datasets are shown first." tools={<SearchBox value={query} onChange={setQuery} placeholder="Find a detector…" label="Search detectors by data type"/>}>
     <Scroll label="Detector results for personal data and secrets" className="domain-scroll">
-      <div className="domain-head"><span>Detector</span><span>Personal data</span><span>Secrets</span></div>
+      <div className="domain-head"><span>Detector</span><span>PII datasets</span><span>Secrets datasets</span></div>
       {filtered.map(row => <div className="domain-row" key={row.system}>
         <ModelName system={row.system} name={row.name} complete={row.complete}/>
-        {(["pii", "secrets"] as const).map(domain => <div className={`domain-value domain-${domain}`} key={domain} title={`${domain === "pii" ? "PII" : "Secrets"}: ${percent(row[domain])}`}><i style={{ width: `${row[domain] ?? 0}%` }}/><span className="mono">{row[domain] === null ? "—" : row[domain].toFixed(1)}</span></div>)}
+        {(["pii", "secrets"] as const).map(domain => <div className={`domain-value domain-${domain}`} key={domain} title={`${domain === "pii" ? "PII datasets" : "Secrets datasets"}: ${percent(row[domain])}`}><i style={{ width: `${row[domain] ?? 0}%` }}/><span className="mono">{row[domain] === null ? "—" : `${row[domain].toFixed(1)}%`}</span></div>)}
       </div>)}
       {!filtered.length && <p className="decision-empty">No detectors match this search.</p>}
     </Scroll>
@@ -140,26 +141,30 @@ function Rankings({ rows, className = "" }: { rows: SliceRow[]; className?: stri
 
 function Categories({ data, slices }: { data: Benchmark; slices: DecisionMetrics["categories"] }) {
   const [category, setCategory] = useState("overview");
-  return <Card title="Best detector by data type" description="Choose a type of sensitive data to see which detectors hide it best." note={category === "overview" ? "The overview compares four finalist detectors." : "Scores use all labeled sensitive items in this category. Known training overlaps are removed."} tools={<select className="decision-select" aria-label="Choose a sensitive data type" value={category} onChange={event => setCategory(event.target.value)}><option value="overview">All data types</option>{data.categories.map(item => <option key={item.id} value={item.id}>{item.title}</option>)}</select>}>
+  const leaders = data.categories.flatMap(item => {
+    const winner = slices[item.id]?.[0];
+    return winner?.value === null || winner === undefined ? [] : [{ ...winner, label: item.title }];
+  });
+  return <Card title="Best detector by data type" description="Choose a type of sensitive data to see which detectors hide it best." note="Overview and expanded rankings use the same scoped datasets, all measured configurations, complete coverage first, and known training-overlap exclusions." tools={<select className="decision-select" aria-label="Choose a sensitive data type" value={category} onChange={event => setCategory(event.target.value)}><option value="overview">All data types</option>{data.categories.map(item => <option key={item.id} value={item.id}>{item.title}</option>)}</select>}>
     <Scroll label="Category specialization results" className="category-scroll">
-      {category === "overview" ? <div className="category-leaders">{CATEGORY_LEADERS.map(row => <div key={row.label}>
-        <span>{row.label}</span><strong className="mono">{row.value.toFixed(1)}%</strong>
-        <Link href={`/detectors/${detectorSlug(row.system)}`}>{label(row.system)}</Link><small>{row.gold.toLocaleString("en-US")} labeled items</small>
+      {category === "overview" ? <div className="category-leaders">{leaders.map(row => <div key={row.label}>
+        <span>{row.label}</span><strong className="mono">{row.value!.toFixed(1)}%</strong>
+        <Link href={`/detectors/${detectorSlug(row.system)}`}>{row.name}</Link><small>{row.coverage.gold.toLocaleString("en-US")} labeled items</small>
         <div className="category-meter"><i style={{ width: `${row.value}%` }}/></div>
       </div>)}</div> : <Rankings rows={slices[category] ?? []}/>}
     </Scroll>
   </Card>;
 }
 
-export function DecisionDashboard({ data }: { data: Benchmark }) {
-  const metrics = useMemo(() => buildDecisionMetrics(data), [data]);
+export function DecisionDashboard({ data, datasetIds }: { data: Benchmark; datasetIds: Set<string> }) {
+  const metrics = useMemo(() => buildDecisionMetrics(data, datasetIds), [data, datasetIds]);
   return <div className="decision-dashboard">
     <SectionTitle id="dataset-difficulty" number="01" title="Start with what you need to protect">Compare personal data, secrets, and the datasets where detectors struggle.</SectionTitle>
     <div className="decision-grid difficulty-grid"><Robustness rows={metrics.robustness}/><Domains rows={metrics.domains}/></div>
     <SectionTitle id="protection-comparison" number="02" title="Use one detector or combine several?">See what combining detectors adds and how much extra text it masks.</SectionTitle>
-    <Protection data={data}/>
+    <Protection data={data} datasetIds={datasetIds}/>
     <SectionTitle id="model-specialization" number="03" title="Find the best detector for each data type">Focus on the sensitive information your application needs to protect.</SectionTitle>
-    <div className="decision-grid specialization-grid"><DifficultyMap/><Categories data={data} slices={metrics.categories}/></div>
+    <div className="decision-grid specialization-grid"><DifficultyMap datasetIds={datasetIds}/><Categories data={data} slices={metrics.categories}/></div>
     <div id="detector-results" className="decision-table-anchor"/>
   </div>;
 }

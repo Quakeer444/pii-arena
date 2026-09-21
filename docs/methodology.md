@@ -4,9 +4,9 @@ The frozen run compares ready-made detectors of personally identifiable informat
 
 ## What counts as a miss
 
-The primary metric is **a gold span untouched by every predicted character**. The unit is one gold span after normalization. Two annotations with the same boundaries but different labels remain two units. An empty prediction on nonempty gold misses 100%.
+The primary metric is **a gold span fully hidden by the normalized mask**. The unit is one gold span after normalization. Two annotations with the same boundaries but different labels remain two units. An empty prediction on nonempty gold fully hides 0%.
 
-Touching one character counts as detection. It does not prove that the whole value has been hidden. Fully hidden spans and character recall are separate measurements. Hidden is computed after word-boundary normalization, so it describes a masker applying that same normalization, not necessarily the raw detector output.
+Touching no character is retained as the separate `untouched` diagnostic. Touching one character counts as detection, but does not prove that the whole value has been hidden. Fully hidden spans and character recall are separate measurements. Hidden is computed after word-boundary normalization, so it describes a masker applying that same normalization, not necessarily the raw detector output.
 
 Gold and predicted boundaries receive the same normalization: trim whitespace, expand to word boundaries, and merge adjacent pieces with the same label. Invalid predicted intervals are dropped and counted. Inference adapters clip malformed spans to the chunk boundary and record clipping separately.
 

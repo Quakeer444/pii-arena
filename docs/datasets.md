@@ -38,7 +38,7 @@ The `synthetic` flag in the machine-readable catalog identifies only this projec
 | [russian-pii-66k](https://huggingface.co/datasets/wolframko/russian-pii-66k) | ru | pii | 1,500 | 4,805 | not specified | [Results](../results/datasets/russian-pii-66k.md) |
 | [scanpatch](https://huggingface.co/datasets/scanpatch/pii-ner-corpus-synthetic-controlled) | ru | pii | 1,500 | 8,708 | mit | [Results](../results/datasets/scanpatch.md) |
 | [secrets-issues](https://zenodo.org/records/19622962) | en | secrets | 500 | 288 | cc-by-4.0 | [Results](../results/datasets/secrets-issues.md) |
-| [secrets-rules](https://github.com/gitleaks/gitleaks + https://github.com/betterleaks/betterleaks (rule test cases)) | en | secrets | 1,496 | 746 | mit | [Results](../results/datasets/secrets-rules.md) |
+| secrets-rules ([gitleaks](https://github.com/gitleaks/gitleaks) + [betterleaks](https://github.com/betterleaks/betterleaks); rule test cases) | en | secrets | 1,496 | 746 | mit | [Results](../results/datasets/secrets-rules.md) |
 | synth-env-configs | en | secrets | 400 | 392 | cc-by-4.0 | [Results](../results/datasets/synth-env-configs.md) |
 | synth-jira-comments | ru | pii | 300 | 2,705 | cc-by-4.0 | [Results](../results/datasets/synth-jira-comments.md) |
 | synth-ru-tickets | ru | pii | 400 | 32,099 | cc-by-4.0 | [Results](../results/datasets/synth-ru-tickets.md) |

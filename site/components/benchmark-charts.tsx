@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { colorFor, n, percent, type Score } from "@/lib/benchmark";
+import { colors, n, percent, type Score } from "@/lib/benchmark";
 
 export function MaskBars({ rows, onSelect }: { rows: Score[]; onSelect: (id: string) => void }) {
   return (
@@ -76,7 +76,7 @@ export function Tradeoff({ rows, onSelect }: { rows: Score[]; onSelect: (id: str
             cx={x(row.extra!)}
             cy={y(row.fullyHidden!)}
             r={hover?.id === row.id ? 7 : 5}
-            fill={colorFor(row.family)}
+            fill={colors[rows.findIndex(entry => entry.id === row.id) % colors.length]}
             fillOpacity={hover && hover.id !== row.id ? 0.45 : 0.86}
             stroke="var(--card)"
             strokeWidth="1.5"
@@ -158,7 +158,7 @@ export function SpeedQuality({ rows, onSelect }: { rows: Score[]; onSelect: (id:
               cx={x(throughput)}
               cy={y(row.fullyHidden!)}
               r={hover?.id === row.id ? 7 : 5}
-              fill={colorFor(row.family)}
+              fill={colors[rows.findIndex(entry => entry.id === row.id) % colors.length]}
               fillOpacity={hover && hover.id !== row.id ? 0.45 : 0.86}
               stroke="var(--card)"
               strokeWidth="1.5"

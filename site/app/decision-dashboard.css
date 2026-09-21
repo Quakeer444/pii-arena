@@ -20,11 +20,10 @@
 .decision-info:hover { color:var(--primary); }
 .decision-info svg { width:10px; height:10px; }
 .decision-text-link { display:flex; align-items:center; gap:5px; font-size:.75rem; color:var(--primary); white-space:nowrap; margin-top:3px; }
-.decision-search { display:flex; align-items:center; gap:6px; flex-shrink:0; border:1px solid transparent; background:transparent; border-radius:5px; padding:6px 8px; margin-bottom:8px; color:var(--muted-foreground); opacity:.38; transition:opacity .15s,border-color .15s,background-color .15s,box-shadow .15s; }
-.decision-search:focus-within { border-color:var(--input); background:var(--background); box-shadow:0 0 0 2px var(--ring-surface); opacity:1; }
-.decision-search:has(input:not(:placeholder-shown)) { opacity:.72; }
+.decision-search { display:flex; align-items:center; gap:6px; flex-shrink:0; border:1px solid var(--input); background:var(--background); border-radius:5px; padding:6px 8px; margin-bottom:8px; color:var(--muted-foreground); transition:border-color .15s,box-shadow .15s; }
+.decision-search:focus-within { border-color:var(--ring); box-shadow:0 0 0 2px color-mix(in srgb,var(--ring) 20%,transparent); }
 .decision-search input { min-width:0; width:100%; padding:0; margin:0; border:0; background:transparent; outline:none; color:var(--foreground); font-size:.6875rem; }
-.decision-search input::placeholder { color:var(--muted-foreground); opacity:.65; }
+.decision-search input::placeholder { color:var(--muted-foreground); opacity:1; }
 .difficulty-grid .decision-search { padding:4px 8px; margin-bottom:5px; }
 .difficulty-grid .decision-view-head>.decision-search { width:230px; max-width:42%; margin:0; padding:3px 7px; }
 .decision-scroll { overflow:auto; scrollbar-gutter:stable; scrollbar-width:thin; scrollbar-color:var(--input) var(--secondary); padding-right:8px; min-width:0; }
@@ -36,7 +35,7 @@
 .tier-easy { --tier:#94b8a0; --tier-text:#a7a197; --tier-surface:#3c5a4b; --tier-border:#454b4e; }
 .tier-medium { --tier:#c4b482; --tier-text:#bbad7e; --tier-surface:#4e4425; --tier-border:#66582f; }
 .tier-hard { --tier:#c69d7c; --tier-text:#be987a; --tier-surface:#6c4a2f; --tier-border:#69482e; }
-.tier-extreme { --tier:#c68b88; --tier-text:#bd8582; --tier-surface:#653230; --tier-border:#64322f; }
+.tier-extreme { --tier:#c68b88; --tier-text:#cf9895; --tier-surface:#653230; --tier-border:#64322f; }
 :root.light .tier-easy { --tier:#52785d; --tier-text:var(--tier); --tier-surface:var(--tier); --tier-border:var(--tier); }
 :root.light .tier-medium { --tier:#887128; --tier-text:var(--tier); --tier-surface:var(--tier); --tier-border:var(--tier); }
 :root.light .tier-hard { --tier:#9d622f; --tier-text:var(--tier); --tier-surface:var(--tier); --tier-border:var(--tier); }
@@ -46,7 +45,7 @@
 .difficulty-filters button[aria-pressed="true"] { background:var(--secondary); color:var(--foreground); border-color:var(--input); }
 .difficulty-filters button:hover { background:var(--secondary); }
 .difficulty-filters i,.difficulty-dot { display:inline-block; width:6px; height:6px; background:var(--tier-surface); border-radius:50%; flex-shrink:0; }
-.difficulty-filters button>span { opacity:.7; margin-left:2px; }
+.difficulty-filters button>span { margin-left:2px; }
 .difficulty-scroll { height:128px; }
 .difficulty-map { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:4px; align-content:start; }
 .difficulty-cell { min-width:0; display:block; padding:5px 6px; border:1px solid var(--tier-border); background:color-mix(in srgb,var(--tier) 7%,var(--decision-mix-card)); border-radius:5px; text-decoration:none; transition:border-color .15s,background .15s; }
@@ -81,7 +80,7 @@
 .protection-table th:nth-child(4) { width:13%; text-align:right; }
 .protection-table thead th { position:sticky; top:0; z-index:2; background:var(--card); color:var(--muted-foreground); font-size:.625rem; font-weight:400; text-align:left; padding:0 6px 3px 0; vertical-align:top; }
 .protection-table thead th:last-child { padding-right:0; }
-.protection-ruler { display:flex; justify-content:space-between; font-size:.5rem; opacity:.75; margin-top:2px; }
+.protection-ruler { display:flex; justify-content:space-between; color:var(--foreground); font-size:.5rem; margin-top:2px; }
 .protection-table tbody tr { border-top:1px solid var(--border); }
 .protection-table tbody th { padding:3px 6px 3px 0; text-align:left; font-weight:400; }
 .configuration-kind { display:inline-block; color:var(--stack-text); font-size:.5625rem; line-height:1.2; margin-right:7px; }

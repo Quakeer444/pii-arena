@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import raw from "@/public/data/benchmark.json";
 import { PublicationPage } from "@/components/publication-page";
-import { aggregate, type Benchmark, detectorSlug, n, percent } from "@/lib/benchmark";
+import { aggregate, type Benchmark, detectorSlug, n, percent, sourceUrls } from "@/lib/benchmark";
 import { pageMetadata } from "@/lib/seo";
 import { datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
@@ -33,8 +33,9 @@ export default async function DatasetPage({ params }: { params: Promise<{ id: st
   if (!dataset) notFound();
   const scores = aggregate(data, new Set([dataset.id]))
     .filter((score) => score.sets === 1)
-    .sort((a, b) => (a.untouched ?? Infinity) - (b.untouched ?? Infinity));
+    .sort((a, b) => (b.fullyHidden ?? -Infinity) - (a.fullyHidden ?? -Infinity));
   const title = `${dataset.id} PII detection benchmark results`;
+  const sources = sourceUrls(dataset.source);
 
   return (
     <>
@@ -61,24 +62,24 @@ export default async function DatasetPage({ params }: { params: Promise<{ id: st
             <div><dt>Corrupted copy</dt><dd>{dataset.corrupted ? "Yes" : "No"}</dd></div>
           </dl>
           <div className="publication-actions">
-            {dataset.source.startsWith("http") && <a className="action" href={dataset.source}>Original source</a>}
+            {sources.map((source, index) => <a className="action" href={source} key={source}>Original source{sources.length > 1 ? ` ${index + 1}` : ""}</a>)}
             <a className="action" href={`/evidence/results/datasets/${dataset.id}.md`}>Dataset report</a>
             <Link className="action" href="/datasets">All datasets</Link>
           </div>
           <p className="publication-note">Rows without annotations are not verified clean. Reported extra masking is not a human-confirmed false-positive rate.</p>
         </section>
         <section className="publication-panel">
-          <div className="publication-panel-heading"><div><h2>Detector outcomes</h2><p>Sorted by untouched annotations. Training-source overlaps are excluded.</p></div></div>
+          <div className="publication-panel-heading"><div><h2>Detector outcomes</h2><p>Sorted by fully hidden annotations. Training-source overlaps are excluded.</p></div></div>
           <div className="publication-table-scroll">
             <table className="publication-table">
-              <thead><tr><th>Detector</th><th>Family</th><th>Untouched ↓</th><th>Fully hidden ↑</th><th>Extra masking ↓</th><th>Char F1 ↑</th></tr></thead>
+              <thead><tr><th>Detector</th><th>Family</th><th>Fully hidden ↑</th><th>Untouched ↓</th><th>Extra masking ↓</th><th>Char F1 ↑</th></tr></thead>
               <tbody>
                 {scores.map((score) => (
                   <tr key={score.id}>
                     <td><Link href={`/detectors/${detectorSlug(score.id)}`}>{score.name}</Link></td>
                     <td>{score.family.toUpperCase()}</td>
-                    <td className="number">{percent(score.untouched)}</td>
                     <td className="number">{percent(score.fullyHidden)}</td>
+                    <td className="number">{percent(score.untouched)}</td>
                     <td className="number">{percent(score.extra)}</td>
                     <td className="number">{score.f1?.toFixed(3) ?? "—"}</td>
                   </tr>
