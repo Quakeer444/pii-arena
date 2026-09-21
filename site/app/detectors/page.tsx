@@ -29,7 +29,7 @@ export default function DetectorsPage() {
         </div>
         <div className="publication-table-scroll">
           <table className="publication-table">
-            <thead><tr><th>Detector</th><th>Family</th><th>Datasets</th><th>Fully hidden ↑</th><th>Untouched ↓</th><th>Char F1 ↑</th></tr></thead>
+            <thead><tr><th>Detector</th><th>Family</th><th>Datasets</th><th>Fully hidden ↑</th><th>Detected / any overlap ↑</th><th>Char F1 ↑</th></tr></thead>
             <tbody>
               {rows.map((row) => (
                 <tr key={row.id}>
@@ -37,7 +37,7 @@ export default function DetectorsPage() {
                   <td>{row.family.toUpperCase()}</td>
                   <td className="mono">{row.sets}/{datasetIds.size}</td>
                   <td className="number">{percent(row.fullyHidden)}</td>
-                  <td className="number">{percent(row.untouched)}</td>
+                  <td className="number">{percent(row.detected)}</td>
                   <td className="number">{row.f1?.toFixed(3) ?? "—"}</td>
                 </tr>
               ))}

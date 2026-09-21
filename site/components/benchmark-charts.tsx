@@ -189,7 +189,7 @@ export function SpeedQuality({ rows, onSelect }: { rows: Score[]; onSelect: (id:
           <span>CPU throughput <b>{n(10_000 / hover.cpu!)} chars/s</b></span>
         </div>
       )}
-      <p className="axis-caption">Measured CPU throughput · characters / second →</p>
+      <p className="axis-caption">Saved reference CPU throughput · workloads differ · characters / second →</p>
     </div>
   );
 }

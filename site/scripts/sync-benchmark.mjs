@@ -13,6 +13,7 @@ const copies = [
   ["CHANGELOG.md", "CHANGELOG.md"],
   ["CITATION.cff", "CITATION.cff"],
   ["CONTRIBUTING.md", "CONTRIBUTING.md"],
+  ["SECURITY.md", "SECURITY.md"],
   ["LICENSE", "LICENSE"],
   ["NOTICE", "NOTICE"],
   ["assets", "assets"],
@@ -38,25 +39,20 @@ for (const [source, destination] of copies) {
 const raw = fs.readFileSync(path.join(evidenceRoot, "results", "snapshot.json"), "utf8");
 const source = JSON.parse(raw);
 const taxonomy = new Map(source.breakdowns.taxonomy.map((row) => [`${row.dataset}|${row.label}`, row]));
-const catalog = fs
-  .readFileSync(path.join(evidenceRoot, "docs", "models.md"), "utf8")
-  .split("\n")
-  .filter((line) => line.startsWith("| ") && !line.startsWith("| Record"))
-  .map((line) => line.split("|").slice(1, -1).map((cell) => cell.trim()))
-  .filter((cells) => cells.length === 5)
-  .map((cells) => ({
-    id: cells[0],
-    family: cells[1],
-    upstream: cells[2].match(/\((https?:[^)]+)\)/)?.[1] ?? null,
-    revision: cells[3].replaceAll("`", ""),
-    flags: cells[4]
-  }));
+const catalog = JSON.parse(fs.readFileSync(path.join(evidenceRoot, "results", "model-catalog.json"), "utf8"));
+if (!Array.isArray(catalog) || new Set(catalog.map((entry) => entry.id)).size !== catalog.length) {
+  throw new Error("Invalid or duplicate model catalog records.");
+}
+const catalogById = new Map(catalog.map((entry) => [entry.id, entry]));
 
 const systems = source.breakdowns.systems.map((system) => {
   const name = system.id.slice(system.id.indexOf(":") + 1);
   const base = system.members[0].split("+")[0];
-  const meta = catalog.find((entry) => entry.id === base);
+  const meta = catalogById.get(base);
   const measurement = source.measurements.find((entry) => entry.model === base);
+  if (system.kind === "model" && (!meta?.family || !meta?.revision)) {
+    throw new Error(`Missing required model catalog metadata: ${base}`);
+  }
   return {
     ...system,
     name,

@@ -73,7 +73,7 @@ export default async function DetectorPage({ params }: { params: Promise<{ slug:
       </section>
       <section className="publication-panel">
         <div className="publication-panel-heading"><div><h2>Language coverage</h2><p>The overall leader can differ from the best choice for one language slice.</p></div></div>
-        <div className="publication-table-scroll"><table className="publication-table"><thead><tr><th>Language</th><th>Datasets</th><th>Fully hidden ↑</th><th>Detected ↑</th><th>Extra masking ↓</th></tr></thead><tbody>{languageScores.map(({language,score:languageScore}) => languageScore && <tr key={language}><td>{language === "en" ? "English" : language === "ru" ? "Russian" : "Multilingual"}</td><td className="number">{languageScore.sets}</td><td className="number metric-emphasis">{percent(languageScore.fullyHidden)}</td><td className="number">{percent(languageScore.detected)}</td><td className="number">{percent(languageScore.extra)}</td></tr>)}</tbody></table></div>
+        <div className="publication-table-scroll"><table className="publication-table"><thead><tr><th>Language</th><th>Datasets</th><th>Fully hidden ↑</th><th>Detected / any overlap ↑</th><th>Extra masking ↓</th></tr></thead><tbody>{languageScores.map(({language,score:languageScore}) => languageScore && <tr key={language}><td>{language === "en" ? "English" : language === "ru" ? "Russian" : "Multilingual"}</td><td className="number">{languageScore.sets}</td><td className="number metric-emphasis">{percent(languageScore.fullyHidden)}</td><td className="number">{percent(languageScore.detected)}</td><td className="number">{percent(languageScore.extra)}</td></tr>)}</tbody></table></div>
       </section>
       <section className="publication-panel publication-copy">
         <h2>Configuration, source and version</h2>
@@ -99,7 +99,7 @@ export default async function DetectorPage({ params }: { params: Promise<{ slug:
         <div className="publication-panel-heading"><div><h2>Results by dataset</h2><p>Complete masking is primary; detection shows whether any character overlapped.</p></div></div>
         <div className="publication-table-scroll">
           <table className="publication-table">
-            <thead><tr><th>Dataset</th><th>Gold annotations</th><th>Fully hidden ↑</th><th>Detected ↑</th><th>Extra masking ↓</th></tr></thead>
+            <thead><tr><th>Dataset</th><th>Gold annotations</th><th>Fully hidden ↑</th><th>Detected / any overlap ↑</th><th>Extra masking ↓</th></tr></thead>
             <tbody>
               {rows.map((row) => (
                 <tr key={row.dataset}>

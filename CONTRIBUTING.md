@@ -22,4 +22,4 @@ Do not describe a difference within the paired bootstrap interval as a proven ga
 
 Protocol changes, dataset snapshot changes and result releases are reviewed separately. Published result bundles remain immutable; corrections create a new release and [changelog](CHANGELOG.md) entry.
 
-This working copy has no public remote yet. Once it is published, use issues for non-sensitive corrections, pull requests for reviewable changes and the private route in [SECURITY.md](SECURITY.md) for vulnerabilities.
+Use GitHub issues for non-sensitive corrections, pull requests for reviewable changes and the private route in [SECURITY.md](SECURITY.md) for vulnerabilities. Do not include corpus text, predictions, credentials or other sensitive material in public reports.

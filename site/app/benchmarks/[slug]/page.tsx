@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import raw from "@/public/data/benchmark.json";
 import { BenchmarkExplorer } from "@/components/benchmark-explorer";
 import type { Benchmark } from "@/lib/benchmark";
+import { benchmarkForView } from "@/lib/route-data";
 import { pageMetadata } from "@/lib/seo";
 
 const pages = {
@@ -44,7 +45,7 @@ export default async function BenchmarkPage({ params }: { params: Promise<{ slug
   if (!page) notFound();
   return (
     <BenchmarkExplorer
-      data={raw as Benchmark}
+      data={benchmarkForView(raw as Benchmark, page.view)}
       initialView={page.view}
       initialTask={page.task}
       titleOverride={page.title}

@@ -11,6 +11,10 @@
     "prebuild": "node scripts/sync-benchmark.mjs",
     "build": "next build",
     "start": "next start",
+    "pretest": "node scripts/sync-benchmark.mjs",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "site-check": "pnpm test && pnpm lint && pnpm typecheck && pnpm build",
     "pretypecheck": "node scripts/sync-benchmark.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint ."
@@ -28,6 +32,7 @@
     "tailwind-merge": "3.6.0"
   },
   "devDependencies": {
+    "@playwright/test": "1.63.0",
     "@tailwindcss/postcss": "4.2.1",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",

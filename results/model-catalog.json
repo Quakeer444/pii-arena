@@ -1,0 +1,436 @@
+[
+  {
+    "id": "opf-ru",
+    "family": "opf",
+    "upstream": "https://huggingface.co/bbeglerov/opf-russian-pii-66k",
+    "revision": "ae813a5aaeb31def75e87064818f0b1fbc65e31f",
+    "flags": "source overlap: russian-pii-66k"
+  },
+  {
+    "id": "opf-ru-v2",
+    "family": "opf",
+    "upstream": "https://huggingface.co/pii-anon/opf-ru-v2",
+    "revision": "7975e895ed59a7c58e9ab2dbb7d739fd246086b4",
+    "flags": "-"
+  },
+  {
+    "id": "traciora",
+    "family": "opf",
+    "upstream": "https://huggingface.co/dzanozin/traciora-opf-ru-pii-v6",
+    "revision": "ea69da97d598b662ec447bcb8e0022abee0f4010",
+    "flags": "-"
+  },
+  {
+    "id": "apararti",
+    "family": "opf",
+    "upstream": "https://huggingface.co/apararti/privacy-filter-ru",
+    "revision": "a1650a1927ed8aceb9e15fa8ed13ffdf60cbf107",
+    "flags": "-"
+  },
+  {
+    "id": "openai-base",
+    "family": "opf",
+    "upstream": "https://huggingface.co/openai/privacy-filter",
+    "revision": "7ffa9a043d54d1be65afb281eddf0ffbe629385b",
+    "flags": "-"
+  },
+  {
+    "id": "pplx",
+    "family": "pplx",
+    "upstream": "https://huggingface.co/perplexity-ai/pplx-pii-masking",
+    "revision": "f1f90a53823f5df0a1344c1e137d9fffdaab54d6",
+    "flags": "-"
+  },
+  {
+    "id": "openmed-multilingual",
+    "family": "hf",
+    "upstream": "https://huggingface.co/OpenMed/privacy-filter-multilingual-v2",
+    "revision": "0d0c0430fa386435ace1d9f842f0f966903a9ac8",
+    "flags": "source overlap: nemotron-pii, gretel-multi, privy"
+  },
+  {
+    "id": "openmed-nemotron",
+    "family": "hf",
+    "upstream": "https://huggingface.co/OpenMed/privacy-filter-nemotron",
+    "revision": "f6f3a633dc6fc96a644d20218633a98ac43f6c71",
+    "flags": "source overlap: nemotron-pii"
+  },
+  {
+    "id": "gliner-nvidia",
+    "family": "gliner",
+    "upstream": "https://huggingface.co/nvidia/gliner-PII",
+    "revision": "bd23e8ef4425fd04e34c5204ab49ffaa706eae79",
+    "flags": "source overlap: nemotron-pii"
+  },
+  {
+    "id": "gliner-urchade",
+    "family": "gliner",
+    "upstream": "https://huggingface.co/urchade/gliner_multi_pii-v1",
+    "revision": "1fcf13e85f4eef5394e1fcd406cf2ca9ea82351d",
+    "flags": "-"
+  },
+  {
+    "id": "gliner2-fastino",
+    "family": "gliner2",
+    "upstream": "https://huggingface.co/fastino/gliner2-privacy-filter-PII-multi",
+    "revision": "c153999da5f4c509df4322b0c6a1baf3d2c284d7",
+    "flags": "-"
+  },
+  {
+    "id": "gliner2-hivetrace-omni",
+    "family": "gliner2",
+    "upstream": "https://huggingface.co/hivetrace/gliner-guard-omni",
+    "revision": "763f8aa9a7714dd2c3264f3751acdd5d854c5ac4",
+    "flags": "source overlap: nemotron-pii, gretel-multi"
+  },
+  {
+    "id": "gliner2-hivetrace-uni",
+    "family": "gliner2",
+    "upstream": "https://huggingface.co/hivetrace/gliner-guard-uniencoder",
+    "revision": "5644cdb7c953463fa3a370e76617c03c2dd29f92",
+    "flags": "source overlap: nemotron-pii, gretel-multi"
+  },
+  {
+    "id": "gliner2-vladlinv",
+    "family": "gliner2",
+    "upstream": "https://huggingface.co/vladlinv/ru-pii-ner-gliner2.5",
+    "revision": "d4c05667b10d8e8db0f0626934135731d0530983",
+    "flags": "-"
+  },
+  {
+    "id": "ru-pii-ner",
+    "family": "rupii",
+    "upstream": "https://huggingface.co/vladlinv/ru-pii-ner",
+    "revision": "3b509ebbcec894e522adef32560644017832deea",
+    "flags": "-"
+  },
+  {
+    "id": "ru-legal-ner",
+    "family": "hf",
+    "upstream": "https://huggingface.co/LLAIMlegal/ru-legal-ner",
+    "revision": "c0313a42ac147ccc38f5c3b0b3e77cab53208683",
+    "flags": "-"
+  },
+  {
+    "id": "pii-shield-onnx",
+    "family": "onnx",
+    "upstream": "https://huggingface.co/astifer/pii-shield-onnx",
+    "revision": "280f050f10a73db88fa9b864e8ca25350e73941e",
+    "flags": "-"
+  },
+  {
+    "id": "davlan-xlmr",
+    "family": "hf",
+    "upstream": "https://huggingface.co/Davlan/xlm-roberta-base-ner-hrl",
+    "revision": "253f557bd8249b8515114cfd7f71974fe5fa4d2f",
+    "flags": "-"
+  },
+  {
+    "id": "davlan-mbert",
+    "family": "hf",
+    "upstream": "https://huggingface.co/Davlan/bert-base-multilingual-cased-ner-hrl",
+    "revision": "e756de7f7b8f64fea0c3d7c3872f1322fab747b1",
+    "flags": "-"
+  },
+  {
+    "id": "ner-ru-gherman",
+    "family": "hf",
+    "upstream": "https://huggingface.co/Gherman/bert-base-NER-Russian",
+    "revision": "fc6b2c5a2c5d7c82da7416f7fd9c055159bbb984",
+    "flags": "-"
+  },
+  {
+    "id": "ner-ru-gherman-onnx",
+    "family": "onnx",
+    "upstream": "https://huggingface.co/onnx-community/bert-base-NER-Russian-ONNX",
+    "revision": "2bd219a78a06657c59fa8c2540ccbad703972e7c",
+    "flags": "mirror of ner-ru-gherman"
+  },
+  {
+    "id": "ner-ru-yqelz",
+    "family": "hf",
+    "upstream": "https://huggingface.co/yqelz/xml-roberta-large-ner-russian",
+    "revision": "4e03a3a079f5bfdb678eb9ee01235e25a7aef5f6",
+    "flags": "-"
+  },
+  {
+    "id": "fef2-secret-ru",
+    "family": "hf",
+    "upstream": "https://huggingface.co/fef2/ner_rus_bert-secret_detection",
+    "revision": "52b5b0745aac14f73fcf2ac0f91d9b5001a85ae4",
+    "flags": "-"
+  },
+  {
+    "id": "nym-base",
+    "family": "hf",
+    "upstream": "https://huggingface.co/Wismut/nym-pii-multilingual",
+    "revision": "0ed0242d67a30ca6a83e5f118506ff1e1daf83ca",
+    "flags": "source overlap: nym-ru, nym-en, nym-multi"
+  },
+  {
+    "id": "nym-small",
+    "family": "onnx",
+    "upstream": "https://huggingface.co/Wismut/nym-pii-multilingual-small",
+    "revision": "4348999cd3c2e20c49615e9af7c6bbb45b64cd85",
+    "flags": "source overlap: nym-ru, nym-en, nym-multi"
+  },
+  {
+    "id": "kalyan-ettin",
+    "family": "hf",
+    "upstream": "https://huggingface.co/kalyan-ks/ettin-68m-nemotron-pii",
+    "revision": "500262a2aaf913825ef750ef255c3fe437cd8e64",
+    "flags": "source overlap: nemotron-pii"
+  },
+  {
+    "id": "gravitee-small",
+    "family": "hf",
+    "upstream": "https://huggingface.co/gravitee-io/bert-small-pii-detection",
+    "revision": "f8c27a85c51c0168f07b9dcf00265bf0a4097939",
+    "flags": "-"
+  },
+  {
+    "id": "bardsai-eu",
+    "family": "onnx",
+    "upstream": "https://huggingface.co/bardsai/eu-pii-anonimization-multilang",
+    "revision": "0e72e19f030ed4e661b1673e549af8e0dd176386",
+    "flags": "-"
+  },
+  {
+    "id": "mmbert32k",
+    "family": "hf",
+    "upstream": "https://huggingface.co/llm-semantic-router/mmbert32k-pii-detector-merged",
+    "revision": "d22c818cf9f2a8bfbbed8508cb417dc16a1ba3ea",
+    "flags": "-"
+  },
+  {
+    "id": "openai-base-onnx",
+    "family": "onnx",
+    "upstream": "https://huggingface.co/RedHatAI/privacy-filter",
+    "revision": "9b7e2f5c794da2c156bd9583bf8e2f5f6bdfd18b",
+    "flags": "mirror of openai-base"
+  },
+  {
+    "id": "gliner-multi-v21",
+    "family": "gliner",
+    "upstream": "https://huggingface.co/urchade/gliner_multi-v2.1",
+    "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+    "flags": "-"
+  },
+  {
+    "id": "gliner-multi-v21-ru",
+    "family": "gliner",
+    "upstream": "https://huggingface.co/urchade/gliner_multi-v2.1",
+    "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+    "flags": "Russian labels"
+  },
+  {
+    "id": "gliner-pii-edge",
+    "family": "gliner",
+    "upstream": "https://huggingface.co/knowledgator/gliner-pii-edge-v1.0",
+    "revision": "9b7f39b0a2da971a5beea78d35f1539d4009c891",
+    "flags": "-"
+  },
+  {
+    "id": "gliner-pii-base",
+    "family": "gliner",
+    "upstream": "https://huggingface.co/knowledgator/gliner-pii-base-v1.0",
+    "revision": "61726e0ad791dcab3e29339bbec3ad42ded65641",
+    "flags": "-"
+  },
+  {
+    "id": "gliner-stream-pii",
+    "family": "gliner",
+    "upstream": "https://huggingface.co/knowledgator/gliner-stream-pii-v1.0",
+    "revision": "e871777dc4b3b688747a0433fff8d94a36fcc7b0",
+    "flags": "disputed scope"
+  },
+  {
+    "id": "nuner-zero",
+    "family": "gliner",
+    "upstream": "https://huggingface.co/numind/NuNER_Zero",
+    "revision": "c90187673f464518dca09f41689184ed6976242c",
+    "flags": "-"
+  },
+  {
+    "id": "gliner2-large",
+    "family": "gliner2",
+    "upstream": "https://huggingface.co/fastino/gliner2-large-v1",
+    "revision": "6a498b5a28ec3908bbc5277aeb47d22bcfc02f33",
+    "flags": "-"
+  },
+  {
+    "id": "gliner25-fastino",
+    "family": "gliner2",
+    "upstream": "https://huggingface.co/fastino/gliner2.5-multi-v1",
+    "revision": "aaecfe45db1d828c963717054ccb868e8ad1f1d5",
+    "flags": "-"
+  },
+  {
+    "id": "gliner25-fastino-ru",
+    "family": "gliner2",
+    "upstream": "https://huggingface.co/fastino/gliner2.5-multi-v1",
+    "revision": "aaecfe45db1d828c963717054ccb868e8ad1f1d5",
+    "flags": "Russian labels"
+  },
+  {
+    "id": "gliner-nvidia-ru",
+    "family": "gliner",
+    "upstream": "https://huggingface.co/nvidia/gliner-PII",
+    "revision": "bd23e8ef4425fd04e34c5204ab49ffaa706eae79",
+    "flags": "Russian labels; source overlap: nemotron-pii"
+  },
+  {
+    "id": "gliner-urchade-ru",
+    "family": "gliner",
+    "upstream": "https://huggingface.co/urchade/gliner_multi_pii-v1",
+    "revision": "1fcf13e85f4eef5394e1fcd406cf2ca9ea82351d",
+    "flags": "Russian labels"
+  },
+  {
+    "id": "gliner2-fastino-ru",
+    "family": "gliner2",
+    "upstream": "https://huggingface.co/fastino/gliner2-privacy-filter-PII-multi",
+    "revision": "c153999da5f4c509df4322b0c6a1baf3d2c284d7",
+    "flags": "Russian labels"
+  },
+  {
+    "id": "gliner2-hivetrace-omni-ru",
+    "family": "gliner2",
+    "upstream": "https://huggingface.co/hivetrace/gliner-guard-omni",
+    "revision": "763f8aa9a7714dd2c3264f3751acdd5d854c5ac4",
+    "flags": "Russian labels; source overlap: nemotron-pii, gretel-multi"
+  },
+  {
+    "id": "gliner2-hivetrace-uni-ru",
+    "family": "gliner2",
+    "upstream": "https://huggingface.co/hivetrace/gliner-guard-uniencoder",
+    "revision": "5644cdb7c953463fa3a370e76617c03c2dd29f92",
+    "flags": "Russian labels; source overlap: nemotron-pii, gretel-multi"
+  },
+  {
+    "id": "gliner2-vladlinv-ru",
+    "family": "gliner2",
+    "upstream": "https://huggingface.co/vladlinv/ru-pii-ner-gliner2.5",
+    "revision": "d4c05667b10d8e8db0f0626934135731d0530983",
+    "flags": "Russian labels"
+  },
+  {
+    "id": "opf-kz-ru",
+    "family": "opf",
+    "upstream": "https://huggingface.co/QOSIkz/kz-privacy-filter-v1",
+    "revision": "b804356ff8ac827fe2b046e8d3d0be2720c6b148",
+    "flags": "-"
+  },
+  {
+    "id": "natasha",
+    "family": "natasha",
+    "upstream": null,
+    "revision": "1.6.0",
+    "flags": "-"
+  },
+  {
+    "id": "spacy-ru-lg",
+    "family": "spacy",
+    "upstream": "https://huggingface.co/spacy/ru_core_news_lg",
+    "revision": "fa0b3a0086b7b0d6a424d999ce25480bd67dd455",
+    "flags": "-"
+  },
+  {
+    "id": "spacy-alrosait",
+    "family": "spacy",
+    "upstream": "https://huggingface.co/alrosait/spacy_ru_core_news_lg_pii",
+    "revision": "8e0d9e49ae62dcb0772f8d8599ed3ffe28d43d7d",
+    "flags": "source overlap: scanpatch, alrosait"
+  },
+  {
+    "id": "stanza-ru",
+    "family": "stanza",
+    "upstream": "https://huggingface.co/stanfordnlp/stanza-ru",
+    "revision": "dcbf023decb5a319fff84780779052ed974b9013",
+    "flags": "-"
+  },
+  {
+    "id": "gitleaks",
+    "family": "leaks",
+    "upstream": "https://github.com/gitleaks/gitleaks",
+    "revision": "8.30.1",
+    "flags": "source overlap: secrets-rules"
+  },
+  {
+    "id": "betterleaks",
+    "family": "leaks",
+    "upstream": "https://github.com/betterleaks/betterleaks",
+    "revision": "95237cf",
+    "flags": "source overlap: secrets-rules"
+  },
+  {
+    "id": "rules-ru",
+    "family": "rules",
+    "upstream": null,
+    "revision": "1.0",
+    "flags": "-"
+  },
+  {
+    "id": "presidio-ru",
+    "family": "presidio",
+    "upstream": null,
+    "revision": "presidio-analyzer 2.2.364, presidio-ru-recognizers 0.1.0, ru_core_news_sm 3.8.0",
+    "flags": "-"
+  },
+  {
+    "id": "trufflehog",
+    "family": "leaks",
+    "upstream": "https://github.com/trufflesecurity/trufflehog",
+    "revision": "3.97.4",
+    "flags": "-"
+  },
+  {
+    "id": "detect-secrets",
+    "family": "leaks",
+    "upstream": "https://github.com/Yelp/detect-secrets",
+    "revision": "1.5.0",
+    "flags": "-"
+  },
+  {
+    "id": "noseyparker",
+    "family": "leaks",
+    "upstream": "https://github.com/praetorian-inc/noseyparker",
+    "revision": "0.24.0",
+    "flags": "-"
+  },
+  {
+    "id": "titus",
+    "family": "leaks",
+    "upstream": "https://github.com/praetorian-inc/titus",
+    "revision": "v1.2.9",
+    "flags": "source overlap: secrets-rules"
+  },
+  {
+    "id": "kingfisher",
+    "family": "leaks",
+    "upstream": "https://github.com/mongodb/kingfisher",
+    "revision": "2.1.0",
+    "flags": "source overlap: secrets-rules"
+  },
+  {
+    "id": "credsweeper",
+    "family": "leaks",
+    "upstream": "https://github.com/Samsung/CredSweeper",
+    "revision": "1.18.2",
+    "flags": "source overlap: creddata"
+  },
+  {
+    "id": "credsweeper-noml",
+    "family": "leaks",
+    "upstream": "https://github.com/Samsung/CredSweeper",
+    "revision": "1.18.2",
+    "flags": "source overlap: creddata"
+  },
+  {
+    "id": "deepsecrets",
+    "family": "leaks",
+    "upstream": "https://github.com/ntoskernel/deepsecrets",
+    "revision": "2.0.1",
+    "flags": "-"
+  }
+]

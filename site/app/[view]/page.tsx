@@ -3,11 +3,13 @@ import { notFound } from "next/navigation";
 import raw from "@/public/data/benchmark.json";
 import { BenchmarkExplorer } from "@/components/benchmark-explorer";
 import type { Benchmark } from "@/lib/benchmark";
+import { benchmarkForView } from "@/lib/route-data";
 import { benchmarkDatasetJsonLd, jsonLd } from "@/lib/structured-data";
 import { pageMetadata, type BenchmarkView, VIEW_METADATA } from "@/lib/seo";
 
 const views = Object.keys(VIEW_METADATA) as BenchmarkView[];
-export const dynamicParams = false;
+// Next 16 otherwise logs NoFallbackError for valid query-bearing client transitions.
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return views.map((view) => ({ view }));
@@ -23,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ view: str
 export default async function ViewPage({ params }: { params: Promise<{ view: string }> }) {
   const { view } = await params;
   if (!views.includes(view as BenchmarkView)) notFound();
-  const data = raw as Benchmark;
+  const data = benchmarkForView(raw as Benchmark, view);
   return (
     <>
       {view === "datasets" && (

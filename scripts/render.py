@@ -476,6 +476,7 @@ def markdown():
     datasets += ['', '## Reconstruction status', '', 'The public Leak Museum route is tested from source download through CPU inference and scoring. The following 22 historical cuts have no retained raw-source revision and cannot be reconstructed exactly from an upstream revision alone:', '', ', '.join(f'`{name}`' for name in missing_revision) + '.', '', 'A retained aggregate raw hash identifies the archived bytes where available but does not make a newer upstream download equivalent. Other dependency and acquisition gaps are documented in [source acquisition](sources.md).', '', 'See [source acquisition and conversion caveats](sources.md), [license notices](../LICENSES/README.md), [catalog.json](../datasets/catalog.json) and [samples.json](../datasets/samples.json). A source publication mode of `files` in archived metadata describes the original experiment; this repository distributes no corpus text.','']
     (ROOT/'docs/datasets.md').write_text('\n'.join(datasets))
     models=['# Detector catalog','','62 execution records: 50 model configurations (40 distinct weights, eight Russian-label variants, two mirrors), ten secret-scanner configurations, one rules layer and Presidio. A catalog entry does not imply a completed run. The `cpu` catalog flag controls the planned CPU sweep, not a universal capability claim.','','| Record | Family | Upstream | Pinned revision/version | Flags |','|---|---|---|---|---|']
+    model_catalog=[]
     for n,c in MODELS.items():
         repo=c['repo'];url=('https://'+repo if repo.startswith('github.com/') else 'https://huggingface.co/'+repo)
         upstream=f'[{repo}]({url})' if ('/' in repo and ' + ' not in repo and not repo.startswith(('SCRIPTS/','benchmark/'))) else repo.replace('SCRIPTS/','benchmark/')
@@ -485,10 +486,12 @@ def markdown():
         if c.get('disputed'):flags.append('disputed scope')
         if c.get('contaminated'):flags.append('source overlap: '+', '.join(c['contaminated']))
         models.append(f"| {n} | {c['family']} | {upstream} | `{c['revision']}` | {'; '.join(flags) or '-'} |")
+        model_catalog.append({'id':n,'family':c['family'],'upstream':url if '/' in repo and ' + ' not in repo and not repo.startswith(('SCRIPTS/','benchmark/')) else None,'revision':c['revision'],'flags':'; '.join(flags) or '-'})
     models += ['','## Training-source evidence','','`train` is a conservative source-overlap exclusion, not proof of memorization. An empty list is absence of known evidence, not proof of independence. Exclusions extend to other cuts and corrupted copies of the same source and to identical-weight records.','']
     for n,c in MODELS.items():models.append(f"- **{n}:** {c.get('train','Not disclosed.')}")
     models += ['','Exact execution settings are in [models.toml](../benchmark/models.toml), observed runtimes in [run-inventory.json](../results/run-inventory.json), and measured coverage in [by-language.md](../results/by-language.md). Model and scanner software licenses are controlled by their upstream projects; this project\'s MIT license does not relicense their weights.','']
     (ROOT/'docs/models.md').write_text('\n'.join(models))
+    (ROOT/'results/model-catalog.json').write_text(json.dumps(model_catalog,indent=2)+'\n')
 
 
 def csv_file(name, rows):

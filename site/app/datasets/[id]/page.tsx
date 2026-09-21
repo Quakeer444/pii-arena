@@ -72,14 +72,14 @@ export default async function DatasetPage({ params }: { params: Promise<{ id: st
           <div className="publication-panel-heading"><div><h2>Detector outcomes</h2><p>Sorted by fully hidden annotations. Training-source overlaps are excluded.</p></div></div>
           <div className="publication-table-scroll">
             <table className="publication-table">
-              <thead><tr><th>Detector</th><th>Family</th><th>Fully hidden ↑</th><th>Untouched ↓</th><th>Extra masking ↓</th><th>Char F1 ↑</th></tr></thead>
+              <thead><tr><th>Detector</th><th>Family</th><th>Fully hidden ↑</th><th>Detected / any overlap ↑</th><th>Extra masking ↓</th><th>Char F1 ↑</th></tr></thead>
               <tbody>
                 {scores.map((score) => (
                   <tr key={score.id}>
                     <td><Link href={`/detectors/${detectorSlug(score.id)}`}>{score.name}</Link></td>
                     <td>{score.family.toUpperCase()}</td>
                     <td className="number">{percent(score.fullyHidden)}</td>
-                    <td className="number">{percent(score.untouched)}</td>
+                    <td className="number">{percent(score.detected)}</td>
                     <td className="number">{percent(score.extra)}</td>
                     <td className="number">{score.f1?.toFixed(3) ?? "—"}</td>
                   </tr>
