@@ -227,7 +227,8 @@ a { text-decoration:none; }
 .chart-tooltip b { font-weight:500; color:var(--foreground); }
 .table-controls { display:flex; align-items:center; gap:9px; padding:0 18px 15px; flex-wrap:wrap; }
 .leaderboard-panel .panel-heading { padding-bottom:8px; }
-.leaderboard-controls { gap:6px; padding-bottom:9px; flex-wrap:nowrap; overflow-x:auto; scrollbar-width:thin; }
+/* Positioned so Radix's hidden form inputs stay clipped by the strip before hydration. */
+.leaderboard-controls { position:relative; gap:6px; padding-bottom:9px; flex-wrap:nowrap; overflow-x:auto; scrollbar-width:thin; }
 .leaderboard-controls .search-box { min-width:150px; width:150px; padding:3px 6px; font-size:.75rem; }
 .leaderboard-controls .search-box input { font-size:.75rem; }
 .leaderboard-controls>.pick { min-height:28px!important; height:28px!important; padding-inline:8px!important; font-size:.75rem!important; flex:none; }

@@ -405,12 +405,16 @@ function Protection({
 }) {
   const rows = useMemo(() => {
     const scores = aggregate(data, datasetIds, "composition");
-    return configurations.flatMap((config) => {
-      const score = scores.find((row) => row.id === `composition:${config.id}`);
-      return score
-        ? [{ ...config, ...score, title: config.name, kind: config.kind }]
-        : [];
-    });
+    return configurations
+      .flatMap((config) => {
+        const score = scores.find(
+          (row) => row.id === `composition:${config.id}`,
+        );
+        return score
+          ? [{ ...config, ...score, title: config.name, kind: config.kind }]
+          : [];
+      })
+      .sort((a, b) => (b.fullyHidden ?? -1) - (a.fullyHidden ?? -1));
   }, [data, datasetIds]);
   return (
     <Card
@@ -540,8 +544,10 @@ function Domains({
                 key={domain}
                 title={`${domain === "pii" ? "PII datasets" : "Secrets datasets"}: ${percent(row[domain])}`}
               >
-                <i style={{ width: `${row[domain] ?? 0}%` }} />
-                <span className="mono">{percent(row[domain], 1)}</span>
+                <span>
+                  <i style={{ width: `${row[domain] ?? 0}%` }} />
+                </span>
+                <b className="mono">{percent(row[domain], 1)}</b>
               </div>
             ))}
           </div>

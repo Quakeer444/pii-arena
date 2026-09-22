@@ -2,10 +2,13 @@ import { expect, test } from "@playwright/test";
 
 test("deep links preserve the complete analysis through navigation", async ({ page }) => {
   await page.goto("/leaderboard?lang=ru&task=pii&compare=model%3Agliner2-fastino%2Cmodel%3Applx&difficulty=Hard&category=contacts&domainQuery=fast");
-  await expect(page.getByLabel("Current analysis scope")).toContainText("Russian");
-  await expect(page.getByLabel("Current analysis scope")).toContainText("PII datasets");
+  // Leaderboard filters scope only its table; the dashboard scope stays page-wide.
+  await expect(page.getByRole("combobox", { name: "Language" })).toContainText("Russian");
+  await expect(page.getByLabel("Current analysis scope")).toContainText("All languages");
+  await expect(page.getByLabel("Current analysis scope")).toContainText("PII + secrets");
   await page.getByRole("link", { name: "Compare detectors" }).click();
   await expect(page).toHaveURL(/\/compare\?.*lang=ru/);
+  await expect(page.getByLabel("Current analysis scope")).toContainText("Russian");
   await expect(page).toHaveURL(/difficulty=Hard/);
   await expect(page.getByText("shared datasets")).toBeVisible();
   await page.goBack();

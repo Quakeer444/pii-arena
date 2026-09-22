@@ -163,7 +163,10 @@ function Pick({
   return (
     <Select value={value} onValueChange={onChange}>
       <SelectTrigger aria-label={label} className={`pick ${className}`}>
-        <SelectValue />
+        {/* Explicit text keeps the value visible before hydration. */}
+        <SelectValue>
+          {items.find((i) => i.value === value)?.label}
+        </SelectValue>
       </SelectTrigger>
       <SelectContent position="popper">
         {items.map((i) => (
@@ -428,6 +431,18 @@ export function BenchmarkExplorer({
     () => new Set(activeDatasets.map((d) => d.id)),
     [activeDatasets],
   );
+  // Leaderboard filters scope only the table; the dashboard keeps the page's own task.
+  const baseDatasets = useMemo(
+    () =>
+      data.datasets.filter(
+        (d) => initialTask === "all" || d.kind === initialTask,
+      ),
+    [data, initialTask],
+  );
+  const baseIds = useMemo(
+    () => new Set(baseDatasets.map((d) => d.id)),
+    [baseDatasets],
+  );
   const scores = useMemo(() => aggregate(data, ids), [data, ids]);
   const rows = useMemo(
     () =>
@@ -553,8 +568,11 @@ export function BenchmarkExplorer({
     key: K,
     value: DecisionDashboardState[K],
   ) => setDashboard((current) => ({ ...current, [key]: value }));
+  const tableOnly = view === "leaderboard";
+  const scopeDatasets = tableOnly ? baseDatasets : activeDatasets;
+  const scopeKind = tableOnly ? initialTask : task;
   const scopeLanguage =
-    language === "all"
+    tableOnly || language === "all"
       ? "All languages"
       : language === "en"
         ? "English"
@@ -562,12 +580,12 @@ export function BenchmarkExplorer({
           ? "Russian"
           : "Multilingual";
   const scopeTask =
-    task === "all"
+    scopeKind === "all"
       ? "PII + secrets"
-      : task === "pii"
+      : scopeKind === "pii"
         ? "PII datasets"
         : "Secrets datasets";
-  const scopeGold = activeDatasets.reduce(
+  const scopeGold = scopeDatasets.reduce(
     (sum, item) => sum + item.gold_spans,
     0,
   );
@@ -764,7 +782,7 @@ export function BenchmarkExplorer({
                   {scopeLanguage}
                 </span>
                 <span>{scopeTask}</span>
-                <span>{activeDatasets.length} datasets</span>
+                <span>{scopeDatasets.length} datasets</span>
                 <span>{n(scopeGold)} normalized annotations</span>
                 <span>
                   {view === "leaderboard" ||
@@ -779,7 +797,7 @@ export function BenchmarkExplorer({
             {view === "leaderboard" && (
               <DecisionDashboard
                 data={data}
-                datasetIds={ids}
+                datasetIds={baseIds}
                 state={dashboard}
                 onChange={changeDashboard}
               />
@@ -799,7 +817,7 @@ export function BenchmarkExplorer({
               <>
                 <Panel
                   title="Detector leaderboard"
-                  subtitle={`${rows.length} detector setups · sorted by ${sortLabels[sort]} ${ascending ? "ascending" : "descending"}`}
+                  subtitle={`${rows.length} detector setups · ${ids.size} datasets · sorted by ${sortLabels[sort]} ${ascending ? "ascending" : "descending"}`}
                   action={
                     <div className="panel-actions">
                       <button
@@ -1063,9 +1081,9 @@ export function BenchmarkExplorer({
                       {
                         label: "Language groups",
                         value: n(
-                          new Set(activeDatasets.map((d) => d.lang)).size,
+                          new Set(scopeDatasets.map((d) => d.lang)).size,
                         ),
-                        sub: [...new Set(activeDatasets.map((d) => d.lang))]
+                        sub: [...new Set(scopeDatasets.map((d) => d.lang))]
                           .map(
                             (lang) =>
                               ({
@@ -1080,7 +1098,7 @@ export function BenchmarkExplorer({
                       {
                         label: "Text rows tested",
                         value: n(
-                          activeDatasets.reduce((a, d) => a + d.rows, 0),
+                          scopeDatasets.reduce((a, d) => a + d.rows, 0),
                         ),
                         sub: `${n(data.meta.runs)} saved prediction runs overall`,
                         icon: Braces,
@@ -1088,7 +1106,7 @@ export function BenchmarkExplorer({
                       {
                         label: "Labeled sensitive items",
                         value: n(
-                          activeDatasets.reduce((a, d) => a + d.gold_spans, 0),
+                          scopeDatasets.reduce((a, d) => a + d.gold_spans, 0),
                         ),
                         sub: "Values expanded to word boundaries",
                         icon: ShieldCheck,
