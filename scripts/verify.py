@@ -14,7 +14,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
-IGNORED = {'.local', '.venv', '.git', '.cache', '__pycache__', 'node_modules', '.next', 'data', 'evidence'}
+IGNORED = {'.local', '.venv', '.claude', '.cursor', '.git', '.cache', '__pycache__', 'node_modules', '.next', 'data', 'evidence'}
 PUBLIC_DIRS = {'assets', 'benchmark', 'datasets', 'docs', 'results', 'scripts', 'tests', 'site', 'LICENSES', '.github'}
 PUBLIC_FILES = {'README.md', 'LICENSE', 'NOTICE', 'AGENTS.md', 'CONTRIBUTING.md', 'CITATION.cff',
                 'CHANGELOG.md', 'SECURITY.md', '.gitignore', '.gitattributes', '.python-version',

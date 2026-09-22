@@ -51,6 +51,21 @@ changed: every number below is read from the same snapshot.
 - The CPU speed note in the README, the CPU figure and `results/detectors.md`
   now says the shared machine group is saved throughput. Different dataset
   counts are not a same-input comparison or request latency.
+- New `scripts/onboarding.py` prepares a local rerun: `inventory`, `prepare`,
+  `verify` and `plan`. It imports any of the 41 frozen corpora from an
+  authorized workspace, stages each one and checks CSV SHA-256, schema, IDs,
+  annotation offsets, counts and metadata language/task before promoting it.
+  Mismatched inputs are never overwritten. Only Leak Museum has an automatic
+  download recipe. The guide is `docs/run-benchmarks.md`, the design and release
+  gates are in `docs/benchmark-onboarding-design.md`, and
+  `.github/workflows/onboarding.yml` runs the offline tests plus a clean-checkout
+  Leak Museum preparation.
+- Onboarding character totals count each CRLF as one character, as the
+  published catalog does. The four hash-correct datasets that contain CR
+  (`kiji-en`, `corrupt-hivetrace`, `secrets-issues`, `corrupt-secrets-issues`)
+  no longer fail the check. Published catalog numbers are unchanged.
+- `scripts/verify.py` skips the local editor folders `.claude` and `.cursor`, so
+  a working checkout passes the publication boundary check.
 
 ## 1.0.3 - 2026-09-19
 
