@@ -123,7 +123,7 @@ A `-ru` suffix switches zero-shot labels to Russian with the same weights, so th
 
 ## Measured CPU speed
 
-AMD EPYC 9K84, 16 threads per process, 24 concurrent workers. Batch throughput under that load, not the latency of one request. Amortized ms/row quantiles are the per-row share of measured compute, not individually timed requests.
+AMD EPYC 9K84, 16 threads per process, 24 concurrent workers. Saved batch throughput, not request latency. Dataset counts differ, so these rows are not a controlled same-input comparison. Amortized ms/row quantiles are the per-row share of measured compute, not individually timed requests.
 
 ![Measured CPU throughput per detector](../assets/cpu-speed.svg)
 

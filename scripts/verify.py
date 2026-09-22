@@ -452,7 +452,7 @@ def main():
     check_anchors(files())
     check_readme_blocks()
     check_reports()
-    for command in ([sys.executable,'benchmark/selftest.py'],[sys.executable,'benchmark/rules_ru.py','--selftest'],[sys.executable,'tests/test_publication.py'],[sys.executable,'tests/test_stratify.py'],[sys.executable,'tests/test_stratify_frozen.py'],[sys.executable,'tests/test_usage_example.py'],[sys.executable,'tests/test_export_swap.py'],[sys.executable,'tests/test_scanner_offsets.py'],[sys.executable,'tests/test_scan_gate.py'],[sys.executable,'tests/test_scoring_contract.py']):
+    for command in ([sys.executable,'benchmark/selftest.py'],[sys.executable,'benchmark/rules_ru.py','--selftest'],[sys.executable,'tests/test_publication.py'],[sys.executable,'tests/test_stratify.py'],[sys.executable,'tests/test_stratify_frozen.py'],[sys.executable,'tests/test_usage_example.py'],[sys.executable,'tests/test_evaluate_strict.py'],[sys.executable,'tests/test_export_swap.py'],[sys.executable,'tests/test_scanner_offsets.py'],[sys.executable,'tests/test_scan_gate.py'],[sys.executable,'tests/test_scoring_contract.py']):
         subprocess.run(command,cwd=ROOT,check=True)
     print('Publication verification passed.')
 

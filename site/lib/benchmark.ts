@@ -20,6 +20,12 @@ export type Dataset = {
     bytes?: number;
   } | null;
 };
+export type MemberProvenance = {
+  member: string;
+  revision: string | null;
+  upstream: string | null;
+  flags: string;
+};
 export type System = {
   id: string;
   name: string;
@@ -31,6 +37,7 @@ export type System = {
   upstream: string | null;
   revision: string | null;
   flags: string;
+  participants?: MemberProvenance[];
 };
 export type CategoryResult = {
   id: string;
@@ -59,6 +66,15 @@ export type RecordRow = {
   positiveRows: number;
   residualRows: number;
   categories: CategoryResult[];
+  adapterStatus?: string;
+  adapterPolicy?: string;
+  unresolvedSpans?: number;
+};
+export type AdapterSlice = {
+  status: string;
+  policy: string;
+  runs: number;
+  unresolvedSpans: number;
 };
 export type Speed = {
   device: string;
@@ -132,8 +148,12 @@ export type Score = System & {
   cpu: number | null;
   gpu: number | null;
   datasetIds: string[];
+  adapterSlices: AdapterSlice[];
+  adapterInventory: AdapterSlice[];
 };
 export type ExportContext = {
+  view?: string;
+  rowOrder?: string;
   language: string;
   task: string;
   dataset: string;
@@ -203,6 +223,44 @@ export function speedFor(data: Benchmark, s: System, device: "cpu" | "cuda") {
     null
   );
 }
+const ADAPTER_STATUS_LABEL: Record<string, string> = {
+  "corrected-rerun": "corrected rerun",
+  "verified-unchanged": "verified unchanged",
+  "historical-pre-fix": "historical pre-fix",
+};
+export function summarizeAdapterRuns(
+  rows: Pick<RecordRow, "adapterStatus" | "adapterPolicy" | "unresolvedSpans">[],
+): AdapterSlice[] {
+  const groups = new Map<string, AdapterSlice>();
+  for (const row of rows) {
+    if (!row.adapterStatus) continue;
+    const policy = row.adapterPolicy ?? "";
+    const key = `${row.adapterStatus}\0${policy}`;
+    const item = groups.get(key) ?? {
+      status: row.adapterStatus,
+      policy,
+      runs: 0,
+      unresolvedSpans: 0,
+    };
+    item.runs += 1;
+    item.unresolvedSpans += row.unresolvedSpans ?? 0;
+    groups.set(key, item);
+  }
+  return [...groups.values()].sort(
+    (a, b) => a.status.localeCompare(b.status) || a.policy.localeCompare(b.policy),
+  );
+}
+export function adapterSliceText(slice: AdapterSlice) {
+  const label = ADAPTER_STATUS_LABEL[slice.status] ?? slice.status;
+  const policy = slice.policy ? ` · ${slice.policy}` : "";
+  return `${label}${policy} · ${slice.runs} runs · ${slice.unresolvedSpans} unresolved spans`;
+}
+export function adapterNote(score: Pick<Score, "adapterSlices" | "adapterInventory">) {
+  if (!score.adapterSlices.length && !score.adapterInventory.length) return null;
+  const slice = score.adapterSlices.map(adapterSliceText).join("; ");
+  const inventory = score.adapterInventory.map(adapterSliceText).join("; ");
+  return { slice, inventory: inventory !== slice ? inventory : null };
+}
 export function aggregate(
   data: Benchmark,
   ids: Set<string>,
@@ -217,7 +275,13 @@ export function aggregate(
       const sum = (
         k: Exclude<
           keyof RecordRow,
-          "system" | "dataset" | "train" | "categories"
+          | "system"
+          | "dataset"
+          | "train"
+          | "categories"
+          | "adapterStatus"
+          | "adapterPolicy"
+          | "unresolvedSpans"
         >,
       ) => rows.reduce((a, r) => a + r[k], 0);
       const gold = sum("gold"),
@@ -255,6 +319,10 @@ export function aggregate(
         cpu: cpu ? 10000 / cpu.chars_per_second : null,
         gpu: gpu ? 10000 / gpu.chars_per_second : null,
         datasetIds: rows.map((r) => r.dataset),
+        adapterSlices: summarizeAdapterRuns(rows),
+        adapterInventory: summarizeAdapterRuns(
+          data.records.filter((row) => row.system === s.id),
+        ),
       };
     })
     .filter((x) => x.sets > 0);
@@ -308,72 +376,101 @@ export function compareScores(
     a.id.localeCompare(b.id)
   );
 }
+export function compareExportContext(
+  applied: ExportContext,
+  systemIds: string[],
+  datasetIds: string[],
+): ExportContext {
+  // Leaderboard search and sort do not select these rows, so they stay out of the file.
+  return {
+    view: "compare",
+    rowOrder: "selection",
+    language: applied.language,
+    task: applied.task,
+    dataset: applied.dataset,
+    sensitivity: applied.sensitivity,
+    comparisonSystemIds: [...systemIds],
+    scopeDatasetIds: [...datasetIds],
+    experimentDate: applied.experimentDate,
+    resultRevision: applied.resultRevision,
+    snapshotHash: applied.snapshotHash,
+    threshold: applied.threshold,
+  };
+}
 export function filteredCsv(rows: Score[], context: ExportContext) {
-  const contextKeys = [
-    "language",
-    "task",
-    "dataset",
-    "sensitivity",
-    "family",
-    "query",
-    "coverage",
-    "sort",
-    "direction",
-    "comparisonSystemIds",
-    "scopeDatasetIds",
-    "experimentDate",
-    "resultRevision",
-    "snapshotHash",
-    "threshold",
-  ] as const;
-  const scoreKeys = [
-    "id",
-    "name",
-    "kind",
-    "family",
-    "revision",
-    "sets",
-    "datasetIds",
-    "gold",
-    "hit",
-    "hidden",
-    "rawHidden",
-    "missed",
-    "positiveRows",
-    "residualRows",
-    "tp",
-    "fp",
-    "fn",
-    "negativeChars",
-    "maskedNegativeChars",
-    "untouched",
-    "fullyHidden",
-    "detected",
-    "extra",
-    "f1",
-    "precision",
-    "recall",
-    "cpu",
-    "gpu",
-  ] as const;
+  // Two different facts shared the header `family`, so a dict reader kept only the second.
+  const contextColumns: [string, unknown][] = [
+    ["view", context.view],
+    ["rowOrder", context.rowOrder],
+    ["language", context.language],
+    ["task", context.task],
+    ["dataset", context.dataset],
+    ["sensitivity", context.sensitivity],
+    ["filter_family", context.family],
+    ["query", context.query],
+    ["coverage", context.coverage],
+    ["sort", context.sort],
+    ["direction", context.direction],
+    ["comparisonSystemIds", context.comparisonSystemIds],
+    ["scopeDatasetIds", context.scopeDatasetIds],
+    ["experimentDate", context.experimentDate],
+    ["resultRevision", context.resultRevision],
+    ["snapshotHash", context.snapshotHash],
+    ["threshold", context.threshold],
+  ];
+  const scoreColumns = (row: Partial<Score> = {}): [string, unknown][] => [
+    ["id", row.id],
+    ["name", row.name],
+    ["kind", row.kind],
+    ["system_family", row.family],
+    ["revision", row.revision],
+    ["sets", row.sets],
+    ["datasetIds", row.datasetIds],
+    ["gold", row.gold],
+    ["hit", row.hit],
+    ["hidden", row.hidden],
+    ["rawHidden", row.rawHidden],
+    ["missed", row.missed],
+    ["positiveRows", row.positiveRows],
+    ["residualRows", row.residualRows],
+    ["tp", row.tp],
+    ["fp", row.fp],
+    ["fn", row.fn],
+    ["negativeChars", row.negativeChars],
+    ["maskedNegativeChars", row.maskedNegativeChars],
+    ["untouched", row.untouched],
+    ["fullyHidden", row.fullyHidden],
+    ["detected", row.detected],
+    ["extra", row.extra],
+    ["f1", row.f1],
+    ["precision", row.precision],
+    ["recall", row.recall],
+    ["cpu", row.cpu],
+    ["gpu", row.gpu],
+    ["adapterSlices", row.adapterSlices ?? []],
+    ["adapterInventory", row.adapterInventory ?? []],
+  ];
   const value = (item: unknown) =>
-    Array.isArray(item) ? JSON.stringify(item) : item;
+    Array.isArray(item) || (item !== null && typeof item === "object")
+      ? JSON.stringify(item)
+      : item;
   const escape = (item: unknown) => {
     const normalized = value(item);
-    const cell = String(normalized ?? "");
+    const cell = normalized === null || normalized === undefined ? "" : String(normalized);
     const safe =
       typeof normalized === "string" && /^[=+\-@\t\r]/.test(cell)
         ? `'${cell}`
         : cell;
     return '"' + safe.replaceAll('"', '""') + '"';
   };
+  const header = [
+    ...contextColumns.map(([name]) => name),
+    ...scoreColumns().map(([name]) => name),
+  ];
   return [
-    [...contextKeys, ...scoreKeys].map(escape).join(","),
+    header.map(escape).join(","),
     ...rows.map((row) =>
-      [
-        ...contextKeys.map((key) => context[key]),
-        ...scoreKeys.map((key) => row[key]),
-      ]
+      [...contextColumns.map(([, item]) => item), ...scoreColumns(row).map(([, item]) => item)]
         .map(escape)
         .join(","),
     ),

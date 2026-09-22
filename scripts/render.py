@@ -33,8 +33,8 @@ NAMES = {
 }
 REFERENCE = 'composition:pplx+fastino+bardsai+mmbert'
 MEMBERS = {'pplx', 'gliner2-fastino', 'mmbert32k', 'bardsai-eu'}
-# One machine group per device: speed rows are only comparable within the same
-# processor, worker count, threads and cutting variant.
+# One machine group per device: same processor, workers, threads and variant.
+# Dataset counts still differ, so the group is not a same-input speed test.
 CPU_GROUP = (('device', 'cpu'), ('hardware', 'AMD EPYC 9K84 96-Core Processor'),
              ('threads', '16'), ('workers', '24'), ('quant', '-'), ('variant', 'cpu-speed'))
 GPU_GROUP = (('device', 'cuda'), ('hardware', 'NVIDIA GeForce RTX 5090'), ('workers', '2'),
@@ -206,7 +206,7 @@ def figures(categories):
                 'seconds per 10,000 characters', 'throughput / datasets')
     fig.save(ROOT, 'cpu-speed', 'Measured CPU throughput per detector',
              ['Seconds per 10,000 characters = 10,000 / chars per second, on a log axis.',
-              'Only this one machine group is shown, so the rows are directly comparable; other CPU machines are in results/speed.md.',
+              'Saved throughput on one machine group. Dataset counts differ, so this is not a same-input comparison. Other CPU machines are in results/speed.md.',
               'BardsAI, the scanners and the ONNX runs were measured on other machines and are absent here.'])
 
     fig = fx.Figure('GPU cost of one detector pass',
@@ -632,7 +632,8 @@ def detectors_page():
             'A smaller dataset count is a missing measurement, never a zero-miss result.', '']
     out += detector_table(partial)
     out += ['', '## Measured CPU speed', '',
-            f'{CPU_LABEL}. Batch throughput under that load, not the latency of one request. '
+            f'{CPU_LABEL}. Saved batch throughput, not request latency. Dataset counts differ, '
+            'so these rows are not a controlled same-input comparison. '
             'Amortized ms/row quantiles are the per-row share of measured compute, not individually timed requests.', '',
             '![Measured CPU throughput per detector](../assets/cpu-speed.svg)', '']
     out += speed_table(CPU_GROUP)

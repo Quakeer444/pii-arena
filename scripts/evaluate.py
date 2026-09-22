@@ -13,6 +13,8 @@ def main():
     parser.add_argument('--data', type=Path, required=True)
     parser.add_argument('--dataset', required=True)
     parser.add_argument('--model', required=True)
+    parser.add_argument('--legacy', action='store_true',
+                        help='Score a run that omits protocol or bench_sha256 and mark that result as legacy')
     args = parser.parse_args()
     for name in (args.dataset, args.model):
         if not name or Path(name).name != name or name in ('.', '..'):
@@ -26,12 +28,25 @@ def main():
     meta, predictions = S.read_pred(f)
     if bad := S.check_predictions(f, meta, predictions, complete=True, expected=args.dataset, expected_model=args.model):
         raise SystemExit(bad)
+    missing = [key for key in ('protocol', 'bench_sha256') if not meta.get(key)]
+    if missing and not args.legacy:
+        raise SystemExit(f"{f}: strict rescoring requires {', '.join(missing)}; pass --legacy to emit a marked result")
+    dataset_sha256 = S.bench_sha256(S.BENCH / args.dataset / 'bench.csv')
     _, counts = S.load_model(f, S.gold(args.dataset)[0], S.meta_of(args.dataset)['groups'])
-    print(json.dumps({'dataset': args.dataset, 'model': args.model,
-                      'missed': sum(counts['ofn']), 'gold_spans': sum(counts['ng']),
-                      'fully_hidden': sum(counts['hid']), 'char_tp': sum(counts['tp']),
-                      'char_fp': sum(counts['fp']), 'char_fn': sum(counts['fn']),
-                      'dropped_spans': counts['bad'], 'train': args.dataset in S.dirty(args.model)}, indent=2))
+    payload = {'dataset': args.dataset, 'model': args.model,
+               'missed': sum(counts['ofn']), 'gold_spans': sum(counts['ng']),
+               'fully_hidden': sum(counts['hid']), 'char_tp': sum(counts['tp']),
+               'char_fp': sum(counts['fp']), 'char_fn': sum(counts['fn']),
+               'dropped_spans': counts['bad'], 'train': args.dataset in S.dirty(args.model),
+               'protocol': meta.get('protocol'), 'threshold': S.THRESH,
+               'bench_sha256': meta.get('bench_sha256'), 'dataset_sha256': dataset_sha256,
+               'legacy': bool(missing)}
+    if missing:
+        payload['limitations'] = (
+            'Missing ' + ' and '.join(missing)
+            + '. Row and character counts do not prove this prediction used the frozen corpus text.'
+        )
+    print(json.dumps(payload, indent=2))
 
 
 if __name__ == '__main__':

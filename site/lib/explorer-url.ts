@@ -16,6 +16,7 @@ export type ExplorerSearchState = {
   datasetQuery: string;
   device: string;
   speedGroup: string;
+  includeHistorical: boolean;
   dashboard: DecisionDashboardState;
 };
 
@@ -65,6 +66,7 @@ export function readExplorerSearch(
       ["reference", "all"],
       "reference",
     ),
+    includeHistorical: params.get("historical") === "1",
     dashboard: {
       difficultyTier: choice(
         params.get("difficulty"),
@@ -89,7 +91,8 @@ export function writeExplorerSearch(state: ExplorerSearchState) {
     if (value !== fallback) params.set(key, value);
   };
   set("lang", state.language, "all");
-  set("task", state.task, "all");
+  // Thematic pages default to pii or secrets, so omitting task=all restores the wrong task.
+  params.set("task", state.task);
   set("dataset", state.dataset, "all");
   if (state.sensitivity) params.set("sensitivity", "1");
   if (state.query) params.set("q", state.query);
@@ -102,6 +105,7 @@ export function writeExplorerSearch(state: ExplorerSearchState) {
   if (state.datasetQuery) params.set("datasetQuery", state.datasetQuery);
   set("device", state.device, "cpu");
   set("speedGroup", state.speedGroup, "reference");
+  if (state.includeHistorical) params.set("historical", "1");
   set("difficulty", state.dashboard.difficultyTier, "All");
   if (state.dashboard.difficultyQuery)
     params.set("difficultyQuery", state.dashboard.difficultyQuery);

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import raw from "@/public/data/benchmark.json";
 import { PublicationPage } from "@/components/publication-page";
-import { aggregate, categoryScores, type Benchmark, detectorSlug, n, percent, ratio } from "@/lib/benchmark";
+import { adapterNote, aggregate, categoryScores, type Benchmark, detectorSlug, n, percent, ratio } from "@/lib/benchmark";
 import { pageMetadata } from "@/lib/seo";
 
 const data = raw as Benchmark;
@@ -46,6 +46,7 @@ export default async function DetectorPage({ params }: { params: Promise<{ slug:
     const ids = new Set(data.datasets.filter((dataset) => dataset.lang === language).map((dataset) => dataset.id));
     return { language, score: aggregate(data, ids).find((entry) => entry.id === model.id) };
   }).filter((entry) => entry.score);
+  const scanner = adapterNote(score);
   const title = `${model.name} PII detection benchmark`;
   const comparisonModel = model.id === "model:pplx" ? "model:gliner2-fastino" : "model:pplx";
 
@@ -84,6 +85,8 @@ export default async function DetectorPage({ params }: { params: Promise<{ slug:
           <div><dt>Character F1</dt><dd>{score.f1?.toFixed(3) ?? "Not measured"}</dd></div>
           <div><dt>Untouched diagnostic</dt><dd className="mono">{percent(score.untouched)} · {n(score.missed)} / {n(score.gold)}</dd></div>
           <div><dt>Benchmark version</dt><dd className="mono">{data.meta.version} · {data.meta.experimentDate}</dd></div>
+          {scanner && <div><dt>Scanner status in this slice</dt><dd>{scanner.slice || "No scanner runs in this slice"}</dd></div>}
+          {scanner?.inventory && <div><dt>Full scanner inventory</dt><dd>{scanner.inventory}. These counts cover every stored run, including runs left out of this slice.</dd></div>}
           <div><dt>CPU seconds / 10k chars</dt><dd>{score.cpu?.toFixed(3) ?? "Not measured"}</dd></div>
           <div><dt>GPU seconds / 10k chars</dt><dd>{score.gpu?.toFixed(3) ?? "Not measured"}</dd></div>
         </dl>
