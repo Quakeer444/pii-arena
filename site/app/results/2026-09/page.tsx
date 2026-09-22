@@ -14,7 +14,7 @@ export default function SeptemberResultsPage() {
   const score = aggregate(data, new Set(data.datasets.map((dataset) => dataset.id)), "composition").find((entry) => entry.id === REF);
   if (!score) return null;
   return (
-    <PublicationPage eyebrow={`Release v${data.meta.version}`} title={title} description={description}>
+    <PublicationPage view="results" eyebrow={`Release v${data.meta.version}`} title={title} description={description}>
       <div className="publication-summary">
         <div><strong>{n(data.datasets.length)}</strong><span>datasets</span></div>
         <div><strong>{n(data.datasets.reduce((sum, dataset) => sum + dataset.rows, 0))}</strong><span>input rows</span></div>

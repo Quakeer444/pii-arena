@@ -12,17 +12,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import {
-  Activity,
   ArrowDown,
   ArrowDownUp,
   ArrowRight,
   ArrowUpRight,
-  BarChart3,
   BookOpen,
   Braces,
-  ChevronRight,
   CircleHelp,
-  Code2,
   Columns3,
   Copy,
   Database,
@@ -33,27 +29,13 @@ import {
   Gauge,
   Globe2,
   Layers3,
-  LayoutGrid,
   Search,
   ShieldCheck,
   SlidersHorizontal,
   Table2,
   X,
 } from "lucide-react";
-import {
-  SidebarProvider,
-  Sidebar,
-  SidebarHeader,
-  SidebarContent,
-  SidebarFooter,
-  SidebarGroup,
-  SidebarGroupLabel,
-  SidebarMenu,
-  SidebarMenuItem,
-  SidebarMenuButton,
-  SidebarTrigger,
-  useSidebar,
-} from "@/components/ui/sidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import {
   Select,
   SelectTrigger,
@@ -109,7 +91,7 @@ import {
   Tradeoff,
 } from "@/components/benchmark-charts";
 import { EvidenceViewer } from "@/components/evidence-viewer";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { nav, SiteNav, SiteTopbar } from "@/components/site-nav";
 import {
   DecisionDashboard,
   type DecisionDashboardState,
@@ -117,16 +99,6 @@ import {
 import { difficultyFor } from "@/lib/decision-data";
 import { readExplorerSearch, writeExplorerSearch } from "@/lib/explorer-url";
 
-const nav = [
-  { id: "leaderboard", label: "Leaderboard", icon: BarChart3 },
-  { id: "compare", label: "Compare detectors", icon: Columns3 },
-  { id: "ensembles", label: "Ensembles", icon: Layers3 },
-  { id: "entities", label: "Data types", icon: LayoutGrid },
-  { id: "datasets", label: "Datasets", icon: Database },
-  { id: "performance", label: "Performance", icon: Gauge },
-  { id: "methodology", label: "Methodology", icon: BookOpen },
-  { id: "downloads", label: "Reports & data", icon: Files },
-];
 const descriptions: Record<string, string> = {
   leaderboard:
     "Find which detector best hides the sensitive data you care about.",
@@ -243,19 +215,6 @@ function Hint({ name }: { name: string }) {
     </Tooltip>
   );
 }
-function GithubMark() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 16 16"
-      width="17"
-      height="17"
-      fill="currentColor"
-    >
-      <path d="M8 0C3.58 0 0 3.64 0 8.13c0 3.59 2.29 6.64 5.47 7.71.4.08.55-.18.55-.39 0-.19-.01-.83-.01-1.5-2.01.38-2.53-.5-2.69-.96-.09-.23-.48-.96-.82-1.15-.28-.15-.68-.53-.01-.54.63-.01 1.08.59 1.23.83.72 1.23 1.87.88 2.33.67.07-.53.28-.88.51-1.08-1.78-.2-3.64-.9-3.64-4.01 0-.89.31-1.62.82-2.19-.08-.2-.36-1.04.08-2.16 0 0 .67-.22 2.2.84A7.5 7.5 0 0 1 8 3.93a7.5 7.5 0 0 1 2 .27c1.53-1.06 2.2-.84 2.2-.84.44 1.12.16 1.96.08 2.16.51.57.82 1.3.82 2.19 0 3.12-1.87 3.81-3.65 4.01.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.47.55.39A8.14 8.14 0 0 0 16 8.13C16 3.64 12.42 0 8 0Z" />
-    </svg>
-  );
-}
 function DatasetSource({ source }: { source: string }) {
   const urls = sourceUrls(source);
   return urls.length ? (
@@ -298,132 +257,6 @@ function Panel({
       </div>
       {children}
     </section>
-  );
-}
-function Navigation({
-  view,
-  data,
-  search,
-}: {
-  view: string;
-  data: Benchmark;
-  search: string;
-}) {
-  const { setOpenMobile } = useSidebar();
-  return (
-    <Sidebar className="app-sidebar" role="navigation" aria-label="Primary">
-      <SidebarHeader className="brand">
-        <Link
-          href={`/leaderboard${search}`}
-          prefetch={false}
-          onClick={() => setOpenMobile(false)}
-          className="brand-link"
-        >
-          <span className="brand-icon">
-            <Braces size={24} />
-          </span>
-          <span>
-            PII <span className="brand-light">Arena</span>
-            <small>PII & secret detector benchmark</small>
-          </span>
-        </Link>
-      </SidebarHeader>
-      <SidebarContent>
-        <SidebarGroup>
-          <SidebarGroupLabel>Explore</SidebarGroupLabel>
-          <SidebarMenu>
-            {nav.slice(0, 6).map((v) => (
-              <SidebarMenuItem key={v.id}>
-                <SidebarMenuButton
-                  asChild
-                  className="nav-button"
-                  isActive={view === v.id}
-                >
-                  <Link
-                    href={`/${v.id}${search}`}
-                    prefetch={false}
-                    onClick={() => setOpenMobile(false)}
-                  >
-                    <v.icon />
-                    <span>{v.label}</span>
-                    {v.id === "datasets" && (
-                      <span className="nav-count">{data.datasets.length}</span>
-                    )}
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            ))}
-          </SidebarMenu>
-        </SidebarGroup>
-        <SidebarGroup>
-          <SidebarGroupLabel>Resources</SidebarGroupLabel>
-          <SidebarMenu>
-            {nav.slice(6).map((v) => (
-              <SidebarMenuItem key={v.id}>
-                <SidebarMenuButton
-                  asChild
-                  className="nav-button"
-                  isActive={view === v.id}
-                >
-                  <Link
-                    href={`/${v.id}${search}`}
-                    prefetch={false}
-                    onClick={() => setOpenMobile(false)}
-                  >
-                    <v.icon />
-                    <span>{v.label}</span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            ))}
-            <SidebarMenuItem>
-              <SidebarMenuButton asChild className="nav-button">
-                <Link href="/detectors" onClick={() => setOpenMobile(false)}>
-                  <Table2 />
-                  <span>Detector index</span>
-                </Link>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-            <SidebarMenuItem>
-              <SidebarMenuButton asChild className="nav-button">
-                <Link
-                  href="/results/2026-09"
-                  onClick={() => setOpenMobile(false)}
-                >
-                  <Activity />
-                  <span>September release</span>
-                </Link>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-            <SidebarMenuItem>
-              <SidebarMenuButton asChild className="nav-button">
-                <a
-                  href="https://github.com/Quakeer444/pii-arena"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Code2 />
-                  <span>GitHub</span>
-                  <ArrowUpRight className="external-nav" />
-                </a>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-          </SidebarMenu>
-        </SidebarGroup>
-      </SidebarContent>
-      <SidebarFooter>
-        <div className="snapshot-card">
-          <span>
-            Frozen experiment<strong>09 September 2026</strong>
-          </span>
-        </div>
-        <div className="sidebar-bottom">
-          <ShieldCheck size={16} />
-          <span>Open methodology</span>
-          <span className="mono">v{data.meta.version}</span>
-        </div>
-      </SidebarFooter>
-    </Sidebar>
   );
 }
 
@@ -896,36 +729,11 @@ export function BenchmarkExplorer({
   return (
     <TooltipProvider>
       <SidebarProvider style={{ "--sidebar-width": "212px" } as CSSProperties}>
-        <Navigation view={view} data={data} search={searchSuffix} />
+        <SiteNav view={view} search={searchSuffix} />
         <main
           className={`workspace ${view === "leaderboard" ? "" : "compact-workspace"}`}
         >
-          <header className="topbar">
-            <div className="breadcrumb">
-              <SidebarTrigger className="mobile-trigger" />
-              <span>PII Arena</span>
-              <ChevronRight size={14} />
-              <strong>
-                {nav.find((v) => v.id === view)?.label ?? "Benchmark"}
-              </strong>
-            </div>
-            <div className="topbar-right">
-              <span className="revision">
-                Results updated <strong>19 Sep 2026</strong>
-              </span>
-              <a
-                className="icon-button"
-                href="https://github.com/Quakeer444/pii-arena"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Open GitHub repository"
-                title="Open GitHub repository"
-              >
-                <GithubMark />
-              </a>
-              <ThemeToggle />
-            </div>
-          </header>
+          <SiteTopbar view={view} />
           <div className="page-content">
             <div className="page-title">
               <div>

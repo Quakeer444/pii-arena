@@ -41,6 +41,7 @@ export default async function DatasetPage({ params }: { params: Promise<{ id: st
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(datasetJsonLd(dataset, data)) }} />
       <PublicationPage
+        view="datasets"
         eyebrow={`${dataset.lang.toUpperCase()} · ${dataset.kind.toUpperCase()}`}
         title={title}
         description={`A frozen evaluation slice with ${n(dataset.rows)} rows, ${n(dataset.gold_spans)} normalized gold annotations and source-level provenance.`}

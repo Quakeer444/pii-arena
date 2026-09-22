@@ -1,47 +1,39 @@
-import Link from "next/link";
-import type { ReactNode } from "react";
-import { ThemeToggle } from "@/components/theme-toggle";
+import type { CSSProperties, ReactNode } from "react";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { SiteNav, SiteTopbar } from "@/components/site-nav";
+import { GITHUB_URL } from "@/lib/seo";
 
 export function PublicationPage({
+  view,
   eyebrow,
   title,
   description,
   children
 }: {
+  view?: string;
   eyebrow: string;
   title: string;
   description: string;
   children: ReactNode;
 }) {
   return (
-    <div className="publication-shell">
-      <header className="publication-header">
-        <Link href="/leaderboard" className="publication-brand">PII <span>Arena</span></Link>
-        <nav aria-label="Primary">
-          <Link href="/leaderboard">Leaderboard</Link>
-          <Link href="/compare">Compare</Link>
-          <Link href="/ensembles">Ensembles</Link>
-          <Link href="/entities">Data types</Link>
-          <Link href="/detectors">Detectors</Link>
-          <Link href="/datasets">Datasets</Link>
-          <Link href="/performance">Performance</Link>
-          <Link href="/methodology">Methodology</Link>
-          <Link href="/downloads">Reports</Link>
-        </nav>
-        <ThemeToggle />
-      </header>
-      <main className="publication-main">
-        <div className="publication-title">
-          <span>{eyebrow}</span>
-          <h1>{title}</h1>
-          <p>{description}</p>
+    <SidebarProvider style={{ "--sidebar-width": "212px" } as CSSProperties}>
+      <SiteNav view={view} />
+      <main className="workspace">
+        <SiteTopbar view={view} fallback={title} />
+        <div className="page-content">
+          <div className="publication-title">
+            <span>{eyebrow}</span>
+            <h1>{title}</h1>
+            <p>{description}</p>
+          </div>
+          {children}
+          <footer className="page-footer">
+            <span>PII Arena · Frozen 09 Sep 2026</span>
+            <a href={GITHUB_URL}>Source and reproduction</a>
+          </footer>
         </div>
-        {children}
       </main>
-      <footer className="publication-footer">
-        <span>Frozen experiment · 09 September 2026</span>
-        <a href="https://github.com/Quakeer444/pii-arena">Source and reproduction</a>
-      </footer>
-    </div>
+    </SidebarProvider>
   );
 }

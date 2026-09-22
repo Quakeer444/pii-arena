@@ -16,7 +16,7 @@ export default function DetectorsPage() {
     .sort((a, b) => Number(b.sets === datasetIds.size) - Number(a.sets === datasetIds.size) || (b.fullyHidden ?? -Infinity) - (a.fullyHidden ?? -Infinity));
 
   return (
-    <PublicationPage eyebrow="Detector directory" title={title} description={description}>
+    <PublicationPage view="detectors" eyebrow="Detector directory" title={title} description={description}>
       <div className="publication-summary">
         <div><strong>{n(rows.length)}</strong><span>measured configurations</span></div>
         <div><strong>{n(data.datasets.length)}</strong><span>retained datasets</span></div>

@@ -52,6 +52,7 @@ export default async function DetectorPage({ params }: { params: Promise<{ slug:
 
   return (
     <PublicationPage
+      view="detectors"
       eyebrow={`${model.family.toUpperCase()} detector`}
       title={title}
       description={`Measured on ${score.sets} of ${data.datasets.length} retained datasets under the same frozen scoring and masking protocol.`}
