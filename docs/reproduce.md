@@ -1,5 +1,7 @@
 # Reproduce this release
 
+**Running models on your own hardware?** Start with [the CPU/GPU benchmark guide](run-benchmarks.md) for input preparation, validation, execution plans and resumable local runs. This page distinguishes those new measurements from exact reproduction of the historical release.
+
 Python 3.12 and [uv](https://docs.astral.sh/uv/) are required. Reading the Markdown tables and SVG figures requires no installation.
 
 ## Validate the public release

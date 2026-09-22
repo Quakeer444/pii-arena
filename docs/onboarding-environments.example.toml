@@ -1,0 +1,12 @@
+# Copy to .local/environments.toml and use --environments .local/environments.toml.
+# These paths are examples, not installed environments or validated lockfiles.
+# Each interpreter must use Python 3.12 and a runtime checked for its model family.
+# Use a separate mapping for CUDA campaigns; ONNX/spaCy remain CPU-only here.
+[python]
+hf = ".local/envs/hf-cpu/bin/python"
+opf = ".local/envs/opf-cpu/bin/python"
+pplx = ".local/envs/pplx-cpu/bin/python"
+gliner = ".local/envs/gliner-cpu/bin/python"
+gliner2 = ".local/envs/gliner2-cpu/bin/python"
+onnx = ".local/envs/onnx-cpu/bin/python"
+spacy = ".local/envs/spacy-cpu/bin/python"

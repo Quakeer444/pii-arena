@@ -1,0 +1,54 @@
+name: Verify benchmark onboarding
+on:
+  push:
+    paths:
+      - 'scripts/onboarding.py'
+      - 'scripts/test_onboarding.py'
+      - 'scripts/reproduce_cpu.py'
+      - 'scripts/evaluate.py'
+      - 'benchmark/**'
+      - 'datasets/**'
+      - 'docs/run-benchmarks.md'
+      - 'docs/benchmark-onboarding-design.md'
+      - 'docs/onboarding-environments.example.toml'
+      - '.github/workflows/onboarding.yml'
+  pull_request:
+    paths:
+      - 'scripts/onboarding.py'
+      - 'scripts/test_onboarding.py'
+      - 'scripts/reproduce_cpu.py'
+      - 'scripts/evaluate.py'
+      - 'benchmark/**'
+      - 'datasets/**'
+      - 'docs/run-benchmarks.md'
+      - 'docs/benchmark-onboarding-design.md'
+      - 'docs/onboarding-environments.example.toml'
+      - '.github/workflows/onboarding.yml'
+permissions:
+  contents: read
+jobs:
+  onboarding:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e
+        with:
+          version: '0.8.3'
+          python-version: '3.12.11'
+      - run: uv sync --frozen
+      - name: Offline contract tests
+        run: uv run python -m unittest discover -s scripts -p 'test_onboarding.py' -v
+      - name: Inspect the real catalogs without downloads
+        run: uv run python scripts/onboarding.py inventory --json
+      - name: Prepare the audited public subset from a clean checkout
+        run: uv run python scripts/onboarding.py prepare --datasets leak-museum --download
+      - name: Verify exact bytes and idempotent preparation
+        run: |
+          uv run python scripts/onboarding.py verify --datasets leak-museum --json
+          uv run python scripts/onboarding.py prepare --datasets leak-museum --download
+          uv run python scripts/onboarding.py plan --models ru-legal-ner --datasets leak-museum --device cpu
+      - name: Verify the publication boundary
+        run: uv run python scripts/verify.py
