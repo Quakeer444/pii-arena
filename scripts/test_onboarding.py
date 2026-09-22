@@ -153,6 +153,12 @@ class WorkspaceTests(unittest.TestCase):
             with self.subTest(key=key):
                 self.assertEqual(O.check_dataset(self.source, self.item | {key: 999})["status"], "invalid")
 
+    def test_crlf_character_total_matches_catalog(self):
+        self.update_csv("Alpha\r\nitem", [{"start": 0, "end": 11, "type": "NAME"}])
+        result = O.check_dataset(self.source, self.item)
+        self.assertEqual(result["status"], "ready")
+        self.assertEqual(result["characters"], 10)
+
     def test_metadata_mismatch(self):
         (self.source / "BENCH/demo/meta.json").write_text(json.dumps(self.meta | {"lang": "ru"}))
         self.assertEqual(O.check_dataset(self.source, self.item)["status"], "invalid")

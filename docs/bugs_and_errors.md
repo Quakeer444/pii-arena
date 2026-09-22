@@ -1,5 +1,12 @@
 # Bugs and errors
 
+## 2026-09-22 — Onboarding rejected frozen corpora that contain CR
+
+- File: `scripts/onboarding.py`, character total around line 148
+- Problem: `check_dataset` counted `len(text)` from a `newline=""` read. Four hash-correct datasets (`kiji-en`, `corrupt-hivetrace`, `secrets-issues`, `corrupt-secrets-issues`) failed the catalog character check, so `prepare --datasets all` copied nothing.
+- Fix: character totals subtract one per CRLF, matching `scripts/export.py`, which counted after universal-newline translation. Annotation offsets still use the untranslated CSV text. Published catalog numbers are unchanged.
+- Status: fixed
+
 ## 2026-09-21 — Scanner status missing from the site
 
 - File: `site/scripts/sync-benchmark.mjs`, record build around line 105

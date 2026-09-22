@@ -47,7 +47,7 @@ uv run python scripts/onboarding.py verify --datasets all
 
 For a checkout that already has the preserved archive, use `--from-workspace .local/research`. The destination is a different workspace; the tool refuses to write into `.local/research` or outside this repository's `.local/` boundary. Select a subset with, for example, `--datasets hivetrace,redmadrobot`.
 
-The importer validates the entire requested source selection before copying anything. It then stages and verifies each dataset before promoting it. It checks exact CSV SHA-256, schema, unique IDs, annotation boundaries and type mapping, row/character/annotation counts, and metadata language/task. Existing mismatched inputs are never overwritten. The published `datasets/samples.json` is copied unchanged; importing does not resample.
+The importer validates the entire requested source selection before copying anything. It then stages and verifies each dataset before promoting it. It checks exact CSV SHA-256, schema, unique IDs, annotation boundaries and type mapping, row and annotation counts, character totals as published in the catalog (each CRLF counts as one character), and metadata language/task. Existing mismatched inputs are never overwritten. The published `datasets/samples.json` is copied unchanged; importing does not resample.
 
 `meta.json` is essential, especially for GLiNER label lists. The public catalog does not authenticate every historical metadata byte. The wrapper validates metadata structure and records its hash, but a valid new label list is not proof that it equals the original experiment's label list. Exact historical reproduction also requires the original metadata and runtime/profile.
 

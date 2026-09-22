@@ -46,7 +46,7 @@ The existing Leak Museum route is a useful anchor: pinned source, source-relativ
 
 The CSV contains gold entity types, while `meta.json` supplies group mappings, language/task metadata and, for zero-shot models, actual inference labels. `datasets/samples.json` fixes the selected IDs. Corpus hash equality without the intended metadata and label lists is insufficient for historical equivalence.
 
-The new verifier checks the normalized CSV bytes and shape, counts, IDs, offsets, label mapping and language/task. It records metadata SHA-256 for run identity. Because the existing public catalog does not publish every metadata digest, this is **structural verification plus new-run identity**, not authentication of every original metadata byte. Publishing a reviewed metadata manifest remains a release gate.
+The new verifier checks the normalized CSV bytes and shape, counts, IDs, offsets, label mapping and language/task. Character totals use the published catalog rule: each CRLF counts as one character, while annotation offsets stay on the untranslated CSV text. It records metadata SHA-256 for run identity. Because the existing public catalog does not publish every metadata digest, this is **structural verification plus new-run identity**, not authentication of every original metadata byte. Publishing a reviewed metadata manifest remains a release gate.
 
 ### CPU and GPU are adapter properties too
 

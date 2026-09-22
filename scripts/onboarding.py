@@ -143,8 +143,10 @@ def check_dataset(work: Path, item: dict) -> dict:
                         raise ValueError("invalid annotation offsets")
                     if entity["type"] not in groups:
                         raise ValueError("annotation type is absent from metadata")
+                text = row["text"]
                 counts["rows"] += 1
-                counts["characters"] += len(row["text"])
+                # Catalog totals follow open(), which folds each CRLF to one character.
+                counts["characters"] += len(text) - text.count("\r\n")
                 counts["original_annotations"] += len(entities)
         if any(counts[k] != item[k] for k in counts if k in item):
             raise ValueError("corpus counts differ from the catalog")
